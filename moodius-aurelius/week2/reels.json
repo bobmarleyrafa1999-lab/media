@@ -1,0 +1,54 @@
+{
+  "reel-4-morning": {
+    "style": "dawn",
+    "seed": 412,
+    "segments": [
+      ["Marcus Aurelius said this to himself\nevery single morning.", 3.4, true],
+      ["“The people I meet today will be\nmeddling, ungrateful, arrogant.”", 3.6, false],
+      ["Not to hate them.", 2.2, false],
+      ["To stop being surprised by them.", 2.8, false],
+      ["“None of them can hurt me.”", 2.8, true],
+      ["Expect the worst in people.\nStay kind anyway.", 3.4, true],
+      ["Save this for tomorrow morning.", 2.8, false]
+    ]
+  },
+  "reel-5-opinions": {
+    "style": "march",
+    "seed": 523,
+    "segments": [
+      ["Someone’s opinion of you\nis living in your head rent-free.", 3.4, true],
+      ["Marcus Aurelius noticed something strange.", 2.8, false],
+      ["We love ourselves\nmore than anyone else.", 3.0, false],
+      ["Yet we trust their opinion of us\nmore than our own.", 3.4, false],
+      ["Why?", 1.8, true],
+      ["You are the only judge\nwhose verdict you have to live with.", 3.6, true],
+      ["Send this to someone who needs it.", 2.8, false]
+    ]
+  },
+  "reel-6-imagination": {
+    "style": "elegy",
+    "seed": 634,
+    "segments": [
+      ["You’re worried about something\nthat hasn’t happened yet.", 3.4, true],
+      ["Seneca wrote to a friend about this.", 2.6, false],
+      ["“We suffer more in imagination\nthan in reality.”", 3.6, true],
+      ["Most of what you fear\nwill never arrive.", 3.0, false],
+      ["And what does arrive,\nyou will meet with the same mind you have now.", 3.8, false],
+      ["Come back to today.", 2.6, true],
+      ["Follow for more Stoic rules.", 2.6, false]
+    ]
+  },
+  "reel-7-enough": {
+    "style": "battle",
+    "seed": 745,
+    "segments": [
+      ["You keep comparing yourself\nto people online.", 3.2, true],
+      ["Seneca saw this 2,000 years ago.", 2.6, false],
+      ["“It is not the man who has too little,\nbut the man who craves more, that is poor.”", 4.2, false],
+      ["Their highlight reel\nis not your measuring stick.", 3.2, false],
+      ["Run your own race.", 2.6, true],
+      ["Enough is a decision,\nnot a number.", 3.2, true],
+      ["Send this to someone who needs it.", 2.6, false]
+    ]
+  }
+}
