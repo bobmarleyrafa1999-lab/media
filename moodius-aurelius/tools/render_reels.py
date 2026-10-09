@@ -56,8 +56,8 @@ def render(name, spec, out_dir):
         subprocess.run([sys.executable, os.path.join(HERE, "score.py"), spec["style"], f"{total:.2f}",
                         str(spec["seed"]), wav], check=True, capture_output=True)
         out = os.path.join(out_dir, f"{name}.mp4")
-        cmd = ["ffmpeg", "-y", "-loglevel", "error", "-filter_complex", ";".join(filt), "-i", wav,
-               "-filter_complex", "[1:a]loudnorm=I=-14:TP=-1.5:LRA=11[aout]",
+        filt.append("[0:a]loudnorm=I=-14:TP=-1.5:LRA=11[aout]")
+        cmd = ["ffmpeg", "-y", "-loglevel", "error", "-i", wav, "-filter_complex", ";".join(filt),
                "-map", "[vout]", "-map", "[aout]", "-t", f"{total:.2f}",
                "-r", "30", "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
                "-c:a", "aac", "-b:a", "192k", "-movflags", "+faststart", out]
