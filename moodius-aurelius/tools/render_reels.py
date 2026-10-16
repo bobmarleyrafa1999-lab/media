@@ -21,6 +21,43 @@ def esc(s):
             .replace("%", "\\%").replace(",", "\\,"))
 
 
+MAX_W = 900  # px; keeps a 90px margin on a 1080-wide frame
+
+
+def wrap(text, font, fs):
+    """Re-wrap any line wider than MAX_W at word boundaries, keeping explicit breaks."""
+    try:
+        from PIL import ImageFont
+        f = ImageFont.truetype(font, fs)
+        width = f.getlength
+    except ImportError:
+        width = lambda s: len(s) * fs * 0.48
+    def greedy(words, limit):
+        rows, cur = [], ""
+        for word in words:
+            cand = f"{cur} {word}".strip()
+            if cur and width(cand) > limit:
+                rows.append(cur)
+                cur = word
+            else:
+                cur = cand
+        return rows + [cur]
+
+    out = []
+    for ln in text.split("\n"):
+        words = ln.split(" ")
+        rows = greedy(words, MAX_W)
+        # balance: shrink the limit while the line count stays the same, so no orphan words
+        limit = MAX_W
+        while len(rows) > 1 and limit > 300:
+            tighter = greedy(words, limit - 20)
+            if len(tighter) > len(rows):
+                break
+            limit -= 20
+        out.extend(greedy(words, limit))
+    return out
+
+
 def render(name, spec, out_dir):
     segs = spec["segments"]
     total = sum(d for _, d, _ in segs) + 0.5
@@ -33,9 +70,9 @@ def render(name, spec, out_dir):
     chain = "[bg]"
     i = 0
     for text, d, big in segs:
-        lines = text.split("\n")
         fs = 78 if big else 64
         font = SERIFB if big else SERIF
+        lines = wrap(text, font, fs)
         lh = fs * 1.3
         y0 = 960 - lh * len(lines) / 2
         a = (f"if(lt(t-{t:.2f},0.35),(t-{t:.2f})/0.35,"
