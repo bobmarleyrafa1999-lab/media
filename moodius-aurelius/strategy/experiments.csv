@@ -1,0 +1,8 @@
+id,question,arm_a,arm_b,where,primary_metric,start,status,pairs_run,pairs_won_a,pairs_won_b,median_a,median_b,call,next_action
+E6,Slot 15:00 vs 12:00/18:00,15:00,12:00/18:00,all reels,views_72h,2026-10-19,running,0,0,0,,,none,read Week 3 on 26 Oct
+E2,Carousel vs reel in third slot,carousel,reel (Week 3 same slots),15:00 Tue/Thu + Sun 18:00,reach then save+share rate,2026-10-27,planned,0,0,0,,,none,
+E1,Confrontational vs curiosity hook,confrontational,curiosity,F1 reels 12:00 alternate days,hold_3s_pct,2026-11-02,planned,0,0,0,,,none,
+E3,Short vs long caption,<60 words,150-250 words,F1/F6 reels 18:00 alternate days,save rate; comment rate,2026-11-02,planned,0,0,0,,,none,
+E5,Minimalist vs illustrated,stone,public-domain art,reels 18:00,hold_3s_pct; reach,2026-11-09,planned,0,0,0,,,none,
+E7,CTA type,send,save / follow,all reels rotating,matching action rate,2026-11-09,planned,0,0,0,,,none,
+E4,Carousel length,5 slides,8 slides,carousels,save rate,2026-11-03,planned,0,0,0,,,none,
