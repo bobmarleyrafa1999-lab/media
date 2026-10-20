@@ -19,7 +19,7 @@ R008–R010 are rendered and ready as substitutes if any of the seven fails a la
 ## Daily execution
 | When | Claude (automatic) | Surafel (by hand) |
 |---|---|---|
-| By Fri 23 Oct | Account thread schedules the 7 A files in Metricool with caption + first comment (it owns scheduling); I log rows in `reels-log.csv` | — |
+| Done 20 Oct | Account thread scheduled the 7 A files in Metricool with caption + first comment (it owns scheduling); I log rows in `reels-log.csv` | — |
 | Every day 18:00 | Reel publishes; 20:40 publish check flags failures | Reply to comments for 10 min (playbook); add the day's stories to highlights |
 | Every day, 1 min | — | Open the reel in the Instagram app after ~24h, note skip rate in the log if you can (optional) |
 | Sun 1 Nov | — | Watch 2 reels on your phone; tell me anything that felt off |

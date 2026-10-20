@@ -72,7 +72,8 @@
     "#overthinking"
    ],
    "cta": "send",
-   "length_s": 20.6
+   "length_s": 20.6,
+   "metricool_id": "400908861"
   },
   {
    "id": "R002",
@@ -147,7 +148,8 @@
     "#worklife"
    ],
    "cta": "send",
-   "length_s": 18.0
+   "length_s": 18.0,
+   "metricool_id": "400909026"
   },
   {
    "id": "R003",
@@ -217,7 +219,8 @@
     "#solitude"
    ],
    "cta": "save",
-   "length_s": 18.6
+   "length_s": 18.6,
+   "metricool_id": "400908945"
   },
   {
    "id": "R004",
@@ -288,7 +291,8 @@
     "#stoicism"
    ],
    "cta": "save",
-   "length_s": 19.3
+   "length_s": 19.3,
+   "metricool_id": "400909106"
   },
   {
    "id": "R005",
@@ -359,7 +363,8 @@
     "#stoicism"
    ],
    "cta": "send",
-   "length_s": 19.2
+   "length_s": 19.2,
+   "metricool_id": "400909334"
   },
   {
    "id": "R006",
@@ -429,7 +434,8 @@
     "#mentalhealth"
    ],
    "cta": "save",
-   "length_s": 18.2
+   "length_s": 18.2,
+   "metricool_id": "400909172"
   },
   {
    "id": "R007",
@@ -489,7 +495,7 @@
     "work": "Pensées",
     "section": "139",
     "translation": "W. F. Trotter (1910)",
-    "verified_at": "wording matched on two quotation sites; confirm in Gutenberg #18269 before posting"
+    "verified_at": "Gutenberg #18269 (Trotter), fragment 139, checked 20 Oct"
    },
    "caption": "In a 2014 study (Wilson et al., Science), many people left alone with their thoughts for 15 minutes chose to give themselves a mild electric shock rather than sit there. Two thirds of the men did it at least once.\n\nThe urge to grab the phone isn't weakness. It's what quiet feels like when you're out of practice. Five minutes tonight, nothing in your hands.\n\nHow long did you last?\n\n— Moodius",
    "first_comment": "Start with two minutes if five is too much. It's a muscle.",
@@ -500,7 +506,8 @@
     "#focus"
    ],
    "cta": "save",
-   "length_s": 18.2
+   "length_s": 18.2,
+   "metricool_id": "400909419"
   },
   {
    "id": "R008",

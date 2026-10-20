@@ -34,4 +34,4 @@ Research → winning patterns → original scripts → rendered reels → tests 
 **Outside Phase 1 until the 19 Nov review:** TikTok/YouTube cross-posting, a second daily reel. **Needs extra software or permission (not used now):** paid voice (ElevenLabs) for narrated reels; licensed stock footage downloads (this machine can't reach Pexels/Pixabay); Instagram's full retention curve (app only).
 
 ## Not verified
-Competitor per-reel hooks, retention and saves (Instagram blocks reading). Pascal's line was matched on two secondary sources; check Gutenberg #18269 once before R007 posts.
+Competitor per-reel hooks, retention and saves (Instagram blocks reading). Launch-week reels are scheduled in Metricool (media hosted on static.metricool.com, so render changes need updateScheduledPost).
