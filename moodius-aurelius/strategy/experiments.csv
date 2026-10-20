@@ -1,5 +1,6 @@
 id,question,arm_a,arm_b,where,primary_metric,min_posts_per_arm,start,status,posts_a,posts_b,median_a,median_b,call,next_action
 X1,Cover style: claim statement vs question,claim cover,question cover,"carousels 12:00, alternate days",saves per reach,10,2026-10-26,planned,0,0,,,none,starts with day 6
-X2,Reel length: 12-15s vs 18-20s,12-15s,18-20s,"F5 reels 18:00, alternate days",sends per reach (watch time secondary),10,after X1,queued,0,0,,,none,
+X2,Reel length: 12-15s vs 18-20s,12-15s,18-20s,"F5 reels 18:00, alternate days",sends per reach (watch time secondary),10,after X5,queued,0,0,,,none,
 X3,CTA: save vs send,save,send,all carousels,the matching rate,10,after X2,queued,0,0,,,none,
 X4,Short vs long caption,<60 words,150-250 words,all posts,"saves per reach, comments",10,after X3,queued,0,0,,,none,
+X5,Reel hook: situation vs curiosity (reels-engine T1),situation hook (A file),curiosity hook (-b file),"reels 18:00, alternate days",sends per reach (3s hold secondary),10,after X1 (about 16 Nov),queued,0,0,,,none,26 Oct-1 Nov run A files only so X1 stays the only live test

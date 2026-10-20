@@ -6,7 +6,8 @@
 | ID | Question | A | B | Primary metric | When |
 |---|---|---|---|---|---|
 | X1 | Cover: claim vs question | "You don't have X. You have Y." | "Why do you X?" | saves/reach | 26 Oct → about 15 Nov (10 carousels each, alternate days) |
-| X2 | Reel length | 12–15s | 18–20s | sends/reach | next |
+| X5 | Reel hook (reels-engine T1) | situation hook | curiosity hook | sends/reach | next, after X1 |
+| X2 | Reel length | 12–15s | 18–20s | sends/reach | after X5 |
 | X3 | CTA | save | send | matching rate | then |
 | X4 | Caption length | under 60 words | 150–250 words | saves/reach, comments | then |
 The 30-day cadence test itself (1 carousel + 1 reel a day) is judged on 19 Nov: median sends/reach and saves/reach by format, follower growth, against Week 2's baseline (followers 3→4, reels 115–143 views).
