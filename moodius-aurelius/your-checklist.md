@@ -25,7 +25,7 @@ Daily carousel + reel · Free guide ↓
 
 **4. Competitors in Metricool (2 min, computer).** Analytics > Instagram > Competitors > Add: `stoicism.daily`, `stoicismideas`, `theeverydaystoic`, `dailystoic`, `pathsofstoicism`.
 
-**5. Metricool clean-up (5 min, only if Claude asks).** If the Metricool connector can't delete the 11 old Week 3 posts being replaced, Claude will list them and you delete them in Planning.
+**5. Metricool clean-up:** not needed. The 11 replaced Week 3 posts are set to draft, and drafts never publish. Delete them in Planning only if they bother you.
 
 **6. Later, at about 100 followers:** create the broadcast channel "The Journal" (Inbox > pencil icon > Create broadcast channel), then post the "Join The Journal" story with the channel link sticker.
 
