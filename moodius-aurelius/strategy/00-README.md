@@ -1,20 +1,22 @@
-# Moodius Aurelius: strategy pack (20 Oct 2026)
+# Moodius Aurelius strategy (Phase 1 plan, approved 20 Oct 2026)
 
-| File | Deliverable |
+**Source of truth:** `phase1-summary-source.md`, the Phase 1 Summary Surafel approved on 20 Oct ("go ahead and do exactly as said"). Everything in this folder implements it. The earlier pack is in `archive-v1/` for reference only.
+
+**Positioning:** Stoicism for people who feel things. Modern Stoic practice explained through psychology: how to regulate, decide and act when emotions are loud.
+
+| File | What it is |
 |---|---|
-| 01-brand-audit.md | Brand audit, scorecard, 4 conflicts with recommendations, new bio |
-| 02-competitor-intelligence.md | 26 accounts with dated sources, platform benchmarks, verified vs assumed |
-| 03-format-library.md | 10 reusable formats (F1–F10) with structures and the metric that judges each |
-| 04-first-five-posts.md + first-five/ | 5 original posts, rendered: 2 reels, 2 carousels, 1 meme, with captions and first comments |
-| 05-canva-template-specs.md | Brand kit tokens + 11 templates (T1–T11), resize table, QA checklist |
-| 06-30-day-calendar.md + calendar-days-8-30.csv | 19 Oct – 17 Nov schedule; Week 3 as days 1–7 |
-| 07-automation-architecture.md | Pipeline, QC gate, lean (≈€20/mo) vs recommended (≈€45–75/mo) vs scale stacks |
-| 08-testing-dashboard.md + post-log.csv + experiments.csv | Metrics, 7 experiments, decision rules, Sheets layout |
-| 09-scaling-roadmap.md | Phases 0–4 with gates, brand config, niche shortlist, phone-farm verdict |
-| 10-reconciliation-with-phase1-summary.md | Agreements and 7 conflicts with the uploaded Phase 1 Summary, with a recommendation on each |
+| 01-brand-audit.md | Verdicts: name, pillars, highlights, visual identity, cadence, the two day-one rules, bio |
+| 02-competitor-intelligence.md | Competitor tiers and verified research |
+| 03-format-library.md | F1–F10 with structure and the metric that judges each |
+| 04-first-five-posts.md + phase1-first-five/ | The five Phase 1 posts, rendered, with captions |
+| 05-design-system.md + highlight-covers/ | Palette, type, grid, the six components, 7 highlight covers |
+| 06-30-day-calendar.md + calendar-30-day-tracker.csv | 21 Oct – 19 Nov, 1 carousel + 1 reel a day (also a Google Sheet in Drive > Moodius Aurelius) |
+| 07-automation-architecture.md | Stack, pipeline, costs |
+| 08-testing-dashboard.md + post-log.csv + experiments.csv | One experiment at a time, 10+ posts per variant |
+| 09-scaling-roadmap.md | 1 → 10–20 brands, gated on thresholds |
+| 11-community.md | Community layer: replies, DMs, stories, email list, broadcast channel |
+| schedule-21-25-oct.json | The switch-over schedule for this week |
+| ../your-checklist.md | **Everything you do by hand, in one place** |
 
-## Decisions and actions waiting on Surafel
-1. The conflicts with the Phase 1 Summary (positioning, cadence, highlights, visual system, first five). See file 10. This replaces the earlier highlights card.
-2. Host the lead magnet and put the link in bio.
-3. Add 5 competitors in Metricool.
-4. Weekly routine prompt change (07, "Change the weekly routine needs").
+Every file ends with **Claude does (automatic)** and **You do (by hand)**.

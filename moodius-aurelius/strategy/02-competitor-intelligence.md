@@ -1,5 +1,23 @@
 # 2. Competitor intelligence (20 Oct 2026)
 
+## Competitor tiers (Phase 1 Summary)
+| Tier | Examples | Lesson |
+|---|---|---|
+| Author networks | Daily Stoic (3.5M), Daily Philosopher, Daily Dad | Daily cadence, one idea per post, one source piece repurposed everywhere. Proof that one operating model runs several brands. |
+| Product-led anonymous brands | Stoic Reflections (1M), Stoicismideas (200K+) | Monetise without a face via a shop or programme. **The model to copy.** |
+| Quote aggregators | 174K–195K accounts | Avoid. They plateau. |
+
+## Research the Phase 1 plan rests on
+- Instagram's top ranking signals: watch time, likes per reach, sends per reach; sends matter most for reaching non-followers.
+- Carousels have the highest engagement rate of any format and drive the most saves; single images are weakest.
+- The cover slide carries most carousel engagement; a swipe cue helps.
+- Short, loopable reels are rewarded because replays count toward watch time.
+Figures quoted in the Phase 1 Summary without a source attached (carousel ER 0.55%, ~80% of carousel engagement from the cover, Everyday Stoic audience over 75% female) are kept as stated there; the dated, sourced figures below back the same direction.
+
+---
+
+## Supporting detail (accounts and benchmarks with sources)
+
 **How this was gathered.** Instagram and TikTok block automated reading of profiles here (robots.txt plus a proxy 403), so nothing was scraped. Numbers come from public third-party trackers and published studies, each dated. Anything without a source is marked as an assumption. Live per-post data only becomes possible once competitors are added in Metricool (it tracks Instagram, Facebook and YouTube competitors, not TikTok or Pinterest).
 
 ## A. Accounts (26)
@@ -77,3 +95,9 @@ Adjacent faceless philosophy/psychology channels (source labels these figures **
 - That 7–10 slide carousels beat 5 slides now (2020 data). Tested in experiment E4.
 - That trending audio lifts reach for text reels. Untested here.
 - Anything about TikTok or Pinterest performance in this niche.
+
+## Claude does (automatic)
+- Reads competitor metrics in Metricool every Friday once they're added, and logs the top 10 posts' structure (never copying wording or artwork).
+
+## You do (by hand)
+- Add competitors in Metricool (Analytics > Instagram > Competitors): dailystoic, stoicismideas, theeverydaystoic, stoicism.daily, and Stoic Reflections (search its name; I could not confirm its handle).

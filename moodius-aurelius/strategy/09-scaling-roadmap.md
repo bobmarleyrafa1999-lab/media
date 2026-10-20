@@ -1,18 +1,20 @@
 # 9. Scaling roadmap: from one brand to 10–20
 
-Rule: a phase starts only when the previous gate is met. Dates are targets, not promises.
+Rule (Phase 1 Summary): **gated on Moodius thresholds, not dates.** A phase starts only when the previous gate is met; dates below are rough expectations only.
 
-## Phase 0 · Make Moodius work (now – mid-Dec 2026)
-**Do:** run the 30-day calendar and experiments, host the lead magnet, build `qc.py` and the post log.
+## Phase 0 · Make Moodius work (from 21 Oct 2026)
+**Do:** run the 30-day calendar (1 carousel + 1 reel a day), experiments X1–X4, the community layer (11), the free guide and email list.
 **Gate to Phase 1 (all of them):**
 | Gate | Target | Baseline |
 |---|---|---|
 | Publishing reliability | ≥ 95% of planned posts live, 4 weeks in a row | Week 2 lost Thu–Sun to the cap |
 | QC | ≥ 95% pass first time | not measured |
 | Reach | median reel views ≥ 400 (3× baseline) for 3 weeks | ~130 |
+| Sends and saves | median sends/reach and saves/reach on carousels both up on the first 10 carousels | measured from 21 Oct |
 | Hold | median 3s hold ≥ 40% | ≈ 41% on F1, 25% on lists |
 | Learning | ≥ 1 experiment called "winner", ≥ 3 "directional" | 0 |
 | Funnel | email capture live, ≥ 50 subscribers | not live |
+| Community | ≥ 20 comments or story replies a week answered by you | not measured |
 | Your time | ≤ 20 min/day | ~15 |
 
 ## Phase 1 · Productise the engine (Dec 2026 – Jan 2027)
@@ -21,18 +23,21 @@ Rule: a phase starts only when the previous gate is met. Dates are targets, not 
 # brands/moodius/brand.yaml
 slug: moodius
 handle: "@moodiusaurelius"
-audience: "young men 18-30"
-mission: "purpose, meaning in suffering, amor fati, virtue, beauty"
-voice: "first-person older brother, short sentences, no clichés"
+positioning: "Stoicism for people who feel things"
+promise: "Regulate, decide and act when emotions are loud"
+voice: "calm, direct, warm; short sentences; names the feeling, then the move"
 sources: [Marcus Aurelius, Seneca, Epictetus, Plato, Aristotle, Frankl]
-palette: {bg: "#1B1D1F", text: "#EDE6D6", accent: "#C9A86A", muted: "#A0988A"}
-fonts: {display: "Cormorant Garamond", ui: "Inter"}
-formats: {F1: 0.35, F2: 0.12, F6: 0.15, F7: 0.05, F3: 0.05, F4: 0.05, F8: 0.05, F5: 0.05, F9: 0.05}  # share of feed
-slots: ["12:00", "15:00", "18:00"]
+citation_rule: "author, book, section, public-domain translation; else 'Moodius paraphrase'"
+banned_visuals: [statues, gold, marble, gradients]
+palette: {slate: "#1B1F24", graphite: "#2A2F36", charcoal: "#3A4049", bone: "#F3EFE7", ash: "#B8B3A9", ember: "#C9742E"}
+fonts: {display: "Playfair Display", quote: "Playfair Display Italic", ui: "Inter"}
+cadence: {carousel: "12:00", reel: "18:00", stories: ["09:00", "21:00"]}
+carousel_rotation: {Mon: F1, Tue: F3, Wed: F2, Thu: F8, Fri: F10, Sat: F9, Sun: F7}
+primary_metrics: [sends_per_reach, saves_per_reach]
 timezone: Europe/Madrid
 metricool_brand_id: 7224060
-highlights: [Manifesto, Purpose, Suffering, Amor fati, Virtue, Utilities, Feel Logs]
-banned: ["studies show", "science proves"]
+highlights: [Manifesto, Daily, Tools, Discipline, Truths, Journal, Identity]
+banned_phrases: ["studies show", "science proves"]
 ```
 - **Repo layout:** `engine/` (renderers, qc, scheduler, analytics) shared; `brands/<slug>/` (config, quote/claim bank, weekly manifests).
 - **One weekly routine per brand,** same prompt template filled from `brand.yaml`.
@@ -46,7 +51,7 @@ Pick niches that reuse the research → script → text/voice reel → carousel 
 |---|---|---|---|---|
 | Ancient history stories ("Histoics" style) | High: same sources, F7 story reels, YouTube long-form | YouTube RPM (historical sample $8–15), books, affiliates | Needs voice | **Brand 2 candidate** |
 | Psychology of everyday behaviour | High: F4 evidence carousels | Courses, journals, apps | Health-claim discipline; overlaps Moodius audience | Brand 3 candidate |
-| Stoic money / financial literacy for young men | Medium | Highest affiliate value | Financial-promotion rules (EU/UK): education only, no product picks | Brand 3 candidate, with legal check |
+| Stoic money / financial literacy | Medium | Highest affiliate value | Financial-promotion rules (EU/UK): education only, no product picks | Brand 3 candidate, with legal check |
 | Productivity / deep work | Medium | Templates, apps | Crowded | Later |
 | Philosophy beyond the Stoics (existentialism) | High | Same as Moodius | 20th-century texts in copyright: short quotes only | Later |
 | Fitness / discipline | Low (needs footage) | Strong | Health claims, needs bodies on camera | Not faceless-friendly |
@@ -81,3 +86,11 @@ Pick niches that reuse the research → script → text/voice reel → carousel 
 3. Original content only. No reposted clips (not recommended by Instagram since 30 Apr 2026).
 4. Quotes verified; claims cited; AI-generated media labelled where platforms require it.
 5. No bought followers, engagement pods or giveaways for follows.
+
+## Claude does (automatic)
+- Tracks every Phase 0 gate in the Friday report and says when one is met.
+- When a gate is met: writes `brand.yaml`, splits the tools into `engine/` + `brands/`, drafts the next niche's positioning, format library and first 30 days for your yes or no.
+
+## You do (by hand)
+- Say yes or no before each new brand starts (each one means a new account, and possibly spend).
+- Create the new Instagram account and connect it to Metricool. Claude can't create accounts, and shouldn't.

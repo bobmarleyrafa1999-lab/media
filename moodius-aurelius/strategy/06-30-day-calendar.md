@@ -1,55 +1,66 @@
-# 6. 30-day content calendar (19 Oct – 17 Nov 2026)
+# 6. 30-day calendar (Wed 21 Oct – Thu 19 Nov 2026)
 
-All times Europe/Madrid. **Summer time ends Sun 25 Oct**: +02:00 before, +01:00 from then on. Every day: 3 feed posts + 2 stories = 150 publishes in 30 days (fine on Metricool Starter; Instagram's API allows 100 a day).
+**Tracker:** Google Sheet "Moodius 30-day tracker (21 Oct – 19 Nov 2026)": https://docs.google.com/spreadsheets/d/1dgPiqvy-FzB-8dMPzjQMwAdmnAdBKPTZfJcUu6dXXpM/edit (source: `calendar-30-day-tracker.csv`, 120 rows, metric columns included).
 
-## Days 1–7 (19–25 Oct): Week 3, already built and being scheduled
-19 reels, 1 meme (Tue 15:00), 1 carousel (Sun 18:00), 14 stories, on slots 12:00 / 15:00 / 18:00 (Fri 17:00), stories 09:00 / 21:00. Source: `week3/posts.json`. Mon 19 Oct (3 reels, 2 stories) and Tue 09:00 were missed before the upgrade; the best of them roll into Week 4 slots marked "bank". Its results become the first data for the experiments in `08-testing-dashboard.md`.
+All times Europe/Madrid. Summer time ends Sun 25 Oct: +02:00 before, +01:00 from then on.
 
-## Days 8–30: the weekly shape
-| | 12:00 | 15:00 | 18:00 (Fri 17:00) |
+## Daily shape (Phase 1 cadence: 1 carousel + 1 reel a day)
+| Time | What | Notes |
+|---|---|---|
+| 09:00 | Daily story | One line from the day's source, labelled with its highlight (Daily, Discipline, Truths, Identity…) |
+| 12:00 | Carousel | Format rotation below |
+| 18:00 (Fri 17:00) | Reel | F5 text-led; F6 on Wed and Sat (text-only until a voice is approved) |
+| 21:00 | Journal story | One question, ending "Reply to this story". Replies arrive as DMs, no sticker needed (community, see 11) |
+
+**Carousel rotation:** Mon F1 Reframe · Tue F3 Mechanism · Wed F2 Ancient line · Thu F8 Two-column · Fri F10 Myth vs text · Sat F9 Journal prompts · Sun F7 Protocol.
+
+## Days 1–5 (ready)
+| Day | Date | 12:00 carousel | 18:00 reel |
 |---|---|---|---|
-| Mon | F1 reel | F6 reel | F1 reel |
-| Tue | F1 reel | **F3 carousel** | F2 reel |
-| Wed | F1 reel | **F5 meme** | F6 reel |
-| Thu | F2 reel | **F4 carousel** | F1 reel |
-| Fri | F6 reel | F1 reel | F7 story reel |
-| Sat | F1 reel | **F9 Quiet Truth** | F2 reel |
-| Sun | F6 reel | F1 reel | **F8 carousel** |
+| 1 | Wed 21 | P1 "You don't have a discipline problem. You have a self-trust problem." | P5 "Three signs you are regulating, not suppressing" |
+| 2 | Thu 22 | P2 "When someone is rude to you today…" | Week 3 reel re-rendered (reel-32) |
+| 3 | Fri 23 | P3 "Why you replay the argument at 2am" | reel-35 (17:00) |
+| 4 | Sat 24 | P4 "The 5-minute evening review" | reel-38 |
+| 5 | Sun 25 | Week 3 carousel re-rendered | reel-40 |
 
-Per week: 16 reels, 3 carousels, 1 meme, 1 Quiet Truth. Change from Week 3 (19 reels, 1 carousel): two reel slots become carousels, because carousels lead on saves (Socialinsider 2026) and list reels held worst for us. This is experiment E2. If carousels lose on reach-per-post after 3 weeks, those slots go back to reels.
+## Days 6–30 (themes and sources; Claude builds each week on Friday)
+| Day | Date | Carousel | Source |
+|---|---|---|---|
+| 6 | Mon 26 Oct | You're not lazy. You're avoiding a feeling. | Meditations 2.4 |
+| 7 | Tue 27 | How to stop rehearsing disasters that never come | Meditations 7.8 |
+| 8 | Wed 28 | Do less, better: the Stoic answer to burnout | Meditations 4.24 |
+| 9 | Thu 29 | Why one comment ruins your whole day | Enchiridion 20 |
+| 10 | Fri 30 | Who you let close becomes who you are | Nicomachean Ethics IX.4 |
+| 11 | Sat 31 | Stop explaining your philosophy. Show it. | Enchiridion 46 |
+| 12 | Sun 1 Nov | The two horses pulling your mind | Phaedrus 246a–254e |
+| 13 | Mon 2 | Regulating vs suppressing grief | Letters 63.1 |
+| 14 | Tue 3 | Why comparison feels like information (and isn't) | Meditations 4.18 |
+| 15 | Wed 4 | Forgiving isn't excusing | Meditations 7.22 |
+| 16 | Thu 5 | You broke the streak. Here's what Marcus did next. | Meditations 5.9 |
+| 17 | Fri 6 | Where your hours actually go | Letters 1.2 |
+| 18 | Sat 7 | Trust slowly, then fully | Letters 3.2 |
+| 19 | Sun 8 | If-then plans: the Stoic version | Enchiridion 4 |
+| 20 | Mon 9 | Everywhere means nowhere: one-thing focus | Letters 2.2 |
+| 21 | Tue 10 | Practise the thing you fear losing | Letters 18.5 |
+| 22 | Wed 11 | Premeditation: preparing without spiralling | Letters 91 |
+| 23 | Thu 12 | The view from above, in 4 steps | Meditations 9.30 |
+| 24 | Fri 13 | Know your price: boundaries the Stoic way | Discourses 1.2 |
+| 25 | Sat 14 | Why you care what strangers think | Meditations 3.4 |
+| 26 | Sun 15 | Stop debating what a good person is | Meditations 10.16 |
+| 27 | Mon 16 | 5 signs you're actually growing | Enchiridion 48 |
+| 28 | Tue 17 | Notice the good in the people near you | Meditations 6.48 |
+| 29 | Wed 18 | Courage sits between two failures | Nicomachean Ethics II.6 |
+| 30 | Thu 19 | When you can't change it: the Frankl move | Frankl, Man's Search for Meaning (short quote, in copyright) |
 
-Stories: 09:00 **Daily Stoic** (highlight rotates daily), 21:00 **Feel Log** prompt (highlight: Feel Logs). Highlight names assume the hybrid set; if you keep the live six, Manifesto → Start, Utilities → Virtue, Feel Logs → Suffering.
+Each day's reel takes the same theme in 12–20 seconds. The Sheet has the exact hook, format, highlight and status per row.
 
-## Accuracy rule for every slot marked "bank"
-The weekly routine picks a line from the verified bank below, or adds a new one only when it can (1) find it in a public-domain translation (Long, Gummere, Higginson, Basore, Ross, Jowett) on Wikisource, Perseus or Gutenberg, (2) record book + section, and (3) confirm it's not in any earlier manifest. If it can't verify a line, it paraphrases and labels it "(paraphrase)".
+## Claude does (automatic)
+- Every Friday: writes and renders next week's 7 carousels, 7 reels and 14 stories from these rows, runs QC, schedules them in Metricool, and marks rows "scheduled".
+- Fills metric columns from Metricool and reports sends/reach and saves/reach.
+- Writes the 21:00 Journal question for each day (see 11-community.md).
 
-**Verified, unused as of 20 Oct:** Marcus 2.4 (how long you've put this off) · 2.14 (the present is all you can lose) · 4.24 (occupy yourself with few things) · 7.8 (the future, met with the same reason) · Seneca Letters 98.8 ("He who suffers before it is necessary, suffers more than is necessary") · Epictetus Discourses 1.2 (don't sell your will cheap) · Enchiridion 17 (actor in a play) · 29 (consider what comes before and after) · 30 (duties are measured by relations) · 48 (signs of progress) · Aristotle Politics I.2 (man is by nature a political animal) · Nicomachean Ethics II.6 (virtue is a mean between two vices) · Plato Republic VII 514a (the cave) · Frankl ("When we are no longer able to change a situation, we are challenged to change ourselves").
-
-## Day by day (feed slots, then story theme · Feel Log prompt)
-Week 4 is fully specified with sources. Weeks 5–6 give hook + format; the routine writes the rest from the bank. The full slot list with story rows is in `calendar-days-8-30.csv` (115 rows, Metricool-ready columns).
-
-| Day | Date | 12:00 | 15:00 | 18:00 / Fri 17:00 | Stories |
-|---|---|---|---|---|---|
-| 8 | Mon 26 Oct | **12:00 F1** You're 25 and still waiting for your life to start. <br><sub>Purpose & solitude · Seneca, Letters 1.2: "Hold every hour in your grasp."</sub> | **15:00 F6** You quit every habit on day 4. Do this instead. <br><sub>Discipline & habits · Marcus, Meditations 5.9 (return after you slip)</sub> | **18:00 F1** POST 1 · You don't need another podcast about being a better man. <br><sub>Discipline & habits · Meditations 10.16 · strategy/first-five/reel-41-be-one.mp4</sub> | Manifesto · What did you avoid today, and why? |
-| 9 | Tue 27 Oct | **12:00 F1** Someone insulted you and you replayed it all night. <br><sub>Fortitude & emotion · Epictetus, Enchiridion 20</sub> | **15:00 F3** POST 3 · 5 ancient lines on who to let close. <br><sub>Relationships · carousel-15..21</sub> | **18:00 F2** Getting even isn't strength. Socrates said so before he died. <br><sub>Relationships · Plato, Crito 49b-c</sub> | Purpose · Who did you judge today? What did it say about you? |
-| 10 | Wed 28 Oct | **12:00 F1** You want credit for every good thing you do. <br><sub>Purpose & solitude · Marcus, Meditations 5.6 (the vine bears grapes)</sub> | **15:00 F5** POST 5 · Me: *posts one story* <br><sub>Relationships · Meditations 3.4 · meme-story-views.jpg</sub> | **18:00 F6** Head won't switch off at night? Do this. <br><sub>Self-awareness & journaling · Marcus, Meditations 8.36</sub> | Suffering · What would you do tomorrow if nobody could see it? |
-| 11 | Thu 29 Oct | **12:00 F2** POST 2 · Real men don't cry? The Stoics disagree. <br><sub>Fortitude & emotion · Seneca, Letters 63.1 · reel-42-weep.mp4</sub> | **15:00 F4** POST 4 · 3 Stoic habits psychology tested 2,000 years later. <br><sub>Psychology & identity · carousel-22..27</sub> | **18:00 F1** You talk about your goals more than you work on them. <br><sub>Discipline & habits · Epictetus, Enchiridion 46</sub> | Virtue · What hurt today? Is it endurable? |
-| 12 | Fri 30 Oct | **12:00 F6** Bad news coming? Rehearse it first. <br><sub>Fortitude & emotion · Seneca, Letters 91 (premeditation)</sub> | **15:00 F1** The people who hurt you were fighting their own war. <br><sub>Relationships · Marcus, Meditations 7.22</sub> | **17:00 F7** In 41 AD, Seneca lost everything. <br><sub>Fortitude & emotion · Seneca's exile to Corsica; Consolation to Helvia</sub> | Amor fati · Name one thing you were given today that you didn't earn. |
-| 13 | Sat 31 Oct | **12:00 F1** You're not lazy. You're scared of finding out where you stand. <br><sub>Psychology & identity · Epictetus, Discourses 2.11 (awareness of weakness)</sub> | **15:00 F9** QUIET TRUTH · Nobody remembers your excuses. <br><sub>Purpose & solitude · Marcus, Meditations 4.32 (Vespasian's world, all gone)</sub> | **18:00 F2** Discipline means misery? Seneca chose hardship to lose his fear. <br><sub>Discipline & habits · Seneca, Letters 18.5-7</sub> | Utilities · Where did you lose your temper, even inside? |
-| 14 | Sun 01 Nov | **12:00 F6** Do this every Sunday night. <br><sub>Self-awareness & journaling · Marcus, Meditations 9.30 (view from above)</sub> | **15:00 F1** Stop asking what life owes you. <br><sub>Purpose & solitude · Frankl, Man's Search for Meaning (what life expects from us)</sub> | **18:00 F8** The two horses pulling your mind. <br><sub>Psychology & identity · Plato, Phaedrus 246a-254e (charioteer)</sub> | Feel Logs · What's one thing you'd tell your 15-year-old self tonight? |
-| 15 | Mon 02 Nov | **12:00 F1** You want the result without the boring part. <br><sub>Discipline & habits · Ench 29</sub> | **15:00 F6** Angry text half-typed? Do this first. <br><sub>Fortitude & emotion · Seneca, On Anger (paraphrase: delay)</sub> | **18:00 F1** You keep choosing people who don't choose you. <br><sub>Relationships · NE VIII.3 (paraphrase)</sub> | Manifesto · What are you pretending not to know? |
-| 16 | Tue 03 Nov | **12:00 F1** Fear isn't the problem. What you do with it is. <br><sub>Fortitude & emotion · NE III.7 (paraphrase)</sub> | **15:00 F3** 5 ancient lines for nights your head won't shut up. <br><sub>Self-awareness & journaling · 5 from bank</sub> | **18:00 F2** Being alone means something's wrong with you? Seneca disagrees. <br><sub>Purpose & solitude · Seneca, On Tranquillity of Mind 17 (paraphrase)</sub> | Purpose · Who do you miss? Text them. |
-| 17 | Wed 04 Nov | **12:00 F1** You don't hate yourself. You hate the gap. <br><sub>Psychology & identity · Ench 48</sub> | **15:00 F5** Me: *buys gym membership* / *goes twice* <br><sub>Discipline & habits · Marcus 2.4</sub> | **18:00 F6** Procrastinating? Ask this one question. <br><sub>Discipline & habits · Ench 29 / bank</sub> | Suffering · What did you do today that you're proud of, quietly? |
-| 18 | Thu 05 Nov | **12:00 F2** Overthinking isn't intelligence. <br><sub>Psychology & identity · Seneca, Letters 98.8</sub> | **15:00 F4** Stoic tools ↔ psychology: anger edition. <br><sub>Psychology & identity · affect labelling (Lieberman 2007) + bank</sub> | **18:00 F1** Your integrity has a price. Don't sell it cheap. <br><sub>Discipline & habits · Epictetus, Discourses 1.2</sub> | Virtue · What did fear decide for you this week? |
-| 19 | Fri 06 Nov | **12:00 F6** Your dad, your brother, your boss: what you owe each. <br><sub>Relationships · Ench 30</sub> | **15:00 F1** Stop rehearsing disasters that never come. <br><sub>Fortitude & emotion · Marcus 7.8</sub> | **17:00 F7** 399 BC. Socrates could have run. He stayed. <br><sub>Purpose & solitude · Plato, Apology / Crito (story)</sub> | Amor fati · What's one opinion you hold that isn't yours? |
-| 20 | Sat 07 Nov | **12:00 F1** Being liked by everyone means standing for nothing. <br><sub>Relationships · Politics I.2 / bank</sub> | **15:00 F9** QUIET TRUTH · You are allowed to start again tonight. <br><sub>Fortitude & emotion · bank</sub> | **18:00 F2** Motivation isn't the start. It's the reward. <br><sub>Discipline & habits ·bank</sub> | Utilities · What did your body need today that you ignored? |
-| 21 | Sun 08 Nov | **12:00 F6** Feeling too much? Name it in one word. <br><sub>Self-awareness & journaling · affect labelling + bank</sub> | **15:00 F1** You have time. You're spending it on other people's lives. <br><sub>Purpose & solitude · Marcus 2.14</sub> | **18:00 F8** Aristotle's map: cowardice / courage / recklessness. <br><sub>Discipline & habits · NE II.6 (the mean)</sub> | Feel Logs · Who made you better this week? |
-| 22 | Mon 09 Nov | **12:00 F1** You're comparing chapter 1 to someone's chapter 20. <br><sub>Purpose & solitude · bank</sub> | **15:00 F6** Phone first thing in the morning? Swap it for this. <br><sub>Discipline & habits · Marcus 4.24 (few things)</sub> | **18:00 F1** Loyalty to the wrong people is self-betrayal. <br><sub>Relationships · bank</sub> | Manifesto · What would 'enough' look like for you? |
-| 23 | Tue 10 Nov | **12:00 F1** The worst day of your life is also training. <br><sub>Fortitude & emotion · bank</sub> | **15:00 F3** 5 ancient lines on discipline that aren't 'just grind'. <br><sub>Discipline & habits · 5 from bank</sub> | **18:00 F2** Stoics are cold? Marcus thanked 17 people by name. <br><sub>Relationships · Marcus, Meditations Book 1 (gratitude list)</sub> | Purpose · Where did you choose comfort over growth today? |
-| 24 | Wed 11 Nov | **12:00 F1** Your personality isn't your trauma. <br><sub>Psychology & identity · Frankl: 'When we are no longer able to change a situation…'</sub> | **15:00 F5** Me: *gets left on read* / *drafts 4 replies* <br><sub>Fortitude & emotion · bank</sub> | **18:00 F6** A 3-question evening review. <br><sub>Self-awareness & journaling · Seneca, On Anger 3.36 (repeat practice, new wording)</sub> | Suffering · What are you grateful you lost? |
-| 25 | Thu 12 Nov | **12:00 F2** Cold showers won't make you disciplined. <br><sub>Discipline & habits · bank</sub> | **15:00 F4** Delayed gratification: what the marshmallow study really found. <br><sub>Discipline & habits · Mischel; Watts et al. 2018 replication</sub> | **18:00 F1** You don't need more freedom. You need a direction. <br><sub>Purpose & solitude · bank</sub> | Virtue · What story did you tell yourself today? Was it true? |
-| 26 | Fri 13 Nov | **12:00 F6** Before you cut someone off, ask this. <br><sub>Relationships · bank</sub> | **15:00 F1** You can't control the wave. You can control the stance. <br><sub>Fortitude & emotion · bank</sub> | **17:00 F7** Marcus ruled through a plague that killed millions. <br><sub>Fortitude & emotion · Antonine plague, 165-180 AD</sub> | Amor fati · What would the best version of you have skipped today? |
-| 27 | Sat 14 Nov | **12:00 F1** You're not tired. You're undisciplined with your attention. <br><sub>Discipline & habits · bank</sub> | **15:00 F9** QUIET TRUTH · The right people won't need convincing. <br><sub>Relationships · bank</sub> | **18:00 F2** Ambition isn't greed. <br><sub>Purpose & solitude · bank</sub> | Utilities · What did you learn from someone you dislike? |
-| 28 | Sun 15 Nov | **12:00 F6** Lost? Write your own epitaph tonight. <br><sub>Purpose & solitude · bank</sub> | **15:00 F1** Marcus wrote this to himself, not to you. That's why it works. <br><sub>Stoicism · bank</sub> | **18:00 F8** Plato's cave in 6 slides: your feed is the wall. <br><sub>Psychology & identity · Plato, Republic VII 514a-520a</sub> | Feel Logs · What's the one thing for tomorrow? |
-| 29 | Mon 16 Nov | **12:00 F1** New week. Same you, or a better one? <br><sub>Purpose & solitude · bank</sub> | **15:00 F6** One rule for this week. <br><sub>Discipline & habits · bank</sub> | **18:00 F1** The thing you're avoiding is the thing. <br><sub>Fortitude & emotion · bank</sub> | Manifesto · What did you say yes to that you meant no? |
-| 30 | Tue 17 Nov | **12:00 F1** You can't fix someone by suffering next to them. <br><sub>Relationships · bank</sub> | **15:00 F3** 5 ancient lines on purpose. <br><sub>Purpose & solitude · 5 from bank</sub> | **18:00 F2** Introverts aren't broken. <br><sub>Psychology & identity · bank</sub> | Purpose · What would you do if you trusted yourself? |
+## You do (by hand)
+- Twice a week (Tue and Sat), post one sticker story by hand from Claude's draft: a poll or question box. Scheduled stories can't carry interactive stickers, so this is the only way to get them (2 min).
+- Answer story replies in DMs (see 11-community.md).
+- Add each day's stories to the right highlight (label is printed on the story).
+- On 19 Nov: read the 30-day review and say yes or no to the next 30 days.
