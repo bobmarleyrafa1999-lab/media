@@ -11,7 +11,7 @@
 | 4 Gate | `python3 tools/engine.py check scripts/batch-NN.json` | Claude | none (code) |
 | 5 Render | `python3 tools/engine.py render scripts/batch-NN.json` (unchanged scripts are skipped by the cache) | Claude | none |
 | 6 Sheet | `python3 tools/export_md.py …` makes the readable script sheet | Claude | none |
-| 7 Schedule | MP4 + caption + first comment scheduled in Metricool (IG; plus TikTok and YouTube once connected) | Claude | none |
+| 7 Schedule | MP4 + caption + first comment handed to the account thread, which schedules in Metricool (Instagram) | Claude | none |
 | 8 Spot-check | Watch 2 of the 7 on your phone; reply to comments | **Surafel** | none |
 
 ## Why it's cheap on tokens
@@ -68,7 +68,7 @@ python3 tools/export_md.py scripts/batch-01.json 05-scripts-batch-01.md
 |---|---|
 | Research from public pages, write, gate, render, schedule on Instagram via Metricool | **Can do now** (connected tools) |
 | Read competitors' per-reel numbers | **Needs Surafel:** add 5 competitors in Metricool (Analytics > Instagram > Competitors), 2 min |
-| Post to TikTok and YouTube Shorts automatically | **Needs Surafel:** connect TikTok and YouTube to the Metricool brand (Settings > Connections). TikTok may ask for in-app confirmation |
+| Post to TikTok and YouTube Shorts automatically | **Outside Phase 1** until the 19 Nov review; then Surafel connects them in Metricool (Settings > Connections) |
 | Retention curve and skip rate per reel | **Partly blocked:** Metricool gives 3s views and watch time; the full curve is only in the Instagram app (Surafel reads it weekly, 2 min) |
 | Footage look (V2) | **Needs Surafel:** 8 phone clips, about 20 min once (spec in `footage/README.md`) |
 | Licensed stock footage | **Needs Surafel** to download from Pexels/Pixabay (free licence); this machine can't reach those sites |

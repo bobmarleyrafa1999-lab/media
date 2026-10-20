@@ -23,16 +23,15 @@ Research → winning patterns → original scripts → rendered reels → tests 
 - `../tools/score.py` still works as an alternative music engine.
 
 ## Who does what
-**Claude, automatically with today's tools:** public-web research, writing, quote verification, quality gate, rendering, Metricool scheduling (Instagram), weekly metrics pull, test bookkeeping, next batch.
+**Claude, automatically with today's tools:** public-web research, writing, quote verification, quality gate, rendering, hand-off to the account thread for Metricool scheduling (Instagram), weekly metrics pull, test bookkeeping, next batch.
 
 **Surafel, by hand:**
-1. Connect TikTok and YouTube in Metricool so reels cross-post (5 min, once).
-2. Add 5 competitors in Metricool (2 min, once).
-3. Optional: shoot 8 footage clips (`footage/README.md`, 20 min, once).
-4. Comment replies (10 min a day) and adding stories to highlights.
-5. Weekly: copy skip rate from the Instagram app into the log if you want the hook test to use it (2 min).
+1. Add 5 competitors in Metricool (2 min, once).
+2. Optional: shoot 8 footage clips (`footage/README.md`, 20 min, once).
+3. Comment replies (10 min a day) and adding stories to highlights.
+4. Weekly: copy skip rate from the Instagram app into the log if you want the hook test to use it (2 min).
 
-**Needs extra software or permission (not used now):** paid voice (ElevenLabs) for narrated reels; licensed stock footage downloads (this machine can't reach Pexels/Pixabay); Instagram's full retention curve (app only).
+**Outside Phase 1 until the 19 Nov review:** TikTok/YouTube cross-posting, a second daily reel. **Needs extra software or permission (not used now):** paid voice (ElevenLabs) for narrated reels; licensed stock footage downloads (this machine can't reach Pexels/Pixabay); Instagram's full retention curve (app only).
 
 ## Not verified
 Competitor per-reel hooks, retention and saves (Instagram blocks reading). Pascal's line was matched on two secondary sources; check Gutenberg #18269 once before R007 posts.

@@ -1,5 +1,5 @@
 id,question,arm_a,arm_b,primary_metric,start,status,pairs_run,pairs_won_a,pairs_won_b,median_a,median_b,call,next_action
-T1,Situation hook vs curiosity hook,hook,hook_b,hold_3s_pct,2026-10-26,planned (launch week),0,0,0,,,none,alternate A/B daily from 26 Oct
+T1,Situation hook vs curiosity hook,hook,hook_b,hold_3s_pct,,queued as X5 after X1 (~15 Nov),0,0,0,,,none,B files ready in renders/
 T2,Length,15-20s,30-40s,views_72h then watch_pct,,queued,0,0,0,,,none,write long_cards in batch-02
 T3,Philosophical vs conversational,quote-led R2,no-quote R1,sends_per_reach,,queued,0,0,0,,,none,
 T4,Text placement,upper,centre,hold_3s_pct,,queued,0,0,0,,,none,

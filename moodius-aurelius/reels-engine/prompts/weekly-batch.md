@@ -7,10 +7,10 @@ You are writing next week's reels for @moodiusaurelius ("Stoicism for people who
 
 Then:
 - Apply `07-testing.md`: update test pair counts, make a call only by its rules, set this week's arms.
-- Write 7 scripts into `scripts/batch-NN.json` using the same schema: 2 Feel Logs, 1 each of the other pillars, 1 rotating; at most 2 R4 humour. Each has `hook`, `hook_b`, cards, visual, footage tag or null, audio, source, caption (60–120 words, ends with a question, signed "— Moodius"), first comment, ≤ 5 hashtags.
+- Write 7 scripts into `scripts/batch-NN.json` using the same schema: 2 Journal, 1 each of the other pillars, 1 rotating; at most 2 R4 humour. Each has `hook`, `hook_b`, cards, visual, footage tag or null, audio, source, caption (60–120 words, ends with a question, signed "— Moodius"), first comment, ≤ 5 hashtags.
 - Voice: thoughtful, understated, specific, occasionally dry. Make people feel understood, not lectured. Human experience first; the male perspective is an undertone. No motivational clichés, no "alpha" language, no fake-deep lines.
 - Quotes only verbatim from public-domain translations (Long, Gummere, Trotter, Garnett, Common, Jowett, Ross), verified on Wikisource/Gutenberg/Lexundria before use; modern books only as "Idea: Author, Book (year) · Moodius words". Never invent a quote or a number.
 - Run the creative check in `06-pipeline.md`; rewrite anything that fails.
 - Run `python3 tools/engine.py check`, fix every ✗, then `render` (and `--variant b` for B-arm days), then `tools/export_md.py`.
 - Fill `used_in` in the library for every row you used.
-- Schedule in Metricool at the calendar's reel slot. Report in ≤ 8 lines: what shipped, test status, anything blocked.
+- Hand the files to the account thread, which owns Metricool scheduling, for the calendar's 18:00 reel slot (Fri 17:00). Report in ≤ 8 lines: what shipped, test status, anything blocked.

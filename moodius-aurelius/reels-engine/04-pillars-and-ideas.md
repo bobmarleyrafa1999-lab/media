@@ -1,16 +1,16 @@
 # Five pillars × 10 ideas
 
-Pillars reuse the account's existing category names. **Manifesto** and **Utilities** stay as carousel/story series, not reel pillars. Each idea points to a research-library row (`03-research-library.csv`) or an existing script (`R0xx`). Weekly mix at 7 reels: 2 Feel Logs, 1 of each other pillar, +1 rotating.
+Pillars use the live highlight names (Truths, Discipline, Journal, Identity, Daily), so a reel shared to stories goes in the matching highlight. **Manifesto** and **Tools** stay as carousel/story series, not reel pillars. Each idea points to a research-library row (`03-research-library.csv`) or an existing script (`R0xx`). Weekly mix at 7 reels: 2 Journal, 1 of each other pillar, +1 rotating.
 
 | Pillar | Covers | Default formats |
 |---|---|---|
-| **P1 Quiet Truths** | self-deception, avoidance, quiet insecurity, overthinking | R1, R3, R5 |
-| **P2 Training Room** | discipline, ADHD, procrastination, phones, burnout | R2, R1 |
-| **P3 Feel Logs** | relationships, attachment, loneliness, grief, emotional literacy | R2, R3, R4 |
-| **P4 Becoming** | identity, purpose, feeling behind, ambition, comparison | R2, R5 |
-| **P5 Daily Stoic** | a modern situation read through an old line, often dry humour | R2, R4 |
+| **P1 Truths** | self-deception, avoidance, quiet insecurity, overthinking | R1, R3, R5 |
+| **P2 Discipline** | discipline, ADHD, procrastination, phones, burnout | R2, R1 |
+| **P3 Journal** | relationships, attachment, loneliness, grief, emotional literacy | R2, R3, R4 |
+| **P4 Identity** | identity, purpose, feeling behind, ambition, comparison | R2, R5 |
+| **P5 Daily** | a modern situation read through an old line, often dry humour | R2, R4 |
 
-## P1 Quiet Truths
+## P1 Truths
 1. You rehearse the lie in the shower first. **R009** (L09)
 2. Their opinion of you is their homework. **R017** (L15)
 3. Your brain says "you're a failure" like it's breaking news. **R018** (L16)
@@ -22,7 +22,7 @@ Pillars reuse the account's existing category names. **Manifesto** and **Utiliti
 9. Would you live today again, forever? (L34)
 10. Good feels dangerous when you're used to bad. (L27)
 
-## P2 Training Room
+## P2 Discipline
 1. Try sitting alone for five minutes. No phone. **R007** (L08, L20)
 2. Scrolling isn't rest. It's being entertained while exhausted. **R020**
 3. You know exactly what to do. That's not the problem. (L44, ADHD)
@@ -34,7 +34,7 @@ Pillars reuse the account's existing category names. **Manifesto** and **Utiliti
 9. The harder you fight the anxiety, the louder it gets. (L25)
 10. Forty options and you pick none. (L30)
 
-## P3 Feel Logs
+## P3 Journal
 1. Solitude: your phone is off. Loneliness: it's on, and quiet. **R003** (L18)
 2. You want to be chosen. You don't choose anyone. **R005** (L06)
 3. Angry men are usually something else first. **R006** (L14)
@@ -46,7 +46,7 @@ Pillars reuse the account's existing category names. **Manifesto** and **Utiliti
 9. Men are starving for something nobody names. (L28)
 10. Everyone wants to be loved. Almost nobody practises it. (L29)
 
-## P4 Becoming
+## P4 Identity
 1. The first year of getting better looks embarrassing. **R004** (L04)
 2. You improved so much you don't recognise yourself. **R014** (L10)
 3. Your job is the rock. Monday is the hill. **R015** (L12)
@@ -58,7 +58,7 @@ Pillars reuse the account's existing category names. **Manifesto** and **Utiliti
 9. Dreaming the life instead of living it. (L33, White Nights)
 10. Kafka had a day job too. (L31)
 
-## P5 Daily Stoic
+## P5 Daily
 1. You'd never let a stranger decide what you're worth. **R001** (L01)
 2. Kafka wrote the most accurate book about work. **R002** (L11)
 3. People I've said "I'm fine" to: **R010** (L19)

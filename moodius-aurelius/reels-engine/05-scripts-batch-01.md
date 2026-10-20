@@ -4,32 +4,32 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 | # | Reel | Format | Pillar | Length | Source |
 |---|---|---|---|---|---|
-| R001 | You'd never let a stranger decide what you're worth. | R2 Situation → old line | Daily Stoic | 20.6s | Marcus Aurelius, Meditations 12.4 |
-| R002 | Kafka wrote the most accurate book about work. | R4 Dry humour | Daily Stoic | 18.0s | idea: Franz Kafka |
-| R003 | Solitude: your phone is off. | R1 Quiet Truth | Feel Logs | 18.6s | data: Gallup |
-| R004 | The first year of getting better looks embarrassing. | R2 Situation → old line | Becoming | 19.3s | Epictetus, Enchiridion 13 |
-| R005 | You want to be chosen. You don't choose anyone. | R2 Situation → old line | Feel Logs | 19.2s | Seneca (quoting Hecato), Moral Letters to Lucilius 9.6 |
-| R006 | Angry men are usually something else first. | R3 Myth vs the text | Feel Logs | 18.2s | idea: bell hooks |
-| R007 | Try sitting alone for five minutes. No phone. | R2 Situation → old line | Training Room | 18.2s | Blaise Pascal, Pensées 139 |
-| R008 | Nobody tells you grief comes back in the supermarket. | R2 Situation → old line | Feel Logs | 19.3s | Epictetus, Enchiridion 11 |
-| R009 | You rehearse the lie in the shower first. | R2 Situation → old line | Quiet Truths | 17.0s | Fyodor Dostoevsky, The Brothers Karamazov Book II, ch. 2 'The Old Buff |
-| R010 | People I've said 'I'm fine' to: | R4 Dry humour | Feel Logs | 16.5s | data: Lieberman, Eisenberger, Crockett et al. |
-| R011 | Me: I'll start Monday. | R4 Dry humour | Daily Stoic | 19.4s | Marcus Aurelius, Meditations 5.1 |
-| R012 | 'Stoic' doesn't mean cold. | R3 Myth vs the text | Daily Stoic | 17.2s | Marcus Aurelius, Meditations 1.9 |
-| R013 | Got hurt once, so now nobody gets in? | R2 Situation → old line | Feel Logs | 16.2s | Seneca, Moral Letters to Lucilius 3.4 |
-| R014 | You improved so much you don't recognise yourself. | R2 Situation → old line | Becoming | 17.9s | Friedrich Nietzsche, The Gay Science 270 |
-| R015 | Your job is the rock. Monday is the hill. | R5 One book, one idea | Becoming | 17.8s | idea: Albert Camus |
-| R016 | Waiting to feel purpose before you start? | R5 One book, one idea | Becoming | 17.6s | idea: Viktor Frankl |
-| R017 | Their opinion of you is their homework. | R3 Myth vs the text | Quiet Truths | 16.8s | idea: Ichiro Kishimi & Fumitake Koga |
-| R018 | Your brain says 'you're a failure' like it's breaking news. | R3 Myth vs the text | Quiet Truths | 16.6s | idea: Russ Harris |
-| R019 | You keep ruining good things right before they work. | R5 One book, one idea | Quiet Truths | 19.7s | idea: Brianna Wiest |
-| R020 | Scrolling isn't rest. It's being entertained while exhausted. | R1 Quiet Truth | Training Room | 16.0s | original: Moodius |
+| R001 | You'd never let a stranger decide what you're worth. | R2 Situation → old line | Daily | 20.6s | Marcus Aurelius, Meditations 12.4 |
+| R002 | Kafka wrote the most accurate book about work. | R4 Dry humour | Daily | 18.0s | idea: Franz Kafka |
+| R003 | Solitude: your phone is off. | R1 Quiet Truth | Journal | 18.6s | data: Gallup |
+| R004 | The first year of getting better looks embarrassing. | R2 Situation → old line | Identity | 19.3s | Epictetus, Enchiridion 13 |
+| R005 | You want to be chosen. You don't choose anyone. | R2 Situation → old line | Journal | 19.2s | Seneca (quoting Hecato), Moral Letters to Lucilius 9.6 |
+| R006 | Angry men are usually something else first. | R3 Myth vs the text | Journal | 18.2s | idea: bell hooks |
+| R007 | Try sitting alone for five minutes. No phone. | R2 Situation → old line | Discipline | 18.2s | Blaise Pascal, Pensées 139 |
+| R008 | Nobody tells you grief comes back in the supermarket. | R2 Situation → old line | Journal | 19.3s | Epictetus, Enchiridion 11 |
+| R009 | You rehearse the lie in the shower first. | R2 Situation → old line | Truths | 17.0s | Fyodor Dostoevsky, The Brothers Karamazov Book II, ch. 2 'The Old Buff |
+| R010 | People I've said 'I'm fine' to: | R4 Dry humour | Journal | 16.5s | data: Lieberman, Eisenberger, Crockett et al. |
+| R011 | Me: I'll start Monday. | R4 Dry humour | Daily | 19.4s | Marcus Aurelius, Meditations 5.1 |
+| R012 | 'Stoic' doesn't mean cold. | R3 Myth vs the text | Daily | 17.2s | Marcus Aurelius, Meditations 1.9 |
+| R013 | Got hurt once, so now nobody gets in? | R2 Situation → old line | Journal | 16.2s | Seneca, Moral Letters to Lucilius 3.4 |
+| R014 | You improved so much you don't recognise yourself. | R2 Situation → old line | Identity | 17.9s | Friedrich Nietzsche, The Gay Science 270 |
+| R015 | Your job is the rock. Monday is the hill. | R5 One book, one idea | Identity | 17.8s | idea: Albert Camus |
+| R016 | Waiting to feel purpose before you start? | R5 One book, one idea | Identity | 17.6s | idea: Viktor Frankl |
+| R017 | Their opinion of you is their homework. | R3 Myth vs the text | Truths | 16.8s | idea: Ichiro Kishimi & Fumitake Koga |
+| R018 | Your brain says 'you're a failure' like it's breaking news. | R3 Myth vs the text | Truths | 16.6s | idea: Russ Harris |
+| R019 | You keep ruining good things right before they work. | R5 One book, one idea | Truths | 19.7s | idea: Brianna Wiest |
+| R020 | Scrolling isn't rest. It's being entertained while exhausted. | R1 Quiet Truth | Discipline | 16.0s | original: Moodius |
 
 ---
 
 ## R001 · You'd never let a stranger decide what you're worth.
 
-**Format** R2 Situation → old line · **Pillar** Daily Stoic · **Length** 20.6s · **CTA** send
+**Format** R2 Situation → old line · **Pillar** Daily · **Length** 20.6s · **CTA** send
 **Hook B (test arm):** Marcus Aurelius noticed a strange habit. You have it.
 
 | Card | On screen | Seconds | Style |
@@ -62,7 +62,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R002 · Kafka wrote the most accurate book about work.
 
-**Format** R4 Dry humour · **Pillar** Daily Stoic · **Length** 18.0s · **CTA** send
+**Format** R4 Dry humour · **Pillar** Daily · **Length** 18.0s · **CTA** send
 **Hook B (test arm):** A man wakes up as a giant insect. Guess what he worries about.
 
 | Card | On screen | Seconds | Style |
@@ -98,7 +98,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R003 · Solitude: your phone is off.
 
-**Format** R1 Quiet Truth · **Pillar** Feel Logs · **Length** 18.6s · **CTA** save
+**Format** R1 Quiet Truth · **Pillar** Journal · **Length** 18.6s · **CTA** save
 **Hook B (test arm):** There are two ways to be alone. Only one of them is good.
 
 | Card | On screen | Seconds | Style |
@@ -133,7 +133,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R004 · The first year of getting better looks embarrassing.
 
-**Format** R2 Situation → old line · **Pillar** Becoming · **Length** 19.3s · **CTA** save
+**Format** R2 Situation → old line · **Pillar** Identity · **Length** 19.3s · **CTA** save
 **Hook B (test arm):** If they're laughing at your new habits, read this.
 
 | Card | On screen | Seconds | Style |
@@ -168,7 +168,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R005 · You want to be chosen. You don't choose anyone.
 
-**Format** R2 Situation → old line · **Pillar** Feel Logs · **Length** 19.2s · **CTA** send
+**Format** R2 Situation → old line · **Pillar** Journal · **Length** 19.2s · **CTA** send
 **Hook B (test arm):** Seneca found the only love potion that works.
 
 | Card | On screen | Seconds | Style |
@@ -203,7 +203,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R006 · Angry men are usually something else first.
 
-**Format** R3 Myth vs the text · **Pillar** Feel Logs · **Length** 18.2s · **CTA** save
+**Format** R3 Myth vs the text · **Pillar** Journal · **Length** 18.2s · **CTA** save
 **Hook B (test arm):** You were probably taught one feeling. Here's what it hides.
 
 | Card | On screen | Seconds | Style |
@@ -238,7 +238,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R007 · Try sitting alone for five minutes. No phone.
 
-**Format** R2 Situation → old line · **Pillar** Training Room · **Length** 18.2s · **CTA** save
+**Format** R2 Situation → old line · **Pillar** Discipline · **Length** 18.2s · **CTA** save
 **Hook B (test arm):** In a study, people chose electric shocks over this.
 
 | Card | On screen | Seconds | Style |
@@ -273,7 +273,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R008 · Nobody tells you grief comes back in the supermarket.
 
-**Format** R2 Situation → old line · **Pillar** Feel Logs · **Length** 19.3s · **CTA** send
+**Format** R2 Situation → old line · **Pillar** Journal · **Length** 19.3s · **CTA** send
 **Hook B (test arm):** Grief doesn't end. It changes shape. One line helped me.
 
 | Card | On screen | Seconds | Style |
@@ -308,7 +308,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R009 · You rehearse the lie in the shower first.
 
-**Format** R2 Situation → old line · **Pillar** Quiet Truths · **Length** 17.0s · **CTA** save
+**Format** R2 Situation → old line · **Pillar** Truths · **Length** 17.0s · **CTA** save
 **Hook B (test arm):** The most dangerous lies are the ones you tell yourself.
 
 | Card | On screen | Seconds | Style |
@@ -343,7 +343,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R010 · People I've said 'I'm fine' to:
 
-**Format** R4 Dry humour · **Pillar** Feel Logs · **Length** 16.5s · **CTA** send
+**Format** R4 Dry humour · **Pillar** Journal · **Length** 16.5s · **CTA** send
 **Hook B (test arm):** "I'm fine" might be the lie you tell most. Here's what it costs.
 
 | Card | On screen | Seconds | Style |
@@ -379,7 +379,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R011 · Me: I'll start Monday.
 
-**Format** R4 Dry humour · **Pillar** Daily Stoic · **Length** 19.4s · **CTA** save
+**Format** R4 Dry humour · **Pillar** Daily · **Length** 19.4s · **CTA** save
 **Hook B (test arm):** The emperor of Rome hated getting up too. He wrote this.
 
 | Card | On screen | Seconds | Style |
@@ -415,7 +415,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R012 · 'Stoic' doesn't mean cold.
 
-**Format** R3 Myth vs the text · **Pillar** Daily Stoic · **Length** 17.2s · **CTA** send
+**Format** R3 Myth vs the text · **Pillar** Daily · **Length** 17.2s · **CTA** send
 **Hook B (test arm):** You've been told Stoics don't feel. Marcus wrote the opposite.
 
 | Card | On screen | Seconds | Style |
@@ -450,7 +450,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R013 · Got hurt once, so now nobody gets in?
 
-**Format** R2 Situation → old line · **Pillar** Feel Logs · **Length** 16.2s · **CTA** save
+**Format** R2 Situation → old line · **Pillar** Journal · **Length** 16.2s · **CTA** save
 **Hook B (test arm):** There are two ways to get trust wrong. Seneca named both.
 
 | Card | On screen | Seconds | Style |
@@ -485,7 +485,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R014 · You improved so much you don't recognise yourself.
 
-**Format** R2 Situation → old line · **Pillar** Becoming · **Length** 17.9s · **CTA** follow
+**Format** R2 Situation → old line · **Pillar** Identity · **Length** 17.9s · **CTA** follow
 **Hook B (test arm):** Self-improvement can make you less yourself. Nietzsche saw it.
 
 | Card | On screen | Seconds | Style |
@@ -521,7 +521,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R015 · Your job is the rock. Monday is the hill.
 
-**Format** R5 One book, one idea · **Pillar** Becoming · **Length** 17.8s · **CTA** send
+**Format** R5 One book, one idea · **Pillar** Identity · **Length** 17.8s · **CTA** send
 **Hook B (test arm):** Camus found the only way to be happy pushing a rock forever.
 
 | Card | On screen | Seconds | Style |
@@ -556,7 +556,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R016 · Waiting to feel purpose before you start?
 
-**Format** R5 One book, one idea · **Pillar** Becoming · **Length** 17.6s · **CTA** save
+**Format** R5 One book, one idea · **Pillar** Identity · **Length** 17.6s · **CTA** save
 **Hook B (test arm):** A man who survived Auschwitz found three sources of meaning. None is a feeling.
 
 | Card | On screen | Seconds | Style |
@@ -591,7 +591,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R017 · Their opinion of you is their homework.
 
-**Format** R3 Myth vs the text · **Pillar** Quiet Truths · **Length** 16.8s · **CTA** send
+**Format** R3 Myth vs the text · **Pillar** Truths · **Length** 16.8s · **CTA** send
 **Hook B (test arm):** People pleasers do other people's homework. Here's how to stop.
 
 | Card | On screen | Seconds | Style |
@@ -626,7 +626,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R018 · Your brain says 'you're a failure' like it's breaking news.
 
-**Format** R3 Myth vs the text · **Pillar** Quiet Truths · **Length** 16.6s · **CTA** save
+**Format** R3 Myth vs the text · **Pillar** Truths · **Length** 16.6s · **CTA** save
 **Hook B (test arm):** Five words that make a cruel thought lose its grip.
 
 | Card | On screen | Seconds | Style |
@@ -661,7 +661,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R019 · You keep ruining good things right before they work.
 
-**Format** R5 One book, one idea · **Pillar** Quiet Truths · **Length** 19.7s · **CTA** save
+**Format** R5 One book, one idea · **Pillar** Truths · **Length** 19.7s · **CTA** save
 **Hook B (test arm):** Self-sabotage isn't random. It's protecting something.
 
 | Card | On screen | Seconds | Style |
@@ -695,7 +695,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R020 · Scrolling isn't rest. It's being entertained while exhausted.
 
-**Format** R1 Quiet Truth · **Pillar** Training Room · **Length** 16.0s · **CTA** save
+**Format** R1 Quiet Truth · **Pillar** Discipline · **Length** 16.0s · **CTA** save
 **Hook B (test arm):** You rested for two hours and feel worse. Here's why.
 
 | Card | On screen | Seconds | Style |

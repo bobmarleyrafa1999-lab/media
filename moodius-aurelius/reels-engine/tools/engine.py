@@ -62,8 +62,9 @@ def registry(exclude_engine=True):
             text = open(path, encoding="utf-8").read()
         except (UnicodeDecodeError, OSError):
             continue
-        for work, sec in CITE_RE.findall(text):
-            used.setdefault(norm(work, sec), set()).add(os.path.relpath(path, PROJECT))
+        for line in text.splitlines():
+            for work, sec in CITE_RE.findall(line):
+                used.setdefault(norm(work, sec), {}).setdefault(os.path.relpath(path, PROJECT), []).append(line)
     return used
 
 
@@ -102,8 +103,11 @@ def qc(script, used):
             err.append(f"translation '{src.get('translation')}' is not on the public-domain list")
         key = norm(src["work"].replace("Moral Letters to Lucilius", "Letters").split(":")[0],
                    src["section"].split()[0])
-        if key in used:
-            err.append(f"{key} already used in: {', '.join(sorted(used[key])[:3])}")
+        # a calendar row that books this very script (mentions its id) is not a repeat
+        clash = sorted(f for f, lines in used.get(key, {}).items()
+                       if not all(script["id"] in ln for ln in lines))
+        if clash:
+            err.append(f"{key} already used in: {', '.join(clash[:3])}")
     if src["type"] == "idea" and not any(k == "cite" and "Idea:" in t for t, _, k in cards):
         err.append("idea from a book needs an 'Idea: … · Moodius words' cite card")
     cap = script["caption"]

@@ -16,5 +16,5 @@ Picked from the 10 in `01` for cost (text + flat Slate or one phone clip, no voi
 - **Quotes:** verbatim from a public-domain translation (Long, Gummere, Trotter, Garnett, Common), followed by a cite card with book + section. Modern books (Frankl, Camus, Clear, Kishimi & Koga, Harris, Wiest, hooks, Fromm) are never quoted: their idea is put in Moodius words and labelled "Idea: … · Moodius words".
 - **Visual treatments:** **V1** flat Slate (default, zero assets) or **V2** one original phone clip (no faces, no brands, locked-off) at 72% Slate tint. V2 only where the script names a footage tag.
 - **Audio:** original ambient bed from `tools/ambient.py` (6 moods). `tools/score.py` cues remain available for the test arm. No voice-over, no trending audio by default (TikTok version can add one in-app).
-- **Platforms:** the same MP4 goes to Instagram Reels, YouTube Shorts (title = hook) and TikTok. Captions are written to work on all three.
+- **Platforms:** Instagram only during Phase 1. The same MP4 and caption work on YouTube Shorts and TikTok if cross-posting is approved at the 19 Nov review.
 - **Humour ratio:** at most 2 R4 reels in 7 until the data says otherwise.
