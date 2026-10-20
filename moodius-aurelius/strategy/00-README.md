@@ -11,9 +11,10 @@
 | 07-automation-architecture.md | Pipeline, QC gate, lean (≈€20/mo) vs recommended (≈€45–75/mo) vs scale stacks |
 | 08-testing-dashboard.md + post-log.csv + experiments.csv | Metrics, 7 experiments, decision rules, Sheets layout |
 | 09-scaling-roadmap.md | Phases 0–4 with gates, brand config, niche shortlist, phone-farm verdict |
+| 10-reconciliation-with-phase1-summary.md | Agreements and 7 conflicts with the uploaded Phase 1 Summary, with a recommendation on each |
 
 ## Decisions and actions waiting on Surafel
-1. Highlights: hybrid seven (recommended) / keep six / original seven. On a card in the thread.
+1. The conflicts with the Phase 1 Summary (positioning, cadence, highlights, visual system, first five). See file 10. This replaces the earlier highlights card.
 2. Host the lead magnet and put the link in bio.
 3. Add 5 competitors in Metricool.
 4. Weekly routine prompt change (07, "Change the weekly routine needs").
