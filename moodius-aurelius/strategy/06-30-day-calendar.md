@@ -3,7 +3,7 @@
 All times Europe/Madrid. **Summer time ends Sun 25 Oct**: +02:00 before, +01:00 from then on. Every day: 3 feed posts + 2 stories = 150 publishes in 30 days (fine on Metricool Starter; Instagram's API allows 100 a day).
 
 ## Days 1–7 (19–25 Oct): Week 3, already built and being scheduled
-19 reels, 1 meme (Tue 15:00), 1 carousel (Sun 18:00), 14 stories, on slots 12:00 / 15:00 / 18:00 (Fri 17:00), stories 09:00 / 21:00. Source: `week3/posts.json`. Nothing changes; its results become the first data for the experiments in `08-testing-dashboard.md`.
+19 reels, 1 meme (Tue 15:00), 1 carousel (Sun 18:00), 14 stories, on slots 12:00 / 15:00 / 18:00 (Fri 17:00), stories 09:00 / 21:00. Source: `week3/posts.json`. Mon 19 Oct (3 reels, 2 stories) and Tue 09:00 were missed before the upgrade; the best of them roll into Week 4 slots marked "bank". Its results become the first data for the experiments in `08-testing-dashboard.md`.
 
 ## Days 8–30: the weekly shape
 | | 12:00 | 15:00 | 18:00 (Fri 17:00) |
