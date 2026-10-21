@@ -17,6 +17,7 @@ Moodius Aurelius becomes a research-led Substack publication on psychology, phil
 | 9 | Setup instructions | `09-setup.md` |
 | 10 | Costs and APIs | `10-costs-and-apis.md` |
 | — | Ghost vs Substack evaluation | `11-ghost-vs-substack.md` |
+- `12-selected-essays.md`: the twelve essays Surafel selected on 21 Oct (calendar weeks 5–16), with theses, files, reels and exports.
 | — | Approval queue (80 items) | `queue/approval-queue.csv` |
 
 ## Quick commands

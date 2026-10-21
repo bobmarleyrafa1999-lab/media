@@ -1783,6 +1783,572 @@
    ],
    "cta": "save",
    "length_s": 16.1
+  },
+  {
+   "id": "S13A",
+   "slug": "not-safe-to-be",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Truths",
+   "hook": "As a child, what wasn't it safe to be?",
+   "hook_b": "Every child learns which parts of them are welcome.",
+   "cards": [
+    [
+     "As a child, what wasn't it safe to be?",
+     2.4,
+     "question"
+    ],
+    [
+     "Too loud. Too sad. Too needy. Too soft.",
+     2.2,
+     "body"
+    ],
+    [
+     "Those parts didn't disappear. They went underground.",
+     2.4,
+     "body"
+    ],
+    [
+     "People think about their secrets far more alone than they hide them in company.",
+     3.6,
+     "body"
+    ],
+    [
+     "Studies: Slepian, Chun & Mason, JPSP (2017)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Hiding costs most at 3 a.m., not at dinner.",
+     2.7,
+     "body"
+    ],
+    [
+     "Save this. Write your list tonight.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V3 still of a closed door with light under it (tag door-light), else V1 + grain.",
+   "footage": "door-light",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 325
+   },
+   "source": {
+    "type": "data",
+    "author": "Slepian, Chun & Mason",
+    "work": "The experience of secrecy (JPSP 113(1))",
+    "section": "studies",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 studies (N64) + Moodius practice",
+   "caption": "Every child learns which parts of them are welcome and which bring trouble. The rest go underground.\n\nIn ten studies on secrets, people spent far more time thinking about what they hid when they were alone than actually hiding it in conversation. It was the mind-wandering, not the hiding, that went with lower wellbeing.\n\nAs a child, what wasn't it safe to be?\n\nEvidence: Slepian, Chun & Mason (2017). Full essay on the Substack, link in bio.",
+   "first_comment": "One word: what wasn't it safe to be?",
+   "hashtags": [
+    "#shadowwork",
+    "#carljung",
+    "#emotionalhealth",
+    "#selfawareness",
+    "#psychology"
+   ],
+   "cta": "save",
+   "length_s": 17.3
+  },
+  {
+   "id": "S13E",
+   "slug": "the-joke-instead",
+   "format": "E",
+   "series": "Masculinity, Reconsidered",
+   "pillar": "Truths",
+   "hook": "You learned to make a joke instead of crying.",
+   "hook_b": "The sensitive boy learns to make a joke instead.",
+   "cards": [
+    [
+     "You learned to make a joke instead of crying.",
+     2.4,
+     "hook"
+    ],
+    [
+     "It worked. It kept you safe.",
+     1.8,
+     "body"
+    ],
+    [
+     "But self-reliance norms were linked to worse mental health and less help-seeking.",
+     3.6,
+     "body"
+    ],
+    [
+     "Meta-analysis: Wong et al., J. Counseling Psychology (2017)",
+     2.2,
+     "cite"
+    ],
+    [
+     "Hiding a feeling isn't strength. Choosing when to show it is.",
+     2.9,
+     "body"
+    ],
+    [
+     "Send this to the funniest person you know.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of a dim pub table with two glasses, no people (tag pub-table), else V1 + grain.",
+   "footage": "pub-table",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 326
+   },
+   "source": {
+    "type": "data",
+    "author": "Wong, Ho, Wang & Miller",
+    "work": "Masculine norms and mental health (J. Counseling Psychology 64(1))",
+    "section": "meta-analyses",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 meta-analyses (E13)",
+   "caption": "Plenty of men learned early that some feelings were welcome and some weren't. The joke, the change of subject, the sudden helpfulness: they arrive exactly when a feeling would have.\n\nIn meta-analyses, conforming to traditional masculine norms, self-reliance especially, was linked to worse mental health and less help-seeking.\n\nStrength isn't hiding a feeling. It's being able to choose when to show it.\n\nWhat do you make a joke about instead?\n\nEvidence: Wong et al. (2017). Full essay on the Substack, link in bio.",
+   "first_comment": "No need to explain. What's your go-to joke when something actually hurts?",
+   "hashtags": [
+    "#shadowwork",
+    "#carljung",
+    "#emotionalhealth",
+    "#selfawareness",
+    "#psychology"
+   ],
+   "cta": "send",
+   "length_s": 15.1
+  },
+  {
+   "id": "S14D",
+   "slug": "never-finished",
+   "format": "D",
+   "series": "The Human Condition",
+   "pillar": "Discipline",
+   "hook": "A quiet Sunday. Nothing scheduled. Still tired.",
+   "hook_b": "The tiredness that sleep doesn't fix.",
+   "cards": [
+    [
+     "A quiet Sunday. Nothing scheduled. Still tired.",
+     2.4,
+     "hook"
+    ],
+    [
+     "Learning a language. Fixing your posture. Becoming more present.",
+     3.0,
+     "body"
+    ],
+    [
+     "Never allowed to just be someone.",
+     2.0,
+     "body"
+    ],
+    [
+     "Psychologists link the gap between who we are and who we 'should' be to distress.",
+     3.8,
+     "body"
+    ],
+    [
+     "Theory: Higgins, self-discrepancy (1987)",
+     2.0,
+     "cite"
+    ],
+    [
+     "A self always under construction never closes the gap.",
+     2.6,
+     "body"
+    ],
+    [
+     "Send it to someone who needs a day off from improving.",
+     2.9,
+     "cta"
+    ]
+   ],
+   "visual": "V3 still of a half-renovated room, dust sheets, ladder, no people (tag renovation), else V1 + grain.",
+   "footage": "renovation",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 327
+   },
+   "source": {
+    "type": "data",
+    "author": "Higgins",
+    "work": "Self-discrepancy theory (Psychological Review 94(3))",
+    "section": "theory",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 3 theory (N65), mixed evidence noted in essay; format D, no advice",
+   "caption": "There's a tiredness that comes not from doing too much but from always being in progress.\n\nSelf-discrepancy theory links the gap between who we are and who we think we should be to distress. A self that's never finished keeps that gap open forever.\n\nWhat would you stop improving if you were allowed to?\n\nTheory: Higgins (1987); later studies support the general link, less so the specifics. Full essay on the Substack, link in bio.",
+   "first_comment": "Name one thing you're done improving.",
+   "hashtags": [
+    "#burnout",
+    "#selfimprovement",
+    "#perfectionism",
+    "#psychology",
+    "#stoicism"
+   ],
+   "cta": "send",
+   "length_s": 18.7,
+   "max_s": 30
+  },
+  {
+   "id": "S14C",
+   "slug": "growth-or-verdict",
+   "format": "C",
+   "series": "The Philosophical Contradiction",
+   "pillar": "Discipline",
+   "hook": "Are you growing, or still trying to become acceptable?",
+   "hook_b": "Same books, same alarm. Different engine.",
+   "cards": [
+    [
+     "Are you growing, or still trying to become acceptable?",
+     2.6,
+     "question"
+    ],
+    [
+     "GROWTH\nA direction. You enjoy where you are while you move.",
+     3.0,
+     "labelled"
+    ],
+    [
+     "THE VERDICT\nYou're a draft. Enough is always one improvement away.",
+     3.0,
+     "labelled"
+    ],
+    [
+     "Seneca saw people forever changing plans and places. The restlessness came with them.",
+     3.6,
+     "body"
+    ],
+    [
+     "Idea: Seneca, On Tranquillity of Mind · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Which one got you up this morning?",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate + grain.",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 328
+   },
+   "source": {
+    "type": "idea",
+    "author": "Seneca",
+    "work": "On Tranquillity of Mind",
+    "section": "2",
+    "translation": "paraphrase"
+   },
+   "evidence": "Tier 2 primary text (N68), paraphrased",
+   "caption": "Growth is a direction. Becoming, in the exhausting sense, is a verdict: who you are now isn't acceptable yet.\n\nSeneca described people forever starting new plans, changing pursuits and places, and finding the restlessness came with them, because what they were escaping was themselves.\n\nWhich one is driving you?\n\nSource: Seneca, On Tranquillity of Mind (paraphrased). Full essay on the Substack, link in bio.",
+   "first_comment": "Growth or verdict? One word.",
+   "hashtags": [
+    "#burnout",
+    "#selfimprovement",
+    "#perfectionism",
+    "#psychology",
+    "#stoicism"
+   ],
+   "cta": "comment",
+   "length_s": 16.2
+  },
+  {
+   "id": "S15D",
+   "slug": "the-bridge",
+   "format": "D",
+   "series": "The Human Condition",
+   "pillar": "Identity",
+   "hook": "Men crossing a swaying canyon bridge met a woman with a questionnaire.",
+   "hook_b": "Why the relationship that hurt the most felt the most real.",
+   "cards": [
+    [
+     "Men crossing a swaying canyon bridge met a woman with a questionnaire.",
+     3.2,
+     "hook"
+    ],
+    [
+     "About half called her afterwards.",
+     2.0,
+     "body"
+    ],
+    [
+     "On a low, solid bridge, about one in eight did.",
+     2.7,
+     "body"
+    ],
+    [
+     "Experiment: Dutton & Aron, JPSP (1974) · small, debated",
+     2.2,
+     "cite"
+    ],
+    [
+     "A racing heart doesn't always know why it's racing.",
+     2.4,
+     "body"
+    ],
+    [
+     "Sometimes what feels like love is just not knowing where you stand.",
+     3.1,
+     "body"
+    ],
+    [
+     "Send it to someone who keeps falling for the bridge.",
+     2.7,
+     "cta"
+    ]
+   ],
+   "visual": "V3 still of a suspension bridge in mist, no people (tag bridge-mist), else V1 + grain.",
+   "footage": "bridge-mist",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "warm",
+    "seed": 329
+   },
+   "source": {
+    "type": "data",
+    "author": "Dutton & Aron",
+    "work": "Heightened attraction under high anxiety (JPSP 30(4))",
+    "section": "experiment",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 experiment (N69), small and debated, labelled on screen; format D, no advice",
+   "caption": "In a 1974 study, men crossing a frightening suspension bridge were far more likely to call a woman they met there than men on a solid bridge. The usual reading: they mistook a pounding heart for attraction.\n\nIt's a small, old study and later results are mixed. But many people know the feeling: uncertainty and fear can feel exactly like love.\n\nWas your most intense relationship also your most uncertain?\n\nEvidence: Dutton & Aron (1974). Full essay on the Substack, link in bio.",
+   "first_comment": "Intense or known? Which did your last relationship feel like?",
+   "hashtags": [
+    "#relationships",
+    "#attachmentstyles",
+    "#intimacy",
+    "#psychology",
+    "#love"
+   ],
+   "cta": "send",
+   "length_s": 18.3,
+   "max_s": 30
+  },
+  {
+   "id": "S15A",
+   "slug": "known-not-wanted",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Identity",
+   "hook": "Does calm feel like boredom to you?",
+   "hook_b": "Butterflies are not a compatibility test.",
+   "cards": [
+    [
+     "Does calm feel like boredom to you?",
+     2.2,
+     "question"
+    ],
+    [
+     "Closeness grew when strangers took turns sharing more, bit by bit.",
+     3.0,
+     "body"
+    ],
+    [
+     "Experiment: Aron et al., PSPB (1997)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Not drama. Not guessing. Gradual, two-way honesty.",
+     2.4,
+     "body"
+    ],
+    [
+     "Intensity measures uncertainty. Intimacy measures being known.",
+     2.8,
+     "body"
+    ],
+    [
+     "Save this for the next time someone kind feels 'flat'.",
+     2.7,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate + grain.",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 330
+   },
+   "source": {
+    "type": "data",
+    "author": "Aron, Melinat, Aron, Vallone & Bator",
+    "work": "Experimental generation of interpersonal closeness (PSPB 23(4))",
+    "section": "experiment",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 experiment (N70)",
+   "caption": "People used to unpredictable love often find a steady, kind partner feels flat at first.\n\nIn a 1997 study, strangers who took turns asking gradually more personal questions felt significantly closer than pairs making small talk. Closeness came from reciprocal disclosure, not uncertainty.\n\nWhen did you last let someone know something new about you?\n\nEvidence: Aron et al. (1997). Full essay on the Substack, link in bio.",
+   "first_comment": "What's one thing your closest person doesn't know about you yet?",
+   "hashtags": [
+    "#relationships",
+    "#attachmentstyles",
+    "#intimacy",
+    "#psychology",
+    "#love"
+   ],
+   "cta": "save",
+   "length_s": 15.1
+  },
+  {
+   "id": "S16B",
+   "slug": "ring-of-gyges",
+   "format": "B",
+   "series": "Quiet Truths",
+   "pillar": "Tools",
+   "hook": "Plato's ring made its wearer invisible.",
+   "hook_b": "Plato asked it 2,400 years ago with a magic ring.",
+   "cards": [
+    [
+     "Plato's ring made its wearer invisible.",
+     2.2,
+     "hook"
+    ],
+    [
+     "Glaucon's bet: give it to anyone, and they'd take what they liked.",
+     3.1,
+     "body"
+    ],
+    [
+     "Idea: Plato, Republic II · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "But there's a second test hidden in the question.",
+     2.4,
+     "body"
+    ],
+    [
+     "Not what you'd take. What you'd finally try.",
+     2.2,
+     "body"
+    ],
+    [
+     "Quiet Truths · Moodius",
+     1.2,
+     "body"
+    ],
+    [
+     "Full essay on the Substack. Link in bio.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate (series control look).",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 331
+   },
+   "source": {
+    "type": "idea",
+    "author": "Plato",
+    "work": "Republic",
+    "section": "II",
+    "translation": "paraphrase"
+   },
+   "evidence": "Tier 2 primary text (N72), paraphrased",
+   "caption": "In Plato's Republic, Glaucon tells the story of a ring that makes its wearer invisible, and bets that anyone who had it would stop behaving well.\n\nThat's the usual test: what would you do wrong if nobody was watching? There's a second one: what would you finally do if nobody would ever know?\n\nWhat would you try?\n\nSource: Plato, Republic II (paraphrased). Full essay on the Substack, link in bio.",
+   "first_comment": "What would you try if nobody would ever know?",
+   "hashtags": [
+    "#philosophy",
+    "#plato",
+    "#decisionmaking",
+    "#regret",
+    "#stoicism"
+   ],
+   "cta": "save",
+   "length_s": 15.3
+  },
+  {
+   "id": "S16A",
+   "slug": "regrets-nobody-sees",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Tools",
+   "hook": "What would you do if nobody would ever find out?",
+   "hook_b": "The regrets that last are the ones nobody else sees.",
+   "cards": [
+    [
+     "What would you do if nobody would ever find out?",
+     2.7,
+     "question"
+    ],
+    [
+     "Most lasting regrets were about hopes not pursued, not duties missed.",
+     3.0,
+     "body"
+    ],
+    [
+     "72% ideal-self regrets. 28% duty regrets.",
+     2.2,
+     "body"
+    ],
+    [
+     "Studies: Davidai & Gilovich, Emotion (2018)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Take away the audience. What's left is often what you want.",
+     2.9,
+     "body"
+    ],
+    [
+     "Save this for the decision you're putting off.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V3 still of an empty theatre, seats and a single light, no people (tag theatre-empty), else V1 + grain.",
+   "footage": "theatre-empty",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 332
+   },
+   "source": {
+    "type": "data",
+    "author": "Davidai & Gilovich",
+    "work": "The ideal road not taken (Emotion 18(3))",
+    "section": "studies",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 studies (N76)",
+   "caption": "Across six studies, people's regrets were mostly about their ideal selves, hopes and goals they didn't pursue (72%), rather than duties they didn't meet (28%). Asked for their single biggest regret, 76% named an ideal-self one.\n\nThose are often the choices most shaped by an audience. Ask what you'd do if nobody would ever know.\n\nWhat's the decision you're putting off?\n\nEvidence: Davidai & Gilovich (2018). Full essay on the Substack, link in bio.",
+   "first_comment": "One hope you haven't pursued yet. Just the word.",
+   "hashtags": [
+    "#philosophy",
+    "#plato",
+    "#decisionmaking",
+    "#regret",
+    "#stoicism"
+   ],
+   "cta": "save",
+   "length_s": 15.0
   }
  ]
 }

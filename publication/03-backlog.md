@@ -27,16 +27,16 @@
 | 17 | MA-037 | 5 | Why Closeness Feels Like Danger | Pulling away when someone gets close | 4 | 5 | 3 | **21** | idea |
 | 18 | MA-045 | 1 | The Unsent Letter | Things unsaid to the living and the dead | 4 | 4 | 1 | **21** | idea |
 | 19 | MA-055 | 9 | When Self-Improvement Becomes Self-Rejection | Improvement driven by contempt rather than care | 4 | 5 | 3 | **21** | draft v1 (awaiting approval) |
-| 20 | MA-059 | 5 | Why We Mistake Intensity for Intimacy | Chaos and longing read as closeness | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 3) |
-| 21 | MA-060 | 4 | What Would You Do If Nobody Was Watching? | Decisions under no observation (decision-making, not identity) | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 3) |
+| 20 | MA-059 | 5 | Why We Mistake Intensity for Intimacy | Chaos and longing read as closeness | 4 | 5 | 3 | **21** | draft v1 (awaiting approval) |
+| 21 | MA-060 | 4 | What Would You Do If Nobody Was Watching? | Decisions under no observation (decision-making, not identity) | 4 | 5 | 3 | **21** | draft v1 (awaiting approval) |
 | 22 | MA-003 | 2 | The Trait You Can't Stand in Other People | Strong irritation at others might be information about ourselves; but shadow work is sold as therapy | 5 | 4 | 3 | **21** | draft v1 (awaiting approval) |
 | 23 | MA-004 | 10 | The Raise That Didn't Arrive Inside | Success arrives on paper and not in the body; is more ever enough? | 4 | 5 | 3 | **21** | draft v1 (awaiting approval) |
 | 24 | MA-007 | 7 | The Lost Art of Being Alone With Your Thoughts | Restlessness and the reflex to reach for the phone | 4 | 5 | 3 | **21** | draft v1 (awaiting approval) |
 | 25 | MA-018 | 2 | The Persona Is Not a Lie | The gap between the self at work and the self at 2am | 5 | 4 | 3 | **21** | idea |
 | 26 | MA-041 | 6 | Who Are You When You Stop Producing? | Identity fused with output | 4 | 5 | 3 | **21** | idea |
 | 27 | MA-051 | 6 | The Man You Become When Nobody Is Watching | Character as the residue of private repetition (identity, not decisions) | 4 | 5 | 3 | **21** | draft v1 (awaiting approval) |
-| 28 | MA-054 | 2 | The Parts of Yourself You Were Taught to Hide | Disowned traits learned in childhood | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 3) |
-| 29 | MA-056 | 6 | The Exhaustion of Always Trying to Become Someone | Identity as a permanent project | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 3) |
+| 28 | MA-054 | 2 | The Parts of Yourself You Were Taught to Hide | Disowned traits learned in childhood | 4 | 5 | 3 | **21** | draft v1 (awaiting approval) |
+| 29 | MA-056 | 6 | The Exhaustion of Always Trying to Become Someone | Identity as a permanent project | 4 | 5 | 3 | **21** | draft v1 (awaiting approval) |
 | 30 | MA-057 | 10 | A Life That Looks Successful but Feels Empty | Outer markers without inner meaning | 4 | 5 | 3 | **21** | draft v1 (awaiting approval) |
 | 31 | MA-058 | 2 | The Things We Inherit Without Realising | Family patterns passed down unexamined | 4 | 5 | 3 | **21** | draft v1 (awaiting approval) |
 | 32 | MA-013 | 8 | Being Okay Is Not Proof You Didn't Love Them | Guilt about grieving "too little" or "too long" | 5 | 4 | 3 | **21** | idea |
@@ -207,9 +207,20 @@
 
 **20. Why We Mistake Intensity for Intimacy** (MA-059, The Distance Between Us). Philosophy: Fromm (idea). Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-010; MA-053. Reusable: —.
 
+- N69 Dutton & Aron (1974), 1 Empirical
+- N70 Aron, Melinat, Aron, Vallone & Bator (1997), 1 Empirical
+- E01 Hazan & Shaver (1987), 1 Empirical [link](https://doi.org/10.1037/0022-3514.52.3.511)
+- E02 Brennan, Clark & Shaver (1998), 1 Empirical
+- N71 Reis & Shaver (1988), 3 Theoretical
+- P10 Erich Fromm (1956), 2 Philosophical
 
 **21. What Would You Do If Nobody Was Watching?** (MA-060, Old Answers). Philosophy: Plato Republic II Ring of Gyges; Epictetus. Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-051. Reusable: —.
 
+- N72 Plato (c. 375 BCE), 2 Philosophical [link](https://www.webpages.uidaho.edu/jcanders/Ethics/ringgygesreadexcerpt.htm)
+- N73 Bateson, Nettle & Roberts (2006), 1 Empirical [link](https://doi.org/10.1098/rsbl.2006.0509)
+- N74 Northover, Pedersen, Cohen & Andrews (2017), 1 Empirical
+- N75 Gilovich & Medvec (1995), 1 Empirical
+- N76 Davidai & Gilovich (2018), 1 Empirical
 
 **22. The Trait You Can't Stand in Other People** (MA-003, What We Disown). Philosophy: Jung, Aion (CW 9ii) on the shadow (idea). Platforms: Substack 5; IG carousel 5; reel 4; Pinterest 4. Related: MA-018; MA-028; MA-039. Reusable: library P12.
 
@@ -258,11 +269,21 @@
 
 **28. The Parts of Yourself You Were Taught to Hide** (MA-054, What We Disown). Philosophy: Jung, persona and shadow (interpretive). Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-018; MA-003. Reusable: —.
 
+- P12 Carl Jung (1951), 2 Philosophical
+- N63 D. W. Winnicott (1960), 3 Theoretical
+- E05 Gross & John (2003), 1 Empirical [link](https://doi.org/10.1037/0022-3514.85.2.348)
+- N64 Slepian, Chun & Mason (2017), 1 Empirical [link](https://doi.org/10.1037/pspa0000085)
+- E13 Wong, Ho, Wang & Miller (2017), 1 Empirical
 - E22 Tangney & Dearing (2002), 1 Empirical
-- N01 Schimel, Greenberg & Martens (2003), 1 Empirical [link](https://doi.org/10.1177/0146167203252969)
+- P14 bell hooks (2004), 2 Philosophical
 
 **29. The Exhaustion of Always Trying to Become Someone** (MA-056, After the Goal). Philosophy: Existentialism; Seneca on restlessness. Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-025; MA-051. Reusable: —.
 
+- N65 E. Tory Higgins (1987), 3 Theoretical
+- N66 World Health Organization (2019), 1 Empirical
+- N14 Curran & Hill (2019), 1 Empirical [link](https://doi.org/10.1037/bul0000138)
+- N67 Byung-Chul Han (2010), 2 Philosophical
+- N68 Seneca (c. 60 CE), 2 Philosophical
 
 **30. A Life That Looks Successful but Feels Empty** (MA-057, After the Goal). Philosophy: Seneca; Aristotle on eudaimonia. Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-025; MA-004. Reusable: —.
 

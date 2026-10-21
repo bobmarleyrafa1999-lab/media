@@ -1,0 +1,207 @@
+{
+ "n": 14,
+ "essay": "essays/14-exhaustion-of-becoming.md",
+ "title": "The Exhaustion of Always Trying to Become Someone",
+ "ab_alt": "The Renovation That Never Ends",
+ "pillar": "Discipline",
+ "reels": [
+  {
+   "id": "S14D",
+   "slug": "never-finished",
+   "format": "D",
+   "series": "The Human Condition",
+   "pillar": "Discipline",
+   "hook": "A quiet Sunday. Nothing scheduled. Still tired.",
+   "hook_b": "The tiredness that sleep doesn't fix.",
+   "cards": [
+    [
+     "A quiet Sunday. Nothing scheduled. Still tired.",
+     2.4,
+     "hook"
+    ],
+    [
+     "Learning a language. Fixing your posture. Becoming more present.",
+     3.0,
+     "body"
+    ],
+    [
+     "Never allowed to just be someone.",
+     2.0,
+     "body"
+    ],
+    [
+     "Psychologists link the gap between who we are and who we 'should' be to distress.",
+     3.8,
+     "body"
+    ],
+    [
+     "Theory: Higgins, self-discrepancy (1987)",
+     2.0,
+     "cite"
+    ],
+    [
+     "A self always under construction never closes the gap.",
+     2.6,
+     "body"
+    ],
+    [
+     "Send it to someone who needs a day off from improving.",
+     2.9,
+     "cta"
+    ]
+   ],
+   "visual": "V3 still of a half-renovated room, dust sheets, ladder, no people (tag renovation), else V1 + grain.",
+   "footage": "renovation",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 327
+   },
+   "source": {
+    "type": "data",
+    "author": "Higgins",
+    "work": "Self-discrepancy theory (Psychological Review 94(3))",
+    "section": "theory",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 3 theory (N65), mixed evidence noted in essay; format D, no advice",
+   "caption": "There's a tiredness that comes not from doing too much but from always being in progress.\n\nSelf-discrepancy theory links the gap between who we are and who we think we should be to distress. A self that's never finished keeps that gap open forever.\n\nWhat would you stop improving if you were allowed to?\n\nTheory: Higgins (1987); later studies support the general link, less so the specifics. Full essay on the Substack, link in bio.",
+   "first_comment": "Name one thing you're done improving.",
+   "hashtags": [
+    "#burnout",
+    "#selfimprovement",
+    "#perfectionism",
+    "#psychology",
+    "#stoicism"
+   ],
+   "cta": "send",
+   "length_s": 18.7,
+   "max_s": 30
+  },
+  {
+   "id": "S14C",
+   "slug": "growth-or-verdict",
+   "format": "C",
+   "series": "The Philosophical Contradiction",
+   "pillar": "Discipline",
+   "hook": "Are you growing, or still trying to become acceptable?",
+   "hook_b": "Same books, same alarm. Different engine.",
+   "cards": [
+    [
+     "Are you growing, or still trying to become acceptable?",
+     2.6,
+     "question"
+    ],
+    [
+     "GROWTH\nA direction. You enjoy where you are while you move.",
+     3.0,
+     "labelled"
+    ],
+    [
+     "THE VERDICT\nYou're a draft. Enough is always one improvement away.",
+     3.0,
+     "labelled"
+    ],
+    [
+     "Seneca saw people forever changing plans and places. The restlessness came with them.",
+     3.6,
+     "body"
+    ],
+    [
+     "Idea: Seneca, On Tranquillity of Mind · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Which one got you up this morning?",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate + grain.",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 328
+   },
+   "source": {
+    "type": "idea",
+    "author": "Seneca",
+    "work": "On Tranquillity of Mind",
+    "section": "2",
+    "translation": "paraphrase"
+   },
+   "evidence": "Tier 2 primary text (N68), paraphrased",
+   "caption": "Growth is a direction. Becoming, in the exhausting sense, is a verdict: who you are now isn't acceptable yet.\n\nSeneca described people forever starting new plans, changing pursuits and places, and finding the restlessness came with them, because what they were escaping was themselves.\n\nWhich one is driving you?\n\nSource: Seneca, On Tranquillity of Mind (paraphrased). Full essay on the Substack, link in bio.",
+   "first_comment": "Growth or verdict? One word.",
+   "hashtags": [
+    "#burnout",
+    "#selfimprovement",
+    "#perfectionism",
+    "#psychology",
+    "#stoicism"
+   ],
+   "cta": "comment",
+   "length_s": 16.2
+  }
+ ],
+ "carousel": [
+  [
+   "Cover",
+   "You're allowed to be someone already.",
+   "On the exhaustion of always becoming →",
+   "claim cover"
+  ],
+  [
+   "The project",
+   "We've become our own managers, with targets and reviews for our personalities.",
+   "Idea · Byung-Chul Han, The Burnout Society",
+   "pull quote"
+  ],
+  [
+   "The gap",
+   "The distance between actual and ideal selves goes with dejection; actual and ought, with agitation.",
+   "Theory · Higgins (1987) · evidence for the specifics is mixed",
+   "term card"
+  ],
+  [
+   "Not quite burnout",
+   "WHO: burn-out is occupational. Exhaustion, cynicism, reduced efficacy.",
+   "Clinical framework · WHO ICD-11",
+   "term card"
+  ],
+  [
+   "Seneca",
+   "Forever changing plans and places, and the restlessness comes too.",
+   "On Tranquillity of Mind 2 · paraphrased",
+   "pull quote"
+  ],
+  [
+   "The Finished List",
+   "List what you're improving · Mark growth or verdict · Keep two · Declare the rest finished, for now",
+   "Moodius practice",
+   "numbered step"
+  ],
+  [
+   "Sign-off",
+   "Growth needs somewhere to grow from.",
+   "Full essay on the Substack · link in bio · save this",
+   "sign-off"
+  ]
+ ],
+ "carousel_caption": "There's a tiredness sleep doesn't fix: the tiredness of treating yourself as a permanent renovation.\n\nSelf-discrepancy research links the gap between who we are and who we should be to distress. A self that's never finished never closes it.\n\nWhat could you declare finished this week?\n\nEvidence: Higgins 1987 (theory; mixed support for specifics); WHO ICD-11; Curran & Hill 2019. Ideas: Byung-Chul Han; Seneca, On Tranquillity of Mind.",
+ "notes": [
+  "Byung-Chul Han argues we've moved from a society that told us what we couldn't do to one that tells us we can do anything, so we must. The result isn't freedom but a new exhaustion: people who overwork themselves voluntarily, in the name of becoming.",
+  "A test for whether your self-improvement is growth or a verdict: if you stopped improving tomorrow, would you be allowed to rest? If the answer is no, the project has quietly changed what it's for.",
+  "Make a list of everything you're currently trying to improve about yourself. Most people find ten or more. Keep two. Write 'finished, for now' next to the rest. See which ones you actually miss in a month."
+ ],
+ "visuals": {
+  "look": "V3 half-renovated room, dust sheets, ladder, no people; V1 flat for the contradiction",
+  "type": "Standard; the Finished List slide with struck-through items in Ash",
+  "music": "low and dawn (ambient.py); slow, settling",
+  "pinterest": "1000×1500, Bone background, Slate type, Ember on 'finished'"
+ }
+}

@@ -34,10 +34,10 @@ Weeks 5–16 are the twelve titles Surafel selected on 21 Oct. The backlog picks
 | 10 | 7 Jan | When Self-Improvement Becomes Self-Rejection | 9 Self-worth | Draft + package ready |
 | 11 | 14 Jan | The Lost Art of Being Alone With Your Thoughts | 7 Attention | Draft + package ready |
 | 12 | 21 Jan | The Man You Become When Nobody Is Watching (identity) | 6 Identity | Draft + package ready |
-| 13 | 28 Jan | The Parts of Yourself You Were Taught to Hide | 2 Shadow | Batch 3 |
-| 14 | 4 Feb | The Exhaustion of Always Trying to Become Someone | 6 Identity | Batch 3 |
-| 15 | 11 Feb | Why We Mistake Intensity for Intimacy | 5 Attachment | Batch 3 |
-| 16 | 18 Feb | What Would You Do If Nobody Was Watching? (decisions) | 4 Philosophy | Batch 3 |
+| 13 | 28 Jan | The Parts of Yourself You Were Taught to Hide | 2 Shadow | Draft + package ready |
+| 14 | 4 Feb | The Exhaustion of Always Trying to Become Someone | 6 Identity | Draft + package ready |
+| 15 | 11 Feb | Why We Mistake Intensity for Intimacy | 5 Attachment | Draft + package ready |
+| 16 | 18 Feb | What Would You Do If Nobody Was Watching? (decisions) | 4 Philosophy | Draft + package ready |
 
 Titles 1 and 12 are kept apart on purpose. *The Man You Become…* is about identity: character as what private repetition leaves behind (Aristotle on habituation, self-perception research). *What Would You Do…* is about decisions: how being watched changes choices (Plato's Ring of Gyges, watching-eyes studies and their failed replications, regret research). Four weeks separate them.
 
