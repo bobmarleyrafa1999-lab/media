@@ -1,0 +1,166 @@
+<title>Moodius Money Model</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,500&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one reading column, ledger-style tables, Ember used only for the numbers that decide things */
+:root{
+  --bg:#F3EFE7; --surface:#FBF9F5; --fg:#1B1F24; --muted:#5E625F; --rule:#D9D3C7; --accent:#A85A1C; --neg:#9B3B2E; --pos:#3E6B4A;
+  --display:"Playfair Display",Georgia,serif; --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#1B1F24;--surface:#2A2F36;--fg:#F3EFE7;--muted:#B8B3A9;--rule:#3A4049;--accent:#C9742E;--neg:#E08A7A;--pos:#8DBB98;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#1B1F24;--surface:#2A2F36;--fg:#F3EFE7;--muted:#B8B3A9;--rule:#3A4049;--accent:#C9742E;--neg:#E08A7A;--pos:#8DBB98;color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15px/1.6 var(--body)}
+.wrap{max-width:860px;margin:0 auto;padding-block:40px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:40px}
+h1,h2{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:clamp(30px,5vw,44px);font-weight:800}
+h2{font-size:24px;font-weight:600}
+p{margin:0;max-width:68ch}
+.eyebrow{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+section{display:grid;gap:14px}
+.lead{font-size:17px;color:var(--fg)}
+.muted{color:var(--muted)}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule)}
+.fig{background:var(--surface);padding:16px;display:grid;gap:4px;min-width:0}
+.fig b{font-family:var(--display);font-size:28px;font-weight:600;font-variant-numeric:tabular-nums}
+.fig span{font-size:13px;color:var(--muted)}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;font-size:14px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:600}
+td.n,th.n{text-align:right;white-space:nowrap}
+.key{color:var(--accent);font-weight:600}
+.neg{color:var(--neg)} .pos{color:var(--pos)}
+.verdict{border-left:3px solid var(--accent);padding:4px 0 4px 14px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px}
+.two>div{min-width:0;display:grid;gap:8px;align-content:start}
+ul{margin:0;padding-left:18px;display:grid;gap:6px}
+.pill{display:inline-block;font-size:12px;padding:1px 8px;border-radius:10px;border:1px solid var(--rule);color:var(--muted);white-space:nowrap}
+.pill.met{border-color:var(--pos);color:var(--pos)}
+code{font-size:13px}
+</style>
+
+<div class="wrap">
+<header style="display:grid;gap:12px">
+  <div class="eyebrow">Moodius Aurelius · finance · 21 Oct 2026</div>
+  <h1>What it costs, what each sale earns, and what has to be true first</h1>
+  <p class="lead">A working spreadsheet covers ads, merch, journals and eight other income streams. Today's audience numbers come from Metricool. Every rate the model can't measure yet is labelled as an assumption, and you can change it.</p>
+  <p class="muted">Spreadsheet: <code>business/finance/moodius-finance-model.xlsx</code> (14 tabs, 619 formulas, no errors). Journal prices and fees are taken unchanged from the shop's <code>business/pricing/margins.py</code>.</p>
+</header>
+
+<section>
+  <h2>Where things stand</h2>
+  <div class="figs">
+    <div class="fig"><b>14</b><span>followers (3 on 4 Oct)</span></div>
+    <div class="fig"><b>1,347</b><span>reel views in the last 30 days</span></div>
+    <div class="fig"><b>£0</b><span>revenue per 1,000 views today (nothing on sale yet)</span></div>
+    <div class="fig"><b class="key">£28 / €32</b><span>fixed costs a month with the domain and PO box</span></div>
+  </div>
+  <p>Metricool (€20) plus the domain (£10 a year) and a PO box (about £10 a month) comes to <b>€32 a month, about €7 over the €25 lean target</b>. The PO box causes the overshoot. It's needed by law once the shop and marketing emails go live. Turning on the VPS and Claude API for comment replies would add about €10, so they stay off until you get about 20 comments a week.</p>
+</section>
+
+<section>
+  <h2>What one sale earns</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Product</th><th class="n">Price</th><th class="n">Cost of goods + postage</th><th class="n">You keep</th><th>How it's sold</th></tr></thead>
+    <tbody>
+      <tr><td>The Unexamined Self (journal)</td><td class="n">£14</td><td class="n">£0</td><td class="n key">£10.16</td><td>Own shop, Stripe Managed Payments (handles VAT)</td></tr>
+      <tr><td>Personalised journal</td><td class="n">£19</td><td class="n">£0 + 3 min of your time</td><td class="n">£13.11</td><td>Same</td></tr>
+      <tr><td>The Examined Life bundle (after 25 orders)</td><td class="n">£29</td><td class="n">£0</td><td class="n">£21.26</td><td>Same</td></tr>
+      <tr><td>Print edition (Amazon KDP)</td><td class="n">£12.99</td><td class="n">£2.29 printing, Amazon posts it</td><td class="n">£5.50</td><td>Amazon, no stock</td></tr>
+      <tr><td>Typographic tee, UK order</td><td class="n">£28 + £3.95 post</td><td class="n">£9.71 + £2.99</td><td class="n">£13.40</td><td>Etsy + Printful</td></tr>
+      <tr><td>Art print 12×16, UK order</td><td class="n">£22 + £3.95 post</td><td class="n">£8.21 + £4.99</td><td class="n">£7.96</td><td>Etsy + Printful</td></tr>
+      <tr><td>Hardcover notebook, UK order</td><td class="n">£22 + £3.95 post</td><td class="n">≈£11.25 + £4.49 (estimate)</td><td class="n">£5.42</td><td>Etsy + Printful</td></tr>
+    </tbody>
+  </table></div>
+  <p class="muted">"You keep" is after VAT, payment and Etsy fees, and a 3% refund allowance (5% on merch). The journal figure blends 60% UK, 20% EEA and 20% international buyers, which is an assumption until Stripe shows the real mix. The merch tab also prices EU and US orders and an own-site option.</p>
+</section>
+
+<section>
+  <h2>Three futures for the next 90 days</h2>
+  <p>The 90 days run from 2 Nov to 31 Jan, in line with the Substack calendar (first essay 5 Nov) and the 30-day monetisation plan. Views per reel are the only driver tied to real numbers. Click, sign-up and purchase rates are assumptions, and week 1 of the plan starts measuring them.</p>
+  <div class="tbl"><table>
+    <thead><tr><th></th><th class="n">Conservative</th><th class="n">Base</th><th class="n">Optimistic</th></tr></thead>
+    <tbody>
+      <tr><td>Views per reel by January</td><td class="n">130 (today's median)</td><td class="n">400 (Phase 0 gate)</td><td class="n">1,000</td></tr>
+      <tr><td>Revenue per 1,000 views</td><td class="n">£0.23</td><td class="n">£0.96</td><td class="n">£4.15</td></tr>
+      <tr><td>Views a month to cover fixed costs</td><td class="n">164,000</td><td class="n">40,000</td><td class="n">9,300</td></tr>
+      <tr><td>Journal sales over 90 days</td><td class="n">0</td><td class="n">2</td><td class="n">18</td></tr>
+      <tr><td>90-day net result</td><td class="n neg">−£83</td><td class="n neg">−£67</td><td class="n pos">+£102</td></tr>
+    </tbody>
+  </table></div>
+  <p class="verdict">Break-even is <b>3 journal sales a month</b>. At today's reach the business runs at roughly −£25 a month, and the money left in your pocket is mostly the Metricool fee you already pay. Reach is what changes the result, not price or fees.</p>
+</section>
+
+<section>
+  <h2>Paid ads: the €35 test</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>€5 a day for 7 days on one proven reel</th><th class="n">Expensive clicks</th><th class="n">Middle</th><th class="n">Cheap clicks</th><th class="n">Break-even</th></tr></thead>
+    <tbody>
+      <tr><td>Cost per follower (assumed)</td><td class="n">£1.50</td><td class="n">£0.90</td><td class="n">£0.30</td><td class="n">n/a</td></tr>
+      <tr><td>Cost per guide sign-up</td><td class="n">£4.50</td><td class="n">£2.75</td><td class="n">£1.00</td><td class="n key">£0.20</td></tr>
+      <tr><td>Cost per journal sale</td><td class="n">£84</td><td class="n">£52</td><td class="n">£19</td><td class="n key">£10.16</td></tr>
+      <tr><td>Money back from journal sales</td><td class="n">12%</td><td class="n">20%</td><td class="n">54%</td><td class="n">100%</td></tr>
+    </tbody>
+  </table></div>
+  <p>Click costs are 2026 benchmarks ($0.40–1.80, no UK split). The test buys data, not profit. A sign-up is worth about 20p in journal profit within 90 days, so paid sign-ups only pay back once the list buys more than one thing. <b>The test unlocks after 25 organic guide sign-ups</b>, and only with your OK on that spend. There's a slot in the Ads tab for your own ad screenshot. Once it's filled in, your real numbers replace the benchmarks.</p>
+</section>
+
+<section class="two">
+  <div>
+    <h2>Merch</h2>
+    <p>Print-on-demand means no stock. Etsy comes first because it collects UK and EU VAT for you. A tee keeps about as much per sale as a journal, but it needs samples (about £45), a second shop and physical returns, and people buy clothing from brands they already know. <b>Launch after 50 journal sales and people asking for it.</b> Until then the journal wins: it costs nothing to make and it already exists. Nothing has been listed. Choosing the supplier is up to you.</p>
+  </div>
+  <div>
+    <h2>Brand deals</h2>
+    <p>The rate card prices a deal from measured views only, at 2026 creator rates of $5–15 per 1,000 views. Today a reel is worth about £0.50–1.50 to a sponsor, so outreach isn't worth your time yet. At 1,000 followers and 1,000 views a reel, a reel is worth about £37 (the nano-tier floor). Good fits are stationery, books, education, mindfulness and professional development. Men's grooming is off-brand. Never: gambling, crypto, supplements or anything that makes health claims.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Other income, in the order it becomes realistic</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Stream</th><th class="n">Per unit you keep</th><th class="n">Effort</th><th>Realistic when</th><th>Horizon</th></tr></thead>
+    <tbody>
+      <tr><td>Journal + digital products</td><td class="n">£10.16</td><td class="n">1</td><td>Shop live</td><td>Now</td></tr>
+      <tr><td>Affiliate books and stationery</td><td class="n">£1.20</td><td class="n">1</td><td>Any reach (week 3 test)</td><td>Now</td></tr>
+      <tr><td>Print edition (KDP)</td><td class="n">£5.50</td><td class="n">2</td><td>50 digital sales</td><td>3–6 months</td></tr>
+      <tr><td>Merch (POD tee)</td><td class="n">£13.40</td><td class="n">2</td><td>50 journal sales + demand</td><td>4–6 months</td></tr>
+      <tr><td>Live online workshop</td><td class="n">£14.57</td><td class="n">3</td><td>500 on the list</td><td>4–6 months</td></tr>
+      <tr><td>Brand partnerships</td><td class="n">≈£36 a reel</td><td class="n">3</td><td>1k followers, 1k views a reel, PO box</td><td>4–8 months</td></tr>
+      <tr><td>Paid Substack (£5/month)</td><td class="n">£4.11</td><td class="n">3</td><td>1,000 free subscribers</td><td>6–12 months</td></tr>
+      <tr><td>Small-group reflective mentoring</td><td class="n">£58.90 a person</td><td class="n">4</td><td>1,000 list + 10 people asking</td><td>6–9 months</td></tr>
+      <tr><td>1:1 reflective mentoring</td><td class="n">£44.12</td><td class="n">5</td><td>Same</td><td>6–9 months</td></tr>
+      <tr><td>Membership</td><td class="n">£4.98/month</td><td class="n">4</td><td>300 engaged readers</td><td>9–12 months</td></tr>
+      <tr><td>Self-paced course</td><td class="n">£38.18</td><td class="n">5</td><td>1,000 list + 50 buyers</td><td>9–12 months</td></tr>
+      <tr><td>Licensing the content system</td><td class="n">£220/month a brand</td><td class="n">5</td><td>Engine runs 2–3 of your own brands</td><td>12+ months</td></tr>
+    </tbody>
+  </table></div>
+  <p class="muted">Once each stream's threshold is met, the best payoff for the effort comes from workshops, then small-group mentoring, then licensing. The horizon still decides the order. Mentoring is positioned as reflective mentoring, never therapy: a clear scope, signposting to professionals, and no crisis work. It would also break the brand's anonymity unless you run it in the brand's voice. Prices for mentoring, workshops, courses and licensing are assumptions.</p>
+</section>
+
+<section class="two">
+  <div>
+    <h2>What Claude did</h2>
+    <ul>
+      <li>Built the spreadsheet: costs in £ and €, cost of goods and postage by region, scenarios, a 90-day P&amp;L with cash, the ad maths, a rate card, 15 unlock gates and a 12-month sequence.</li>
+      <li>Pulled live Metricool numbers and matched the journal figures to the shop's pricing (an automatic check flags any difference).</li>
+      <li>Cited every benchmark in the Sources tab and labelled every unsourced rate as an assumption.</li>
+    </ul>
+  </div>
+  <div>
+    <h2>What only you can add</h2>
+    <ul>
+      <li>Your ad results screenshot (yellow cells in Ads).</li>
+      <li>OK or no for the domain and PO box, which the model already includes.</li>
+      <li>The date the shop goes live, and any cash you're setting aside.</li>
+      <li>Your merch supplier choice. Later: real Stripe fees and buyer countries.</li>
+      <li>Where you're tax-resident and whether you're VAT-registered. Ask an accountant; income tax isn't modelled.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Gates</h2>
+  <p>1 of 15 gates is met: a reel has reached twice the median views <span class="pill met">Met</span>. Next up are the shop going live, 25 organic sign-ups (unlocks the ad test), 25 orders (unlocks the bundle) and 20 comments a week (unlocks comment automation). Update the measured numbers on the Inputs tab each week and the statuses update themselves.</p>
+</section>
+</div>
