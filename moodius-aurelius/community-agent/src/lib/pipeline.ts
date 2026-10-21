@@ -148,10 +148,12 @@ export async function publishReply(commentId: string, text: string, actor: strin
 // Private replies: Meta allows exactly one per comment, within 7 days. Links point at our own
 // tracked redirect, and the text says plainly that nothing was signed up for.
 export const KEYWORD_DMS: Record<Keyword, { slug: string; text: (url: string) => string }> = {
-  JOURNAL: { slug: "journal-worksheet", text: (u) => `Here's the guided journaling worksheet you asked for: ${u}\nNo sign-up, it's yours.` },
+  JOURNAL: { slug: "journal-worksheet", text: (u) => `Here's the guided journaling worksheet you asked for: ${u}\nNo sign-up, it's yours.\nIf you want the full 30 days, The Unexamined Self is here: ${config().baseUrl}/r/journal?src=dm_journal` },
   READ: { slug: "reading-list", text: (u) => `Here's the reading list, with the translations I'd start with: ${u}` },
   REFLECT: { slug: "reflection-exercise", text: (u) => `Here's tonight's reflection exercise. Ten minutes, pen and paper: ${u}` },
   NEWSLETTER: { slug: "newsletter", text: (u) => `Here's the newsletter page: ${u}\nYou're only added if you choose to subscribe there.` },
+  // GUIDE goes to the storefront's /guide/ page (free guide + newsletter consent form), used by reel P005.
+  GUIDE: { slug: "guide", text: (u) => `Here's the free guide: ${u}\nYou choose there whether you also want the newsletter.` },
   TOOLS: { slug: "stoic-tools-guide", text: (u) => `Here's the free guide, 7 Stoic tools for when emotions are loud: ${u}` },
 };
 

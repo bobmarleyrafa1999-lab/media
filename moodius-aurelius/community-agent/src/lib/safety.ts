@@ -27,7 +27,7 @@ const SPAM = [
 ];
 const TROLL = [/\b(cringe|cope|seethe|simp|beta male|soy|grifter|idiot|stupid page)\b/i];
 
-export const KEYWORDS = ["JOURNAL", "READ", "REFLECT", "NEWSLETTER", "TOOLS"] as const;
+export const KEYWORDS = ["JOURNAL", "READ", "REFLECT", "NEWSLETTER", "TOOLS", "GUIDE"] as const;
 export type Keyword = (typeof KEYWORDS)[number];
 
 export function detectKeyword(text: string): Keyword | null {

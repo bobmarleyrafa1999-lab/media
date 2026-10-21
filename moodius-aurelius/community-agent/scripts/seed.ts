@@ -28,7 +28,14 @@ const LINKS: [string, string, string, string, string | null, number][] = [
   ["journal-worksheet", "Free: guided journaling worksheet", "/free/journal-worksheet", "resource", null, 40],
   ["reading-list", "A reading list for the inner life", "/free/reading-list", "resource", null, 50],
   ["reflection-exercise", "Tonight's reflection: the evening review", "/free/reflection-exercise", "resource", null, 60],
-  ["shop", "Journals and workbooks", "/shop", "product", null, 70],
+  // Same slugs and destinations as the storefront's fallback table (business/website/src/links.js).
+  // Position 1000+ = alias: redirects work, but it isn't listed on /links.
+  ["guide", "Free guide", "/guide/", "resource", null, 35],
+  ["free-guide", "Free guide", "/guide/", "resource", null, 1036],
+  ["shop", "The Unexamined Self: a 30-day journal", "/shop/the-unexamined-self/", "product", null, 70],
+  ["journal", "The Unexamined Self: a 30-day journal", "/shop/the-unexamined-self/", "product", null, 1071],
+  ["the-unexamined-self", "The Unexamined Self: a 30-day journal", "/shop/the-unexamined-self/", "product", null, 1072],
+  ["home", "Website", "/", "resource", null, 1095],
   ["instagram", "Instagram @moodiusaurelius", "https://www.instagram.com/moodiusaurelius/", "resource", null, 90],
 ];
 

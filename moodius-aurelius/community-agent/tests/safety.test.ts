@@ -56,3 +56,12 @@ describe("similarity and priority", () => {
     expect(p("spam")).toBe(0);
   });
 });
+
+describe("GUIDE keyword", () => {
+  it("is detected like the other keywords", async () => {
+    const { detectKeyword } = await import("../src/lib/safety");
+    expect(detectKeyword("GUIDE")).toBe("GUIDE");
+    expect(detectKeyword("guide please 🙏")).toBe("GUIDE");
+    expect(detectKeyword("this is a great guide to living, thank you so much")).toBeNull();
+  });
+});

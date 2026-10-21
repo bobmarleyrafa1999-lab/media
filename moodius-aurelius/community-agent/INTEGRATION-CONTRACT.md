@@ -50,3 +50,13 @@ Storefront owns the root domain. One reverse proxy (Caddy, or Vercel rewrites) r
 `/r/*`, `/links`, `/newsletter*`, `/free/*`, `/privacy-newsletter`, `/api/newsletter/*`, `/api/webhooks/*`, `/api/integrations/*`, `/api/cron/*`, `/api/admin/*`, `/admin*`, `/_agent/*`
 
 (The agent's Next.js assets are served under `/_agent` via `assetPrefix` when it sits behind the storefront.)
+
+## Update 21 Oct 2026 22:50 UTC: storefront live, slugs synced
+- Storefront code: `moodius-aurelius/business/website` (branch claude/project-thread-8379d0).
+- The agent's `/r/` table now carries the storefront's slugs with the same destinations: `guide`, `free-guide` → `/guide/`;
+  `shop`, `journal`, `the-unexamined-self` → `/shop/the-unexamined-self/`; `home` → `/`. Aliases (position ≥ 1000) redirect but
+  aren't listed on `/links`. `newsletter` stays on the agent's own consent page `/newsletter`.
+- The visitor's `?src=` always wins, so `/r/journal?src=dm_reel_p005` keeps that source through the redirect.
+- New DM keyword **GUIDE** → `/r/guide?src=dm_guide`. **JOURNAL** DMs send the free worksheet first and the
+  journal link second (`/r/journal?src=dm_journal`). Per-post attribution for DMs comes from the comment's media id
+  in the agent's database, so DM links don't need the reel code.

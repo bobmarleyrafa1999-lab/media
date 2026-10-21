@@ -13,7 +13,7 @@ const GROUPS: [string, string[]][] = [
 ];
 
 export default async function LinksPage() {
-  const links = await q<Link>("SELECT slug, label, kind, disclosure FROM links WHERE active ORDER BY position, slug").catch(() => [] as Link[]);
+  const links = await q<Link>("SELECT slug, label, kind, disclosure FROM links WHERE active AND position < 1000 ORDER BY position, slug").catch(() => [] as Link[]);
   return (
     <main className="wrap">
       <header style={{ textAlign: "center", marginBottom: 28 }}>
