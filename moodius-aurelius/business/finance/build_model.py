@@ -151,6 +151,7 @@ INPUTS = [
     ("kdp_print", "KDP printing cost, ~120 pp black and white", 2.29, "£", "Assumption", "Estimated, check the KDP printing-cost calculator."),
     ("Cash", None),
     ("opening_cash", "Cash set aside for the business on 1 Nov", 0, "£", "Surafel input", "Put your starting budget here; the cash view shows if it ever goes below zero."),
+    ("po_deposit", "PO box postage deposit (one-off, refundable)", 20, "£", "From shop thread", "i-support Post Forwarding deposit; paid in month 1 of the cash view."),
     ("payout_lag", "Share of a month's sales paid out the next month", 0.25, "%", "Assumption", "Roughly a 7-day payout delay. Replace with your Stripe payout schedule."),
     ("shop_live_month", "Month the shop starts selling (1 = Nov, 2 = Dec, 3 = Jan)", 1, "month", "Surafel input", "Set to 2 if the shop isn't live by the end of November."),
 ]
@@ -198,8 +199,8 @@ put(ws, "A2", "Include = 1 counts the cost in the P&L. Costs marked 'Needs your 
 header(ws, 4, ["Item", "Currency", "Amount (native)", "Monthly £", "Monthly €", "Include", "Status", "Note"])
 COSTS = [
     ("Metricool Starter (scheduling + analytics)", "EUR", 20, 1, 1, "Active (paid 21 Oct)", "Monthly plan; Instagram + Facebook now, Threads/Pinterest when connected."),
-    ("Domain for the shop", "GBP", 10, 12, 1, "Needs your OK", "About £10 a year, shown per month. Paid upfront in the cash view."),
-    ("PO box / virtual address", "GBP", 10, 1, 1, "Needs your OK", "£5-15 a month, midpoint. Legally needed on the shop's legal pages and in marketing emails."),
+    ("Domain for the shop", "GBP", 8, 12, 1, "Needs your OK", "About £8 a year at Cloudflare cost price (shop thread, 22 Oct), shown per month. Paid upfront in the cash view."),
+    ("PO box / virtual address", "GBP", 13, 1, 1, "Needs your OK", "i-support Post Forwarding £13/mo (or £130/yr), picked by the shop thread 22 Oct; plus a £20 one-off postage deposit in the cash view. Legally needed on the legal pages and in marketing emails."),
     ("VPS for comment agent + n8n", "EUR", 5, 1, 0, "Needs your OK", "€4-6 a month (community-agent/docs/04). Off until the comments gate is met."),
     ("Claude API for comment replies", "EUR", 5, 1, 0, "Needs your OK", "€1-10 a month depending on model and volume. Runs on the VPS, so same gate."),
     ("Cloudflare Pages + D1 + R2 (shop)", "GBP", 0, 1, 1, "Free tier", "Commercial use allowed on the free tier."),
@@ -506,7 +507,7 @@ LINES = [
     ("open", "Opening cash £", "={prevclose}", GBP, "M1 starts from Inputs 'Cash set aside'."),
     ("cin", "Cash in £ (net of VAT/fees/refunds, after payout delay)", "=({c}{gp}+{c}{cogs})*(1-" + I("payout_lag") + ")+{prevgp}*" + I("payout_lag"), GBP, ""),
     ("cout", "Cash out £", "={c}{opex}-{c}{fx2}+{c}{cashfixed}", GBP, ""),
-    ("cashfixed", "  of which fixed costs paid this month £", "={c}{fx2}-" + q("Fixed costs") + "!$D${dr}*" + q("Fixed costs") + "!$F${dr}+IF({c}{m}=1," + q("Fixed costs") + "!$C${dr}*" + q("Fixed costs") + "!$F${dr},0)", GBP, "Domain's year paid in M1."),
+    ("cashfixed", "  of which fixed costs paid this month £", "={c}{fx2}-" + q("Fixed costs") + "!$D${dr}*" + q("Fixed costs") + "!$F${dr}+IF({c}{m}=1," + q("Fixed costs") + "!$C${dr}*" + q("Fixed costs") + "!$F${dr}+" + I("po_deposit") + ",0)", GBP, "Domain's year and the PO box deposit paid in M1."),
     ("close", "Closing cash £", "={c}{open}+{c}{cin}-{c}{cout}", GBP, ""),
 ]
 PR = {}
