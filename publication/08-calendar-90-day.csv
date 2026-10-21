@@ -56,7 +56,7 @@ date,day,time,platform,asset,essay_id,essay,who,status,note
 2026-11-26,Thu,07:30,Substack,Essay 04 (pillar 10),MA-004,The Raise That Didn't Arrive Inside,Surafel,Surafel task,Surafel pastes + presses publish; draft v1 + package 04
 2026-11-26,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-004,The Raise That Didn't Arrive Inside,Surafel,Surafel task,
 2026-11-26,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-004,The Raise That Didn't Arrive Inside,Claude,planned: needs approval,replaces that day's Journal story
-2026-11-26,Thu,—,Repo,"Draft, verify, package (if not done)",MA-005,Stoicism Was Never About Not Feeling,Claude,planned: needs approval,approval needed by the Monday before
+2026-11-26,Thu,—,Repo,"Draft, verify, package (if not done)",MA-052,You Can Understand Yourself and Still Repeat the Same Mistakes,Claude,planned: needs approval,approval needed by the Monday before
 2026-11-27,Fri,09:00,Substack Notes,Note 2,MA-004,The Raise That Didn't Arrive Inside,Surafel,Surafel task,
 2026-11-27,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-004,The Raise That Didn't Arrive Inside,Claude,planned: needs approval,
 2026-11-27,Fri,20:00,Pinterest,Pin 1,MA-004,The Raise That Didn't Arrive Inside,Claude,planned: needs approval,only once Pinterest is connected in Metricool
@@ -69,154 +69,119 @@ date,day,time,platform,asset,essay_id,essay,who,status,note
 2026-12-01,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-004,The Raise That Didn't Arrive Inside,Claude,planned: needs approval,
 2026-12-01,Tue,20:00,Pinterest,Pin 5,MA-004,The Raise That Didn't Arrive Inside,Claude,planned: needs approval,only once Pinterest is connected in Metricool
 2026-12-01,Tue,—,Instagram story,Story 1 (Tue poll),MA-004,The Raise That Didn't Arrive Inside,Surafel,Surafel task,existing Tue sticker slot
-2026-12-03,Thu,07:30,Substack,Essay 05 (pillar 9),MA-005,Stoicism Was Never About Not Feeling,Surafel,Surafel task,Surafel pastes + presses publish; to draft by 26 Nov
-2026-12-03,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-005,Stoicism Was Never About Not Feeling,Surafel,Surafel task,
-2026-12-03,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-005,Stoicism Was Never About Not Feeling,Claude,planned: needs approval,replaces that day's Journal story
-2026-12-03,Thu,—,Repo,"Draft, verify, package (if not done)",MA-008,Shame Says You Are the Problem. Guilt Says You Made One.,Claude,planned: needs approval,approval needed by the Monday before
-2026-12-04,Fri,09:00,Substack Notes,Note 2,MA-005,Stoicism Was Never About Not Feeling,Surafel,Surafel task,
-2026-12-04,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-005,Stoicism Was Never About Not Feeling,Claude,planned: needs approval,
-2026-12-04,Fri,20:00,Pinterest,Pin 1,MA-005,Stoicism Was Never About Not Feeling,Claude,planned: needs approval,only once Pinterest is connected in Metricool
+2026-12-03,Thu,07:30,Substack,Essay 05 (pillar 6),MA-052,You Can Understand Yourself and Still Repeat the Same Mistakes,Surafel,Surafel task,Surafel pastes + presses publish; draft v1 + package 05 (selected title 2)
+2026-12-03,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-052,You Can Understand Yourself and Still Repeat the Same Mistakes,Surafel,Surafel task,
+2026-12-03,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-052,You Can Understand Yourself and Still Repeat the Same Mistakes,Claude,planned: needs approval,replaces that day's Journal story
+2026-12-03,Thu,—,Repo,"Draft, verify, package (if not done)",MA-036,What Your Anger Is Trying to Protect,Claude,planned: needs approval,approval needed by the Monday before
+2026-12-04,Fri,09:00,Substack Notes,Note 2,MA-052,You Can Understand Yourself and Still Repeat the Same Mistakes,Surafel,Surafel task,
+2026-12-04,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-052,You Can Understand Yourself and Still Repeat the Same Mistakes,Claude,planned: needs approval,
 2026-12-04,Fri,—,Review,Day-30 Substack review (/metrics-review day30),,,Claude,planned: needs approval,
-2026-12-05,Sat,20:00,Pinterest,Pin 2,MA-005,Stoicism Was Never About Not Feeling,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2026-12-05,Sat,—,Instagram story,Story 2 (Sat question box/slider),MA-005,Stoicism Was Never About Not Feeling,Surafel,Surafel task,existing Sat sticker slot
 2026-12-06,Sun,08:00,Substack,The Evening Review (300-500 words),,,Surafel,Surafel task,Claude drafts
-2026-12-06,Sun,20:00,Pinterest,Pin 3,MA-005,Stoicism Was Never About Not Feeling,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2026-12-07,Mon,09:00,Substack Notes,Note 3,MA-005,Stoicism Was Never About Not Feeling,Surafel,Surafel task,
-2026-12-07,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-005,Stoicism Was Never About Not Feeling,Claude,planned: needs approval,
-2026-12-07,Mon,20:00,Pinterest,Pin 4,MA-005,Stoicism Was Never About Not Feeling,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2026-12-08,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-005,Stoicism Was Never About Not Feeling,Claude,planned: needs approval,
-2026-12-08,Tue,20:00,Pinterest,Pin 5,MA-005,Stoicism Was Never About Not Feeling,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2026-12-08,Tue,—,Instagram story,Story 1 (Tue poll),MA-005,Stoicism Was Never About Not Feeling,Surafel,Surafel task,existing Tue sticker slot
-2026-12-10,Thu,07:30,Substack,Essay 06 (pillar 9),MA-008,Shame Says You Are the Problem. Guilt Says You Made One.,Surafel,Surafel task,Surafel pastes + presses publish; to draft by 3 Dec
-2026-12-10,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-008,Shame Says You Are the Problem. Guilt Says You Made One.,Surafel,Surafel task,
-2026-12-10,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-008,Shame Says You Are the Problem. Guilt Says You Made One.,Claude,planned: needs approval,replaces that day's Journal story
-2026-12-10,Thu,—,Repo,"Draft, verify, package (if not done)",MA-013,Being Okay Is Not Proof You Didn't Love Them,Claude,planned: needs approval,approval needed by the Monday before
-2026-12-11,Fri,09:00,Substack Notes,Note 2,MA-008,Shame Says You Are the Problem. Guilt Says You Made One.,Surafel,Surafel task,
-2026-12-11,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-008,Shame Says You Are the Problem. Guilt Says You Made One.,Claude,planned: needs approval,
-2026-12-11,Fri,20:00,Pinterest,Pin 1,MA-008,Shame Says You Are the Problem. Guilt Says You Made One.,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2026-12-12,Sat,20:00,Pinterest,Pin 2,MA-008,Shame Says You Are the Problem. Guilt Says You Made One.,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2026-12-12,Sat,—,Instagram story,Story 2 (Sat question box/slider),MA-008,Shame Says You Are the Problem. Guilt Says You Made One.,Surafel,Surafel task,existing Sat sticker slot
-2026-12-13,Sun,20:00,Pinterest,Pin 3,MA-008,Shame Says You Are the Problem. Guilt Says You Made One.,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2026-12-14,Mon,09:00,Substack Notes,Note 3,MA-008,Shame Says You Are the Problem. Guilt Says You Made One.,Surafel,Surafel task,
-2026-12-14,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-008,Shame Says You Are the Problem. Guilt Says You Made One.,Claude,planned: needs approval,
-2026-12-14,Mon,20:00,Pinterest,Pin 4,MA-008,Shame Says You Are the Problem. Guilt Says You Made One.,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2026-12-15,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-008,Shame Says You Are the Problem. Guilt Says You Made One.,Claude,planned: needs approval,
-2026-12-15,Tue,20:00,Pinterest,Pin 5,MA-008,Shame Says You Are the Problem. Guilt Says You Made One.,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2026-12-15,Tue,—,Instagram story,Story 1 (Tue poll),MA-008,Shame Says You Are the Problem. Guilt Says You Made One.,Surafel,Surafel task,existing Tue sticker slot
-2026-12-17,Thu,07:30,Substack,Essay 07 (pillar 8),MA-013,Being Okay Is Not Proof You Didn't Love Them,Surafel,Surafel task,Surafel pastes + presses publish; before the holidays; signpost helplines
-2026-12-17,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-013,Being Okay Is Not Proof You Didn't Love Them,Surafel,Surafel task,
-2026-12-17,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-013,Being Okay Is Not Proof You Didn't Love Them,Claude,planned: needs approval,replaces that day's Journal story
-2026-12-17,Thu,—,Repo,"Draft, verify, package (if not done)",MA-045,The Unsent Letter,Claude,planned: needs approval,approval needed by the Monday before
-2026-12-18,Fri,09:00,Substack Notes,Note 2,MA-013,Being Okay Is Not Proof You Didn't Love Them,Surafel,Surafel task,
-2026-12-18,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-013,Being Okay Is Not Proof You Didn't Love Them,Claude,planned: needs approval,
-2026-12-18,Fri,20:00,Pinterest,Pin 1,MA-013,Being Okay Is Not Proof You Didn't Love Them,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2026-12-19,Sat,20:00,Pinterest,Pin 2,MA-013,Being Okay Is Not Proof You Didn't Love Them,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2026-12-19,Sat,—,Instagram story,Story 2 (Sat question box/slider),MA-013,Being Okay Is Not Proof You Didn't Love Them,Surafel,Surafel task,existing Sat sticker slot
+2026-12-07,Mon,09:00,Substack Notes,Note 3,MA-052,You Can Understand Yourself and Still Repeat the Same Mistakes,Surafel,Surafel task,
+2026-12-07,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-052,You Can Understand Yourself and Still Repeat the Same Mistakes,Claude,planned: needs approval,
+2026-12-08,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-052,You Can Understand Yourself and Still Repeat the Same Mistakes,Claude,planned: needs approval,
+2026-12-10,Thu,07:30,Substack,Essay 06 (pillar 9),MA-036,What Your Anger Is Trying to Protect,Surafel,Surafel task,Surafel pastes + presses publish; draft v1 + package 06 (selected title 8)
+2026-12-10,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-036,What Your Anger Is Trying to Protect,Surafel,Surafel task,
+2026-12-10,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-036,What Your Anger Is Trying to Protect,Claude,planned: needs approval,replaces that day's Journal story
+2026-12-10,Thu,—,Repo,"Draft, verify, package (if not done)",MA-053,Why Being Needed Can Feel Like Being Loved,Claude,planned: needs approval,approval needed by the Monday before
+2026-12-11,Fri,09:00,Substack Notes,Note 2,MA-036,What Your Anger Is Trying to Protect,Surafel,Surafel task,
+2026-12-11,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-036,What Your Anger Is Trying to Protect,Claude,planned: needs approval,
+2026-12-14,Mon,09:00,Substack Notes,Note 3,MA-036,What Your Anger Is Trying to Protect,Surafel,Surafel task,
+2026-12-14,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-036,What Your Anger Is Trying to Protect,Claude,planned: needs approval,
+2026-12-15,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-036,What Your Anger Is Trying to Protect,Claude,planned: needs approval,
+2026-12-17,Thu,07:30,Substack,Essay 07 (pillar 5),MA-053,Why Being Needed Can Feel Like Being Loved,Surafel,Surafel task,Surafel pastes + presses publish; draft v1 + package 07 (selected title 4); before the holidays
+2026-12-17,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-053,Why Being Needed Can Feel Like Being Loved,Surafel,Surafel task,
+2026-12-17,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-053,Why Being Needed Can Feel Like Being Loved,Claude,planned: needs approval,replaces that day's Journal story
+2026-12-17,Thu,—,Repo,"Draft, verify, package (if not done)",MA-058,The Things We Inherit Without Realising,Claude,planned: needs approval,approval needed by the Monday before
+2026-12-18,Fri,09:00,Substack Notes,Note 2,MA-053,Why Being Needed Can Feel Like Being Loved,Surafel,Surafel task,
+2026-12-18,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-053,Why Being Needed Can Feel Like Being Loved,Claude,planned: needs approval,
 2026-12-20,Sun,08:00,Substack,The Evening Review (300-500 words),,,Surafel,Surafel task,Claude drafts
-2026-12-20,Sun,20:00,Pinterest,Pin 3,MA-013,Being Okay Is Not Proof You Didn't Love Them,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2026-12-21,Mon,09:00,Substack Notes,Note 3,MA-013,Being Okay Is Not Proof You Didn't Love Them,Surafel,Surafel task,
-2026-12-21,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-013,Being Okay Is Not Proof You Didn't Love Them,Claude,planned: needs approval,
-2026-12-21,Mon,20:00,Pinterest,Pin 4,MA-013,Being Okay Is Not Proof You Didn't Love Them,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2026-12-22,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-013,Being Okay Is Not Proof You Didn't Love Them,Claude,planned: needs approval,
-2026-12-22,Tue,20:00,Pinterest,Pin 5,MA-013,Being Okay Is Not Proof You Didn't Love Them,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2026-12-22,Tue,—,Instagram story,Story 1 (Tue poll),MA-013,Being Okay Is Not Proof You Didn't Love Them,Surafel,Surafel task,existing Tue sticker slot
-2026-12-24,Thu,07:30,Substack,Essay 08 (pillar 1),MA-045,The Unsent Letter,Surafel,Surafel task,"Surafel pastes + presses publish; short holiday piece (800-1,000 words)"
-2026-12-24,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-045,The Unsent Letter,Surafel,Surafel task,
-2026-12-24,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-045,The Unsent Letter,Claude,planned: needs approval,replaces that day's Journal story
-2026-12-24,Thu,—,Repo,"Draft, verify, package (if not done)",MA-025,The Day After the Goal,Claude,planned: needs approval,approval needed by the Monday before
-2026-12-25,Fri,09:00,Substack Notes,Note 2,MA-045,The Unsent Letter,Surafel,Surafel task,
-2026-12-25,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-045,The Unsent Letter,Claude,planned: needs approval,
-2026-12-25,Fri,20:00,Pinterest,Pin 1,MA-045,The Unsent Letter,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2026-12-26,Sat,20:00,Pinterest,Pin 2,MA-045,The Unsent Letter,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2026-12-26,Sat,—,Instagram story,Story 2 (Sat question box/slider),MA-045,The Unsent Letter,Surafel,Surafel task,existing Sat sticker slot
-2026-12-27,Sun,20:00,Pinterest,Pin 3,MA-045,The Unsent Letter,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2026-12-28,Mon,09:00,Substack Notes,Note 3,MA-045,The Unsent Letter,Surafel,Surafel task,
-2026-12-28,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-045,The Unsent Letter,Claude,planned: needs approval,
-2026-12-28,Mon,20:00,Pinterest,Pin 4,MA-045,The Unsent Letter,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2026-12-29,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-045,The Unsent Letter,Claude,planned: needs approval,
-2026-12-29,Tue,20:00,Pinterest,Pin 5,MA-045,The Unsent Letter,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2026-12-29,Tue,—,Instagram story,Story 1 (Tue poll),MA-045,The Unsent Letter,Surafel,Surafel task,existing Tue sticker slot
-2026-12-31,Thu,07:30,Substack,Essay 09 (pillar 6),MA-025,The Day After the Goal,Surafel,Surafel task,Surafel pastes + presses publish; year-end
-2026-12-31,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-025,The Day After the Goal,Surafel,Surafel task,
-2026-12-31,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-025,The Day After the Goal,Claude,planned: needs approval,replaces that day's Journal story
-2026-12-31,Thu,—,Repo,"Draft, verify, package (if not done)",MA-022,"The Five-Minute Evening Review, Done Properly",Claude,planned: needs approval,approval needed by the Monday before
-2027-01-01,Fri,09:00,Substack Notes,Note 2,MA-025,The Day After the Goal,Surafel,Surafel task,
-2027-01-01,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-025,The Day After the Goal,Claude,planned: needs approval,
-2027-01-01,Fri,20:00,Pinterest,Pin 1,MA-025,The Day After the Goal,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-02,Sat,20:00,Pinterest,Pin 2,MA-025,The Day After the Goal,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-02,Sat,—,Instagram story,Story 2 (Sat question box/slider),MA-025,The Day After the Goal,Surafel,Surafel task,existing Sat sticker slot
+2026-12-21,Mon,09:00,Substack Notes,Note 3,MA-053,Why Being Needed Can Feel Like Being Loved,Surafel,Surafel task,
+2026-12-21,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-053,Why Being Needed Can Feel Like Being Loved,Claude,planned: needs approval,
+2026-12-22,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-053,Why Being Needed Can Feel Like Being Loved,Claude,planned: needs approval,
+2026-12-24,Thu,07:30,Substack,Essay 08 (pillar 2),MA-058,The Things We Inherit Without Realising,Surafel,Surafel task,Surafel pastes + presses publish; selected title 10; family-at-Christmas timing
+2026-12-24,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-058,The Things We Inherit Without Realising,Surafel,Surafel task,
+2026-12-24,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-058,The Things We Inherit Without Realising,Claude,planned: needs approval,replaces that day's Journal story
+2026-12-24,Thu,—,Repo,"Draft, verify, package (if not done)",MA-057,A Life That Looks Successful but Feels Empty,Claude,planned: needs approval,approval needed by the Monday before
+2026-12-25,Fri,09:00,Substack Notes,Note 2,MA-058,The Things We Inherit Without Realising,Surafel,Surafel task,
+2026-12-25,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-058,The Things We Inherit Without Realising,Claude,planned: needs approval,
+2026-12-28,Mon,09:00,Substack Notes,Note 3,MA-058,The Things We Inherit Without Realising,Surafel,Surafel task,
+2026-12-28,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-058,The Things We Inherit Without Realising,Claude,planned: needs approval,
+2026-12-29,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-058,The Things We Inherit Without Realising,Claude,planned: needs approval,
+2026-12-31,Thu,07:30,Substack,Essay 09 (pillar 10),MA-057,A Life That Looks Successful but Feels Empty,Surafel,Surafel task,Surafel pastes + presses publish; selected title 9; year-end
+2026-12-31,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-057,A Life That Looks Successful but Feels Empty,Surafel,Surafel task,
+2026-12-31,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-057,A Life That Looks Successful but Feels Empty,Claude,planned: needs approval,replaces that day's Journal story
+2026-12-31,Thu,—,Repo,"Draft, verify, package (if not done)",MA-055,When Self-Improvement Becomes Self-Rejection,Claude,planned: needs approval,approval needed by the Monday before
+2027-01-01,Fri,09:00,Substack Notes,Note 2,MA-057,A Life That Looks Successful but Feels Empty,Surafel,Surafel task,
+2027-01-01,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-057,A Life That Looks Successful but Feels Empty,Claude,planned: needs approval,
 2027-01-02,Sat,—,Review,"Day-60 review: keep/kill series, recommendations swap",,,Claude,planned: needs approval,
 2027-01-03,Sun,08:00,Substack,The Evening Review (300-500 words),,,Surafel,Surafel task,Claude drafts
-2027-01-03,Sun,20:00,Pinterest,Pin 3,MA-025,The Day After the Goal,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-04,Mon,09:00,Substack Notes,Note 3,MA-025,The Day After the Goal,Surafel,Surafel task,
-2027-01-04,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-025,The Day After the Goal,Claude,planned: needs approval,
-2027-01-04,Mon,20:00,Pinterest,Pin 4,MA-025,The Day After the Goal,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-05,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-025,The Day After the Goal,Claude,planned: needs approval,
-2027-01-05,Tue,20:00,Pinterest,Pin 5,MA-025,The Day After the Goal,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-05,Tue,—,Instagram story,Story 1 (Tue poll),MA-025,The Day After the Goal,Surafel,Surafel task,existing Tue sticker slot
-2027-01-07,Thu,07:30,Substack,Essay 10 (pillar 1),MA-022,"The Five-Minute Evening Review, Done Properly",Surafel,Surafel task,Surafel pastes + presses publish; new-year habits
-2027-01-07,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-022,"The Five-Minute Evening Review, Done Properly",Surafel,Surafel task,
-2027-01-07,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-022,"The Five-Minute Evening Review, Done Properly",Claude,planned: needs approval,replaces that day's Journal story
-2027-01-07,Thu,—,Repo,"Draft, verify, package (if not done)",MA-006,The Arithmetic of Friendship,Claude,planned: needs approval,approval needed by the Monday before
-2027-01-08,Fri,09:00,Substack Notes,Note 2,MA-022,"The Five-Minute Evening Review, Done Properly",Surafel,Surafel task,
-2027-01-08,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-022,"The Five-Minute Evening Review, Done Properly",Claude,planned: needs approval,
-2027-01-08,Fri,20:00,Pinterest,Pin 1,MA-022,"The Five-Minute Evening Review, Done Properly",Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-09,Sat,20:00,Pinterest,Pin 2,MA-022,"The Five-Minute Evening Review, Done Properly",Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-09,Sat,—,Instagram story,Story 2 (Sat question box/slider),MA-022,"The Five-Minute Evening Review, Done Properly",Surafel,Surafel task,existing Sat sticker slot
-2027-01-10,Sun,20:00,Pinterest,Pin 3,MA-022,"The Five-Minute Evening Review, Done Properly",Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-11,Mon,09:00,Substack Notes,Note 3,MA-022,"The Five-Minute Evening Review, Done Properly",Surafel,Surafel task,
-2027-01-11,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-022,"The Five-Minute Evening Review, Done Properly",Claude,planned: needs approval,
-2027-01-11,Mon,20:00,Pinterest,Pin 4,MA-022,"The Five-Minute Evening Review, Done Properly",Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-12,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-022,"The Five-Minute Evening Review, Done Properly",Claude,planned: needs approval,
-2027-01-12,Tue,20:00,Pinterest,Pin 5,MA-022,"The Five-Minute Evening Review, Done Properly",Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-12,Tue,—,Instagram story,Story 1 (Tue poll),MA-022,"The Five-Minute Evening Review, Done Properly",Surafel,Surafel task,existing Tue sticker slot
-2027-01-14,Thu,07:30,Substack,Essay 11 (pillar 5),MA-006,The Arithmetic of Friendship,Surafel,Surafel task,Surafel pastes + presses publish; 
-2027-01-14,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-006,The Arithmetic of Friendship,Surafel,Surafel task,
-2027-01-14,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-006,The Arithmetic of Friendship,Claude,planned: needs approval,replaces that day's Journal story
-2027-01-14,Thu,—,Repo,"Draft, verify, package (if not done)",MA-010,"You're Not ""an Avoidant""",Claude,planned: needs approval,approval needed by the Monday before
-2027-01-15,Fri,09:00,Substack Notes,Note 2,MA-006,The Arithmetic of Friendship,Surafel,Surafel task,
-2027-01-15,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-006,The Arithmetic of Friendship,Claude,planned: needs approval,
-2027-01-15,Fri,20:00,Pinterest,Pin 1,MA-006,The Arithmetic of Friendship,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-16,Sat,20:00,Pinterest,Pin 2,MA-006,The Arithmetic of Friendship,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-16,Sat,—,Instagram story,Story 2 (Sat question box/slider),MA-006,The Arithmetic of Friendship,Surafel,Surafel task,existing Sat sticker slot
+2027-01-04,Mon,09:00,Substack Notes,Note 3,MA-057,A Life That Looks Successful but Feels Empty,Surafel,Surafel task,
+2027-01-04,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-057,A Life That Looks Successful but Feels Empty,Claude,planned: needs approval,
+2027-01-05,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-057,A Life That Looks Successful but Feels Empty,Claude,planned: needs approval,
+2027-01-07,Thu,07:30,Substack,Essay 10 (pillar 9),MA-055,When Self-Improvement Becomes Self-Rejection,Surafel,Surafel task,Surafel pastes + presses publish; selected title 5; new-year resolutions
+2027-01-07,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-055,When Self-Improvement Becomes Self-Rejection,Surafel,Surafel task,
+2027-01-07,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-055,When Self-Improvement Becomes Self-Rejection,Claude,planned: needs approval,replaces that day's Journal story
+2027-01-07,Thu,—,Repo,"Draft, verify, package (if not done)",MA-007,The Lost Art of Being Alone With Your Thoughts,Claude,planned: needs approval,approval needed by the Monday before
+2027-01-08,Fri,09:00,Substack Notes,Note 2,MA-055,When Self-Improvement Becomes Self-Rejection,Surafel,Surafel task,
+2027-01-08,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-055,When Self-Improvement Becomes Self-Rejection,Claude,planned: needs approval,
+2027-01-11,Mon,09:00,Substack Notes,Note 3,MA-055,When Self-Improvement Becomes Self-Rejection,Surafel,Surafel task,
+2027-01-11,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-055,When Self-Improvement Becomes Self-Rejection,Claude,planned: needs approval,
+2027-01-12,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-055,When Self-Improvement Becomes Self-Rejection,Claude,planned: needs approval,
+2027-01-14,Thu,07:30,Substack,Essay 11 (pillar 7),MA-007,The Lost Art of Being Alone With Your Thoughts,Surafel,Surafel task,Surafel pastes + presses publish; selected title 6
+2027-01-14,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-007,The Lost Art of Being Alone With Your Thoughts,Surafel,Surafel task,
+2027-01-14,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-007,The Lost Art of Being Alone With Your Thoughts,Claude,planned: needs approval,replaces that day's Journal story
+2027-01-14,Thu,—,Repo,"Draft, verify, package (if not done)",MA-051,The Man You Become When Nobody Is Watching,Claude,planned: needs approval,approval needed by the Monday before
+2027-01-15,Fri,09:00,Substack Notes,Note 2,MA-007,The Lost Art of Being Alone With Your Thoughts,Surafel,Surafel task,
+2027-01-15,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-007,The Lost Art of Being Alone With Your Thoughts,Claude,planned: needs approval,
 2027-01-17,Sun,08:00,Substack,The Evening Review (300-500 words),,,Surafel,Surafel task,Claude drafts
-2027-01-17,Sun,20:00,Pinterest,Pin 3,MA-006,The Arithmetic of Friendship,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-18,Mon,09:00,Substack Notes,Note 3,MA-006,The Arithmetic of Friendship,Surafel,Surafel task,
-2027-01-18,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-006,The Arithmetic of Friendship,Claude,planned: needs approval,
-2027-01-18,Mon,20:00,Pinterest,Pin 4,MA-006,The Arithmetic of Friendship,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-19,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-006,The Arithmetic of Friendship,Claude,planned: needs approval,
-2027-01-19,Tue,20:00,Pinterest,Pin 5,MA-006,The Arithmetic of Friendship,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-19,Tue,—,Instagram story,Story 1 (Tue poll),MA-006,The Arithmetic of Friendship,Surafel,Surafel task,existing Tue sticker slot
-2027-01-21,Thu,07:30,Substack,Essay 12 (pillar 5),MA-010,"You're Not ""an Avoidant""",Surafel,Surafel task,Surafel pastes + presses publish; 
-2027-01-21,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-010,"You're Not ""an Avoidant""",Surafel,Surafel task,
-2027-01-21,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-010,"You're Not ""an Avoidant""",Claude,planned: needs approval,replaces that day's Journal story
-2027-01-21,Thu,—,Repo,"Draft, verify, package (if not done)",MA-012,The Rule Men Learn Before They Can Name It,Claude,planned: needs approval,approval needed by the Monday before
-2027-01-22,Fri,09:00,Substack Notes,Note 2,MA-010,"You're Not ""an Avoidant""",Surafel,Surafel task,
-2027-01-22,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-010,"You're Not ""an Avoidant""",Claude,planned: needs approval,
-2027-01-22,Fri,20:00,Pinterest,Pin 1,MA-010,"You're Not ""an Avoidant""",Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-23,Sat,20:00,Pinterest,Pin 2,MA-010,"You're Not ""an Avoidant""",Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-23,Sat,—,Instagram story,Story 2 (Sat question box/slider),MA-010,"You're Not ""an Avoidant""",Surafel,Surafel task,existing Sat sticker slot
-2027-01-24,Sun,20:00,Pinterest,Pin 3,MA-010,"You're Not ""an Avoidant""",Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-25,Mon,09:00,Substack Notes,Note 3,MA-010,"You're Not ""an Avoidant""",Surafel,Surafel task,
-2027-01-25,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-010,"You're Not ""an Avoidant""",Claude,planned: needs approval,
-2027-01-25,Mon,20:00,Pinterest,Pin 4,MA-010,"You're Not ""an Avoidant""",Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-26,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-010,"You're Not ""an Avoidant""",Claude,planned: needs approval,
-2027-01-26,Tue,20:00,Pinterest,Pin 5,MA-010,"You're Not ""an Avoidant""",Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-26,Tue,—,Instagram story,Story 1 (Tue poll),MA-010,"You're Not ""an Avoidant""",Surafel,Surafel task,existing Tue sticker slot
-2027-01-28,Thu,07:30,Substack,Essay 13 (pillar 3),MA-012,The Rule Men Learn Before They Can Name It,Surafel,Surafel task,Surafel pastes + presses publish; follow-up to MA-001
-2027-01-28,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-012,The Rule Men Learn Before They Can Name It,Surafel,Surafel task,
-2027-01-28,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-012,The Rule Men Learn Before They Can Name It,Claude,planned: needs approval,replaces that day's Journal story
-2027-01-29,Fri,09:00,Substack Notes,Note 2,MA-012,The Rule Men Learn Before They Can Name It,Surafel,Surafel task,
-2027-01-29,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-012,The Rule Men Learn Before They Can Name It,Claude,planned: needs approval,
-2027-01-29,Fri,20:00,Pinterest,Pin 1,MA-012,The Rule Men Learn Before They Can Name It,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-30,Sat,20:00,Pinterest,Pin 2,MA-012,The Rule Men Learn Before They Can Name It,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-01-30,Sat,—,Instagram story,Story 2 (Sat question box/slider),MA-012,The Rule Men Learn Before They Can Name It,Surafel,Surafel task,existing Sat sticker slot
+2027-01-18,Mon,09:00,Substack Notes,Note 3,MA-007,The Lost Art of Being Alone With Your Thoughts,Surafel,Surafel task,
+2027-01-18,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-007,The Lost Art of Being Alone With Your Thoughts,Claude,planned: needs approval,
+2027-01-19,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-007,The Lost Art of Being Alone With Your Thoughts,Claude,planned: needs approval,
+2027-01-21,Thu,07:30,Substack,Essay 12 (pillar 6),MA-051,The Man You Become When Nobody Is Watching,Surafel,Surafel task,Surafel pastes + presses publish; selected title 1: identity
+2027-01-21,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-051,The Man You Become When Nobody Is Watching,Surafel,Surafel task,
+2027-01-21,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-051,The Man You Become When Nobody Is Watching,Claude,planned: needs approval,replaces that day's Journal story
+2027-01-21,Thu,—,Repo,"Draft, verify, package (if not done)",MA-054,The Parts of Yourself You Were Taught to Hide,Claude,planned: needs approval,approval needed by the Monday before
+2027-01-22,Fri,09:00,Substack Notes,Note 2,MA-051,The Man You Become When Nobody Is Watching,Surafel,Surafel task,
+2027-01-22,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-051,The Man You Become When Nobody Is Watching,Claude,planned: needs approval,
+2027-01-25,Mon,09:00,Substack Notes,Note 3,MA-051,The Man You Become When Nobody Is Watching,Surafel,Surafel task,
+2027-01-25,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-051,The Man You Become When Nobody Is Watching,Claude,planned: needs approval,
+2027-01-26,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-051,The Man You Become When Nobody Is Watching,Claude,planned: needs approval,
+2027-01-28,Thu,07:30,Substack,Essay 13 (pillar 2),MA-054,The Parts of Yourself You Were Taught to Hide,Surafel,Surafel task,Surafel pastes + presses publish; selected title 3
+2027-01-28,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-054,The Parts of Yourself You Were Taught to Hide,Surafel,Surafel task,
+2027-01-28,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-054,The Parts of Yourself You Were Taught to Hide,Claude,planned: needs approval,replaces that day's Journal story
+2027-01-28,Thu,—,Repo,"Draft, verify, package (if not done)",MA-056,The Exhaustion of Always Trying to Become Someone,Claude,planned: needs approval,approval needed by the Monday before
+2027-01-29,Fri,09:00,Substack Notes,Note 2,MA-054,The Parts of Yourself You Were Taught to Hide,Surafel,Surafel task,
+2027-01-29,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-054,The Parts of Yourself You Were Taught to Hide,Claude,planned: needs approval,
 2027-01-30,Sat,—,Review,Day-90 review: paid-tier gate decision (Surafel),,,Claude,planned: needs approval,
 2027-01-31,Sun,08:00,Substack,The Evening Review (300-500 words),,,Surafel,Surafel task,Claude drafts
-2027-01-31,Sun,20:00,Pinterest,Pin 3,MA-012,The Rule Men Learn Before They Can Name It,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-02-01,Mon,09:00,Substack Notes,Note 3,MA-012,The Rule Men Learn Before They Can Name It,Surafel,Surafel task,
-2027-02-01,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-012,The Rule Men Learn Before They Can Name It,Claude,planned: needs approval,
-2027-02-01,Mon,20:00,Pinterest,Pin 4,MA-012,The Rule Men Learn Before They Can Name It,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-02-02,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-012,The Rule Men Learn Before They Can Name It,Claude,planned: needs approval,
-2027-02-02,Tue,20:00,Pinterest,Pin 5,MA-012,The Rule Men Learn Before They Can Name It,Claude,planned: needs approval,only once Pinterest is connected in Metricool
-2027-02-02,Tue,—,Instagram story,Story 1 (Tue poll),MA-012,The Rule Men Learn Before They Can Name It,Surafel,Surafel task,existing Tue sticker slot
+2027-02-01,Mon,09:00,Substack Notes,Note 3,MA-054,The Parts of Yourself You Were Taught to Hide,Surafel,Surafel task,
+2027-02-01,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-054,The Parts of Yourself You Were Taught to Hide,Claude,planned: needs approval,
+2027-02-02,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-054,The Parts of Yourself You Were Taught to Hide,Claude,planned: needs approval,
+2027-02-04,Thu,07:30,Substack,Essay 14 (pillar 6),MA-056,The Exhaustion of Always Trying to Become Someone,Surafel,Surafel task,Surafel pastes + presses publish; selected title 7; after the day-90 review
+2027-02-04,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-056,The Exhaustion of Always Trying to Become Someone,Surafel,Surafel task,
+2027-02-04,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-056,The Exhaustion of Always Trying to Become Someone,Claude,planned: needs approval,replaces that day's Journal story
+2027-02-04,Thu,—,Repo,"Draft, verify, package (if not done)",MA-059,Why We Mistake Intensity for Intimacy,Claude,planned: needs approval,approval needed by the Monday before
+2027-02-05,Fri,09:00,Substack Notes,Note 2,MA-056,The Exhaustion of Always Trying to Become Someone,Surafel,Surafel task,
+2027-02-05,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-056,The Exhaustion of Always Trying to Become Someone,Claude,planned: needs approval,
+2027-02-08,Mon,09:00,Substack Notes,Note 3,MA-056,The Exhaustion of Always Trying to Become Someone,Surafel,Surafel task,
+2027-02-08,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-056,The Exhaustion of Always Trying to Become Someone,Claude,planned: needs approval,
+2027-02-09,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-056,The Exhaustion of Always Trying to Become Someone,Claude,planned: needs approval,
+2027-02-11,Thu,07:30,Substack,Essay 15 (pillar 5),MA-059,Why We Mistake Intensity for Intimacy,Surafel,Surafel task,Surafel pastes + presses publish; selected title 11; Valentine's week
+2027-02-11,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-059,Why We Mistake Intensity for Intimacy,Surafel,Surafel task,
+2027-02-11,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-059,Why We Mistake Intensity for Intimacy,Claude,planned: needs approval,replaces that day's Journal story
+2027-02-11,Thu,—,Repo,"Draft, verify, package (if not done)",MA-060,What Would You Do If Nobody Was Watching?,Claude,planned: needs approval,approval needed by the Monday before
+2027-02-12,Fri,09:00,Substack Notes,Note 2,MA-059,Why We Mistake Intensity for Intimacy,Surafel,Surafel task,
+2027-02-12,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-059,Why We Mistake Intensity for Intimacy,Claude,planned: needs approval,
+2027-02-14,Sun,08:00,Substack,The Evening Review (300-500 words),,,Surafel,Surafel task,Claude drafts
+2027-02-15,Mon,09:00,Substack Notes,Note 3,MA-059,Why We Mistake Intensity for Intimacy,Surafel,Surafel task,
+2027-02-15,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-059,Why We Mistake Intensity for Intimacy,Claude,planned: needs approval,
+2027-02-16,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-059,Why We Mistake Intensity for Intimacy,Claude,planned: needs approval,
+2027-02-18,Thu,07:30,Substack,Essay 16 (pillar 4),MA-060,What Would You Do If Nobody Was Watching?,Surafel,Surafel task,Surafel pastes + presses publish; selected title 12: decisions; 4 weeks after title 1
+2027-02-18,Thu,09:00,Substack Notes,Note 1 (embed the post),MA-060,What Would You Do If Nobody Was Watching?,Surafel,Surafel task,
+2027-02-18,Thu,21:00,Instagram story,Story 3: link sticker to essay,MA-060,What Would You Do If Nobody Was Watching?,Claude,planned: needs approval,replaces that day's Journal story
+2027-02-19,Fri,09:00,Substack Notes,Note 2,MA-060,What Would You Do If Nobody Was Watching?,Surafel,Surafel task,
+2027-02-19,Fri,17:00,Instagram reel,Reel A (Fri slot),MA-060,What Would You Do If Nobody Was Watching?,Claude,planned: needs approval,
+2027-02-22,Mon,09:00,Substack Notes,Note 3,MA-060,What Would You Do If Nobody Was Watching?,Surafel,Surafel task,
+2027-02-22,Mon,12:00,Instagram carousel,7-slide carousel (Mon slot),MA-060,What Would You Do If Nobody Was Watching?,Claude,planned: needs approval,
+2027-02-23,Tue,18:00,Instagram reel,Reel B (Tue slot),MA-060,What Would You Do If Nobody Was Watching?,Claude,planned: needs approval,

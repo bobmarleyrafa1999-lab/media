@@ -66,7 +66,7 @@ Who's been your teacher this week, without meaning to be?
 Source: Meditations 10.30, tr. George Long. Full essay on the Substack, link in bio.
 ```
 
-## 2. Seven-slide carousel (1080×1350)
+## 2. 7-slide carousel (1080×1350)
 
 | Slide | Role | Main text | Small text | Component |
 |---|---|---|---|---|
@@ -90,7 +90,7 @@ Which slide hit hardest?
 Evidence: Schimel et al. 2003 (lab studies), Tangney & Dearing 2002. Jung's shadow is an interpretive framework, not a tested therapy. Philosophy: Meditations 10.30 (Long).
 ```
 
-## 3. Five quote / insight cards (1080×1350, also 1080×1920 for stories)
+## 3. Quote / insight cards (1080×1350, also 1080×1920 for stories)
 
 1. What irritates you is information. Not always about them. — *Moodius*
 2. "When thou art offended at any man's fault, forthwith turn to thyself." — *Marcus Aurelius, Meditations 10.30 · tr. Long*
@@ -98,13 +98,13 @@ Evidence: Schimel et al. 2003 (lab studies), Tangney & Dearing 2002. Jung's shad
 4. Shame says you are the problem. Guilt says you made one. — *Moodius, after Tangney & Dearing (2002)*
 5. Ask what your contempt is protecting. — *Moodius*
 
-## 4. Three Story concepts
+## 4. Story concepts
 
 1. **Poll:** "Be honest:" Poll: "The things that annoy me most in others… are things I do too" Yes / Sometimes / Never.
 2. **Question box:** "Which trait in others gets to you most?" Question sticker; Sunday story shares the five most common words as a word list, no names.
 3. **Link:** "New essay: The Trait You Can't Stand in Other People" Cover still + link sticker + "Jung, the lab, and Marcus. With the limits stated." Highlight: Truths.
 
-## 5. Five Pinterest pins (1000×1500, link to the essay)
+## 5. Pinterest pins (1000×1500, link to the essay)
 
 1. **Shadow Work, Explained Honestly** (31 chars). What Jung meant by the shadow, what psychology has tested, and why shadow work isn't a therapy. Plus a weekly exercise.
 2. **Why Certain People Irritate You So Much** (39 chars). The research on projection and a Stoic practice for turning irritation into self-knowledge.

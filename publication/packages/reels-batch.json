@@ -1,5 +1,5 @@
 {
- "batch": "substack-essays-01",
+ "batch": "substack-essays",
  "written": "2026-10-21",
  "schema": "reels-engine formats-AF (engine.py 1.2)",
  "scripts": [
@@ -591,6 +591,455 @@
    ],
    "cta": "save",
    "length_s": 16.1
+  },
+  {
+   "id": "S05A",
+   "slug": "understand-and-repeat",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Discipline",
+   "hook": "What do you understand about yourself but keep doing anyway?",
+   "hook_b": "You already know why you do it. That was never the problem.",
+   "cards": [
+    [
+     "What do you understand about yourself but keep doing anyway?",
+     3.0,
+     "question"
+    ],
+    [
+     "You can explain it in three sentences.",
+     2.0,
+     "body"
+    ],
+    [
+     "And on Thursday night, you do it again.",
+     2.2,
+     "body"
+    ],
+    [
+     "Across 47 experiments, behaviour moved about half as far as intention.",
+     3.0,
+     "body"
+    ],
+    [
+     "Meta-analysis: Webb & Sheeran, Psychological Bulletin (2006)",
+     2.2,
+     "cite"
+    ],
+    [
+     "Insight isn't the bridge. A plan at the trigger is.",
+     2.7,
+     "body"
+    ],
+    [
+     "Save this for the next Thursday night.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of a kitchen at night, light on, nobody in it (tag kitchen-night), else V1 Slate + grain.",
+   "footage": "kitchen-night",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 309
+   },
+   "source": {
+    "type": "data",
+    "author": "Webb & Sheeran",
+    "work": "Changing intentions and behaviour (Psychological Bulletin 132(2))",
+    "section": "meta-analysis",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 meta-analysis (N31) + Moodius practice",
+   "caption": "Understanding a pattern changes what you intend. It changes much less of what you do.\n\nIn a meta-analysis of 47 experiments, interventions that shifted people's intentions moved their actual behaviour about half as far. Insight is real. It just doesn't reach the moment on its own.\n\nWhat's the one you keep repeating?\n\nEvidence: Webb & Sheeran (2006). Practice: Moodius. Full essay on the Substack, link in bio.",
+   "first_comment": "One word for the mistake you understand best and repeat anyway.",
+   "hashtags": [
+    "#psychology",
+    "#habits",
+    "#selfawareness",
+    "#stoicism",
+    "#philosophy"
+   ],
+   "cta": "save",
+   "length_s": 17.1
+  },
+  {
+   "id": "S05C",
+   "slug": "knowing-and-doing",
+   "format": "C",
+   "series": "The Philosophical Contradiction",
+   "pillar": "Discipline",
+   "hook": "Do you repeat it because you don't really know better?",
+   "hook_b": "Socrates and Aristotle disagreed about why you keep doing it.",
+   "cards": [
+    [
+     "Do you repeat it because you don't really know better?",
+     2.8,
+     "question"
+    ],
+    [
+     "ONE READING\nSocrates: nobody does wrong knowingly. You just don't truly know yet.",
+     3.4,
+     "labelled"
+    ],
+    [
+     "THE OTHER\nAristotle: you know. The knowledge just isn't awake when you act.",
+     3.4,
+     "labelled"
+    ],
+    [
+     "Same mistake. Different fix.",
+     1.6,
+     "body"
+    ],
+    [
+     "If it's ignorance, learn. If it's habit, plan for the moment.",
+     2.9,
+     "body"
+    ],
+    [
+     "Idea: Aristotle, Nicomachean Ethics VII · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Which one is yours? Tell me below.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V1 + grain, or V3 stairwell still (tag stairs).",
+   "footage": "stairs",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 310
+   },
+   "source": {
+    "type": "idea",
+    "author": "Aristotle",
+    "work": "Nicomachean Ethics",
+    "section": "VII",
+    "translation": "paraphrase"
+   },
+   "evidence": "Tier 2 primary text (N35), paraphrased; Socrates via Aristotle's report",
+   "caption": "Socrates argued that nobody knowingly does wrong, so repeating a mistake must mean you don't truly understand it. Aristotle thought that was too neat: you can know something and still not have it active in the moment you act.\n\nIf Socrates is right, the fix is more understanding. If Aristotle is right, it's a plan for the moment.\n\nWhich sounds like you?\n\nSource: Aristotle, Nicomachean Ethics VII (paraphrased). Full essay on the Substack, link in bio.",
+   "first_comment": "Socrates or Aristotle? One word.",
+   "hashtags": [
+    "#psychology",
+    "#habits",
+    "#selfawareness",
+    "#stoicism",
+    "#philosophy"
+   ],
+   "cta": "comment",
+   "length_s": 18.1
+  },
+  {
+   "id": "S06E",
+   "slug": "two-scripts-for-anger",
+   "format": "E",
+   "series": "Masculinity, Reconsidered",
+   "pillar": "Truths",
+   "hook": "You were given two options for anger. Both fail.",
+   "hook_b": "Let it out or keep it in. The research says neither.",
+   "cards": [
+    [
+     "You were given two options for anger. Both fail.",
+     2.6,
+     "hook"
+    ],
+    [
+     "Let it out. Hit something.",
+     1.8,
+     "body"
+    ],
+    [
+     "Or keep it in. Carry it home.",
+     2.0,
+     "body"
+    ],
+    [
+     "600 students: venting while thinking about the insult made them angrier and more aggressive.",
+     3.6,
+     "body"
+    ],
+    [
+     "Experiment: Bushman, PSPB (2002)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Anger isn't steam. It's a guard dog. Ask what it's guarding.",
+     2.9,
+     "body"
+    ],
+    [
+     "Send this to someone told to calm down.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of a punching bag hanging still in an empty gym (tag bag-still), else V1 + grain.",
+   "footage": "bag-still",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 311
+   },
+   "source": {
+    "type": "data",
+    "author": "Bushman",
+    "work": "Venting anger (PSPB 28(6))",
+    "section": "experiment",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 experiment (N38) + Moodius reframe",
+   "caption": "Men tend to get two scripts for anger: let it out, or keep it in.\n\nIn a 2002 experiment with 600 students, those who hit a punching bag while thinking about the person who'd insulted them ended up angrier and more aggressive than people who sat quietly. And habitual suppression has its own costs.\n\nThe third option is slower: name it, then ask what it's protecting.\n\nWhich script were you given?\n\nEvidence: Bushman (2002); Gross & John (2003). Full essay on the Substack, link in bio.",
+   "first_comment": "What did your anger guard last time? A boundary, a value, your standing, or something softer?",
+   "hashtags": [
+    "#anger",
+    "#emotionalintelligence",
+    "#mensmentalhealth",
+    "#stoicism",
+    "#psychology"
+   ],
+   "cta": "send",
+   "length_s": 17.1
+  },
+  {
+   "id": "S06C",
+   "slug": "seneca-vs-aristotle-anger",
+   "format": "C",
+   "series": "The Philosophical Contradiction",
+   "pillar": "Truths",
+   "hook": "Is anger ever the right response?",
+   "hook_b": "Two ancient philosophers. Opposite answers about your anger.",
+   "cards": [
+    [
+     "Is anger ever the right response?",
+     2.4,
+     "question"
+    ],
+    [
+     "SENECA\nNever. Reason can do anything anger does, without the damage.",
+     3.4,
+     "labelled"
+    ],
+    [
+     "ARISTOTLE\nYes. At the right person, to the right degree, for the right reason.",
+     3.6,
+     "labelled"
+    ],
+    [
+     "They agree on one thing.",
+     1.6,
+     "body"
+    ],
+    [
+     "Most anger is the wrong size.",
+     1.8,
+     "body"
+    ],
+    [
+     "Idea: Seneca, On Anger I · Aristotle, Ethics · Moodius words",
+     2.2,
+     "cite"
+    ],
+    [
+     "Who's right? Comment SENECA or ARISTOTLE.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate (quotes and labels read best clean).",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 312
+   },
+   "source": {
+    "type": "idea",
+    "author": "Seneca; Aristotle",
+    "work": "On Anger; Nicomachean Ethics",
+    "section": "I; II",
+    "translation": "paraphrase"
+   },
+   "evidence": "Tier 2 primary texts (N39, N40), paraphrased",
+   "caption": "Seneca wrote a whole book against anger: whatever good it seems to do, reason can do better. Aristotle disagreed: being angry at the right person, to the right degree, at the right time and for the right reason is a virtue, and never getting angry at real wrongs is a failing.\n\nYou don't have to pick a side to notice where they agree. Most anger, in the moment, is the wrong size.\n\nWhich of them are you closer to?\n\nSources: Seneca, On Anger I; Aristotle, Nicomachean Ethics (both paraphrased). Full essay on the Substack, link in bio.",
+   "first_comment": "SENECA or ARISTOTLE. And why.",
+   "hashtags": [
+    "#anger",
+    "#emotionalintelligence",
+    "#mensmentalhealth",
+    "#stoicism",
+    "#psychology"
+   ],
+   "cta": "comment",
+   "length_s": 17.2
+  },
+  {
+   "id": "S07D",
+   "slug": "always-picks-up",
+   "format": "D",
+   "series": "The Human Condition",
+   "pillar": "Identity",
+   "hook": "Everyone calls you when something breaks.",
+   "hook_b": "The friend who always picks up rarely gets asked how they are.",
+   "cards": [
+    [
+     "Everyone calls you when something breaks.",
+     2.4,
+     "hook"
+    ],
+    [
+     "You know where the jump leads are. You pick up at 2 a.m.",
+     3.6,
+     "body"
+    ],
+    [
+     "Then someone asks how you are.",
+     2.0,
+     "body"
+    ],
+    [
+     "\"Fine,\" you say. And ask about them.",
+     2.2,
+     "body"
+    ],
+    [
+     "Psychologists have a name for caring for others to the exclusion of yourself.",
+     3.4,
+     "body"
+    ],
+    [
+     "It's linked to self-neglect and finding it hard to accept help.",
+     3.1,
+     "body"
+    ],
+    [
+     "Theory: Helgeson & Fritz, PSPR (1998)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Being needed isn't the same as being let in.",
+     2.4,
+     "body"
+    ],
+    [
+     "Send it to the friend who always picks up.",
+     2.4,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of a phone lighting up on a dark bedside table (tag phone-table), else V1 + grain.",
+   "footage": "phone-table",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 313
+   },
+   "source": {
+    "type": "data",
+    "author": "Helgeson & Fritz",
+    "work": "Unmitigated communion (PSPR 2(3))",
+    "section": "theory",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 theory paper (N42) and studies (N43); no advice in the essay, per format D",
+   "caption": "Every group has one. The person who drives people to the airport, picks up at 2 a.m., and says \"fine\" when asked.\n\nHelgeson and Fritz called one version of this unmitigated communion: caring for others to the exclusion of yourself. In their research it was linked to self-neglect, overinvolvement and difficulty accepting help. Ordinary caring wasn't.\n\nGiving isn't the problem. Never receiving is.\n\nWho looks after the one who looks after everyone?\n\nEvidence: Helgeson & Fritz (1998); Fritz & Helgeson (1998). Full essay on the Substack, link in bio.",
+   "first_comment": "Tag nobody. Just tell me: when did someone last look after you?",
+   "hashtags": [
+    "#relationships",
+    "#peoplepleaser",
+    "#selfworth",
+    "#emotionalintelligence",
+    "#psychology"
+   ],
+   "cta": "send",
+   "length_s": 23.5,
+   "max_s": 30
+  },
+  {
+   "id": "S07A",
+   "slug": "let-someone-help",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Identity",
+   "hook": "When did you last let someone help you?",
+   "hook_b": "Not a favour you paid back the same day.",
+   "cards": [
+    [
+     "When did you last let someone help you?",
+     2.6,
+     "question"
+    ],
+    [
+     "Not a favour you repaid the same day.",
+     2.2,
+     "body"
+    ],
+    [
+     "In older couples, giving help was linked to living longer.",
+     2.8,
+     "body"
+    ],
+    [
+     "Prospective study: Brown et al., Psychological Science (2003)",
+     2.2,
+     "cite"
+    ],
+    [
+     "Giving is good. But if you never receive, people stop offering.",
+     3.0,
+     "body"
+    ],
+    [
+     "This week: accept one offer you'd normally refuse.",
+     2.4,
+     "body"
+    ],
+    [
+     "Save this. Try it tomorrow.",
+     1.8,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate + grain.",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 314
+   },
+   "source": {
+    "type": "data",
+    "author": "Brown, Nesse, Vinokur & Smith",
+    "work": "Giving support and mortality (Psychological Science 14(4))",
+    "section": "prospective study",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 prospective study (N41, observational) + Moodius practice",
+   "caption": "Giving is one of the best things a person can do. In a five-year study of older married couples, those who gave practical or emotional support were less likely to die during the study. It's observational, so it can't prove cause.\n\nBut there's a version of giving that keeps love out: always helping, never accepting. Eventually people stop offering.\n\nThis week, accept one offer you'd usually turn down. Which one will it be?\n\nEvidence: Brown et al. (2003). Practice: Moodius. Full essay on the Substack, link in bio.",
+   "first_comment": "What's the smallest offer of help you turned down this month?",
+   "hashtags": [
+    "#relationships",
+    "#peoplepleaser",
+    "#selfworth",
+    "#emotionalintelligence",
+    "#psychology"
+   ],
+   "cta": "save",
+   "length_s": 17.0
   }
  ]
 }

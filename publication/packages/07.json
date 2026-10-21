@@ -1,0 +1,222 @@
+{
+ "n": 7,
+ "essay": "essays/07-being-needed.md",
+ "title": "Why Being Needed Can Feel Like Being Loved",
+ "ab_alt": "The Loneliness of Being Useful",
+ "pillar": "Identity",
+ "reels": [
+  {
+   "id": "S07D",
+   "slug": "always-picks-up",
+   "format": "D",
+   "series": "The Human Condition",
+   "pillar": "Identity",
+   "hook": "Everyone calls you when something breaks.",
+   "hook_b": "The friend who always picks up rarely gets asked how they are.",
+   "cards": [
+    [
+     "Everyone calls you when something breaks.",
+     2.4,
+     "hook"
+    ],
+    [
+     "You know where the jump leads are. You pick up at 2 a.m.",
+     3.6,
+     "body"
+    ],
+    [
+     "Then someone asks how you are.",
+     2.0,
+     "body"
+    ],
+    [
+     "\"Fine,\" you say. And ask about them.",
+     2.2,
+     "body"
+    ],
+    [
+     "Psychologists have a name for caring for others to the exclusion of yourself.",
+     3.4,
+     "body"
+    ],
+    [
+     "It's linked to self-neglect and finding it hard to accept help.",
+     3.1,
+     "body"
+    ],
+    [
+     "Theory: Helgeson & Fritz, PSPR (1998)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Being needed isn't the same as being let in.",
+     2.4,
+     "body"
+    ],
+    [
+     "Send it to the friend who always picks up.",
+     2.4,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of a phone lighting up on a dark bedside table (tag phone-table), else V1 + grain.",
+   "footage": "phone-table",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 313
+   },
+   "source": {
+    "type": "data",
+    "author": "Helgeson & Fritz",
+    "work": "Unmitigated communion (PSPR 2(3))",
+    "section": "theory",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 theory paper (N42) and studies (N43); no advice in the essay, per format D",
+   "caption": "Every group has one. The person who drives people to the airport, picks up at 2 a.m., and says \"fine\" when asked.\n\nHelgeson and Fritz called one version of this unmitigated communion: caring for others to the exclusion of yourself. In their research it was linked to self-neglect, overinvolvement and difficulty accepting help. Ordinary caring wasn't.\n\nGiving isn't the problem. Never receiving is.\n\nWho looks after the one who looks after everyone?\n\nEvidence: Helgeson & Fritz (1998); Fritz & Helgeson (1998). Full essay on the Substack, link in bio.",
+   "first_comment": "Tag nobody. Just tell me: when did someone last look after you?",
+   "hashtags": [
+    "#relationships",
+    "#peoplepleaser",
+    "#selfworth",
+    "#emotionalintelligence",
+    "#psychology"
+   ],
+   "cta": "send",
+   "length_s": 23.5,
+   "max_s": 30
+  },
+  {
+   "id": "S07A",
+   "slug": "let-someone-help",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Identity",
+   "hook": "When did you last let someone help you?",
+   "hook_b": "Not a favour you paid back the same day.",
+   "cards": [
+    [
+     "When did you last let someone help you?",
+     2.6,
+     "question"
+    ],
+    [
+     "Not a favour you repaid the same day.",
+     2.2,
+     "body"
+    ],
+    [
+     "In older couples, giving help was linked to living longer.",
+     2.8,
+     "body"
+    ],
+    [
+     "Prospective study: Brown et al., Psychological Science (2003)",
+     2.2,
+     "cite"
+    ],
+    [
+     "Giving is good. But if you never receive, people stop offering.",
+     3.0,
+     "body"
+    ],
+    [
+     "This week: accept one offer you'd normally refuse.",
+     2.4,
+     "body"
+    ],
+    [
+     "Save this. Try it tomorrow.",
+     1.8,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate + grain.",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 314
+   },
+   "source": {
+    "type": "data",
+    "author": "Brown, Nesse, Vinokur & Smith",
+    "work": "Giving support and mortality (Psychological Science 14(4))",
+    "section": "prospective study",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 prospective study (N41, observational) + Moodius practice",
+   "caption": "Giving is one of the best things a person can do. In a five-year study of older married couples, those who gave practical or emotional support were less likely to die during the study. It's observational, so it can't prove cause.\n\nBut there's a version of giving that keeps love out: always helping, never accepting. Eventually people stop offering.\n\nThis week, accept one offer you'd usually turn down. Which one will it be?\n\nEvidence: Brown et al. (2003). Practice: Moodius. Full essay on the Substack, link in bio.",
+   "first_comment": "What's the smallest offer of help you turned down this month?",
+   "hashtags": [
+    "#relationships",
+    "#peoplepleaser",
+    "#selfworth",
+    "#emotionalintelligence",
+    "#psychology"
+   ],
+   "cta": "save",
+   "length_s": 17.0
+  }
+ ],
+ "carousel": [
+  [
+   "Cover",
+   "Being needed can feel exactly like being loved.",
+   "It isn't quite the same →",
+   "claim cover"
+  ],
+  [
+   "Giving is good",
+   "Older adults who gave support were less likely to die over five years.",
+   "Prospective study · Brown et al., Psychological Science (2003) · observational",
+   "term card"
+  ],
+  [
+   "When it tips",
+   "Caring for others to the exclusion of yourself: self-neglect, overinvolvement, trouble accepting help.",
+   "Theory · Helgeson & Fritz, PSPR (1998)",
+   "term card"
+  ],
+  [
+   "Why it's tempting",
+   "Usefulness feels certain. Love asks you to believe you'd be kept even if you stopped being useful.",
+   "Moodius reading",
+   "pull quote"
+  ],
+  [
+   "The old warning",
+   "\"He who begins to be your friend because it pays will also cease because it pays.\"",
+   "Seneca, Moral Letters 9 · tr. Gummere",
+   "pull quote"
+  ],
+  [
+   "The Receiving Practice",
+   "1 Accept one offer a day. 2 Don't repay it today. 3 Ask once without explaining. 4 Tell one person something they can't fix.",
+   "Moodius practice",
+   "numbered step"
+  ],
+  [
+   "Sign-off",
+   "Love can't be earned like a place on the team. It has to be received.",
+   "Full essay on the Substack · link in bio · send this to the one who always picks up",
+   "sign-off"
+  ]
+ ],
+ "carousel_caption": "The person everyone relies on is often deeply loved, and doesn't quite feel it.\n\nBeing needed gives a certainty love can't: your place is guaranteed by what you do. The cost is that you keep having to earn it, and you stop letting anyone give back.\n\nSave this. Send it to the person who always picks up.\n\nEvidence: Brown et al. 2003 (prospective, observational); Helgeson & Fritz 1998; Fritz & Helgeson 1998. Philosophy: Seneca, Moral Letters 9 (tr. Gummere). Interpretation: Moodius.",
+ "notes": [
+  "Psychologists distinguish caring about others, which tends to go with good outcomes, from caring for others to the exclusion of yourself, which goes with self-neglect and difficulty accepting help. The difference isn't how much you give. It's whether you're still in the equation.",
+  "Being needed is certain in a way love isn't. If people need you, you know where you stand. Love asks you to believe you'd still be wanted if you stopped being useful, and that can't be proven in advance. This week's essay is about the people who choose the certainty.",
+  "A small test: accept one offer of help this week that you'd normally turn down. Don't repay it the same day. Notice how strong the urge is. That urge is the whole essay."
+ ],
+ "visuals": {
+  "look": "V2 phone lighting up on a dark bedside table (no hands, no faces); V1 + grain otherwise",
+  "type": "Standard; Seneca slide in Playfair italic on Bone, the only light slide",
+  "music": "night and dawn (ambient.py); warm, sparse piano",
+  "pinterest": "1000×1500, Bone background, Slate type, Ember on 'loved'"
+ }
+}

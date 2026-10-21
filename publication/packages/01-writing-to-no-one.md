@@ -66,7 +66,7 @@ What's one thing from today you'd do differently?
 Source: Seneca, On Anger 3.36 (paraphrased). Full essay "Writing to No One" on the Substack, link in bio.
 ```
 
-## 2. Seven-slide carousel (1080×1350)
+## 2. 7-slide carousel (1080×1350)
 
 | Slide | Role | Main text | Small text | Component |
 |---|---|---|---|---|
@@ -88,7 +88,7 @@ Save this for tonight. What would you write first?
 Evidence: Frattaroli 2006 (meta-analysis), Lieberman et al. 2007, Nolen-Hoeksema et al. 2008, Kross & Ayduk 2017. Practice: Moodius.
 ```
 
-## 3. Five quote / insight cards (1080×1350, also 1080×1920 for stories)
+## 3. Quote / insight cards (1080×1350, also 1080×1920 for stories)
 
 1. A journal can be a place to heal or a place to rehearse. — *Moodius*
 2. Writing about hard things helps, on average, a little. How you write matters more than whether you do. — *Moodius, after Frattaroli (2006)*
@@ -96,13 +96,13 @@ Evidence: Frattaroli 2006 (meta-analysis), Lieberman et al. 2007, Nolen-Hoeksema
 4. When you write the same sentence twice, change the angle. — *Moodius*
 5. You are writing to no one. That's what makes honesty possible. — *Moodius*
 
-## 4. Three Story concepts
+## 4. Story concepts
 
 1. **Poll:** "Do you journal?" Poll: Every day / Sometimes / Tried it, stopped. Next frame: "Most people stop because it turns into rehearsal. Thursday's essay is about that."
 2. **Question box:** "What do you write about most?" Question sticker. Share 3 anonymised answers on Sunday's "From the Journal" story (Surafel picks).
 3. **Link:** "New essay: Writing to No One" Essay cover still + link sticker to the Substack post + "15-minute practice inside". Add to highlight Journal.
 
-## 5. Five Pinterest pins (1000×1500, link to the essay)
+## 5. Pinterest pins (1000×1500, link to the essay)
 
 1. **Why Journaling Helps (A Little) and How to Make It Help More** (60 chars). The research on expressive writing is smaller and more useful than the hype. A 15-minute practice built on it, from Moodius Aurelius.
 2. **The 15-Minute Journaling Practice Backed by Research** (52 chars). Facts, feeling, meaning, one small action. Plus the one move that stops a journal turning into rumination.

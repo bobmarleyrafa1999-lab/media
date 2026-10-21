@@ -20,7 +20,7 @@ BANNED = [
     "rewires your brain", "science says", "studies show that", "life-changing", "hack",
 ]
 LABEL = re.compile(r"\*\*\[(Study|Studies|Meta-analysis|Review|Survey|Research synthesis|Theory|"
-                   r"Adversarial collaboration|Philosophy|Interpretive framework|Idea|Moodius[^\]]*)[^\]]*\]\*\*")
+                   r"Adversarial collaboration|Experiment|Prospective study|Clinical framework|Philosophy|Interpretive framework|Idea|Moodius[^\]]*)[^\]]*\]\*\*")
 MIN_WORDS, MAX_WORDS = 1200, 1800
 
 
@@ -62,7 +62,7 @@ def check(path):
 
     quotes = re.findall(r"((?:^>.*\n)+)", pub, re.M)
     for q in quotes:
-        if not re.search(r"tr\.|trans\.|\d+\.\d+", q):
+        if not re.search(r"tr\.|trans\.|\d+[.:]\d+", q):
             problems.append("block quote without translation + section line")
 
     if "## Sources" not in pub:

@@ -68,7 +68,7 @@ Have you named your enough?
 Source: Seneca, Letters 2.6, tr. Gummere. Full essay on the Substack, link in bio.
 ```
 
-## 2. Seven-slide carousel (1080×1350)
+## 2. 7-slide carousel (1080×1350)
 
 | Slide | Role | Main text | Small text | Component |
 |---|---|---|---|---|
@@ -92,7 +92,7 @@ Save this for your next pay review. What is enough, for you?
 Evidence: Kahneman & Deaton 2010; Killingsworth, Kahneman & Mellers 2023; Brickman et al. 1978; Kasser & Ryan 1996. Philosophy: Seneca, Letters 2.6 (Gummere).
 ```
 
-## 3. Five quote / insight cards (1080×1350, also 1080×1920 for stories)
+## 3. Quote / insight cards (1080×1350, also 1080×1920 for stories)
 
 1. Money helps. That was never the problem. — *Moodius*
 2. "It is not the man who has too little, but the man who craves more, that is poor." — *Seneca, Letters 2.6 · tr. Gummere*
@@ -100,13 +100,13 @@ Evidence: Kahneman & Deaton 2010; Killingsworth, Kahneman & Mellers 2023; Brickm
 4. The best thing money buys might be an hour. — *Moodius, after Whillans et al. (2017)*
 5. A goal pursued as a verdict on your worth expires. You'll need another. — *Moodius*
 
-## 4. Three Story concepts
+## 4. Story concepts
 
 1. **Poll:** "After your last big win, the good feeling lasted…" Poll: Days / Weeks / Still here.
 2. **Slider:** "How close are you to 'enough'?" Emoji slider 0–100 with a coin or hourglass emoji. Next frame: "Thursday's essay: why the finish line moves."
 3. **Link:** "New essay: The Raise That Didn't Arrive Inside" Cover still + link sticker + "Money, adaptation and Seneca. With the 2023 data." Highlight: Discipline.
 
-## 5. Five Pinterest pins (1000×1500, link to the essay)
+## 5. Pinterest pins (1000×1500, link to the essay)
 
 1. **Does Money Make You Happier? What the 2023 Research Says** (56 chars). Former rivals Kahneman and Killingsworth resolved the $75,000 debate. What it means for your next raise.
 2. **Why Success Doesn't Feel Like You Expected** (42 chars). Hedonic adaptation, extrinsic goals and Seneca on craving. An evidence-labelled essay.

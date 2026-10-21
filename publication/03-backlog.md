@@ -15,49 +15,59 @@
 | 5 | MA-006 | 5 | The Arithmetic of Friendship | Adults want friends but don't have the 200 hours close friendship takes | 4 | 5 | 2 | **22** | idea |
 | 6 | MA-008 | 9 | Shame Says You Are the Problem. Guilt Says You Made One. | Criticism feels like a verdict on the whole self | 4 | 5 | 2 | **22** | idea |
 | 7 | MA-011 | 1 | Write About It as if It Happened to Someone You Respect | Journaling about pain can loop instead of resolve | 5 | 4 | 2 | **22** | idea |
-| 8 | MA-025 | 6 | The Day After the Goal | Emptiness after achieving something long pursued | 4 | 5 | 2 | **22** | idea |
-| 9 | MA-010 | 5 | You're Not "an Avoidant" | Attachment labels from social media become identities | 4 | 5 | 3 | **21** | idea |
-| 10 | MA-022 | 1 | The Five-Minute Evening Review, Done Properly | People want a practice, not a philosophy | 3 | 5 | 1 | **21** | idea |
-| 11 | MA-026 | 9 | The Approval Economy at Work | Performing for managers and feeds; worth on loan | 4 | 5 | 3 | **21** | idea |
-| 12 | MA-027 | 5 | The Message You Think Is Awkward | Not reaching out because it feels strange | 4 | 4 | 1 | **21** | idea |
-| 13 | MA-031 | 3 | Fathers Who Didn't Say It | Men raised by emotionally quiet fathers | 4 | 5 | 3 | **21** | idea |
-| 14 | MA-035 | 1 | A Notebook Is Not a Courtroom | Journaling turns into self-prosecution | 4 | 4 | 1 | **21** | idea |
-| 15 | MA-037 | 5 | Why Closeness Feels Like Danger | Pulling away when someone gets close | 4 | 5 | 3 | **21** | idea |
-| 16 | MA-045 | 1 | The Unsent Letter | Things unsaid to the living and the dead | 4 | 4 | 1 | **21** | idea |
-| 17 | MA-003 | 2 | The Trait You Can't Stand in Other People | Strong irritation at others might be information about ourselves; but shadow work is sold as therapy | 5 | 4 | 3 | **21** | draft v1 (awaiting approval) |
-| 18 | MA-004 | 10 | The Raise That Didn't Arrive Inside | Success arrives on paper and not in the body; is more ever enough? | 4 | 5 | 3 | **21** | draft v1 (awaiting approval) |
-| 19 | MA-007 | 7 | We Would Rather Be Shocked Than Alone With Our Thoughts | Restlessness and the reflex to reach for the phone | 4 | 5 | 3 | **21** | idea |
-| 20 | MA-018 | 2 | The Persona Is Not a Lie | The gap between the self at work and the self at 2am | 5 | 4 | 3 | **21** | idea |
-| 21 | MA-041 | 6 | Who Are You When You Stop Producing? | Identity fused with output | 4 | 5 | 3 | **21** | idea |
-| 22 | MA-013 | 8 | Being Okay Is Not Proof You Didn't Love Them | Guilt about grieving "too little" or "too long" | 5 | 4 | 3 | **21** | idea |
-| 23 | MA-014 | 4 | The Dichotomy of Control Is Not a Shrug | "Focus on what you control" misused as resignation | 3 | 5 | 2 | **20** | idea |
-| 24 | MA-019 | 5 | Lonely in a Full Room | Loneliness while surrounded by people | 3 | 5 | 2 | **20** | idea |
-| 25 | MA-020 | 9 | Name It to Tame It? What Labelling Feelings Actually Does | Emotional vocabulary is sold as a superpower; the evidence is narrower | 4 | 4 | 2 | **20** | idea |
-| 26 | MA-021 | 3 | Why Young Men Listen to Toughness Influencers | Young men drawn to content that promises certainty | 4 | 5 | 4 | **20** | idea |
-| 27 | MA-036 | 9 | Anger Is Usually Guarding Something | Anger as the visible part of hurt or fear | 3 | 5 | 2 | **20** | idea |
-| 28 | MA-042 | 3 | Strength That Can Be Reached | Men equating strength with unavailability | 3 | 5 | 2 | **20** | idea |
-| 29 | MA-009 | 6 | Burnout Is Not a Character Flaw | High achievers treat exhaustion as weakness and push harder | 3 | 5 | 2 | **20** | idea |
-| 30 | MA-015 | 10 | What Seneca Knew About Your Salary | Status anxiety and the moving finish line | 4 | 4 | 2 | **20** | idea |
-| 31 | MA-016 | 7 | Boredom Was the Doorway | We removed every empty minute, and the thinking that happened in it | 4 | 4 | 2 | **20** | idea |
-| 32 | MA-017 | 6 | Discipline Without Self-Contempt | Using self-punishment as fuel and calling it discipline | 3 | 5 | 2 | **20** | idea |
-| 33 | MA-028 | 2 | What Jung Said, and What Psychology Tested | Shadow work trend vs evidence | 5 | 4 | 4 | **20** | idea |
-| 34 | MA-032 | 6 | Perfectionism Came From Outside | Standards that feel internal but are socially prescribed | 3 | 5 | 2 | **20** | idea |
-| 35 | MA-040 | 10 | Status Games You Didn't Choose to Play | Comparison with peers on social feeds | 3 | 5 | 2 | **20** | idea |
-| 36 | MA-024 | 8 | Your Calendar Is a Philosophy | Busy, but not living the life one would choose | 3 | 5 | 2 | **20** | idea |
-| 37 | MA-034 | 8 | Grief Comes in Waves Because It Should | "Getting over it" expectation | 4 | 4 | 2 | **20** | idea |
-| 38 | MA-023 | 4 | Camus for People Who Have to Get Up Tomorrow | Absurdism read as despair rather than revolt | 4 | 4 | 3 | **19** | idea |
-| 39 | MA-046 | 9 | You Are Not the Spotlight | Self-consciousness and replaying embarrassments | 3 | 4 | 1 | **19** | idea |
-| 40 | MA-038 | 7 | Attention Is a Moral Act | Distraction framed as productivity problem rather than relational one | 4 | 4 | 3 | **19** | idea |
-| 41 | MA-039 | 2 | The People Who Annoy You Are Teachers (Marcus Said It First) | Interpersonal irritation | 3 | 4 | 1 | **19** | idea |
-| 42 | MA-050 | 2 | Your Inner Critic Has an Accent | Hearing a parent's voice in self-talk | 4 | 4 | 3 | **19** | idea |
-| 43 | MA-033 | 4 | Amor Fati Without the Tattoo | Fate-love quoted as slogan; meant as discipline | 3 | 4 | 2 | **18** | idea |
-| 44 | MA-043 | 4 | Freedom Is Heavier Than It Looks | Too many options; anxiety of choice | 4 | 4 | 4 | **18** | idea |
-| 45 | MA-030 | 10 | The Best Thing Money Buys Might Be an Hour | Trading time for money without noticing | 3 | 4 | 2 | **18** | idea |
-| 46 | MA-048 | 7 | Why Overstimulation Feels Like Anxiety | Constant input and the restless body | 3 | 4 | 3 | **17** | idea |
-| 47 | MA-047 | 5 | Love Is a Verb Somebody Has to Do | Waiting to feel ready to love | 2 | 4 | 2 | **16** | idea |
-| 48 | MA-029 | 7 | The Phone Debate Is Not Settled. Here's What We Know. | Parents and young adults told contradictory things about phones | 3 | 4 | 4 | **16** | idea |
-| 49 | MA-049 | 10 | Enough: An Old Idea for an Expensive Decade | No finish line for wanting | 2 | 4 | 2 | **16** | idea |
-| 50 | MA-044 | 8 | Rehearsing the End Makes Room in the Middle | Fear of death driving avoidance | 3 | 3 | 2 | **16** | idea |
+| 8 | MA-053 | 5 | Why Being Needed Can Feel Like Being Loved | Usefulness as a substitute for being loved | 4 | 5 | 2 | **22** | draft v1 (awaiting approval) |
+| 9 | MA-025 | 6 | The Day After the Goal | Emptiness after achieving something long pursued | 4 | 5 | 2 | **22** | idea |
+| 10 | MA-052 | 6 | You Can Understand Yourself and Still Repeat the Same Mistakes | Insight without behaviour change | 4 | 5 | 2 | **22** | draft v1 (awaiting approval) |
+| 11 | MA-010 | 5 | You're Not "an Avoidant" | Attachment labels from social media become identities | 4 | 5 | 3 | **21** | idea |
+| 12 | MA-022 | 1 | The Five-Minute Evening Review, Done Properly | People want a practice, not a philosophy | 3 | 5 | 1 | **21** | idea |
+| 13 | MA-026 | 9 | The Approval Economy at Work | Performing for managers and feeds; worth on loan | 4 | 5 | 3 | **21** | idea |
+| 14 | MA-027 | 5 | The Message You Think Is Awkward | Not reaching out because it feels strange | 4 | 4 | 1 | **21** | idea |
+| 15 | MA-031 | 3 | Fathers Who Didn't Say It | Men raised by emotionally quiet fathers | 4 | 5 | 3 | **21** | idea |
+| 16 | MA-035 | 1 | A Notebook Is Not a Courtroom | Journaling turns into self-prosecution | 4 | 4 | 1 | **21** | idea |
+| 17 | MA-037 | 5 | Why Closeness Feels Like Danger | Pulling away when someone gets close | 4 | 5 | 3 | **21** | idea |
+| 18 | MA-045 | 1 | The Unsent Letter | Things unsaid to the living and the dead | 4 | 4 | 1 | **21** | idea |
+| 19 | MA-055 | 9 | When Self-Improvement Becomes Self-Rejection | Improvement driven by contempt rather than care | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 2) |
+| 20 | MA-059 | 5 | Why We Mistake Intensity for Intimacy | Chaos and longing read as closeness | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 3) |
+| 21 | MA-060 | 4 | What Would You Do If Nobody Was Watching? | Decisions under no observation (decision-making, not identity) | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 3) |
+| 22 | MA-003 | 2 | The Trait You Can't Stand in Other People | Strong irritation at others might be information about ourselves; but shadow work is sold as therapy | 5 | 4 | 3 | **21** | draft v1 (awaiting approval) |
+| 23 | MA-004 | 10 | The Raise That Didn't Arrive Inside | Success arrives on paper and not in the body; is more ever enough? | 4 | 5 | 3 | **21** | draft v1 (awaiting approval) |
+| 24 | MA-007 | 7 | The Lost Art of Being Alone With Your Thoughts | Restlessness and the reflex to reach for the phone | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 2); was "We Would Rather Be Shocked Than Alone With Our Thoughts" |
+| 25 | MA-018 | 2 | The Persona Is Not a Lie | The gap between the self at work and the self at 2am | 5 | 4 | 3 | **21** | idea |
+| 26 | MA-041 | 6 | Who Are You When You Stop Producing? | Identity fused with output | 4 | 5 | 3 | **21** | idea |
+| 27 | MA-051 | 6 | The Man You Become When Nobody Is Watching | Character as the residue of private repetition (identity, not decisions) | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 2) |
+| 28 | MA-054 | 2 | The Parts of Yourself You Were Taught to Hide | Disowned traits learned in childhood | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 3) |
+| 29 | MA-056 | 6 | The Exhaustion of Always Trying to Become Someone | Identity as a permanent project | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 3) |
+| 30 | MA-057 | 10 | A Life That Looks Successful but Feels Empty | Outer markers without inner meaning | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 2) |
+| 31 | MA-058 | 2 | The Things We Inherit Without Realising | Family patterns passed down unexamined | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 2) |
+| 32 | MA-013 | 8 | Being Okay Is Not Proof You Didn't Love Them | Guilt about grieving "too little" or "too long" | 5 | 4 | 3 | **21** | idea |
+| 33 | MA-014 | 4 | The Dichotomy of Control Is Not a Shrug | "Focus on what you control" misused as resignation | 3 | 5 | 2 | **20** | idea |
+| 34 | MA-019 | 5 | Lonely in a Full Room | Loneliness while surrounded by people | 3 | 5 | 2 | **20** | idea |
+| 35 | MA-020 | 9 | Name It to Tame It? What Labelling Feelings Actually Does | Emotional vocabulary is sold as a superpower; the evidence is narrower | 4 | 4 | 2 | **20** | idea |
+| 36 | MA-021 | 3 | Why Young Men Listen to Toughness Influencers | Young men drawn to content that promises certainty | 4 | 5 | 4 | **20** | idea |
+| 37 | MA-036 | 9 | What Your Anger Is Trying to Protect | Anger as the visible part of hurt or fear | 3 | 5 | 2 | **20** | draft v1 (awaiting approval) |
+| 38 | MA-042 | 3 | Strength That Can Be Reached | Men equating strength with unavailability | 3 | 5 | 2 | **20** | idea |
+| 39 | MA-009 | 6 | Burnout Is Not a Character Flaw | High achievers treat exhaustion as weakness and push harder | 3 | 5 | 2 | **20** | idea |
+| 40 | MA-015 | 10 | What Seneca Knew About Your Salary | Status anxiety and the moving finish line | 4 | 4 | 2 | **20** | idea |
+| 41 | MA-016 | 7 | Boredom Was the Doorway | We removed every empty minute, and the thinking that happened in it | 4 | 4 | 2 | **20** | idea |
+| 42 | MA-017 | 6 | Discipline Without Self-Contempt | Using self-punishment as fuel and calling it discipline | 3 | 5 | 2 | **20** | idea |
+| 43 | MA-028 | 2 | What Jung Said, and What Psychology Tested | Shadow work trend vs evidence | 5 | 4 | 4 | **20** | idea |
+| 44 | MA-032 | 6 | Perfectionism Came From Outside | Standards that feel internal but are socially prescribed | 3 | 5 | 2 | **20** | idea |
+| 45 | MA-040 | 10 | Status Games You Didn't Choose to Play | Comparison with peers on social feeds | 3 | 5 | 2 | **20** | idea |
+| 46 | MA-024 | 8 | Your Calendar Is a Philosophy | Busy, but not living the life one would choose | 3 | 5 | 2 | **20** | idea |
+| 47 | MA-034 | 8 | Grief Comes in Waves Because It Should | "Getting over it" expectation | 4 | 4 | 2 | **20** | idea |
+| 48 | MA-023 | 4 | Camus for People Who Have to Get Up Tomorrow | Absurdism read as despair rather than revolt | 4 | 4 | 3 | **19** | idea |
+| 49 | MA-046 | 9 | You Are Not the Spotlight | Self-consciousness and replaying embarrassments | 3 | 4 | 1 | **19** | idea |
+| 50 | MA-038 | 7 | Attention Is a Moral Act | Distraction framed as productivity problem rather than relational one | 4 | 4 | 3 | **19** | idea |
+| 51 | MA-039 | 2 | The People Who Annoy You Are Teachers (Marcus Said It First) | Interpersonal irritation | 3 | 4 | 1 | **19** | idea |
+| 52 | MA-050 | 2 | Your Inner Critic Has an Accent | Hearing a parent's voice in self-talk | 4 | 4 | 3 | **19** | idea |
+| 53 | MA-033 | 4 | Amor Fati Without the Tattoo | Fate-love quoted as slogan; meant as discipline | 3 | 4 | 2 | **18** | idea |
+| 54 | MA-043 | 4 | Freedom Is Heavier Than It Looks | Too many options; anxiety of choice | 4 | 4 | 4 | **18** | idea |
+| 55 | MA-030 | 10 | The Best Thing Money Buys Might Be an Hour | Trading time for money without noticing | 3 | 4 | 2 | **18** | idea |
+| 56 | MA-048 | 7 | Why Overstimulation Feels Like Anxiety | Constant input and the restless body | 3 | 4 | 3 | **17** | idea |
+| 57 | MA-047 | 5 | Love Is a Verb Somebody Has to Do | Waiting to feel ready to love | 2 | 4 | 2 | **16** | idea |
+| 58 | MA-029 | 7 | The Phone Debate Is Not Settled. Here's What We Know. | Parents and young adults told contradictory things about phones | 3 | 4 | 4 | **16** | idea |
+| 59 | MA-049 | 10 | Enough: An Old Idea for an Expensive Decade | No finish line for wanting | 2 | 4 | 2 | **16** | idea |
+| 60 | MA-044 | 8 | Rehearsing the End Makes Room in the Middle | Fear of death driving avoidance | 3 | 3 | 2 | **16** | idea |
 
 ## Research and philosophy per topic
 
@@ -114,62 +124,89 @@
 - E27 Nolen-Hoeksema, Wisco & Lyubomirsky (2008), 1 Empirical [link](https://doi.org/10.1111/j.1745-6924.2008.00088.x)
 - E09 Pennebaker & Beall; Frattaroli (meta-analysis) (1986; 2006), 1 Empirical [link](https://doi.org/10.1037/0033-2909.132.6.823)
 
-**8. The Day After the Goal** (MA-025, After the Goal). Philosophy: Kierkegaard on despair (idea). Platforms: Substack 5; IG carousel 4; reel 5; Pinterest 4. Related: MA-041; MA-009; MA-017. Reusable: —.
+**8. Why Being Needed Can Feel Like Being Loved** (MA-053, The Distance Between Us). Philosophy: Seneca Letter 9; Fromm. Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-006. Reusable: —.
+
+- N41 Brown, Nesse, Vinokur & Smith (2003), 1 Empirical [link](https://doi.org/10.1111/1467-9280.14461)
+- N42 Helgeson & Fritz (1998), 3 Theoretical [link](https://doi.org/10.1207/s15327957pspr0203_2)
+- N43 Fritz & Helgeson (1998), 1 Empirical [link](https://doi.org/10.1037/0022-3514.75.1.121)
+- N44 Crocker & Canevello (2008), 1 Empirical [link](https://doi.org/10.1037/0022-3514.95.3.555)
+- N45 Seneca (c. 65 CE), 2 Philosophical [link](https://monadnock.net/seneca/9.html)
+- P10 Erich Fromm (1956), 2 Philosophical
+
+**9. The Day After the Goal** (MA-025, After the Goal). Philosophy: Kierkegaard on despair (idea). Platforms: Substack 5; IG carousel 4; reel 5; Pinterest 4. Related: MA-041; MA-009; MA-017. Reusable: —.
 
 - E33 Brickman, Coates & Janoff-Bulman (1978), 1 Empirical [link](https://doi.org/10.1037/0022-3514.36.8.917)
 - N20 McAdams & McLean (2013), 1 Empirical [link](https://doi.org/10.1177/0963721413475622)
 - P05 Søren Kierkegaard (1849), 2 Philosophical
 
-**9. You're Not "an Avoidant"** (MA-010, The Distance Between Us). Philosophy: Fromm, The Art of Loving (idea). Platforms: Substack 5; IG carousel 5; reel 4; Pinterest 5. Related: MA-006; MA-027; MA-037. Reusable: library E01-E03.
+**10. You Can Understand Yourself and Still Repeat the Same Mistakes** (MA-052, After the Goal). Philosophy: Aristotle NE VII akrasia; Romans 7:19. Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-017. Reusable: —.
+
+- N31 Webb & Sheeran (2006), 1 Empirical [link](https://doi.org/10.1037/0033-2909.132.2.249)
+- N32 Wood, Quinn & Kashy (2002), 1 Empirical [link](https://doi.org/10.1037/0022-3514.83.6.1281)
+- N33 Gollwitzer & Sheeran (2006), 1 Empirical [link](https://doi.org/10.1016/S0065-2601(06)38002-1)
+- N34 Paul (King James Version) (c. 57 CE), 2 Philosophical [link](https://biblehub.com/kjv/romans/7.htm)
+- N35 Aristotle (c. 340 BCE), 2 Philosophical
+- N36 Aristotle (c. 340 BCE), 2 Philosophical
+
+**11. You're Not "an Avoidant"** (MA-010, The Distance Between Us). Philosophy: Fromm, The Art of Loving (idea). Platforms: Substack 5; IG carousel 5; reel 4; Pinterest 5. Related: MA-006; MA-027; MA-037. Reusable: library E01-E03.
 
 - E01 Hazan & Shaver (1987), 1 Empirical [link](https://doi.org/10.1037/0022-3514.52.3.511)
 - E02 Brennan, Clark & Shaver (1998), 1 Empirical
 - E03 Mikulincer & Shaver (2007 (2nd ed. 2016)), 1 Empirical
 - P10 Erich Fromm (1956), 2 Philosophical
 
-**10. The Five-Minute Evening Review, Done Properly** (MA-022, The Evening Review). Philosophy: Seneca, On Anger 3.36. Platforms: Substack 4; IG carousel 5; reel 4; Pinterest 5. Related: MA-002; MA-011; MA-035. Reusable: Phase 1 F7 carousel.
+**12. The Five-Minute Evening Review, Done Properly** (MA-022, The Evening Review). Philosophy: Seneca, On Anger 3.36. Platforms: Substack 4; IG carousel 5; reel 4; Pinterest 5. Related: MA-002; MA-011; MA-035. Reusable: Phase 1 F7 carousel.
 
 - N30 Seneca (c. 45 CE), 2 Philosophical [link](https://en.wikisource.org/wiki/Of_Anger)
 - E25 Gollwitzer & Sheeran (2006), 1 Empirical
 - N07 Kross & Ayduk (2017), 1 Empirical [link](https://doi.org/10.1016/bs.aesp.2016.10.002)
 
-**11. The Approval Economy at Work** (MA-026, What We Disown). Philosophy: Epictetus, Enchiridion 33 (on reputation). Platforms: Substack 5; IG carousel 4; reel 4; Pinterest 3. Related: MA-005; MA-008; MA-020. Reusable: —.
+**13. The Approval Economy at Work** (MA-026, What We Disown). Philosophy: Epictetus, Enchiridion 33 (on reputation). Platforms: Substack 5; IG carousel 4; reel 4; Pinterest 3. Related: MA-005; MA-008; MA-020. Reusable: —.
 
 - N15 Crocker & Park (2004), 1 Empirical [link](https://doi.org/10.1037/0033-2909.130.3.392)
 - E11 Vogel, Rose, Roberts & Eckles (2014), 1 Empirical [link](https://doi.org/10.1037/ppm0000047)
 - E23 Gilovich, Medvec & Savitsky (2000), 1 Empirical
 
-**12. The Message You Think Is Awkward** (MA-027, The Distance Between Us). Philosophy: Seneca, Letters 3 (on true friendship). Platforms: Substack 3; IG carousel 4; reel 5; Pinterest 4. Related: MA-006; MA-010; MA-037. Reusable: reels-engine E01.
+**14. The Message You Think Is Awkward** (MA-027, The Distance Between Us). Philosophy: Seneca, Letters 3 (on true friendship). Platforms: Substack 3; IG carousel 4; reel 5; Pinterest 4. Related: MA-006; MA-010; MA-037. Reusable: reels-engine E01.
 
 - N19 Kumar & Epley (2018), 1 Empirical [link](https://doi.org/10.1177/0956797618772506)
 - N18 Epley & Schroeder (2014), 1 Empirical [link](https://doi.org/10.1037/a0037323)
 - E34 Jeffrey Hall (2019), 1 Empirical [link](https://doi.org/10.1177/0265407518761225)
 
-**13. Fathers Who Didn't Say It** (MA-031, Masculinity, Reconsidered). Philosophy: Marcus Aurelius, Meditations 1 (gratitude list to teachers and family). Platforms: Substack 5; IG carousel 4; reel 4; Pinterest 3. Related: MA-001; MA-012; MA-021. Reusable: —.
+**15. Fathers Who Didn't Say It** (MA-031, Masculinity, Reconsidered). Philosophy: Marcus Aurelius, Meditations 1 (gratitude list to teachers and family). Platforms: Substack 5; IG carousel 4; reel 4; Pinterest 3. Related: MA-001; MA-012; MA-021. Reusable: —.
 
 - E15 Levant (1992), 1 Empirical
 - N03 Wong, Ho, Wang & Miller (2017), 1 Empirical [link](https://doi.org/10.1037/cou0000176)
 - N20 McAdams & McLean (2013), 1 Empirical [link](https://doi.org/10.1177/0963721413475622)
 
-**14. A Notebook Is Not a Courtroom** (MA-035, The Evening Review). Philosophy: Seneca reviews his day "without fear" (On Anger 3.36). Platforms: Substack 4; IG carousel 5; reel 4; Pinterest 5. Related: MA-002; MA-011; MA-022. Reusable: —.
+**16. A Notebook Is Not a Courtroom** (MA-035, The Evening Review). Philosophy: Seneca reviews his day "without fear" (On Anger 3.36). Platforms: Substack 4; IG carousel 5; reel 4; Pinterest 5. Related: MA-002; MA-011; MA-022. Reusable: —.
 
 - N30 Seneca (c. 45 CE), 2 Philosophical [link](https://en.wikisource.org/wiki/Of_Anger)
 - N21 Neff (2003), 1 Empirical [link](https://doi.org/10.1080/15298860309032)
 - E20 Breines & Chen (2012), 1 Empirical [link](https://doi.org/10.1177/0146167212445599)
 
-**15. Why Closeness Feels Like Danger** (MA-037, The Distance Between Us). Philosophy: Fromm (idea); bell hooks, All About Love (idea). Platforms: Substack 5; IG carousel 4; reel 4; Pinterest 4. Related: MA-006; MA-010; MA-027. Reusable: —.
+**17. Why Closeness Feels Like Danger** (MA-037, The Distance Between Us). Philosophy: Fromm (idea); bell hooks, All About Love (idea). Platforms: Substack 5; IG carousel 4; reel 4; Pinterest 4. Related: MA-006; MA-010; MA-027. Reusable: —.
 
 - E03 Mikulincer & Shaver (2007 (2nd ed. 2016)), 1 Empirical
 - E02 Brennan, Clark & Shaver (1998), 1 Empirical
 - P15 bell hooks (2000), 2 Philosophical
 
-**16. The Unsent Letter** (MA-045, The Evening Review). Philosophy: Seneca's letters as a form. Platforms: Substack 4; IG carousel 4; reel 4; Pinterest 5. Related: MA-002; MA-011; MA-022. Reusable: —.
+**18. The Unsent Letter** (MA-045, The Evening Review). Philosophy: Seneca's letters as a form. Platforms: Substack 4; IG carousel 4; reel 4; Pinterest 5. Related: MA-002; MA-011; MA-022. Reusable: —.
 
 - E09 Pennebaker & Beall; Frattaroli (meta-analysis) (1986; 2006), 1 Empirical [link](https://doi.org/10.1037/0033-2909.132.6.823)
 - E30 Klass, Silverman & Nickman (eds) (1996), 1 Empirical
 - N19 Kumar & Epley (2018), 1 Empirical [link](https://doi.org/10.1177/0956797618772506)
 
-**17. The Trait You Can't Stand in Other People** (MA-003, What We Disown). Philosophy: Jung, Aion (CW 9ii) on the shadow (idea). Platforms: Substack 5; IG carousel 5; reel 4; Pinterest 4. Related: MA-018; MA-028; MA-039. Reusable: library P12.
+**19. When Self-Improvement Becomes Self-Rejection** (MA-055, What We Disown). Philosophy: Stoic progress (prokopē). Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-017; MA-032. Reusable: —.
+
+
+**20. Why We Mistake Intensity for Intimacy** (MA-059, The Distance Between Us). Philosophy: Fromm (idea). Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-010; MA-053. Reusable: —.
+
+
+**21. What Would You Do If Nobody Was Watching?** (MA-060, Old Answers). Philosophy: Plato Republic II Ring of Gyges; Epictetus. Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-051. Reusable: —.
+
+
+**22. The Trait You Can't Stand in Other People** (MA-003, What We Disown). Philosophy: Jung, Aion (CW 9ii) on the shadow (idea). Platforms: Substack 5; IG carousel 5; reel 4; Pinterest 4. Related: MA-018; MA-028; MA-039. Reusable: library P12.
 
 - P12 Carl Jung (1951), 2 Philosophical
 - N01 Schimel, Greenberg & Martens (2003), 1 Empirical [link](https://doi.org/10.1177/0146167203252969)
@@ -178,7 +215,7 @@
 - E22 Tangney & Dearing (2002), 1 Empirical
 - E20 Breines & Chen (2012), 1 Empirical [link](https://doi.org/10.1177/0146167212445599)
 
-**18. The Raise That Didn't Arrive Inside** (MA-004, After the Goal). Philosophy: Seneca, Letters 2.6; Epicurus, Letter to Menoeceus. Platforms: Substack 5; IG carousel 5; reel 4; Pinterest 4. Related: MA-015; MA-040; MA-030. Reusable: library E32/E33.
+**23. The Raise That Didn't Arrive Inside** (MA-004, After the Goal). Philosophy: Seneca, Letters 2.6; Epicurus, Letter to Menoeceus. Platforms: Substack 5; IG carousel 5; reel 4; Pinterest 4. Related: MA-015; MA-040; MA-030. Reusable: library E32/E33.
 
 - N04 Killingsworth, Kahneman & Mellers (2023), 1 Empirical [link](https://doi.org/10.1073/pnas.2208661120)
 - N05 Kahneman & Deaton (2010), 1 Empirical [link](https://doi.org/10.1073/pnas.1011492107)
@@ -187,7 +224,7 @@
 - N28 Seneca (c. 65 CE), 2 Philosophical
 - N27 Epicurus (c. 300 BCE), 2 Philosophical
 
-**19. We Would Rather Be Shocked Than Alone With Our Thoughts** (MA-007, The Loud Room). Philosophy: Pascal, Pensées (sitting quietly in a room). Platforms: Substack 5; IG carousel 4; reel 5; Pinterest 4. Related: MA-016; MA-038; MA-048. Reusable: —.
+**24. The Lost Art of Being Alone With Your Thoughts** (MA-007, The Loud Room). Philosophy: Pascal, Pensées (sitting quietly in a room). Platforms: Substack 5; IG carousel 4; reel 5; Pinterest 4. Related: MA-016; MA-038; MA-048; MA-016. Reusable: —.
 
 - N08 Wilson et al. (2014), 1 Empirical [link](https://doi.org/10.1126/science.1250830)
 - N10 Killingsworth & Gilbert (2010), 1 Empirical [link](https://doi.org/10.1126/science.1192439)
@@ -195,179 +232,200 @@
 - N22 Orben & Przybylski (2019), 1 Empirical [link](https://doi.org/10.1038/s41562-018-0506-1)
 - N23 Odgers (2024), 2 Philosophical [link](https://doi.org/10.1038/d41586-024-00902-2)
 
-**20. The Persona Is Not a Lie** (MA-018, What We Disown). Philosophy: Jung on the persona (idea); Nietzsche on giving style to one's character (Gay Science 290). Platforms: Substack 5; IG carousel 4; reel 4; Pinterest 4. Related: MA-003; MA-028; MA-039. Reusable: —.
+**25. The Persona Is Not a Lie** (MA-018, What We Disown). Philosophy: Jung on the persona (idea); Nietzsche on giving style to one's character (Gay Science 290). Platforms: Substack 5; IG carousel 4; reel 4; Pinterest 4. Related: MA-003; MA-028; MA-039. Reusable: —.
 
 - P12 Carl Jung (1951), 2 Philosophical
 - N20 McAdams & McLean (2013), 1 Empirical [link](https://doi.org/10.1177/0963721413475622)
 
-**21. Who Are You When You Stop Producing?** (MA-041, After the Goal). Philosophy: Kierkegaard; Seneca on leisure. Platforms: Substack 5; IG carousel 4; reel 4; Pinterest 4. Related: MA-025; MA-009; MA-017. Reusable: —.
+**26. Who Are You When You Stop Producing?** (MA-041, After the Goal). Philosophy: Kierkegaard; Seneca on leisure. Platforms: Substack 5; IG carousel 4; reel 4; Pinterest 4. Related: MA-025; MA-009; MA-017. Reusable: —.
 
 - N20 McAdams & McLean (2013), 1 Empirical [link](https://doi.org/10.1177/0963721413475622)
 - E35 James Marcia (after Erikson) (1966), 1 Empirical
 - N12 Maslach & Leiter (2016), 1 Empirical [link](https://doi.org/10.1002/wps.20311)
 
-**22. Being Okay Is Not Proof You Didn't Love Them** (MA-013, Memento). Philosophy: Montaigne, Essays I.20; continuing bonds. Platforms: Substack 5; IG carousel 4; reel 3; Pinterest 4. Related: MA-024; MA-034; MA-044. Reusable: library E29/E30.
+**27. The Man You Become When Nobody Is Watching** (MA-051, After the Goal). Philosophy: Aristotle NE II.1 habituation. Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-060; MA-018. Reusable: —.
+
+
+**28. The Parts of Yourself You Were Taught to Hide** (MA-054, What We Disown). Philosophy: Jung, persona and shadow (interpretive). Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-018; MA-003. Reusable: —.
+
+- E22 Tangney & Dearing (2002), 1 Empirical
+- N01 Schimel, Greenberg & Martens (2003), 1 Empirical [link](https://doi.org/10.1177/0146167203252969)
+
+**29. The Exhaustion of Always Trying to Become Someone** (MA-056, After the Goal). Philosophy: Existentialism; Seneca on restlessness. Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-025; MA-051. Reusable: —.
+
+
+**30. A Life That Looks Successful but Feels Empty** (MA-057, After the Goal). Philosophy: Seneca; Aristotle on eudaimonia. Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-025; MA-004. Reusable: —.
+
+
+**31. The Things We Inherit Without Realising** (MA-058, What We Disown). Philosophy: Jung (interpretive). Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-050; MA-054. Reusable: —.
+
+
+**32. Being Okay Is Not Proof You Didn't Love Them** (MA-013, Memento). Philosophy: Montaigne, Essays I.20; continuing bonds. Platforms: Substack 5; IG carousel 4; reel 3; Pinterest 4. Related: MA-024; MA-034; MA-044. Reusable: library E29/E30.
 
 - N13 Bonanno (2004), 1 Empirical [link](https://doi.org/10.1037/0003-066X.59.1.20)
 - E29 Stroebe & Schut (1999), 1 Empirical [link](https://doi.org/10.1080/074811899201046)
 - E30 Klass, Silverman & Nickman (eds) (1996), 1 Empirical
 
-**23. The Dichotomy of Control Is Not a Shrug** (MA-014, Old Answers). Philosophy: Epictetus, Enchiridion 1. Platforms: Substack 4; IG carousel 5; reel 5; Pinterest 4. Related: MA-023; MA-033; MA-043. Reusable: library P01.
+**33. The Dichotomy of Control Is Not a Shrug** (MA-014, Old Answers). Philosophy: Epictetus, Enchiridion 1. Platforms: Substack 4; IG carousel 5; reel 5; Pinterest 4. Related: MA-023; MA-033; MA-043. Reusable: library P01.
 
 - P01 Epictetus (c. 125 CE), 2 Philosophical
 - E25 Gollwitzer & Sheeran (2006), 1 Empirical
 - N12 Maslach & Leiter (2016), 1 Empirical [link](https://doi.org/10.1002/wps.20311)
 
-**24. Lonely in a Full Room** (MA-019, The Distance Between Us). Philosophy: Aristotle on friendship of the good. Platforms: Substack 4; IG carousel 5; reel 5; Pinterest 4. Related: MA-006; MA-010; MA-027. Reusable: library C02.
+**34. Lonely in a Full Room** (MA-019, The Distance Between Us). Philosophy: Aristotle on friendship of the good. Platforms: Substack 4; IG carousel 5; reel 5; Pinterest 4. Related: MA-006; MA-010; MA-027. Reusable: library C02.
 
 - E16 Holt-Lunstad, Smith & Layton (2010), 1 Empirical [link](https://doi.org/10.1371/journal.pmed.1000316)
 - E17 Office of the US Surgeon General (2023), 1 Empirical [link](https://www.hhs.gov/sites/default/files/surgeon-general-social-connection-advisory.pdf)
 - N11 Baumeister & Leary (1995), 1 Empirical [link](https://doi.org/10.1037/0033-2909.117.3.497)
 - C02 Reddit r/lonely, r/socialskills (—), 4 Anecdotal/cultural
 
-**25. Name It to Tame It? What Labelling Feelings Actually Does** (MA-020, Old Answers). Philosophy: Stoic first movements. Platforms: Substack 4; IG carousel 5; reel 5; Pinterest 4. Related: MA-005; MA-008; MA-026. Reusable: library E07/E08.
+**35. Name It to Tame It? What Labelling Feelings Actually Does** (MA-020, Old Answers). Philosophy: Stoic first movements. Platforms: Substack 4; IG carousel 5; reel 5; Pinterest 4. Related: MA-005; MA-008; MA-026. Reusable: library E07/E08.
 
 - E07 Lieberman et al. (2007), 1 Empirical [link](https://doi.org/10.1111/j.1467-9280.2007.01916.x)
 - E08 Kashdan, Barrett & McKnight (2015), 1 Empirical
 - E05 Gross & John (2003), 1 Empirical [link](https://doi.org/10.1037/0022-3514.85.2.348)
 
-**26. Why Young Men Listen to Toughness Influencers** (MA-021, Masculinity, Reconsidered). Philosophy: bell hooks (idea); Aristotle on courage as a mean. Platforms: Substack 5; IG carousel 3; reel 3; Pinterest 2. Related: MA-001; MA-012; MA-031. Reusable: Movember Substack piece (reference only).
+**36. Why Young Men Listen to Toughness Influencers** (MA-021, Masculinity, Reconsidered). Philosophy: bell hooks (idea); Aristotle on courage as a mean. Platforms: Substack 5; IG carousel 3; reel 3; Pinterest 2. Related: MA-001; MA-012; MA-031. Reusable: Movember Substack piece (reference only).
 
 - N03 Wong, Ho, Wang & Miller (2017), 1 Empirical [link](https://doi.org/10.1037/cou0000176)
 - E19 Gallup (2025), 1 Empirical
 - C06 Movember session, SXSW London (June 2026) (2026), 4 Anecdotal/cultural
 
-**27. Anger Is Usually Guarding Something** (MA-036, Old Answers). Philosophy: Seneca, On Anger. Platforms: Substack 4; IG carousel 5; reel 5; Pinterest 4. Related: MA-005; MA-008; MA-026. Reusable: reels-engine R006.
+**37. What Your Anger Is Trying to Protect** (MA-036, Old Answers). Philosophy: Seneca, On Anger. Platforms: Substack 4; IG carousel 5; reel 5; Pinterest 4. Related: MA-005; MA-008; MA-026; selected 21 Oct. Reusable: reels-engine R006.
 
+- N37 Carver & Harmon-Jones (2009), 1 Empirical [link](https://doi.org/10.1037/a0013965)
+- N38 Bushman (2002), 1 Empirical [link](https://doi.org/10.1177/0146167202289002)
+- E07 Lieberman et al. (2007), 1 Empirical [link](https://doi.org/10.1111/j.1467-9280.2007.01916.x)
 - E05 Gross & John (2003), 1 Empirical [link](https://doi.org/10.1037/0022-3514.85.2.348)
-- P02 Seneca (c. 45 CE), 2 Philosophical
+- N39 Seneca (c. 45 CE), 2 Philosophical [link](https://en.wikisource.org/wiki/Of_Anger)
+- N40 Aristotle (c. 340 BCE), 2 Philosophical
 
-**28. Strength That Can Be Reached** (MA-042, Masculinity, Reconsidered). Philosophy: Seneca, Letters 9 (the wise man and friends). Platforms: Substack 4; IG carousel 5; reel 5; Pinterest 3. Related: MA-001; MA-012; MA-031. Reusable: library M02.
+**38. Strength That Can Be Reached** (MA-042, Masculinity, Reconsidered). Philosophy: Seneca, Letters 9 (the wise man and friends). Platforms: Substack 4; IG carousel 5; reel 5; Pinterest 3. Related: MA-001; MA-012; MA-031. Reusable: library M02.
 
 - M02 Moodius (2026), 3 Opinion/creative
 - N03 Wong, Ho, Wang & Miller (2017), 1 Empirical [link](https://doi.org/10.1037/cou0000176)
 - E13 Wong, Ho, Wang & Miller (2017), 1 Empirical
 
-**29. Burnout Is Not a Character Flaw** (MA-009, After the Goal). Philosophy: Seneca, On Tranquillity of Mind (idea). Platforms: Substack 5; IG carousel 5; reel 4; Pinterest 4. Related: MA-025; MA-041; MA-017. Reusable: —.
+**39. Burnout Is Not a Character Flaw** (MA-009, After the Goal). Philosophy: Seneca, On Tranquillity of Mind (idea). Platforms: Substack 5; IG carousel 5; reel 4; Pinterest 4. Related: MA-025; MA-041; MA-017. Reusable: —.
 
 - N12 Maslach & Leiter (2016), 1 Empirical [link](https://doi.org/10.1002/wps.20311)
 - E04 Ryan & Deci (2000), 1 Empirical [link](https://doi.org/10.1037/0003-066X.55.1.68)
 - N14 Curran & Hill (2019), 1 Empirical [link](https://doi.org/10.1037/bul0000138)
 
-**30. What Seneca Knew About Your Salary** (MA-015, After the Goal). Philosophy: Seneca, Letters 2.6 and 16. Platforms: Substack 4; IG carousel 5; reel 5; Pinterest 4. Related: MA-004; MA-040; MA-030. Reusable: —.
+**40. What Seneca Knew About Your Salary** (MA-015, After the Goal). Philosophy: Seneca, Letters 2.6 and 16. Platforms: Substack 4; IG carousel 5; reel 5; Pinterest 4. Related: MA-004; MA-040; MA-030. Reusable: —.
 
 - N28 Seneca (c. 65 CE), 2 Philosophical
 - E33 Brickman, Coates & Janoff-Bulman (1978), 1 Empirical [link](https://doi.org/10.1037/0022-3514.36.8.917)
 - E32 Kasser & Ryan (1996), 1 Empirical [link](https://doi.org/10.1177/0146167296223006)
 - E10 Festinger (1954), 1 Empirical
 
-**31. Boredom Was the Doorway** (MA-016, The Loud Room). Philosophy: Pascal; Seneca on leisure (otium). Platforms: Substack 4; IG carousel 4; reel 5; Pinterest 4. Related: MA-007; MA-038; MA-048. Reusable: —.
+**41. Boredom Was the Doorway** (MA-016, The Loud Room). Philosophy: Pascal; Seneca on leisure (otium). Platforms: Substack 4; IG carousel 4; reel 5; Pinterest 4. Related: MA-007; MA-038; MA-048. Reusable: —.
 
 - N08 Wilson et al. (2014), 1 Empirical [link](https://doi.org/10.1126/science.1250830)
 - N10 Killingsworth & Gilbert (2010), 1 Empirical [link](https://doi.org/10.1126/science.1192439)
 - N24 Blaise Pascal (1670), 2 Philosophical
 
-**32. Discipline Without Self-Contempt** (MA-017, After the Goal). Philosophy: Epictetus Discourses 2.18 (habit). Platforms: Substack 4; IG carousel 5; reel 5; Pinterest 4. Related: MA-025; MA-041; MA-009. Reusable: Phase 1 F1 self-trust carousel.
+**42. Discipline Without Self-Contempt** (MA-017, After the Goal). Philosophy: Epictetus Discourses 2.18 (habit). Platforms: Substack 4; IG carousel 5; reel 5; Pinterest 4. Related: MA-025; MA-041; MA-009. Reusable: Phase 1 F1 self-trust carousel.
 
 - E04 Ryan & Deci (2000), 1 Empirical [link](https://doi.org/10.1037/0003-066X.55.1.68)
 - E20 Breines & Chen (2012), 1 Empirical [link](https://doi.org/10.1177/0146167212445599)
 - E25 Gollwitzer & Sheeran (2006), 1 Empirical
 - M01 Moodius (2026), 3 Opinion/creative
 
-**33. What Jung Said, and What Psychology Tested** (MA-028, What We Disown). Philosophy: Jung, Aion; Psychology and Religion (idea). Platforms: Substack 5; IG carousel 3; reel 3; Pinterest 3. Related: MA-003; MA-018; MA-039. Reusable: —.
+**43. What Jung Said, and What Psychology Tested** (MA-028, What We Disown). Philosophy: Jung, Aion; Psychology and Religion (idea). Platforms: Substack 5; IG carousel 3; reel 3; Pinterest 3. Related: MA-003; MA-018; MA-039. Reusable: —.
 
 - P12 Carl Jung (1951), 2 Philosophical
 - N01 Schimel, Greenberg & Martens (2003), 1 Empirical [link](https://doi.org/10.1177/0146167203252969)
 - N02 Newman, Duff & Baumeister (1997), 1 Empirical [link](https://doi.org/10.1037/0022-3514.72.5.980)
 - N06 Wegner, Schneider, Carter & White (1987), 1 Empirical [link](https://doi.org/10.1037/0022-3514.53.1.5)
 
-**34. Perfectionism Came From Outside** (MA-032, After the Goal). Philosophy: Epictetus on judgments (Enchiridion 5). Platforms: Substack 4; IG carousel 5; reel 4; Pinterest 4. Related: MA-025; MA-041; MA-009. Reusable: —.
+**44. Perfectionism Came From Outside** (MA-032, After the Goal). Philosophy: Epictetus on judgments (Enchiridion 5). Platforms: Substack 4; IG carousel 5; reel 4; Pinterest 4. Related: MA-025; MA-041; MA-009. Reusable: —.
 
 - N14 Curran & Hill (2019), 1 Empirical [link](https://doi.org/10.1037/bul0000138)
 - N15 Crocker & Park (2004), 1 Empirical [link](https://doi.org/10.1037/0033-2909.130.3.392)
 
-**35. Status Games You Didn't Choose to Play** (MA-040, After the Goal). Philosophy: Epictetus on externals. Platforms: Substack 4; IG carousel 5; reel 5; Pinterest 4. Related: MA-004; MA-015; MA-030. Reusable: —.
+**45. Status Games You Didn't Choose to Play** (MA-040, After the Goal). Philosophy: Epictetus on externals. Platforms: Substack 4; IG carousel 5; reel 5; Pinterest 4. Related: MA-004; MA-015; MA-030. Reusable: —.
 
 - E10 Festinger (1954), 1 Empirical
 - E11 Vogel, Rose, Roberts & Eckles (2014), 1 Empirical [link](https://doi.org/10.1037/ppm0000047)
 - E32 Kasser & Ryan (1996), 1 Empirical [link](https://doi.org/10.1177/0146167296223006)
 
-**36. Your Calendar Is a Philosophy** (MA-024, Memento). Philosophy: Seneca, On the Shortness of Life; Montaigne I.20. Platforms: Substack 4; IG carousel 5; reel 5; Pinterest 5. Related: MA-013; MA-034; MA-044. Reusable: —.
+**46. Your Calendar Is a Philosophy** (MA-024, Memento). Philosophy: Seneca, On the Shortness of Life; Montaigne I.20. Platforms: Substack 4; IG carousel 5; reel 5; Pinterest 5. Related: MA-013; MA-034; MA-044. Reusable: —.
 
 - N25 Seneca (c. 49 CE), 2 Philosophical
 - N26 Michel de Montaigne (1580), 2 Philosophical
 - N17 Whillans et al. (2017), 1 Empirical [link](https://doi.org/10.1073/pnas.1706541114)
 
-**37. Grief Comes in Waves Because It Should** (MA-034, Memento). Philosophy: Dual process model. Platforms: Substack 4; IG carousel 4; reel 4; Pinterest 4. Related: MA-013; MA-024; MA-044. Reusable: —.
+**47. Grief Comes in Waves Because It Should** (MA-034, Memento). Philosophy: Dual process model. Platforms: Substack 4; IG carousel 4; reel 4; Pinterest 4. Related: MA-013; MA-024; MA-044. Reusable: —.
 
 - E29 Stroebe & Schut (1999), 1 Empirical [link](https://doi.org/10.1080/074811899201046)
 - E30 Klass, Silverman & Nickman (eds) (1996), 1 Empirical
 - N13 Bonanno (2004), 1 Empirical [link](https://doi.org/10.1037/0003-066X.59.1.20)
 
-**38. Camus for People Who Have to Get Up Tomorrow** (MA-023, Old Answers). Philosophy: Camus, The Myth of Sisyphus (idea). Platforms: Substack 5; IG carousel 4; reel 4; Pinterest 4. Related: MA-014; MA-033; MA-043. Reusable: library P07.
+**48. Camus for People Who Have to Get Up Tomorrow** (MA-023, Old Answers). Philosophy: Camus, The Myth of Sisyphus (idea). Platforms: Substack 5; IG carousel 4; reel 4; Pinterest 4. Related: MA-014; MA-033; MA-043. Reusable: library P07.
 
 - P07 Albert Camus (1942), 2 Philosophical
 - P08 Friedrich Nietzsche (1882), 2 Philosophical
 
-**39. You Are Not the Spotlight** (MA-046, What We Disown). Philosophy: Marcus on fame (Meditations 4.19). Platforms: Substack 3; IG carousel 5; reel 5; Pinterest 4. Related: MA-005; MA-008; MA-026. Reusable: library E23.
+**49. You Are Not the Spotlight** (MA-046, What We Disown). Philosophy: Marcus on fame (Meditations 4.19). Platforms: Substack 3; IG carousel 5; reel 5; Pinterest 4. Related: MA-005; MA-008; MA-026. Reusable: library E23.
 
 - E23 Gilovich, Medvec & Savitsky (2000), 1 Empirical
 - E21 Berglas & Jones (1978), 1 Empirical
 
-**40. Attention Is a Moral Act** (MA-038, The Loud Room). Philosophy: Simone Weil on attention (idea); Marcus on the present moment. Platforms: Substack 5; IG carousel 4; reel 4; Pinterest 4. Related: MA-007; MA-016; MA-048. Reusable: —.
+**50. Attention Is a Moral Act** (MA-038, The Loud Room). Philosophy: Simone Weil on attention (idea); Marcus on the present moment. Platforms: Substack 5; IG carousel 4; reel 4; Pinterest 4. Related: MA-007; MA-016; MA-048. Reusable: —.
 
 - N10 Killingsworth & Gilbert (2010), 1 Empirical [link](https://doi.org/10.1126/science.1192439)
 
-**41. The People Who Annoy You Are Teachers (Marcus Said It First)** (MA-039, What We Disown). Philosophy: Marcus Aurelius, Meditations 2.1. Platforms: Substack 3; IG carousel 5; reel 5; Pinterest 4. Related: MA-003; MA-018; MA-028. Reusable: Phase 1 F2 rude person carousel.
+**51. The People Who Annoy You Are Teachers (Marcus Said It First)** (MA-039, What We Disown). Philosophy: Marcus Aurelius, Meditations 2.1. Platforms: Substack 3; IG carousel 5; reel 5; Pinterest 4. Related: MA-003; MA-018; MA-028. Reusable: Phase 1 F2 rude person carousel.
 
 - N01 Schimel, Greenberg & Martens (2003), 1 Empirical [link](https://doi.org/10.1177/0146167203252969)
 - P12 Carl Jung (1951), 2 Philosophical
 
-**42. Your Inner Critic Has an Accent** (MA-050, What We Disown). Philosophy: Jung on complexes (idea). Platforms: Substack 4; IG carousel 4; reel 4; Pinterest 4. Related: MA-003; MA-018; MA-028. Reusable: —.
+**52. Your Inner Critic Has an Accent** (MA-050, What We Disown). Philosophy: Jung on complexes (idea). Platforms: Substack 4; IG carousel 4; reel 4; Pinterest 4. Related: MA-003; MA-018; MA-028. Reusable: —.
 
 - E22 Tangney & Dearing (2002), 1 Empirical
 - N21 Neff (2003), 1 Empirical [link](https://doi.org/10.1080/15298860309032)
 - N07 Kross & Ayduk (2017), 1 Empirical [link](https://doi.org/10.1016/bs.aesp.2016.10.002)
 
-**43. Amor Fati Without the Tattoo** (MA-033, Old Answers). Philosophy: Nietzsche (Gay Science 276); Marcus, Meditations 4.23. Platforms: Substack 4; IG carousel 4; reel 5; Pinterest 5. Related: MA-014; MA-023; MA-043. Reusable: library P08.
+**53. Amor Fati Without the Tattoo** (MA-033, Old Answers). Philosophy: Nietzsche (Gay Science 276); Marcus, Meditations 4.23. Platforms: Substack 4; IG carousel 4; reel 5; Pinterest 5. Related: MA-014; MA-023; MA-043. Reusable: library P08.
 
 - P08 Friedrich Nietzsche (1882), 2 Philosophical
 
-**44. Freedom Is Heavier Than It Looks** (MA-043, Old Answers). Philosophy: Kierkegaard (anxiety as dizziness of freedom, idea); Beauvoir (idea). Platforms: Substack 5; IG carousel 3; reel 3; Pinterest 3. Related: MA-014; MA-023; MA-033. Reusable: library P06/P13.
+**54. Freedom Is Heavier Than It Looks** (MA-043, Old Answers). Philosophy: Kierkegaard (anxiety as dizziness of freedom, idea); Beauvoir (idea). Platforms: Substack 5; IG carousel 3; reel 3; Pinterest 3. Related: MA-014; MA-023; MA-033. Reusable: library P06/P13.
 
 - P06 Søren Kierkegaard (1844), 2 Philosophical
 - P13 Simone de Beauvoir (1947), 2 Philosophical
 - P11 Erich Fromm (1941), 2 Philosophical
 
-**45. The Best Thing Money Buys Might Be an Hour** (MA-030, After the Goal). Philosophy: Epicurus on enough. Platforms: Substack 4; IG carousel 5; reel 4; Pinterest 5. Related: MA-004; MA-015; MA-040. Reusable: —.
+**55. The Best Thing Money Buys Might Be an Hour** (MA-030, After the Goal). Philosophy: Epicurus on enough. Platforms: Substack 4; IG carousel 5; reel 4; Pinterest 5. Related: MA-004; MA-015; MA-040. Reusable: —.
 
 - N17 Whillans et al. (2017), 1 Empirical [link](https://doi.org/10.1073/pnas.1706541114)
 - N16 Dunn, Aknin & Norton (2008), 1 Empirical [link](https://doi.org/10.1126/science.1150952)
 - N27 Epicurus (c. 300 BCE), 2 Philosophical
 
-**46. Why Overstimulation Feels Like Anxiety** (MA-048, The Loud Room). Philosophy: Epictetus on impressions (testing appearances). Platforms: Substack 4; IG carousel 4; reel 4; Pinterest 3. Related: MA-007; MA-016; MA-038. Reusable: —.
+**56. Why Overstimulation Feels Like Anxiety** (MA-048, The Loud Room). Philosophy: Epictetus on impressions (testing appearances). Platforms: Substack 4; IG carousel 4; reel 4; Pinterest 3. Related: MA-007; MA-016; MA-038. Reusable: —.
 
 - N10 Killingsworth & Gilbert (2010), 1 Empirical [link](https://doi.org/10.1126/science.1192439)
 - E37 Carleton (2016), 1 Empirical
 
-**47. Love Is a Verb Somebody Has to Do** (MA-047, The Distance Between Us). Philosophy: Fromm; bell hooks (ideas). Platforms: Substack 4; IG carousel 4; reel 4; Pinterest 5. Related: MA-006; MA-010; MA-027. Reusable: library P10/P15.
+**57. Love Is a Verb Somebody Has to Do** (MA-047, The Distance Between Us). Philosophy: Fromm; bell hooks (ideas). Platforms: Substack 4; IG carousel 4; reel 4; Pinterest 5. Related: MA-006; MA-010; MA-027. Reusable: library P10/P15.
 
 - P10 Erich Fromm (1956), 2 Philosophical
 - P15 bell hooks (2000), 2 Philosophical
 
-**48. The Phone Debate Is Not Settled. Here's What We Know.** (MA-029, The Loud Room). Philosophy: —. Platforms: Substack 5; IG carousel 3; reel 2; Pinterest 2. Related: MA-007; MA-016; MA-038. Reusable: —.
+**58. The Phone Debate Is Not Settled. Here's What We Know.** (MA-029, The Loud Room). Philosophy: —. Platforms: Substack 5; IG carousel 3; reel 2; Pinterest 2. Related: MA-007; MA-016; MA-038. Reusable: —.
 
 - N22 Orben & Przybylski (2019), 1 Empirical [link](https://doi.org/10.1038/s41562-018-0506-1)
 - N23 Odgers (2024), 2 Philosophical [link](https://doi.org/10.1038/d41586-024-00902-2)
 - N09 Ward, Duke, Gneezy & Bos (2017), 1 Empirical [link](https://doi.org/10.1086/691462)
 
-**49. Enough: An Old Idea for an Expensive Decade** (MA-049, After the Goal). Philosophy: Epicurus, Letter to Menoeceus; Seneca Letters 2. Platforms: Substack 4; IG carousel 4; reel 4; Pinterest 5. Related: MA-004; MA-015; MA-040. Reusable: —.
+**59. Enough: An Old Idea for an Expensive Decade** (MA-049, After the Goal). Philosophy: Epicurus, Letter to Menoeceus; Seneca Letters 2. Platforms: Substack 4; IG carousel 4; reel 4; Pinterest 5. Related: MA-004; MA-015; MA-040. Reusable: —.
 
 - N27 Epicurus (c. 300 BCE), 2 Philosophical
 - N28 Seneca (c. 65 CE), 2 Philosophical
 - N04 Killingsworth, Kahneman & Mellers (2023), 1 Empirical [link](https://doi.org/10.1073/pnas.2208661120)
 
-**50. Rehearsing the End Makes Room in the Middle** (MA-044, Memento). Philosophy: Montaigne I.20; Epicurus. Platforms: Substack 4; IG carousel 4; reel 4; Pinterest 5. Related: MA-013; MA-024; MA-034. Reusable: —.
+**60. Rehearsing the End Makes Room in the Middle** (MA-044, Memento). Philosophy: Montaigne I.20; Epicurus. Platforms: Substack 4; IG carousel 4; reel 4; Pinterest 5. Related: MA-013; MA-024; MA-034. Reusable: —.
 
 - N26 Michel de Montaigne (1580), 2 Philosophical
 - N27 Epicurus (c. 300 BCE), 2 Philosophical

@@ -1,6 +1,6 @@
-# 8. Ninety-day publication calendar (2 Nov 2026 – 30 Jan 2027)
+# 8. Publication calendar (2 Nov 2026 – 23 Feb 2027; day-90 review 30 Jan)
 
-Full row-by-row plan: `08-calendar-90-day.csv` (221 rows: date, time Madrid, platform, asset, essay, who, status). Every row is **planned, not scheduled**. Nothing goes out until Surafel approves it.
+Full row-by-row plan: `08-calendar-90-day.csv` (186 rows: date, time Madrid, platform, asset, essay, who, status). Every row is **planned, not scheduled**. Nothing goes out until Surafel approves it.
 
 ## Weekly rhythm
 | Day | Time (Madrid) | What | Who presses the button |
@@ -17,24 +17,31 @@ Full row-by-row plan: `08-calendar-90-day.csv` (221 rows: date, time Madrid, pla
 
 Other reels, carousels and stories in the existing Instagram plan keep running. The essay package takes three of the week's fourteen feed slots.
 
-## The thirteen essays
+## The sixteen essays
+Weeks 5–16 are the twelve titles Surafel selected on 21 Oct. The backlog picks that were here (Stoicism Was Never About Not Feeling, Shame vs Guilt, the grief piece, The Unsent Letter, The Day After the Goal, the Evening Review piece, The Arithmetic of Friendship, You're Not "an Avoidant", The Rule Men Learn) go back to the backlog for March onwards.
+
 | Week | Thu | Essay | Pillar | Status |
 |---|---|---|---|---|
 | 1 | 5 Nov | Writing to No One (+ *Start Here* post) | 1 Journaling | Draft + package ready |
 | 2 | 12 Nov | The Trait You Can't Stand in Other People | 2 Shadow | Draft + package ready |
 | 3 | 19 Nov | The Loneliness of Being Fine (International Men's Day) | 3 Masculinity | Draft + package ready |
 | 4 | 26 Nov | The Raise That Didn't Arrive Inside | 10 Money/status | Draft + package ready |
-| 5 | 3 Dec | Stoicism Was Never About Not Feeling | 9 Regulation | To draft |
-| 6 | 10 Dec | Shame Says You Are the Problem. Guilt Says You Made One. | 9 Shame | To draft |
-| 7 | 17 Dec | Being Okay Is Not Proof You Didn't Love Them | 8 Grief | To draft (helplines) |
-| 8 | 24 Dec | The Unsent Letter (short holiday piece) | 1 Journaling | To draft |
-| 9 | 31 Dec | The Day After the Goal | 6 Ambition | To draft |
-| 10 | 7 Jan | The Five-Minute Evening Review, Done Properly | 1 Journaling | To draft |
-| 11 | 14 Jan | The Arithmetic of Friendship | 5 Friendship | To draft |
-| 12 | 21 Jan | You're Not "an Avoidant" | 5 Attachment | To draft |
-| 13 | 28 Jan | The Rule Men Learn Before They Can Name It | 3 Masculinity | To draft |
+| 5 | 3 Dec | You Can Understand Yourself and Still Repeat the Same Mistakes | 6 Discipline | Draft + package ready |
+| 6 | 10 Dec | What Your Anger Is Trying to Protect | 9 Regulation | Draft + package ready |
+| 7 | 17 Dec | Why Being Needed Can Feel Like Being Loved | 5 Relationships | Draft + package ready |
+| 8 | 24 Dec | The Things We Inherit Without Realising | 2 Shadow | Batch 2 |
+| 9 | 31 Dec | A Life That Looks Successful but Feels Empty | 10 Success | Batch 2 |
+| 10 | 7 Jan | When Self-Improvement Becomes Self-Rejection | 9 Self-worth | Batch 2 |
+| 11 | 14 Jan | The Lost Art of Being Alone With Your Thoughts | 7 Attention | Batch 2 |
+| 12 | 21 Jan | The Man You Become When Nobody Is Watching (identity) | 6 Identity | Batch 2 |
+| 13 | 28 Jan | The Parts of Yourself You Were Taught to Hide | 2 Shadow | Batch 3 |
+| 14 | 4 Feb | The Exhaustion of Always Trying to Become Someone | 6 Identity | Batch 3 |
+| 15 | 11 Feb | Why We Mistake Intensity for Intimacy | 5 Attachment | Batch 3 |
+| 16 | 18 Feb | What Would You Do If Nobody Was Watching? (decisions) | 4 Philosophy | Batch 3 |
 
-Nine of the ten pillars appear in the first thirteen weeks. Pillar 7 (attention) is held for February because the phone-and-wellbeing evidence is contested and needs a careful two-sided piece.
+Titles 1 and 12 are kept apart on purpose. *The Man You Become…* is about identity: character as what private repetition leaves behind (Aristotle on habituation, self-perception research). *What Would You Do…* is about decisions: how being watched changes choices (Plato's Ring of Gyges, watching-eyes studies and their failed replications, regret research). Four weeks separate them.
+
+Packages for weeks 5 onwards have two reels, one carousel and three Notes (what the 21 Oct brief asked for), so Pinterest pins and the two sticker stories aren't planned for those weeks. Claude can add them later if wanted.
 
 ## Checkpoints
 - **19 Nov:** the existing Instagram 30-day review. From 23 Nov the essay packages are folded into the Instagram calendar. Until then, packages for weeks 1–3 replace already-queued slots only with your OK, through the account thread.

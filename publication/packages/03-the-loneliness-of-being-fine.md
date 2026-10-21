@@ -69,7 +69,7 @@ Who would you give the next 200 to?
 Evidence: Hall (2019). Aristotle said the same with salt (Nicomachean Ethics VIII.3). Full essay on the Substack, link in bio.
 ```
 
-## 2. Seven-slide carousel (1080×1350)
+## 2. 7-slide carousel (1080×1350)
 
 | Slide | Role | Main text | Small text | Component |
 |---|---|---|---|---|
@@ -93,7 +93,7 @@ Who would know if you weren't okay?
 Evidence: Cox 2021 (survey), Wong et al. 2017 (meta-analysis), Hall 2019, Levant 1992 (theory). Philosophy: Aristotle, NE VIII.3. Reflection: Moodius.
 ```
 
-## 3. Five quote / insight cards (1080×1350, also 1080×1920 for stories)
+## 3. Quote / insight cards (1080×1350, also 1080×1920 for stories)
 
 1. If you weren't okay, who would know? — *Moodius*
 2. Being fine alone is a skill. Being reachable is another. — *Moodius*
@@ -101,13 +101,13 @@ Evidence: Cox 2021 (survey), Wong et al. 2017 (meta-analysis), Hall 2019, Levant
 4. Close friendship takes about 200 hours. Nothing in adult life schedules them for you. — *Moodius, after Hall (2019)*
 5. You can't really know someone until you've eaten salt together. — *Aristotle, Nicomachean Ethics VIII.3 · paraphrased*
 
-## 4. Three Story concepts
+## 4. Story concepts
 
 1. **Poll:** "How many people would notice if you weren't okay?" Poll: 0–1 / 2–3 / 4+. Next frame: "Whatever your number, Thursday's essay is for you."
 2. **Prompt:** "Text one friend tonight. No reason." Plain Slate story with a 'Done' emoji slider. Repost a few slider screenshots only with the sender's OK.
 3. **Link:** "New essay: The Loneliness of Being Fine" Cover still + link sticker + "The numbers, the rule, the 200 hours." Highlight: Identity.
 
-## 5. Five Pinterest pins (1000×1500, link to the essay)
+## 5. Pinterest pins (1000×1500, link to the essay)
 
 1. **The Loneliness of Being Fine: Men and Friendship** (48 chars). Why so many men have nobody who'd notice if they weren't okay, what the research says, and a 20-minute reachability audit.
 2. **How Many Hours Does It Take to Make a Close Friend?** (51 chars). About 200, according to research. What that means for adult friendship and how to schedule it.
