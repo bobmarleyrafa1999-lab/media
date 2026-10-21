@@ -1,0 +1,81 @@
+{
+  "_notes": "Threads plan 22 Oct-1 Nov 2026 (Europe/Madrid; +02:00 until Sat 24 Oct, +01:00 from Sun 25 Oct). Built from the same day's Instagram carousel and reel (strategy/upload-pack/manifest.json); citations unchanged from those captions. 12:30 = card image + text, one topic tag. 21:30 = text only. Schedule ONLY when Metricool threadsData is the Moodius account (see strategy/14-threads-playbook.md). Max 500 characters per post.",
+  "posts": [
+    {"date": "2026-10-22", "time": "12:30", "topic": "Stoicism", "card": "2026-10-22.png",
+     "card_claim": "Rude happened. Harmed is a story you can decline.",
+     "card_cite": "Moodius · after Marcus Aurelius, Meditations 2.1 and 4.7",
+     "text": "Marcus Aurelius started his mornings expecting difficult people (Meditations 2.1). Not to turn cold. To stop being surprised.\n\nThen Meditations 4.7: drop the judgement \"I've been harmed\", and the harm goes with it.\n\nRude happened. Harmed is a story you can decline.\n\nWho are you getting ready for today? The role, not the name."},
+    {"date": "2026-10-22", "time": "21:30", "topic": "Mental Health",
+     "text": "Asking for help is a skill, not a confession.\n\nMarcus Aurelius, Meditations 7.7 (Long): \"Be not ashamed to be helped.\"\n\nWho's one person you could ask this week, and what's stopping you?"},
+
+    {"date": "2026-10-23", "time": "12:30", "topic": "Psychology", "card": "2026-10-23.png",
+     "card_claim": "The argument took five minutes. The replay takes three hours.",
+     "card_cite": "Moodius · after Seneca, Letters 13.4 and Epictetus, Enchiridion 5",
+     "text": "The argument took five minutes. The replay takes three hours.\n\nSeneca saw it (Letters 13.4): we suffer more in imagination than in reality. Epictetus named the cause (Enchiridion 5): it isn't what happened, it's the judgement about it.\n\nTonight, write the judgement down in one sentence. Then ask: is it true, and is it useful?\n\nWhat's the argument you've replayed most this year?"},
+    {"date": "2026-10-23", "time": "21:30", "topic": "Philosophy",
+     "text": "Asked whether he'd rather do wrong or suffer it, Socrates said: \"If I must choose between them, I would rather suffer than do.\" (Plato, Gorgias 469c, Jowett)\n\nWhoever cheated you has to live with a cheat. You don't.\n\nHave you ever been glad, later, that you didn't get even?"},
+
+    {"date": "2026-10-24", "time": "12:30", "topic": "Stoicism", "card": "2026-10-24.png",
+     "card_claim": "End the day with a review, not a trial.",
+     "card_cite": "Moodius · after Seneca, On Anger 3.36",
+     "text": "The 5-minute evening review the Stoics actually ran.\n\nSeneca describes it in On Anger 3.36: lights out, the day replayed in order, three questions, nothing hidden. In paraphrase: what bad habit did I cure today, what fault did I resist, in what way am I better?\n\nNot a trial. A review. Phone in another room, one notebook.\n\nWhich of the three is hardest for you?"},
+    {"date": "2026-10-24", "time": "21:30", "topic": "Stoicism",
+     "text": "You didn't choose your family, your city or your century. Neither did Marcus Aurelius.\n\nMeditations 6.39 (Long): \"the men among whom you have received your portion, love them, but do it truly, sincerely.\"\n\nWho's someone you were given rather than chose, and what's one good thing about them?"},
+
+    {"date": "2026-10-25", "time": "12:30", "topic": "Stoicism", "card": "2026-10-25.png",
+     "card_quote": "Look within. Within is the fountain of good, and it will ever bubble up, if you will ever dig.",
+     "card_cite": "Marcus Aurelius, Meditations 7.59 · tr. George Long",
+     "text": "The person you want to become isn't in a course, a new city or someone else's approval.\n\nMarcus Aurelius, Meditations 7.59 (Long): \"Look within. Within is the fountain of good, and it will ever bubble up, if you will ever dig.\"\n\nWhat's one good thing in you that you've been underusing?"},
+    {"date": "2026-10-25", "time": "21:30", "topic": "Mental Health",
+     "text": "A hard season isn't proof you're doing life wrong. Sometimes it's just the season.\n\nWhat's helping you get through this one?\n\n— Moodius"},
+
+    {"date": "2026-10-26", "time": "12:30", "topic": "Psychology", "card": "2026-10-26.png",
+     "card_claim": "You're not lazy. You're avoiding a feeling.",
+     "card_cite": "Moodius · after Marcus Aurelius, Meditations 2.4",
+     "text": "You're not lazy. You're avoiding a feeling.\n\nPsychologists link a lot of procrastination to mood repair: you put the task off to escape how it makes you feel. Doubt, boredom, fear of doing it badly.\n\nMarcus caught himself too. Meditations 2.4 (Long): \"Remember how long you have been putting off these things.\"\n\nName the feeling. Shrink the start to two minutes. Bring the feeling with you.\n\nWhat's the feeling behind the thing you're putting off?"},
+    {"date": "2026-10-26", "time": "21:30", "topic": "Mental Health",
+     "text": "Likes are a vote from people who gave your post half a second. Your own opinion of you has watched every day of your life.\n\nWhat would you post if nobody could see the likes?\n\n— Moodius"},
+
+    {"date": "2026-10-27", "time": "12:30", "topic": "Psychology", "card": "2026-10-27.png",
+     "card_claim": "Rehearsing a disaster isn't preparing for it. It's living it twice.",
+     "card_cite": "Moodius · after Marcus Aurelius, Meditations 7.8",
+     "text": "Your mind runs the worst case on repeat because rehearsing feels like preparing. It isn't. It's living the bad day in advance, often more than once.\n\nMarcus Aurelius, Meditations 7.8 (Long): you will meet future things \"having with you the same reason which now you use for present things.\"\n\nAsk for the next action. If there isn't one, come back to the room.\n\nWhat does your mind rehearse most?"},
+    {"date": "2026-10-27", "time": "21:30", "topic": "Mental Health",
+     "text": "Solitude you choose recharges you. Loneliness drains you.\n\nIf you can't tell which one this is, ask: would I pick up if someone called?\n\n— Moodius"},
+
+    {"date": "2026-10-28", "time": "12:30", "topic": "Stoicism", "card": "2026-10-28.png",
+     "card_quote": "The greatest part of what we say and do being unnecessary, if a man takes this away, he will have more leisure and less uneasiness.",
+     "card_cite": "Marcus Aurelius, Meditations 4.24 · tr. George Long",
+     "text": "Burnout often isn't too much work. It's too much unnecessary work.\n\nMarcus Aurelius, Meditations 4.24 (Long): \"The greatest part of what we say and do being unnecessary, if a man takes this away, he will have more leisure and less uneasiness.\"\n\nOne question for every task today: is this necessary?\n\nWhat could you drop this week that nobody would notice?"},
+    {"date": "2026-10-28", "time": "21:30", "topic": "Philosophy",
+     "text": "Gregor Samsa wakes up as an insect, and his first real panic is that he's late for work.\n\nIf the job is the first thing you think of when you're ill or falling apart, it has more of you than it paid for.\n\nWhat would you stop doing if work didn't count tomorrow?\n\n— Moodius, on Kafka's The Metamorphosis"},
+
+    {"date": "2026-10-29", "time": "12:30", "topic": "Psychology", "card": "2026-10-29.png",
+     "card_claim": "The comment took ten seconds. The story you add to it takes the day.",
+     "card_cite": "Moodius · after Epictetus, Enchiridion 20",
+     "text": "Ninety-nine kind comments, one sharp one, and you replay the sharp one. Psychologists call it negativity bias.\n\nEpictetus, Enchiridion 20 (Higginson): \"It is your own opinion which provokes you.\"\n\nThe comment took ten seconds. The story you add to it takes the day.\n\nBuy time. Don't reply today.\n\nDo you react or respond more often? Be honest."},
+    {"date": "2026-10-29", "time": "21:30", "topic": "Stoicism",
+     "text": "The early version of a better life looks a bit ridiculous from the outside. You leave at eleven. You don't drink. You carry a book.\n\nWhat's the habit you'd start if nobody could see?\n\n— Moodius"},
+
+    {"date": "2026-10-30", "time": "12:30", "topic": "Philosophy", "card": "2026-10-30.png",
+     "card_claim": "Pick friends you'd be glad to become.",
+     "card_cite": "Moodius · after Aristotle, Nicomachean Ethics IX.4 and IX.12",
+     "text": "The myth: you are who you are, whoever you're around.\n\nAristotle disagreed. Nicomachean Ethics IX.12 (Ross): friends \"take the mould of the characteristics they approve\" from each other. And IX.4: \"his friend is another self.\"\n\nPick friends you'd be glad to become.\n\nWho's one person who made you better just by being around them?"},
+    {"date": "2026-10-30", "time": "21:30", "topic": "Mental Health",
+     "text": "If anger was the only feeling that was safe to show growing up, it ends up carrying everything else: the hurt, the shame, the fear.\n\nWhat's usually under yours?\n\n— Moodius"},
+
+    {"date": "2026-10-31", "time": "12:30", "topic": "Stoicism", "card": "2026-10-31.png",
+     "card_claim": "Stop explaining your philosophy. Show it.",
+     "card_cite": "Moodius · after Epictetus, Enchiridion 46",
+     "text": "Epictetus, Enchiridion 46: sheep don't throw up their grass to show the shepherd how much they've eaten. They digest it, and produce wool and milk.\n\nStop explaining your philosophy. Show it.\n\nOne question for tonight: where did what you believe actually show up today?"},
+    {"date": "2026-10-31", "time": "21:30", "topic": "Psychology",
+     "text": "There's a version of independence that's really just fear with good posture. You don't reach out, so you can't be turned down.\n\nWho have you been waiting on to message first?\n\n— Moodius"},
+
+    {"date": "2026-11-01", "time": "12:30", "topic": "Philosophy", "card": "2026-11-01.png",
+     "card_claim": "The wild horse isn't the enemy. It's energy.",
+     "card_cite": "Moodius · after Plato, Phaedrus 246b",
+     "text": "Plato, Phaedrus 246b (Jowett): the soul as a charioteer with two horses, \"one of them is noble and of noble breed, and the other is ignoble.\"\n\nThe wild horse isn't the enemy. It's energy. You don't get rid of it, you train it: notice the pull, name what it wants, give the energy a job.\n\nWhich horse wins more often in your week, and when?"},
+    {"date": "2026-11-01", "time": "21:30", "topic": "Psychology",
+     "text": "In a 2014 study (Wilson et al., Science), many people left alone with their thoughts for 15 minutes chose a mild electric shock over sitting there.\n\nThe urge to grab the phone isn't weakness. It's what quiet feels like when you're out of practice.\n\nFive minutes tonight, nothing in your hands. How long did you last?"}
+  ]
+}
