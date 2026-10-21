@@ -16,6 +16,7 @@ Moodius Aurelius becomes a research-led Substack publication on psychology, phil
 | 8 | 90-day calendar | `08-calendar-90-day.md` + `.csv` |
 | 9 | Setup instructions | `09-setup.md` |
 | 10 | Costs and APIs | `10-costs-and-apis.md` |
+| — | Ghost vs Substack evaluation | `11-ghost-vs-substack.md` |
 | — | Approval queue (80 items) | `queue/approval-queue.csv` |
 
 ## Quick commands
