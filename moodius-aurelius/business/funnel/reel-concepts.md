@@ -24,7 +24,10 @@ Each script has an alternative hook (`hook_b`) for the hook test (T1) once the c
 
 ## DM keyword flow
 
-Comment JOURNAL or GUIDE → a DM with the matching link above. Until the community agent's keyword DM is live, Surafel sends these by hand from saved replies in the Instagram app (one saved reply per keyword, with the `src` for that reel). The agent's keyword list already includes JOURNAL; GUIDE needs adding there.
+Comment JOURNAL or GUIDE → a DM with the matching link above. Until the community agent's keyword DM is live, Surafel sends these by hand from saved replies in the Instagram app (one saved reply per keyword, with the `src` for that reel). The agent's keyword list includes both JOURNAL and GUIDE.
+
+**Once the community agent sends the DMs**, its links use `src=dm_journal` or `src=dm_guide`, and the agent attributes each DM to its reel from the comment's media id (see the update section of `community-agent/INTEGRATION-CONTRACT.md`). The per-reel `dm_reel_<id>` links above are for saved replies sent by hand until then. The agent's `/r/newsletter` goes to its own consent page, not Substack.
+
 
 ## Rules they follow
 

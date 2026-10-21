@@ -35,6 +35,9 @@ Short-link slugs available today: `shop`, `journal`, `guide`, `newsletter`, `sub
 
 Instagram allows one bio link and no links in captions, so a reel can't carry its own link. Per-reel attribution therefore comes from the **DM keyword**: the reel says "Comment JOURNAL", and the DM that goes out carries `src=dm_reel_<id>`. Today Surafel sends those DMs by hand (or the community agent drafts them once it's connected). Sales from people who tap the bio link directly show as `ig_bio`.
 
+**Once the community agent sends the DMs**, its links use `src=dm_journal` or `src=dm_guide`, and the agent attributes each DM to its reel from the comment's media id (see the update section of `community-agent/INTEGRATION-CONTRACT.md`). The per-reel `dm_reel_<id>` links above are for saved replies sent by hand until then. The agent's `/r/newsletter` goes to its own consent page, not Substack.
+
+
 ## Where to see results
 
 - **`/backoffice`** (admin token required, put behind Cloudflare Access): orders, revenue, and a summary table of clicks → views → checkouts → purchases by `src`, plus CSV export.
