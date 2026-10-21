@@ -68,7 +68,7 @@ for r in rows:
     print(f"{r['product'][:55]:55} £{r['price_gbp']:>6}  UK £{r['profit_uk']:>6} ({r['margin_uk']:>4})  EEA £{r['profit_eea']:>6}  Intl £{r['profit_international']:>6}  fees UK £{r['fees_uk']}  vat £{r['vat_uk']}  LS £{r['profit_lemonsqueezy']}")
 
 # Break-even on fixed costs, using the journal's UK profit
-FIXED = {"Domain (£10/yr)": 10 / 12, "PO box / virtual address (mid estimate)": 10.0}
+FIXED = {"Domain (about £8/yr at Cloudflare cost price)": 8 / 12, "Business address, i-support Post Forwarding (£13/mo)": 13.0}
 monthly = sum(FIXED.values())
 j = float(next(r for r in rows if r["product"].startswith("The Unexamined"))["profit_uk"])
 print(f"\nFixed costs £{monthly:.2f}/month -> break-even {monthly / j:.1f} journal sales/month (UK cards)")

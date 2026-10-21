@@ -1,5 +1,7 @@
 # Surafel's checklist: digital products
 
+**Start here instead: `setup/your-part.md`** has the same steps cut down to about 30 minutes, with my picks for domain and address already made. This page stays as the full list.
+
 In order. The first block is what makes the journal purchasable.
 
 ## To sell the journal (about 1-2 hours of your time)

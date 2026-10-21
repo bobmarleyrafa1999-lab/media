@@ -57,20 +57,20 @@ What goes into those numbers:
 
 | Cost | Per month |
 |---|---|
-| Domain (about £10 a year) | £0.83 |
-| PO box or virtual address (about £5-15; £10 used here) | £10.00 |
+| Domain (about £8 a year at Cloudflare's cost price) | £0.67 |
+| Business address: i-support Post Forwarding (£13 a month, or £130 a year) | £13.00 |
 | Cloudflare hosting, database, file storage, Access | £0 |
 | Resend email (up to 3,000 a month) | £0 |
-| **Total** | **£10.83** |
+| **Total** | **£13.67** |
 
-**Break-even on shop costs only is one journal sale a month** (two with a €6 server for the community agent). The whole-business break-even, which also counts Metricool and other tools, is about three sales a month; see `business/finance/moodius-finance-model.xlsx`. That model also applies a 3% refund allowance and a 60/20/20 UK/EEA/international mix, so its blended figure per journal is £10.16 against the £10.77 UK-card figure here.
+**Break-even on shop costs only is under two journal sales a month** (1.3, or 1.8 with a €6 server for the community agent). The whole-business break-even, which also counts Metricool and other tools, is about three sales a month; see `business/finance/moodius-finance-model.xlsx`. That model also applies a 3% refund allowance and a 60/20/20 UK/EEA/international mix, so its blended figure per journal is £10.16 against the £10.77 UK-card figure here.
 
 Illustration, not a forecast (UK cards, journal only, before refunds and tax):
 
 | Journal sales a month | You keep |
 |---|---|
-| 10 | £97 |
-| 30 | £312 |
-| 100 | £1,066 |
+| 10 | £94 |
+| 30 | £310 |
+| 100 | £1,063 |
 
 Personal and gift editions raise the average order. If one buyer in five picks the personal edition, the average sale is £15 and you keep about £11.40 of it.
