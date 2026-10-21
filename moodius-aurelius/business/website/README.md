@@ -28,8 +28,8 @@ With `PAYMENT_PROVIDER=mock`, Buy goes to a fake card page (`/mock-checkout/`) t
 ## Tests
 
 ```bash
-npm test          # 13 unit tests: signatures, Stripe params, event parsing, guards, contract payloads
-npm run test:e2e  # 23 checks against a real local server with D1 + R2
+npm test          # 14 unit tests: signatures, Stripe params, event parsing, guards, contract payloads, personalisation
+npm run test:e2e  # 26 checks against a real local server with D1 + R2
 ```
 
 The end-to-end run covers: pages and security headers; checkout refused without the digital-content consent; mock purchase → signed webhook → order → download page → file streamed from R2; duplicate webhooks ignored; bad signatures rejected; download limits and expiry; refund revokes links; resend-links rate limit and no email enumeration; back office auth, orders, CSV export; newsletter double opt-in, confirm, unsubscribe; short links with `src`; and, with a stand-in community agent, the one-domain proxy and signed revenue events.
@@ -115,6 +115,18 @@ Protect `/backoffice` with Cloudflare Zero Trust → Access (free for up to 50 u
 ### Switching to Lemon Squeezy
 
 If Stripe Managed Payments isn't available for the account: create the product in Lemon Squeezy, set `PAYMENT_PROVIDER = "lemonsqueezy"`, add `LEMONSQUEEZY_API_KEY`, `LEMONSQUEEZY_STORE_ID`, `LEMONSQUEEZY_VARIANT_THE_UNEXAMINED_SELF` and a webhook to `https://<domain>/api/shop/webhooks/lemonsqueezy` (events `order_created`, `order_refunded`) with its secret in `LEMONSQUEEZY_WEBHOOK_SECRET`. Delivery still runs from our R2 bucket, so buyers get the same download page.
+
+### Personal and gift editions
+
+Buyers pick Standard (£14), Personal (£19) or Gift (£22) on the product page. Their choices are validated (`src/personal.js`), stored with the order, and the order shows up as `queued`. The buyer gets the standard PDFs straight away, and `SUPPORT_EMAIL` gets a "To make" email with the command to run. From `../journal`:
+
+```bash
+export SITE_URL=https://<domain> ADMIN_TOKEN=<admin token>
+python3 personalise.py --list                 # what's waiting
+python3 personalise.py ord_xxx --deliver      # build both editions, upload, email the link
+```
+
+A gift with a send date isn't delivered before that day (add `--now` to override). The personalised files show up on the order's existing download page, after the standard ones. The admin routes are `personal-queue`, `orders/<id>/personal`, `orders/<id>/personal-file` and `orders/<id>/personal-deliver`. Run `npx wrangler d1 migrations apply moodius --remote` once to add the `0002_personal` columns.
 
 ### Connecting the community agent
 

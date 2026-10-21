@@ -18,7 +18,7 @@ After the journal has **25 paid orders** or 6 weeks on sale, whichever comes fir
 
 Each workbook expands one part of the journal, using the same YAML schema and `build_journal.py`, so writing a workbook is mostly content work. Same rules: verbatim quotes checked by `verify_quotes.py`, paraphrases labelled, evidence tiers, no therapeutic claims.
 
-Price logic: £14 journal alone; £29 for the journal plus three workbooks and cards (four items bought separately would be about £45).
+Price logic: £14 journal alone, £9 per workbook; £29 for the journal plus three workbooks and cards (about £45 if bought separately). A personal bundle with the journal made in the buyer's name is £34. Margins per sale are in `pricing/README.md`.
 
 ## Upgrade path for journal buyers
 

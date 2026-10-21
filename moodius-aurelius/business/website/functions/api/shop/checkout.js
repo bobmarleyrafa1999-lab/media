@@ -2,6 +2,7 @@
 // Creates our checkout record and sends the buyer to the payment provider.
 import { config, paymentGuard } from "../../../src/config.js";
 import { startCheckout } from "../../../src/orders.js";
+import { getProduct } from "../../../src/catalog.js";
 import { json, cleanSlug, normalizeEmail } from "../../../src/util.js";
 
 export async function onRequestPost({ request, env }) {
@@ -10,7 +11,7 @@ export async function onRequestPost({ request, env }) {
   const input = isJson ? await request.json().catch(() => ({})) : Object.fromEntries(await request.formData());
   const productSlug = cleanSlug(input.product) || "the-unexamined-self";
   const back = (msg) =>
-    isJson ? json({ ok: false, error: msg }, 400) : Response.redirect(`${c.siteUrl}/shop/${productSlug}/?error=${encodeURIComponent(msg)}`, 303);
+    isJson ? json({ ok: false, error: msg }, 400) : Response.redirect(`${c.siteUrl}/shop/${getProduct(productSlug)?.page || productSlug}/?error=${encodeURIComponent(msg)}`, 303);
 
   const guard = paymentGuard(c);
   if (guard) {
@@ -25,6 +26,7 @@ export async function onRequestPost({ request, env }) {
       src: input.src,
       email: normalizeEmail(input.email),
       digitalConsent,
+      personalInput: input,
     });
     return isJson ? json({ ok: true, url }) : Response.redirect(url, 303);
   } catch (err) {

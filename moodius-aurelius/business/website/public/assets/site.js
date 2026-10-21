@@ -39,6 +39,27 @@
     var sync = function () { btn.disabled = !box.checked; };
     box.addEventListener("change", sync); sync();
     f.addEventListener("submit", function () { btn.disabled = true; btn.textContent = "Opening secure checkout…"; });
+    // Edition picker: show the personalisation fields for the chosen edition, update the price.
+    var radios = f.querySelectorAll('input[name="product"][type="radio"]');
+    if (radios.length) {
+      var pick = function () {
+        var chosen = f.querySelector('input[name="product"]:checked');
+        var slug = chosen.value, amount = chosen.getAttribute("data-amount");
+        f.querySelectorAll("fieldset[data-for]").forEach(function (fs) {
+          var on = fs.getAttribute("data-for").split(" ").indexOf(slug) >= 0;
+          fs.hidden = !on;
+          fs.querySelectorAll("input,select,textarea").forEach(function (el) { el.disabled = !on; });
+        });
+        var name = f.querySelector("#p_name"), from = f.querySelector("#p_from_name");
+        if (name) name.required = slug !== "the-unexamined-self";
+        if (from) from.required = slug === "the-unexamined-self-gift";
+        btn.textContent = "Buy for £" + amount;
+        var price = document.querySelector("[data-price]");
+        if (price) price.firstChild.nodeValue = "£" + amount + " ";
+      };
+      radios.forEach(function (r) { r.addEventListener("change", pick); });
+      pick();
+    }
   });
 
   // Thank-you page: wait for the payment confirmation, then show the download button.

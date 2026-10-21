@@ -131,3 +131,20 @@ test("one-domain proxy covers exactly the community agent's paths", () => {
   for (const p of ["/r/shop", "/links", "/newsletter", "/newsletter/confirm", "/free/x", "/api/newsletter/subscribe", "/api/integrations/revenue", "/api/admin/x", "/admin", "/_agent/a.js", "/privacy-newsletter"]) assert.equal(isAgentPath(p), true, p);
   for (const p of ["/", "/shop/", "/api/shop/checkout", "/api/shop/admin/orders", "/download/x", "/guide/", "/downloads/free/seven-day-reflection-guide.pdf", "/linksy"]) assert.equal(isAgentPath(p), false, p);
 });
+
+test("personalisation choices are cleaned and checked", async () => {
+  const { cleanPersonal, describePersonal } = await import("../../src/personal.js");
+  const p = cleanPersonal({ p_name: "  Amara \n Okafor ", p_monogram: "a.o", p_highlight: "Manifesto", p_start_date: "2026-11-02" }, "personal");
+  assert.deepEqual(p, { name: "Amara Okafor", monogram: "AO", accent: "ember", cover: "dark", highlight: "manifesto", start_date: "2026-11-02" });
+  assert.match(describePersonal(p), /Feel everything/);
+  assert.throws(() => cleanPersonal({}, "personal"), /name/);
+  assert.throws(() => cleanPersonal({ p_name: "A", p_accent: "gold" }, "personal"), /accent/);
+  assert.throws(() => cleanPersonal({ p_name: "A", p_start_date: "2026-13-40" }, "personal"), /date/);
+  assert.throws(() => cleanPersonal({ p_name: "A" }, "gift"), /your name/);
+  assert.throws(() => cleanPersonal({ p_name: "A", p_from_name: "B", p_send_date: "2026-01-01" }, "gift", "2026-10-22"), /past/);
+  assert.throws(() => cleanPersonal({ p_name: "A", p_from_name: "B", p_recipient_email: "nope" }, "gift"), /email/);
+  const g = cleanPersonal({ p_name: "Leo", p_from_name: "Sam", p_recipient_email: "Leo@Example.com" }, "gift");
+  assert.equal(g.recipient_email, "leo@example.com");
+  assert.equal(getProduct("the-unexamined-self-personal").amountCents, 1900);
+  assert.equal(getProduct("the-unexamined-self-gift").amountCents, 2200);
+});

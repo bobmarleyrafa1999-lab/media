@@ -11,7 +11,7 @@
 
 import { spawn, execFileSync } from "node:child_process";
 import { createServer } from "node:http";
-import { mkdtempSync, rmSync } from "node:fs";
+import { mkdtempSync, readFileSync, rmSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
@@ -85,7 +85,7 @@ async function phaseA() {
   prepareState(persist);
   const site = startSite(port, persist, {
     SITE_URL: B, PAYMENT_PROVIDER: "mock", ALLOW_MOCK_PAYMENTS: "true", EMAIL_PROVIDER: "log", ADMIN_TOKEN: ADMIN,
-    STRIPE_WEBHOOK_SECRET: STRIPE_SECRET, LEMONSQUEEZY_WEBHOOK_SECRET: LS_SECRET, IP_HASH_SALT: "salt", DOWNLOAD_MAX_USES: "3",
+    STRIPE_WEBHOOK_SECRET: STRIPE_SECRET, LEMONSQUEEZY_WEBHOOK_SECRET: LS_SECRET, IP_HASH_SALT: "salt", DOWNLOAD_MAX_USES: "3", SUPPORT_EMAIL: "shop@example.com",
   });
   try {
     await waitFor(`${B}/`);
@@ -282,6 +282,71 @@ async function phaseA() {
       const test = s.revenue.find((x) => x.test_mode === 1);
       assert.equal(test.orders, 3);
       assert.equal(test.net_cents, 1400, "two refunds leave one paid £14 order");
+    });
+
+    let personalOrder;
+    await check("personal edition: choices validated, stored on the order, queued, buyer and shop emailed", async () => {
+      const base = { product: "the-unexamined-self-personal", consent: true, src: "reel_p001" };
+      const noName = await post(`${B}/api/shop/checkout`, base);
+      assert.equal(noName.status, 400);
+      assert.match((await noName.json()).error, /name/);
+      assert.equal((await post(`${B}/api/shop/checkout`, { ...base, p_name: "Amara", p_accent: "neon" })).status, 400);
+      assert.equal((await post(`${B}/api/shop/checkout`, { ...base, p_name: "x".repeat(41) })).status, 400);
+      const r = await post(`${B}/api/shop/checkout`, { ...base, p_name: "Amara Okafor", p_monogram: "a.o", p_highlight: "manifesto", p_dedication: "For the year you stopped running.", p_start_date: "2026-11-02" }).then(json);
+      assert.equal(r.ok, true, JSON.stringify(r));
+      const ref = new URL(r.url).searchParams.get("ref");
+      await post(`${B}/api/shop/mock/pay`, { ref, email: "amara@example.com" });
+      const s = await fetch(`${B}/api/shop/order-status?ref=${ref}`).then(json);
+      assert.equal(s.status, "paid");
+      assert.equal(s.personal, "queued");
+      personalOrder = s.orderId;
+      const { queue } = await admin(B, "personal-queue");
+      const q = queue.find((o) => o.id === personalOrder);
+      assert.deepEqual(q.personal, { name: "Amara Okafor", monogram: "AO", accent: "ember", cover: "dark", highlight: "manifesto", start_date: "2026-11-02", dedication: "For the year you stopped running." });
+      const { outbox } = await admin(B, "outbox");
+      assert.match(outbox.find((m) => m.kind === "purchase" && m.to_addr === "amara@example.com").body_text, /personal edition now[\s\S]*Name on the cover: Amara Okafor/);
+      assert.match(outbox.find((m) => m.kind === "admin").body_text, new RegExp(`personalise\\.py ${personalOrder} --deliver`));
+      const page = await (await fetch(s.downloadUrl)).text();
+      assert.match(page, /being made/);
+    });
+
+    await check("personalise.py builds both editions, uploads them, and delivers the link", async () => {
+      assert.equal((await fetch(`${B}/api/shop/admin/orders/${personalOrder}/personal-deliver`, { method: "POST", headers: { authorization: `Bearer ${ADMIN}` } })).status, 409, "no files yet");
+      const notPdf = await fetch(`${B}/api/shop/admin/orders/${personalOrder}/personal-file?edition=digital`, { method: "PUT", headers: { authorization: `Bearer ${ADMIN}` }, body: "hello" });
+      assert.equal(notPdf.status, 400);
+      const out = execFileSync("python3", [join(root, "..", "journal", "personalise.py"), personalOrder, "--deliver"], { env: { ...process.env, SITE_URL: B, ADMIN_TOKEN: ADMIN }, encoding: "utf8", timeout: 240000 });
+      assert.match(out, /uploaded digital/); assert.match(out, /uploaded print/); assert.match(out, /delivered/);
+      const { outbox } = await admin(B, "outbox");
+      const mail = outbox.find((m) => m.kind === "personal" && m.to_addr === "amara@example.com");
+      const link = mail.body_text.match(/https?:\/\/\S+\/download\/[A-Za-z0-9_-]{43}/)[0];
+      const page = await (await fetch(link)).text();
+      assert.match(page, /Your personal edition, digital/);
+      assert.doesNotMatch(page, /being made/);
+      const r = await fetch(link, { method: "POST", body: new URLSearchParams({ f: "0" }) });
+      assert.match(r.headers.get("content-disposition"), /Personal-A5-digital/);
+      const pdf = Buffer.from(await r.arrayBuffer()).toString("latin1");
+      assert.ok(pdf.includes("%PDF-"));
+    });
+
+    await check("gift edition: send date in the past refused; recipient emailed once on delivery", async () => {
+      const base = { product: "the-unexamined-self-gift", consent: true, p_name: "Leo", p_from_name: "Sam" };
+      assert.equal((await post(`${B}/api/shop/checkout`, { ...base, p_send_date: "2020-01-01" })).status, 400);
+      assert.equal((await post(`${B}/api/shop/checkout`, { product: "the-unexamined-self-gift", consent: true, p_name: "Leo" })).status, 400, "gift needs a from name");
+      const r = await post(`${B}/api/shop/checkout`, { ...base, p_recipient_email: "Leo@Example.com", p_send_date: "2099-12-25" }).then(json);
+      const ref = new URL(r.url).searchParams.get("ref");
+      await post(`${B}/api/shop/mock/pay`, { ref, email: "sam@example.com" });
+      const id = (await fetch(`${B}/api/shop/order-status?ref=${ref}`).then(json)).orderId;
+      const pdf = readFileSync(join(root, "..", "journal", "out", "The-Unexamined-Self-A5-digital.pdf"));
+      const up = await fetch(`${B}/api/shop/admin/orders/${id}/personal-file?edition=digital`, { method: "PUT", headers: { authorization: `Bearer ${ADMIN}`, "content-type": "application/pdf" }, body: pdf }).then(json);
+      assert.equal(up.ok, true);
+      const d = await fetch(`${B}/api/shop/admin/orders/${id}/personal-deliver`, { method: "POST", headers: { authorization: `Bearer ${ADMIN}` } }).then(json);
+      assert.equal(d.personal_status, "delivered");
+      const { outbox } = await admin(B, "outbox");
+      const gift = outbox.filter((m) => m.kind === "gift");
+      assert.equal(gift.length, 1);
+      assert.equal(gift[0].to_addr, "leo@example.com");
+      assert.match(gift[0].body_text, /Sam has given you[\s\S]*haven't added you to any list/);
+      assert.match(outbox.find((m) => m.kind === "personal" && m.to_addr === "sam@example.com").body_text, /emailed the gift edition to leo@example\.com/);
     });
 
     await check("admin API needs the token", async () => {

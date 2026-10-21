@@ -6,12 +6,18 @@
 //   GET  outbox                 last 50 emails (the test inbox when EMAIL_PROVIDER=log)
 //   POST orders/<id>/resend     email the buyer a fresh download link
 //   POST forward-pending        retry revenue events the community agent didn't acknowledge
+//   GET  personal-queue         personalised and gift orders waiting to be made
+//   GET  orders/<id>/personal   the buyer's choices for one order (read by journal/personalise.py)
+//   PUT  orders/<id>/personal-file?edition=digital|print   upload a personalised PDF (raw body)
+//   POST orders/<id>/personal-deliver                     email the buyer (and gift recipient) the link
 import { config } from "../../../../src/config.js";
 import { getProduct } from "../../../../src/catalog.js";
-import { downloadPageUrl, getOrder, mintDownloadToken } from "../../../../src/orders.js";
+import { deliverPersonal, downloadPageUrl, getOrder, mintDownloadToken } from "../../../../src/orders.js";
 import { sendEmail } from "../../../../src/email.js";
 import { forwardRevenue } from "../../../../src/revenue.js";
-import { json, safeEqual } from "../../../../src/util.js";
+import { json, nowIso, safeEqual } from "../../../../src/util.js";
+
+const MAX_PDF_BYTES = 25 * 1024 * 1024;
 
 export async function summary(db, days) {
   const since = new Date(Date.now() - days * 86400000).toISOString();
@@ -105,6 +111,42 @@ export async function onRequest({ request, env, params, waitUntil }) {
     for (const o of paid) out.push([o.id, "order.paid", await forwardRevenue(c, db, o, "order.paid")]);
     for (const o of refunds) out.push([o.id, "order.refunded", await forwardRevenue(c, db, o, "order.refunded")]);
     return json({ ok: true, results: out });
+  }
+  if (request.method === "GET" && route === "personal-queue") {
+    const { results } = await db
+      .prepare("SELECT id, created_at, product_slug, email, status, test_mode, personal_status, personal_json, personal_done_at FROM orders WHERE personal_status IS NOT NULL ORDER BY personal_status = 'delivered', created_at LIMIT 200")
+      .all();
+    return json({ queue: results.map((o) => ({ ...o, personal: JSON.parse(o.personal_json || "{}"), personal_json: undefined })) });
+  }
+  const personal = route.match(/^orders\/(ord_[a-z0-9]+)\/(personal|personal-file|personal-deliver)$/);
+  if (personal) {
+    const order = await getOrder(db, personal[1]);
+    if (!order || !order.personal_json) return json({ ok: false, error: "no personalised order with that id" }, 404);
+    if (request.method === "GET" && personal[2] === "personal") {
+      return json({ id: order.id, product_slug: order.product_slug, status: order.status, personal_status: order.personal_status, test_mode: !!order.test_mode, personal: JSON.parse(order.personal_json) });
+    }
+    if (order.status !== "paid") return json({ ok: false, error: "order is not paid (refunded?)" }, 409);
+    if (request.method === "PUT" && personal[2] === "personal-file") {
+      const edition = url.searchParams.get("edition");
+      if (!["digital", "print"].includes(edition)) return json({ ok: false, error: "edition must be digital or print" }, 400);
+      const body = await request.arrayBuffer();
+      if (body.byteLength > MAX_PDF_BYTES) return json({ ok: false, error: "file too large" }, 413);
+      if (new TextDecoder().decode(body.slice(0, 5)) !== "%PDF-") return json({ ok: false, error: "not a PDF" }, 400);
+      const filename = edition === "digital" ? "The-Unexamined-Self-Personal-A5-digital.pdf" : "The-Unexamined-Self-Personal-A4-print.pdf";
+      const key = `personal/${order.id}/${filename}`;
+      await env.FILES.put(key, body, { httpMetadata: { contentType: "application/pdf" } });
+      const label = edition === "digital" ? "Your personal edition, digital (A5, type-in fields)" : "Your personal edition, print (A4)";
+      await db
+        .prepare("INSERT INTO order_files (order_id, r2_key, filename, label, created_at) VALUES (?,?,?,?,?) ON CONFLICT (order_id, r2_key) DO UPDATE SET created_at = excluded.created_at")
+        .bind(order.id, key, filename, label, nowIso())
+        .run();
+      return json({ ok: true, key, bytes: body.byteLength });
+    }
+    if (request.method === "POST" && personal[2] === "personal-deliver") {
+      const updated = await deliverPersonal(c, db, order).catch((e) => ({ error: e }));
+      if (updated.error) return json({ ok: false, error: updated.error.message }, updated.error.status || 500);
+      return json({ ok: true, personal_status: updated.personal_status });
+    }
   }
   return json({ ok: false, error: "not found" }, 404);
 }

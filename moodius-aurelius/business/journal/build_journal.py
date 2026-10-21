@@ -3,12 +3,17 @@
 
     python3 build_journal.py                          # The Unexamined Self: digital A5 + print A4
     python3 build_journal.py content/seven-day-guide.yaml --out out/guide.pdf --edition digital
+    python3 build_journal.py --out out/personal.pdf --personal order.json   # personalised copy
+
+Personalisation (all optional, see personalise.py and pricing/customisation.md): name on the cover
+and title page, monogram in the Ember square, accent (ember/ash/bone), light or dark cover, an
+opening line from one of the seven highlights, a dedication or gift page, and dated day pages.
 
 Digital edition: A5, Bone paper, type-in fields over every writing area, clickable contents,
 bookmarks. Print edition: A4, white paper, no fields, ink-light part openers.
 Fonts and palette come from the shared Moodius design system (tools/fonts, strategy/05).
 """
-import argparse, os, re, sys
+import argparse, datetime, json, os, re, sys
 import yaml
 from reportlab.lib.pagesizes import A4, A5
 from reportlab.lib.utils import simpleSplit
@@ -32,6 +37,47 @@ BONE, ASH, EMBER = HexColor("#F3EFE7"), HexColor("#B8B3A9"), HexColor("#C9742E")
 MUTED, RULE, PANEL, EMBER_INK = HexColor("#59606A"), HexColor("#D2CBBE"), HexColor("#EAE4D8"), HexColor("#98521B")
 WHITE = HexColor("#FFFFFF")
 ROMAN = ["", "I", "II", "III", "IV", "V", "VI"]
+ACCENTS = {"ember": EMBER, "ash": ASH, "bone": BONE}
+# Opening lines for personalised copies, one per Instagram highlight. Original Moodius lines,
+# credited to Moodius, so no attribution can be wrong.
+HIGHLIGHT_LINES = {
+    "manifesto": "Feel everything. Be ruled by none of it.",
+    "daily": "One honest look a day is enough to change a year.",
+    "tools": "A feeling named is a feeling you can work with.",
+    "discipline": "Discipline is choosing, again, who you said you'd be.",
+    "truths": "Most of what hurts is a story told too quickly.",
+    "journal": "Write it down. Then read it as if a friend had written it.",
+    "identity": "You are not your worst day, and not your best one either.",
+}
+
+
+def clean_personal(p):
+    """Validate a personalisation dict (from the shop order). Raises ValueError on bad input."""
+    if not p:
+        return {}
+    out = {}
+    def txt(key, limit):
+        v = str(p.get(key) or "").strip()
+        v = re.sub(r"[\x00-\x1f]", " ", v)
+        if len(v) > limit:
+            raise ValueError(f"{key} longer than {limit} characters")
+        return v
+    out["name"] = txt("name", 40)
+    out["monogram"] = re.sub(r"[^A-Za-z]", "", txt("monogram", 3)).upper()[:3]
+    out["dedication"] = txt("dedication", 280)
+    out["from_name"] = txt("from_name", 40)
+    out["accent"] = p.get("accent") or "ember"
+    if out["accent"] not in ACCENTS:
+        raise ValueError("accent must be ember, ash or bone")
+    out["cover"] = p.get("cover") or "dark"
+    if out["cover"] not in ("dark", "light"):
+        raise ValueError("cover must be dark or light")
+    out["highlight"] = (p.get("highlight") or "").lower()
+    if out["highlight"] and out["highlight"] not in HIGHLIGHT_LINES:
+        raise ValueError("unknown highlight")
+    sd = p.get("start_date")
+    out["start_date"] = datetime.date.fromisoformat(sd) if sd else None
+    return out
 
 
 def smart(t):
@@ -43,8 +89,10 @@ def smart(t):
 
 
 class Book:
-    def __init__(self, doc, edition, path):
+    def __init__(self, doc, edition, path, personal=None):
         self.doc, self.edition = doc, edition
+        self.p = clean_personal(personal)
+        self.accent = ACCENTS[self.p.get("accent", "ember")]
         self.digital = edition == "digital"
         self.W, self.H = (A5 if self.digital else A4)
         self.k = self.W / A5[0]                # scale factor: 1.0 for A5, ~1.41 for A4
@@ -160,27 +208,39 @@ class Book:
     # ---- pages -------------------------------------------------------------
     def cover(self):
         m = self.doc["meta"]
-        self.new_page(dark=True, folio=False)
+        light = self.p.get("cover") == "light"
+        self.new_page(dark=not light, folio=False)
         self.c.addOutlineEntry("Cover", "p1", level=0)
         c = self.c
-        c.setFillColor(HexColor("#15181C"))
+        ink, sub = (SLATE, MUTED) if light else (BONE, ASH)
+        accent = EMBER if light and self.accent == BONE else self.accent
+        c.setFillColor(RULE if light else HexColor("#15181C"))
         c.rect(0, 0, self.s(14), self.H, fill=1, stroke=0)
-        self.wordmark(BONE)
+        self.wordmark(ink)
+        if self.p.get("monogram"):
+            sq = self.s(34)
+            c.setFillColor(accent)
+            c.rect(self.W - self.M - sq, self.H - self.M - sq + self.s(2), sq, sq, fill=1, stroke=0)
+            c.setFillColor(SLATE); c.setFont("PF", self.s(13 if len(self.p["monogram"]) < 3 else 10.5))
+            c.drawCentredString(self.W - self.M - sq / 2, self.H - self.M - sq / 2 - self.s(2.5), self.p["monogram"])
         y = self.H * 0.46
-        c.setFillColor(EMBER)
+        c.setFillColor(accent)
         c.setFont("PFX", self.s(64))
         c.drawString(self.M, y + self.s(70), m.get("cover_numeral", "30"))
-        c.setFillColor(BONE)
+        c.setFillColor(ink)
         c.setFont("PF", self.s(34))
         for i, line in enumerate(m.get("cover_lines", [m["title"]])):
             c.drawString(self.M, y - i * self.s(38), line)
         y -= (len(m.get("cover_lines", [m["title"]])) - 1) * self.s(38) + self.s(26)
-        c.setStrokeColor(EMBER); c.setLineWidth(self.s(1.4)); c.line(self.M, y, self.M + self.s(32), y)
-        c.setFillColor(ASH); c.setFont("INM", self.s(9.5))
+        c.setStrokeColor(accent); c.setLineWidth(self.s(1.4)); c.line(self.M, y, self.M + self.s(32), y)
+        c.setFillColor(sub); c.setFont("INM", self.s(9.5))
         c.drawString(self.M, y - self.s(20), m["subtitle"])
-        c.setFont("IN", self.s(7.5))
+        if self.p.get("name"):
+            c.setFillColor(ink); c.setFont("PFI", self.s(12))
+            c.drawString(self.M, y - self.s(46), f"Kept by {self.p['name']}")
+        c.setFillColor(sub); c.setFont("IN", self.s(7.5))
         c.drawString(self.M, self.M, m["author"].upper().replace("", " ").strip())
-        c.drawRightString(self.W - self.M, self.M, m["edition"])
+        c.drawRightString(self.W - self.M, self.M, "Personal edition" if self.p else m["edition"])
 
     def title_page(self):
         d, m = self.doc, self.doc["meta"]
@@ -190,7 +250,27 @@ class Book:
         self.text(m["title"], "PF", 24, lead=1.15)
         self.y -= self.s(8); self.rule(gap=16)
         self.text(m["subtitle"], "INM", 10, MUTED)
-        if d.get("epigraph"):
+        if self.p.get("name"):
+            self.y -= self.s(14)
+            self.text(f"This copy was made for {self.p['name']}.", "PFI", 11, lead=1.3)
+        elif self.digital and self.p == {}:
+            # Unpersonalised digital copies get a type-in name line.
+            self.y -= self.s(18)
+            self.c.setFont("INM", self.s(6.5)); self.c.setFillColor(MUTED)
+            self.c.drawString(self.M, self.y, "THIS JOURNAL BELONGS TO")
+            self.c.setStrokeColor(RULE); self.c.setLineWidth(0.5)
+            self.c.line(self.M, self.y - self.s(18), self.W - self.M - self.s(60), self.y - self.s(18))
+            self.fields += 1
+            self.c.acroForm.textfield(name="owner", tooltip="Your name", x=self.M, y=self.y - self.s(19), width=self.W - 2 * self.M - self.s(60),
+                                      height=self.s(15), fontName="Helvetica", fontSize=11, textColor=SLATE, fillColor=Color(0, 0, 0, 0),
+                                      borderWidth=0, borderColor=Color(0, 0, 0, 0), forceBorder=False)
+            self.y -= self.s(24)
+        if self.p.get("highlight"):
+            self.y = self.H * 0.32
+            self.text(HIGHLIGHT_LINES[self.p["highlight"]], "PFI", 12, lead=1.4, width=self.W - 2 * self.M - self.s(40))
+            self.y -= self.s(6)
+            self.text(f"MOODIUS · {self.p['highlight'].upper()}", "INM", 6.5, MUTED)
+        elif d.get("epigraph"):
             e = d["epigraph"]
             self.y = self.H * 0.32
             self.text(e["text"], "PFI", 12, lead=1.4, width=self.W - 2 * self.M - self.s(40))
@@ -198,9 +278,20 @@ class Book:
             self.text(e["cite"].upper(), "INM", 6.5, MUTED)
         self.c.setFont("IN", self.s(6.5)); self.c.setFillColor(MUTED)
         notice = m.get("notice", f"© 2026 Moodius Aurelius. For your personal use. Please don't share or resell this file. {m['edition']}.")
+        if self.p.get("name"):
+            notice = f"© 2026 Moodius Aurelius. Personal edition made for {self.p['name']}. Please don't share or resell this file."
         yy = self.M + self.s(14)
         for line in reversed(simpleSplit(notice, "IN", self.s(6.5), self.W - 2 * self.M)):
             self.c.drawString(self.M, yy, line); yy += self.s(9)
+
+    def dedication(self):
+        self.new_page(folio=False)
+        self.y = self.H * 0.6
+        self.c.setFillColor(self.accent if self.accent != BONE else EMBER)
+        self.c.rect(self.M, self.y + self.s(14), self.s(6), self.s(6), fill=1, stroke=0)
+        self.text(self.p["dedication"], "PFI", 13, lead=1.45, width=self.W - 2 * self.M - self.s(30), gap_after=10)
+        if self.p.get("from_name"):
+            self.text(f"— {self.p['from_name']}", "INM", 9, MUTED)
 
     def contents(self, toc_pages):
         self.new_page()
@@ -257,7 +348,11 @@ class Book:
         c.setFillColor(EMBER); c.setFont("PFX", self.s(40))
         c.drawRightString(self.W - self.M, self.H - self.M - self.s(34), f"{d['n']:02d}")
         multi = len(self.doc["parts"]) > 1
-        self.kicker(f"Day {d['n']} · Part {ROMAN[part['n']]} · {part['title']}" if multi else f"Day {d['n']} of {len(self.doc['days'])}", gap=14)
+        label = f"Day {d['n']} · Part {ROMAN[part['n']]} · {part['title']}" if multi else f"Day {d['n']} of {len(self.doc['days'])}"
+        if self.p.get("start_date"):
+            day_date = self.p["start_date"] + datetime.timedelta(days=d["n"] - 1)
+            label = f"{label} · {day_date.strftime('%a %-d %b')}"
+        self.kicker(label, gap=14)
         self.text(d["title"], "PF", 19, lead=1.15, width=self.W - 2 * self.M - self.s(70), gap_after=8)
         q = d["quote"]
         self.text(q["text"], "PFI", 10.5, lead=1.42, width=self.W - 2 * self.M - self.s(16), gap_after=3)
@@ -406,6 +501,8 @@ class Book:
         d = self.doc
         self.cover()
         self.title_page()
+        if self.p.get("dedication"):
+            self.dedication()
         if d.get("contents", True):
             self.contents(toc_pages or self.toc_estimate())
         for i, f in enumerate(d.get("front", [])):
@@ -432,13 +529,13 @@ class Book:
         return [(0, "…", 0, "x")] * (len(self.doc["parts"]) * 7 + len(self.doc.get("front", [])) + 6)
 
 
-def build(src, out, edition):
+def build(src, out, edition, personal=None):
     doc = yaml.safe_load(open(src, encoding="utf-8"))
     # Two passes: the first finds page numbers, the second prints them in the contents.
     tmp = out + ".tmp"
-    toc = Book(doc, edition, tmp).build()
+    toc = Book(doc, edition, tmp, personal).build()
     for _ in range(3):
-        book = Book(doc, edition, tmp)
+        book = Book(doc, edition, tmp, personal)
         new = book.build(toc)
         if [t[2] for t in new] == [t[2] for t in toc]:
             break
@@ -452,9 +549,11 @@ if __name__ == "__main__":
     ap.add_argument("src", nargs="?", default=os.path.join(HERE, "content", "the-unexamined-self.yaml"))
     ap.add_argument("--out", help="output PDF (single edition)")
     ap.add_argument("--edition", choices=["digital", "print"], default=None)
+    ap.add_argument("--personal", help="JSON file with personalisation options")
     a = ap.parse_args()
+    personal = json.load(open(a.personal)) if a.personal else None
     if a.out:
-        pages, fields = build(a.src, a.out, a.edition or "digital")
+        pages, fields = build(a.src, a.out, a.edition or "digital", personal)
         print(f"{a.out}: {pages} pages, {fields} type-in fields")
     else:
         os.makedirs(os.path.join(HERE, "out"), exist_ok=True)

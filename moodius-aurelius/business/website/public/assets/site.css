@@ -141,3 +141,17 @@ pre { white-space: pre-wrap; font-size: .8rem; background: var(--panel); padding
 .band .cover { background: var(--graphite); }
 @media (max-width: 52rem) { .cover { width: min(70%, 15rem); } .btn + .btn { margin-top: .6rem; } }
 select { font: inherit; padding: .5rem; background: transparent; color: inherit; border: 1px solid var(--rule); }
+
+/* Edition picker and personalisation fields */
+fieldset { border: 0; padding: 0; margin: 0 0 1.2rem; min-width: 0; }
+legend { font: 600 .75rem/1.2 var(--sans); letter-spacing: .14em; text-transform: uppercase; color: var(--accent-ink); margin-bottom: .7rem; padding: 0; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+.edition { display: grid; grid-template-columns: 1.25rem 1fr; gap: .7rem; align-items: start; font-weight: 400; padding: .8rem; border: 1px solid var(--rule); margin: 0 0 -1px; cursor: pointer; }
+.edition input { margin-top: .3rem; accent-color: var(--ember); }
+.edition small { color: var(--muted); font-size: .85rem; line-height: 1.45; }
+.edition:has(input:checked) { border-color: var(--ember); position: relative; }
+.personal { border-left: 2px solid var(--ember); padding-left: 1rem; }
+.personal label { margin-top: .8rem; }
+.personal input[type=date], .personal select, .personal textarea { width: 100%; font: inherit; padding: .7rem .8rem; border: 1px solid var(--rule); background: transparent; color: inherit; border-radius: 2px; }
+.pair { display: grid; gap: 0 1rem; }
+@media (min-width: 30rem) { .pair { grid-template-columns: 1fr 1fr; } }

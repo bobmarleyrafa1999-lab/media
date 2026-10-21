@@ -3,6 +3,7 @@
 // POST f=<index> streams that file from the private R2 bucket and counts one use.
 import { config } from "../../src/config.js";
 import { getProduct } from "../../src/catalog.js";
+import { orderFiles } from "../../src/orders.js";
 import { page } from "../../src/html.js";
 import { escapeHtml, nowIso, sha256Hex } from "../../src/util.js";
 
@@ -10,7 +11,7 @@ async function lookup(db, token) {
   if (!/^[A-Za-z0-9_-]{43}$/.test(token || "")) return null;
   const hash = await sha256Hex(token);
   const row = await db
-    .prepare("SELECT t.*, o.product_slug, o.status, o.id AS oid, o.test_mode FROM download_tokens t JOIN orders o ON o.id = t.order_id WHERE t.token_hash = ?")
+    .prepare("SELECT t.*, o.product_slug, o.status, o.id AS oid, o.test_mode, o.personal_status FROM download_tokens t JOIN orders o ON o.id = t.order_id WHERE t.token_hash = ?")
     .bind(hash)
     .first();
   return row ? { ...row, hash } : null;
@@ -27,7 +28,8 @@ export async function onRequestGet({ env, params }) {
   if (row.uses >= row.max_uses) return gone("This link has been used the maximum number of times.");
   const product = getProduct(row.product_slug);
   const left = row.max_uses - row.uses;
-  const files = product.files
+  const all = await orderFiles(env.DB, { id: row.oid, product_slug: row.product_slug });
+  const files = all
     .map(
       (f, i) => `<form method="post" class="dl"><input type="hidden" name="f" value="${i}"><button class="btn" type="submit">Download ${escapeHtml(f.label)}</button></form>`,
     )
@@ -37,6 +39,7 @@ export async function onRequestGet({ env, params }) {
     `<p class="kicker">Order ${escapeHtml(row.oid)}${row.test_mode ? " · test order" : ""}</p>
      <h1>${escapeHtml(product.name)}</h1>
      <p>${escapeHtml(product.subtitle)}. Both editions hold the same 30 days: use the digital one on a tablet or computer, print the A4 one if you prefer pen.</p>
+     ${row.personal_status === "queued" ? `<p class="notice">Your personalised copy is being made. It will appear on this page, and we'll email you, within two working days.</p>` : ""}
      ${files}
      <p class="muted">${left} download${left === 1 ? "" : "s"} left on this link · expires ${new Date(row.expires_at).toUTCString().slice(5, 16)}.<br>Please don't share it. It's tied to your order.</p>`,
   );
@@ -47,8 +50,8 @@ export async function onRequestPost({ request, env, params }) {
   const row = await lookup(env.DB, params.token);
   if (!row || row.status !== "paid") return gone("This link isn't active.");
   const form = await request.formData();
-  const product = getProduct(row.product_slug);
-  const file = product.files[parseInt(form.get("f"), 10)];
+  const all = await orderFiles(env.DB, { id: row.oid, product_slug: row.product_slug });
+  const file = all[parseInt(form.get("f"), 10)];
   if (!file) return page("Not found", "<h1>That file doesn't exist</h1>", { status: 404 });
   const object = await env.FILES.get(file.key);
   if (!object) {

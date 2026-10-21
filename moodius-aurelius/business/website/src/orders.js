@@ -5,6 +5,7 @@
 import { getProduct, formatMoney } from "./catalog.js";
 import { sendEmail } from "./email.js";
 import { forwardRevenue } from "./revenue.js";
+import { cleanPersonal, describePersonal } from "./personal.js";
 import * as stripe from "./providers/stripe.js";
 import * as lemonsqueezy from "./providers/lemonsqueezy.js";
 import { addDays, cleanSrc, nowIso, randomId, randomToken, sha256Hex } from "./util.js";
@@ -13,17 +14,19 @@ export async function logEvent(db, kind, slug, src) {
   await db.prepare("INSERT INTO conversion_events (kind, slug, src, at) VALUES (?,?,?,?)").bind(kind, slug || null, cleanSrc(src), nowIso()).run();
 }
 
-export async function startCheckout(c, db, { productSlug, src, email, digitalConsent }) {
+export async function startCheckout(c, db, { productSlug, src, email, digitalConsent, personalInput }) {
   const product = getProduct(productSlug);
   if (!product) throw Object.assign(new Error("Unknown product"), { status: 404 });
   if (product.status !== "available") throw Object.assign(new Error("This product is not on sale yet"), { status: 409 });
   if (!digitalConsent) throw Object.assign(new Error("Please confirm you want immediate access to the download"), { status: 400 });
 
+  const personal = product.personal ? cleanPersonal(personalInput, product.personal) : null;
+
   const checkoutId = randomId("chk");
   const at = nowIso();
   await db
-    .prepare("INSERT INTO checkouts (id, product_slug, provider, src, digital_consent_at, created_at) VALUES (?,?,?,?,?,?)")
-    .bind(checkoutId, product.slug, c.provider, cleanSrc(src), at, at)
+    .prepare("INSERT INTO checkouts (id, product_slug, provider, src, digital_consent_at, created_at, personal_json) VALUES (?,?,?,?,?,?,?)")
+    .bind(checkoutId, product.slug, c.provider, cleanSrc(src), at, at, personal ? JSON.stringify(personal) : null)
     .run();
 
   let result;
@@ -50,6 +53,14 @@ export async function mintDownloadToken(c, db, orderId) {
 // its buttons, so email link scanners that prefetch URLs can't use up the downloads.
 export const downloadPageUrl = (c, token) => `${c.siteUrl}/download/${token}`;
 
+// The files on an order's download page: the product's standard files, then anything
+// made for this order (personalised PDFs).
+export async function orderFiles(db, order) {
+  const product = getProduct(order.product_slug);
+  const { results } = await db.prepare("SELECT r2_key AS key, filename, label FROM order_files WHERE order_id = ? ORDER BY created_at, r2_key").bind(order.id).all();
+  return [...results, ...product.files];
+}
+
 export const getOrder = (db, id) => db.prepare("SELECT * FROM orders WHERE id = ?").bind(id).first();
 
 async function sendPurchaseEmail(c, db, order) {
@@ -67,6 +78,18 @@ async function sendPurchaseEmail(c, db, order) {
     `Order ${order.id} · ${formatMoney(order.amount_cents, order.currency)}${order.test_mode ? " · TEST ORDER, no money taken" : ""}`,
     order.provider === "stripe" ? "Your receipt comes separately from Stripe, which processes the payment as the seller of record." : "",
     "",
+    ...(order.personal_json
+      ? [
+          order.product_slug.endsWith("-gift")
+            ? "We're making the gift edition now. It will be ready within two working days (or on the send date you chose), and we'll email it as you asked. The standard files above are yours to keep too."
+            : "We're making your personal edition now. It arrives by email within two working days, and the same link will show it. Until then you can start with the standard files above.",
+          "",
+          describePersonal(JSON.parse(order.personal_json)),
+          "",
+          "Spotted a typo in the details? Reply to this email today and we'll fix it before we make it.",
+          "",
+        ]
+      : []),
     "Start with Day 1 on a quiet evening. Ten minutes is enough.",
     "",
     "Moodius",
@@ -101,13 +124,15 @@ export async function fulfil(c, db, input, waitUntil = (p) => p) {
     src: cleanSrc(checkout?.src || input.src),
     test_mode: input.testMode ? 1 : 0,
     created_at: nowIso(),
+    personal_json: checkout?.personal_json || null,
+    personal_status: checkout?.personal_json ? "queued" : null,
   };
   const res = await db
     .prepare(
-      `INSERT OR IGNORE INTO orders (id, checkout_id, provider, provider_ref, payment_ref, product_slug, amount_cents, currency, email, name, status, src, test_mode, created_at)
-       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+      `INSERT OR IGNORE INTO orders (id, checkout_id, provider, provider_ref, payment_ref, product_slug, amount_cents, currency, email, name, status, src, test_mode, created_at, personal_json, personal_status)
+       VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
     )
-    .bind(order.id, order.checkout_id, order.provider, order.provider_ref, order.payment_ref, order.product_slug, order.amount_cents, order.currency, order.email, order.name, order.status, order.src, order.test_mode, order.created_at)
+    .bind(order.id, order.checkout_id, order.provider, order.provider_ref, order.payment_ref, order.product_slug, order.amount_cents, order.currency, order.email, order.name, order.status, order.src, order.test_mode, order.created_at, order.personal_json, order.personal_status)
     .run();
   if (!res.meta?.changes) {
     // Lost a race with a concurrent delivery of the same event.
@@ -116,6 +141,14 @@ export async function fulfil(c, db, input, waitUntil = (p) => p) {
   }
   await logEvent(db, "purchase", order.product_slug, order.src);
   await sendPurchaseEmail(c, db, order);
+  if (order.personal_status === "queued" && c.email.replyTo) {
+    await sendEmail(c, db, {
+      to: c.email.replyTo,
+      subject: `To make: ${product.name} for order ${order.id}`,
+      text: `A personalised order is waiting.\n\n${describePersonal(JSON.parse(order.personal_json))}\n\nMake and send it:\n  python3 journal/personalise.py ${order.id} --deliver\n\n(${order.test_mode ? "TEST ORDER" : "paid order"})`,
+      kind: "admin",
+    });
+  }
   waitUntil(forwardRevenue(c, db, order, "order.paid"));
   return { order, created: true };
 }
@@ -146,7 +179,7 @@ export async function claimByCheckout(c, db, checkoutId) {
   if (order.page_claims >= c.pageClaimLimit) return { ...base, note: "Your download link is in your email." };
   await db.prepare("UPDATE orders SET page_claims = page_claims + 1 WHERE id = ?").bind(order.id).run();
   const token = await mintDownloadToken(c, db, order.id);
-  return { ...base, downloadUrl: downloadPageUrl(c, token), files: product.files.map((f) => f.label) };
+  return { ...base, downloadUrl: downloadPageUrl(c, token), files: (await orderFiles(db, order)).map((f) => f.label), personal: order.personal_status || null };
 }
 
 export function maskEmail(email) {
@@ -178,4 +211,34 @@ export async function resendLinks(c, db, email) {
     kind: "resend",
   });
   return results.length;
+}
+
+// Called once journal/personalise.py has uploaded the personalised PDFs for an order.
+// Emails the buyer (and, for a gift with a recipient address, the recipient) a fresh link.
+export async function deliverPersonal(c, db, order) {
+  const product = getProduct(order.product_slug);
+  const files = (await db.prepare("SELECT COUNT(*) AS n FROM order_files WHERE order_id = ?").bind(order.id).first())?.n || 0;
+  if (!files) throw Object.assign(new Error("upload the personalised files first"), { status: 409 });
+  const p = order.personal_json ? JSON.parse(order.personal_json) : {};
+  const gift = order.product_slug.endsWith("-gift");
+  const footer = `The page allows ${c.downloadMaxUses} downloads and expires in ${c.downloadTtlDays} days. Lost it later? ${c.siteUrl}/orders/`;
+  if (gift && p.recipient_email) {
+    const t = await mintDownloadToken(c, db, order.id);
+    await sendEmail(c, db, {
+      to: p.recipient_email,
+      subject: `${p.from_name} sent you a journal`,
+      text: `${p.from_name} has given you The Unexamined Self, a 30-day reflection journal made in your name.\n\nYour copy:\n${downloadPageUrl(c, t)}\n\n${footer.replace(/ Lost it later\?.*/, "")}\n\nThis is a one-off email sent on ${p.from_name}'s behalf. We haven't added you to any list.\n\nMoodius`,
+      kind: "gift",
+    });
+  }
+  const token = await mintDownloadToken(c, db, order.id);
+  await sendEmail(c, db, {
+    to: order.email,
+    subject: gift ? `Your gift edition is ready (order ${order.id})` : `Your personal edition is ready`,
+    text: `${gift && p.recipient_email ? `We've emailed the gift edition to ${p.recipient_email}. Your own copy of the link is below in case you'd rather pass it on yourself.` : `Your ${gift ? "gift" : "personal"} edition of ${product.name} is ready.`}\n\n${downloadPageUrl(c, token)}\n\n${footer}\n\nMoodius`,
+    kind: "personal",
+  });
+  const at = nowIso();
+  await db.prepare("UPDATE orders SET personal_status = 'delivered', personal_done_at = ? WHERE id = ?").bind(at, order.id).run();
+  return { ...order, personal_status: "delivered", personal_done_at: at };
 }

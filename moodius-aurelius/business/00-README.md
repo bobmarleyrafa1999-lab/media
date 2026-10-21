@@ -7,6 +7,7 @@ Built 21-22 Oct 2026. First release: a storefront that sells **The Unexamined Se
 | `website/` | Storefront code, tests, deploy guide (`website/README.md`), `.env.example` |
 | `journal/` | The journal and free guide: editable YAML sources, PDF/DOCX builders, quote checker, outputs in `journal/out/` |
 | `funnel/` | Welcome emails, £29 bundle plan, tracking guide, six product reels |
+| `pricing/` | Prices, margins per sale (`margins.py`), break-even, and the personalisation options |
 | `phase4-journaling-app.md` | Plan for the subscription journaling app |
 | `your-checklist.md` | What Surafel needs to do, in order |
 
