@@ -1,0 +1,29 @@
+<!-- title: Thank you · Moodius Aurelius -->
+<!-- description: Your download. -->
+<!-- page: thank-you -->
+<!-- path: /thank-you/ -->
+<!-- robots: noindex, nofollow -->
+<div class="narrow stack" data-thankyou>
+  <div data-state="waiting">
+    <p class="kicker">Payment received</p>
+    <h1>Preparing your download…</h1>
+    <p class="muted">This usually takes a few seconds.</p>
+  </div>
+  <div data-state="paid" hidden>
+    <p class="kicker">Thank you</p>
+    <h1>Your journal is ready.</h1>
+    <p><a class="btn accent" data-download href="#">Open your downloads</a></p>
+    <p>We've also emailed the link to <b data-email></b>. It works five times over 30 days, so save the PDFs somewhere you'll find them.</p>
+    <p class="muted small">Order <span data-order></span>. Your receipt comes from Stripe.</p>
+    <hr class="rule">
+    <h2>Before you start</h2>
+    <p>Do Day 1 on a quiet evening. Ten minutes is enough. Write badly; nobody else will read it.</p>
+  </div>
+  <div data-state="slow" hidden>
+    <h1>Still confirming your payment</h1>
+    <p>Some payment methods take a little longer. Your download link will arrive by email as soon as it clears. If nothing arrives within an hour, check spam, then <a href="/orders/">request your link here</a>.</p>
+  </div>
+  <div data-state="refunded" hidden><h1>This order was refunded</h1><p>Its downloads are closed. Questions? Reply to your receipt email.</p></div>
+  <div data-state="unknown" hidden><h1>We couldn't find that order</h1><p>If you've paid, your link is in your email. You can also <a href="/orders/">request a fresh link</a>.</p></div>
+  <noscript><p>Your download link has been emailed to you. You can also <a href="/orders/">request a fresh link</a>.</p></noscript>
+</div>

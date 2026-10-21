@@ -1,0 +1,50 @@
+# Cloudflare Pages project. Free tier: unlimited static requests, 100k Function
+# requests/day, D1 5 GB, R2 10 GB. Commercial use is allowed.
+name = "moodius"
+pages_build_output_dir = "public"
+compatibility_date = "2026-10-01"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "moodius"
+database_id = "REPLACE_WITH_ID_FROM_wrangler_d1_create"   # wrangler d1 create moodius
+migrations_dir = "migrations"
+
+[[r2_buckets]]
+binding = "FILES"
+bucket_name = "moodius-products"          # private bucket: never enable public access
+
+# Non-secret settings. Secrets (STRIPE_*, RESEND_API_KEY, ADMIN_TOKEN, ...) go in
+# the Pages dashboard (Settings > Variables and secrets) or `.dev.vars` locally.
+[vars]
+SITE_URL = "http://localhost:8788"
+PAYMENT_PROVIDER = "mock"
+ALLOW_MOCK_PAYMENTS = "true"
+EMAIL_PROVIDER = "log"
+STRIPE_MANAGED_PAYMENTS = "true"
+DOWNLOAD_TTL_DAYS = "30"
+DOWNLOAD_MAX_USES = "5"
+
+# Production deployments. Pages doesn't inherit bindings into an environment, so
+# they're repeated here. Secrets still go in the dashboard or `wrangler pages secret put`.
+[env.production]
+[[env.production.d1_databases]]
+binding = "DB"
+database_name = "moodius"
+database_id = "REPLACE_WITH_ID_FROM_wrangler_d1_create"
+migrations_dir = "migrations"
+
+[[env.production.r2_buckets]]
+binding = "FILES"
+bucket_name = "moodius-products"
+
+[env.production.vars]
+SITE_URL = "https://REPLACE_WITH_YOUR_DOMAIN"
+PAYMENT_PROVIDER = "stripe"
+ALLOW_MOCK_PAYMENTS = "false"
+LIVE_MODE = "false"                       # flip to "true" only with sk_live_ keys, after a test purchase
+EMAIL_PROVIDER = "log"                    # "resend" once the sending domain is verified
+STRIPE_MANAGED_PAYMENTS = "true"
+STRIPE_API_VERSION = "2026-04-22.dahlia"
+DOWNLOAD_TTL_DAYS = "30"
+DOWNLOAD_MAX_USES = "5"

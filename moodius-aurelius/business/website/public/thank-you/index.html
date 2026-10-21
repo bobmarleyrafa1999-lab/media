@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thank you · Moodius Aurelius</title>
+<meta name="description" content="Your download.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Thank you · Moodius Aurelius">
+<meta property="og:description" content="Your download.">
+<meta property="og:image" content="/assets/og.png">
+<meta name="theme-color" content="#1B1F24">
+<link rel="canonical" href="/thank-you/">
+<link rel="preload" href="/assets/fonts/playfair-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body data-page="thank-you">
+<a class="hp" href="#main">Skip to content</a>
+<header class="masthead">
+  <a class="wordmark" href="/"><span class="sq" aria-hidden="true"></span>MOODIUS</a>
+  <nav class="nav" aria-label="Main"><a href="/shop/">Shop</a><a href="/guide/">Free guide</a><a href="/about/">About</a></nav>
+</header>
+<main id="main">
+<div class="narrow stack" data-thankyou>
+  <div data-state="waiting">
+    <p class="kicker">Payment received</p>
+    <h1>Preparing your download…</h1>
+    <p class="muted">This usually takes a few seconds.</p>
+  </div>
+  <div data-state="paid" hidden>
+    <p class="kicker">Thank you</p>
+    <h1>Your journal is ready.</h1>
+    <p><a class="btn accent" data-download href="#">Open your downloads</a></p>
+    <p>We've also emailed the link to <b data-email></b>. It works five times over 30 days, so save the PDFs somewhere you'll find them.</p>
+    <p class="muted small">Order <span data-order></span>. Your receipt comes from Stripe.</p>
+    <hr class="rule">
+    <h2>Before you start</h2>
+    <p>Do Day 1 on a quiet evening. Ten minutes is enough. Write badly; nobody else will read it.</p>
+  </div>
+  <div data-state="slow" hidden>
+    <h1>Still confirming your payment</h1>
+    <p>Some payment methods take a little longer. Your download link will arrive by email as soon as it clears. If nothing arrives within an hour, check spam, then <a href="/orders/">request your link here</a>.</p>
+  </div>
+  <div data-state="refunded" hidden><h1>This order was refunded</h1><p>Its downloads are closed. Questions? Reply to your receipt email.</p></div>
+  <div data-state="unknown" hidden><h1>We couldn't find that order</h1><p>If you've paid, your link is in your email. You can also <a href="/orders/">request a fresh link</a>.</p></div>
+  <noscript><p>Your download link has been emailed to you. You can also <a href="/orders/">request a fresh link</a>.</p></noscript>
+</div>
+
+</main>
+<footer class="foot">
+  <div class="grid grid-3">
+    <p><span class="wordmark"><span class="sq" aria-hidden="true"></span>MOODIUS</span><br><span class="small">Stoicism for people who feel things. Ideas from old books, tested against what psychology knows now.</span></p>
+    <p class="small"><a href="/shop/">Shop</a><br><a href="/guide/">Free 7-day guide</a><br><a href="/orders/">Find my order</a><br><a href="/about/">About</a></p>
+    <p class="small"><a href="https://www.instagram.com/moodiusaurelius/" rel="me noopener">Instagram</a><br><a href="#" rel="noopener">Pinterest</a><br><a href="#" rel="noopener">Newsletter</a><br><a href="/legal/privacy/">Privacy</a> · <a href="/legal/terms/">Terms</a> · <a href="/legal/refunds/">Refunds</a></p>
+  </div>
+  <p class="small">Educational content, not therapy or medical advice. If you're struggling, contact your GP, or in the UK call Samaritans free on 116 123. Elsewhere: <a href="https://findahelpline.com">findahelpline.com</a>.</p>
+  <p class="small">© 2026 Moodius Aurelius · Operated by [to be added] · [to be added]</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

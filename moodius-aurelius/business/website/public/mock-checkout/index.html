@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Test checkout · Moodius Aurelius</title>
+<meta name="description" content="Local test checkout.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Test checkout · Moodius Aurelius">
+<meta property="og:description" content="Local test checkout.">
+<meta property="og:image" content="/assets/og.png">
+<meta name="theme-color" content="#1B1F24">
+<link rel="canonical" href="/mock-checkout/">
+<link rel="preload" href="/assets/fonts/playfair-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/site.css">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+</head>
+<body data-page="">
+<a class="hp" href="#main">Skip to content</a>
+<header class="masthead">
+  <a class="wordmark" href="/"><span class="sq" aria-hidden="true"></span>MOODIUS</a>
+  <nav class="nav" aria-label="Main"><a href="/shop/">Shop</a><a href="/guide/">Free guide</a><a href="/about/">About</a></nav>
+</header>
+<main id="main">
+<div class="narrow stack">
+  <p class="kicker">Test mode · no real payment</p>
+  <h1>Test checkout</h1>
+  <p class="notice">This page only works when the site runs with PAYMENT_PROVIDER=mock and ALLOW_MOCK_PAYMENTS=true. It simulates a successful Stripe payment so the whole order flow can be tested without an account.</p>
+  <form method="post" action="/api/shop/mock/pay" id="mockpay">
+    <input type="hidden" name="ref" id="mockref">
+    <label for="m-email">Email</label><input id="m-email" type="email" name="email" required value="buyer@example.com">
+    <label for="m-name" style="margin-top:1rem">Name</label><input id="m-name" type="text" name="name" value="Test Buyer">
+    <p style="margin-top:1rem"><button class="btn accent" type="submit">Pay £14 (test)</button></p>
+  </form>
+  <script src="/assets/mock.js" defer></script>
+</div>
+
+</main>
+<footer class="foot">
+  <div class="grid grid-3">
+    <p><span class="wordmark"><span class="sq" aria-hidden="true"></span>MOODIUS</span><br><span class="small">Stoicism for people who feel things. Ideas from old books, tested against what psychology knows now.</span></p>
+    <p class="small"><a href="/shop/">Shop</a><br><a href="/guide/">Free 7-day guide</a><br><a href="/orders/">Find my order</a><br><a href="/about/">About</a></p>
+    <p class="small"><a href="https://www.instagram.com/moodiusaurelius/" rel="me noopener">Instagram</a><br><a href="#" rel="noopener">Pinterest</a><br><a href="#" rel="noopener">Newsletter</a><br><a href="/legal/privacy/">Privacy</a> · <a href="/legal/terms/">Terms</a> · <a href="/legal/refunds/">Refunds</a></p>
+  </div>
+  <p class="small">Educational content, not therapy or medical advice. If you're struggling, contact your GP, or in the UK call Samaritans free on 116 123. Elsewhere: <a href="https://findahelpline.com">findahelpline.com</a>.</p>
+  <p class="small">© 2026 Moodius Aurelius · Operated by [to be added] · [to be added]</p>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

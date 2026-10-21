@@ -1,0 +1,26 @@
+<!-- title: Back office · Moodius Aurelius -->
+<!-- description: Orders and funnel. -->
+<!-- page: -->
+<!-- path: /backoffice/ -->
+<!-- robots: noindex, nofollow -->
+<div class="wrap stack" style="padding-top:2rem;padding-bottom:4rem">
+  <p class="kicker">Back office</p>
+  <h1>Orders and funnel</h1>
+  <form id="bo-login" class="stack" style="max-width:28rem">
+    <label for="bo-token">Admin token</label>
+    <input id="bo-token" type="password" autocomplete="off">
+    <p><button class="btn" type="submit">Open</button> <span class="muted small">Kept only in this browser tab.</span></p>
+  </form>
+  <div id="bo" hidden>
+    <p><label for="bo-days" style="display:inline">Window</label>
+      <select id="bo-days"><option value="7">7 days</option><option value="30" selected>30 days</option><option value="90">90 days</option></select>
+      <button class="btn" id="bo-export" type="button">Download export (JSON)</button>
+      <button class="btn" id="bo-forward" type="button">Retry revenue sync</button></p>
+    <div class="stats" id="bo-stats"></div>
+    <h2>By source</h2><div class="scroll"><table id="bo-src"></table></div>
+    <h2>Revenue</h2><div class="scroll"><table id="bo-rev"></table></div>
+    <h2>Orders</h2><div class="scroll"><table id="bo-orders"></table></div>
+    <h2>Email outbox</h2><div class="scroll"><table id="bo-outbox"></table></div>
+  </div>
+</div>
+<script src="/assets/backoffice.js" defer></script>

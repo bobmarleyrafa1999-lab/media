@@ -1,0 +1,17 @@
+<!-- title: Test checkout · Moodius Aurelius -->
+<!-- description: Local test checkout. -->
+<!-- page: -->
+<!-- path: /mock-checkout/ -->
+<!-- robots: noindex, nofollow -->
+<div class="narrow stack">
+  <p class="kicker">Test mode · no real payment</p>
+  <h1>Test checkout</h1>
+  <p class="notice">This page only works when the site runs with PAYMENT_PROVIDER=mock and ALLOW_MOCK_PAYMENTS=true. It simulates a successful Stripe payment so the whole order flow can be tested without an account.</p>
+  <form method="post" action="/api/shop/mock/pay" id="mockpay">
+    <input type="hidden" name="ref" id="mockref">
+    <label for="m-email">Email</label><input id="m-email" type="email" name="email" required value="buyer@example.com">
+    <label for="m-name" style="margin-top:1rem">Name</label><input id="m-name" type="text" name="name" value="Test Buyer">
+    <p style="margin-top:1rem"><button class="btn accent" type="submit">Pay £14 (test)</button></p>
+  </form>
+  <script src="/assets/mock.js" defer></script>
+</div>

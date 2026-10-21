@@ -1,0 +1,218 @@
+# Free lead magnet: Seven Days of Honest Reflection. Same schema as the journal.
+# Rebuild: python3 build_journal.py content/seven-day-guide.yaml --out out/seven-day-reflection-guide.pdf --edition digital
+meta:
+  title: Seven Days of Honest Reflection
+  subtitle: A free guide from Moodius Aurelius
+  author: Moodius Aurelius
+  edition: Free edition, 2026
+  cover_numeral: "7"
+  cover_lines: ["Seven Days of", "Honest Reflection"]
+  notice: "© 2026 Moodius Aurelius. Free to keep and to share whole with a friend. Not for resale."
+  closing:
+    - "That was seven days. If they were useful, the full journal goes further."
+    - "The Unexamined Self is thirty days in six parts: noticing, what is yours, feeling clearly, how you attach, who you think you are, and what you live by. Over a hundred pages of readings, questions and exercises, with every source cited. £14, from the shop linked in the @moodiusaurelius bio."
+    - "And if you'd rather just keep reading, the weekly essay is free."
+
+contents: false
+part_openers: false
+notes_pages: 1
+
+front:
+  - heading: Before you start
+    body: |
+      Seven short days. Each one has a reading, two questions and a small exercise. Ten minutes is enough, and an evening is the best time.
+
+      Each day takes one idea from Stoic philosophy and puts it next to what modern psychology has found. Quotations are labelled: "verbatim" means word for word from a public-domain translation; "Moodius paraphrase" means the wording is ours. Evidence notes say how strong the research is.
+
+      This is a reflection guide, not therapy. If something here stirs up more than you can hold, put it down and talk to someone. In the UK, Samaritans are free on 116 123, any time. Elsewhere, findahelpline.com lists free services.
+
+parts:
+  - n: 1
+    title: Seven Days
+    intro: One idea a day.
+
+days:
+  - n: 1
+    part: 1
+    title: Describe Before You Judge
+    quote:
+      text: "Does a man bathe quickly? … do not say that he bathes badly, but that he bathes quickly."
+      cite: Epictetus, Enchiridion 45 (tr. George Long)
+      kind: verbatim
+      source: epictetus_long
+    reading: |
+      Epictetus's example is almost comic, and that's the point. Someone bathes quickly. You could say they bathe badly, carelessly, rudely. But all you actually saw was speed. The rest is your verdict, added so fast it feels like part of the event.
+
+      We do this to ourselves constantly. "I was pathetic in that meeting" is a verdict. "I spoke twice and lost my train of thought once" is a description. The description is less painful and far more useful, because you can work with it.
+
+      Today, practise noticing the gap between what happened and what you called it.
+    evidence:
+      tier: Philosophical
+      note: The Stoics trained the habit of separating an event from the judgement added to it. Modern cognitive approaches use a similar move; see Day 3.
+      refs: [epictetus]
+    prompts:
+      - What's a verdict you passed on yourself this week? Rewrite it as a plain description.
+      - What changes when you read the description instead of the verdict?
+    exercise:
+      name: Camera, then commentary
+      steps: |
+        Pick one moment from today. Write what a camera would have recorded, in two or three sentences. Then, separately, write the commentary your mind added. Underline any word in the commentary that a camera couldn't have recorded.
+    tonight: Describe today in one plain sentence.
+
+  - n: 2
+    part: 1
+    title: Mine and Not Mine
+    quote:
+      text: "What then should a man have in readiness in such circumstances? What else than this? What is mine, and what is not mine; and what is permitted to me, and what is not permitted to me."
+      cite: Epictetus, Discourses 1.1 (tr. George Long)
+      kind: verbatim
+      source: epictetus_long
+    reading: |
+      Epictetus's students asked what they should keep ready for hard times. His answer was a question: what is mine, and what is not?
+
+      Your effort, your choices and your judgements are yours. Other people's moods, the past, and how things turn out are not, or not fully. Much of the strain we feel comes from gripping the second list as if it were the first.
+
+      Sorting the two doesn't mean you stop caring. It means you stop spending your strength where it can't land.
+    evidence:
+      tier: Philosophical
+      note: The dichotomy of control is the root practice of Stoicism. It's a way of thinking, not a clinical technique, though cognitive therapy's founders acknowledged the Stoics as an influence.
+      refs: [epictetus, robertson_2019]
+    prompts:
+      - What's weighing on you most right now?
+      - Which parts of it are yours to act on, and which aren't?
+    exercise:
+      name: Two columns
+      steps: |
+        Draw a line down the page. Left: "mine". Right: "not mine". Split today's biggest worry into pieces and sort them. Circle one thing on the left and write the next small step.
+    tonight: What did you stop carrying today?
+
+  - n: 3
+    part: 1
+    title: Name What You Feel
+    quote:
+      text: "If something outside you troubles you, it isn't the thing that disturbs you but your judgement of it, and you can wipe that judgement away now."
+      cite: Moodius paraphrase of Marcus Aurelius, Meditations 8.47
+      kind: paraphrase
+    reading: |
+      Before you can question a judgement, you have to catch the feeling it produced. That sounds obvious, yet most of us notice our feelings only through their side effects: the sharp reply, the scrolling at midnight, the tight jaw.
+
+      Naming a feeling as it happens ("this is dread", "this is resentment") is a small act with a surprisingly steadying effect. It turns a fog into something with edges. Then Marcus's move becomes possible: what judgement is underneath this, and is it true?
+    evidence:
+      tier: Empirical
+      note: "In a brain-imaging study by Lieberman and colleagues, putting feelings into words was linked to reduced activity in the amygdala. Related studies find labelling emotions can lower their intensity a little. Evidence: lab-based; effects small to moderate."
+      refs: [lieberman_2007]
+    prompts:
+      - What feeling showed up most today? Name it as precisely as you can.
+      - What judgement was underneath it?
+    exercise:
+      name: Name, then question
+      steps: |
+        Three times tomorrow, when you notice a feeling, name it under your breath. Tonight, pick one and write: the feeling, the judgement under it, and whether that judgement is fully true.
+    tonight: What was today's strongest feeling?
+
+  - n: 4
+    part: 1
+    title: Toward or Away
+    quote:
+      text: "People exist for one another. Teach them, then, or put up with them."
+      cite: Moodius paraphrase of Marcus Aurelius, Meditations 8.59
+      kind: paraphrase
+    reading: |
+      When someone you care about feels distant, what do you do? Some of us move toward: message again, ask what's wrong, need to fix it now. Some of us move away: go quiet, get busy, wait for it to pass.
+
+      Neither is wrong. Both are old habits, often learned early, about what happens when we need people. Psychologists describe them as two dials, anxiety and avoidance, rather than fixed types. Dials can move, and the first step is seeing where yours tends to sit.
+    evidence:
+      tier: Empirical
+      note: "Adult attachment is measured on two dimensions, anxiety and avoidance (Brennan, Clark and Shaver). Fraley and colleagues found these work better as sliding scales than as categories. Evidence: strong."
+      refs: [brennan_1998, fraley_2015]
+    prompts:
+      - When someone close pulls back, what's your first move?
+      - Where do you think you learned it?
+    exercise:
+      name: The last time
+      steps: |
+        Think of the last time you felt distance from someone who matters. Write what you felt, what you did, and what you wish you'd done. Mark whether your move was toward or away.
+    tonight: Did you move toward anyone today?
+
+  - n: 5
+    part: 1
+    title: Your Own Business
+    quote:
+      text: "How much time you gain by not watching what your neighbour says or does or thinks, and attending only to what you are doing yourself."
+      cite: Moodius paraphrase of Marcus Aurelius, Meditations 4.18
+      kind: paraphrase
+    reading: |
+      Comparison is the quickest way to lose track of who you are. A few minutes of other people's highlights and your own life starts to look like a rough draft.
+
+      Marcus's advice is not to stop caring about others but to stop auditing them. Their pace is not your pace. Their story is not your story. The time you spend measuring yourself against them is time not spent becoming the person you'd actually like to be.
+    evidence:
+      tier: Empirical
+      note: "Research on contingent self-worth (Crocker and colleagues) finds that when self-esteem depends on outside approval or outperforming others, people experience bigger emotional swings and more stress. Evidence: consistent, mostly correlational."
+      refs: [crocker_wolfe_2001]
+    prompts:
+      - Who do you compare yourself to most? What does it give you, and what does it cost?
+      - If nobody could see your life, what would you change about it?
+    exercise:
+      name: One day without the audit
+      steps: |
+        For one day, notice each time you compare yourself with someone. Make a mark each time. Tonight, write the count and the comparison that stung most, then one sentence about what you actually want underneath it.
+    tonight: How many marks did you make?
+
+  - n: 6
+    part: 1
+    title: Where the Hours Go
+    quote:
+      text: "It isn't that we have too little time. It's that we waste so much of it. Life is long enough, if you know how to use it."
+      cite: Moodius paraphrase of Seneca, On the Shortness of Life 1
+      kind: paraphrase
+    reading: |
+      Ask people what they value and you'll hear family, health, honesty, growth. Look at how their week is spent and you'll often see something else.
+
+      That gap isn't hypocrisy. It's drift: the slow way urgent things crowd out important ones. Seneca's point is that most of us don't lack time, we lose it. The fix isn't a dramatic overhaul. It's noticing where the hours went, and moving one of them.
+    evidence:
+      tier: Moodius opinion
+      note: We think a calendar is a more honest statement of values than anything we say about ourselves. The full journal pairs this with research on values and habits.
+      refs: []
+    prompts:
+      - Name three things you value most.
+      - Which of them got the least of your time this week?
+    exercise:
+      name: Move one hour
+      steps: |
+        Look at next week. Find one hour that usually goes to something you don't value, and give it to the value that's getting least. Write when, and what you'll do with it.
+    tonight: Which value did today's hours serve?
+
+  - n: 7
+    part: 1
+    title: The Evening Review
+    quote:
+      text: "Each night, when the lamp is out, I go back over my whole day: what I did, what I said, where I fell short and where I did better. I hide nothing from myself."
+      cite: Moodius paraphrase of Seneca, On Anger 3.36
+      kind: paraphrase
+    reading: |
+      Seneca ended every day the same way. Lamp out, house quiet, he reviewed the day honestly. Not to punish himself; he says he slept better for it. Just to notice, so tomorrow could go a little better.
+
+      You've done seven days of noticing. Tonight's exercise is the habit that holds them together. Three questions, five minutes, every evening. It's the simplest practice in Stoicism and perhaps the most useful.
+    evidence:
+      tier: Empirical
+      note: "Studies of expressive and reflective writing find small average benefits for wellbeing, with large differences between people (Frattaroli's meta-analysis). Writing regularly and briefly appears to suit most people better than long, intense sessions."
+      refs: [frattaroli_2006]
+    prompts:
+      - What did you do well today?
+      - Where did you fall short, and what would you do differently?
+    exercise:
+      name: Three questions, every night
+      steps: |
+        Copy these onto a card or into your phone and answer them before sleep for the next week: What went well? Where did I fall short? What will I do differently tomorrow? One line each.
+    tonight: What did these seven days show you?
+
+references:
+  epictetus: "Epictetus. A selection from the Discourses of Epictetus with the Encheiridion (G. Long, Trans.). Public domain; Project Gutenberg ebook 10661."
+  marcus: "Marcus Aurelius. Meditations. Paraphrases by Moodius Aurelius, standard section numbering."
+  seneca: "Seneca. On Anger; On the Shortness of Life. Paraphrases by Moodius Aurelius."
+  brennan_1998: "Brennan, K. A., Clark, C. L., & Shaver, P. R. (1998). Self-report measurement of adult attachment: An integrative overview. In J. A. Simpson & W. S. Rholes (Eds.), Attachment theory and close relationships (pp. 46–76). Guilford Press."
+  crocker_wolfe_2001: "Crocker, J., & Wolfe, C. T. (2001). Contingencies of self-worth. Psychological Review, 108(3), 593–623."
+  fraley_2015: "Fraley, R. C., Hudson, N. W., Heffernan, M. E., & Segal, N. (2015). Are adult attachment styles categorical or dimensional? Journal of Personality and Social Psychology, 109(2), 354–368."
+  frattaroli_2006: "Frattaroli, J. (2006). Experimental disclosure and its moderators: A meta-analysis. Psychological Bulletin, 132(6), 823–865."
+  lieberman_2007: "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H., & Way, B. M. (2007). Putting feelings into words. Psychological Science, 18(5), 421–428."
+  robertson_2019: "Robertson, D. (2019). The philosophy of cognitive-behavioural therapy (CBT) (2nd ed.). Routledge."
