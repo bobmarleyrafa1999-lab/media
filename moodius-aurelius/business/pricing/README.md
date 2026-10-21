@@ -63,7 +63,7 @@ What goes into those numbers:
 | Resend email (up to 3,000 a month) | £0 |
 | **Total** | **£10.83** |
 
-**Break-even is one journal sale a month.** With a €6 server for the community agent, it's two. Everything after that is margin.
+**Break-even on shop costs only is one journal sale a month** (two with a €6 server for the community agent). The whole-business break-even, which also counts Metricool and other tools, is about three sales a month; see `business/finance/moodius-finance-model.xlsx`. That model also applies a 3% refund allowance and a 60/20/20 UK/EEA/international mix, so its blended figure per journal is £10.16 against the £10.77 UK-card figure here.
 
 Illustration, not a forecast (UK cards, journal only, before refunds and tax):
 
