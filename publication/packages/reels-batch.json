@@ -1,0 +1,596 @@
+{
+ "batch": "substack-essays-01",
+ "written": "2026-10-21",
+ "schema": "reels-engine formats-AF (engine.py 1.2)",
+ "scripts": [
+  {
+   "id": "S01A",
+   "slug": "same-sentence-twice",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Journal",
+   "hook": "What have you written about three times this month?",
+   "hook_b": "Be honest. You know which one.",
+   "cards": [
+    [
+     "What have you written about three times this month?",
+     3.0,
+     "question"
+    ],
+    [
+     "Same grievance. New wording.",
+     1.8,
+     "body"
+    ],
+    [
+     "That's not reflection. It's rehearsal.",
+     2.2,
+     "body"
+    ],
+    [
+     "Write the next page in the second person.",
+     2.4,
+     "body"
+    ],
+    [
+     "\"You were passed over. You wanted it.\"",
+     2.2,
+     "body"
+    ],
+    [
+     "Study: Kross & Ayduk, self-distancing review (2017)",
+     2.2,
+     "cite"
+    ],
+    [
+     "Save this for tonight's page.",
+     1.8,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of a notebook under a lamp (tag notebook-lamp), else V1 Slate + grain.",
+   "footage": "notebook-lamp",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 301
+   },
+   "source": {
+    "type": "data",
+    "author": "Kross & Ayduk",
+    "work": "Self-distancing (Adv. Exp. Soc. Psychol. 55)",
+    "section": "review",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 review (N07) + Moodius practice",
+   "caption": "A notebook can hold reflection or rumination. The difference often isn't what you write about. It's the angle.\n\nWhen the same sentence turns up twice, switch from \"I\" to \"you\" and write the next paragraph like a calm friend describing it.\n\nWhat do you keep writing about?\n\nEvidence: review of self-distancing research (Kross & Ayduk, 2017). Practice: Moodius. Full essay \"Writing to No One\" on the Substack, link in bio.",
+   "first_comment": "One word for the thing you keep writing about. No details needed.",
+   "hashtags": [
+    "#journaling",
+    "#stoicism",
+    "#selfreflection",
+    "#psychology",
+    "#marcusaurelius"
+   ],
+   "cta": "save",
+   "length_s": 15.6
+  },
+  {
+   "id": "S01B",
+   "slug": "evening-review",
+   "format": "B",
+   "series": "Quiet Truths",
+   "pillar": "Journal",
+   "hook": "Seneca reviewed his whole day, every night.",
+   "hook_b": "Two thousand years old, and still the best ten minutes of the day.",
+   "cards": [
+    [
+     "Seneca reviewed his whole day, every night.",
+     2.4,
+     "hook"
+    ],
+    [
+     "Not to put himself on trial.",
+     1.8,
+     "body"
+    ],
+    [
+     "To see it clearly, then let it go until morning.",
+     2.7,
+     "body"
+    ],
+    [
+     "Idea: Seneca, On Anger 3.36 · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Tonight: what went well, what didn't, one thing for tomorrow.",
+     3.0,
+     "body"
+    ],
+    [
+     "Quiet Truths · Moodius",
+     1.2,
+     "body"
+    ],
+    [
+     "Full essay on the Substack. Link in bio.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate (series control look).",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 302
+   },
+   "source": {
+    "type": "idea",
+    "author": "Seneca",
+    "work": "On Anger",
+    "section": "3.36",
+    "translation": "paraphrase"
+   },
+   "evidence": "Tier 2 primary text (N30), paraphrased",
+   "caption": "Seneca describes reviewing his entire day each night once the lamp was out, hiding nothing from himself, and sleeping better for it. Not a trial. A review.\n\nWhat's one thing from today you'd do differently?\n\nSource: Seneca, On Anger 3.36 (paraphrased). Full essay \"Writing to No One\" on the Substack, link in bio.",
+   "first_comment": "One thing from today you'd do differently. Go.",
+   "hashtags": [
+    "#journaling",
+    "#stoicism",
+    "#selfreflection",
+    "#psychology",
+    "#marcusaurelius"
+   ],
+   "cta": "save",
+   "length_s": 15.3
+  },
+  {
+   "id": "S02A",
+   "slug": "took-up-your-evening",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Truths",
+   "hook": "Whose behaviour took up more of your week than it deserved?",
+   "hook_b": "Who got under your skin this week?",
+   "cards": [
+    [
+     "Whose behaviour took up more of your week than it deserved?",
+     3.0,
+     "question"
+    ],
+    [
+     "Some irritation is good judgement.",
+     1.8,
+     "body"
+    ],
+    [
+     "Some of it is a mirror.",
+     1.8,
+     "body"
+    ],
+    [
+     "Ask quietly: is there a version of this in me?",
+     2.7,
+     "body"
+    ],
+    [
+     "If there is, call it a mistake. Not a verdict.",
+     2.7,
+     "body"
+    ],
+    [
+     "Study: Schimel, Greenberg & Martens, PSPB (2003)",
+     2.2,
+     "cite"
+    ],
+    [
+     "Send this to someone who'll admit theirs.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V3 still of a reflection in a dark window (tag window-reflection), else V1 + grain.",
+   "footage": "window-reflection",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 303
+   },
+   "source": {
+    "type": "data",
+    "author": "Schimel, Greenberg & Martens",
+    "work": "Projection of a feared trait (PSPB 29(8))",
+    "section": "Studies 1-2",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 lab studies (N01) + Moodius practice",
+   "caption": "In two lab studies, people told they had a feared trait saw more of it in a stranger, and projecting it seemed to help them deny it in themselves.\n\nThat doesn't make every irritation a mirror. It makes it worth a question.\n\nWhat trait in other people gets to you most?\n\nEvidence: Schimel, Greenberg & Martens (2003). Jung's \"shadow\" is an interpretive idea, not a tested therapy. Full essay on the Substack, link in bio.",
+   "first_comment": "One word: the trait in other people you can't stand.",
+   "hashtags": [
+    "#shadowwork",
+    "#carljung",
+    "#selfawareness",
+    "#psychology",
+    "#stoicism"
+   ],
+   "cta": "send",
+   "length_s": 16.2
+  },
+  {
+   "id": "S02F",
+   "slug": "turn-to-thyself",
+   "format": "F",
+   "series": "A Thought Worth Keeping",
+   "pillar": "Truths",
+   "hook": "Marcus Aurelius, on the people who annoy you:",
+   "hook_b": "Marcus Aurelius, on the people who annoy you.",
+   "cards": [
+    [
+     "Marcus Aurelius, on the people who annoy you:",
+     2.4,
+     "hook"
+    ],
+    [
+     "\"When thou art offended at any man's fault, forthwith turn to thyself.\"",
+     3.1,
+     "quote"
+    ],
+    [
+     "Meditations 10.30 · tr. George Long",
+     1.8,
+     "cite"
+    ],
+    [
+     "Not to excuse them.",
+     1.4,
+     "body"
+    ],
+    [
+     "To find where you do the same thing.",
+     2.2,
+     "body"
+    ],
+    [
+     "A Thought Worth Keeping · Moodius",
+     1.6,
+     "body"
+    ],
+    [
+     "Full essay on the Substack. Link in bio.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate.",
+   "footage": "desk",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 304
+   },
+   "source": {
+    "type": "quote",
+    "author": "Marcus Aurelius",
+    "work": "Meditations",
+    "section": "10.30",
+    "translation": "George Long"
+   },
+   "evidence": "Tier 2 primary text (Meditations 10.30), opening words verified 21 Oct 2026",
+   "caption": "Eighteen centuries before Jung wrote about projection, Marcus Aurelius gave himself an instruction: when someone's fault offends you, turn to yourself and ask where you go wrong in a similar way.\n\nWho's been your teacher this week, without meaning to be?\n\nSource: Meditations 10.30, tr. George Long. Full essay on the Substack, link in bio.",
+   "first_comment": "Who's been an accidental teacher for you lately?",
+   "hashtags": [
+    "#shadowwork",
+    "#carljung",
+    "#selfawareness",
+    "#psychology",
+    "#stoicism"
+   ],
+   "cta": "save",
+   "length_s": 14.7
+  },
+  {
+   "id": "S03E",
+   "slug": "who-would-know",
+   "format": "E",
+   "series": "Masculinity, Reconsidered",
+   "pillar": "Identity",
+   "hook": "If you weren't okay, who would know?",
+   "hook_b": "Not who would care. Who would actually know.",
+   "cards": [
+    [
+     "If you weren't okay, who would know?",
+     2.6,
+     "hook"
+    ],
+    [
+     "Not who would care.",
+     1.4,
+     "body"
+    ],
+    [
+     "Who would notice before you said a word.",
+     2.2,
+     "body"
+    ],
+    [
+     "For a lot of men, it's a short list.",
+     2.4,
+     "body"
+    ],
+    [
+     "In 1990, 3% of US men had no close friend. In 2021: 15%.",
+     3.4,
+     "body"
+    ],
+    [
+     "Survey Center on American Life (2021)",
+     1.8,
+     "cite"
+    ],
+    [
+     "Being fine alone is a skill. Being reachable is another.",
+     2.8,
+     "body"
+    ],
+    [
+     "Send this to one name on yours.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip: phone face-down on a table by a lamp (tag phone-table), else V1 + grain.",
+   "footage": "phone-table",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 305
+   },
+   "source": {
+    "type": "data",
+    "author": "Daniel Cox",
+    "work": "The State of American Friendship (Survey Center on American Life)",
+    "section": "2021 survey",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 survey (E18), verified 21 Oct 2026 + Moodius reflection",
+   "caption": "Most men aren't lonely in the way headlines describe. They're fine. They have colleagues and a group chat.\n\nThe better question is who would know if you weren't.\n\nWho's on your list?\n\nEvidence: Survey Center on American Life (Cox, 2021). Reflection: Moodius. Full essay \"The Loneliness of Being Fine\" on the Substack, link in bio.",
+   "first_comment": "No names needed: how many people are on your list?",
+   "hashtags": [
+    "#mensmentalhealth",
+    "#malefriendship",
+    "#loneliness",
+    "#emotionalintelligence",
+    "#stoicism"
+   ],
+   "cta": "send",
+   "length_s": 18.6
+  },
+  {
+   "id": "S03B",
+   "slug": "two-hundred-hours",
+   "format": "B",
+   "series": "Quiet Truths",
+   "pillar": "Identity",
+   "hook": "Close friendship takes about 200 hours.",
+   "hook_b": "The maths of friendship nobody told you.",
+   "cards": [
+    [
+     "Close friendship takes about 200 hours.",
+     2.4,
+     "hook"
+    ],
+    [
+     "That's an evening a week, for a year.",
+     2.2,
+     "body"
+    ],
+    [
+     "School scheduled it for you. Adult life doesn't.",
+     2.4,
+     "body"
+    ],
+    [
+     "So put it in the calendar. Same night, every other week.",
+     2.9,
+     "body"
+    ],
+    [
+     "Study: Hall, J. Soc. Pers. Relationships (2019)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Quiet Truths · Moodius",
+     1.2,
+     "body"
+    ],
+    [
+     "Save this. Then text them.",
+     1.8,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate (series control look).",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 306
+   },
+   "source": {
+    "type": "data",
+    "author": "Jeffrey Hall",
+    "work": "How many hours does it take to make a friend? (JSPR 36(4))",
+    "section": "Studies 1-2",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 study (E34), figures verified 21 Oct 2026",
+   "caption": "Jeffrey Hall's research estimated roughly 50 hours to go from acquaintance to casual friend, 90 to friend, and more than 200 to close friend.\n\nNothing in adult life schedules those hours for you. That's the problem, and the fix.\n\nWho would you give the next 200 to?\n\nEvidence: Hall (2019). Aristotle said the same with salt (Nicomachean Ethics VIII.3). Full essay on the Substack, link in bio.",
+   "first_comment": "Who's one person you'd want to spend the 200 hours with?",
+   "hashtags": [
+    "#mensmentalhealth",
+    "#malefriendship",
+    "#loneliness",
+    "#emotionalintelligence",
+    "#stoicism"
+   ],
+   "cta": "save",
+   "length_s": 14.9
+  },
+  {
+   "id": "S04C",
+   "slug": "money-two-readings",
+   "format": "C",
+   "series": "The Philosophical Contradiction",
+   "pillar": "Discipline",
+   "hook": "Does money make you happier?",
+   "hook_b": "Both answers are in the data.",
+   "cards": [
+    [
+     "Does money make you happier?",
+     2.2,
+     "question"
+    ],
+    [
+     "YES\nFor most people, a little more with every doubling.",
+     3.0,
+     "labelled"
+    ],
+    [
+     "AND NO\nYou adapt to every raise you get.",
+     2.6,
+     "labelled"
+    ],
+    [
+     "Both are in the data.",
+     1.6,
+     "body"
+    ],
+    [
+     "The part you control is what the next one is for.",
+     2.9,
+     "body"
+    ],
+    [
+     "Study: Killingsworth, Kahneman & Mellers, PNAS (2023)",
+     2.2,
+     "cite"
+    ],
+    [
+     "What would your next raise be for?",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V3 brutalist stairwell still (tag stairs), else V1 + grain.",
+   "footage": "stairs",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 307
+   },
+   "source": {
+    "type": "data",
+    "author": "Killingsworth, Kahneman & Mellers",
+    "work": "Income and emotional well-being: a conflict resolved (PNAS 120(10))",
+    "section": "main result",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 adversarial collaboration (N04), verified 21 Oct 2026; adaptation (E33)",
+   "caption": "\"Money can't buy happiness\" and \"only rich people say that\" are both wrong in useful ways.\n\nA 2023 paper by former rivals found happiness rises with each doubling of income for most people. And decades of research show we adapt to what we get.\n\nWhat's your next goal actually for?\n\nEvidence: Killingsworth, Kahneman & Mellers (2023); Brickman et al. (1978). Full essay on the Substack, link in bio.",
+   "first_comment": "Finish the sentence: \"Enough, for me, is…\"",
+   "hashtags": [
+    "#psychology",
+    "#stoicism",
+    "#seneca",
+    "#success",
+    "#mindset"
+   ],
+   "cta": "comment",
+   "length_s": 16.5
+  },
+  {
+   "id": "S04F",
+   "slug": "craves-more",
+   "format": "F",
+   "series": "A Thought Worth Keeping",
+   "pillar": "Discipline",
+   "hook": "One of the richest men in Rome, on being poor:",
+   "hook_b": "One of Rome's richest men, on being poor.",
+   "cards": [
+    [
+     "One of the richest men in Rome, on being poor:",
+     2.7,
+     "hook"
+    ],
+    [
+     "\"It is not the man who has too little, but the man who craves more, that is poor.\"",
+     4.4,
+     "quote"
+    ],
+    [
+     "Letters 2.6 · tr. Richard M. Gummere",
+     1.8,
+     "cite"
+    ],
+    [
+     "Name your enough. In numbers.",
+     1.6,
+     "body"
+    ],
+    [
+     "Or every raise will move it.",
+     1.8,
+     "body"
+    ],
+    [
+     "A Thought Worth Keeping · Moodius",
+     1.6,
+     "body"
+    ],
+    [
+     "Full essay on the Substack. Link in bio.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate.",
+   "footage": "desk",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 308
+   },
+   "source": {
+    "type": "quote",
+    "author": "Seneca",
+    "work": "Moral Letters to Lucilius",
+    "section": "2.6",
+    "translation": "Richard M. Gummere"
+   },
+   "evidence": "Tier 2 primary text (N28), Gummere wording verified 21 Oct 2026",
+   "caption": "Seneca was one of the wealthiest men in Rome, which makes this line from his second letter harder to dismiss, not easier.\n\nPoverty is partly the gap between what you have and what you want. Raise the second faster than the first and a rich person can feel poor forever.\n\nHave you named your enough?\n\nSource: Seneca, Letters 2.6, tr. Gummere. Full essay on the Substack, link in bio.",
+   "first_comment": "Have you ever put a number on \"enough\"? Yes or no.",
+   "hashtags": [
+    "#psychology",
+    "#stoicism",
+    "#seneca",
+    "#success",
+    "#mindset"
+   ],
+   "cta": "save",
+   "length_s": 16.1
+  }
+ ]
+}

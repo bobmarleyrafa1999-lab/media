@@ -1,0 +1,272 @@
+{
+ "n": 1,
+ "essay": "essays/01-writing-to-no-one.md",
+ "title": "Writing to No One",
+ "ab_alt": "Why Writing It Down Helps (A Little)",
+ "pillar": "Journal",
+ "reels": [
+  {
+   "id": "S01A",
+   "slug": "same-sentence-twice",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Journal",
+   "hook": "What have you written about three times this month?",
+   "hook_b": "Be honest. You know which one.",
+   "cards": [
+    [
+     "What have you written about three times this month?",
+     3.0,
+     "question"
+    ],
+    [
+     "Same grievance. New wording.",
+     1.8,
+     "body"
+    ],
+    [
+     "That's not reflection. It's rehearsal.",
+     2.2,
+     "body"
+    ],
+    [
+     "Write the next page in the second person.",
+     2.4,
+     "body"
+    ],
+    [
+     "\"You were passed over. You wanted it.\"",
+     2.2,
+     "body"
+    ],
+    [
+     "Study: Kross & Ayduk, self-distancing review (2017)",
+     2.2,
+     "cite"
+    ],
+    [
+     "Save this for tonight's page.",
+     1.8,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of a notebook under a lamp (tag notebook-lamp), else V1 Slate + grain.",
+   "footage": "notebook-lamp",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 301
+   },
+   "source": {
+    "type": "data",
+    "author": "Kross & Ayduk",
+    "work": "Self-distancing (Adv. Exp. Soc. Psychol. 55)",
+    "section": "review",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 review (N07) + Moodius practice",
+   "caption": "A notebook can hold reflection or rumination. The difference often isn't what you write about. It's the angle.\n\nWhen the same sentence turns up twice, switch from \"I\" to \"you\" and write the next paragraph like a calm friend describing it.\n\nWhat do you keep writing about?\n\nEvidence: review of self-distancing research (Kross & Ayduk, 2017). Practice: Moodius. Full essay \"Writing to No One\" on the Substack, link in bio.",
+   "first_comment": "One word for the thing you keep writing about. No details needed.",
+   "hashtags": [
+    "#journaling",
+    "#stoicism",
+    "#selfreflection",
+    "#psychology",
+    "#marcusaurelius"
+   ],
+   "cta": "save",
+   "length_s": 15.6
+  },
+  {
+   "id": "S01B",
+   "slug": "evening-review",
+   "format": "B",
+   "series": "Quiet Truths",
+   "pillar": "Journal",
+   "hook": "Seneca reviewed his whole day, every night.",
+   "hook_b": "Two thousand years old, and still the best ten minutes of the day.",
+   "cards": [
+    [
+     "Seneca reviewed his whole day, every night.",
+     2.4,
+     "hook"
+    ],
+    [
+     "Not to put himself on trial.",
+     1.8,
+     "body"
+    ],
+    [
+     "To see it clearly, then let it go until morning.",
+     2.7,
+     "body"
+    ],
+    [
+     "Idea: Seneca, On Anger 3.36 · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Tonight: what went well, what didn't, one thing for tomorrow.",
+     3.0,
+     "body"
+    ],
+    [
+     "Quiet Truths · Moodius",
+     1.2,
+     "body"
+    ],
+    [
+     "Full essay on the Substack. Link in bio.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate (series control look).",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 302
+   },
+   "source": {
+    "type": "idea",
+    "author": "Seneca",
+    "work": "On Anger",
+    "section": "3.36",
+    "translation": "paraphrase"
+   },
+   "evidence": "Tier 2 primary text (N30), paraphrased",
+   "caption": "Seneca describes reviewing his entire day each night once the lamp was out, hiding nothing from himself, and sleeping better for it. Not a trial. A review.\n\nWhat's one thing from today you'd do differently?\n\nSource: Seneca, On Anger 3.36 (paraphrased). Full essay \"Writing to No One\" on the Substack, link in bio.",
+   "first_comment": "One thing from today you'd do differently. Go.",
+   "hashtags": [
+    "#journaling",
+    "#stoicism",
+    "#selfreflection",
+    "#psychology",
+    "#marcusaurelius"
+   ],
+   "cta": "save",
+   "length_s": 15.3
+  }
+ ],
+ "carousel": [
+  [
+   "Cover",
+   "Journaling helps. A little.",
+   "Here's how to make it help more.",
+   "claim cover"
+  ],
+  [
+   "The honest number",
+   "146 studies. One result: writing about hard things helps on average, a little.",
+   "Study · Frattaroli, Psychological Bulletin (2006)",
+   "term card"
+  ],
+  [
+   "Why words matter",
+   "Labelling a feeling lowered amygdala activity in a lab scan study.",
+   "Study · Lieberman et al., Psychological Science (2007)",
+   "term card"
+  ],
+  [
+   "The catch",
+   "A notebook can carry rumination: the same grievance, rehearsed every night.",
+   "Review · Nolen-Hoeksema et al. (2008)",
+   "pull quote"
+  ],
+  [
+   "The fix",
+   "When a sentence repeats, change the angle. Write \"you\", not \"I\". Marcus did.",
+   "Review · Kross & Ayduk (2017) · Meditations",
+   "pair slide"
+  ],
+  [
+   "The 15-minute page",
+   "1 Facts. 2 Feeling. 3 Meaning. 4 One small action. Then close the book.",
+   "Moodius practice",
+   "numbered step"
+  ],
+  [
+   "Sign-off",
+   "Writing to No One",
+   "Full essay on the Substack · link in bio · save this for tonight",
+   "sign-off"
+  ]
+ ],
+ "carousel_caption": "Journaling is sold as therapy. The research is more modest and more useful: writing about hard things helps a little on average, and how you write matters more than whether you do.\n\nSave this for tonight. What would you write first?\n\nEvidence: Frattaroli 2006 (meta-analysis), Lieberman et al. 2007, Nolen-Hoeksema et al. 2008, Kross & Ayduk 2017. Practice: Moodius.",
+ "cards": [
+  [
+   "A journal can be a place to heal or a place to rehearse.",
+   "Moodius"
+  ],
+  [
+   "Writing about hard things helps, on average, a little. How you write matters more than whether you do.",
+   "Moodius, after Frattaroli (2006)"
+  ],
+  [
+   "\"Let thy principles be brief and fundamental.\"",
+   "Marcus Aurelius, Meditations 4.3 · tr. Long"
+  ],
+  [
+   "When you write the same sentence twice, change the angle.",
+   "Moodius"
+  ],
+  [
+   "You are writing to no one. That's what makes honesty possible.",
+   "Moodius"
+  ]
+ ],
+ "stories": [
+  [
+   "Poll",
+   "Do you journal?",
+   "Poll: Every day / Sometimes / Tried it, stopped. Next frame: \"Most people stop because it turns into rehearsal. Thursday's essay is about that.\""
+  ],
+  [
+   "Question box",
+   "What do you write about most?",
+   "Question sticker. Share 3 anonymised answers on Sunday's \"From the Journal\" story (Surafel picks)."
+  ],
+  [
+   "Link",
+   "New essay: Writing to No One",
+   "Essay cover still + link sticker to the Substack post + \"15-minute practice inside\". Add to highlight Journal."
+  ]
+ ],
+ "pins": [
+  [
+   "Why Journaling Helps (A Little) and How to Make It Help More",
+   "The research on expressive writing is smaller and more useful than the hype. A 15-minute practice built on it, from Moodius Aurelius."
+  ],
+  [
+   "The 15-Minute Journaling Practice Backed by Research",
+   "Facts, feeling, meaning, one small action. Plus the one move that stops a journal turning into rumination."
+  ],
+  [
+   "Marcus Aurelius's Journaling Habit, Explained",
+   "The Meditations were never meant to be read. Why writing to yourself in the second person may be the point."
+  ],
+  [
+   "When Journaling Makes You Feel Worse",
+   "Rumination with a pen is real. What the research on self-distancing suggests instead."
+  ],
+  [
+   "Evening Review Journal Prompts (Stoic + Psychology)",
+   "Three journaling questions and a 15-minute practice from Seneca's evening review and modern research."
+  ]
+ ],
+ "notes": [
+  "146 studies on writing about hard things. The honest result: it helps, on average, a little. That's not a reason to stop journaling. It's a reason to care about how you do it. This week's essay is about the how.",
+  "Marcus Aurelius rarely wrote \"I\" in his notebook. He wrote \"thou\", like a teacher talking to a student who keeps making the same mistake. Modern research on self-distancing suggests that's where some of the benefit lives.",
+  "If you've written about the same thing three times this month, you're not reflecting any more. You're rehearsing. Write the next page in the second person and see what changes."
+ ],
+ "visuals": {
+  "look": "V1 flat Slate + grain; V2 own clip of a notebook under a lamp; no hands that identify, no faces",
+  "type": "Covers Playfair SemiBold 84; body Inter Medium 60; citations Inter 32 Ash small caps bottom-left; Ember rule once per piece",
+  "music": "night (ambient.py) or MO-REF-1 / MO-REF-2 from audio/library/originals: slow, sparse piano, no lift before 10 s",
+  "pinterest": "1000×1500, Bone background, Slate type, the essay title as the pin headline"
+ }
+}
