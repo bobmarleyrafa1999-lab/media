@@ -29,11 +29,11 @@ Weeks 5–16 are the twelve titles Surafel selected on 21 Oct. The backlog picks
 | 5 | 3 Dec | You Can Understand Yourself and Still Repeat the Same Mistakes | 6 Discipline | Draft + package ready |
 | 6 | 10 Dec | What Your Anger Is Trying to Protect | 9 Regulation | Draft + package ready |
 | 7 | 17 Dec | Why Being Needed Can Feel Like Being Loved | 5 Relationships | Draft + package ready |
-| 8 | 24 Dec | The Things We Inherit Without Realising | 2 Shadow | Batch 2 |
-| 9 | 31 Dec | A Life That Looks Successful but Feels Empty | 10 Success | Batch 2 |
-| 10 | 7 Jan | When Self-Improvement Becomes Self-Rejection | 9 Self-worth | Batch 2 |
-| 11 | 14 Jan | The Lost Art of Being Alone With Your Thoughts | 7 Attention | Batch 2 |
-| 12 | 21 Jan | The Man You Become When Nobody Is Watching (identity) | 6 Identity | Batch 2 |
+| 8 | 24 Dec | The Things We Inherit Without Realising | 2 Shadow | Draft + package ready |
+| 9 | 31 Dec | A Life That Looks Successful but Feels Empty | 10 Success | Draft + package ready |
+| 10 | 7 Jan | When Self-Improvement Becomes Self-Rejection | 9 Self-worth | Draft + package ready |
+| 11 | 14 Jan | The Lost Art of Being Alone With Your Thoughts | 7 Attention | Draft + package ready |
+| 12 | 21 Jan | The Man You Become When Nobody Is Watching (identity) | 6 Identity | Draft + package ready |
 | 13 | 28 Jan | The Parts of Yourself You Were Taught to Hide | 2 Shadow | Batch 3 |
 | 14 | 4 Feb | The Exhaustion of Always Trying to Become Someone | 6 Identity | Batch 3 |
 | 15 | 11 Feb | Why We Mistake Intensity for Intimacy | 5 Attachment | Batch 3 |

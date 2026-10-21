@@ -26,19 +26,19 @@
 | 16 | MA-035 | 1 | A Notebook Is Not a Courtroom | Journaling turns into self-prosecution | 4 | 4 | 1 | **21** | idea |
 | 17 | MA-037 | 5 | Why Closeness Feels Like Danger | Pulling away when someone gets close | 4 | 5 | 3 | **21** | idea |
 | 18 | MA-045 | 1 | The Unsent Letter | Things unsaid to the living and the dead | 4 | 4 | 1 | **21** | idea |
-| 19 | MA-055 | 9 | When Self-Improvement Becomes Self-Rejection | Improvement driven by contempt rather than care | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 2) |
+| 19 | MA-055 | 9 | When Self-Improvement Becomes Self-Rejection | Improvement driven by contempt rather than care | 4 | 5 | 3 | **21** | draft v1 (awaiting approval) |
 | 20 | MA-059 | 5 | Why We Mistake Intensity for Intimacy | Chaos and longing read as closeness | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 3) |
 | 21 | MA-060 | 4 | What Would You Do If Nobody Was Watching? | Decisions under no observation (decision-making, not identity) | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 3) |
 | 22 | MA-003 | 2 | The Trait You Can't Stand in Other People | Strong irritation at others might be information about ourselves; but shadow work is sold as therapy | 5 | 4 | 3 | **21** | draft v1 (awaiting approval) |
 | 23 | MA-004 | 10 | The Raise That Didn't Arrive Inside | Success arrives on paper and not in the body; is more ever enough? | 4 | 5 | 3 | **21** | draft v1 (awaiting approval) |
-| 24 | MA-007 | 7 | The Lost Art of Being Alone With Your Thoughts | Restlessness and the reflex to reach for the phone | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 2); was "We Would Rather Be Shocked Than Alone With Our Thoughts" |
+| 24 | MA-007 | 7 | The Lost Art of Being Alone With Your Thoughts | Restlessness and the reflex to reach for the phone | 4 | 5 | 3 | **21** | draft v1 (awaiting approval) |
 | 25 | MA-018 | 2 | The Persona Is Not a Lie | The gap between the self at work and the self at 2am | 5 | 4 | 3 | **21** | idea |
 | 26 | MA-041 | 6 | Who Are You When You Stop Producing? | Identity fused with output | 4 | 5 | 3 | **21** | idea |
-| 27 | MA-051 | 6 | The Man You Become When Nobody Is Watching | Character as the residue of private repetition (identity, not decisions) | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 2) |
+| 27 | MA-051 | 6 | The Man You Become When Nobody Is Watching | Character as the residue of private repetition (identity, not decisions) | 4 | 5 | 3 | **21** | draft v1 (awaiting approval) |
 | 28 | MA-054 | 2 | The Parts of Yourself You Were Taught to Hide | Disowned traits learned in childhood | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 3) |
 | 29 | MA-056 | 6 | The Exhaustion of Always Trying to Become Someone | Identity as a permanent project | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 3) |
-| 30 | MA-057 | 10 | A Life That Looks Successful but Feels Empty | Outer markers without inner meaning | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 2) |
-| 31 | MA-058 | 2 | The Things We Inherit Without Realising | Family patterns passed down unexamined | 4 | 5 | 3 | **21** | selected 21 Oct: to draft (batch 2) |
+| 30 | MA-057 | 10 | A Life That Looks Successful but Feels Empty | Outer markers without inner meaning | 4 | 5 | 3 | **21** | draft v1 (awaiting approval) |
+| 31 | MA-058 | 2 | The Things We Inherit Without Realising | Family patterns passed down unexamined | 4 | 5 | 3 | **21** | draft v1 (awaiting approval) |
 | 32 | MA-013 | 8 | Being Okay Is Not Proof You Didn't Love Them | Guilt about grieving "too little" or "too long" | 5 | 4 | 3 | **21** | idea |
 | 33 | MA-014 | 4 | The Dichotomy of Control Is Not a Shrug | "Focus on what you control" misused as resignation | 3 | 5 | 2 | **20** | idea |
 | 34 | MA-019 | 5 | Lonely in a Full Room | Loneliness while surrounded by people | 3 | 5 | 2 | **20** | idea |
@@ -199,6 +199,11 @@
 
 **19. When Self-Improvement Becomes Self-Rejection** (MA-055, What We Disown). Philosophy: Stoic progress (prokopē). Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-017; MA-032. Reusable: —.
 
+- E20 Breines & Chen (2012), 1 Empirical [link](https://doi.org/10.1177/0146167212445599)
+- N56 Powers, Koestner, Zuroff, Milyavskaya & Gorin (2011), 1 Empirical [link](https://doi.org/10.1177/0146167211410246)
+- N14 Curran & Hill (2019), 1 Empirical [link](https://doi.org/10.1037/bul0000138)
+- N21 Neff (2003), 1 Empirical [link](https://doi.org/10.1080/15298860309032)
+- N57 Marcus Aurelius (c. 170 CE), 2 Philosophical [link](https://lexundria.com/m_aur_med/5.9/lg)
 
 **20. Why We Mistake Intensity for Intimacy** (MA-059, The Distance Between Us). Philosophy: Fromm (idea). Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-010; MA-053. Reusable: —.
 
@@ -228,9 +233,8 @@
 
 - N08 Wilson et al. (2014), 1 Empirical [link](https://doi.org/10.1126/science.1250830)
 - N10 Killingsworth & Gilbert (2010), 1 Empirical [link](https://doi.org/10.1126/science.1192439)
+- N58 Nguyen, Ryan & Deci (2018), 1 Empirical
 - N24 Blaise Pascal (1670), 2 Philosophical
-- N22 Orben & Przybylski (2019), 1 Empirical [link](https://doi.org/10.1038/s41562-018-0506-1)
-- N23 Odgers (2024), 2 Philosophical [link](https://doi.org/10.1038/d41586-024-00902-2)
 
 **25. The Persona Is Not a Lie** (MA-018, What We Disown). Philosophy: Jung on the persona (idea); Nietzsche on giving style to one's character (Gay Science 290). Platforms: Substack 5; IG carousel 4; reel 4; Pinterest 4. Related: MA-003; MA-028; MA-039. Reusable: —.
 
@@ -245,6 +249,12 @@
 
 **27. The Man You Become When Nobody Is Watching** (MA-051, After the Goal). Philosophy: Aristotle NE II.1 habituation. Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-060; MA-018. Reusable: —.
 
+- N36 Aristotle (c. 340 BCE), 2 Philosophical
+- N59 Daryl Bem (1972), 3 Theoretical
+- N60 Quattrone & Tversky (1984), 1 Empirical
+- N32 Wood, Quinn & Kashy (2002), 1 Empirical [link](https://doi.org/10.1037/0022-3514.83.6.1281)
+- N61 Lally, van Jaarsveld, Potts & Wardle (2010), 1 Empirical [link](https://doi.org/10.1002/ejsp.674)
+- N62 Marcus Aurelius (c. 170 CE), 2 Philosophical [link](https://lexundria.com/m_aur_med/5.16/lg)
 
 **28. The Parts of Yourself You Were Taught to Hide** (MA-054, What We Disown). Philosophy: Jung, persona and shadow (interpretive). Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-018; MA-003. Reusable: —.
 
@@ -256,9 +266,20 @@
 
 **30. A Life That Looks Successful but Feels Empty** (MA-057, After the Goal). Philosophy: Seneca; Aristotle on eudaimonia. Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-025; MA-004. Reusable: —.
 
+- N52 Niemiec, Ryan & Deci (2009), 1 Empirical
+- N53 Schkade & Kahneman (1998), 1 Empirical
+- N54 Aristotle (c. 340 BCE), 2 Philosophical [link](https://rlee.hosted.uark.edu/snips/ari-ne-edit.html)
+- N55 Leo Tolstoy (1886), 2 Philosophical
+- E32 Kasser & Ryan (1996), 1 Empirical [link](https://doi.org/10.1177/0146167296223006)
 
 **31. The Things We Inherit Without Realising** (MA-058, What We Disown). Philosophy: Jung (interpretive). Platforms: Substack 5; IG carousel 5; reel 5; Pinterest 4. Related: MA-050; MA-054. Reusable: —.
 
+- N46 Kaufman & Zigler (1987), 1 Empirical
+- N47 van IJzendoorn (1995), 1 Empirical [link](https://doi.org/10.1037/0033-2909.117.3.387)
+- N48 Roisman, Padrón, Sroufe & Egeland (2002), 1 Empirical
+- N49 Ezekiel (King James Version) (c. 6th c. BCE), 2 Philosophical [link](https://biblehub.com/kjv/ezekiel/18-2.htm)
+- N50 Australian Institute of Family Studies (n.d.), 1 Empirical [link](https://aifs.gov.au/resources/policy-and-practice-papers/intergenerational-transmission-maltreatment)
+- N51 Murray Bowen (Kerr & Bowen) (1988), 3 Theoretical
 
 **32. Being Okay Is Not Proof You Didn't Love Them** (MA-013, Memento). Philosophy: Montaigne, Essays I.20; continuing bonds. Platforms: Substack 5; IG carousel 4; reel 3; Pinterest 4. Related: MA-024; MA-034; MA-044. Reusable: library E29/E30.
 
