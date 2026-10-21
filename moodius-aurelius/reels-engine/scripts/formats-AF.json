@@ -270,7 +270,8 @@
    "audio": {
     "engine": "ambient",
     "mood": "warm",
-    "seed": 204
+    "seed": 204,
+    "turn_card": 4
    },
    "source": {
     "type": "data",

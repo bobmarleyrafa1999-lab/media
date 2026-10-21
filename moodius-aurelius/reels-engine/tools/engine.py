@@ -197,7 +197,7 @@ def is_still(path):
 def build_filter(script, total, layout, clip, tmp):
     centre_y = 880 if layout == "upper" else 960
     f = []
-    grain = ",noise=alls=9:allf=t" if script.get("texture") == "grain" else ""
+    grain = ",noise=alls=7:allf=t" if script.get("texture") == "grain" else ""
     if is_still(clip):  # 1.2: a photograph, drifting ~5% over the whole reel (restrained motion)
         f.append(f"[1:v]scale={int(W * 1.1)}:{int(H * 1.1)}:force_original_aspect_ratio=increase,crop={int(W * 1.1)}:{int(H * 1.1)},"
                  f"crop={W}:{H}:x='{W * 0.1:.0f}*t/{total:.2f}':y='{H * 0.05:.0f}*t/{total:.2f}',"
@@ -279,6 +279,7 @@ def render(script, out_dir, layout="upper", variant="a"):
         cmd = ["ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", filt,
                "-map", "[vout]", "-map", "[aout]", "-t", f"{total:.2f}", "-r", "30",
                "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
+               *(["-maxrate", "8M", "-bufsize", "16M"] if s.get("texture") == "grain" else []),  # grain is incompressible
                "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", out]
         r = subprocess.run(cmd, capture_output=True, text=True)
     if r.returncode:
