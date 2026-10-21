@@ -1,0 +1,435 @@
+{
+ "batch": "formats-AF",
+ "written": "2026-10-21",
+ "schema": "see batch-01; 1.2 adds kinds question | labelled ('Label\\nbody') | pause, keys texture ('grain'), max_s, series, evidence",
+ "scripts": [
+  {
+   "id": "A01",
+   "slug": "said-it-out-loud",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Identity",
+   "hook": "When did you last say what you felt, out loud, to someone?",
+   "hook_b": "Answer this one in your head. Honestly.",
+   "cards": [
+    [
+     "When did you last say what you felt, out loud, to someone?",
+     3.0,
+     "question"
+    ],
+    [
+     "Not hinted. Not turned into a joke.",
+     2.2,
+     "body"
+    ],
+    [
+     "Actually said.",
+     1.4,
+     "body"
+    ],
+    [
+     "If the answer is in months, that's not a flaw in you.",
+     3.0,
+     "body"
+    ],
+    [
+     "Plenty of men were never handed the words.",
+     2.4,
+     "body"
+    ],
+    [
+     "Idea: Levant, normative male alexithymia (1992) · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Send this to the one you'd answer honestly.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V3 if footage/window-rain* exists (rain on glass, night), else V1 Slate + grain. Question card in Playfair 88, Ember rule under it.",
+   "footage": "window-rain",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 201
+   },
+   "source": {
+    "type": "idea",
+    "author": "Ronald Levant",
+    "work": "Toward the reconstruction of masculinity (J. Family Psychology, 1992)",
+    "section": "normative male alexithymia",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 theory (E15) + Moodius reflection",
+   "caption": "Not 'I'm fine'. Not a meme in the group chat. The actual sentence.\n\nIf you can't remember, you're not broken. A lot of us learned to keep feelings in the joke drawer. Words can be learned late.\n\nWhat would you say, if you said it?\n\nEvidence: psychology theory (Levant, 1992), in our words. Reflection: Moodius.",
+   "first_comment": "One word for how today actually felt. Go.",
+   "hashtags": [
+    "#mensmentalhealth",
+    "#emotionalintelligence",
+    "#stoicism",
+    "#vulnerability"
+   ],
+   "cta": "send",
+   "length_s": 16.2
+  },
+  {
+   "id": "B01",
+   "slug": "busy-room",
+   "format": "B",
+   "series": "Quiet Truths",
+   "pillar": "Truths",
+   "hook": "Being busy is the most respectable way to avoid yourself.",
+   "hook_b": "Nobody questions you when you're busy. That's the problem.",
+   "cards": [
+    [
+     "Being busy is the most respectable way to avoid yourself.",
+     2.6,
+     "hook"
+    ],
+    [
+     "From outside it looks like ambition.",
+     2.0,
+     "body"
+    ],
+    [
+     "From inside it's a room you never sit down in.",
+     2.6,
+     "body"
+    ],
+    [
+     "Tonight, sit in it for one song. No phone.",
+     2.4,
+     "body"
+    ],
+    [
+     "Quiet Truths · Moodius",
+     1.4,
+     "cite"
+    ],
+    [
+     "Save it for the week you can't stop.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate, no grain (cleanest look, the control for the series).",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 202
+   },
+   "source": {
+    "type": "original",
+    "author": "Moodius",
+    "work": "Quiet Truths",
+    "section": "original reflection",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 3 Moodius reflection",
+   "caption": "Busy gets you praised. It also gets you out of every quiet moment where a feeling might catch up.\n\nNo productivity tip today. One song, sitting down, nothing in your hands. Notice what shows up.\n\nWhat do you think you're avoiding?\n\nReflection: Moodius.",
+   "first_comment": "Which song are you sitting with?",
+   "hashtags": [
+    "#quiettruths",
+    "#overthinking",
+    "#stoicism",
+    "#selfawareness"
+   ],
+   "cta": "save",
+   "length_s": 13.2
+  },
+  {
+   "id": "C01",
+   "slug": "discipline-two-readings",
+   "format": "C",
+   "series": "The Philosophical Contradiction",
+   "pillar": "Discipline",
+   "hook": "Is discipline self-respect or self-punishment?",
+   "hook_b": "Two men have the same 5am alarm. Only one is okay.",
+   "cards": [
+    [
+     "Is discipline self-respect or self-punishment?",
+     2.4,
+     "question"
+    ],
+    [
+     "One reading\nYou keep your word to yourself because your word counts.",
+     3.2,
+     "labelled"
+    ],
+    [
+     "The other\nYou grind because resting feels like proof you're worthless.",
+     3.2,
+     "labelled"
+    ],
+    [
+     "Same alarm. Same gym. Different engine.",
+     2.2,
+     "body"
+    ],
+    [
+     "Pressure gets you started. Wanting it is what lasts.",
+     2.6,
+     "body"
+    ],
+    [
+     "Idea: Ryan & Deci, self-determination theory (2000) · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Which one woke you up this morning?",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V1 Slate + grain. Labels 'ONE READING' / 'THE OTHER' in Inter SemiBold 30, Ember; body below.",
+   "footage": null,
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 203
+   },
+   "source": {
+    "type": "idea",
+    "author": "Richard Ryan & Edward Deci",
+    "work": "Self-determination theory (American Psychologist, 2000)",
+    "section": "autonomous vs controlled motivation",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 (E04) + Tier 3 reading",
+   "caption": "Both versions get up early. Both look disciplined in a photo. One is built on keeping promises to yourself, the other on being afraid of what rest says about you.\n\nPsychologists who study motivation find the first kind tends to last and the second tends to burn out.\n\nBe honest: which one runs you?\n\nEvidence: self-determination theory (Ryan & Deci, 2000), in our words. Readings: Moodius.",
+   "first_comment": "Reading one or the other? No wrong answer, just an honest one.",
+   "hashtags": [
+    "#discipline",
+    "#selfrespect",
+    "#stoicism",
+    "#psychology"
+   ],
+   "cta": "comment",
+   "length_s": 17.6
+  },
+  {
+   "id": "D01",
+   "slug": "the-bench",
+   "format": "D",
+   "series": "The Human Condition",
+   "pillar": "Journal",
+   "max_s": 30,
+   "hook": "You drive past a place you used to be someone else in.",
+   "hook_b": "There's a version of you still sitting on that bench.",
+   "cards": [
+    [
+     "You drive past a place you used to be someone else in.",
+     3.0,
+     "hook"
+    ],
+    [
+     "The bench is still there. The person sitting on it isn't.",
+     3.0,
+     "body"
+    ],
+    [
+     "For a second you miss that version of you more than anyone.",
+     3.2,
+     "body"
+    ],
+    [
+     "People who study nostalgia found it's mostly not sadness.",
+     2.8,
+     "body"
+    ],
+    [
+     "It shows up when we're lonely, and pulls us back toward the people who made us.",
+     4.0,
+     "body"
+    ],
+    [
+     "Wildschut, Sedikides, Arndt & Routledge · J. Pers. Soc. Psychol. (2006)",
+     2.2,
+     "cite"
+    ],
+    [
+     "Missing who you were is proof you became someone.",
+     2.6,
+     "body"
+    ],
+    [
+     "Send it to someone who was on that bench.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V3 still or clip tagged 'bench' (empty bench or a lit window at dusk, locked-off, no people), else Slate + grain. Body cards hold longer; nothing cuts faster than 2.2s.",
+   "footage": "bench",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "warm",
+    "seed": 204
+   },
+   "source": {
+    "type": "data",
+    "author": "Wildschut, Sedikides, Arndt & Routledge",
+    "work": "Nostalgia: content, triggers, functions (J. Personality & Social Psychology 91(5), 2006)",
+    "section": "triggered by loneliness; bolsters social bonds, self-regard, positive affect",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 (E28) + Moodius reflection",
+   "caption": "Old school, old street, the bus stop you waited at for three years. The ache is real, but it isn't only loss.\n\nNostalgia research (Wildschut et al., 2006) found it's triggered by loneliness and tends to strengthen our sense of connection, not weaken it. The past is reminding you who you belong to.\n\nWhere's your bench?\n\nEvidence: study (2006). Reflection: Moodius.",
+   "first_comment": "Name the place. Just the place.",
+   "hashtags": [
+    "#nostalgia",
+    "#humancondition",
+    "#psychology",
+    "#stoicism",
+    "#journal"
+   ],
+   "cta": "send",
+   "length_s": 23.0
+  },
+  {
+   "id": "E01",
+   "slug": "call-for-no-reason",
+   "format": "E",
+   "series": "Masculinity, Reconsidered",
+   "pillar": "Identity",
+   "hook": "Nobody taught you how to call a friend for no reason.",
+   "hook_b": "When did you last call a friend with no excuse?",
+   "cards": [
+    [
+     "Nobody taught you how to call a friend for no reason.",
+     2.8,
+     "hook"
+    ],
+    [
+     "So you wait for one. A birthday. A match. A wedding.",
+     2.8,
+     "body"
+    ],
+    [
+     "Months go by. You call it being busy.",
+     2.2,
+     "body"
+    ],
+    [
+     "In 1990, 3% of US men said they had no close friend. In 2021: 15%.",
+     4.0,
+     "body"
+    ],
+    [
+     "Survey Center on American Life (2021)",
+     1.8,
+     "cite"
+    ],
+    [
+     "Self-reliance is a strength until it's the reason you never ask.",
+     3.0,
+     "body"
+    ],
+    [
+     "Text one friend tonight. No reason needed.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V3 clip tagged 'phone-table' (phone face up, dark screen, lamp behind) if present, else Slate + grain.",
+   "footage": "phone-table",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 205
+   },
+   "source": {
+    "type": "data",
+    "author": "Daniel Cox, Survey Center on American Life",
+    "work": "The State of American Friendship (May 2021, n=2,019)",
+    "section": "men with no close friends 3% (1990) → 15% (2021)",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 survey (E18) + meta-analysis on self-reliance (E13, in caption)",
+   "caption": "Men's friendships often run on excuses: the match, the stag do, helping someone move. When the excuses stop, the friendship goes quiet, and nobody decided that.\n\nA 2017 meta-analysis found self-reliance was one of the masculine norms most consistently linked to worse mental health (Wong et al.). Being able to cope alone is good. Never letting anyone in isn't the same thing.\n\nWho's the friend you keep meaning to text?\n\nEvidence: survey (2021), meta-analysis (2017). Reflection: Moodius.",
+   "first_comment": "Text them, then drop a ✓ here. That's it.",
+   "hashtags": [
+    "#malefriendship",
+    "#mensmentalhealth",
+    "#loneliness",
+    "#stoicism"
+   ],
+   "cta": "act",
+   "length_s": 18.8
+  },
+  {
+   "id": "F01",
+   "slug": "friends-who-train-you",
+   "format": "F",
+   "series": "A Thought Worth Keeping",
+   "pillar": "Daily",
+   "hook": "The friends you keep are training you for something.",
+   "hook_b": "Seneca had one rule for choosing friends.",
+   "cards": [
+    [
+     "The friends you keep are training you for something.",
+     2.6,
+     "hook"
+    ],
+    [
+     "Seneca, writing to a friend, around 65 AD:",
+     2.2,
+     "body"
+    ],
+    [
+     "“Associate with those who will make a better man of you. Welcome those whom you yourself can improve. The process is mutual; for men learn while they teach.”",
+     7.0,
+     "quote"
+    ],
+    [
+     "Letters 7.8 · tr. Richard M. Gummere",
+     1.6,
+     "cite"
+    ],
+    [
+     "Not networking. One friend who makes you better, and you return it.",
+     3.2,
+     "body"
+    ],
+    [
+     "Send this to yours.",
+     1.8,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate (quote reels read best clean). Quote in Playfair italic.",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 206
+   },
+   "source": {
+    "type": "quote",
+    "author": "Seneca",
+    "work": "Moral Letters to Lucilius",
+    "section": "7.8",
+    "translation": "Richard M. Gummere",
+    "verified_at": "goodreads.com/quotes/1331708 + Latin 'Recede in te ipse…' (Ep. 7.8); recheck against Gummere print before scheduling"
+   },
+   "evidence": "Tier 2 primary text",
+   "caption": "Seneca's advice isn't 'find a mentor'. It runs both ways: keep people who make you better, and be that person for someone else. You learn by helping.\n\nIn 2026 that might be the friend who asks how the thing you said you'd do is going. Or you being that friend.\n\nWho made you better this year?\n\nSource: Seneca, Moral Letters 7.8, tr. Gummere (public domain).",
+   "first_comment": "Tag the one who makes you better. Or don't, and tell them in person.",
+   "hashtags": [
+    "#seneca",
+    "#stoicism",
+    "#friendship",
+    "#philosophy"
+   ],
+   "cta": "send",
+   "length_s": 18.4
+  }
+ ]
+}
