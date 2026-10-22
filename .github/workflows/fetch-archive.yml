@@ -1,0 +1,49 @@
+name: Fetch archive images
+
+# Run by hand from the Actions tab. Searches one open archive, keeps only images that are safe
+# for commercial reels, and uploads them with credits.csv as a downloadable artifact.
+on:
+  workflow_dispatch:
+    inputs:
+      source:
+        description: "loc, commons or openverse"
+        required: true
+        default: loc
+        type: choice
+        options: [loc, commons, openverse]
+      query:
+        description: "Search words, e.g. march on washington 1963"
+        required: true
+      tag:
+        description: "Footage tag the reel uses, e.g. march"
+        required: true
+      n:
+        description: "How many images"
+        required: false
+        default: "4"
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Unit tests
+        run: python -m unittest discover -s liberation/tests
+      - name: Fetch
+        env:
+          SOURCE: ${{ inputs.source }}
+          QUERY: ${{ inputs.query }}
+          TAG: ${{ inputs.tag }}
+          N: ${{ inputs.n }}
+        run: python liberation/tools/fetch_archive.py --source "$SOURCE" --query "$QUERY" --tag "$TAG" --n "$N" --out archive-out
+      - uses: actions/upload-artifact@v4
+        with:
+          name: archive-${{ inputs.tag }}
+          path: archive-out/
