@@ -1,0 +1,206 @@
+{
+ "n": 13,
+ "essay": "essays/13-parts-you-were-taught-to-hide.md",
+ "title": "The Parts of Yourself You Were Taught to Hide",
+ "ab_alt": "What Went Underground",
+ "pillar": "Truths",
+ "reels": [
+  {
+   "id": "S13A",
+   "slug": "not-safe-to-be",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Truths",
+   "hook": "As a child, what wasn't it safe to be?",
+   "hook_b": "Every child learns which parts of them are welcome.",
+   "cards": [
+    [
+     "As a child, what wasn't it safe to be?",
+     2.4,
+     "question"
+    ],
+    [
+     "Too loud. Too sad. Too needy. Too soft.",
+     2.2,
+     "body"
+    ],
+    [
+     "Those parts didn't disappear. They went underground.",
+     2.4,
+     "body"
+    ],
+    [
+     "People think about their secrets far more alone than they hide them in company.",
+     3.6,
+     "body"
+    ],
+    [
+     "Studies: Slepian, Chun & Mason, JPSP (2017)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Hiding costs most at 3 a.m., not at dinner.",
+     2.7,
+     "body"
+    ],
+    [
+     "Save this. Write your list tonight.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V3 still of a closed door with light under it (tag door-light), else V1 + grain.",
+   "footage": "door-light",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 325
+   },
+   "source": {
+    "type": "data",
+    "author": "Slepian, Chun & Mason",
+    "work": "The experience of secrecy (JPSP 113(1))",
+    "section": "studies",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 studies (N64) + Moodius practice",
+   "caption": "Every child learns which parts of them are welcome and which bring trouble. The rest go underground.\n\nIn ten studies on secrets, people spent far more time thinking about what they hid when they were alone than actually hiding it in conversation. It was the mind-wandering, not the hiding, that went with lower wellbeing.\n\nAs a child, what wasn't it safe to be?\n\nEvidence: Slepian, Chun & Mason (2017). Full essay on the Substack, link in bio.",
+   "first_comment": "One word: what wasn't it safe to be?",
+   "hashtags": [
+    "#shadowwork",
+    "#carljung",
+    "#emotionalhealth",
+    "#selfawareness",
+    "#psychology"
+   ],
+   "cta": "save",
+   "length_s": 17.3
+  },
+  {
+   "id": "S13E",
+   "slug": "the-joke-instead",
+   "format": "E",
+   "series": "Masculinity, Reconsidered",
+   "pillar": "Truths",
+   "hook": "You learned to make a joke instead of crying.",
+   "hook_b": "The sensitive boy learns to make a joke instead.",
+   "cards": [
+    [
+     "You learned to make a joke instead of crying.",
+     2.4,
+     "hook"
+    ],
+    [
+     "It worked. It kept you safe.",
+     1.8,
+     "body"
+    ],
+    [
+     "But self-reliance norms were linked to worse mental health and less help-seeking.",
+     3.6,
+     "body"
+    ],
+    [
+     "Meta-analysis: Wong et al., J. Counseling Psychology (2017)",
+     2.2,
+     "cite"
+    ],
+    [
+     "Hiding a feeling isn't strength. Choosing when to show it is.",
+     2.9,
+     "body"
+    ],
+    [
+     "Send this to the funniest person you know.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of a dim pub table with two glasses, no people (tag pub-table), else V1 + grain.",
+   "footage": "pub-table",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 326
+   },
+   "source": {
+    "type": "data",
+    "author": "Wong, Ho, Wang & Miller",
+    "work": "Masculine norms and mental health (J. Counseling Psychology 64(1))",
+    "section": "meta-analyses",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 meta-analyses (E13)",
+   "caption": "Plenty of men learned early that some feelings were welcome and some weren't. The joke, the change of subject, the sudden helpfulness: they arrive exactly when a feeling would have.\n\nIn meta-analyses, conforming to traditional masculine norms, self-reliance especially, was linked to worse mental health and less help-seeking.\n\nStrength isn't hiding a feeling. It's being able to choose when to show it.\n\nWhat do you make a joke about instead?\n\nEvidence: Wong et al. (2017). Full essay on the Substack, link in bio.",
+   "first_comment": "No need to explain. What's your go-to joke when something actually hurts?",
+   "hashtags": [
+    "#shadowwork",
+    "#carljung",
+    "#emotionalhealth",
+    "#selfawareness",
+    "#psychology"
+   ],
+   "cta": "send",
+   "length_s": 15.1
+  }
+ ],
+ "carousel": [
+  [
+   "Cover",
+   "The parts of you that weren't welcome didn't disappear.",
+   "They went underground →",
+   "claim cover"
+  ],
+  [
+   "The persona",
+   "Jung's word for the face we learn to show. Not a lie, until we forget there's anything behind it.",
+   "Interpretive framework · Jung, Aion (1951)",
+   "term card"
+  ],
+  [
+   "Hiding feelings",
+   "Habitual suppressors reported more negative emotion, lower wellbeing and weaker closeness.",
+   "Study · Gross & John, JPSP (2003)",
+   "term card"
+  ],
+  [
+   "Hiding facts",
+   "People thought about their secrets far more when alone than they hid them in company, and that was what hurt.",
+   "Studies · Slepian, Chun & Mason, JPSP (2017)",
+   "term card"
+  ],
+  [
+   "The lock",
+   "Guilt says 'I did a bad thing'. Shame says 'I am bad', and shame makes us hide.",
+   "Review · Tangney & Dearing (2002)",
+   "pair slide"
+  ],
+  [
+   "The Unwelcome List",
+   "As a child it wasn't safe to be… · Who taught you · What you do instead · Which one you want back",
+   "Moodius practice",
+   "numbered step"
+  ],
+  [
+   "Sign-off",
+   "Some of the parts you hid are probably the best of you.",
+   "Full essay on the Substack · link in bio · save this",
+   "sign-off"
+  ]
+ ],
+ "carousel_caption": "Every child runs the same quiet experiment: show a feeling, watch the adults' faces, learn what's welcome.\n\nThe unwelcome parts don't vanish. Research on suppression and on secrets suggests carrying them costs most when we're alone with them.\n\nWhich part would you like back?\n\nEvidence: Gross & John 2003; Slepian, Chun & Mason 2017; Tangney & Dearing 2002. Frameworks: Jung (persona, shadow), Winnicott (true and false self), interpretive, not tested therapies.",
+ "notes": [
+  "In ten studies on secrets, people spent much more time thinking about what they were hiding when they were alone than actually hiding it from someone. And the thinking, not the hiding, went with lower wellbeing. Hiding costs most at 3 a.m.",
+  "Winnicott described a 'false self' a child builds to fit what the people around them need, protecting a true self that doesn't feel safe to show. He didn't see it as a failure. It's a good adaptation. It only becomes a problem when it's all there is.",
+  "Finish this sentence five times tonight: 'As a child, it wasn't safe to be…' Then ask which of those you'd like back. This week's essay is about the parts that went underground."
+ ],
+ "visuals": {
+  "look": "V3 closed door with light under it; V2 empty pub table; no faces",
+  "type": "Standard; Unwelcome List slide with the sentence stem in Playfair italic",
+  "music": "night and low (ambient.py); hushed",
+  "pinterest": "1000×1500, Bone background, Slate type, Ember on 'hide'"
+ }
+}

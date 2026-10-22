@@ -1,0 +1,2354 @@
+{
+ "batch": "substack-essays",
+ "written": "2026-10-21",
+ "schema": "reels-engine formats-AF (engine.py 1.2)",
+ "scripts": [
+  {
+   "id": "S01A",
+   "slug": "same-sentence-twice",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Journal",
+   "hook": "What have you written about three times this month?",
+   "hook_b": "Be honest. You know which one.",
+   "cards": [
+    [
+     "What have you written about three times this month?",
+     3.0,
+     "question"
+    ],
+    [
+     "Same grievance. New wording.",
+     1.8,
+     "body"
+    ],
+    [
+     "That's not reflection. It's rehearsal.",
+     2.2,
+     "body"
+    ],
+    [
+     "Write the next page in the second person.",
+     2.4,
+     "body"
+    ],
+    [
+     "\"You were passed over. You wanted it.\"",
+     2.2,
+     "body"
+    ],
+    [
+     "Study: Kross & Ayduk, self-distancing review (2017)",
+     2.2,
+     "cite"
+    ],
+    [
+     "Save this for tonight's page.",
+     1.8,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of a notebook under a lamp (tag notebook-lamp), else V1 Slate + grain.",
+   "footage": "notebook-lamp",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 301
+   },
+   "source": {
+    "type": "data",
+    "author": "Kross & Ayduk",
+    "work": "Self-distancing (Adv. Exp. Soc. Psychol. 55)",
+    "section": "review",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 review (N07) + Moodius practice",
+   "caption": "A notebook can hold reflection or rumination. The difference often isn't what you write about. It's the angle.\n\nWhen the same sentence turns up twice, switch from \"I\" to \"you\" and write the next paragraph like a calm friend describing it.\n\nWhat do you keep writing about?\n\nEvidence: review of self-distancing research (Kross & Ayduk, 2017). Practice: Moodius. Full essay \"Writing to No One\" on the Substack, link in bio.",
+   "first_comment": "One word for the thing you keep writing about. No details needed.",
+   "hashtags": [
+    "#journaling",
+    "#stoicism",
+    "#selfreflection",
+    "#psychology",
+    "#marcusaurelius"
+   ],
+   "cta": "save",
+   "length_s": 15.6
+  },
+  {
+   "id": "S01B",
+   "slug": "evening-review",
+   "format": "B",
+   "series": "Quiet Truths",
+   "pillar": "Journal",
+   "hook": "Seneca reviewed his whole day, every night.",
+   "hook_b": "Two thousand years old, and still the best ten minutes of the day.",
+   "cards": [
+    [
+     "Seneca reviewed his whole day, every night.",
+     2.4,
+     "hook"
+    ],
+    [
+     "Not to put himself on trial.",
+     1.8,
+     "body"
+    ],
+    [
+     "To see it clearly, then let it go until morning.",
+     2.7,
+     "body"
+    ],
+    [
+     "Idea: Seneca, On Anger 3.36 · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Tonight: what went well, what didn't, one thing for tomorrow.",
+     3.0,
+     "body"
+    ],
+    [
+     "Quiet Truths · Moodius",
+     1.2,
+     "body"
+    ],
+    [
+     "Full essay on the Substack. Link in bio.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate (series control look).",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 302
+   },
+   "source": {
+    "type": "idea",
+    "author": "Seneca",
+    "work": "On Anger",
+    "section": "3.36",
+    "translation": "paraphrase"
+   },
+   "evidence": "Tier 2 primary text (N30), paraphrased",
+   "caption": "Seneca describes reviewing his entire day each night once the lamp was out, hiding nothing from himself, and sleeping better for it. Not a trial. A review.\n\nWhat's one thing from today you'd do differently?\n\nSource: Seneca, On Anger 3.36 (paraphrased). Full essay \"Writing to No One\" on the Substack, link in bio.",
+   "first_comment": "One thing from today you'd do differently. Go.",
+   "hashtags": [
+    "#journaling",
+    "#stoicism",
+    "#selfreflection",
+    "#psychology",
+    "#marcusaurelius"
+   ],
+   "cta": "save",
+   "length_s": 15.3
+  },
+  {
+   "id": "S02A",
+   "slug": "took-up-your-evening",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Truths",
+   "hook": "Whose behaviour took up more of your week than it deserved?",
+   "hook_b": "Who got under your skin this week?",
+   "cards": [
+    [
+     "Whose behaviour took up more of your week than it deserved?",
+     3.0,
+     "question"
+    ],
+    [
+     "Some irritation is good judgement.",
+     1.8,
+     "body"
+    ],
+    [
+     "Some of it is a mirror.",
+     1.8,
+     "body"
+    ],
+    [
+     "Ask quietly: is there a version of this in me?",
+     2.7,
+     "body"
+    ],
+    [
+     "If there is, call it a mistake. Not a verdict.",
+     2.7,
+     "body"
+    ],
+    [
+     "Study: Schimel, Greenberg & Martens, PSPB (2003)",
+     2.2,
+     "cite"
+    ],
+    [
+     "Send this to someone who'll admit theirs.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V3 still of a reflection in a dark window (tag window-reflection), else V1 + grain.",
+   "footage": "window-reflection",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 303
+   },
+   "source": {
+    "type": "data",
+    "author": "Schimel, Greenberg & Martens",
+    "work": "Projection of a feared trait (PSPB 29(8))",
+    "section": "Studies 1-2",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 lab studies (N01) + Moodius practice",
+   "caption": "In two lab studies, people told they had a feared trait saw more of it in a stranger, and projecting it seemed to help them deny it in themselves.\n\nThat doesn't make every irritation a mirror. It makes it worth a question.\n\nWhat trait in other people gets to you most?\n\nEvidence: Schimel, Greenberg & Martens (2003). Jung's \"shadow\" is an interpretive idea, not a tested therapy. Full essay on the Substack, link in bio.",
+   "first_comment": "One word: the trait in other people you can't stand.",
+   "hashtags": [
+    "#shadowwork",
+    "#carljung",
+    "#selfawareness",
+    "#psychology",
+    "#stoicism"
+   ],
+   "cta": "send",
+   "length_s": 16.2
+  },
+  {
+   "id": "S02F",
+   "slug": "turn-to-thyself",
+   "format": "F",
+   "series": "A Thought Worth Keeping",
+   "pillar": "Truths",
+   "hook": "Marcus Aurelius, on the people who annoy you:",
+   "hook_b": "Marcus Aurelius, on the people who annoy you.",
+   "cards": [
+    [
+     "Marcus Aurelius, on the people who annoy you:",
+     2.4,
+     "hook"
+    ],
+    [
+     "\"When thou art offended at any man's fault, forthwith turn to thyself.\"",
+     3.1,
+     "quote"
+    ],
+    [
+     "Meditations 10.30 · tr. George Long",
+     1.8,
+     "cite"
+    ],
+    [
+     "Not to excuse them.",
+     1.4,
+     "body"
+    ],
+    [
+     "To find where you do the same thing.",
+     2.2,
+     "body"
+    ],
+    [
+     "A Thought Worth Keeping · Moodius",
+     1.6,
+     "body"
+    ],
+    [
+     "Full essay on the Substack. Link in bio.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate.",
+   "footage": "desk",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 304
+   },
+   "source": {
+    "type": "quote",
+    "author": "Marcus Aurelius",
+    "work": "Meditations",
+    "section": "10.30",
+    "translation": "George Long"
+   },
+   "evidence": "Tier 2 primary text (Meditations 10.30), opening words verified 21 Oct 2026",
+   "caption": "Eighteen centuries before Jung wrote about projection, Marcus Aurelius gave himself an instruction: when someone's fault offends you, turn to yourself and ask where you go wrong in a similar way.\n\nWho's been your teacher this week, without meaning to be?\n\nSource: Meditations 10.30, tr. George Long. Full essay on the Substack, link in bio.",
+   "first_comment": "Who's been an accidental teacher for you lately?",
+   "hashtags": [
+    "#shadowwork",
+    "#carljung",
+    "#selfawareness",
+    "#psychology",
+    "#stoicism"
+   ],
+   "cta": "save",
+   "length_s": 14.7
+  },
+  {
+   "id": "S03E",
+   "slug": "who-would-know",
+   "format": "E",
+   "series": "Masculinity, Reconsidered",
+   "pillar": "Identity",
+   "hook": "If you weren't okay, who would know?",
+   "hook_b": "Not who would care. Who would actually know.",
+   "cards": [
+    [
+     "If you weren't okay, who would know?",
+     2.6,
+     "hook"
+    ],
+    [
+     "Not who would care.",
+     1.4,
+     "body"
+    ],
+    [
+     "Who would notice before you said a word.",
+     2.2,
+     "body"
+    ],
+    [
+     "For a lot of men, it's a short list.",
+     2.4,
+     "body"
+    ],
+    [
+     "In 1990, 3% of US men had no close friend. In 2021: 15%.",
+     3.4,
+     "body"
+    ],
+    [
+     "Survey Center on American Life (2021)",
+     1.8,
+     "cite"
+    ],
+    [
+     "Being fine alone is a skill. Being reachable is another.",
+     2.8,
+     "body"
+    ],
+    [
+     "Send this to one name on yours.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip: phone face-down on a table by a lamp (tag phone-table), else V1 + grain.",
+   "footage": "phone-table",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 305
+   },
+   "source": {
+    "type": "data",
+    "author": "Daniel Cox",
+    "work": "The State of American Friendship (Survey Center on American Life)",
+    "section": "2021 survey",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 survey (E18), verified 21 Oct 2026 + Moodius reflection",
+   "caption": "Most men aren't lonely in the way headlines describe. They're fine. They have colleagues and a group chat.\n\nThe better question is who would know if you weren't.\n\nWho's on your list?\n\nEvidence: Survey Center on American Life (Cox, 2021). Reflection: Moodius. Full essay \"The Loneliness of Being Fine\" on the Substack, link in bio.",
+   "first_comment": "No names needed: how many people are on your list?",
+   "hashtags": [
+    "#mensmentalhealth",
+    "#malefriendship",
+    "#loneliness",
+    "#emotionalintelligence",
+    "#stoicism"
+   ],
+   "cta": "send",
+   "length_s": 18.6
+  },
+  {
+   "id": "S03B",
+   "slug": "two-hundred-hours",
+   "format": "B",
+   "series": "Quiet Truths",
+   "pillar": "Identity",
+   "hook": "Close friendship takes about 200 hours.",
+   "hook_b": "The maths of friendship nobody told you.",
+   "cards": [
+    [
+     "Close friendship takes about 200 hours.",
+     2.4,
+     "hook"
+    ],
+    [
+     "That's an evening a week, for a year.",
+     2.2,
+     "body"
+    ],
+    [
+     "School scheduled it for you. Adult life doesn't.",
+     2.4,
+     "body"
+    ],
+    [
+     "So put it in the calendar. Same night, every other week.",
+     2.9,
+     "body"
+    ],
+    [
+     "Study: Hall, J. Soc. Pers. Relationships (2019)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Quiet Truths · Moodius",
+     1.2,
+     "body"
+    ],
+    [
+     "Save this. Then text them.",
+     1.8,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate (series control look).",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 306
+   },
+   "source": {
+    "type": "data",
+    "author": "Jeffrey Hall",
+    "work": "How many hours does it take to make a friend? (JSPR 36(4))",
+    "section": "Studies 1-2",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 study (E34), figures verified 21 Oct 2026",
+   "caption": "Jeffrey Hall's research estimated roughly 50 hours to go from acquaintance to casual friend, 90 to friend, and more than 200 to close friend.\n\nNothing in adult life schedules those hours for you. That's the problem, and the fix.\n\nWho would you give the next 200 to?\n\nEvidence: Hall (2019). Aristotle said the same with salt (Nicomachean Ethics VIII.3). Full essay on the Substack, link in bio.",
+   "first_comment": "Who's one person you'd want to spend the 200 hours with?",
+   "hashtags": [
+    "#mensmentalhealth",
+    "#malefriendship",
+    "#loneliness",
+    "#emotionalintelligence",
+    "#stoicism"
+   ],
+   "cta": "save",
+   "length_s": 14.9
+  },
+  {
+   "id": "S04C",
+   "slug": "money-two-readings",
+   "format": "C",
+   "series": "The Philosophical Contradiction",
+   "pillar": "Discipline",
+   "hook": "Does money make you happier?",
+   "hook_b": "Both answers are in the data.",
+   "cards": [
+    [
+     "Does money make you happier?",
+     2.2,
+     "question"
+    ],
+    [
+     "YES\nFor most people, a little more with every doubling.",
+     3.0,
+     "labelled"
+    ],
+    [
+     "AND NO\nYou adapt to every raise you get.",
+     2.6,
+     "labelled"
+    ],
+    [
+     "Both are in the data.",
+     1.6,
+     "body"
+    ],
+    [
+     "The part you control is what the next one is for.",
+     2.9,
+     "body"
+    ],
+    [
+     "Study: Killingsworth, Kahneman & Mellers, PNAS (2023)",
+     2.2,
+     "cite"
+    ],
+    [
+     "What would your next raise be for?",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V3 brutalist stairwell still (tag stairs), else V1 + grain.",
+   "footage": "stairs",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 307
+   },
+   "source": {
+    "type": "data",
+    "author": "Killingsworth, Kahneman & Mellers",
+    "work": "Income and emotional well-being: a conflict resolved (PNAS 120(10))",
+    "section": "main result",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 adversarial collaboration (N04), verified 21 Oct 2026; adaptation (E33)",
+   "caption": "\"Money can't buy happiness\" and \"only rich people say that\" are both wrong in useful ways.\n\nA 2023 paper by former rivals found happiness rises with each doubling of income for most people. And decades of research show we adapt to what we get.\n\nWhat's your next goal actually for?\n\nEvidence: Killingsworth, Kahneman & Mellers (2023); Brickman et al. (1978). Full essay on the Substack, link in bio.",
+   "first_comment": "Finish the sentence: \"Enough, for me, is…\"",
+   "hashtags": [
+    "#psychology",
+    "#stoicism",
+    "#seneca",
+    "#success",
+    "#mindset"
+   ],
+   "cta": "comment",
+   "length_s": 16.5
+  },
+  {
+   "id": "S04F",
+   "slug": "craves-more",
+   "format": "F",
+   "series": "A Thought Worth Keeping",
+   "pillar": "Discipline",
+   "hook": "One of the richest men in Rome, on being poor:",
+   "hook_b": "One of Rome's richest men, on being poor.",
+   "cards": [
+    [
+     "One of the richest men in Rome, on being poor:",
+     2.7,
+     "hook"
+    ],
+    [
+     "\"It is not the man who has too little, but the man who craves more, that is poor.\"",
+     4.4,
+     "quote"
+    ],
+    [
+     "Letters 2.6 · tr. Richard M. Gummere",
+     1.8,
+     "cite"
+    ],
+    [
+     "Name your enough. In numbers.",
+     1.6,
+     "body"
+    ],
+    [
+     "Or every raise will move it.",
+     1.8,
+     "body"
+    ],
+    [
+     "A Thought Worth Keeping · Moodius",
+     1.6,
+     "body"
+    ],
+    [
+     "Full essay on the Substack. Link in bio.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate.",
+   "footage": "desk",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 308
+   },
+   "source": {
+    "type": "quote",
+    "author": "Seneca",
+    "work": "Moral Letters to Lucilius",
+    "section": "2.6",
+    "translation": "Richard M. Gummere"
+   },
+   "evidence": "Tier 2 primary text (N28), Gummere wording verified 21 Oct 2026",
+   "caption": "Seneca was one of the wealthiest men in Rome, which makes this line from his second letter harder to dismiss, not easier.\n\nPoverty is partly the gap between what you have and what you want. Raise the second faster than the first and a rich person can feel poor forever.\n\nHave you named your enough?\n\nSource: Seneca, Letters 2.6, tr. Gummere. Full essay on the Substack, link in bio.",
+   "first_comment": "Have you ever put a number on \"enough\"? Yes or no.",
+   "hashtags": [
+    "#psychology",
+    "#stoicism",
+    "#seneca",
+    "#success",
+    "#mindset"
+   ],
+   "cta": "save",
+   "length_s": 16.1
+  },
+  {
+   "id": "S05A",
+   "slug": "understand-and-repeat",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Discipline",
+   "hook": "What do you understand about yourself but keep doing anyway?",
+   "hook_b": "You already know why you do it. That was never the problem.",
+   "cards": [
+    [
+     "What do you understand about yourself but keep doing anyway?",
+     3.0,
+     "question"
+    ],
+    [
+     "You can explain it in three sentences.",
+     2.0,
+     "body"
+    ],
+    [
+     "And on Thursday night, you do it again.",
+     2.2,
+     "body"
+    ],
+    [
+     "Across 47 experiments, behaviour moved about half as far as intention.",
+     3.0,
+     "body"
+    ],
+    [
+     "Meta-analysis: Webb & Sheeran, Psychological Bulletin (2006)",
+     2.2,
+     "cite"
+    ],
+    [
+     "Insight isn't the bridge. A plan at the trigger is.",
+     2.7,
+     "body"
+    ],
+    [
+     "Save this for the next Thursday night.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of a kitchen at night, light on, nobody in it (tag kitchen-night), else V1 Slate + grain.",
+   "footage": "kitchen-night",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 309
+   },
+   "source": {
+    "type": "data",
+    "author": "Webb & Sheeran",
+    "work": "Changing intentions and behaviour (Psychological Bulletin 132(2))",
+    "section": "meta-analysis",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 meta-analysis (N31) + Moodius practice",
+   "caption": "Understanding a pattern changes what you intend. It changes much less of what you do.\n\nIn a meta-analysis of 47 experiments, interventions that shifted people's intentions moved their actual behaviour about half as far. Insight is real. It just doesn't reach the moment on its own.\n\nWhat's the one you keep repeating?\n\nEvidence: Webb & Sheeran (2006). Practice: Moodius. Full essay on the Substack, link in bio.",
+   "first_comment": "One word for the mistake you understand best and repeat anyway.",
+   "hashtags": [
+    "#psychology",
+    "#habits",
+    "#selfawareness",
+    "#stoicism",
+    "#philosophy"
+   ],
+   "cta": "save",
+   "length_s": 17.1
+  },
+  {
+   "id": "S05C",
+   "slug": "knowing-and-doing",
+   "format": "C",
+   "series": "The Philosophical Contradiction",
+   "pillar": "Discipline",
+   "hook": "Do you repeat it because you don't really know better?",
+   "hook_b": "Socrates and Aristotle disagreed about why you keep doing it.",
+   "cards": [
+    [
+     "Do you repeat it because you don't really know better?",
+     2.8,
+     "question"
+    ],
+    [
+     "ONE READING\nSocrates: nobody does wrong knowingly. You just don't truly know yet.",
+     3.4,
+     "labelled"
+    ],
+    [
+     "THE OTHER\nAristotle: you know. The knowledge just isn't awake when you act.",
+     3.4,
+     "labelled"
+    ],
+    [
+     "Same mistake. Different fix.",
+     1.6,
+     "body"
+    ],
+    [
+     "If it's ignorance, learn. If it's habit, plan for the moment.",
+     2.9,
+     "body"
+    ],
+    [
+     "Idea: Aristotle, Nicomachean Ethics VII · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Which one is yours? Tell me below.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V1 + grain, or V3 stairwell still (tag stairs).",
+   "footage": "stairs",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 310
+   },
+   "source": {
+    "type": "idea",
+    "author": "Aristotle",
+    "work": "Nicomachean Ethics",
+    "section": "VII",
+    "translation": "paraphrase"
+   },
+   "evidence": "Tier 2 primary text (N35), paraphrased; Socrates via Aristotle's report",
+   "caption": "Socrates argued that nobody knowingly does wrong, so repeating a mistake must mean you don't truly understand it. Aristotle thought that was too neat: you can know something and still not have it active in the moment you act.\n\nIf Socrates is right, the fix is more understanding. If Aristotle is right, it's a plan for the moment.\n\nWhich sounds like you?\n\nSource: Aristotle, Nicomachean Ethics VII (paraphrased). Full essay on the Substack, link in bio.",
+   "first_comment": "Socrates or Aristotle? One word.",
+   "hashtags": [
+    "#psychology",
+    "#habits",
+    "#selfawareness",
+    "#stoicism",
+    "#philosophy"
+   ],
+   "cta": "comment",
+   "length_s": 18.1
+  },
+  {
+   "id": "S06E",
+   "slug": "two-scripts-for-anger",
+   "format": "E",
+   "series": "Masculinity, Reconsidered",
+   "pillar": "Truths",
+   "hook": "You were given two options for anger. Both fail.",
+   "hook_b": "Let it out or keep it in. The research says neither.",
+   "cards": [
+    [
+     "You were given two options for anger. Both fail.",
+     2.6,
+     "hook"
+    ],
+    [
+     "Let it out. Hit something.",
+     1.8,
+     "body"
+    ],
+    [
+     "Or keep it in. Carry it home.",
+     2.0,
+     "body"
+    ],
+    [
+     "600 students: venting while thinking about the insult made them angrier and more aggressive.",
+     3.6,
+     "body"
+    ],
+    [
+     "Experiment: Bushman, PSPB (2002)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Anger isn't steam. It's a guard dog. Ask what it's guarding.",
+     2.9,
+     "body"
+    ],
+    [
+     "Send this to someone told to calm down.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of a punching bag hanging still in an empty gym (tag bag-still), else V1 + grain.",
+   "footage": "bag-still",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 311
+   },
+   "source": {
+    "type": "data",
+    "author": "Bushman",
+    "work": "Venting anger (PSPB 28(6))",
+    "section": "experiment",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 experiment (N38) + Moodius reframe",
+   "caption": "Men tend to get two scripts for anger: let it out, or keep it in.\n\nIn a 2002 experiment with 600 students, those who hit a punching bag while thinking about the person who'd insulted them ended up angrier and more aggressive than people who sat quietly. And habitual suppression has its own costs.\n\nThe third option is slower: name it, then ask what it's protecting.\n\nWhich script were you given?\n\nEvidence: Bushman (2002); Gross & John (2003). Full essay on the Substack, link in bio.",
+   "first_comment": "What did your anger guard last time? A boundary, a value, your standing, or something softer?",
+   "hashtags": [
+    "#anger",
+    "#emotionalintelligence",
+    "#mensmentalhealth",
+    "#stoicism",
+    "#psychology"
+   ],
+   "cta": "send",
+   "length_s": 17.1
+  },
+  {
+   "id": "S06C",
+   "slug": "seneca-vs-aristotle-anger",
+   "format": "C",
+   "series": "The Philosophical Contradiction",
+   "pillar": "Truths",
+   "hook": "Is anger ever the right response?",
+   "hook_b": "Two ancient philosophers. Opposite answers about your anger.",
+   "cards": [
+    [
+     "Is anger ever the right response?",
+     2.4,
+     "question"
+    ],
+    [
+     "SENECA\nNever. Reason can do anything anger does, without the damage.",
+     3.4,
+     "labelled"
+    ],
+    [
+     "ARISTOTLE\nYes. At the right person, to the right degree, for the right reason.",
+     3.6,
+     "labelled"
+    ],
+    [
+     "They agree on one thing.",
+     1.6,
+     "body"
+    ],
+    [
+     "Most anger is the wrong size.",
+     1.8,
+     "body"
+    ],
+    [
+     "Idea: Seneca, On Anger I · Aristotle, Ethics · Moodius words",
+     2.2,
+     "cite"
+    ],
+    [
+     "Who's right? Comment SENECA or ARISTOTLE.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate (quotes and labels read best clean).",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 312
+   },
+   "source": {
+    "type": "idea",
+    "author": "Seneca; Aristotle",
+    "work": "On Anger; Nicomachean Ethics",
+    "section": "I; II",
+    "translation": "paraphrase"
+   },
+   "evidence": "Tier 2 primary texts (N39, N40), paraphrased",
+   "caption": "Seneca wrote a whole book against anger: whatever good it seems to do, reason can do better. Aristotle disagreed: being angry at the right person, to the right degree, at the right time and for the right reason is a virtue, and never getting angry at real wrongs is a failing.\n\nYou don't have to pick a side to notice where they agree. Most anger, in the moment, is the wrong size.\n\nWhich of them are you closer to?\n\nSources: Seneca, On Anger I; Aristotle, Nicomachean Ethics (both paraphrased). Full essay on the Substack, link in bio.",
+   "first_comment": "SENECA or ARISTOTLE. And why.",
+   "hashtags": [
+    "#anger",
+    "#emotionalintelligence",
+    "#mensmentalhealth",
+    "#stoicism",
+    "#psychology"
+   ],
+   "cta": "comment",
+   "length_s": 17.2
+  },
+  {
+   "id": "S07D",
+   "slug": "always-picks-up",
+   "format": "D",
+   "series": "The Human Condition",
+   "pillar": "Identity",
+   "hook": "Everyone calls you when something breaks.",
+   "hook_b": "The friend who always picks up rarely gets asked how they are.",
+   "cards": [
+    [
+     "Everyone calls you when something breaks.",
+     2.4,
+     "hook"
+    ],
+    [
+     "You know where the jump leads are. You pick up at 2 a.m.",
+     3.6,
+     "body"
+    ],
+    [
+     "Then someone asks how you are.",
+     2.0,
+     "body"
+    ],
+    [
+     "\"Fine,\" you say. And ask about them.",
+     2.2,
+     "body"
+    ],
+    [
+     "Psychologists have a name for caring for others to the exclusion of yourself.",
+     3.4,
+     "body"
+    ],
+    [
+     "It's linked to self-neglect and finding it hard to accept help.",
+     3.1,
+     "body"
+    ],
+    [
+     "Theory: Helgeson & Fritz, PSPR (1998)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Being needed isn't the same as being let in.",
+     2.4,
+     "body"
+    ],
+    [
+     "Send it to the friend who always picks up.",
+     2.4,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of a phone lighting up on a dark bedside table (tag phone-table), else V1 + grain.",
+   "footage": "phone-table",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 313
+   },
+   "source": {
+    "type": "data",
+    "author": "Helgeson & Fritz",
+    "work": "Unmitigated communion (PSPR 2(3))",
+    "section": "theory",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 theory paper (N42) and studies (N43); no advice in the essay, per format D",
+   "caption": "Every group has one. The person who drives people to the airport, picks up at 2 a.m., and says \"fine\" when asked.\n\nHelgeson and Fritz called one version of this unmitigated communion: caring for others to the exclusion of yourself. In their research it was linked to self-neglect, overinvolvement and difficulty accepting help. Ordinary caring wasn't.\n\nGiving isn't the problem. Never receiving is.\n\nWho looks after the one who looks after everyone?\n\nEvidence: Helgeson & Fritz (1998); Fritz & Helgeson (1998). Full essay on the Substack, link in bio.",
+   "first_comment": "Tag nobody. Just tell me: when did someone last look after you?",
+   "hashtags": [
+    "#relationships",
+    "#peoplepleaser",
+    "#selfworth",
+    "#emotionalintelligence",
+    "#psychology"
+   ],
+   "cta": "send",
+   "length_s": 23.5,
+   "max_s": 30
+  },
+  {
+   "id": "S07A",
+   "slug": "let-someone-help",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Identity",
+   "hook": "When did you last let someone help you?",
+   "hook_b": "Not a favour you paid back the same day.",
+   "cards": [
+    [
+     "When did you last let someone help you?",
+     2.6,
+     "question"
+    ],
+    [
+     "Not a favour you repaid the same day.",
+     2.2,
+     "body"
+    ],
+    [
+     "In older couples, giving help was linked to living longer.",
+     2.8,
+     "body"
+    ],
+    [
+     "Prospective study: Brown et al., Psychological Science (2003)",
+     2.2,
+     "cite"
+    ],
+    [
+     "Giving is good. But if you never receive, people stop offering.",
+     3.0,
+     "body"
+    ],
+    [
+     "This week: accept one offer you'd normally refuse.",
+     2.4,
+     "body"
+    ],
+    [
+     "Save this. Try it tomorrow.",
+     1.8,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate + grain.",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 314
+   },
+   "source": {
+    "type": "data",
+    "author": "Brown, Nesse, Vinokur & Smith",
+    "work": "Giving support and mortality (Psychological Science 14(4))",
+    "section": "prospective study",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 prospective study (N41, observational) + Moodius practice",
+   "caption": "Giving is one of the best things a person can do. In a five-year study of older married couples, those who gave practical or emotional support were less likely to die during the study. It's observational, so it can't prove cause.\n\nBut there's a version of giving that keeps love out: always helping, never accepting. Eventually people stop offering.\n\nThis week, accept one offer you'd usually turn down. Which one will it be?\n\nEvidence: Brown et al. (2003). Practice: Moodius. Full essay on the Substack, link in bio.",
+   "first_comment": "What's the smallest offer of help you turned down this month?",
+   "hashtags": [
+    "#relationships",
+    "#peoplepleaser",
+    "#selfworth",
+    "#emotionalintelligence",
+    "#psychology"
+   ],
+   "cta": "save",
+   "length_s": 17.0
+  },
+  {
+   "id": "S08A",
+   "slug": "what-your-house-did",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Truths",
+   "hook": "What did your house do with anger?",
+   "hook_b": "You learned it before you had words for it.",
+   "cards": [
+    [
+     "What did your house do with anger?",
+     2.4,
+     "question"
+    ],
+    [
+     "Shouting? Silence? Slammed doors? Nothing at all?",
+     2.4,
+     "body"
+    ],
+    [
+     "Now: what do you do with yours?",
+     2.0,
+     "body"
+    ],
+    [
+     "Most of what we inherit feels like personality.",
+     2.4,
+     "body"
+    ],
+    [
+     "It's a default. Defaults can be changed.",
+     2.2,
+     "body"
+    ],
+    [
+     "Idea: Bowen, family systems theory · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Save this. Do it with a sibling.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of an empty kitchen table with two chairs (tag kitchen-table), else V1 + grain.",
+   "footage": "kitchen-table",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 315
+   },
+   "source": {
+    "type": "idea",
+    "author": "Murray Bowen",
+    "work": "Family systems theory",
+    "section": "framework",
+    "translation": "paraphrase"
+   },
+   "evidence": "Interpretive framework (N51, Bowen) + Moodius practice",
+   "caption": "Every family has a way of handling anger, money, affection, conflict and failure. You learned yours before you could name it, which is why it feels like who you are.\n\nTry this: write what your house did with each, then what you do now. Mark each one keep, return or not sure.\n\nWhich one would you return?\n\nPractice: Moodius. Full essay \"The Things We Inherit Without Realising\" on the Substack, link in bio.",
+   "first_comment": "Anger, money, affection, conflict or failure: which one did your family handle worst?",
+   "hashtags": [
+    "#familypatterns",
+    "#shadowwork",
+    "#selfawareness",
+    "#psychology",
+    "#healing"
+   ],
+   "cta": "save",
+   "length_s": 15.4
+  },
+  {
+   "id": "S08D",
+   "slug": "not-a-sentence",
+   "format": "D",
+   "series": "The Human Condition",
+   "pillar": "Truths",
+   "hook": "You catch your father's sigh coming out of your own mouth.",
+   "hook_b": "The research on family patterns is darker and more hopeful than you'd think.",
+   "cards": [
+    [
+     "You catch your father's sigh coming out of your own mouth.",
+     2.9,
+     "hook"
+    ],
+    [
+     "Same timing. Same weight.",
+     1.6,
+     "body"
+    ],
+    [
+     "Researchers have measured how strongly patterns pass down.",
+     2.6,
+     "body"
+    ],
+    [
+     "Even in the hardest cases, about two in three people didn't repeat them.",
+     3.3,
+     "body"
+    ],
+    [
+     "Review: Kaufman & Zigler, Am. J. Orthopsychiatry (1987)",
+     2.2,
+     "cite"
+    ],
+    [
+     "What helped: someone in their corner, and an honest account of what happened.",
+     3.4,
+     "body"
+    ],
+    [
+     "Inherited isn't the same as sentenced.",
+     2.0,
+     "body"
+    ],
+    [
+     "Send it to someone breaking a pattern.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of an old family photo album closed on a table, no faces (tag album-closed), else V1 + grain.",
+   "footage": "album-closed",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "warm",
+    "seed": 316
+   },
+   "source": {
+    "type": "data",
+    "author": "Kaufman & Zigler",
+    "work": "Do abused children become abusive parents? (Am. J. Orthopsychiatry 57(2))",
+    "section": "review",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 review (N46) + AIFS review of protective factors (N50); format D, no advice",
+   "caption": "In the most studied and hardest case, whether people who were maltreated as children go on to maltreat their own, a 1987 review estimated about one in three did. That's a real risk. It also means most didn't.\n\nThe people who broke the pattern tended to have someone supportive, a partner or an adult in childhood, and an honest, coherent account of what had happened to them.\n\nWhat pattern are you breaking?\n\nEvidence: Kaufman & Zigler (1987); Australian Institute of Family Studies review. Full essay on the Substack, link in bio.",
+   "first_comment": "You don't have to share it. Just type 'breaking it' if you're working on one.",
+   "hashtags": [
+    "#familypatterns",
+    "#shadowwork",
+    "#selfawareness",
+    "#psychology",
+    "#healing"
+   ],
+   "cta": "send",
+   "length_s": 20.0,
+   "max_s": 30
+  },
+  {
+   "id": "S09D",
+   "slug": "the-good-day",
+   "format": "D",
+   "series": "The Human Condition",
+   "pillar": "Discipline",
+   "hook": "The meeting went well. The flat looks right.",
+   "hook_b": "Everything went right today. So why does it feel like this?",
+   "cards": [
+    [
+     "The meeting went well. The flat looks right.",
+     2.4,
+     "hook"
+    ],
+    [
+     "The photos look like the life you aimed for.",
+     2.4,
+     "body"
+    ],
+    [
+     "Then the evening goes quiet, and something doesn't add up.",
+     2.8,
+     "body"
+    ],
+    [
+     "Graduates who reached wealth and image goals weren't happier a year later.",
+     3.2,
+     "body"
+    ],
+    [
+     "Study: Niemiec, Ryan & Deci, J. Res. Personality (2009)",
+     2.2,
+     "cite"
+    ],
+    [
+     "Those who grew closer to people and grew as people were.",
+     2.9,
+     "body"
+    ],
+    [
+     "The emptiness isn't ingratitude. It's information.",
+     2.4,
+     "body"
+    ],
+    [
+     "Send it to someone whose life looks great.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V3 still of a tidy flat at night, one lamp on, nobody in it (tag flat-night), else V1 + grain.",
+   "footage": "flat-night",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 317
+   },
+   "source": {
+    "type": "data",
+    "author": "Niemiec, Ryan & Deci",
+    "work": "The path taken (J. Research in Personality 43)",
+    "section": "study",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 study (N52, 147 graduates); format D, no advice",
+   "caption": "A life can look right from outside and feel empty from inside.\n\nIn one study, 147 graduates who made progress on wealth, fame and image goals didn't report more wellbeing a year later, and showed more signs of stress. Those who made progress on relationships and personal growth did report more.\n\nWhat would you keep if nobody could see your life from outside?\n\nEvidence: Niemiec, Ryan & Deci (2009), a small, well-educated sample. Full essay on the Substack, link in bio.",
+   "first_comment": "When did you last feel full rather than successful?",
+   "hashtags": [
+    "#success",
+    "#meaning",
+    "#psychology",
+    "#philosophy",
+    "#selfreflection"
+   ],
+   "cta": "send",
+   "length_s": 20.5,
+   "max_s": 30
+  },
+  {
+   "id": "S09C",
+   "slug": "california-mistake",
+   "format": "C",
+   "series": "The Philosophical Contradiction",
+   "pillar": "Discipline",
+   "hook": "Would you be happier living somewhere sunnier?",
+   "hook_b": "Why other people's lives always look better than they feel.",
+   "cards": [
+    [
+     "Would you be happier living somewhere sunnier?",
+     2.4,
+     "question"
+    ],
+    [
+     "ONE READING\nObviously. Better weather, better life.",
+     2.6,
+     "labelled"
+    ],
+    [
+     "THE OTHER\nYou'd notice the sun for a month. Then you'd just live there.",
+     3.6,
+     "labelled"
+    ],
+    [
+     "Students in California and the Midwest were equally satisfied with life.",
+     3.0,
+     "body"
+    ],
+    [
+     "Study: Schkade & Kahneman, Psychological Science (1998)",
+     2.2,
+     "cite"
+    ],
+    [
+     "We judge lives by what's visible. We live them by what isn't.",
+     3.1,
+     "body"
+    ],
+    [
+     "What are you judging your life by? Comment.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 + grain (Slate), or V3 window with low winter sun (tag window-sun).",
+   "footage": "window-sun",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 318
+   },
+   "source": {
+    "type": "data",
+    "author": "Schkade & Kahneman",
+    "work": "Does living in California make people happy? (Psych. Science 9(5))",
+    "section": "study",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 study (N53, 1,993 students)",
+   "caption": "Almost 2,000 students in the Midwest and Southern California rated their lives. Everyone expected Californians to be happier. Californians liked their weather a lot more, but their overall life satisfaction was the same.\n\nThe researchers called it a focusing illusion: we give the visible, distinctive parts of a life far more weight than they have in the living of it. We do it to our own lives too.\n\nWhat are you judging yours by?\n\nEvidence: Schkade & Kahneman (1998). Full essay on the Substack, link in bio.",
+   "first_comment": "One thing about your life that looks better from outside than it feels.",
+   "hashtags": [
+    "#success",
+    "#meaning",
+    "#psychology",
+    "#philosophy",
+    "#selfreflection"
+   ],
+   "cta": "comment",
+   "length_s": 19.1
+  },
+  {
+   "id": "S10C",
+   "slug": "two-men-at-six",
+   "format": "C",
+   "series": "The Philosophical Contradiction",
+   "pillar": "Discipline",
+   "hook": "Two men at the gym at 6 a.m.",
+   "hook_b": "Same gym. Same programme. Only one of them lasts.",
+   "cards": [
+    [
+     "Two men at the gym at 6 a.m.",
+     2.4,
+     "question"
+    ],
+    [
+     "ONE\nHe wants to be strong for the next forty years.",
+     2.9,
+     "labelled"
+    ],
+    [
+     "THE OTHER\nHe can't stand what he sees in the mirror.",
+     2.9,
+     "labelled"
+    ],
+    [
+     "Self-critical people made less progress on their goals, not more.",
+     2.9,
+     "body"
+    ],
+    [
+     "Studies: Powers et al., PSPB (2011)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Same alarm. Different fuel.",
+     1.6,
+     "body"
+    ],
+    [
+     "Which one got up this morning?",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V3 empty gym at dawn, rack and bench, no people (tag gym-dawn), else V1 + grain.",
+   "footage": "gym-dawn",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 319
+   },
+   "source": {
+    "type": "data",
+    "author": "Powers, Koestner, Zuroff, Milyavskaya & Gorin",
+    "work": "Self-criticism and goal pursuit (PSPB 37(7))",
+    "section": "studies",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 prospective studies (N56), correlational",
+   "caption": "Two men, same programme, same alarm. One is building something. The other is serving a sentence.\n\nAcross five studies, people higher in self-criticism made less progress on their goals, including less weight loss over six months. It's correlational, but it's the opposite of what the inner critic promises.\n\nWhich one is getting up in you?\n\nEvidence: Powers et al. (2011). Full essay on the Substack, link in bio.",
+   "first_comment": "Building or serving a sentence? One word.",
+   "hashtags": [
+    "#selfcompassion",
+    "#selfimprovement",
+    "#perfectionism",
+    "#psychology",
+    "#stoicism"
+   ],
+   "cta": "comment",
+   "length_s": 16.7
+  },
+  {
+   "id": "S10A",
+   "slug": "friends-letter",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Discipline",
+   "hook": "Would you talk to a friend the way you talk to yourself?",
+   "hook_b": "You'd never talk to a friend the way you talk to yourself.",
+   "cards": [
+    [
+     "Would you talk to a friend the way you talk to yourself?",
+     3.1,
+     "question"
+    ],
+    [
+     "People nudged to be kind to themselves about a weakness…",
+     2.7,
+     "body"
+    ],
+    [
+     "…were more motivated to fix it, not less.",
+     2.2,
+     "body"
+    ],
+    [
+     "Experiment: Breines & Chen, PSPB (2012)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Tonight: write to yourself the way you'd write to them.",
+     2.7,
+     "body"
+    ],
+    [
+     "Honest about the problem. Kind about the person.",
+     2.4,
+     "body"
+    ],
+    [
+     "Save this for the next bad week.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of a pen and an open letter pad under a lamp (tag letter-lamp), else V1 + grain.",
+   "footage": "letter-lamp",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "warm",
+    "seed": 320
+   },
+   "source": {
+    "type": "data",
+    "author": "Breines & Chen",
+    "work": "Self-compassion increases self-improvement motivation (PSPB 38(9))",
+    "section": "experiments",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 experiments (E20; design via secondary summary, check before scheduling) + Moodius practice",
+   "caption": "Most people who are hard on themselves think it's what keeps them going.\n\nIn four experiments, people nudged towards self-compassion about a weakness, a mistake or a failed test were more motivated to improve, not less.\n\nTry this tonight: write to yourself about the thing you're trying to change, the way you'd write to a friend who was struggling with it. Honest about the problem, kind about the person.\n\nWhat would that letter say?\n\nEvidence: Breines & Chen (2012). Full essay on the Substack, link in bio.",
+   "first_comment": "What would a friend say to you about the thing you're working on?",
+   "hashtags": [
+    "#selfcompassion",
+    "#selfimprovement",
+    "#perfectionism",
+    "#psychology",
+    "#stoicism"
+   ],
+   "cta": "save",
+   "length_s": 17.1
+  },
+  {
+   "id": "S11A",
+   "slug": "shock-or-think",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Daily",
+   "hook": "Could you sit alone for 15 minutes with no phone?",
+   "hook_b": "Most people haven't sat alone with their thoughts since childhood.",
+   "cards": [
+    [
+     "Could you sit alone for 15 minutes with no phone?",
+     2.7,
+     "question"
+    ],
+    [
+     "In one study, many people chose an electric shock instead.",
+     2.7,
+     "body"
+    ],
+    [
+     "67% of men. 25% of women.",
+     2.0,
+     "body"
+    ],
+    [
+     "Experiment: Wilson et al., Science (2014)",
+     2.0,
+     "cite"
+    ],
+    [
+     "They'd said beforehand they'd pay to avoid it.",
+     2.4,
+     "body"
+    ],
+    [
+     "We're not broken. We're out of practice.",
+     2.0,
+     "body"
+    ],
+    [
+     "Save this. Try 15 minutes tonight.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V3 plain chair in an empty room, side light (tag chair-room), else V1 + grain.",
+   "footage": "chair-room",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 321
+   },
+   "source": {
+    "type": "data",
+    "author": "Wilson et al.",
+    "work": "Just think: The challenges of the disengaged mind (Science 345)",
+    "section": "experiment",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 experiment (N08)",
+   "caption": "In a 2014 study, people sat alone in a room for 15 minutes with nothing to do but think, and a button that gave them a mild electric shock they'd earlier said they would pay to avoid. 67% of men and 25% of women pressed it at least once.\n\nThe lesson isn't that thinking is unbearable. It's that most of us are out of practice.\n\nWhen did you last sit with your own thoughts?\n\nEvidence: Wilson et al. (2014). Full essay on the Substack, link in bio.",
+   "first_comment": "Honestly: when did you last spend 15 minutes awake with nothing to fill them?",
+   "hashtags": [
+    "#solitude",
+    "#digitalwellbeing",
+    "#mindfulness",
+    "#psychology",
+    "#philosophy"
+   ],
+   "cta": "save",
+   "length_s": 15.8
+  },
+  {
+   "id": "S11D",
+   "slug": "volume-down",
+   "format": "D",
+   "series": "The Human Condition",
+   "pillar": "Daily",
+   "hook": "The queue has a phone in it. The walk has a podcast.",
+   "hook_b": "What 15 minutes of chosen solitude actually does to your mood.",
+   "cards": [
+    [
+     "The queue has a phone in it. The walk has a podcast.",
+     3.1,
+     "hook"
+    ],
+    [
+     "The bath has a screen balanced on the edge.",
+     2.4,
+     "body"
+    ],
+    [
+     "Researchers had people sit alone for 15 minutes, no devices.",
+     2.8,
+     "body"
+    ],
+    [
+     "Strong feelings dropped. Calm rose. More so when they chose what to think about.",
+     3.6,
+     "body"
+    ],
+    [
+     "Studies: Nguyen, Ryan & Deci, PSPB (2018)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Solitude doesn't make you happier. It turns the volume down.",
+     2.7,
+     "body"
+    ],
+    [
+     "Send it to someone who never stops.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of a bench by water at dusk, locked off, no people (tag bench-water), else V1 + grain.",
+   "footage": "bench-water",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "warm",
+    "seed": 322
+   },
+   "source": {
+    "type": "data",
+    "author": "Nguyen, Ryan & Deci",
+    "work": "Solitude as an approach to affective self-regulation (PSPB 44(1))",
+    "section": "studies",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 studies (N58, details verified via BPS Research Digest); format D, no advice",
+   "caption": "Fifteen minutes alone, no phone, no task. Students who did it felt fewer strong emotions afterwards, good and bad, and more calm. The effect was bigger when they chose what to think about. In a diary study, a daily 15 minutes made days less agitated.\n\nSolitude isn't loneliness. It's a short gap in the noise.\n\nWhere's your 15 minutes going to be?\n\nEvidence: Nguyen, Ryan & Deci (2018). Full essay on the Substack, link in bio.",
+   "first_comment": "Where could you find 15 quiet minutes tomorrow?",
+   "hashtags": [
+    "#solitude",
+    "#digitalwellbeing",
+    "#mindfulness",
+    "#psychology",
+    "#philosophy"
+   ],
+   "cta": "send",
+   "length_s": 18.6,
+   "max_s": 30
+  },
+  {
+   "id": "S12E",
+   "slug": "unseen-hours",
+   "format": "E",
+   "series": "Masculinity, Reconsidered",
+   "pillar": "Identity",
+   "hook": "Nobody sees the washing-up at 11 p.m.",
+   "hook_b": "Character isn't built in the big moments.",
+   "cards": [
+    [
+     "Nobody sees the washing-up at 11 p.m.",
+     2.4,
+     "hook"
+    ],
+    [
+     "Or the extra rep. Or the half-truth in a text.",
+     2.9,
+     "body"
+    ],
+    [
+     "That's where most of a man gets built.",
+     2.2,
+     "body"
+    ],
+    [
+     "We become builders by building. Just by doing just things.",
+     2.8,
+     "body"
+    ],
+    [
+     "Idea: Aristotle, Nicomachean Ethics II · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Strength isn't the big moment. It's the unseen repetition.",
+     2.6,
+     "body"
+    ],
+    [
+     "Do one small thing tonight. Tell nobody.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of a kitchen sink at night, tap running, no hands (tag sink-night), else V1 + grain.",
+   "footage": "sink-night",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 323
+   },
+   "source": {
+    "type": "idea",
+    "author": "Aristotle",
+    "work": "Nicomachean Ethics",
+    "section": "II",
+    "translation": "paraphrase"
+   },
+   "evidence": "Tier 2 primary text (N36), paraphrased",
+   "caption": "We imagine character is decided in big moments. Aristotle thought it was laid down in small, repeated ones: we become builders by building, and just by doing just things.\n\nMost of those repetitions happen when nobody's watching. That's not time off from who you are. It's where you're being made.\n\nWhat's one small thing you could do tonight and tell nobody?\n\nSource: Aristotle, Nicomachean Ethics II (paraphrased). Full essay on the Substack, link in bio.",
+   "first_comment": "One word: the quality you're building when nobody's watching.",
+   "hashtags": [
+    "#character",
+    "#selfdiscipline",
+    "#stoicism",
+    "#psychology",
+    "#mensmentalhealth"
+   ],
+   "cta": "send",
+   "length_s": 17.1
+  },
+  {
+   "id": "S12A",
+   "slug": "you-are-the-witness",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Identity",
+   "hook": "Who's watching when nobody's watching?",
+   "hook_b": "Nobody's watching. Except you, and you're not neutral.",
+   "cards": [
+    [
+     "Who's watching when nobody's watching?",
+     2.2,
+     "question"
+    ],
+    [
+     "You are. And you take notes.",
+     1.8,
+     "body"
+    ],
+    [
+     "We often learn who we are by watching what we do.",
+     2.9,
+     "body"
+    ],
+    [
+     "Theory: Bem, self-perception (1972)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Keep a promise nobody knew about, and you hand yourself evidence.",
+     3.0,
+     "body"
+    ],
+    [
+     "Break one, and you hand yourself that too.",
+     2.2,
+     "body"
+    ],
+    [
+     "Save this. Give yourself better evidence.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate + grain.",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 324
+   },
+   "source": {
+    "type": "data",
+    "author": "Bem",
+    "work": "Self-perception theory (Adv. Exp. Soc. Psychol. 6)",
+    "section": "theory",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 3 theory (N59), limits noted in the essay",
+   "caption": "Daryl Bem proposed that we often learn what we feel and value the same way other people do: by watching what we do and working backwards.\n\nSo the promises you keep to yourself in private do two things. They build a habit, and they give you evidence about who you are.\n\nWhat evidence did you give yourself today?\n\nTheory: Bem (1972), self-perception; it applies most when our sense of ourselves is unclear. Full essay on the Substack, link in bio.",
+   "first_comment": "What's one promise to yourself you kept this week that nobody knows about?",
+   "hashtags": [
+    "#character",
+    "#selfdiscipline",
+    "#stoicism",
+    "#psychology",
+    "#mensmentalhealth"
+   ],
+   "cta": "save",
+   "length_s": 16.1
+  },
+  {
+   "id": "S13A",
+   "slug": "not-safe-to-be",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Truths",
+   "hook": "As a child, what wasn't it safe to be?",
+   "hook_b": "Every child learns which parts of them are welcome.",
+   "cards": [
+    [
+     "As a child, what wasn't it safe to be?",
+     2.4,
+     "question"
+    ],
+    [
+     "Too loud. Too sad. Too needy. Too soft.",
+     2.2,
+     "body"
+    ],
+    [
+     "Those parts didn't disappear. They went underground.",
+     2.4,
+     "body"
+    ],
+    [
+     "People think about their secrets far more alone than they hide them in company.",
+     3.6,
+     "body"
+    ],
+    [
+     "Studies: Slepian, Chun & Mason, JPSP (2017)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Hiding costs most at 3 a.m., not at dinner.",
+     2.7,
+     "body"
+    ],
+    [
+     "Save this. Write your list tonight.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V3 still of a closed door with light under it (tag door-light), else V1 + grain.",
+   "footage": "door-light",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 325
+   },
+   "source": {
+    "type": "data",
+    "author": "Slepian, Chun & Mason",
+    "work": "The experience of secrecy (JPSP 113(1))",
+    "section": "studies",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 studies (N64) + Moodius practice",
+   "caption": "Every child learns which parts of them are welcome and which bring trouble. The rest go underground.\n\nIn ten studies on secrets, people spent far more time thinking about what they hid when they were alone than actually hiding it in conversation. It was the mind-wandering, not the hiding, that went with lower wellbeing.\n\nAs a child, what wasn't it safe to be?\n\nEvidence: Slepian, Chun & Mason (2017). Full essay on the Substack, link in bio.",
+   "first_comment": "One word: what wasn't it safe to be?",
+   "hashtags": [
+    "#shadowwork",
+    "#carljung",
+    "#emotionalhealth",
+    "#selfawareness",
+    "#psychology"
+   ],
+   "cta": "save",
+   "length_s": 17.3
+  },
+  {
+   "id": "S13E",
+   "slug": "the-joke-instead",
+   "format": "E",
+   "series": "Masculinity, Reconsidered",
+   "pillar": "Truths",
+   "hook": "You learned to make a joke instead of crying.",
+   "hook_b": "The sensitive boy learns to make a joke instead.",
+   "cards": [
+    [
+     "You learned to make a joke instead of crying.",
+     2.4,
+     "hook"
+    ],
+    [
+     "It worked. It kept you safe.",
+     1.8,
+     "body"
+    ],
+    [
+     "But self-reliance norms were linked to worse mental health and less help-seeking.",
+     3.6,
+     "body"
+    ],
+    [
+     "Meta-analysis: Wong et al., J. Counseling Psychology (2017)",
+     2.2,
+     "cite"
+    ],
+    [
+     "Hiding a feeling isn't strength. Choosing when to show it is.",
+     2.9,
+     "body"
+    ],
+    [
+     "Send this to the funniest person you know.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of a dim pub table with two glasses, no people (tag pub-table), else V1 + grain.",
+   "footage": "pub-table",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 326
+   },
+   "source": {
+    "type": "data",
+    "author": "Wong, Ho, Wang & Miller",
+    "work": "Masculine norms and mental health (J. Counseling Psychology 64(1))",
+    "section": "meta-analyses",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 meta-analyses (E13)",
+   "caption": "Plenty of men learned early that some feelings were welcome and some weren't. The joke, the change of subject, the sudden helpfulness: they arrive exactly when a feeling would have.\n\nIn meta-analyses, conforming to traditional masculine norms, self-reliance especially, was linked to worse mental health and less help-seeking.\n\nStrength isn't hiding a feeling. It's being able to choose when to show it.\n\nWhat do you make a joke about instead?\n\nEvidence: Wong et al. (2017). Full essay on the Substack, link in bio.",
+   "first_comment": "No need to explain. What's your go-to joke when something actually hurts?",
+   "hashtags": [
+    "#shadowwork",
+    "#carljung",
+    "#emotionalhealth",
+    "#selfawareness",
+    "#psychology"
+   ],
+   "cta": "send",
+   "length_s": 15.1
+  },
+  {
+   "id": "S14D",
+   "slug": "never-finished",
+   "format": "D",
+   "series": "The Human Condition",
+   "pillar": "Discipline",
+   "hook": "A quiet Sunday. Nothing scheduled. Still tired.",
+   "hook_b": "The tiredness that sleep doesn't fix.",
+   "cards": [
+    [
+     "A quiet Sunday. Nothing scheduled. Still tired.",
+     2.4,
+     "hook"
+    ],
+    [
+     "Learning a language. Fixing your posture. Becoming more present.",
+     3.0,
+     "body"
+    ],
+    [
+     "Never allowed to just be someone.",
+     2.0,
+     "body"
+    ],
+    [
+     "Psychologists link the gap between who we are and who we 'should' be to distress.",
+     3.8,
+     "body"
+    ],
+    [
+     "Theory: Higgins, self-discrepancy (1987)",
+     2.0,
+     "cite"
+    ],
+    [
+     "A self always under construction never closes the gap.",
+     2.6,
+     "body"
+    ],
+    [
+     "Send it to someone who needs a day off from improving.",
+     2.9,
+     "cta"
+    ]
+   ],
+   "visual": "V3 still of a half-renovated room, dust sheets, ladder, no people (tag renovation), else V1 + grain.",
+   "footage": "renovation",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 327
+   },
+   "source": {
+    "type": "data",
+    "author": "Higgins",
+    "work": "Self-discrepancy theory (Psychological Review 94(3))",
+    "section": "theory",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 3 theory (N65), mixed evidence noted in essay; format D, no advice",
+   "caption": "There's a tiredness that comes not from doing too much but from always being in progress.\n\nSelf-discrepancy theory links the gap between who we are and who we think we should be to distress. A self that's never finished keeps that gap open forever.\n\nWhat would you stop improving if you were allowed to?\n\nTheory: Higgins (1987); later studies support the general link, less so the specifics. Full essay on the Substack, link in bio.",
+   "first_comment": "Name one thing you're done improving.",
+   "hashtags": [
+    "#burnout",
+    "#selfimprovement",
+    "#perfectionism",
+    "#psychology",
+    "#stoicism"
+   ],
+   "cta": "send",
+   "length_s": 18.7,
+   "max_s": 30
+  },
+  {
+   "id": "S14C",
+   "slug": "growth-or-verdict",
+   "format": "C",
+   "series": "The Philosophical Contradiction",
+   "pillar": "Discipline",
+   "hook": "Are you growing, or still trying to become acceptable?",
+   "hook_b": "Same books, same alarm. Different engine.",
+   "cards": [
+    [
+     "Are you growing, or still trying to become acceptable?",
+     2.6,
+     "question"
+    ],
+    [
+     "GROWTH\nA direction. You enjoy where you are while you move.",
+     3.0,
+     "labelled"
+    ],
+    [
+     "THE VERDICT\nYou're a draft. Enough is always one improvement away.",
+     3.0,
+     "labelled"
+    ],
+    [
+     "Seneca saw people forever changing plans and places. The restlessness came with them.",
+     3.6,
+     "body"
+    ],
+    [
+     "Idea: Seneca, On Tranquillity of Mind · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Which one got you up this morning?",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate + grain.",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 328
+   },
+   "source": {
+    "type": "idea",
+    "author": "Seneca",
+    "work": "On Tranquillity of Mind",
+    "section": "2",
+    "translation": "paraphrase"
+   },
+   "evidence": "Tier 2 primary text (N68), paraphrased",
+   "caption": "Growth is a direction. Becoming, in the exhausting sense, is a verdict: who you are now isn't acceptable yet.\n\nSeneca described people forever starting new plans, changing pursuits and places, and finding the restlessness came with them, because what they were escaping was themselves.\n\nWhich one is driving you?\n\nSource: Seneca, On Tranquillity of Mind (paraphrased). Full essay on the Substack, link in bio.",
+   "first_comment": "Growth or verdict? One word.",
+   "hashtags": [
+    "#burnout",
+    "#selfimprovement",
+    "#perfectionism",
+    "#psychology",
+    "#stoicism"
+   ],
+   "cta": "comment",
+   "length_s": 16.2
+  },
+  {
+   "id": "S15D",
+   "slug": "the-bridge",
+   "format": "D",
+   "series": "The Human Condition",
+   "pillar": "Identity",
+   "hook": "Men crossing a swaying canyon bridge met a woman with a questionnaire.",
+   "hook_b": "Why the relationship that hurt the most felt the most real.",
+   "cards": [
+    [
+     "Men crossing a swaying canyon bridge met a woman with a questionnaire.",
+     3.2,
+     "hook"
+    ],
+    [
+     "About half called her afterwards.",
+     2.0,
+     "body"
+    ],
+    [
+     "On a low, solid bridge, about one in eight did.",
+     2.7,
+     "body"
+    ],
+    [
+     "Experiment: Dutton & Aron, JPSP (1974) · small, debated",
+     2.2,
+     "cite"
+    ],
+    [
+     "A racing heart doesn't always know why it's racing.",
+     2.4,
+     "body"
+    ],
+    [
+     "Sometimes what feels like love is just not knowing where you stand.",
+     3.1,
+     "body"
+    ],
+    [
+     "Send it to someone who keeps falling for the bridge.",
+     2.7,
+     "cta"
+    ]
+   ],
+   "visual": "V3 still of a suspension bridge in mist, no people (tag bridge-mist), else V1 + grain.",
+   "footage": "bridge-mist",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "warm",
+    "seed": 329
+   },
+   "source": {
+    "type": "data",
+    "author": "Dutton & Aron",
+    "work": "Heightened attraction under high anxiety (JPSP 30(4))",
+    "section": "experiment",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 experiment (N69), small and debated, labelled on screen; format D, no advice",
+   "caption": "In a 1974 study, men crossing a frightening suspension bridge were far more likely to call a woman they met there than men on a solid bridge. The usual reading: they mistook a pounding heart for attraction.\n\nIt's a small, old study and later results are mixed. But many people know the feeling: uncertainty and fear can feel exactly like love.\n\nWas your most intense relationship also your most uncertain?\n\nEvidence: Dutton & Aron (1974). Full essay on the Substack, link in bio.",
+   "first_comment": "Intense or known? Which did your last relationship feel like?",
+   "hashtags": [
+    "#relationships",
+    "#attachmentstyles",
+    "#intimacy",
+    "#psychology",
+    "#love"
+   ],
+   "cta": "send",
+   "length_s": 18.3,
+   "max_s": 30
+  },
+  {
+   "id": "S15A",
+   "slug": "known-not-wanted",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Identity",
+   "hook": "Does calm feel like boredom to you?",
+   "hook_b": "Butterflies are not a compatibility test.",
+   "cards": [
+    [
+     "Does calm feel like boredom to you?",
+     2.2,
+     "question"
+    ],
+    [
+     "Closeness grew when strangers took turns sharing more, bit by bit.",
+     3.0,
+     "body"
+    ],
+    [
+     "Experiment: Aron et al., PSPB (1997)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Not drama. Not guessing. Gradual, two-way honesty.",
+     2.4,
+     "body"
+    ],
+    [
+     "Intensity measures uncertainty. Intimacy measures being known.",
+     2.8,
+     "body"
+    ],
+    [
+     "Save this for the next time someone kind feels 'flat'.",
+     2.7,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate + grain.",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 330
+   },
+   "source": {
+    "type": "data",
+    "author": "Aron, Melinat, Aron, Vallone & Bator",
+    "work": "Experimental generation of interpersonal closeness (PSPB 23(4))",
+    "section": "experiment",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 experiment (N70)",
+   "caption": "People used to unpredictable love often find a steady, kind partner feels flat at first.\n\nIn a 1997 study, strangers who took turns asking gradually more personal questions felt significantly closer than pairs making small talk. Closeness came from reciprocal disclosure, not uncertainty.\n\nWhen did you last let someone know something new about you?\n\nEvidence: Aron et al. (1997). Full essay on the Substack, link in bio.",
+   "first_comment": "What's one thing your closest person doesn't know about you yet?",
+   "hashtags": [
+    "#relationships",
+    "#attachmentstyles",
+    "#intimacy",
+    "#psychology",
+    "#love"
+   ],
+   "cta": "save",
+   "length_s": 15.1
+  },
+  {
+   "id": "S16B",
+   "slug": "ring-of-gyges",
+   "format": "B",
+   "series": "Quiet Truths",
+   "pillar": "Tools",
+   "hook": "Plato's ring made its wearer invisible.",
+   "hook_b": "Plato asked it 2,400 years ago with a magic ring.",
+   "cards": [
+    [
+     "Plato's ring made its wearer invisible.",
+     2.2,
+     "hook"
+    ],
+    [
+     "Glaucon's bet: give it to anyone, and they'd take what they liked.",
+     3.1,
+     "body"
+    ],
+    [
+     "Idea: Plato, Republic II · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "But there's a second test hidden in the question.",
+     2.4,
+     "body"
+    ],
+    [
+     "Not what you'd take. What you'd finally try.",
+     2.2,
+     "body"
+    ],
+    [
+     "Quiet Truths · Moodius",
+     1.2,
+     "body"
+    ],
+    [
+     "Full essay on the Substack. Link in bio.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate (series control look).",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 331
+   },
+   "source": {
+    "type": "idea",
+    "author": "Plato",
+    "work": "Republic",
+    "section": "II",
+    "translation": "paraphrase"
+   },
+   "evidence": "Tier 2 primary text (N72), paraphrased",
+   "caption": "In Plato's Republic, Glaucon tells the story of a ring that makes its wearer invisible, and bets that anyone who had it would stop behaving well.\n\nThat's the usual test: what would you do wrong if nobody was watching? There's a second one: what would you finally do if nobody would ever know?\n\nWhat would you try?\n\nSource: Plato, Republic II (paraphrased). Full essay on the Substack, link in bio.",
+   "first_comment": "What would you try if nobody would ever know?",
+   "hashtags": [
+    "#philosophy",
+    "#plato",
+    "#decisionmaking",
+    "#regret",
+    "#stoicism"
+   ],
+   "cta": "save",
+   "length_s": 15.3
+  },
+  {
+   "id": "S16A",
+   "slug": "regrets-nobody-sees",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Tools",
+   "hook": "What would you do if nobody would ever find out?",
+   "hook_b": "The regrets that last are the ones nobody else sees.",
+   "cards": [
+    [
+     "What would you do if nobody would ever find out?",
+     2.7,
+     "question"
+    ],
+    [
+     "Most lasting regrets were about hopes not pursued, not duties missed.",
+     3.0,
+     "body"
+    ],
+    [
+     "72% ideal-self regrets. 28% duty regrets.",
+     2.2,
+     "body"
+    ],
+    [
+     "Studies: Davidai & Gilovich, Emotion (2018)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Take away the audience. What's left is often what you want.",
+     2.9,
+     "body"
+    ],
+    [
+     "Save this for the decision you're putting off.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V3 still of an empty theatre, seats and a single light, no people (tag theatre-empty), else V1 + grain.",
+   "footage": "theatre-empty",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 332
+   },
+   "source": {
+    "type": "data",
+    "author": "Davidai & Gilovich",
+    "work": "The ideal road not taken (Emotion 18(3))",
+    "section": "studies",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 studies (N76)",
+   "caption": "Across six studies, people's regrets were mostly about their ideal selves, hopes and goals they didn't pursue (72%), rather than duties they didn't meet (28%). Asked for their single biggest regret, 76% named an ideal-self one.\n\nThose are often the choices most shaped by an audience. Ask what you'd do if nobody would ever know.\n\nWhat's the decision you're putting off?\n\nEvidence: Davidai & Gilovich (2018). Full essay on the Substack, link in bio.",
+   "first_comment": "One hope you haven't pursued yet. Just the word.",
+   "hashtags": [
+    "#philosophy",
+    "#plato",
+    "#decisionmaking",
+    "#regret",
+    "#stoicism"
+   ],
+   "cta": "save",
+   "length_s": 15.0
+  }
+ ]
+}
