@@ -1,0 +1,590 @@
+[
+ {
+  "source": "youtube_search",
+  "target": "stoicism [results_month_short]",
+  "ok": true,
+  "detail": "1 results",
+  "at": "2026-10-22T11:25:50+00:00"
+ },
+ {
+  "source": "youtube_search",
+  "target": "carl jung shadow work [results_month_short]",
+  "ok": true,
+  "detail": "9 results",
+  "at": "2026-10-22T11:25:59+00:00"
+ },
+ {
+  "source": "youtube_search",
+  "target": "attachment style relationships [results_month_short]",
+  "ok": true,
+  "detail": "8 results",
+  "at": "2026-10-22T11:26:07+00:00"
+ },
+ {
+  "source": "youtube_search",
+  "target": "loneliness modern life [results_month_short]",
+  "ok": true,
+  "detail": "15 results",
+  "at": "2026-10-22T11:26:09+00:00"
+ },
+ {
+  "source": "youtube_search",
+  "target": "emotional maturity [results_month_short]",
+  "ok": true,
+  "detail": "3 results",
+  "at": "2026-10-22T11:26:11+00:00"
+ },
+ {
+  "source": "youtube_search",
+  "target": "existentialism camus [results_month_short]",
+  "ok": true,
+  "detail": "0 results",
+  "at": "2026-10-22T11:26:14+00:00"
+ },
+ {
+  "source": "youtube_search",
+  "target": "dostoevsky [results_month_short]",
+  "ok": true,
+  "detail": "3 results",
+  "at": "2026-10-22T11:26:16+00:00"
+ },
+ {
+  "source": "youtube_search",
+  "target": "journaling self awareness [results_month_short]",
+  "ok": true,
+  "detail": "7 results",
+  "at": "2026-10-22T11:26:25+00:00"
+ },
+ {
+  "source": "youtube_search",
+  "target": "seneca [results_month_short]",
+  "ok": true,
+  "detail": "7 results",
+  "at": "2026-10-22T11:26:28+00:00"
+ },
+ {
+  "source": "youtube_search",
+  "target": "psychology of anger [results_month_short]",
+  "ok": true,
+  "detail": "1 results",
+  "at": "2026-10-22T11:26:30+00:00"
+ },
+ {
+  "source": "youtube_search",
+  "target": "men emotional intelligence [results_month_short]",
+  "ok": true,
+  "detail": "1 results",
+  "at": "2026-10-22T11:26:33+00:00"
+ },
+ {
+  "source": "youtube_search",
+  "target": "nietzsche philosophy [results_month_short]",
+  "ok": true,
+  "detail": "1 results",
+  "at": "2026-10-22T11:26:35+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "@DailyStoic",
+  "ok": true,
+  "detail": "30 shorts, followers=2060000",
+  "at": "2026-10-22T11:26:37+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCkUaT0T03TJvafYkfATM2Ag",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:26:38+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "@PursuitofWonder",
+  "ok": false,
+  "detail": "ERROR: [youtube:tab] @PursuitofWonder: This channel does not have a shorts tab",
+  "at": "2026-10-22T11:26:40+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "@TheSchoolofLife",
+  "ok": false,
+  "detail": "ERROR: [youtube:tab] @TheSchoolofLife: This channel does not have a shorts tab",
+  "at": "2026-10-22T11:26:41+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "@einzelgaenger",
+  "ok": false,
+  "detail": "ERROR: [youtube:tab] @einzelgaenger: This channel does not have a shorts tab",
+  "at": "2026-10-22T11:26:43+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "@academyofideas",
+  "ok": true,
+  "detail": "30 shorts, followers=2030000",
+  "at": "2026-10-22T11:26:45+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCiRiQGCHGjDLT9FQXFW0I3A",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:26:46+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "@HealthyGamerGG",
+  "ok": true,
+  "detail": "30 shorts, followers=3530000",
+  "at": "2026-10-22T11:26:48+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UClHVl2N3jPEbkNJVx-ItQIQ",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:26:49+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "@EstherPerelOfficial",
+  "ok": false,
+  "detail": "ERROR: [youtube:tab] @EstherPerelOfficial/shorts: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)",
+  "at": "2026-10-22T11:26:51+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "@PhilosophiesforLife",
+  "ok": false,
+  "detail": "ERROR: [youtube:tab] @PhilosophiesforLife: This channel does not have a shorts tab",
+  "at": "2026-10-22T11:26:53+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UCG5mOmdAYu0W1PBGpHZ6QBw",
+  "ok": true,
+  "detail": "8 shorts, followers=8",
+  "at": "2026-10-22T11:26:54+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCG5mOmdAYu0W1PBGpHZ6QBw",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:26:55+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UCz0jaiAzOBcEmvQfUbHMsYg",
+  "ok": true,
+  "detail": "13 shorts, followers=25",
+  "at": "2026-10-22T11:26:57+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCz0jaiAzOBcEmvQfUbHMsYg",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:26:58+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UCK02f8gqD-Rhgz7_f1BaEdg",
+  "ok": true,
+  "detail": "30 shorts, followers=258",
+  "at": "2026-10-22T11:27:00+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCK02f8gqD-Rhgz7_f1BaEdg",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:27:01+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UCvEMo64hJ70IO2AJFxbuUkA",
+  "ok": false,
+  "detail": "ERROR: [youtube:tab] UCvEMo64hJ70IO2AJFxbuUkA: This channel does not have a shorts tab",
+  "at": "2026-10-22T11:27:03+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCvEMo64hJ70IO2AJFxbuUkA",
+  "ok": true,
+  "detail": "2 uploads",
+  "at": "2026-10-22T11:27:04+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UCbuaNcd8a3G_mFoW7sfMMZQ",
+  "ok": true,
+  "detail": "30 shorts, followers=48",
+  "at": "2026-10-22T11:27:06+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCbuaNcd8a3G_mFoW7sfMMZQ",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:27:07+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UCrQDHwfP8x74oHkhdrkaqAw",
+  "ok": false,
+  "detail": "ERROR: [youtube:tab] UCrQDHwfP8x74oHkhdrkaqAw: This channel does not have a shorts tab",
+  "at": "2026-10-22T11:27:09+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCrQDHwfP8x74oHkhdrkaqAw",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:27:10+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UCfyRC3TZTkYvdPm4Q-7fNIQ",
+  "ok": true,
+  "detail": "30 shorts, followers=65",
+  "at": "2026-10-22T11:27:12+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCfyRC3TZTkYvdPm4Q-7fNIQ",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:27:13+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UCB7fJTjyiQWhgHYAmi5DdGA",
+  "ok": true,
+  "detail": "30 shorts, followers=598",
+  "at": "2026-10-22T11:27:15+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCB7fJTjyiQWhgHYAmi5DdGA",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:27:16+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UCgpJ2IQ3l6o9Pwods-YfTIw",
+  "ok": false,
+  "detail": "ERROR: [youtube:tab] UCgpJ2IQ3l6o9Pwods-YfTIw: This channel does not have a shorts tab",
+  "at": "2026-10-22T11:27:18+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCgpJ2IQ3l6o9Pwods-YfTIw",
+  "ok": true,
+  "detail": "4 uploads",
+  "at": "2026-10-22T11:27:19+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UCi7YfW8e5mnvW8XQCIo2Ntw",
+  "ok": true,
+  "detail": "1 shorts, followers=37",
+  "at": "2026-10-22T11:27:21+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCi7YfW8e5mnvW8XQCIo2Ntw",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:27:22+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UC-bOvWoPWJbKqTw73RE-Nbg",
+  "ok": true,
+  "detail": "3 shorts, followers=34",
+  "at": "2026-10-22T11:27:24+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UC-bOvWoPWJbKqTw73RE-Nbg",
+  "ok": true,
+  "detail": "5 uploads",
+  "at": "2026-10-22T11:27:25+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UCADumgVDv7mfcDCp6s6j5aA",
+  "ok": true,
+  "detail": "4 shorts, followers=None",
+  "at": "2026-10-22T11:27:26+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCADumgVDv7mfcDCp6s6j5aA",
+  "ok": true,
+  "detail": "11 uploads",
+  "at": "2026-10-22T11:27:28+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UClTEUr5i-y_iF8LB2GLit5Q",
+  "ok": true,
+  "detail": "6 shorts, followers=5",
+  "at": "2026-10-22T11:27:29+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UClTEUr5i-y_iF8LB2GLit5Q",
+  "ok": true,
+  "detail": "10 uploads",
+  "at": "2026-10-22T11:27:30+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UCcYIfFB-lZ9Gkg4aBX_8IfA",
+  "ok": true,
+  "detail": "30 shorts, followers=70",
+  "at": "2026-10-22T11:27:32+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCcYIfFB-lZ9Gkg4aBX_8IfA",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:27:34+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UCGen0VdtskXYv0ldQlM7ryg",
+  "ok": true,
+  "detail": "30 shorts, followers=1770000",
+  "at": "2026-10-22T11:27:36+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCGen0VdtskXYv0ldQlM7ryg",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:27:37+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UC-2qHDHVWbHZMxGyRoZ_4UQ",
+  "ok": true,
+  "detail": "9 shorts, followers=25",
+  "at": "2026-10-22T11:27:39+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UC-2qHDHVWbHZMxGyRoZ_4UQ",
+  "ok": true,
+  "detail": "14 uploads",
+  "at": "2026-10-22T11:27:40+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UC_mCbOya2iJCn-o5KmjgDiA",
+  "ok": true,
+  "detail": "30 shorts, followers=9010",
+  "at": "2026-10-22T11:27:42+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UC_mCbOya2iJCn-o5KmjgDiA",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:27:43+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UC0_uDvsJl8M6B5OTiGeExIw",
+  "ok": true,
+  "detail": "29 shorts, followers=25",
+  "at": "2026-10-22T11:27:45+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UC0_uDvsJl8M6B5OTiGeExIw",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:27:46+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UClmahvMaltbNznqnAdGi_7A",
+  "ok": true,
+  "detail": "30 shorts, followers=32",
+  "at": "2026-10-22T11:27:48+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UClmahvMaltbNznqnAdGi_7A",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:27:49+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UCqNScx9Ki3mx9PlilCJI5WQ",
+  "ok": true,
+  "detail": "30 shorts, followers=58",
+  "at": "2026-10-22T11:27:51+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCqNScx9Ki3mx9PlilCJI5WQ",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:27:52+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UCfsb-B1XF_rHOo5F--c4bzw",
+  "ok": false,
+  "detail": "ERROR: [youtube:tab] UCfsb-B1XF_rHOo5F--c4bzw: This channel does not have a shorts tab",
+  "at": "2026-10-22T11:27:54+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCfsb-B1XF_rHOo5F--c4bzw",
+  "ok": true,
+  "detail": "6 uploads",
+  "at": "2026-10-22T11:27:55+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UC2Ieufkdb9mZFEBexGCzgCw",
+  "ok": true,
+  "detail": "30 shorts, followers=114",
+  "at": "2026-10-22T11:27:57+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UC2Ieufkdb9mZFEBexGCzgCw",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:27:58+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UCWOaVTX3CJenzQKZeEXI2Uw",
+  "ok": true,
+  "detail": "15 shorts, followers=11",
+  "at": "2026-10-22T11:27:59+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCWOaVTX3CJenzQKZeEXI2Uw",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:28:01+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UCFGt3tLJMxqBrACDkTgeGXg",
+  "ok": true,
+  "detail": "16 shorts, followers=5",
+  "at": "2026-10-22T11:28:02+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCFGt3tLJMxqBrACDkTgeGXg",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:28:03+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UC73PSKAWMaEvXS0SaH7NDaA",
+  "ok": true,
+  "detail": "30 shorts, followers=6940",
+  "at": "2026-10-22T11:28:05+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UC73PSKAWMaEvXS0SaH7NDaA",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:28:07+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UCtwjGzwuhmePhMO0ZL72FlQ",
+  "ok": true,
+  "detail": "30 shorts, followers=223",
+  "at": "2026-10-22T11:28:09+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCtwjGzwuhmePhMO0ZL72FlQ",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:28:10+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UCRVtxVN_pznP0_r8MwMbAdA",
+  "ok": false,
+  "detail": "ERROR: [youtube:tab] UCRVtxVN_pznP0_r8MwMbAdA: This channel does not have a shorts tab",
+  "at": "2026-10-22T11:28:11+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCRVtxVN_pznP0_r8MwMbAdA",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:28:13+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UC_8nbAV8KB3CM9IYImZ9T_Q",
+  "ok": true,
+  "detail": "30 shorts, followers=3",
+  "at": "2026-10-22T11:28:15+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UC_8nbAV8KB3CM9IYImZ9T_Q",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-22T11:28:16+00:00"
+ },
+ {
+  "source": "tiktok_user",
+  "target": "withmindful",
+  "ok": true,
+  "detail": "15 videos",
+  "at": "2026-10-22T11:28:18+00:00"
+ },
+ {
+  "source": "tiktok_user",
+  "target": "daily_stoic",
+  "ok": true,
+  "detail": "15 videos",
+  "at": "2026-10-22T11:28:21+00:00"
+ },
+ {
+  "source": "tiktok_user",
+  "target": "theschooloflifetv",
+  "ok": false,
+  "detail": "ERROR: [tiktok:user] theschooloflifetv: Unable to extract secondary user ID. If you are able to get the channel_id from a video posted by this user, try using \"tiktokuser:channel_id\" as the input URL (replacing `channel_id` with its actual value)",
+  "at": "2026-10-22T11:28:23+00:00"
+ },
+ {
+  "source": "podcasts",
+  "target": "stoicism",
+  "ok": true,
+  "detail": "5 episodes",
+  "at": "2026-10-22T11:28:24+00:00"
+ },
+ {
+  "source": "podcasts",
+  "target": "carl jung",
+  "ok": true,
+  "detail": "5 episodes",
+  "at": "2026-10-22T11:28:25+00:00"
+ }
+]
