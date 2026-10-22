@@ -134,8 +134,11 @@ def check_published(repo):
 
     # 1. explicit ledger rows (account thread appends: path, published_at, metricool_id, note)
     led = rules["published_ledger"]
-    if os.path.exists(led):
-        for row in csv.DictReader(open(led)):
+    texts = [open(led).read()] if os.path.exists(led) else []
+    for ref in rules.get("ledger_refs", []):   # the account thread writes the ledger on its own branch
+        texts.append(sh("git", "show", f"{ref}:{led}", check=False))
+    for text in texts:
+        for row in csv.DictReader(text.splitlines()):
             try:
                 when = dt.date.fromisoformat((row.get("published_at") or "")[:10])
             except ValueError:
