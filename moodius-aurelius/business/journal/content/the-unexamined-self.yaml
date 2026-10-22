@@ -1,0 +1,997 @@
+# The Unexamined Self: editable source.
+# Edit the words here, then rebuild:  python3 journal/build_journal.py
+# Quote kinds:  verbatim   = word for word from the named public-domain translation (checked by verify_quotes.py)
+#               paraphrase = Moodius's own wording of the passage; the citation says where the idea comes from
+# Evidence tiers: Philosophical (an argument or tradition), Empirical (published research; strength noted),
+#                 Moodius opinion (our view, offered as such)
+
+meta:
+  title: The Unexamined Self
+  subtitle: A 30-day guided reflection journal
+  author: Moodius Aurelius
+  edition: First edition, 2026
+  price: "£14"
+  cover_numeral: "30"
+  cover_lines: ["The Unexamined", "Self"]
+  closing:
+    - "You've reached the end of the thirty days. The journal is finished; the habit isn't."
+    - "If this helped, the kindest thing you can do is tell one person about it, or come back to a part that mattered and do it again in a few months. Different seasons give different answers."
+    - "Moodius writes about Stoicism for people who feel things: on Instagram at @moodiusaurelius, and in a weekly essay."
+
+epigraph:
+  text: "…the unexamined life is not worth living…"
+  cite: "Plato, Apology 38a (tr. Benjamin Jowett)"
+  kind: verbatim
+  source: plato_apology_jowett
+  match: "the unexamined life is not worth living"
+
+front:
+  - heading: How to use this journal
+    body: |
+      There are thirty days in six parts. Each day has three pages: a short reading, three questions, and one exercise. Most days take ten to fifteen minutes. Some will take longer because you want them to.
+
+      Do one day at a time, in order. The parts build on each other: you learn to notice before you learn to question what you notice, and you look at your feelings before you look at your relationships, your identity and your values.
+
+      Write by hand if you can, or type into the fields in the digital edition. Write badly. Nobody will read this but you, and a page of honest mess is worth more than a paragraph that sounds good.
+
+      Missed a day? Carry on from where you stopped. Thirty days is the shape of the journal, not a test. At the end of each part there is a short review. Don't skip those; they are where the patterns show.
+
+  - heading: What this journal is, and what it isn't
+    body: |
+      This is a structured way to think about yourself, built from two traditions. The first is Stoic philosophy, which spent five centuries asking how a person should live with things they cannot control. The second is modern psychology, which has spent the last hundred years testing, among other things, how well people actually know themselves.
+
+      It is not therapy, and it doesn't diagnose or treat anything. Writing about yourself can stir things up. That is often useful, and sometimes it isn't. If a page brings up more than you can hold, stop, close the journal, and talk to someone. If you are struggling with your mental health, a GP, a counsellor or a therapist can offer what a book can't.
+
+      In the UK you can call Samaritans free, any time, on 116 123. In an emergency call 999. Outside the UK, findahelpline.com lists free services by country.
+
+  - heading: A note on the sources
+    body: |
+      Every quotation is labelled. "Verbatim" means word for word from a public-domain translation, named in the citation. "Moodius paraphrase" means the wording is ours and the citation tells you where to find the original passage.
+
+      Every day also carries a short evidence note, marked with one of three tiers. Philosophical: an argument or a practice from a tradition, worth considering on its merits. Empirical: published research, with a word on how strong it is. Moodius opinion: our view, offered as a view.
+
+      Psychology findings get revised. Where a finding is small, contested or based on lab studies, the note says so. Full references are at the back.
+
+parts:
+  - n: 1
+    title: Noticing
+    intro: Before you change anything, see it. Five days on paying attention to your own mind, and on the limits of what you can see from the inside.
+  - n: 2
+    title: What Is Yours
+    intro: The Stoic core. Five days on separating what happens from what you make of it, and what you control from what you only wish you did.
+  - n: 3
+    title: Feeling Clearly
+    intro: Five days on emotions as information. Naming them, telling them apart, and choosing what to do with them.
+  - n: 4
+    title: How You Attach
+    intro: Five days on the patterns you bring to closeness. Not labels, and not your parents' fault. Just the moves you make when someone matters.
+  - n: 5
+    title: Who You Think You Are
+    intro: Five days on identity. The story you tell, the roles you play, and the gap between the self you present and the one you live.
+  - n: 6
+    title: What You Live By
+    intro: Five days on values. What you say matters, what your week shows matters, and what you will do about the difference.
+
+days:
+  - n: 1
+    part: 1
+    title: The Examined Life
+    quote:
+      text: "…daily to discourse about virtue, and of those other things about which you hear me examining myself and others, is the greatest good of man, and that the unexamined life is not worth living…"
+      cite: Plato, Apology 38a (tr. Benjamin Jowett)
+      kind: verbatim
+      source: plato_apology_jowett
+      match: "is the greatest good of man, and that the unexamined life is not worth living"
+    reading: |
+      Socrates said this at his own trial, aged seventy, with his life on the line. The court would have let him go if he agreed to stop asking questions. He refused. Examining himself and others was, to him, the point of being alive.
+
+      You don't need to go that far. But notice what he meant by examining. It wasn't self-criticism, and it wasn't self-improvement. It was looking: asking what you believe, why you believe it, and whether your life matches it.
+
+      Most of us live on defaults. We react the way we reacted last time, want what we were taught to want, and explain ourselves with stories we stopped checking years ago. None of that is a failing. Defaults are efficient. But a default you've never looked at isn't really a choice.
+
+      For the next thirty days you'll look. Not to fix yourself, at least not yet. Just to see what's there.
+    evidence:
+      tier: Philosophical
+      note: Self-examination as the foundation of a good life runs from Socrates through the Stoics. Whether reflection improves wellbeing depends on how it's done; Day 3 looks at the difference.
+      refs: [plato_apology]
+    prompts:
+      - What made you start this journal now, rather than a year ago or a year from now?
+      - What is one thing about yourself you've been avoiding looking at closely?
+      - "By Day 30, what would you like to understand about yourself that you don't today?"
+    exercise:
+      name: The baseline letter
+      steps: |
+        Write a short letter to yourself, dated today. Three paragraphs: how your life is going, in plain words; what you are worried about; what you hope is true of you. Don't polish it. Fold it, or save the page, and don't reread it until Day 30.
+    tonight: One word for how today felt.
+
+  - n: 2
+    part: 1
+    title: Watching Your Own Mind
+    quote:
+      text: "People are seldom made unhappy by failing to see into someone else's mind. Those who don't watch the movements of their own are bound to be."
+      cite: Moodius paraphrase of Marcus Aurelius, Meditations 2.8
+      kind: paraphrase
+    reading: |
+      Marcus wrote this in a private notebook, as a reminder to himself. He was an emperor; he had every reason to watch other people's minds. Who was loyal, who was lying, who wanted what. His note says the more important surveillance is inward.
+
+      Most of the time our attention points out. What did they mean by that message? Why did she go quiet? What does my boss think of me? Meanwhile our own moods arrive and leave without being noticed, and we only see them in what they leave behind: the snapped reply, the wasted evening, the vague heaviness on a Sunday.
+
+      Noticing your own mind is a skill, and like any skill it starts clumsy. Today's exercise is simple on purpose. You're not analysing anything. You're catching yourself in the act of being yourself, a few times, and writing down what you find.
+    evidence:
+      tier: Empirical
+      note: "Research on introspection suggests we're often poor at explaining why we did something, but reasonably good at reporting what we feel and do in the moment, especially when we note it as it happens rather than afterwards. Wilson and Dunn's review is a readable summary. Evidence: well replicated, with debate about how far it extends."
+      refs: [wilson_dunn_2004]
+    prompts:
+      - "When did you last realise, hours later, that you'd been in a mood all day? What was it, and what tipped you off?"
+      - Whose mind do you spend most time trying to read? What does that cost you?
+      - What do you tend to notice in yourself only after the fact?
+    exercise:
+      name: Three check-ins
+      steps: |
+        Set three alarms for tomorrow: late morning, mid-afternoon, early evening. When each goes off, stop for thirty seconds and write three things: what you're feeling (one or two words), what you're thinking about, and what your body is doing. That's all. Tomorrow night, read the three entries together.
+    tonight: Where in your body did you feel today the most?
+
+  - n: 3
+    part: 1
+    title: What, Not Why
+    quote:
+      text: "People look for retreats in the countryside, by the sea, in the hills. But you can retreat into yourself whenever you choose, and nowhere is quieter."
+      cite: Moodius paraphrase of Marcus Aurelius, Meditations 4.3
+      kind: paraphrase
+    reading: |
+      Not all looking inward helps. There's a kind that goes in circles: why am I like this, why does this always happen, why can't I just. Those questions feel like work. They rarely go anywhere, because "why" invites a verdict on your whole character, and verdicts are hard to act on.
+
+      A better question is usually "what". What happened, exactly? What did I feel, and when did it start? What did I do next? "What" keeps you close to the events, and events are things you can work with.
+
+      Marcus's retreat isn't a place to brood. It's a place to see clearly, the way you might step outside a loud room to hear yourself think. Today, practise the difference. When a "why" question shows up, translate it into a "what" question and see what changes.
+    evidence:
+      tier: Empirical
+      note: "Studies of repetitive thinking distinguish abstract, evaluative thinking (\"why do I always…\"), linked to rumination and low mood, from concrete thinking about specifics (\"what happened, what could I do\"), which tends to be more useful for problem solving. Evidence: a substantial body of research, mostly correlational plus some experiments."
+      refs: [watkins_2008, nolen_hoeksema_2008]
+    prompts:
+      - "Write down a \"why\" question you ask yourself often. Now rewrite it as two or three \"what\" questions."
+      - Answer one of those "what" questions as concretely as you can.
+      - Where do you go, physically or mentally, when you need to think clearly?
+    exercise:
+      name: The slow replay
+      steps: |
+        Pick one moment from the last week that bothered you. Replay it like a film at half speed and write it as a sequence: what happened, what I felt, what I thought, what I did, what happened next. No explanations, no judgements, only the sequence. Then read it back and underline the point where things turned.
+    tonight: What is one thing that happened today, described without any adjectives?
+
+  - n: 4
+    part: 1
+    title: The Blind Spot
+    quote:
+      text: "Wish to be considered to know nothing; and if you shall seem to some to be a person of importance, distrust yourself."
+      cite: Epictetus, Enchiridion 13 (tr. George Long)
+      kind: verbatim
+      source: epictetus_long
+      match: "Wish to be considered to know nothing; and if you shall seem to some to be a person of importance, distrust yourself."
+    reading: |
+      You have a view of yourself nobody else has: your thoughts, your intentions, the feelings you don't show. Other people have a view of you that you can't have: your face when you think nobody's looking, your tone, the effect you have on a room.
+
+      Both views are partial. We tend to trust our own more, because it feels like direct access. But on some things, other people see us more accurately than we see ourselves, especially on qualities that are visible and that we have a stake in, like how kind, clever or difficult we are.
+
+      Epictetus tells his students to hold their self-image lightly. Not to think badly of themselves, but to distrust the flattering picture. Today you'll borrow someone else's eyes for a moment. It takes a little courage, and it usually turns out kinder than you feared.
+    evidence:
+      tier: Empirical
+      note: "Vazire's work suggests people know their own inner states (like anxiety) better than others do, while friends often judge visible, evaluative traits (like intelligence or rudeness) at least as well as we do. Evidence: replicated across several studies; effects vary by trait."
+      refs: [vazire_2010]
+    prompts:
+      - What do you think people misunderstand about you most often?
+      - What might people see in you that you don't see, or don't want to?
+      - Whose honest opinion of you would you trust, and why them?
+    exercise:
+      name: Borrow one view
+      steps: |
+        Choose one person who knows you well and wishes you well. Ask them one specific question, in person or by message: "What's one thing I do that I might not notice?" or "When am I at my best?" Thank them, don't argue, and write down their answer word for word. Then write what you felt when you read it.
+    tonight: What did you learn about yourself today from someone else?
+
+  - n: 5
+    part: 1
+    title: Where You Begin
+    quote:
+      text: "The beginning of philosophy, to him at least who enters on it in the right way and by the door is a consciousness of his own weakness and inability about necessary things…"
+      cite: Epictetus, Discourses 2.11 (tr. George Long)
+      kind: verbatim
+      source: epictetus_long
+      match: "The beginning of philosophy, to him at least who enters on it in the right way and by the door is a consciousness of his own weakness and inability about necessary things"
+    reading: |
+      Epictetus had been enslaved, walked with a limp, and taught philosophy to the sons of Rome's elite. He didn't think anyone started from strength. The door into philosophy, he said, is admitting where you're weak.
+
+      That's easy to hear as harsh. It isn't meant to be. He's describing a starting point, not a sentence. You can't work on what you won't admit, and you can't admit much if every flaw feels like an accusation.
+
+      This is where kindness becomes practical rather than soft. People who can look at their mistakes without attacking themselves tend to look longer, and do more about what they find. The harsh inner critic feels like it's keeping you honest. Often it just makes you look away.
+
+      Today, take an honest inventory: what you're good at, and where you struggle. Write both in the same tone, the one you'd use for a friend.
+    evidence:
+      tier: Empirical
+      note: "In experiments by Breines and Chen, people prompted to treat a weakness or mistake with self-compassion were more motivated to improve than those prompted to boost their self-esteem. Neff's work defines self-compassion as kindness, common humanity and mindful awareness. Evidence: promising and replicated in parts; effect sizes modest."
+      refs: [breines_chen_2012, neff_2003]
+    prompts:
+      - List three things you're genuinely good at. No modesty, no exaggeration.
+      - List three places you struggle. Write them in the same plain tone.
+      - Pick one struggle. What would you say to a friend who had it?
+    exercise:
+      name: The friend's letter
+      steps: |
+        Write a short note about your struggle from the point of view of a friend who knows you well and is on your side. They see the problem clearly; they don't pretend it isn't there. They also know why it makes sense that you struggle with it, and they believe you can do something about it. Five to ten sentences.
+    tonight: Name one thing you did today that you'd respect in someone else.
+
+  - n: 6
+    part: 2
+    title: The Two Lists
+    quote:
+      text: "Of things some are in our power, and others are not. In our power are opinion, movement towards a thing, desire, aversion, turning from a thing; and in a word, whatever are our acts. Not in our power are the body, property, reputation, offices, and in a word, whatever are not our own acts."
+      cite: Epictetus, Enchiridion 1 (tr. George Long; Greek glosses omitted)
+      kind: verbatim
+      source: epictetus_long
+      match: "Of things some are in our power, and others are not."
+    reading: |
+      This is the first line of Epictetus's handbook, and everything else in Stoicism grows from it. Some things are up to you: your judgements, your intentions, your effort, what you do. Everything else, including your body, your reputation and other people, is not fully up to you.
+
+      Read that list again. Reputation is on the second list. So is your body. So, by extension, is whether the person you love loves you back, whether you get the job, whether the plane lands on time. You can influence all of them. You can't command any of them.
+
+      The point isn't to stop caring about the second list. It's to put your effort where it actually works, and to stop measuring yourself by outcomes you never controlled. A lot of anxiety is the strain of trying to hold things that were never in your hands.
+    evidence:
+      tier: Philosophical
+      note: "The dichotomy of control is the Stoics' central practice. Albert Ellis, who founded one of the first cognitive therapies, credited Epictetus as an influence; Robertson traces the links. The modern \"serenity prayer\" makes a similar point. This is a philosophical tool, not a clinical treatment."
+      refs: [epictetus_enchiridion, robertson_2019]
+    prompts:
+      - What's taking up most of your mental energy this week?
+      - Which parts of it are actually in your control? Which aren't?
+      - What would you do differently if you stopped trying to control the second part?
+    exercise:
+      name: Two columns
+      steps: |
+        Draw a line down the space below. On the left: "Mine". On the right: "Not mine". Take the thing that's weighing on you most and split it into pieces, putting each piece in a column. Be strict; "how they react" goes on the right even if it matters enormously. Then circle one item on the left and write the next concrete step you'll take on it.
+    tonight: What did you let go of today, even a little?
+
+  - n: 7
+    part: 2
+    title: The Story You Add
+    quote:
+      text: "Men are disturbed not by the things which happen, but by the opinions about the things…"
+      cite: Epictetus, Enchiridion 5 (tr. George Long)
+      kind: verbatim
+      source: epictetus_long
+      match: "Men are disturbed not by the things which happen, but by the opinions about the things"
+    reading: |
+      Something happens: a friend cancels plans. That's the event. Within half a second, a story arrives with it. They don't really want to see me. I'm always the one who makes the effort. People get bored of me. The feeling you have, hurt or anger or shame, is mostly a response to the story, not to the cancelled plan.
+
+      Epictetus isn't saying feelings are wrong, or that bad things don't happen. He's pointing at the step in between, the judgement, because it's the step you can work on. The event already happened. The story is still being written.
+
+      Most stories are guesses that feel like facts. Today you'll practise pulling them apart: the thing that happened, the story you told, and the feeling that followed. Often just seeing the story written down loosens its grip.
+    evidence:
+      tier: Empirical
+      note: "Psychologists call rethinking the meaning of a situation cognitive reappraisal. In Gross's research, habitual reappraisal is associated with more positive emotion and better wellbeing than habitual suppression (hiding or pushing feelings down). Evidence: large literature; mostly correlational for everyday habits, experimental in the lab."
+      refs: [gross_2002]
+    prompts:
+      - "Think of something that upset you recently. What happened, in one neutral sentence?"
+      - What story did you tell yourself about it? Write it exactly as it sounded in your head.
+      - What are two other stories that would fit the same facts?
+    exercise:
+      name: Event, story, feeling
+      steps: |
+        Make three columns: Event, Story, Feeling. Fill in three rows from the past few days, one row per upsetting moment. In the Event column, write only what a camera would have recorded. In the Story column, write the interpretation. In the Feeling column, name the emotion. Then look down the Story column. Do the stories have anything in common?
+    tonight: What story did you catch yourself telling today?
+
+  - n: 8
+    part: 2
+    title: Test the Appearance
+    quote:
+      text: "Straightway then practise saying to every harsh appearance: You are an appearance, and in no manner what you appear to be. Then examine it by the rules which you possess…"
+      cite: Epictetus, Enchiridion 1 (tr. George Long)
+      kind: verbatim
+      source: epictetus_long
+      match: "Straightway then practise saying to every harsh appearance: You are an appearance, and in no manner what you appear to be. Then examine it by the rules which you possess"
+    reading: |
+      The Stoics had a word for the first impression a situation makes on you: phantasia, an appearance. A harsh appearance is a thought that arrives fully dressed as the truth. You're going to fail. Everyone noticed. This will never get better.
+
+      Epictetus's advice is to talk back to it, calmly, the way you'd address a stranger at the door: you're an appearance, let me take a look at you. Not "you're wrong", which is just another snap judgement, but "you're a thought, and I'll decide what you're worth".
+
+      This is a small move with a big effect. The thought stops being the voice in your head and becomes something in front of you. Once it's in front of you, you can ask the questions you'd ask of any claim. Is it true? Is it helpful? What's the evidence?
+    evidence:
+      tier: Empirical
+      note: "Kross and Ayduk's research on self-distancing found that reflecting on painful experiences from a step back (\"what is happening to her?\") rather than immersed (\"why am I feeling this?\") reduced emotional reactivity without avoiding the experience. Evidence: replicated in several labs; effects moderate."
+      refs: [kross_ayduk_2011]
+    prompts:
+      - What harsh appearance visits you most often? Write it the way it sounds.
+      - "Talk back to it: \"You are an appearance. Let me look at you.\" What do you see when you look?"
+      - What would you need to see to believe the opposite?
+    exercise:
+      name: Cross-examination
+      steps: |
+        Take today's harshest thought and question it like a fair lawyer. What is the evidence for it? What is the evidence against? What would a calm friend say? If it is partly true, what's the useful part, and what is the one thing you could do about it? Write the answers, then write a rewritten version of the thought that is accurate rather than comforting.
+    tonight: Which thought did you let pass today without believing it?
+
+  - n: 9
+    part: 2
+    title: The View From Above
+    quote:
+      text: "Look down from above at the countless crowds of people, their ceremonies and voyages, the births and the dying, the noise of it all. Your trouble is one small part of a very large scene."
+      cite: Moodius paraphrase of Marcus Aurelius, Meditations 9.30
+      kind: paraphrase
+    reading: |
+      Marcus often imagined rising above the earth and looking down: cities, armies, weddings, funerals, all happening at once, all passing. He wasn't trying to make himself feel insignificant. He was trying to see his own worries at their true size.
+
+      Up close, a problem fills your whole field of vision. A difficult conversation tomorrow can feel like the only thing in the world. From further away it becomes one event among many, in a life that contains many more, in a world that contains far more than that.
+
+      Distance also changes how you think. Many people are wiser about their friends' problems than their own. They see options, perspective and proportion that vanish the moment the problem is theirs. Today you'll try to give yourself the advice you'd give a friend, by stepping outside your own head for a few minutes.
+    evidence:
+      tier: Empirical
+      note: "Grossmann and Kross found people reasoned more wisely about a friend's problem than their own, and that the gap shrank when people thought about their own problem from a distance. Related work found that silently referring to yourself by name or in the third person helped people regulate stress. Evidence: replicated in several studies; lab-based."
+      refs: [grossmann_kross_2014, kross_2014]
+    prompts:
+      - What problem feels biggest right now?
+      - How will you see it in a year? In ten?
+      - If a friend brought you exactly this problem, what would you tell them?
+    exercise:
+      name: Third person
+      steps: |
+        Write about your problem for five minutes, using your own name instead of "I". "Sam is worried that…". Describe what's happening, what Sam is feeling, and what Sam could do. Then read it back and write one sentence of advice to Sam.
+    tonight: What looked smaller tonight than it did this morning?
+
+  - n: 10
+    part: 2
+    title: Rehearsing the Hard Moment
+    quote:
+      text: "Begin the morning by telling yourself: today I will meet people who are meddling, ungrateful, arrogant, dishonest, jealous and unkind. None of them can harm my character."
+      cite: Moodius paraphrase of Marcus Aurelius, Meditations 2.1
+      kind: paraphrase
+    reading: |
+      This is one of the most quoted passages in Marcus, and it's often read as grumpy. It isn't. He's rehearsing. If you expect friction, it doesn't ambush you, and you can decide in calm what you'll do when you're not calm.
+
+      The Stoics called this premeditation: imagining a difficulty in advance so you meet it prepared. Used badly it becomes worrying, running disasters on a loop. Used well it's short, specific and ends in a plan. You picture the hard moment, you notice how you'd normally react, and you choose a different response now, while you can.
+
+      Today's exercise uses a simple form that research suggests makes plans much more likely to happen: if this, then that. If she raises her voice, then I'll lower mine. If I open my phone at midnight, then I'll put it on the floor.
+    evidence:
+      tier: Empirical
+      note: "\"If-then\" plans, which psychologists call implementation intentions, have been tested in many studies. Gollwitzer and Sheeran's meta-analysis found a medium-to-large effect on reaching goals compared with simply intending to. Evidence: strong overall, though newer analyses suggest publication bias inflates some estimates."
+      refs: [gollwitzer_1999, gollwitzer_sheeran_2006]
+    prompts:
+      - What situation tomorrow, or this week, is most likely to test you?
+      - How do you usually react in that situation? Be honest about the first second.
+      - How would you like to react? What would that look like from the outside?
+    exercise:
+      name: If, then
+      steps: |
+        Write three "if-then" plans for the hardest moments you can see coming. Keep them concrete: a specific trigger, a specific response. "If my manager criticises the report in the meeting, then I'll write it down and say I'll come back to them by Friday." Five minutes, no more; this is rehearsal, not worry.
+    tonight: Did you use any of yesterday's plans? What happened?
+
+  - n: 11
+    part: 3
+    title: The First Jolt
+    quote:
+      text: "The first jolt is not a choice: the flush, the start, the tightening. What follows it is. A feeling becomes a passion only when the mind agrees to it."
+      cite: Moodius paraphrase of Seneca, On Anger 2.2–2.4
+      kind: paraphrase
+    reading: |
+      There's a lazy picture of the Stoics as people who didn't feel anything. Seneca knew better. He wrote that even the wisest person goes pale at bad news, flinches at a sudden noise, feels the jolt of an insult. Those first movements, he said, aren't failures. They're the body doing its job.
+
+      What matters is the next step. The jolt asks a question: is this as bad as it feels? Will you act on it? If you say yes without looking, the jolt becomes a full emotion and then an action. If you pause, you get a choice.
+
+      The simplest way to pause is to name what you're feeling. Not to analyse it, just to name it: this is anger, this is fear, this is shame. It sounds too simple to work. For many people, it's the most useful habit in this journal.
+    evidence:
+      tier: Empirical
+      note: "In Lieberman and colleagues' brain-imaging study, labelling the emotion in a picture (\"angry\") was linked to less activity in the amygdala, a region involved in threat responses, than other tasks. Later studies found labelling feelings can reduce their intensity a little. Evidence: lab-based, effects small to moderate."
+      refs: [lieberman_2007]
+    prompts:
+      - When did you last feel the first jolt of a strong emotion? What did your body do?
+      - What happened in the few seconds after? Did you agree with the feeling, or question it?
+      - Which emotion do you find hardest to name while it's happening?
+    exercise:
+      name: Name it
+      steps: |
+        For the next day, whenever you notice a strong feeling, say its name to yourself, silently or under your breath: "this is irritation", "this is dread". Don't do anything else with it. In the space below, keep a tally of the feelings you named and note any that changed after being named.
+    tonight: Name the strongest feeling you had today.
+
+  - n: 12
+    part: 3
+    title: Finer Words
+    quote:
+      text: "Define and describe to yourself whatever comes before your mind, so that you see it as it is: plainly, whole, and in parts."
+      cite: Moodius paraphrase of Marcus Aurelius, Meditations 3.11
+      kind: paraphrase
+    reading: |
+      Ask people how they feel and most will say one of a handful of words: fine, stressed, tired, bad. Those words are blunt instruments. "Stressed" might mean overwhelmed, anxious, resentful, behind, unappreciated or simply hungry, and each of those asks for something different.
+
+      Marcus advised describing things precisely, so you see them as they are. Applied to feelings, that means reaching for a finer word. Not "bad" but "disappointed in myself". Not "stressed" but "dreading Thursday".
+
+      The finer word does two things. It tells you what the feeling is about, which tells you what might help. And it makes the feeling feel less like a fog and more like a thing with edges. At the back of this journal is a vocabulary of feeling. Use it today.
+    evidence:
+      tier: Empirical
+      note: "People who distinguish finely between their negative emotions, called emotion differentiation or granularity, tend in studies to cope better with stress and are less likely to turn to drinking or aggression when upset. Kashdan, Barrett and McKnight review the evidence. Evidence: consistent but mostly correlational."
+      refs: [kashdan_2015]
+    prompts:
+      - What's the blunt word you use most for how you feel?
+      - "Using the vocabulary at the back, find three finer words that could sit under it."
+      - Describe a recent feeling as precisely as you can. What was it about?
+    exercise:
+      name: Three words deeper
+      steps: |
+        Three times today, when you notice a feeling, write the first word that comes. Then go to the vocabulary at the back and find a more precise word. Then a more precise one again. Write all three, and next to the last one write what it seems to be asking for.
+    tonight: What was today's most precise feeling?
+
+  - n: 13
+    part: 3
+    title: What the Feeling Is For
+    quote:
+      text: "We are frightened by more things than can actually hurt us, Lucilius. We suffer more in imagination than in fact."
+      cite: Moodius paraphrase of Seneca, Moral Letters 13.4
+      kind: paraphrase
+    reading: |
+      Emotions aren't random weather. Most of them carry information. Fear says something might go wrong. Anger says a line has been crossed. Sadness says something mattered and has been lost. Guilt says you've acted against your own standards. Envy says someone has something you want.
+
+      The message is often useful. The problem is that the volume is unreliable. Seneca's point is that fear, especially, runs ahead of reality: we suffer through disasters that never arrive, and through the same real one several times over in rehearsal.
+
+      So treat a feeling the way you'd treat a smoke alarm. Take it seriously enough to look. Then check whether there's a fire, or just toast. Today, practise asking each strong feeling what it's trying to tell you, and whether the message fits the facts.
+    evidence:
+      tier: Empirical
+      note: "Functional accounts of emotion, reviewed by Keltner and Gross, treat emotions as responses that evolved to help with recurring problems, such as threats, losses and social bonds, while noting they can misfire in modern settings. Evidence: a widely used theoretical framework supported by research across psychology."
+      refs: [keltner_gross_1999]
+    prompts:
+      - Pick a feeling you had this week. What was it trying to tell you?
+      - Did the size of the feeling match the size of the situation?
+      - What did you need that the feeling was pointing at?
+    exercise:
+      name: Message, fit, need
+      steps: |
+        Take one strong feeling from today and answer three questions in writing. Message: what is this feeling telling me? Fit: does the message match the facts, partly or fully? Need: what do I need, and what's one thing I can do about it? If the message doesn't fit, write what the facts actually are.
+    tonight: Which feeling turned out to be toast, not fire?
+
+  - n: 14
+    part: 3
+    title: Anger and Delay
+    quote:
+      text: "Remember that it is not he who reviles you or strikes you, who insults you, but it is your opinion about these things as being insulting… For if you once gain time and delay, you will more easily master yourself."
+      cite: Epictetus, Enchiridion 20 (tr. George Long)
+      kind: verbatim
+      source: epictetus_long
+      match: "Remember that it is not he who reviles you or strikes you, who insults you, but it is your opinion about these things as being insulting."
+      match2: "For if you once gain time and delay, you will more easily master yourself."
+    reading: |
+      Anger is the emotion most likely to make you do something you'll regret quickly. It's fast, it feels righteous, and it wants action now: the reply, the slammed door, the thing you can't unsay.
+
+      Epictetus offers two tools in one paragraph. The first you know from Day 7: the insult hurts through your judgement of it. The second is simpler and easier to use in the moment. Buy time. The first surge of anger passes, usually within minutes. What you send during the surge stays.
+
+      Waiting is not the same as swallowing it. You can feel the anger fully. You can still decide to say something firm later. You're just not letting the surge hold the keyboard. And despite the popular idea, letting anger out by venting tends to keep it going rather than drain it.
+    evidence:
+      tier: Empirical
+      note: "In Bushman's experiment, people who vented anger by hitting a punchbag while thinking about the person who provoked them were later more aggressive, not less, than people who sat quietly. Evidence: a well-known study; the broader finding that venting doesn't reduce anger has held up."
+      refs: [bushman_2002, gross_2002]
+    prompts:
+      - What makes you angry most reliably?
+      - What have you done or said in the first minutes of anger that you regretted?
+      - What line was being crossed, underneath the anger?
+    exercise:
+      name: The twenty-minute rule
+      steps: |
+        Write your own rule for anger, in one sentence, for example: "When I feel the surge, I wait twenty minutes before I send, say or decide anything." Then write how you'll remember it (a phone note, a word you say to yourself). Finally, recall a recent anger and write the message you'd have sent after twenty minutes.
+    tonight: Did anything test your rule today?
+
+  - n: 15
+    part: 3
+    title: Reading Other People
+    quote:
+      text: "When any person treats you ill or speaks ill of you, remember that he does this or says this because he thinks that it is his duty."
+      cite: Epictetus, Enchiridion 42 (tr. George Long)
+      kind: verbatim
+      source: epictetus_long
+      match: "When any person treats you ill or speaks ill of you, remember that he does this or says this because he thinks that it is his duty."
+    reading: |
+      Everyone is acting on their own picture of the situation. The person who snubbed you, the colleague who took credit, the friend who said the wrong thing: from inside their heads, it probably made sense. They may be wrong. But they're rarely being villains on purpose.
+
+      Epictetus isn't asking you to excuse everything. He's asking you to understand before you judge, because understanding changes what you feel, and what you feel changes what you do. It's hard to stay furious with someone once you can see how the world looks from where they stand.
+
+      This is a large part of what's usually called emotional intelligence: noticing what others feel, and why, and using that to respond well. It's a skill, not a personality type, and it improves with practice. Today, you'll practise on someone who annoys you.
+    evidence:
+      tier: Empirical
+      note: "Mayer and Salovey's model treats emotional intelligence as four abilities: perceiving emotions, using them to think, understanding them, and managing them. Ability-based EI predicts some social outcomes modestly; popular claims that EI matters \"more than IQ\" go well beyond the evidence."
+      refs: [mayer_salovey_1997]
+    prompts:
+      - Who has annoyed or hurt you recently?
+      - From inside their head, what might they have been thinking or feeling?
+      - Does seeing it from their side change anything about what you want to do?
+    exercise:
+      name: Their side
+      steps: |
+        Write one paragraph describing the situation as the other person might describe it to a friend, in their words, sympathetically. Then write one paragraph in your own words. Then write one sentence about what you'd say to them if you wanted to be understood rather than to win.
+    tonight: Whose feelings did you notice today that you'd normally miss?
+
+  - n: 16
+    part: 4
+    title: Your First Map of Closeness
+    quote:
+      text: "We were made for one another, like feet, like hands, like eyelids, like the upper and lower teeth. To work against each other goes against our nature."
+      cite: Moodius paraphrase of Marcus Aurelius, Meditations 2.1
+      kind: paraphrase
+    reading: |
+      Long before you could talk, you were learning what closeness is like. When you cried, did someone come? Were they warm, or tense, or busy? Could you count on them? From thousands of small moments, children build a sort of map: what happens when I need someone.
+
+      Psychologists call this attachment, and the maps we build early tend to shape what we expect from closeness later: how much we trust, how we behave when we feel distant from someone we love, how we ask for what we need, or don't.
+
+      Two things to hold onto this week. First, the map is a starting point, not a sentence. People's patterns shift with new relationships and experiences. Second, this isn't about blaming anyone. Most people who raised children did what they could with what they had. You're looking at the map so you can redraw it.
+    evidence:
+      tier: Empirical
+      note: "Bowlby's attachment theory is one of the most researched frameworks in psychology. Hazan and Shaver extended it to adult relationships. A meta-analysis by Fraley found attachment security is moderately stable from infancy to adulthood: early experience matters, and change is common. Evidence: strong."
+      refs: [bowlby_1982, hazan_shaver_1987, fraley_2002]
+    prompts:
+      - When you were small and upset, what usually happened?
+      - What did you learn, from that, about needing people?
+      - Where do you see that early lesson in your relationships now?
+    exercise:
+      name: The closeness map
+      steps: |
+        Put your name in the middle of the space below. Around it, write the names of the people who matter most to you now, closer or further away depending on how close you feel. Next to each, write one word for how it feels to need them: easy, risky, unclear, safe. Look at the map. What do you notice?
+    tonight: Who did you feel close to today?
+
+  - n: 17
+    part: 4
+    title: Toward and Away
+    quote:
+      text: "In our power are opinion, movement towards a thing, desire, aversion, turning from a thing…"
+      cite: Epictetus, Enchiridion 1 (tr. George Long; Greek glosses omitted)
+      kind: verbatim
+      source: epictetus_long
+      match: "In our power are opinion"
+    reading: |
+      Epictetus lists "movement towards" and "turning from" among the things in our power. In close relationships those two movements are worth watching, because most of us lean one way when we feel insecure.
+
+      Some people move toward. When a partner seems distant, they reach out more, check in more, need reassurance, worry about being left. Researchers call this attachment anxiety. Others turn away. When things get close or tense, they pull back, go quiet, get busy, feel crowded. That's attachment avoidance.
+
+      These are two dials, not four boxes. You can be high on one, both, or neither, and your settings can differ by relationship. You've probably heard of "attachment styles" as personality types. The research suggests dials are more accurate, and more hopeful: dials can move.
+    evidence:
+      tier: Empirical
+      note: "Brennan, Clark and Shaver showed adult attachment can be measured on two dimensions, anxiety and avoidance. Fraley and colleagues' analysis found these are better described as continuous dimensions than as categories or types. Evidence: strong; widely used in research."
+      refs: [brennan_1998, fraley_2015]
+    prompts:
+      - When someone you love seems distant, what do you feel first? What do you do?
+      - When someone gets very close, very fast, what happens in you?
+      - Is there a relationship where your dials are set differently? What's different about it?
+    exercise:
+      name: Two dials
+      steps: |
+        Draw two lines, each marked 0 to 10. Label one "I worry about closeness being lost" and the other "I pull away when things get close". Mark where you think you sit in your most important relationship. Then, for each mark, write one specific recent example that put you there.
+    tonight: Did you move toward or away from someone today?
+
+  - n: 18
+    part: 4
+    title: The Loop
+    quote:
+      text: "Everything has two handles, the one by which it may be borne, the other by which it may not. If your brother acts unjustly, do not lay hold of the act by that handle wherein he acts unjustly… but lay hold of the other, that he is your brother…"
+      cite: Epictetus, Enchiridion 43 (tr. George Long)
+      kind: verbatim
+      source: epictetus_long
+      match: "Everything has two handles, the one by which it may be borne, the other by which it may not."
+    reading: |
+      Many arguments between people who care about each other follow the same loop. One person pushes for contact: let's talk about this, why won't you answer, we need to sort this out. The other withdraws: not now, I'm fine, I need space. The pushing makes the withdrawing worse, and the withdrawing makes the pushing worse.
+
+      Each person sees only their half. The one pushing thinks: I only push because you disappear. The one withdrawing thinks: I only disappear because you push. Both are right, which is why the loop is so stable.
+
+      Epictetus's two handles help here. One handle is "they're doing this to me". The other is "this is the person I love, caught in the same loop I'm caught in". You can only carry the conversation by the second handle.
+    evidence:
+      tier: Empirical
+      note: "The demand-withdraw pattern, first studied in couples by Christensen and Heavey, is linked to lower relationship satisfaction. Either partner can be the one who demands. Evidence: well replicated across many studies and cultures; mostly observational."
+      refs: [christensen_heavey_1990]
+    prompts:
+      - Think of a recurring argument. Which half of the loop do you usually play?
+      - What do you believe the other person is doing, and why?
+      - What might they say you're doing, and why?
+    exercise:
+      name: Draw the loop
+      steps: |
+        Draw a circle with four points on it: what I do, what they feel, what they do, what I feel. Fill it in for your recurring argument, then follow it round twice. Next to the circle, write one place where you could step out of it next time, and what you'd do instead.
+    tonight: Which handle did you pick up today?
+
+  - n: 19
+    part: 4
+    title: Saying What You Need
+    quote:
+      text: "Think long about whether to admit someone into your friendship. Once you have, trust them completely, and speak to them as freely as you speak to yourself."
+      cite: Moodius paraphrase of Seneca, Moral Letters 3.2
+      kind: paraphrase
+    reading: |
+      A lot of relationship pain comes from needs that were never said out loud. We hint, we hope they'll notice, we test them, we get hurt when they fail the test they didn't know they were taking.
+
+      Saying a need plainly feels exposed. "I'd like you to ask about my day." "I need you to tell me if you're upset rather than going quiet." It hands the other person the power to say no, and that's why we avoid it. But a hint also hands them that power. It just makes it harder for them to say yes.
+
+      Seneca's advice is about friendship, and it applies to any closeness worth having: choose carefully, then trust fully. Some of the most secure relationships are the ones where both people can depend on each other without shame. Needing someone isn't weakness. Being unable to say so is a burden.
+    evidence:
+      tier: Empirical
+      note: "Feeney's studies of couples found a \"dependency paradox\": people whose partners accepted their need for support became more confident and independent over time, not less. Evidence: longitudinal and experimental studies; replicated in related work."
+      refs: [feeney_2007]
+    prompts:
+      - What do you need from someone close to you that you've never said directly?
+      - What have you done instead of saying it?
+      - What are you afraid would happen if you said it plainly?
+    exercise:
+      name: One plain sentence
+      steps: |
+        Write the need as one plain sentence, starting "I would like…" or "It would help me if…". No accusations, no "you never". Read it aloud. If it still sounds like a complaint, rewrite it until it sounds like a request. Then decide when, or whether, you'll say it.
+    tonight: Did you ask for anything today?
+
+  - n: 20
+    part: 4
+    title: Repair
+    quote:
+      text: "It is part of being human to love even those who stumble and do wrong."
+      cite: Moodius paraphrase of Marcus Aurelius, Meditations 7.22
+      kind: paraphrase
+    reading: |
+      Every close relationship has ruptures: a snapped comment, a forgotten promise, a misread silence. What separates relationships that last from ones that sour is not how rarely they rupture, but how well they repair.
+
+      Repair is often small. "I was short with you earlier. That wasn't about you." "Can we start that conversation again?" A hand on an arm, a joke that breaks the tension. It doesn't require winning the argument or even resolving it. It requires turning back toward the other person.
+
+      Repair is hard when you're attached to being right, or when the old map says closeness is dangerous. It gets easier with practice, and so does accepting repair from others. Today you'll look at a rupture you haven't repaired yet.
+    evidence:
+      tier: Empirical
+      note: "Tronick's research on parents and infants found that ordinary interactions are frequently mismatched and then repaired, and that the repairing matters for development. Couple researchers, notably Gottman, report that successful repair attempts distinguish stable relationships, though much of that work is observational. Evidence: moderate."
+      refs: [tronick_1989, gottman_1999]
+    prompts:
+      - Is there a rupture, big or small, that you haven't repaired?
+      - What's stopping you? Pride, fear, not knowing how?
+      - What would a small, honest repair look like?
+    exercise:
+      name: The repair draft
+      steps: |
+        Write what you'd say to repair it, in no more than four sentences. Own your part without apologising for theirs. Leave out explanations that sound like excuses. End with a turn toward them, a question or an offer. Then decide: send, say, or keep for now. All three are allowed.
+    tonight: Did you turn toward anyone today?
+
+  - n: 21
+    part: 5
+    title: The Story You Tell
+    quote:
+      text: "Your mind takes on the colour of your habitual thoughts. The soul is dyed by them."
+      cite: Moodius paraphrase of Marcus Aurelius, Meditations 5.16
+      kind: paraphrase
+    reading: |
+      Ask someone who they are and, sooner or later, they'll tell you a story. Where they came from, what happened to them, what they learned, where they're headed. That story isn't just a summary of a life. It shapes the life. It decides which memories count, which events were turning points, and what kind of person the main character is.
+
+      Some stories run on redemption: something bad happened, and something good came from it. Others run on contamination: something good was spoiled. The same events can be told either way, and the telling matters.
+
+      Marcus says the mind is dyed by its habitual thoughts. The story you tell about yourself is the thought you repeat most. Today you'll write it down, and look at the colour.
+    evidence:
+      tier: Empirical
+      note: "McAdams's research on narrative identity finds that how people tell their life stories, including redemption themes and a sense of agency, is associated with wellbeing, beyond personality traits. Evidence: robust associations; whether changing the story causes better outcomes is less established."
+      refs: [mcadams_2001, mcadams_mclean_2013]
+    prompts:
+      - If your life were a book, what would the chapters be called so far?
+      - Which chapter do you tell most often? Which do you leave out?
+      - Pick one hard chapter. Is there a way to tell it that's equally true but ends differently?
+    exercise:
+      name: The chapter list
+      steps: |
+        Write a contents page for your life: five to eight chapter titles with a line each. Then mark each chapter R (something good came out of something hard), C (something good got spoiled) or N (neither). Look at the pattern. Then choose one C chapter and write a second, equally honest version of its last line.
+    tonight: What chapter are you in now? Give it a title.
+
+  - n: 22
+    part: 5
+    title: Roles and Character
+    quote:
+      text: "Immediately prescribe some character and some form to yourself, which you shall observe both when you are alone and when you meet with men."
+      cite: Epictetus, Enchiridion 33 (tr. George Long)
+      kind: verbatim
+      source: epictetus_long
+      match: "Immediately prescribe some character and some form to yourself, which you shall observe both when you are alone and when you meet with men."
+    reading: |
+      Epictetus taught that each of us plays several roles: son or daughter, sibling, friend, citizen, worker. Each role comes with its own duties. A good life, for him, partly meant playing each role well.
+
+      That's useful, and it has a risk. If one role takes over, if you're only ever the reliable one, or the funny one, or the high performer, then a blow to that role feels like a blow to your whole self. People whose identities rest on several different roles tend to be steadier when one of them takes a hit.
+
+      Epictetus adds something else: a character you keep whether you're alone or with others. Underneath the roles, who are you trying to be? Today you'll list your roles and look for the character that runs through them.
+    evidence:
+      tier: Empirical
+      note: "Linville's early studies suggested that people with more distinct self-aspects (more \"self-complexity\") were less thrown by stress. Later research found the effect is real but inconsistent and depends on how self-complexity is measured. Evidence: mixed. Take it as a reasonable idea, not a law."
+      refs: [linville_1987]
+    prompts:
+      - List the roles you play. Which one gets most of your time? Which one gets most of your identity?
+      - What would happen to your sense of self if your biggest role were taken away tomorrow?
+      - Which role have you been neglecting?
+    exercise:
+      name: Role inventory
+      steps: |
+        Make a list of every role you play. Next to each, write three words for how you behave in it. Then circle any word that appears in more than one role. Those circled words are clues to your character. Write a sentence describing the person they add up to.
+    tonight: Which role did you play best today?
+
+  - n: 23
+    part: 5
+    title: Possible Selves
+    quote:
+      text: "How long will you then still defer thinking yourself worthy of the best things…?"
+      cite: Epictetus, Enchiridion 51 (tr. George Long)
+      kind: verbatim
+      source: epictetus_long
+      match: "How long will you then still defer thinking yourself worthy of the best things"
+    reading: |
+      Alongside the person you are, you carry around other versions of yourself: the one you hope to become and the one you're afraid of becoming. Psychologists call these possible selves. They're surprisingly powerful. They decide what feels urgent, what feels risky and what feels like "not for people like me".
+
+      A feared self can be a useful warning, but people who are steered only by fear tend to make small, defensive choices. A hoped-for self pulls harder, especially when it's specific and you can see a path toward it.
+
+      Epictetus asks his students a blunt question: how long will you wait before deciding you're worth the best things? Not the most expensive things. The best: wisdom, character, a life you respect. Today you'll describe both selves and decide which one gets the steering wheel.
+    evidence:
+      tier: Empirical
+      note: "Markus and Nurius introduced possible selves as a link between self-concept and motivation. Later studies, especially with students, found that hoped-for selves paired with concrete strategies predicted effort better than vague hopes. Evidence: a well-established concept; intervention results are promising but varied."
+      refs: [markus_nurius_1986]
+    prompts:
+      - Describe the person you hope to be in five years. Be specific.
+      - Describe the person you're afraid of becoming. Be specific there too.
+      - Which of the two is making more of your decisions right now?
+    exercise:
+      name: First step on the path
+      steps: |
+        Under your hoped-for self, write three concrete steps that someone becoming that person would take this month. Make at least one of them small enough to do this week. Then write when you'll do it.
+    tonight: Which self made today's decisions?
+
+  - n: 24
+    part: 5
+    title: The Approval Trap
+    quote:
+      text: "I have often wondered how it is that everyone loves themselves more than anyone else, and yet cares less about their own opinion of themselves than about the opinions of others."
+      cite: Moodius paraphrase of Marcus Aurelius, Meditations 12.4
+      kind: paraphrase
+    reading: |
+      Marcus noticed a strange thing. We love ourselves most, yet we trust our own judgement of ourselves least. Someone else's frown can undo a day of feeling fine. A stranger's comment can sit in your head for years.
+
+      Wanting approval is human. We're social animals; belonging has always mattered for survival. The trap is when your sense of worth depends on it: when you're only acceptable if you're liked, praised, admired or ahead. Then every interaction becomes a test, and tests are exhausting.
+
+      Day 6 put reputation on the list of things not in your power. Today, look at where you've handed over your sense of worth, and think about taking some of it back.
+    evidence:
+      tier: Empirical
+      note: "Crocker and colleagues found that when self-esteem is contingent on external approval or appearance, people experience bigger emotional swings and more stress, and chasing self-esteem often backfires. Evidence: consistent across a range of studies; mostly correlational."
+      refs: [crocker_wolfe_2001, crocker_park_2004]
+    prompts:
+      - Whose approval matters most to you? Whose would you like to matter less?
+      - When did you last change what you did or said to be liked?
+      - What would you do this week if nobody could ever find out?
+    exercise:
+      name: Where worth lives
+      steps: |
+        Finish this sentence five different ways: "I feel like I'm worth something when…". Next to each, mark M if it depends mostly on you, or O if it depends mostly on others. For one O, write what a version depending on you would look like.
+    tonight: Did you do anything today purely because you thought it was right?
+
+  - n: 25
+    part: 5
+    title: When No One Is Watching
+    quote:
+      text: "Stop talking about what a good person should be like. Be one."
+      cite: Moodius paraphrase of Marcus Aurelius, Meditations 10.16
+      kind: paraphrase
+    reading: |
+      There's the self you present: the profile, the work persona, the version you are with people you want to impress. And there's the self you live when nobody is checking: alone at night, with your phone, with the decisions nobody will ever see.
+
+      Some gap between the two is normal. We all present a tidier version of ourselves. But a big gap is tiring to maintain, and it makes it hard to know who you are. People with a clear, consistent sense of self tend to feel steadier, and part of that clarity comes from living the same way in private as in public.
+
+      Marcus's line is impatient with talk. Not "what should a good person be?" but "be one". Today, look at the gap honestly, and pick one place to close it.
+    evidence:
+      tier: Empirical
+      note: "Campbell and colleagues developed a measure of self-concept clarity: how clearly and consistently you define yourself. Higher clarity is associated with higher self-esteem and lower anxiety. Evidence: well-established measure; direction of cause is unclear."
+      refs: [campbell_1996]
+    prompts:
+      - What do you do in private that you wouldn't want seen? No judgement, just honesty.
+      - Where is the gap between your public and private self widest?
+      - What would closing that gap a little look like?
+    exercise:
+      name: The alignment audit
+      steps: |
+        Make two columns: "How I'd describe myself" and "What my private hours show". Fill in five rows. Mark the row with the biggest gap. Write one small, specific change that would narrow it, and when you'll make it.
+    tonight: Were you the same person in private today as in public?
+
+  - n: 26
+    part: 6
+    title: Values Are Not Goals
+    quote:
+      text: "If you don't know which harbour you are sailing for, no wind is the right wind."
+      cite: Moodius paraphrase of Seneca, Moral Letters 71.3
+      kind: paraphrase
+    reading: |
+      A goal is something you can finish: run a marathon, get the job, pay off the card. A value is a direction you keep travelling: being honest, being curious, being someone people can rely on. You never finish being kind. You just keep choosing it, or not.
+
+      The difference matters. Goals are useful, but if they're all you have, your life becomes a series of finish lines, with a dip after each one. Values give you something to steer by between the finish lines, and when goals fail.
+
+      Seneca's harbour is the direction, not the destination. Without one, you're pushed around by whatever's blowing: other people's priorities, your phone, your moods. Today you'll name the harbour.
+    evidence:
+      tier: Empirical
+      note: "Acceptance and Commitment Therapy (ACT) distinguishes values from goals and uses values to guide action. Clinical trials of ACT as a whole show benefits for several conditions; this journal uses the idea, not the therapy. Evidence: moderate for ACT overall."
+      refs: [hayes_2012]
+    prompts:
+      - What goals are you currently chasing?
+      - For each one, what value is underneath it? Why does it matter?
+      - Which of your values isn't served by any of your goals?
+    exercise:
+      name: Values sort
+      steps: |
+        Turn to the list of values at the back. Read it slowly and tick every value that matters to you. Then cross out ticks until only ten remain. Then five. Write your five here, each with one sentence on what it means to you, in your own words.
+    tonight: Which value did you act on today?
+
+  - n: 27
+    part: 6
+    title: Your Values in Your Calendar
+    quote:
+      text: "Every habit and faculty is maintained and increased by the corresponding actions: the habit of walking by walking, the habit of running by running."
+      cite: Epictetus, Discourses 2.18 (tr. George Long)
+      kind: verbatim
+      source: epictetus_long
+      match: "Every habit and faculty is maintained and increased by the corresponding actions: the habit of walking by walking, the habit of running by running."
+    reading: |
+      It's easy to say what you value. Your calendar and your bank statement say it more accurately. If you value family but you're never home, or health but you haven't moved in weeks, that's not hypocrisy. It's information: something else is running your time.
+
+      Epictetus's point is that character is built by repetition. You become patient by practising patience, honest by practising honesty. A value that never gets acted on doesn't stay a value for long. It becomes a nice idea about yourself.
+
+      Today you'll compare your five values with your last week. Expect gaps. Everyone has them. The aim isn't guilt; it's to see where the week went, so you can decide where next week goes.
+    evidence:
+      tier: Empirical
+      note: "Research on self-affirmation, reviewed by Cohen and Sherman, found that briefly reflecting on important values can buffer stress and, in some settings, improve performance. Some results, especially in education, have replicated weakly. Evidence: mixed but real."
+      refs: [cohen_sherman_2014]
+    prompts:
+      - Look at your last seven days. Where did the time go?
+      - Which of your five values got the most time? Which got none?
+      - What is taking the time your values aren't getting?
+    exercise:
+      name: The week audit
+      steps: |
+        List your five values. Next to each, write how many hours last week you spent on things that clearly served it. Be honest, estimates are fine. Then write one change to next week's calendar that would give your most neglected value an hour.
+    tonight: Where did today's hours go?
+
+  - n: 28
+    part: 6
+    title: The Cost of a Value
+    quote:
+      text: "It is not the man who has too little, but the man who craves more, that is poor."
+      cite: Seneca, Moral Letters 2.6 (tr. Richard M. Gummere)
+      kind: verbatim
+      source: seneca_gummere_checked
+      match: "It is not the man who has too little, but the man who craves more, that is poor."
+    reading: |
+      Every real value costs something. Honesty costs comfort. Loyalty costs freedom. Ambition costs time. Contentment costs the thrill of always wanting more. If a value has never cost you anything, it may not be one of yours yet.
+
+      Seneca writes as a rich man, which makes his line more interesting, not less. He knew that wanting more doesn't stop at enough. The craving keeps moving the line, and whoever is chasing it stays poor at any income.
+
+      Some wants are borrowed. They came from advertising, comparison, or what your family or friends prize. Others are genuinely yours. Today, look at what you're paying for your values, and whether some of what you chase was ever really yours to want.
+    evidence:
+      tier: Empirical
+      note: "Kasser and Ryan found that people who prioritise extrinsic aspirations (wealth, image, fame) over intrinsic ones (relationships, growth, community) report lower wellbeing on average. Evidence: replicated in many countries; correlational, and the size of the link varies."
+      refs: [kasser_ryan_1996]
+    prompts:
+      - What does each of your five values cost you?
+      - What are you chasing that might be borrowed rather than yours?
+      - What would "enough" look like, in one area of your life?
+    exercise:
+      name: Borrowed or mine
+      steps: |
+        List five things you want at the moment. For each, ask: where did this want come from? Would I still want it if nobody would ever know I had it? Mark each one B (borrowed) or M (mine). For one B, write what you'd do with the time and money if you let it go.
+    tonight: What did you not need today?
+
+  - n: 29
+    part: 6
+    title: Small Commitments
+    quote:
+      text: "Don't let the whole of your life crush you at once. Ask, of this present moment: what here is unbearable? You'll be embarrassed to answer."
+      cite: Moodius paraphrase of Marcus Aurelius, Meditations 8.36
+      kind: paraphrase
+    reading: |
+      After twenty-eight days of looking, there's a temptation to change everything. New routine, new habits, new you, starting Monday. Most of those plans collapse by Thursday. Not because people are weak, but because big plans are heavy, and life keeps happening.
+
+      Marcus's answer to the weight of a whole life is the present moment. You don't have to live your values for the rest of your life. You have to live them today, in one specific way. Then again tomorrow.
+
+      So the commitments you make today should be small enough that they survive a bad week. One action for each of three values, attached to something you already do, with an "if-then" plan for the moment it's likely to slip.
+    evidence:
+      tier: Empirical
+      note: "Gollwitzer and Sheeran's meta-analysis supports \"if-then\" planning (see Day 10). Research on habit formation suggests attaching new behaviour to an existing cue and keeping it small makes it more likely to stick, though how long habits take to form varies enormously between people."
+      refs: [gollwitzer_sheeran_2006, lally_2010]
+    prompts:
+      - Of everything you've noticed in this journal, what do you most want to carry forward?
+      - What has derailed your past attempts to change?
+      - What's the smallest action that would still mean something?
+    exercise:
+      name: Three commitments
+      steps: |
+        Choose three of your five values. For each, write one small action you'll take daily or weekly for the next thirty days, the existing habit you'll attach it to, and an "if-then" plan for when it slips. Example: "Curiosity: after my morning coffee, I read ten pages. If I skip it, then I read two pages before bed."
+    tonight: Which commitment feels most alive?
+
+  - n: 30
+    part: 6
+    title: The Examined Self
+    quote:
+      text: "Look within. Within is the spring of good, and it will keep flowing if you keep digging."
+      cite: Moodius paraphrase of Marcus Aurelius, Meditations 7.59
+      kind: paraphrase
+    reading: |
+      Thirty days ago you wrote a letter to yourself. It's time to read it.
+
+      Before you do, notice what you've practised. You've watched your own mind. You've pulled events apart from the stories you tell about them. You've named feelings precisely and asked what they were for. You've looked at how you move in closeness, the story of your life, the roles you play, the gap between private and public, and what you live by.
+
+      Socrates' examined life isn't a project you complete. It's a habit of looking, and you now have the beginnings of it. Marcus's image fits: the spring is there, and it keeps flowing as long as you keep digging. Read the letter. Then write one more.
+    evidence:
+      tier: Moodius opinion
+      note: "We think the most valuable thing you take from these thirty days is not any single insight but the habit of asking: what's actually happening, what's mine, what do I feel, what matters? Keep asking. The research on expressive writing suggests even brief, regular writing about what matters to you can help many people, though not everyone."
+      refs: [frattaroli_2006]
+    prompts:
+      - Read your Day 1 letter. What has changed? What hasn't?
+      - What did you learn about yourself that surprised you most?
+      - Which day would you go back to? Why?
+    exercise:
+      name: The second letter
+      steps: |
+        Write a letter to yourself to open in three months. What you understand now that you didn't thirty days ago; what you're committing to; what you want to remember when things get hard. Seal it, date it, and put a reminder in your calendar.
+    tonight: One word for how you feel, thirty days in.
+
+review:
+  heading: Part review
+  prompts:
+    - What did I notice most in this part?
+    - What surprised me, or made me uncomfortable?
+    - Which exercise was most useful, and why?
+    - One thing I'll carry into the next part.
+  scale: "On a scale of 1 to 10, how clearly do I see myself in this area now? What would make it one point higher?"
+
+vocabulary:
+  heading: A vocabulary of feeling
+  intro: Use this on Day 12 and any time "fine", "stressed" or "bad" isn't enough. The groups are loose; many words fit more than one.
+  groups:
+    - name: Angry
+      words: [irritated, annoyed, frustrated, resentful, indignant, bitter, exasperated, offended, furious, betrayed]
+    - name: Afraid
+      words: [uneasy, nervous, apprehensive, dreading, insecure, panicked, overwhelmed, wary, exposed, vulnerable]
+    - name: Sad
+      words: [disappointed, lonely, grieving, homesick, discouraged, hurt, empty, wistful, heavy, let down]
+    - name: Ashamed
+      words: [embarrassed, humiliated, guilty, inadequate, self-conscious, regretful, foolish, small, inferior, sheepish]
+    - name: Glad
+      words: [content, relieved, grateful, proud, hopeful, playful, amused, peaceful, energised, delighted]
+    - name: Connected
+      words: [loved, accepted, trusted, close, understood, tender, safe, valued, included, warm]
+    - name: Unsettled
+      words: [restless, confused, torn, ambivalent, flat, numb, bored, impatient, jealous, envious]
+
+values:
+  heading: A list of values
+  intro: Use this on Day 26. It draws on the broad value types in Schwartz's cross-cultural research, written in everyday words. Add your own.
+  words: [adventure, authenticity, beauty, belonging, calm, care, challenge, community, compassion, competence, courage, creativity, curiosity, discipline, fairness, faith, family, freedom, friendship, generosity, gratitude, growth, health, honesty, humility, humour, independence, justice, kindness, knowledge, leadership, learning, loyalty, mastery, nature, order, patience, play, reliability, respect, responsibility, security, self-respect, service, simplicity, solitude, spirituality, tradition, wisdom, work]
+  ref: schwartz_1992
+
+references:
+  plato_apology: "Plato. Apology (B. Jowett, Trans.). Public domain; Project Gutenberg ebook 1656."
+  epictetus_enchiridion: "Epictetus. The Encheiridion. In A selection from the Discourses of Epictetus with the Encheiridion (G. Long, Trans.). Public domain; Project Gutenberg ebook 10661."
+  marcus: "Marcus Aurelius. Meditations. Paraphrases by Moodius Aurelius; section numbers follow standard modern numbering (for a full public-domain translation see George Long, 1862)."
+  seneca: "Seneca. Moral Letters to Lucilius (R. M. Gummere, Trans., 1917–1925) and On Anger. Paraphrases by Moodius Aurelius except Letters 2.6 (Gummere)."
+  bowlby_1982: "Bowlby, J. (1982). Attachment and loss: Vol. 1. Attachment (2nd ed.). Basic Books. (Original work published 1969)"
+  breines_chen_2012: "Breines, J. G., & Chen, S. (2012). Self-compassion increases self-improvement motivation. Personality and Social Psychology Bulletin, 38(9), 1133–1143."
+  brennan_1998: "Brennan, K. A., Clark, C. L., & Shaver, P. R. (1998). Self-report measurement of adult attachment: An integrative overview. In J. A. Simpson & W. S. Rholes (Eds.), Attachment theory and close relationships (pp. 46–76). Guilford Press."
+  bushman_2002: "Bushman, B. J. (2002). Does venting anger feed or extinguish the flame? Catharsis, rumination, distraction, anger, and aggressive responding. Personality and Social Psychology Bulletin, 28(6), 724–731."
+  campbell_1996: "Campbell, J. D., Trapnell, P. D., Heine, S. J., Katz, I. M., Lavallee, L. F., & Lehman, D. R. (1996). Self-concept clarity: Measurement, personality correlates, and cultural boundaries. Journal of Personality and Social Psychology, 70(1), 141–156."
+  christensen_heavey_1990: "Christensen, A., & Heavey, C. L. (1990). Gender and social structure in the demand/withdraw pattern of marital conflict. Journal of Personality and Social Psychology, 59(1), 73–81."
+  cohen_sherman_2014: "Cohen, G. L., & Sherman, D. K. (2014). The psychology of change: Self-affirmation and social psychological intervention. Annual Review of Psychology, 65, 333–371."
+  crocker_park_2004: "Crocker, J., & Park, L. E. (2004). The costly pursuit of self-esteem. Psychological Bulletin, 130(3), 392–414."
+  crocker_wolfe_2001: "Crocker, J., & Wolfe, C. T. (2001). Contingencies of self-worth. Psychological Review, 108(3), 593–623."
+  feeney_2007: "Feeney, B. C. (2007). The dependency paradox in close relationships: Accepting dependence promotes independence. Journal of Personality and Social Psychology, 92(2), 268–285."
+  fraley_2002: "Fraley, R. C. (2002). Attachment stability from infancy to adulthood: Meta-analysis and dynamic modeling of developmental mechanisms. Personality and Social Psychology Review, 6(2), 123–151."
+  fraley_2015: "Fraley, R. C., Hudson, N. W., Heffernan, M. E., & Segal, N. (2015). Are adult attachment styles categorical or dimensional? A taxometric analysis of general and relationship-specific attachment orientations. Journal of Personality and Social Psychology, 109(2), 354–368."
+  frattaroli_2006: "Frattaroli, J. (2006). Experimental disclosure and its moderators: A meta-analysis. Psychological Bulletin, 132(6), 823–865."
+  gollwitzer_1999: "Gollwitzer, P. M. (1999). Implementation intentions: Strong effects of simple plans. American Psychologist, 54(7), 493–503."
+  gollwitzer_sheeran_2006: "Gollwitzer, P. M., & Sheeran, P. (2006). Implementation intentions and goal achievement: A meta-analysis of effects and processes. Advances in Experimental Social Psychology, 38, 69–119."
+  gottman_1999: "Gottman, J. M. (1999). The marriage clinic: A scientifically based marital therapy. W. W. Norton."
+  gross_2002: "Gross, J. J. (2002). Emotion regulation: Affective, cognitive, and social consequences. Psychophysiology, 39(3), 281–291."
+  grossmann_kross_2014: "Grossmann, I., & Kross, E. (2014). Exploring Solomon's paradox: Self-distancing eliminates the self-other asymmetry in wise reasoning about close relationships in younger and older adults. Psychological Science, 25(8), 1571–1580."
+  hayes_2012: "Hayes, S. C., Strosahl, K. D., & Wilson, K. G. (2012). Acceptance and commitment therapy: The process and practice of mindful change (2nd ed.). Guilford Press."
+  hazan_shaver_1987: "Hazan, C., & Shaver, P. (1987). Romantic love conceptualized as an attachment process. Journal of Personality and Social Psychology, 52(3), 511–524."
+  kashdan_2015: "Kashdan, T. B., Barrett, L. F., & McKnight, P. E. (2015). Unpacking emotion differentiation: Transforming unpleasant experience by perceiving distinctions in negativity. Current Directions in Psychological Science, 24(1), 10–16."
+  kasser_ryan_1996: "Kasser, T., & Ryan, R. M. (1996). Further examining the American dream: Differential correlates of intrinsic and extrinsic goals. Personality and Social Psychology Bulletin, 22(3), 280–287."
+  keltner_gross_1999: "Keltner, D., & Gross, J. J. (1999). Functional accounts of emotions. Cognition and Emotion, 13(5), 467–480."
+  kross_ayduk_2011: "Kross, E., & Ayduk, O. (2011). Making meaning out of negative experiences by self-distancing. Current Directions in Psychological Science, 20(3), 187–191."
+  kross_2014: "Kross, E., Bruehlman-Senecal, E., Park, J., Burson, A., Dougherty, A., Shablack, H., Bremner, R., Moser, J., & Ayduk, O. (2014). Self-talk as a regulatory mechanism: How you do it matters. Journal of Personality and Social Psychology, 106(2), 304–324."
+  lally_2010: "Lally, P., van Jaarsveld, C. H. M., Potts, H. W. W., & Wardle, J. (2010). How are habits formed: Modelling habit formation in the real world. European Journal of Social Psychology, 40(6), 998–1009."
+  lieberman_2007: "Lieberman, M. D., Eisenberger, N. I., Crockett, M. J., Tom, S. M., Pfeifer, J. H., & Way, B. M. (2007). Putting feelings into words: Affect labeling disrupts amygdala activity in response to affective stimuli. Psychological Science, 18(5), 421–428."
+  linville_1987: "Linville, P. W. (1987). Self-complexity as a cognitive buffer against stress-related illness and depression. Journal of Personality and Social Psychology, 52(4), 663–676."
+  markus_nurius_1986: "Markus, H., & Nurius, P. (1986). Possible selves. American Psychologist, 41(9), 954–969."
+  mayer_salovey_1997: "Mayer, J. D., & Salovey, P. (1997). What is emotional intelligence? In P. Salovey & D. J. Sluyter (Eds.), Emotional development and emotional intelligence: Educational implications (pp. 3–31). Basic Books."
+  mcadams_2001: "McAdams, D. P. (2001). The psychology of life stories. Review of General Psychology, 5(2), 100–122."
+  mcadams_mclean_2013: "McAdams, D. P., & McLean, K. C. (2013). Narrative identity. Current Directions in Psychological Science, 22(3), 233–238."
+  neff_2003: "Neff, K. D. (2003). Self-compassion: An alternative conceptualization of a healthy attitude toward oneself. Self and Identity, 2(2), 85–101."
+  nolen_hoeksema_2008: "Nolen-Hoeksema, S., Wisco, B. E., & Lyubomirsky, S. (2008). Rethinking rumination. Perspectives on Psychological Science, 3(5), 400–424."
+  robertson_2019: "Robertson, D. (2019). The philosophy of cognitive-behavioural therapy (CBT): Stoic philosophy as rational and cognitive psychotherapy (2nd ed.). Routledge."
+  schwartz_1992: "Schwartz, S. H. (1992). Universals in the content and structure of values: Theoretical advances and empirical tests in 20 countries. Advances in Experimental Social Psychology, 25, 1–65."
+  tronick_1989: "Tronick, E. Z. (1989). Emotions and emotional communication in infants. American Psychologist, 44(2), 112–119."
+  vazire_2010: "Vazire, S. (2010). Who knows what about a person? The self–other knowledge asymmetry (SOKA) model. Journal of Personality and Social Psychology, 98(2), 281–300."
+  watkins_2008: "Watkins, E. R. (2008). Constructive and unconstructive repetitive thought. Psychological Bulletin, 134(2), 163–206."
+  wilson_dunn_2004: "Wilson, T. D., & Dunn, E. W. (2004). Self-knowledge: Its limits, value, and potential for improvement. Annual Review of Psychology, 55, 493–518."

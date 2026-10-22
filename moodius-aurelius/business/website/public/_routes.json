@@ -1,0 +1,5 @@
+{
+  "version": 1,
+  "include": ["/api/*", "/r/*", "/download/*", "/links", "/links/", "/newsletter*", "/free/*", "/privacy-newsletter*", "/admin*", "/_agent/*"],
+  "exclude": []
+}

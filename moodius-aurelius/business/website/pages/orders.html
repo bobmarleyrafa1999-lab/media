@@ -1,0 +1,17 @@
+<!-- title: Find my order · Moodius Aurelius -->
+<!-- description: Get fresh download links for your purchases. -->
+<!-- page: orders -->
+<!-- path: /orders/ -->
+<div class="narrow stack">
+  <p class="kicker">Find my order</p>
+  <h1>Lost your download link?</h1>
+  <p>Enter the email you used at checkout and we'll send fresh links for everything you've bought.</p>
+  <div data-notice hidden data-sent="If that address has orders, fresh download links are on their way. Check your spam folder too."></div>
+  <form method="post" action="/api/shop/resend-links">
+    <div class="hp" aria-hidden="true"><label>Leave empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" required autocomplete="email">
+    <p style="margin-top:1rem"><button class="btn" type="submit">Send my links</button></p>
+  </form>
+  <p class="muted small">For privacy we never confirm on this page whether an address has orders.</p>
+</div>
