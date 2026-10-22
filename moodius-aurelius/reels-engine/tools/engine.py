@@ -6,6 +6,9 @@
                               [--layout upper|centre] [--force] [--out ../renders]
     python3 engine.py registry                                  # every citation already used on the account
 
+1.2 (21 Oct 2026, formats A-F): question / labelled / pause cards, still-photo backgrounds with a slow
+drift, optional film grain ("texture": "grain"), "max_s" for longer essays, data sources need a dated cite.
+
 Extends tools/reels_v2.py: same tokens (tools/design.py), adds card kinds (hook/body/quote/cite/cta),
 a rise-and-fade text animation, optional background footage, an ambient bed (ambient.py) or a
 score.py cue, a cover JPG and caption file per reel, and a render cache so unchanged scripts
@@ -32,11 +35,17 @@ STYLE = {  # kind: (font, size, colour)
     "body": (BODY_M, 60, BONE),
     "cite": (BODY_M, 32, ASH),
     "cta": (BODY_SB, 50, BONE),
+    "question": (DISPLAY, 88, BONE),   # 1.2: format A hook
+    "labelled": (BODY_M, 60, BONE),    # 1.2: first line is an Ember label (format C)
+    "pause": (BODY_M, 60, BONE),       # 1.2: an empty beat
 }
+LABEL = (BODY_SB, 30, EMBER)
 PD_TRANSLATIONS = ("Long", "Gummere", "Trotter", "Garnett", "Common", "Jowett", "Ross", "Higginson", "Basore")
 BANNED = ["studies show", "science proves", "guaranteed", "cure", "alpha", "high value", "high-value",
           "grindset", "sigma", "level up", "unlock", "game-changer", "game changer", "dive into",
-          "embrace your", "in today's world", "journey", "manifest", "hustle", "king"]
+          "embrace your", "in today's world", "journey", "manifest", "hustle", "king",
+          # 1.2: format E guardrails (masculinity without the manosphere)
+          "smv", "hypergamy", "simp", "beta male", "female nature", "red pill", "redpill", "alpha male"]
 
 
 # ---------- citation registry ----------
@@ -60,6 +69,8 @@ def registry(exclude_engine=True):
             continue
         if os.sep + "upload-pack" + os.sep in path:   # copies of already-scheduled posts
             continue
+        if path.endswith("research-library.csv"):     # libraries list candidates, not uses
+            continue
         try:
             text = open(path, encoding="utf-8").read()
         except (UnicodeDecodeError, OSError):
@@ -80,15 +91,16 @@ def qc(script, used):
     err, warn = [], []
     cards = script["cards"]
     total = sum(d for _, d, _ in cards)
-    if not 7 <= total <= 20.5:
-        (warn if total <= 40 else err).append(f"length {total:.1f}s outside 7-20s")
+    max_s = script.get("max_s", 20.5)   # format D may set up to 45
+    if not 7 <= total <= max_s:
+        (warn if total <= max(40, max_s + 5) else err).append(f"length {total:.1f}s outside 7-{max_s:g}s")
     text0, d0, k0 = cards[0]
-    if k0 != "hook":
+    if k0 not in ("hook", "question"):
         err.append("first card must be the hook")
     for label, h in (("hook", text0), ("hook_b", script.get("hook_b", ""))):
         if words(h) > 14 if label == "hook_b" else words(h) > 12:
             err.append(f"{label} has {words(h)} words (max {14 if label == 'hook_b' else 12})")
-    if d0 > 2.6:
+    if d0 > (3.0 if k0 == "question" else 2.6):
         warn.append("hook card longer than 2.6s")
     for i, (t, d, k) in enumerate(cards):
         need = 0.4 + words(t) / 4.5   # ~270 wpm for short lines; viewers also loop
@@ -112,6 +124,8 @@ def qc(script, used):
             err.append(f"{key} already used in: {', '.join(clash[:3])}")
     if src["type"] == "idea" and not any(k == "cite" and "Idea:" in t for t, _, k in cards):
         err.append("idea from a book needs an 'Idea: … · Moodius words' cite card")
+    if src["type"] == "data" and not any(k == "cite" and re.search(r"\b(19|20)\d{2}\b", t) for t, _, k in cards):
+        err.append("a study or survey needs a cite card with its year")
     cap = script["caption"]
     if len(cap) > 2200:
         err.append("caption over 2,200 characters")
@@ -163,7 +177,7 @@ def card_layout(text, kind):
     if kind == "cite":
         text = text.upper()
     lines = wrap(text, font, fs)
-    while kind in ("quote", "body", "hook") and len(lines) > 6 and fs > 44:
+    while kind in ("quote", "body", "hook", "question") and len(lines) > 6 and fs > 44:
         fs -= 4
         lines = wrap(text, font, fs)
     return font, fs, col, lines
@@ -172,38 +186,61 @@ def card_layout(text, kind):
 def footage_for(tag):
     if not tag:
         return None
-    hits = sorted(glob.glob(os.path.join(FOOTAGE, f"{tag}*.mp4")) + glob.glob(os.path.join(FOOTAGE, f"{tag}*.mov")))
+    hits = sorted(sum((glob.glob(os.path.join(FOOTAGE, f"{tag}*.{e}")) for e in ("mp4", "mov", "jpg", "jpeg", "png")), []))
     return hits[0] if hits else None
+
+
+def is_still(path):
+    return bool(path) and path.lower().endswith((".jpg", ".jpeg", ".png"))
 
 
 def build_filter(script, total, layout, clip, tmp):
     centre_y = 880 if layout == "upper" else 960
     f = []
-    if clip:
+    grain = ",noise=alls=7:allf=t" if script.get("texture") == "grain" else ""
+    if is_still(clip):  # 1.2: a photograph, drifting ~5% over the whole reel (restrained motion)
+        f.append(f"[1:v]scale={int(W * 1.1)}:{int(H * 1.1)}:force_original_aspect_ratio=increase,crop={int(W * 1.1)}:{int(H * 1.1)},"
+                 f"crop={W}:{H}:x='{W * 0.1:.0f}*t/{total:.2f}':y='{H * 0.05:.0f}*t/{total:.2f}',"
+                 f"hue=s=0.25,eq=brightness=-0.06:contrast=0.95,setsar=1,fps=30,trim=0:{total:.2f},setpts=PTS-STARTPTS[foot];"
+                 f"color=c={hexc(SLATE)}@0.72:s={W}x{H}:d={total:.2f},format=rgba[tint];"
+                 f"[foot][tint]overlay=0:0{grain},format=yuv420p[bg]")
+    elif clip:
         f.append(f"[1:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
                  f"hue=s=0.25,eq=brightness=-0.06:contrast=0.95,setsar=1,fps=30,trim=0:{total:.2f},setpts=PTS-STARTPTS[foot];"
                  f"color=c={hexc(SLATE)}@0.72:s={W}x{H}:d={total:.2f},format=rgba[tint];"
-                 f"[foot][tint]overlay=0:0,format=yuv420p[bg]")
+                 f"[foot][tint]overlay=0:0{grain},format=yuv420p[bg]")
     else:
-        f.append(f"color=c={hexc(SLATE)}:s={W}x{H}:d={total:.2f},format=yuv420p[bg]")
+        f.append(f"color=c={hexc(SLATE)}:s={W}x{H}:d={total:.2f}{grain},format=yuv420p[bg]")
     chain, n, t = "[bg]", 0, 0.2
     for ci, (text, d, kind) in enumerate(script["cards"]):
-        font, fs, col, lines = card_layout(text, kind)
-        lh = fs * 1.28
-        y0 = centre_y - lh * len(lines) / 2
+        if kind == "pause":
+            t += d
+            continue
         a = (f"if(lt(t-{t:.2f},0.3),(t-{t:.2f})/0.3,"
              f"if(gt(t-{t:.2f},{d - 0.3:.2f}),({t + d:.2f}-t)/0.3,1))")
         rise = f"14*max(0,1-(t-{t:.2f})/0.35)"
-        for j, ln in enumerate(lines):
+        if kind == "labelled":  # Ember label line, then the body lines
+            label, _, body = text.partition("\n")
+            font, fs, col, lines = card_layout(body, "body")
+            lh = fs * 1.28
+            y0 = centre_y - (lh * len(lines) + 62) / 2 + 62
+            segs = [(LABEL[0], LABEL[1], LABEL[2], label.upper(), y0 - 62)] + \
+                   [(font, fs, col, ln, y0 + j * lh) for j, ln in enumerate(lines)]
+        else:
+            font, fs, col, lines = card_layout(text, kind)
+            lh = fs * 1.28
+            y0 = centre_y - lh * len(lines) / 2
+            segs = [(font, fs, col, ln, y0 + j * lh) for j, ln in enumerate(lines)]
+        for j, (sfont, sfs, scol, ln, y) in enumerate(segs):
             tf = os.path.join(tmp, f"c{ci}_{j}.txt")
             with open(tf, "w", encoding="utf-8") as fh:
                 fh.write(ln)
             nxt = f"[v{n}]"
-            f.append(f"{chain}drawtext=fontfile={font}:textfile={tf}:expansion=none:fontsize={fs}:"
-                     f"fontcolor={hexc(col)}:x={MARGIN}:y='{y0 + j * lh:.0f}+{rise}':alpha='{a}':"
+            f.append(f"{chain}drawtext=fontfile={sfont}:textfile={tf}:expansion=none:fontsize={sfs}:"
+                     f"fontcolor={hexc(scol)}:x={MARGIN}:y='{y:.0f}+{rise}':alpha='{a}':"
                      f"enable='between(t,{t:.2f},{t + d:.2f})'{nxt}")
             chain, n = nxt, n + 1
-        if kind == "hook":  # the single Ember accent: a short rule under hook cards
+        if kind in ("hook", "question"):  # the single Ember accent: a short rule under hook cards
             nxt = f"[v{n}]"
             f.append(f"{chain}drawbox=x={MARGIN}:y={y0 + lh * len(lines) + 18:.0f}:w=120:h=5:"
                      f"color={hexc(EMBER)}:t=fill:enable='between(t,{t + 0.25:.2f},{t + d - 0.2:.2f})'{nxt}")
@@ -236,11 +273,13 @@ def render(script, out_dir, layout="upper", variant="a"):
     with tempfile.TemporaryDirectory() as tmp:
         wav = os.path.join(tmp, "bed.wav")
         audio(s, total, wav)
-        inputs = ["-i", wav] + (["-stream_loop", "-1", "-i", clip] if clip else [])
+        inputs = ["-i", wav] + ((["-loop", "1", "-framerate", "30", "-i", clip] if is_still(clip)
+                                 else ["-stream_loop", "-1", "-i", clip]) if clip else [])
         filt = build_filter(s, total, layout, clip, tmp) + ";[0:a]loudnorm=I=-14:TP=-1.5:LRA=11[aout]"
         cmd = ["ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", filt,
                "-map", "[vout]", "-map", "[aout]", "-t", f"{total:.2f}", "-r", "30",
                "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
+               *(["-maxrate", "8M", "-bufsize", "16M"] if s.get("texture") == "grain" else []),  # grain is incompressible
                "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", out]
         r = subprocess.run(cmd, capture_output=True, text=True)
     if r.returncode:
@@ -250,11 +289,13 @@ def render(script, out_dir, layout="upper", variant="a"):
                     "-q:v", "3", os.path.join(out_dir, f"{name}-cover.jpg")], check=False)
     with open(os.path.join(out_dir, f"{name}.txt"), "w", encoding="utf-8") as fh:
         fh.write(s["caption"] + "\n\n" + " ".join(s.get("hashtags", [])) + "\n\n---\nFirst comment:\n" + s["first_comment"] + "\n")
-    return name, True, f"{total:.1f}s" + (" footage" if clip else " flat")
+    return name, True, f"{total:.1f}s" + (" still" if is_still(clip) else " footage" if clip else " flat") + \
+        (" +grain" if s.get("texture") == "grain" else "")
 
 
 def digest(script, layout, variant):
     blob = json.dumps([script, layout, variant, VERSION, footage_for(script.get("footage"))], sort_keys=True)
+    # (1.2 features are opt-in per script, so VERSION stays 1.1 and scheduled reels aren't re-rendered)
     return hashlib.sha1(blob.encode()).hexdigest()
 
 
