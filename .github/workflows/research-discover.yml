@@ -1,0 +1,55 @@
+# Research discover: searches the open book and paper APIs that Claude's container can't reach
+# (Gutenberg/Gutendex, Open Library, Internet Archive, OpenAlex, Semantic Scholar, Wikisource)
+# and saves the leads to moodius-aurelius/research/library/discover/ on the branch it runs on.
+# Free, manual only: Actions tab → "Research discover" → Run workflow → type a topic.
+# Results are leads, not facts: a Claude thread checks them before they become tidbits.
+name: Research discover
+
+on:
+  workflow_dispatch:
+    inputs:
+      query:
+        description: "Topic, e.g. Epictetus, Septima Clark, Ramanujan letter Hardy"
+        required: true
+      apis:
+        description: "Comma list (blank = all): gutendex,openlibrary,archive,openalex,semanticscholar,wikisource"
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: research-discover
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    defaults:
+      run:
+        working-directory: moodius-aurelius/research/library
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Search
+        env:
+          QUERY: ${{ inputs.query }}
+          APIS: ${{ inputs.apis }}
+        run: |
+          if [ -n "$APIS" ]; then python3 tools/library.py discover "$QUERY" --apis "$APIS"
+          else python3 tools/library.py discover "$QUERY"; fi
+      - name: Check the library still verifies
+        run: python3 tools/library.py verify
+      - name: Save results to the branch
+        env:
+          QUERY: ${{ inputs.query }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add discover/
+          git diff --cached --quiet && exit 0
+          git commit -m "Research discover: $QUERY"
+          git push
