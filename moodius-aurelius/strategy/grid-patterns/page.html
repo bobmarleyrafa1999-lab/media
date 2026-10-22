@@ -1,0 +1,270 @@
+<title>Moodius Grid Patterns</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one narrow reading column, grids shown as phone-width figures, repo list as stacked rows with a verdict stripe */
+:root{
+  --bg:#F3EFE7; --panel:#E9E4DA; --fg:#1B1F24; --muted:#5E5A53; --rule:#D3CDC2;
+  --ember:#B4651F; --green:#2E7D4F; --amber:#B9770E; --red:#B23B2E;
+  --green-bg:#E3EFE6; --amber-bg:#F5EAD6; --red-bg:#F4E1DD;
+  --display:"Playfair Display",Georgia,"Times New Roman",serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#1B1F24; --panel:#2A2F36; --fg:#F3EFE7; --muted:#B8B3A9; --rule:#3A4049;
+  --ember:#D98A48; --green:#6CC48F; --amber:#E3A84A; --red:#E57B6E;
+  --green-bg:#1F3328; --amber-bg:#3A2F1C; --red-bg:#3B2421; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1B1F24; --panel:#2A2F36; --fg:#F3EFE7; --muted:#B8B3A9; --rule:#3A4049;
+  --ember:#D98A48; --green:#6CC48F; --amber:#E3A84A; --red:#E57B6E;
+  --green-bg:#1F3328; --amber-bg:#3A2F1C; --red-bg:#3B2421; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:16px/1.55 var(--body)}
+.wrap{max-width:680px;margin:0 auto;padding-block:28px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:28px}
+h1,h2,h3{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:2.1rem} h2{font-size:1.5rem;padding-top:8px;border-top:1px solid var(--rule)} h3{font-size:1.15rem}
+p{margin:0} .lede{font-size:1.06rem}
+.eyebrow{font:600 .72rem/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--ember)}
+.stack{display:flex;flex-direction:column;gap:12px}
+.key{display:flex;flex-wrap:wrap;gap:8px}
+.pill{display:inline-flex;align-items:center;gap:6px;font:600 .8rem/1 var(--body);padding:6px 10px;border-radius:99px;white-space:nowrap}
+.g{background:var(--green-bg);color:var(--green)} .a{background:var(--amber-bg);color:var(--amber)} .r{background:var(--red-bg);color:var(--red)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tabs button{font:600 .85rem var(--body);padding:8px 12px;border-radius:8px;border:1px solid var(--rule);background:var(--panel);color:var(--fg);cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.tabs button:focus-visible{outline:2px solid var(--ember);outline-offset:2px}
+figure{margin:0;display:flex;flex-direction:column;gap:10px}
+figure img{width:100%;max-width:420px;border-radius:6px;border:1px solid var(--rule)}
+figcaption{color:var(--muted);font-size:.92rem}
+.pattern-card{display:flex;flex-direction:column;gap:10px}
+.swatches{display:flex;gap:6px;align-items:center;font-size:.85rem;color:var(--muted);flex-wrap:wrap}
+.sw{width:22px;height:22px;border-radius:4px;border:1px solid var(--rule);display:inline-block}
+ol,ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:8px}
+code{font-size:.86em;background:var(--panel);padding:1px 5px;border-radius:4px;word-break:break-word}
+.repo-group{display:flex;flex-direction:column;gap:10px}
+.repo{display:grid;grid-template-columns:6px 1fr;gap:12px;background:var(--panel);border-radius:8px;overflow:hidden}
+.repo .bar{background:var(--muted)} .repo.vg .bar{background:var(--green)} .repo.va .bar{background:var(--amber)} .repo.vr .bar{background:var(--red)}
+.repo .in{padding:12px 12px 12px 0;display:flex;flex-direction:column;gap:6px;min-width:0}
+.repo .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap}
+.repo a{color:var(--fg);font-weight:600;text-decoration:underline;text-decoration-color:var(--rule);text-underline-offset:3px;word-break:break-all}
+.meta{font-size:.82rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.repo p{font-size:.94rem}
+.you{border-left:3px solid var(--ember);padding:12px 14px;background:var(--panel);border-radius:0 8px 8px 0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:12px} .split>div{min-width:0}
+@media (max-width:520px){.split{grid-template-columns:1fr}}
+</style>
+
+<div class="wrap">
+<header class="stack">
+  <span class="eyebrow">@moodiusaurelius · draft, 22 Oct 2026</span>
+  <h1>Grid patterns and visual tools</h1>
+  <p class="lede">Three ways to make the profile grid form a pattern when someone zooms out, built from the real reels and carousels planned for 3 to 8 Nov. Then a colour-coded list of GitHub repos for better visuals. Nothing has been scheduled or changed in Metricool.</p>
+  <div class="key"><span class="pill g">🟢 Use</span><span class="pill a">🟠 Maybe / only part of it</span><span class="pill r">🔴 Skip</span></div>
+</header>
+
+<section class="stack">
+  <h2>Why the grid looks flat today</h2>
+  <figure>
+    <img src="grid-current-look.jpg" alt="Twelve current reel covers, all dark slate with small white text">
+    <figcaption>12 existing covers, cropped the way the profile grid shows them (3:4). Every tile is the same Slate, and the hook sits near the top edge of the crop, so from a distance it reads as one dark wall.</figcaption>
+  </figure>
+  <p>Instagram fills the grid newest-first, three to a row, and each new post pushes every older one along by one place. So a pattern tied to <b>post order</b> survives every new post. A pattern tied to <b>fixed positions</b> (puzzle grids, a theme per row) breaks the first time a post is late or extra. That's why all three options below are order patterns: a cycle of 2 makes a checkerboard, a cycle of 4 makes diagonals.</p>
+</section>
+
+<section class="stack">
+  <h2>The three patterns</h2>
+  <div class="tabs" role="tablist" aria-label="Grid pattern">
+    <button role="tab" id="t-checker" aria-selected="true" data-p="checker">A · Checkerboard</button>
+    <button role="tab" id="t-diagonal" aria-selected="false" data-p="diagonal">B · Ember diagonal</button>
+    <button role="tab" id="t-horizon" aria-selected="false" data-p="horizon">C · Horizon (logo palette)</button>
+  </div>
+
+  <div class="pattern-card" data-panel="checker">
+    <figure>
+      <img src="grid-checker.jpg" alt="Mock grid: Bone and Slate tiles alternating in a checkerboard">
+      <figcaption>Profile on Sun 8 Nov after the 18:00 reel. Newest is top-left.</figcaption>
+    </figure>
+    <div class="swatches"><span class="sw" style="background:#F3EFE7"></span>Bone at 12:00 <span class="sw" style="background:#1B1F24"></span>Slate at 18:00 <span class="sw" style="background:#C9742E"></span>Ember rule only</div>
+    <p><b>Recommended.</b> The calmest of the three and the easiest to keep: with two posts a day, every 12:00 post is Bone and every 18:00 post is Slate, so the checkerboard holds by itself. It stays inside the current palette and the "one Ember accent" rule.</p>
+  </div>
+  <div class="pattern-card" data-panel="diagonal" hidden>
+    <figure>
+      <img src="grid-diagonal.jpg" alt="Mock grid: diagonal lines of Ember and Bone tiles crossing Slate">
+      <figcaption>Same 12 posts. Cycle Bone, Slate, Ember, Slate.</figcaption>
+    </figure>
+    <div class="swatches"><span class="sw" style="background:#C9742E"></span>Ember <span class="sw" style="background:#F3EFE7"></span>Bone (12:00 alternate) <span class="sw" style="background:#1B1F24"></span>Slate (every 18:00)</div>
+    <p>The boldest. Ember and Bone run as diagonal stripes through Slate, so the profile is recognisable at a glance. The catch: a full Ember tile every fourth post stretches the "one Ember accent" rule, and the stripes only read once 12 or more posts are up. Good for a later refresh.</p>
+  </div>
+  <div class="pattern-card" data-panel="horizon" hidden>
+    <figure>
+      <img src="grid-horizon.jpg" alt="Mock grid: Ink Petrol and Bone tiles in a checkerboard with green rules">
+      <figcaption>Same 12 posts in the logo-v2 palette.</figcaption>
+    </figure>
+    <div class="swatches"><span class="sw" style="background:#F3EFE7"></span>Bone <span class="sw" style="background:#0F2229"></span>Ink Petrol <span class="sw" style="background:#45B096"></span>Verdigris rule</div>
+    <p>Use this if you pick one of the earthy blue and green logos (A to D). It's the same checkerboard as A, swapped to Ink Petrol with Verdigris rules. Switching later is one word in the tool, so you can start on A now and move to C without breaking the pattern.</p>
+  </div>
+
+  <div class="you"><b>Not chosen: puzzle grids and row themes.</b> Each one needs posts to land in exact positions. At 14 posts a week, one missed slot shifts the whole thing. They also make no sense in the Reels feed, where people see one tile at a time.</div>
+</section>
+
+<section class="stack">
+  <h2>How covers land in the right place by themselves</h2>
+  <p>I've built a draft tool, <code>tools/grid_patterns.py</code>. It reads the tracker, numbers every post from 2 Nov 12:00 onwards, and gives post <i>n</i> the colour at position <i>n</i> in the cycle. It made every image on this page. It also writes a ledger (<code>strategy/grid-patterns/grid-ledger-checker.csv</code>) listing each post's colour up to 19 Nov.</p>
+  <ol>
+    <li><b>Covers become designed images, not video frames.</b> Today <code>engine.py</code> grabs a frame from the hook. It would instead call the tool's <code>cover()</code> with the ledger colour. The frame grab stays as a fallback. All text sits inside the middle 1080×1440 area, so the grid crop never cuts a word.</li>
+    <li><b>Carousel slide 1</b> in <code>stills_v2.py</code> takes the same colour (Slate text on Bone). The inner slides stay as they are.</li>
+    <li><b>Scheduling sends the cover.</b> Metricool accepts a custom reel cover (<code>videoThumbnailUrl</code>), so the Friday routine attaches it next to the video. The reel itself still plays on Slate.</li>
+    <li><b>The pattern corrects itself.</b> The 20:40 daily check marks each post as published in the ledger. If a post fails or an extra one goes out, the colours for the next posts are recalculated before they render. Archiving old posts never moves the newer tiles.</li>
+    <li><b>The X5 hook test stays clean.</b> In all three patterns, every 18:00 reel keeps the same dark cover (Slate, or Ink Petrol in C), so cover colour can't skew the 18:00 hook results.</li>
+  </ol>
+  <p class="meta">Pins: pin either none or three posts (one full row). Pinning one or two leaves loose tiles above the pattern. Posts already queued to 1 Nov keep their current covers, so the top four rows are fully patterned by about 8 Nov.</p>
+</section>
+
+<section class="stack">
+  <h2>GitHub repos for better visuals</h2>
+  <p>Licence and last-commit dates come from each repo's own files, checked today. Repos already judged earlier (pavo-engine, capcut-mcp, add-music-to-video and others), Library of Congress and Standard Ebooks are left out so nothing is checked twice.</p>
+
+  <div class="repo-group">
+    <h3>Your two links</h3>
+    <div class="repo va"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/Jakeschincariol/instagram-agent-skill">Jakeschincariol/instagram-agent-skill</a><span class="pill a">🟠 3 of 13</span></div>
+      <div class="meta">MIT · last commit 13 Sep 2026 · 13 Claude skills, writing only (no visuals)</div>
+      <p><b>Install:</b> <code>ig-human</code> (strips slop words, em dashes and hidden watermark characters, runs offline), <code>ig-caption</code> (shows the 125 characters people see before "more") and <code>ig-audit</code> (ranks posts by sends per reach, the same measure we use). <b>Skip:</b> <code>ig-reel</code>, whose 26 hook formulas are built for people selling things, and its "Statistic" hook pushes the kind of numbers we never invent; we already have the hook system. Also skip <code>ig-viral</code>, which needs Instagram captures we can't make from the cloud, and <code>ig-plan</code>, which the reel-first plan already covers. <code>ig-comment</code>, <code>ig-reply</code> and <code>ig-dm</code> belong to the community-agent thread, which is already reviewing that area.</p>
+    </div></div>
+    <div class="repo va"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/social-media-skills/skills">social-media-skills/skills</a><span class="pill a">🟠 3 of 106</span></div>
+      <div class="meta">MIT · last commit 15 Oct 2026 · 106 Claude skills across every platform</div>
+      <p>Don't install the whole set: 106 skills would compete with each other and with our rules. <b>Worth taking:</b> <code>instagram-reels-publishing</code> (grid-safe custom covers, which matches the work on this page), <code>platform-specs-and-validation</code> (pre-flight size and length checks) and <code>experimentation-and-ab-testing</code> (one change per test, like X1 and X5). <b>Skip:</b> every AI image, video and voice generator (HeyGen, Kling, Veo 3, Runway, Synthesia, Flux, Ideogram, Suno and the rest), because the brand bans AI stock. Also skip every TikTok skill, the memes, quote cards and trend-jacking skills (formats we've retired) and <code>scheduling-and-queue</code>, which posts through WoopSocial when we already use Metricool.</p>
+    </div></div>
+  </div>
+
+  <div class="repo-group">
+    <h3>Reel text and motion</h3>
+    <div class="repo vg"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/tkarabela/pysubs2">tkarabela/pysubs2</a><span class="pill g">🟢 Use</span></div>
+      <div class="meta">MIT · last commit 27 Sep 2026 · Python</div>
+      <p>Writes styled subtitle files with per-word timing and fade or slide effects, which FFmpeg then burns in. That gives word-by-word reveals and moving text without leaving FFmpeg, our fast default. It's the cheapest real upgrade to the reels.</p>
+    </div></div>
+    <div class="repo vg"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/remotion-dev/remotion">remotion-dev/remotion</a><span class="pill g">🟢 Keep as is</span></div>
+      <div class="meta">Remotion licence (free for teams of 3 or fewer) · last commit 22 Oct 2026</div>
+      <p>Already prototyped on R001. Same verdict as before: use it only for layouts FFmpeg can't do, such as split screens and captions over footage.</p>
+    </div></div>
+    <div class="repo va"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/gl-transitions/gl-transitions">gl-transitions/gl-transitions</a><span class="pill a">🟠 Maybe</span></div>
+      <div class="meta">MIT · last commit 21 Oct 2026</div>
+      <p>A library of video transitions. Most are flashy and off-brand. One soft dissolve could be useful, and FFmpeg's built-in xfade already does that.</p>
+    </div></div>
+    <div class="repo va"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/motion-canvas/motion-canvas">motion-canvas/motion-canvas</a> · <a href="https://github.com/midrender/revideo">midrender/revideo</a><span class="pill a">🟠 Maybe</span></div>
+      <div class="meta">Both MIT · last commits 2 Jul and 15 Jul 2026 · TypeScript</div>
+      <p>Strong kinetic typography, but they overlap with Remotion. Running a second code-based video tool would add upkeep for little gain.</p>
+    </div></div>
+    <div class="repo va"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/Zulko/moviepy">Zulko/moviepy</a> · <a href="https://github.com/mifi/editly">mifi/editly</a><span class="pill a">🟠 Maybe</span></div>
+      <div class="meta">Both MIT · last commits 26 Aug 2026 and 20 Feb 2025 (editly has one maintainer and has been quiet for 20 months)</div>
+      <p>Both build videos from a recipe, which our engine already does. MoviePy is fine for one-off composites. Neither replaces anything we have.</p>
+    </div></div>
+    <div class="repo vr"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/ManimCommunity/manim">ManimCommunity/manim</a> · <a href="https://github.com/remotion-dev/template-tiktok">remotion-dev/template-tiktok</a><span class="pill r">🔴 Skip</span></div>
+      <div class="meta">MIT; Remotion licence · last commits 20 Oct and 16 Oct 2026</div>
+      <p>Manim is built for maths animation, which is the wrong look for us. The Remotion captions template makes bouncing TikTok-style captions, and pysubs2 does the same job more quietly in FFmpeg.</p>
+    </div></div>
+  </div>
+
+  <div class="repo-group">
+    <h3>Background footage and open images</h3>
+    <div class="repo vg"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/jjjake/internetarchive">jjjake/internetarchive</a><span class="pill g">🟢 Use</span></div>
+      <div class="meta">AGPL-3.0 (fine for a tool we run, never bundle it into the shop site) · last commit 14 Oct 2026</div>
+      <p>Searches and downloads archive.org, including the Prelinger Archives of public-domain mid-century film. That's real, grainy footage of streets, trains and kitchens for slow backgrounds, with no AI stock. Check each item's rights field before using it. Not yet tested from the cloud, so it may need your Mac.</p>
+    </div></div>
+    <div class="repo vg"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/metmuseum/openaccess">metmuseum/openaccess</a><span class="pill g">🟢 Use</span></div>
+      <div class="meta">CC0 data · last commit 19 Oct 2026</div>
+      <p>The Met's full catalogue as one file, with a public-domain flag on every object. Filter to the Photographs and Paintings departments only, because statues and marble are off-brand.</p>
+    </div></div>
+    <div class="repo vg"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/WordPress/openverse">WordPress/openverse</a><span class="pill g">🟢 Use the API</span></div>
+      <div class="meta">MIT code · last commit 13 Oct 2026</div>
+      <p>One search across hundreds of millions of openly licensed images. Use the public API with the licence filter set to CC0 and public domain only. Nothing needs installing.</p>
+    </div></div>
+    <div class="repo vr"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/Smithsonian/OpenAccess">Smithsonian/OpenAccess</a><span class="pill r">🔴 Skip</span></div>
+      <div class="meta">CC0 · last commit 21 Dec 2021</div>
+      <p>The data dump hasn't been updated in almost 5 years. The Met and Openverse cover the same ground with current data.</p>
+    </div></div>
+  </div>
+
+  <div class="repo-group">
+    <h3>Captions and audio</h3>
+    <div class="repo vg"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/SYSTRAN/faster-whisper">SYSTRAN/faster-whisper</a><span class="pill g">🟢 When reels get a voice</span></div>
+      <div class="meta">MIT · last commit 16 Oct 2026 · runs on a normal CPU</div>
+      <p>Turns speech into word-by-word timings, and pysubs2 turns those into captions. Our reels have no voice today, so you only need this if voiced reels start.</p>
+    </div></div>
+    <div class="repo va"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/m-bain/whisperX">m-bain/whisperX</a> · <a href="https://github.com/WyattBlue/auto-editor">WyattBlue/auto-editor</a><span class="pill a">🟠 Later</span></div>
+      <div class="meta">BSD-2; public domain · last commits 18 Oct and 21 Oct 2026</div>
+      <p>WhisperX gives tighter word timings but is heavier. Auto-editor cuts the silences out of talking-to-camera clips. Both are only useful for voiced reels.</p>
+    </div></div>
+    <div class="repo vr"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/spotify/pedalboard">spotify/pedalboard</a> · <a href="https://github.com/jiaaro/pydub">jiaaro/pydub</a> · <a href="https://github.com/csteinmetz1/pyloudnorm">csteinmetz1/pyloudnorm</a><span class="pill r">🔴 Skip</span></div>
+      <div class="meta">GPL-3.0; MIT; MIT · last commits 7 Oct, 19 Mar and 4 Jan 2026</div>
+      <p>Our <code>mix.py</code> already ducks the music under the text beats, and the engine already sets loudness to −14 LUFS in FFmpeg. These would do the same job a second time.</p>
+    </div></div>
+  </div>
+
+  <div class="repo-group">
+    <h3>Grid planning and preview</h3>
+    <div class="repo vg"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/rockless10/instagrid">rockless10/instagrid</a><span class="pill g">🟢 Use</span></div>
+      <div class="meta">MIT · last commit 4 Aug 2026 · one HTML file, nothing leaves your Mac</div>
+      <p>Drag tiles around a true 3:4 profile grid before anything posts. Open it on your Mac and drop in the covers from <code>strategy/grid-patterns/</code> to check a week by eye.</p>
+    </div></div>
+    <div class="repo va"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/dxlliv/planner">dxlliv/planner</a><span class="pill a">🟠 Maybe</span></div>
+      <div class="meta">GPL-3.0 · last commit 9 Jan 2025</div>
+      <p>A nicer interface, but it has been quiet for 21 months and doesn't mention the 3:4 grid.</p>
+    </div></div>
+    <div class="repo vr"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/girishlade111/instagram-feed-preview">girishlade111/instagram-feed-preview</a> · <a href="https://github.com/gleearl/insta-preview-fe">gleearl/insta-preview-fe</a> · <a href="https://github.com/lepoco/instaplanner">lepoco/instaplanner</a><span class="pill r">🔴 Skip</span></div>
+      <div class="meta">no licence; no licence; GPL-3.0 (last commit Mar 2022)</div>
+      <p>The first two have no licence, which legally means no permission to use them. The third has been abandoned.</p>
+    </div></div>
+  </div>
+
+  <div class="repo-group">
+    <h3>Instagram analytics export</h3>
+    <div class="repo va"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/facebook/facebook-python-business-sdk">facebook/facebook-python-business-sdk</a><span class="pill a">🟠 With the Meta app</span></div>
+      <div class="meta">Meta platform licence · last commit 17 Sep 2026</div>
+      <p>Meta's official way to pull Instagram insights, such as reel watch time, that Metricool doesn't pass on. It needs the same Meta app the community agent is waiting on, so it makes sense only once that app exists. Until then, the Metricool export we already pull is enough.</p>
+    </div></div>
+    <div class="repo vr"><div class="bar"></div><div class="in">
+      <div class="top"><a href="https://github.com/instaloader/instaloader">instaloader/instaloader</a><span class="pill r">🔴 Skip</span></div>
+      <div class="meta">MIT · last commit 21 Oct 2026</div>
+      <p>It scrapes Instagram while logged in. That's against Instagram's terms and puts the account at risk.</p>
+    </div></div>
+  </div>
+</section>
+
+<section class="stack">
+  <h2>What's left for you</h2>
+  <div class="you stack">
+    <p>1. Pick a pattern: A (recommended), B, or C if you choose a logo-v2 option.</p>
+    <p>2. Say yes and the account thread wires the covers into the Friday routine for posts from 2 Nov.</p>
+    <p>3. Optional: say which of the 6 skills from your two links you want, and I'll set them up.</p>
+  </div>
+  <p class="meta">Files: tools/grid_patterns.py, strategy/grid-patterns/ (mocks, full-size covers, ledgers). Repo branch claude/project-thread-19tt5n.</p>
+</section>
+</div>
+
+<script>
+const tabs=[...document.querySelectorAll('[role=tab]')];
+function show(p){tabs.forEach(t=>t.setAttribute('aria-selected',t.dataset.p===p));
+  document.querySelectorAll('[data-panel]').forEach(el=>el.hidden=el.dataset.panel!==p);
+  try{localStorage.setItem('grid-tab',p)}catch(e){}}
+tabs.forEach(t=>t.addEventListener('click',()=>show(t.dataset.p)));
+const h=location.hash.slice(1); let saved=null; try{saved=localStorage.getItem('grid-tab')}catch(e){}
+if(['checker','diagonal','horizon'].includes(h))show(h); else if(saved)show(saved);
+</script>
