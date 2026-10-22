@@ -1,0 +1,82 @@
+{
+  "_about": "Settings for audit.py. Personal names are NOT listed here because the repo is public: they come from the AUDIT_PERSONAL_TERMS repository secret.",
+  "root": "moodius-aurelius",
+  "archive_dir": "moodius-aurelius/_archive",
+  "moved_ledger": "moodius-aurelius/_archive/MOVED.csv",
+  "published_ledger": "moodius-aurelius/repo-audit/published-ledger.csv",
+  "tracker": "moodius-aurelius/strategy/calendar-30-day-tracker.csv",
+  "script_batches": "moodius-aurelius/reels-engine/scripts/*.json",
+  "renders_dir": "moodius-aurelius/reels-engine/renders",
+  "dated_pack_globs": [
+    "moodius-aurelius/strategy/upload-pack/20??-??-??",
+    "moodius-aurelius/week*/20??-??-??"
+  ],
+  "copy_dirs": [
+    "/strategy/upload-pack/",
+    "/fixes-20"
+  ],
+  "retired_folders": [
+    {
+      "path": "moodius-aurelius/week1",
+      "last_day": "2026-10-11",
+      "note": "week 1 posts (5-11 Oct)"
+    },
+    {
+      "path": "moodius-aurelius/week2",
+      "last_day": "2026-10-18",
+      "note": "week 2 posts (12-18 Oct)"
+    },
+    {
+      "path": "moodius-aurelius/week3",
+      "last_day": "2026-10-25",
+      "note": "week 3 posts (19-25 Oct, week3/posts.json)"
+    }
+  ],
+  "grace_days": 7,
+  "size_hog_mb": 5,
+  "stale_branch_days": 14,
+  "never_touch": [
+    "moodius-aurelius/strategy/calendar-30-day-tracker.csv",
+    "moodius-aurelius/strategy/experiments.csv",
+    "moodius-aurelius/reels-engine/scripts/",
+    "moodius-aurelius/strategy/grid-patterns/",
+    "moodius-aurelius/repo-audit/",
+    "moodius-aurelius/_archive/",
+    ".github/"
+  ],
+  "unreferenced_exts": [
+    ".jpg",
+    ".jpeg",
+    ".png",
+    ".svg",
+    ".mp4",
+    ".mov",
+    ".wav",
+    ".m4a",
+    ".mp3",
+    ".pdf",
+    ".ttf",
+    ".otf",
+    ".srt"
+  ],
+  "text_exts": [
+    ".md",
+    ".csv",
+    ".json",
+    ".py",
+    ".ts",
+    ".tsx",
+    ".js",
+    ".mjs",
+    ".yml",
+    ".yaml",
+    ".txt",
+    ".html",
+    ".sh",
+    ".toml",
+    ".sql",
+    ".css",
+    ".svg"
+  ],
+  "list_limit": 40
+}

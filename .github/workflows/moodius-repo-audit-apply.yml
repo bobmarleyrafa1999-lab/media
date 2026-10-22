@@ -1,0 +1,86 @@
+name: Moodius repo audit apply
+# Runs when the repo owner comments /apply on an open repo-audit issue (or by hand with an issue number).
+# Applies only the ticked lines, after re-checking each one, on a new branch, and opens a pull request.
+# Ticked merged branches are deleted here; their last commit is posted on the issue so they can be restored.
+on:
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+    inputs:
+      issue:
+        description: "Audit issue number"
+        required: true
+permissions:
+  contents: write
+  issues: write
+  pull-requests: write
+concurrency:
+  group: moodius-repo-audit-apply
+  cancel-in-progress: false
+jobs:
+  apply:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.issue.pull_request == null &&
+       contains(github.event.issue.labels.*.name, 'repo-audit') &&
+       github.event.issue.state == 'open' &&
+       startsWith(github.event.comment.body, '/apply') &&
+       github.event.comment.author_association == 'OWNER')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+      ISSUE: ${{ github.event.issue.number || inputs.issue }}
+      DEFAULT: ${{ github.event.repository.default_branch }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Apply ticked lines
+        env:
+          AUDIT_PERSONAL_TERMS: ${{ secrets.AUDIT_PERSONAL_TERMS }}
+          AUDIT_DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          gh issue view "$ISSUE" --json body -q .body > "$RUNNER_TEMP/issue.md"
+          git config user.name "moodius-repo-audit"
+          git config user.email "actions@users.noreply.github.com"
+          python3 moodius-aurelius/repo-audit/audit.py apply --body "$RUNNER_TEMP/issue.md" \
+            --summary "$RUNNER_TEMP/summary.md" --branches-out "$RUNNER_TEMP/branches.txt"
+      - name: Open a pull request with the file changes
+        run: |
+          if git diff --cached --quiet; then echo "No file changes." > "$RUNNER_TEMP/pr.txt"; exit 0; fi
+          branch="repo-audit/apply-$ISSUE-$GITHUB_RUN_NUMBER"
+          git switch -c "$branch"
+          git commit -q -m "Repo audit: apply ticked items from #$ISSUE"
+          git push -q origin "$branch"
+          if url=$(gh pr create --base "$DEFAULT" --head "$branch" --title "Repo audit: ticked items from #$ISSUE" \
+                    --body-file "$RUNNER_TEMP/summary.md" 2>&1); then
+            echo "Pull request: $url" > "$RUNNER_TEMP/pr.txt"
+          else
+            echo "Branch \`$branch\` is pushed. Open the pull request here: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/compare/$DEFAULT...$branch (Actions may not create PRs until Settings > Actions > General > 'Allow GitHub Actions to create and approve pull requests' is on)." > "$RUNNER_TEMP/pr.txt"
+          fi
+      - name: Delete ticked merged branches
+        run: |
+          : > "$RUNNER_TEMP/deleted.txt"
+          while read -r b; do
+            [ -z "$b" ] && continue
+            [ "$b" = "$DEFAULT" ] && continue
+            if gh pr list --state open --head "$b" --json number -q '.[0].number' | grep -q .; then
+              echo "- kept \`$b\`: a pull request was opened from it since the audit" >> "$RUNNER_TEMP/deleted.txt"; continue
+            fi
+            sha=$(git rev-parse "origin/$b")
+            git push -q origin --delete "$b" && echo "- deleted \`$b\` (last commit $sha; restore with \`git push origin $sha:refs/heads/$b\`)" >> "$RUNNER_TEMP/deleted.txt"
+          done < "$RUNNER_TEMP/branches.txt"
+      - name: Report back on the issue
+        if: always()
+        run: |
+          { cat "$RUNNER_TEMP/summary.md" 2>/dev/null || echo "The apply step failed; see the run log."
+            echo; cat "$RUNNER_TEMP/pr.txt" 2>/dev/null || true
+            [ -s "$RUNNER_TEMP/deleted.txt" ] && { echo; echo "Branches:"; cat "$RUNNER_TEMP/deleted.txt"; }
+            echo; echo "Run: $GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          } > "$RUNNER_TEMP/comment.md"
+          gh issue comment "$ISSUE" --body-file "$RUNNER_TEMP/comment.md"
