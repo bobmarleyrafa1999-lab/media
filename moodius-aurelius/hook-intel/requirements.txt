@@ -1,0 +1,5 @@
+# Core system: Python 3.10+ standard library only (sqlite3 with FTS5, http.server).
+# Discovery on a machine that can reach the platforms (your Mac, or the GitHub Actions runner):
+yt-dlp>=2025.1.1
+# Optional, only for first spoken sentence on Instagram reels supplied by URL (Mac, local CPU, free):
+# faster-whisper>=1.0.3
