@@ -37,7 +37,8 @@ scripts/             migrate, seed, demo, worker
 tests/               vitest suites + MIT fixtures from devgine
 deploy/Caddyfile     HTTPS
 docs/                01 repo audit · 02 architecture · 03 Meta setup · 04 deploy & costs ·
-                     05 7-day launch · 06 30-day monetisation · 07 who does what
+                     05 7-day launch · 06 30-day monetisation · 07 who does what ·
+                     08 free setup (GitHub Actions, no server)
 ```
 
 Integration with the website/store: `INTEGRATION-CONTRACT.md`.

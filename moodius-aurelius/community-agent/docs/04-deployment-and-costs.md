@@ -1,6 +1,12 @@
 # 04 · Deployment and monthly cost
 
+> Free alternative: docs/08-free-setup.md runs the agent on GitHub Actions for €0 (email alerts,
+> no dashboard). Use this server setup when you want the dashboard, instant alerts and DMs.
+
 ## Deploy (about 30 minutes, once)
+
+Not yet verified: the Docker image build could not finish in the build sandbox (no registry access),
+so the first real run of `deploy/setup.sh` is its first test.
 1. Rent a small VPS: 2 vCPU / 2 GB RAM, Ubuntu 24.04 (e.g. Hetzner CX22 or similar, about €4–6/month).
    **New spend: needs Surafel's OK.**
 2. Point two DNS records at it: `agent.<domain>` and `n8n.<domain>` (the website thread owns the root domain

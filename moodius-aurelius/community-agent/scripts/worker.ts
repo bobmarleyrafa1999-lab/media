@@ -20,8 +20,18 @@ async function tick() {
   if (d === "Mon" && h === "08" && m === "00") await runScheduled("weekly-report").catch(() => undefined);
 }
 
+// `--once` runs one pass and exits (used by the free GitHub Actions setup):
+//   worker.ts --once                      poll comments, then process the queue
+//   worker.ts --once daily-digest retention ...   run those jobs in order
 if (process.argv.includes("--once")) {
-  Promise.all(["poll-comments", "process-queue"].map((j) => runScheduled(j))).finally(() => pool().end());
+  const named = process.argv.slice(process.argv.indexOf("--once") + 1);
+  const jobs = named.length ? named : ["poll-comments", "process-queue"];
+  (async () => {
+    let failed = false;
+    for (const j of jobs) await runScheduled(j).catch((e) => { failed = true; log.error("job failed", { job: j, error: (e as Error).message }); });
+    await pool().end();
+    process.exit(failed ? 1 : 0);
+  })();
 } else {
   log.info("worker started");
   setInterval(() => void tick(), 60_000);

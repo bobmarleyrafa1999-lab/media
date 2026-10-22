@@ -25,11 +25,12 @@ function anthropic(): Anthropic {
 async function callClaude(input: ClassifyInput, extraInstruction?: string): Promise<Classification> {
   const c = config().claude;
   const user = commentUserMessage(input) + (extraInstruction ? `\n\n${extraInstruction}` : "");
+  // Haiku has no server-side fallback, so the fallback beta is only sent for the larger models.
+  const fallback = c.model.startsWith("claude-haiku") ? {} : { betas: ["server-side-fallback-2026-07-01"], fallbacks: "default" };
   const res = await anthropic().beta.messages.create({
     model: c.model,
     max_tokens: 2000,
-    betas: ["server-side-fallback-2026-07-01"],
-    fallbacks: "default",
+    ...fallback,
     system: [{ type: "text", text: COMMENT_SYSTEM_PROMPT, cache_control: { type: "ephemeral" } }],
     output_config: { effort: c.effort, format: { type: "json_schema", schema: CLASSIFICATION_SCHEMA as unknown as Record<string, unknown> } },
     messages: [{ role: "user", content: user }],

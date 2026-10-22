@@ -6,10 +6,12 @@ const shell = (title: string, body: string) => `<!doctype html><html><body style
 <div style="max-width:600px;margin:0 auto;padding:24px">
 <div style="font-family:'Playfair Display',Georgia,serif;font-size:20px;margin-bottom:16px">${esc(title)}</div>
 ${body}
-<p style="color:#6b6760;font-size:12px;margin-top:32px">Moodius community agent · <a href="${config().baseUrl}/admin" style="color:#C9742E">dashboard</a> · notification settings live in .env (NOTIFY_POLICY, NOTIFY_MAX_PER_HOUR)</p>
+<p style="color:#6b6760;font-size:12px;margin-top:32px">Moodius community agent${hasAdmin() ? ` · <a href="${config().baseUrl}/admin" style="color:#C9742E">dashboard</a>` : ""} · notification settings live in .env (NOTIFY_POLICY, NOTIFY_MAX_PER_HOUR)</p>
 </div></body></html>`;
 
 const row = (k: string, v: string) => `<tr><td style="padding:6px 10px 6px 0;color:#6b6760;vertical-align:top;white-space:nowrap">${esc(k)}</td><td style="padding:6px 0">${v}</td></tr>`;
+// NO_ADMIN=true: the free GitHub Actions setup has no web dashboard, so emails carry no dashboard buttons.
+const hasAdmin = () => process.env.NO_ADMIN !== "true";
 const btn = (href: string, label: string) => `<a href="${esc(href)}" style="display:inline-block;background:#1B1F24;color:#F3EFE7;padding:10px 14px;border-radius:6px;text-decoration:none;margin:4px 8px 0 0">${esc(label)}</a>`;
 
 export interface CommentMailData {
@@ -36,8 +38,8 @@ ${d.followUp ? row("Follow-up question", esc(d.followUp)) : ""}
 ${row("Published?", d.published ? `Yes, automatically: “${esc(d.publishedText)}”` : `No (status: ${esc(d.status)})`)}
 ${d.flags.length ? row("Flags", esc(d.flags.join(", "))) : ""}
 </table>
-<p>${btn(`${config().baseUrl}/admin/queue?focus=${encodeURIComponent(d.commentId)}`, "Review / edit / approve")}${d.commentPermalink ? btn(d.commentPermalink, "Reply on Instagram") : ""}</p>`);
-  const text = `${tag}\n@${d.username}: ${d.text}\nPriority ${d.priority}/100 · ${d.intent} · ${d.sentiment}\nSuggested: ${d.suggested ?? "(answer personally)"}\nPublished: ${d.published ? "yes" : "no"}\n${config().baseUrl}/admin/queue?focus=${d.commentId}`;
+<p>${hasAdmin() ? btn(`${config().baseUrl}/admin/queue?focus=${encodeURIComponent(d.commentId)}`, "Review / edit / approve") : ""}${d.commentPermalink ? btn(d.commentPermalink, "Reply on Instagram") : ""}</p>`);
+  const text = `${tag}\n@${d.username}: ${d.text}\nPriority ${d.priority}/100 · ${d.intent} · ${d.sentiment}\nSuggested: ${d.suggested ?? "(answer personally)"}\nPublished: ${d.published ? "yes" : "no"}\n${hasAdmin() ? `${config().baseUrl}/admin/queue?focus=${d.commentId}` : d.commentPermalink ?? ""}`;
   return { subject, html, text };
 }
 
@@ -48,7 +50,7 @@ export function dailyDigest(dateLabel: string, items: DigestItem[], stats: Recor
   const html = shell(`Daily comment digest · ${dateLabel}`, `
 <p>${Object.entries(stats).map(([k, v]) => `${esc(k)}: <strong>${v}</strong>`).join(" · ")}</p>
 ${items.length ? `<ol style="padding-left:18px;font-size:14px">${list}</ol>` : "<p>No comments waiting.</p>"}
-<p>${btn(`${config().baseUrl}/admin/queue`, "Open the queue")}</p>`);
+${hasAdmin() ? `<p>${btn(`${config().baseUrl}/admin/queue`, "Open the queue")}</p>` : ""}`);
   return { subject: `[Moodius] Daily digest ${dateLabel}: ${items.length} comments to look at`, html };
 }
 

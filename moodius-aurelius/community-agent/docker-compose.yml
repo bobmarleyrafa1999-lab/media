@@ -1,7 +1,7 @@
-# One small VPS (2 GB RAM is enough): Postgres + the agent + n8n (schedules only) + Caddy (HTTPS).
+# One small VPS: Postgres + the agent + its scheduler (worker) + Caddy (HTTPS).
+# First time: run deploy/setup.sh, which does everything below.
 # Start:   docker compose up -d --build
 # Migrate: docker compose run --rm app npx tsx scripts/migrate.ts
-# Without n8n: comment out the n8n service and enable `worker` instead.
 services:
   db:
     image: postgres:17-alpine
@@ -25,29 +25,35 @@ services:
     depends_on:
       db: { condition: service_healthy }
 
+  # Runs the schedule (queue every minute, comment poll every 5 min, digest 20:30, weekly report...).
+  worker:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    environment:
+      DATABASE_URL: postgres://moodius:${POSTGRES_PASSWORD}@db:5432/moodius
+      NODE_ENV: production
+    command: ["npx", "tsx", "scripts/worker.ts"]
+    depends_on:
+      db: { condition: service_healthy }
+
+  # Optional instead of `worker`: n8n with n8n/workflows/00-scheduler.json.
+  # Start with `docker compose --profile n8n up -d` and stop the worker service.
   n8n:
     image: docker.n8n.io/n8nio/n8n:latest
+    profiles: ["n8n"]
     restart: unless-stopped
     environment:
       N8N_HOST: ${N8N_HOST:-n8n.localhost}
       N8N_PROTOCOL: https
       WEBHOOK_URL: https://${N8N_HOST:-n8n.localhost}/
       GENERIC_TIMEZONE: ${APP_TIMEZONE:-Europe/Madrid}
-      N8N_ENCRYPTION_KEY: ${N8N_ENCRYPTION_KEY:?set N8N_ENCRYPTION_KEY in .env}
+      N8N_ENCRYPTION_KEY: ${N8N_ENCRYPTION_KEY:-}
       AGENT_URL: http://app:3000
       CRON_SECRET: ${CRON_SECRET}
       N8N_BLOCK_ENV_ACCESS_IN_NODE: "false"
     volumes: [n8ndata:/home/node/.n8n]
     depends_on: [app]
-
-  # worker:            # alternative to n8n: same jobs, same intervals
-  #   build: .
-  #   restart: unless-stopped
-  #   env_file: .env
-  #   environment:
-  #     DATABASE_URL: postgres://moodius:${POSTGRES_PASSWORD}@db:5432/moodius
-  #   command: ["npx", "tsx", "scripts/worker.ts"]
-  #   depends_on: [db]
 
   caddy:
     image: caddy:2-alpine
