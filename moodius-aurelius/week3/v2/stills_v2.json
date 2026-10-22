@@ -1,0 +1,209 @@
+{
+ "carousel-8": {
+  "kind": "cover",
+  "kicker": "For heavy weeks",
+  "claim": "5 ancient lines for when life gets heavy.",
+  "page": "1/7"
+ },
+ "carousel-9": {
+  "kind": "quote",
+  "quote": "I judge you unfortunate because you have never been unfortunate. You have passed through life without an adversary; no one will know what you were capable of, not even you.",
+  "note": "The easy life never finds out who you are.",
+  "cite": "Seneca · On Providence 4",
+  "page": "2/7"
+ },
+ "carousel-10": {
+  "kind": "quote",
+  "quote": "Nothing happens to anyone that he can’t endure.",
+  "note": "Others have carried this exact weight. You can too.",
+  "cite": "Marcus Aurelius · Meditations 5.18",
+  "page": "3/7"
+ },
+ "carousel-11": {
+  "kind": "quote",
+  "quote": "What would Hercules have been if there had been no lion, hydra, stag or boar?",
+  "note": "No monsters, no hero. Your problems are the plot.",
+  "cite": "Epictetus · Discourses 1.6",
+  "page": "4/7"
+ },
+ "carousel-12": {
+  "kind": "quote",
+  "quote": "What does not kill me makes me stronger.",
+  "note": "Overused because it’s true. But only if you let it work on you.",
+  "cite": "Nietzsche · Twilight of the Idols, Maxims 8",
+  "page": "5/7"
+ },
+ "carousel-13": {
+  "kind": "quote",
+  "quote": "He who suffers before it is necessary, suffers more than is necessary.",
+  "note": "Most of the weight is tomorrow's. Put it down until tomorrow.",
+  "cite": "Seneca · Letters 98.8 · Gummere",
+  "page": "6/7"
+ },
+ "carousel-14": {
+  "kind": "signoff",
+  "line": "Which one do you need this week?",
+  "action": "Save this. Send it to someone who’s going through it.",
+  "page": "7/7"
+ },
+ "story-16-purpose-seneca": {
+  "kind": "story",
+  "label": "Identity",
+  "lines": [
+   [
+    "“Philosophy moulds and constructs the soul; it orders our life, guides our conduct, shows us what we should do and what we should leave undone.”",
+    "quote"
+   ],
+   [
+    "This isn’t a hobby. It’s a map. Read one page of Marcus or Epictetus before you open any app today.",
+    "body"
+   ]
+  ],
+  "cite": "Seneca · Letter 16",
+  "footer": "One page. Then the phone."
+ },
+ "story-17-beauty-marcus": {
+  "kind": "story",
+  "label": "Journal",
+  "lines": [
+   [
+    "“Even the by-products of nature have a grace and charm of their own.”",
+    "quote"
+   ],
+   [
+    "He meant bread cracking open in the oven, figs bursting, a lion’s heavy brow. Look at one ordinary thing tonight until it becomes beautiful.",
+    "body"
+   ]
+  ],
+  "cite": "Marcus Aurelius · Meditations 3.2",
+  "footer": "What did you notice?"
+ },
+ "story-18-suffering-frankl": {
+  "kind": "story",
+  "label": "Truths",
+  "lines": [
+   [
+    "“When we are no longer able to change a situation, we are challenged to change ourselves.”",
+    "quote"
+   ],
+   [
+    "Some things won’t move. The job, the diagnosis, the past. Then the work moves inside you. That’s not defeat. That’s the assignment.",
+    "body"
+   ]
+  ],
+  "cite": "Viktor Frankl · Man’s Search for Meaning",
+  "footer": "Screenshot this."
+ },
+ "story-19-virtue-epictetus": {
+  "kind": "story",
+  "label": "Discipline",
+  "lines": [
+   [
+    "“Be silent for the most part, or speak only what is necessary.”",
+    "quote"
+   ],
+   [
+    "Try it for one evening. Say less, listen more, and notice how much stronger you feel by the end.",
+    "body"
+   ]
+  ],
+  "cite": "Epictetus · Enchiridion 33",
+  "footer": "Tonight’s practice."
+ },
+ "story-20-amorfati-marcus": {
+  "kind": "story",
+  "label": "Truths",
+  "lines": [
+   [
+    "“Whatever happens to you has been waiting to happen since the beginning of time.”",
+    "quote"
+   ],
+   [
+    "Friday. Whatever today brings was always going to be yours. Meet it like you were expecting it.",
+    "body"
+   ]
+  ],
+  "cite": "Marcus Aurelius · Meditations 10.5",
+  "footer": "Amor fati."
+ },
+ "story-21-beauty-nietzsche": {
+  "kind": "story",
+  "label": "Journal",
+  "lines": [
+   [
+    "“Without music, life would be a mistake.”",
+    "quote"
+   ],
+   [
+    "The man who wrote about suffering also wrote this. Put on the one song that makes you feel alive and play it loud tonight.",
+    "body"
+   ]
+  ],
+  "cite": "Nietzsche · Twilight of the Idols · Maxims 33",
+  "footer": "Which song?"
+ },
+ "story-22-virtue-marcus": {
+  "kind": "story",
+  "label": "Discipline",
+  "lines": [
+   [
+    "“Injustice is often done by not doing.”",
+    "quote"
+   ],
+   [
+    "Standing by is a choice. The friend who needs a call, the wrong you saw and ignored. Being a good man includes the things you didn’t do.",
+    "body"
+   ]
+  ],
+  "cite": "Marcus Aurelius · Meditations 9.5",
+  "footer": "Make the call."
+ },
+ "story-23-purpose-marcus": {
+  "kind": "story",
+  "label": "Identity",
+  "lines": [
+   [
+    "“Concentrate every minute on doing what’s in front of you with precise and genuine seriousness.”",
+    "quote"
+   ],
+   [
+    "Saturday night. Purpose isn’t one big thing you find. It’s the next thing in front of you, done properly.",
+    "body"
+   ]
+  ],
+  "cite": "Marcus Aurelius · Meditations 2.5",
+  "footer": "What’s in front of you?"
+ },
+ "story-24-amorfati-marcus": {
+  "kind": "story",
+  "label": "Truths",
+  "lines": [
+   [
+    "“To love only what happens, what was destined. No greater harmony.”",
+    "quote"
+   ],
+   [
+    "Sunday morning. Look back at the week and find one thing that went wrong that you can now be glad about.",
+    "body"
+   ]
+  ],
+  "cite": "Marcus Aurelius · Meditations 7.57",
+  "footer": "Found it?"
+ },
+ "story-25-beauty-epictetus": {
+  "kind": "story",
+  "label": "Journal",
+  "lines": [
+   [
+    "“What else can I do, a lame old man, but sing hymns to God?”",
+    "quote"
+   ],
+   [
+    "A former slave with a broken leg, teaching in exile, choosing gratitude. If he could sing, you can say thank you for one thing tonight.",
+    "body"
+   ]
+  ],
+  "cite": "Epictetus · Discourses 1.16",
+  "footer": "New week tomorrow."
+ }
+}
