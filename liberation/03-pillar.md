@@ -42,14 +42,12 @@ All 12 words or fewer, each tied to a verified or flagged line in `quotes.csv`.
 | H10 | The most dangerous colony is the one in your head. | Biko 1971 (Q21) + Ngũgĩ's idea, paraphrased |
 
 ## 5 reel concepts
-Card timings follow the engine's reading-speed rule. Visual commands use `tools/fetch_archive.py` (or the GitHub Action); every image's credit line goes at the end of the caption.
+Card timings follow the engine's reading-speed rule. Each reel runs 15-18 seconds (the reel-first plan wants 12-18 s, hook on frame 1 and on the cover). Visual commands use `tools/fetch_archive.py` (or the GitHub Action); every image's credit line goes at the end of the caption.
 
 ### L01 None but ourselves (Garvey → Epictetus)
 - hook: "Bob Marley sang it. Garvey said it first." (2.4s)
-- body: "Nova Scotia, 1937. Marcus Garvey told a packed hall:" (2.6s)
 - quote: "“…none but ourselves can free the mind.”" (2.6s)
 - cite: "Marcus Garvey, The Black Man, July 1938" (1.6s)
-- body: "Eighteen centuries earlier, a teacher born enslaved said it like this:" (3.0s)
 - quote: "“He is free who lives as he wishes to live.”" (2.6s)
 - cite: "Epictetus, Discourses 4.1 · tr. George Long" (1.6s)
 - body: "Nobody can hand you that freedom. So nobody gets to keep it from you." (3.2s, Moodius)
@@ -69,7 +67,7 @@ Card timings follow the engine's reading-speed rule. Visual commands use `tools/
 
 ### L03 Forbidden to read (Douglass)
 - hook: "He was forbidden to read. So reading became the plan." (2.6s)
-- body: "Frederick Douglass heard his owner say learning would make him unmanageable." (3.2s)
+- body: "His owner said learning would make him unmanageable." (2.6s)
 - quote: "“What he most dreaded, that I most desired.”" (2.4s)
 - quote: "“From that moment, I understood the pathway from slavery to freedom.”" (3.2s)
 - cite: "Frederick Douglass, Narrative, ch. 6 (1845)" (1.6s)
@@ -82,7 +80,7 @@ Card timings follow the engine's reading-speed rule. Visual commands use `tools/
 - hook: "Looking after yourself was never the selfish part." (2.4s)
 - quote: "“Caring for myself is not self-indulgence, it is self-preservation, and that is an act of political warfare.”" (4.8s)
 - cite: "Audre Lorde, A Burst of Light (1988)" (1.6s)
-- body: "She wrote it while ill, still working, still fighting." (2.6s)
+- body: "She wrote it while ill, still working." (2.2s)
 - body: "Rest that lets you keep going isn't quitting." (2.4s, Moodius)
 - cta: "Send to the one who never stops." (2.0s)
 - **Visual:** no open-licence Lorde portrait found, so own footage: `desk` or `window-rain` from footage/README.md. The quote is kept whole (the guardrail against turning it into a spa slogan).
@@ -93,10 +91,8 @@ Card timings follow the engine's reading-speed rule. Visual commands use `tools/
 - body: "In 1964 Malcolm X broke with the group that made him famous." (3.0s)
 - quote: "“I'm for truth, no matter who tells it.”" (2.2s)
 - cite: "Malcolm X, The Autobiography of Malcolm X (1965)" (1.6s)
-- body: "An emperor wrote the same rule for himself:" (2.2s)
 - quote: "“If any man is able to convince me … I will gladly change”" (3.0s)
 - cite: "Marcus Aurelius, Meditations 6.21 · tr. George Long" (1.6s)
-- body: "Staying wrong to save face is the real loss." (2.4s, Moodius)
 - cta: "Save this for the next argument you're losing." (2.2s)
 - **Visual:** Marion S. Trikosko, U.S. News & World Report, 1964 (LoC). `--source loc --query "Malcolm X Trikosko" --tag malcolm`. Check the Autobiography wording before render.
 - **Labels:** historical, Malcolm X (copyrighted, one line, post-1964), philosophical (Marcus, verified), Moodius.
