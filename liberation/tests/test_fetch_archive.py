@@ -63,6 +63,12 @@ class Parsers(unittest.TestCase):
         blocked = {"item": dict(ok["item"], rights_advisory=["Rights status not evaluated."])}
         self.assertIsNone(fa.parse_loc_item(blocked))
 
+    def test_people_filter(self):
+        self.assertTrue(fa.looks_like_people({"title": "Portrait of Frederick Douglass"}))
+        self.assertTrue(fa.looks_like_people({"title": "Civil Rights March on Washington, D.C."}))
+        self.assertFalse(fa.looks_like_people({"title": "Under the Wave off Kanagawa"}))
+        self.assertFalse(fa.looks_like_people({"title": "Manuscript page, Timbuktu"}))
+
     def test_credit_line(self):
         self.assertEqual(fa.credit_line("Warren K. Leffler", "1963", "Library of Congress", "No known restrictions"),
                          "Photo: Warren K. Leffler, 1963 · Library of Congress (No known restrictions)")

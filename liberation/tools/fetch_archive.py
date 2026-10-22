@@ -13,7 +13,8 @@ The container this project usually runs in cannot reach these hosts. Run it on t
 reels-engine/footage/, where engine.py picks up <tag>-<n>.jpg as a drifting still background.
 
   python3 fetch_archive.py --source loc --query "march on washington 1963" --tag march --n 4
-  python3 fetch_archive.py --source commons --query "Frederick Douglass portrait" --tag douglass
+  python3 fetch_archive.py --source commons --query "manuscript page 19th century" --tag pages
+  (people are filtered out by default; --allow-people only for posts Surafel makes by hand)
   python3 fetch_archive.py --source openverse --query "civil rights march" --tag march --out out/
 """
 import argparse
@@ -26,6 +27,11 @@ import urllib.parse
 import urllib.request
 
 UA = "MoodiusArchiveFetcher/1.0 (https://github.com/bobmarleyrafa1999-lab/media)"
+# Automated posts use abstract images only (Surafel, 22 Oct 2026): anything whose title or description
+# suggests a person is skipped unless --allow-people is passed for a post he makes by hand.
+PEOPLE_WORDS = re.compile(r"\b(portrait|people|person|crowd|man|men|woman|women|girl|boy|child|children|face|"
+                          r"self-portrait|bust|head|march|marchers|protest|demonstrators|audience|family|couple|"
+                          r"mr|mrs|miss|dr|president|king|queen|leader|speaking|speech)\b", re.I)
 CREDIT_FIELDS = ["tag", "file", "title", "creator", "date", "source", "licence", "licence_url",
                  "landing_url", "credit_line", "note"]
 
@@ -55,6 +61,10 @@ def credit_line(creator, date, source, licence):
     who = creator.strip() if creator else "Unknown photographer"
     when = f", {date}" if date else ""
     return f"Photo: {who}{when} · {source} ({licence})"
+
+
+def looks_like_people(c):
+    return bool(PEOPLE_WORDS.search(" ".join([c.get("title", ""), c.get("note", "")])))
 
 
 def strip_html(s):
@@ -193,11 +203,16 @@ def main():
     ap.add_argument("--out", default="archive-out")
     ap.add_argument("--allow-sa", action="store_true",
                     help="also keep CC BY-SA (the reel itself then has to be shared under BY-SA)")
+    ap.add_argument("--allow-people", action="store_true",
+                    help="keep images that may show people (only for posts Surafel makes by hand)")
     ap.add_argument("--dry-run", action="store_true", help="list candidates, download nothing")
     a = ap.parse_args()
 
     os.makedirs(a.out, exist_ok=True)
-    cands = search(a.source, a.query, a.n, a.allow_sa)[: a.n]
+    cands = search(a.source, a.query, a.n * 2, a.allow_sa)
+    if not a.allow_people:
+        cands = [c for c in cands if not looks_like_people(c)]
+    cands = cands[: a.n]
     if not cands:
         print("no commercially usable images found; try another query or source")
         return 1
