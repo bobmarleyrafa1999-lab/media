@@ -1,0 +1,26 @@
+name: Hook intel fetch
+# Runs only when a fetch request file is pushed. No schedule: nothing runs unless a request is committed.
+on:
+  push:
+    branches: ["claude/project-thread-*"]
+    paths:
+      - "moodius-aurelius/hook-intel/requests/**"
+      - "moodius-aurelius/hook-intel/remote/**"
+permissions:
+  contents: write
+concurrency:
+  group: hook-intel-fetch-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -q "yt-dlp>=2026.1.1" || pip install -q yt-dlp
+      - name: Probe
+        if: hashFiles('moodius-aurelius/hook-intel/remote/probe.py') != ''
+        run: python moodius-aurelius/hook-intel/remote/probe.py
