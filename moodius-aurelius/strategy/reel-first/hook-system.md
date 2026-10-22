@@ -64,7 +64,7 @@ Each line: hook (card 1 and cover) · the gap it opens · midpoint break · payo
 
 ## Angle mix (from 2 Nov, Surafel's direction 22 Oct)
 
-Not everything comes from hurt. Each week's 12 reels aim for: 3+ **appreciation** (noticing what's good: people, time, small things, memory), 3+ **history or psychology** (a real figure, a study, a mechanism), no more than 5 **hurt, conflict or other-person** reels (still the best tested hooks, kept but capped), the rest **life and philosophy**. The tracker's `angle` column tags each reel. Appreciation hooks follow the same 7 rules: start mid-scene, open a gap, pay it off ("Yesterday had sixteen waking hours. Which one would you keep?").
+Not everything comes from hurt. Each week's 12 reels aim for: 3+ **appreciation** (noticing what's good: people, time, small things, memory), 3+ **history or psychology** (a real figure, a study, a mechanism), no more than 4 **hurt, conflict or other-person** reels (at least 2 posts in 3 start from appreciation or curiosity) (still the best tested hooks, kept but capped), the rest **life and philosophy**. The tracker's `angle` column tags each reel. Appreciation hooks follow the same 7 rules: start mid-scene, open a gap, pay it off ("Yesterday had sixteen waking hours. Which one would you keep?").
 
 ## Comment rule (every post)
 
@@ -74,11 +74,13 @@ Not everything comes from hurt. Each week's 12 reels aim for: 3+ **appreciation*
 4. Every deep-dive's last slide asks "Who should the next deep dive be? Comment a name." The most-named fitting figure is the next arc.
 5. Surafel replies by hand to every comment in the first hour. Weekly report adds comments per reach.
 
-## Build-up to a deep dive (one arc every 3 weeks)
+## Build-up to a deep dive (one arc every 2 weeks, agreed with the Free Minds thread)
 
-Short form stays the default. Every third week, three seed reels build to one researched long post:
+Short form stays the default. Every second week, three seed reels build to one researched long post. This adds no extra posts; they use normal slots. Details for Free Minds arcs: liberation/04-arcs-and-interaction.md.
 - **Seeds:** 3 reels across Thu-Sat at the usual slots, each covering one true, surprising piece of the figure's life or idea. Cover tag "Part 1 of 3". Last card: "Sunday: the full story."
-- **Deep dive:** Sunday 12:00, a 10-12 slide carousel: life in 3 slides, 3 ideas with sources, uncertainties labelled, one practice, and the comment question. When the Substack is live, a linked essay goes out the following Thursday.
+- **Deep dive:** Sunday 12:00, a 10-12 slide carousel, plus a 45-60 s reel version at Sunday 18:00 (the one exception to 12-18 s). The carousel covers: life in 3 slides, 3 ideas with sources, uncertainties labelled, one practice, and the comment question. When the Substack is live, a linked essay goes out the following Thursday.
+- **Tuesday poll story** in build weeks: "you pick the next deep dive" (Surafel adds the poll sticker).
+- **Images:** automated posts use abstract images and no faces. Faces appear only in posts Surafel makes by hand.
 - **Figures** rotate across history, pedagogy, philosophy, athletics, intellectual life and art. Facts come from a sourced encyclopedia entry or biography. Quotes are used only if public domain; otherwise "Idea: ... · Moodius words".
 - **Arc 1 (12-15 Nov): Epictetus**, "Born enslaved. Banished from Rome. The freest man in the empire." Seeds Thu 12 Nov 18:00, Fri 13 Nov 17:00 and Sat 14 Nov 12:00 (Free Minds slot); deep dive Sun 15 Nov 12:00 (Free Minds carousel slot), proposed jointly with the Free Minds series. Facts: Stanford Encyclopedia of Philosophy, "Epictetus" (born 50s CE in Hierapolis; enslaved to Epaphroditus at Nero's court; limp of unknown cause; studied under Musonius Rufus; likely banished under Domitian's edict of 89; school at Nicopolis until about 135).
-- **Arc 2 candidates (early Dec, after the 19 Nov review, chosen from comments):** Vincent van Gogh (art; his letters to Theo), Maria Montessori (pedagogy), Ada Lovelace (intellect; Notes, 1843), Jesse Owens (athletics; facts only, Moodius words), Frederick Douglass (history; Narrative, 1845, shared with Free Minds).
+- **Arc 2 candidates (from 29 Nov, after the 19 Nov review, chosen from comments):** Vincent van Gogh (art; his letters to Theo), Maria Montessori (pedagogy), Ada Lovelace (intellect; Notes, 1843), Jesse Owens (athletics; facts only, Moodius words), Frederick Douglass (history; Narrative, 1845, shared with Free Minds).
