@@ -42,8 +42,8 @@ def duration(path):
 
 
 def timeline(script):
-    """Card start times (engine.py starts the first card at 0.2 s)."""
-    t, out = 0.2, []
+    """Card start times (engine.py starts the first card at 0.2 s, or at 0 s for 1.3 beat-grammar scripts)."""
+    t, out = (0.0 if script.get("grammar") == "beat" else 0.2), []
     for text, d, kind in script["cards"]:
         out.append((t, d, kind, text))
         t += d
@@ -96,7 +96,9 @@ def measure(path, filt):
 
 
 def mix(batch, sid, video, track_id, vo, out_dir):
-    script = next(s for s in json.load(open(batch, encoding="utf-8"))["scripts"] if s["id"] == sid)
+    spec = json.load(open(batch, encoding="utf-8"))
+    script = next(s for s in spec["scripts"] if s["id"] == sid)
+    script.setdefault("grammar", spec.get("grammar"))       # engine 1.3 batch-level grammar
     track = next(t for t in library.load() if t["id"] == track_id)
     if track["status"] != "in_library" or track["commercial_ok"] != "yes":
         sys.exit(f"{track_id} is not usable yet (status {track['status']}, commercial {track['commercial_ok']})")
