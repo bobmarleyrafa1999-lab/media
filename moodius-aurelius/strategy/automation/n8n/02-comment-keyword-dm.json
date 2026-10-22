@@ -1,0 +1,335 @@
+{
+  "name": "Moodius: comment keyword -> DM the free guide + comments inbox",
+  "nodes": [
+    {
+      "parameters": {
+        "path": "PUT_A_LONG_RANDOM_PATH_HERE",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "id": "b2000000-0000-4000-8000-000000000001",
+      "name": "Meta verify (GET)",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        100
+      ],
+      "webhookId": "b2000000-0000-4000-8000-0000000000a1"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict"
+          },
+          "conditions": [
+            {
+              "id": "v1",
+              "leftValue": "={{ $json.query['hub.verify_token'] }}",
+              "rightValue": "PUT_YOUR_VERIFY_TOKEN_HERE",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "b2000000-0000-4000-8000-000000000002",
+      "name": "Token matches?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        220,
+        100
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "={{ $json.query['hub.challenge'] }}",
+        "options": {}
+      },
+      "id": "b2000000-0000-4000-8000-000000000003",
+      "name": "Return challenge",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        440,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "respondWith": "noData",
+        "options": {
+          "responseCode": 403
+        }
+      },
+      "id": "b2000000-0000-4000-8000-000000000004",
+      "name": "Reject",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [
+        440,
+        200
+      ]
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "PUT_A_LONG_RANDOM_PATH_HERE",
+        "options": {}
+      },
+      "id": "b2000000-0000-4000-8000-000000000005",
+      "name": "Meta events (POST)",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        0,
+        500
+      ],
+      "webhookId": "b2000000-0000-4000-8000-0000000000a2"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "k1",
+              "name": "IG_USER_ID",
+              "value": "PUT_INSTAGRAM_BUSINESS_ACCOUNT_ID_HERE",
+              "type": "string"
+            },
+            {
+              "id": "k2",
+              "name": "PAGE_ID",
+              "value": "PUT_FACEBOOK_PAGE_ID_HERE",
+              "type": "string"
+            },
+            {
+              "id": "k3",
+              "name": "KEYWORD",
+              "value": "TOOLS",
+              "type": "string"
+            },
+            {
+              "id": "k4",
+              "name": "LEAD_MAGNET_URL",
+              "value": "PUT_KIT_LANDING_PAGE_URL_HERE",
+              "type": "string"
+            },
+            {
+              "id": "k5",
+              "name": "DM_TEXT",
+              "value": "Here it is: 7 Stoic tools for when emotions are loud. Free, no catch. Start with tool 3 tonight.",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "b2000000-0000-4000-8000-000000000006",
+      "name": "Config",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        220,
+        500
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Meta sends { object: 'instagram', entry: [{ changes: [{ field: 'comments', value }] }] }.\nconst cfg = $('Config').first().json;\nconst body = $('Meta events (POST)').first().json.body || {};\nconst kw = new RegExp('\\\\b' + cfg.KEYWORD + '\\\\b', 'i');\nconst out = [];\nfor (const entry of body.entry || []) {\n  for (const ch of entry.changes || []) {\n    if (ch.field !== 'comments' || !ch.value) continue;\n    const v = ch.value;\n    // Skip our own replies so the account never answers itself.\n    if (v.from && v.from.id === cfg.IG_USER_ID) continue;\n    out.push({ json: {\n      received_utc: new Date().toISOString().slice(0, 16),\n      username: v.from?.username || '',\n      text: v.text || '',\n      media_id: v.media?.id || '',\n      comment_id: v.id,\n      is_reply: Boolean(v.parent_id),\n      keyword_dm: kw.test(v.text || '')\n    } });\n  }\n}\nreturn out;"
+      },
+      "id": "b2000000-0000-4000-8000-000000000007",
+      "name": "Flatten comments",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        440,
+        500
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": {
+          "__rl": true,
+          "mode": "url",
+          "value": "https://docs.google.com/spreadsheets/d/1dgPiqvy-FzB-8dMPzjQMwAdmnAdBKPTZfJcUu6dXXpM/edit"
+        },
+        "sheetName": {
+          "__rl": true,
+          "mode": "name",
+          "value": "comments-inbox"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {}
+        },
+        "options": {}
+      },
+      "id": "b2000000-0000-4000-8000-000000000008",
+      "name": "Log to comments-inbox tab",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        660,
+        500
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose"
+          },
+          "conditions": [
+            {
+              "id": "d1",
+              "leftValue": "={{ $('Flatten comments').item.json.keyword_dm }}",
+              "rightValue": "",
+              "operator": {
+                "type": "boolean",
+                "operation": "true",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "b2000000-0000-4000-8000-000000000009",
+      "name": "Asked for the guide?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        880,
+        500
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://graph.facebook.com/v23.0/{{ $('Config').first().json.PAGE_ID }}/messages",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify({ recipient: { comment_id: $('Flatten comments').item.json.comment_id }, message: { text: $('Config').first().json.DM_TEXT + '\\n\\n' + $('Config').first().json.LEAD_MAGNET_URL } }) }}",
+        "options": {}
+      },
+      "id": "b2000000-0000-4000-8000-000000000010",
+      "name": "Private reply with the guide",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1100,
+        400
+      ],
+      "onError": "continueRegularOutput"
+    }
+  ],
+  "connections": {
+    "Meta verify (GET)": {
+      "main": [
+        [
+          {
+            "node": "Token matches?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Token matches?": {
+      "main": [
+        [
+          {
+            "node": "Return challenge",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Reject",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Meta events (POST)": {
+      "main": [
+        [
+          {
+            "node": "Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Config": {
+      "main": [
+        [
+          {
+            "node": "Flatten comments",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Flatten comments": {
+      "main": [
+        [
+          {
+            "node": "Log to comments-inbox tab",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Log to comments-inbox tab": {
+      "main": [
+        [
+          {
+            "node": "Asked for the guide?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Asked for the guide?": {
+      "main": [
+        [
+          {
+            "node": "Private reply with the guide",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        []
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Europe/Madrid",
+    "saveDataSuccessExecution": "none"
+  },
+  "pinData": {}
+}

@@ -1,0 +1,211 @@
+{
+ "n": 10,
+ "essay": "essays/10-self-improvement-self-rejection.md",
+ "title": "When Self-Improvement Becomes Self-Rejection",
+ "ab_alt": "Improve Yourself Without Hating Yourself",
+ "pillar": "Discipline",
+ "reels": [
+  {
+   "id": "S10C",
+   "slug": "two-men-at-six",
+   "format": "C",
+   "series": "The Philosophical Contradiction",
+   "pillar": "Discipline",
+   "hook": "Two men at the gym at 6 a.m.",
+   "hook_b": "Same gym. Same programme. Only one of them lasts.",
+   "cards": [
+    [
+     "Two men at the gym at 6 a.m.",
+     2.4,
+     "question"
+    ],
+    [
+     "ONE\nHe wants to be strong for the next forty years.",
+     2.9,
+     "labelled"
+    ],
+    [
+     "THE OTHER\nHe can't stand what he sees in the mirror.",
+     2.9,
+     "labelled"
+    ],
+    [
+     "Self-critical people made less progress on their goals, not more.",
+     2.9,
+     "body"
+    ],
+    [
+     "Studies: Powers et al., PSPB (2011)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Same alarm. Different fuel.",
+     1.6,
+     "body"
+    ],
+    [
+     "Which one got up this morning?",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V3 empty gym at dawn, rack and bench, no people (tag gym-dawn), else V1 + grain.",
+   "footage": "gym-dawn",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 319
+   },
+   "source": {
+    "type": "data",
+    "author": "Powers, Koestner, Zuroff, Milyavskaya & Gorin",
+    "work": "Self-criticism and goal pursuit (PSPB 37(7))",
+    "section": "studies",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 prospective studies (N56), correlational",
+   "caption": "Two men, same programme, same alarm. One is building something. The other is serving a sentence.\n\nAcross five studies, people higher in self-criticism made less progress on their goals, including less weight loss over six months. It's correlational, but it's the opposite of what the inner critic promises.\n\nWhich one is getting up in you?\n\nEvidence: Powers et al. (2011). Full essay on the Substack, link in bio.",
+   "first_comment": "Building or serving a sentence? One word.",
+   "hashtags": [
+    "#selfcompassion",
+    "#selfimprovement",
+    "#perfectionism",
+    "#psychology",
+    "#stoicism"
+   ],
+   "cta": "comment",
+   "length_s": 16.7
+  },
+  {
+   "id": "S10A",
+   "slug": "friends-letter",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Discipline",
+   "hook": "Would you talk to a friend the way you talk to yourself?",
+   "hook_b": "You'd never talk to a friend the way you talk to yourself.",
+   "cards": [
+    [
+     "Would you talk to a friend the way you talk to yourself?",
+     3.1,
+     "question"
+    ],
+    [
+     "People nudged to be kind to themselves about a weakness…",
+     2.7,
+     "body"
+    ],
+    [
+     "…were more motivated to fix it, not less.",
+     2.2,
+     "body"
+    ],
+    [
+     "Experiment: Breines & Chen, PSPB (2012)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Tonight: write to yourself the way you'd write to them.",
+     2.7,
+     "body"
+    ],
+    [
+     "Honest about the problem. Kind about the person.",
+     2.4,
+     "body"
+    ],
+    [
+     "Save this for the next bad week.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of a pen and an open letter pad under a lamp (tag letter-lamp), else V1 + grain.",
+   "footage": "letter-lamp",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "warm",
+    "seed": 320
+   },
+   "source": {
+    "type": "data",
+    "author": "Breines & Chen",
+    "work": "Self-compassion increases self-improvement motivation (PSPB 38(9))",
+    "section": "experiments",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 experiments (E20; design via secondary summary, check before scheduling) + Moodius practice",
+   "caption": "Most people who are hard on themselves think it's what keeps them going.\n\nIn four experiments, people nudged towards self-compassion about a weakness, a mistake or a failed test were more motivated to improve, not less.\n\nTry this tonight: write to yourself about the thing you're trying to change, the way you'd write to a friend who was struggling with it. Honest about the problem, kind about the person.\n\nWhat would that letter say?\n\nEvidence: Breines & Chen (2012). Full essay on the Substack, link in bio.",
+   "first_comment": "What would a friend say to you about the thing you're working on?",
+   "hashtags": [
+    "#selfcompassion",
+    "#selfimprovement",
+    "#perfectionism",
+    "#psychology",
+    "#stoicism"
+   ],
+   "cta": "save",
+   "length_s": 17.1
+  }
+ ],
+ "carousel": [
+  [
+   "Cover",
+   "Improving yourself and rejecting yourself can look exactly the same.",
+   "Here's how to tell the difference →",
+   "claim cover"
+  ],
+  [
+   "The pressure",
+   "Socially prescribed perfectionism rose about 33% among students from 1989 to 2016.",
+   "Meta-analysis · Curran & Hill, Psychological Bulletin (2019)",
+   "term card"
+  ],
+  [
+   "The critic's promise",
+   "Self-critical people made less progress on goals, including less weight loss over six months.",
+   "Studies · Powers et al., PSPB (2011) · correlational",
+   "term card"
+  ],
+  [
+   "The kinder route",
+   "People nudged to self-compassion were more motivated to improve, not less.",
+   "Experiments · Breines & Chen, PSPB (2012)",
+   "term card"
+  ],
+  [
+   "An emperor's note",
+   "\"Be not disgusted, nor discouraged, nor dissatisfied, if thou dost not succeed in doing everything according to right principles.\"",
+   "Meditations 5.9 · tr. George Long",
+   "pull quote"
+  ],
+  [
+   "Signs it's a verdict",
+   "A missed day feels like evidence · You're escaping, not heading somewhere · Progress brings relief, not satisfaction",
+   "Moodius reading",
+   "numbered step"
+  ],
+  [
+   "Sign-off",
+   "Reject the behaviour. Keep the person.",
+   "Full essay on the Substack · link in bio · save this",
+   "sign-off"
+  ]
+ ],
+ "carousel_caption": "Self-improvement can run on care or on contempt. From outside they look identical.\n\nThe research suggests the contempt version works worse: self-criticism went with less progress, and self-compassion with more motivation to improve. High standards aren't the problem. What you do with a bad week is.\n\nWhich fuel are you running on?\n\nEvidence: Curran & Hill 2019; Powers et al. 2011; Breines & Chen 2012; Neff 2003. Philosophy: Marcus Aurelius, Meditations 5.9 (Long).",
+ "notes": [
+  "Most people who are hard on themselves believe it's what keeps them going. In five studies, self-critical people made less progress on their goals, not more, including measured weight loss over six months. The inner critic's promise doesn't seem to hold.",
+  "Marcus Aurelius, to himself: don't be disgusted or discouraged if you don't manage to do everything by your principles; when you fail, come back. The Stoics get recruited as patron saints of grinding discipline. On this, at least, Marcus was gentler with himself than most of the people who quote him.",
+  "A test for whether your self-improvement has turned into self-rejection: does a missed day feel like a missed day, or like evidence about who you are? This week's essay is about the difference."
+ ],
+ "visuals": {
+  "look": "V3 empty gym at dawn; V2 pen and letter pad under a lamp; no bodies, no mirrors with people",
+  "type": "Standard; Meditations slide in Playfair italic on Bone",
+  "music": "dawn and warm (ambient.py); steady, no build",
+  "pinterest": "1000×1500, Bone background, Slate type, Ember on 'rejection'"
+ }
+}

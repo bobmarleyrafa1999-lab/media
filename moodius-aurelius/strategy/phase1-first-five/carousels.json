@@ -1,0 +1,221 @@
+{
+ "p1-01": {
+  "kind": "cover",
+  "kicker": "Reframe",
+  "claim": "You don’t have a discipline problem. You have a self-trust problem.",
+  "page": "1/7"
+ },
+ "p1-02": {
+  "kind": "term",
+  "tag": "The real issue",
+  "term": "Self-trust",
+  "definition": "The evidence you’ve collected that you do what you say. Every promise to yourself you break is a vote against you.",
+  "page": "2/7"
+ },
+ "p1-03": {
+  "kind": "quote",
+  "quote": "Every habit and faculty is maintained and increased by the corresponding actions: the habit of walking by walking, the habit of running by running.",
+  "note": "Trust works the same way. You build it by keeping promises, not by making bigger ones.",
+  "cite": "Epictetus · Discourses 2.18 · Long",
+  "page": "3/7"
+ },
+ "p1-04": {
+  "kind": "step",
+  "n": 1,
+  "title": "Shrink the promise",
+  "body": "Pick one you can’t fail: ten push-ups, one page, in bed by 23:30.",
+  "page": "4/7"
+ },
+ "p1-05": {
+  "kind": "step",
+  "n": 2,
+  "title": "Keep it for 7 days",
+  "body": "Not 30. Seven. Then raise it by one notch.",
+  "page": "5/7"
+ },
+ "p1-06": {
+  "kind": "step",
+  "n": 3,
+  "title": "Count the proof",
+  "body": "Tick a box every night. You’re not tracking a habit. You’re collecting evidence about who you are.",
+  "page": "6/7"
+ },
+ "p1-07": {
+  "kind": "signoff",
+  "line": "Small promises, kept, become a self you can trust.",
+  "action": "Save this. Send it to the friend who keeps starting on Monday.",
+  "page": "7/7"
+ },
+ "p2-01": {
+  "kind": "cover",
+  "kicker": "Ancient line, modern situation",
+  "claim": "When someone is rude to you today, Marcus Aurelius had already planned for it.",
+  "page": "1/6"
+ },
+ "p2-02": {
+  "kind": "quote",
+  "quote": "Begin the morning by saying to yourself: I shall meet with the busybody, the ungrateful, arrogant, deceitful, envious, unsocial.",
+  "note": "He wasn’t being bitter. He was getting ready.",
+  "cite": "Marcus Aurelius · Meditations 2.1 · Long",
+  "page": "2/6"
+ },
+ "p2-03": {
+  "kind": "pair",
+  "left": "Today",
+  "right": "Marcus's read",
+  "rows": [
+   [
+    "Someone cuts you off in traffic",
+    "Expected. Not personal."
+   ],
+   [
+    "Your boss snaps in a meeting",
+    "His morning, not your worth."
+   ],
+   [
+    "A stranger is rude online",
+    "Already on today's list. Scroll on."
+   ]
+  ],
+  "page": "3/6"
+ },
+ "p2-04": {
+  "kind": "quote",
+  "quote": "Take away your opinion, and then there is taken away the complaint, ‘I have been harmed.’ Take away the complaint, ‘I have been harmed,’ and the harm is taken away.",
+  "note": "Rude happened. Harmed is a story you can decline.",
+  "cite": "Marcus Aurelius · Meditations 4.7 · Long",
+  "page": "4/6"
+ },
+ "p2-05": {
+  "kind": "step",
+  "n": 1,
+  "title": "Say it before you leave the house",
+  "body": "“Someone will be rude to me today. It won’t be about me.” Ten seconds. Then go.",
+  "page": "5/6"
+ },
+ "p2-06": {
+  "kind": "signoff",
+  "line": "You can’t control their mood. You can be ready for it.",
+  "action": "Send this to someone who deals with people all day.",
+  "page": "6/6"
+ },
+ "p3-01": {
+  "kind": "cover",
+  "kicker": "Mechanism",
+  "claim": "Why you replay the argument at 2am",
+  "sub": "(and the move that stops it)",
+  "page": "1/7"
+ },
+ "p3-02": {
+  "kind": "term",
+  "tag": "What's happening",
+  "term": "Rumination",
+  "definition": "Replaying a problem without moving it forward. At night nothing competes for your attention, so the loop gets louder.",
+  "page": "2/7"
+ },
+ "p3-03": {
+  "kind": "quote",
+  "quote": "There are more things, Lucilius, likely to frighten us than there are to crush us; we suffer more often in imagination than in reality.",
+  "note": "The argument lasted five minutes. The replay lasts three hours.",
+  "cite": "Seneca · Letters 13.4 · Gummere",
+  "page": "3/7"
+ },
+ "p3-04": {
+  "kind": "quote",
+  "quote": "Men are disturbed not by the things which happen, but by the opinions about the things.",
+  "note": "You’re not replaying what happened. You’re replaying what you decided it meant.",
+  "cite": "Epictetus · Enchiridion 5 · Long",
+  "page": "4/7"
+ },
+ "p3-05": {
+  "kind": "step",
+  "n": 1,
+  "title": "Write the judgment down",
+  "body": "One line: “It means I’m ___.” On paper, a feeling becomes a claim you can check.",
+  "page": "5/7"
+ },
+ "p3-06": {
+  "kind": "step",
+  "n": 2,
+  "title": "Is it true? Is it mine to fix?",
+  "body": "True and yours: set one action for tomorrow. Neither: it’s finished. Put the pen down.",
+  "page": "6/7"
+ },
+ "p3-07": {
+  "kind": "signoff",
+  "line": "The loop ends when you look at the judgment, not when you win the argument.",
+  "action": "Save this for tonight.",
+  "page": "7/7"
+ },
+ "p4-01": {
+  "kind": "cover",
+  "kicker": "The Protocol",
+  "claim": "The 5-minute evening review the Stoics actually ran",
+  "sub": "Seneca did it every night. Here is the routine.",
+  "page": "1/10"
+ },
+ "p4-02": {
+  "kind": "quote",
+  "quote": "I scan the whole of my day and retrace all my deeds and words. I conceal nothing from myself, I omit nothing.",
+  "cite": "Seneca · On Anger 3.36 · Basore",
+  "page": "2/10"
+ },
+ "p4-03": {
+  "kind": "term",
+  "tag": "The rule",
+  "term": "Review, not trial",
+  "definition": "Look at everything. Punish nothing. You’re collecting notes for tomorrow, not building a case against yourself.",
+  "page": "3/10"
+ },
+ "p4-04": {
+  "kind": "step",
+  "n": 1,
+  "title": "Set the scene",
+  "body": "Same time, same place, lights low. Phone in another room. Notebook open.",
+  "page": "4/10"
+ },
+ "p4-05": {
+  "kind": "step",
+  "n": 2,
+  "title": "Replay the day in order",
+  "body": "Morning to night, like watching footage. Don’t skip the parts you’d rather not see.",
+  "page": "5/10"
+ },
+ "p4-06": {
+  "kind": "step",
+  "n": 3,
+  "title": "“What bad habit have you cured today?”",
+  "body": "Seneca’s first question. One small win counts.",
+  "cite": "On Anger 3.36 · Basore",
+  "page": "6/10"
+ },
+ "p4-07": {
+  "kind": "step",
+  "n": 4,
+  "title": "“What fault have you resisted?”",
+  "body": "The angry text you didn’t send. The scroll you stopped.",
+  "cite": "On Anger 3.36 · Basore",
+  "page": "7/10"
+ },
+ "p4-08": {
+  "kind": "step",
+  "n": 5,
+  "title": "“In what respect are you better?”",
+  "body": "Compare yourself with yesterday’s you. Nobody else.",
+  "cite": "On Anger 3.36 · Basore",
+  "page": "8/10"
+ },
+ "p4-09": {
+  "kind": "step",
+  "n": 6,
+  "title": "Pick one thing for tomorrow",
+  "body": "One sentence. Not a plan. A direction.",
+  "page": "9/10"
+ },
+ "p4-10": {
+  "kind": "signoff",
+  "line": "Five minutes. Every night. Honest, not harsh.",
+  "action": "Save this, do it tonight, and tell me which question was hardest.",
+  "page": "10/10"
+ }
+}

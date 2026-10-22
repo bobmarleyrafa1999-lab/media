@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /api/
+Disallow: /download/
+Disallow: /backoffice/
+Disallow: /mock-checkout/
+Disallow: /thank-you/
+
+Sitemap: https://moodius.co.uk/sitemap.xml

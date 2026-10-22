@@ -1,0 +1,211 @@
+{
+ "n": 12,
+ "essay": "essays/12-the-man-you-become.md",
+ "title": "The Man You Become When Nobody Is Watching",
+ "ab_alt": "The Soul Is Dyed by the Thoughts",
+ "pillar": "Identity",
+ "reels": [
+  {
+   "id": "S12E",
+   "slug": "unseen-hours",
+   "format": "E",
+   "series": "Masculinity, Reconsidered",
+   "pillar": "Identity",
+   "hook": "Nobody sees the washing-up at 11 p.m.",
+   "hook_b": "Character isn't built in the big moments.",
+   "cards": [
+    [
+     "Nobody sees the washing-up at 11 p.m.",
+     2.4,
+     "hook"
+    ],
+    [
+     "Or the extra rep. Or the half-truth in a text.",
+     2.9,
+     "body"
+    ],
+    [
+     "That's where most of a man gets built.",
+     2.2,
+     "body"
+    ],
+    [
+     "We become builders by building. Just by doing just things.",
+     2.8,
+     "body"
+    ],
+    [
+     "Idea: Aristotle, Nicomachean Ethics II · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Strength isn't the big moment. It's the unseen repetition.",
+     2.6,
+     "body"
+    ],
+    [
+     "Do one small thing tonight. Tell nobody.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of a kitchen sink at night, tap running, no hands (tag sink-night), else V1 + grain.",
+   "footage": "sink-night",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 323
+   },
+   "source": {
+    "type": "idea",
+    "author": "Aristotle",
+    "work": "Nicomachean Ethics",
+    "section": "II",
+    "translation": "paraphrase"
+   },
+   "evidence": "Tier 2 primary text (N36), paraphrased",
+   "caption": "We imagine character is decided in big moments. Aristotle thought it was laid down in small, repeated ones: we become builders by building, and just by doing just things.\n\nMost of those repetitions happen when nobody's watching. That's not time off from who you are. It's where you're being made.\n\nWhat's one small thing you could do tonight and tell nobody?\n\nSource: Aristotle, Nicomachean Ethics II (paraphrased). Full essay on the Substack, link in bio.",
+   "first_comment": "One word: the quality you're building when nobody's watching.",
+   "hashtags": [
+    "#character",
+    "#selfdiscipline",
+    "#stoicism",
+    "#psychology",
+    "#mensmentalhealth"
+   ],
+   "cta": "send",
+   "length_s": 17.1
+  },
+  {
+   "id": "S12A",
+   "slug": "you-are-the-witness",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Identity",
+   "hook": "Who's watching when nobody's watching?",
+   "hook_b": "Nobody's watching. Except you, and you're not neutral.",
+   "cards": [
+    [
+     "Who's watching when nobody's watching?",
+     2.2,
+     "question"
+    ],
+    [
+     "You are. And you take notes.",
+     1.8,
+     "body"
+    ],
+    [
+     "We often learn who we are by watching what we do.",
+     2.9,
+     "body"
+    ],
+    [
+     "Theory: Bem, self-perception (1972)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Keep a promise nobody knew about, and you hand yourself evidence.",
+     3.0,
+     "body"
+    ],
+    [
+     "Break one, and you hand yourself that too.",
+     2.2,
+     "body"
+    ],
+    [
+     "Save this. Give yourself better evidence.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate + grain.",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 324
+   },
+   "source": {
+    "type": "data",
+    "author": "Bem",
+    "work": "Self-perception theory (Adv. Exp. Soc. Psychol. 6)",
+    "section": "theory",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 3 theory (N59), limits noted in the essay",
+   "caption": "Daryl Bem proposed that we often learn what we feel and value the same way other people do: by watching what we do and working backwards.\n\nSo the promises you keep to yourself in private do two things. They build a habit, and they give you evidence about who you are.\n\nWhat evidence did you give yourself today?\n\nTheory: Bem (1972), self-perception; it applies most when our sense of ourselves is unclear. Full essay on the Substack, link in bio.",
+   "first_comment": "What's one promise to yourself you kept this week that nobody knows about?",
+   "hashtags": [
+    "#character",
+    "#selfdiscipline",
+    "#stoicism",
+    "#psychology",
+    "#mensmentalhealth"
+   ],
+   "cta": "save",
+   "length_s": 16.1
+  }
+ ],
+ "carousel": [
+  [
+   "Cover",
+   "Character is built when nobody is watching.",
+   "Three reasons the unseen hours count most →",
+   "claim cover"
+  ],
+  [
+   "1. Repetition makes you",
+   "We become builders by building, and just by doing just things.",
+   "Philosophy · Aristotle, Nicomachean Ethics II.1 (paraphrased)",
+   "term card"
+  ],
+  [
+   "2. You are the witness",
+   "We often infer who we are by watching what we do.",
+   "Theory · Bem, self-perception (1972)",
+   "term card"
+  ],
+  [
+   "3. And you can fool the witness",
+   "People changed how long they held their arms in cold water to 'prove' a healthy heart, then denied it.",
+   "Experiment · Quattrone & Tversky, JPSP (1984)",
+   "term card"
+  ],
+  [
+   "The dye",
+   "\"The soul is dyed by the thoughts.\"",
+   "Marcus Aurelius, Meditations 5.16 · tr. George Long",
+   "pull quote"
+  ],
+  [
+   "How long",
+   "A new daily habit took a median of 66 days to feel automatic. Range: 18 to 254.",
+   "Study · Lally et al., Eur. J. Soc. Psychol. (2010)",
+   "term card"
+  ],
+  [
+   "Sign-off",
+   "The Unseen Ledger: one quality, one small private action, every day, tell nobody.",
+   "Full essay on the Substack · link in bio · save this",
+   "sign-off"
+  ]
+ ],
+ "carousel_caption": "Character isn't revealed in the big moments so much as built in the small, unseen ones.\n\nWe become what we repeatedly do. We learn who we are partly by watching what we do. And we're capable of fooling ourselves while we do it.\n\nWhat's one small thing you'll do this week and tell nobody?\n\nEvidence: Bem 1972 (theory); Quattrone & Tversky 1984; Lally et al. 2010. Philosophy: Aristotle NE II.1; Marcus Aurelius, Meditations 5.16 (Long).",
+ "notes": [
+  "In 1984, students held their arms in cold water after being told that tolerance predicted a healthy heart. Those told 'longer is healthier' held on longer, and most denied changing their effort. We don't just watch ourselves. We perform for ourselves, and then miss it.",
+  "Marcus Aurelius, in a notebook nobody was meant to read: 'the soul is dyed by the thoughts.' Dye doesn't work in one dip. It works by repeated soaking. That's a fair description of how character is made.",
+  "This week's essay is about the man you become when nobody's watching. Not the big test. The washing-up at 11 p.m., the extra rep, the honest text. Most of a character is built there, and you're the only witness who's always present."
+ ],
+ "visuals": {
+  "look": "V2 kitchen sink at night (no hands, no faces); V1 flat for the witness reel",
+  "type": "Standard; the three numbered reasons as a stacked list, Ember on 'nobody'",
+  "music": "low and night (ambient.py); slow, grounded",
+  "pinterest": "1000×1500, Bone background, Slate type, Ember on 'watching'"
+ }
+}

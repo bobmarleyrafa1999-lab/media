@@ -1,0 +1,55 @@
+name: Moodius repo audit
+# Weekly, report only. Scans main and opens one issue with a checklist (label repo-audit).
+# The previous audit issue is closed and any lines ticked there carry over. Nothing is changed here:
+# changes happen only in "Moodius repo audit apply", after the owner ticks lines and comments /apply.
+# Optional secret AUDIT_PERSONAL_TERMS: comma-separated names to flag (kept out of the public repo).
+on:
+  schedule:
+    - cron: "0 6 * * 1"   # Mondays 06:00 UTC (08:00 Madrid in summer, 07:00 in winter)
+  workflow_dispatch:
+permissions:
+  contents: read
+  issues: write
+  pull-requests: read
+concurrency:
+  group: moodius-repo-audit
+  cancel-in-progress: false
+jobs:
+  audit:
+    if: github.repository_owner == 'bobmarleyrafa1999-lab'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Self-test the audit tool
+        run: python3 -m unittest discover -s moodius-aurelius/repo-audit/tests
+      - name: Gather open PR branches and the last audit issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh pr list --state open --limit 200 --json headRefName -q '.[].headRefName' > "$RUNNER_TEMP/prs.txt"
+          gh label create repo-audit --color 3A4049 --description "Weekly repo audit" 2>/dev/null || true
+          gh issue list --label repo-audit --state open --limit 1 --json number -q '.[0].number // empty' > "$RUNNER_TEMP/prev.txt"
+          if [ -s "$RUNNER_TEMP/prev.txt" ]; then gh issue view "$(cat "$RUNNER_TEMP/prev.txt")" --json body -q .body > "$RUNNER_TEMP/prev.md"; fi
+      - name: Scan
+        env:
+          AUDIT_PERSONAL_TERMS: ${{ secrets.AUDIT_PERSONAL_TERMS }}
+          AUDIT_DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+        run: |
+          python3 moodius-aurelius/repo-audit/audit.py scan --out "$RUNNER_TEMP/report.md" \
+            --previous "$RUNNER_TEMP/prev.md" --open-pr-branches "$RUNNER_TEMP/prs.txt"
+          cat "$RUNNER_TEMP/report.md" >> "$GITHUB_STEP_SUMMARY"
+      - name: Open this week's issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          new=$(gh issue create --label repo-audit --title "Repo audit $(date -u +%Y-%m-%d)" --body-file "$RUNNER_TEMP/report.md")
+          echo "Opened $new"
+          if [ -s "$RUNNER_TEMP/prev.txt" ]; then
+            gh issue close "$(cat "$RUNNER_TEMP/prev.txt")" --reason "not planned" --comment "Replaced by $new (ticked lines carried over)."
+          fi

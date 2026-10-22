@@ -1,0 +1,17 @@
+{
+ "manifesto-1": {"kind":"story","label":"Manifesto","page":"1/4","lines":[
+   ["Stoicism for people who feel things.","claim"],
+   ["Modern Stoic practice, explained through psychology: how to regulate, decide and act when emotions are loud.","body"]]},
+ "manifesto-2": {"kind":"story","label":"Manifesto","page":"2/4","cite":"Seneca, Letters 63.1 (Gummere)","lines":[
+   ["This is not “feel nothing.”","claim"],
+   ["“Let not the eyes be dry when we have lost a friend, nor let them overflow. We may weep, but we must not wail.”","quote"],
+   ["Feel it fully. Then choose what you do next.","body"]]},
+ "manifesto-3": {"kind":"story","label":"Manifesto","page":"3/4","lines":[
+   ["Two rules here.","claim"],
+   ["1. Every quote cites its book and section, in a public-domain translation. If it is our wording, it says Moodius.","body"],
+   ["2. No statues, no gold, no marble. Just the ideas, and what to do with them.","body"]]},
+ "manifesto-4": {"kind":"story","label":"Manifesto","page":"4/4","footer":"Free guide: link in bio","lines":[
+   ["Start here.","claim"],
+   ["7 Stoic tools for when emotions are loud. One tool a day for a week. Free.","body"],
+   ["Daily carousel at 12:00, reel at 18:00. Journal question every night at 21:00.","small"]]}
+}

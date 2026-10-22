@@ -1,0 +1,263 @@
+{
+ "CA01-01": {
+  "kind": "cover",
+  "kicker": "Five one-liners",
+  "claim": "Five sentences to say to yourself instead of “I’m fine.”",
+  "swipe": true,
+  "page": "1/7"
+ },
+ "CA01-02": {
+  "kind": "term",
+  "tag": "1",
+  "term": "“This is a hard day, not a hard life.”",
+  "definition": "Shrink the frame. Most bad days feel permanent at 23:00 and ordinary by lunch.",
+  "page": "2/7"
+ },
+ "CA01-03": {
+  "kind": "term",
+  "tag": "2",
+  "term": "“I don’t have to win this one.”",
+  "definition": "Some arguments cost more to win than they’re worth.",
+  "page": "3/7"
+ },
+ "CA01-04": {
+  "kind": "term",
+  "tag": "3",
+  "term": "“What’s actually mine here?”",
+  "definition": "Your effort and your reply. Not their mood, not the outcome.",
+  "page": "4/7"
+ },
+ "CA01-05": {
+  "kind": "term",
+  "tag": "4",
+  "term": "“Tired isn’t the same as failing.”",
+  "definition": "Rest first, then judge the week.",
+  "page": "5/7"
+ },
+ "CA01-06": {
+  "kind": "term",
+  "tag": "5",
+  "term": "“Say it to someone.”",
+  "definition": "A feeling said out loud usually gets smaller.",
+  "page": "6/7"
+ },
+ "CA01-07": {
+  "kind": "signoff",
+  "line": "Pick one. Say it before bed.",
+  "action": "Save it. Send it to the friend who’s always “good”.",
+  "cite": "Moodius · no. 3 after Enchiridion 1",
+  "page": "7/7"
+ },
+ "CA02-01": {
+  "kind": "cover",
+  "kicker": "Two columns",
+  "claim": "A boundary keeps you safe. A wall keeps you alone.",
+  "swipe": true,
+  "page": "1/6"
+ },
+ "CA02-02": {
+  "kind": "pair",
+  "left": "Boundary",
+  "right": "Wall",
+  "rows": [
+   [
+    "“I can’t talk tonight. Tomorrow?”",
+    "Leaving them on read for a week"
+   ],
+   [
+    "“That joke hurt.”",
+    "Laughing, then going cold"
+   ],
+   [
+    "“I need an hour after work.”",
+    "“I’m fine.” Door shut."
+   ]
+  ],
+  "page": "2/6"
+ },
+ "CA02-03": {
+  "kind": "quote",
+  "quote": "Of things some are in our power, and others are not.",
+  "note": "A boundary is about what’s in your power: what you’ll do. A wall tries to control what they can reach.",
+  "cite": "Epictetus · Enchiridion 1 · Long",
+  "page": "3/6"
+ },
+ "CA02-04": {
+  "kind": "step",
+  "n": 1,
+  "title": "Say what you’ll do, not what they must do",
+  "body": "“If you shout, I’ll leave the room” is a boundary. “Stop shouting” is a wish.",
+  "page": "4/6"
+ },
+ "CA02-05": {
+  "kind": "step",
+  "n": 2,
+  "title": "Keep the door visible",
+  "body": "End with when you’ll be back. That’s the difference between space and distance.",
+  "page": "5/6"
+ },
+ "CA02-06": {
+  "kind": "signoff",
+  "line": "Boundaries let people stay. Walls make them guess.",
+  "action": "Send it to someone who’s been building walls.",
+  "page": "6/6"
+ },
+ "CA03-01": {
+  "kind": "cover",
+  "kicker": "Under 100 words",
+  "claim": "The second time he asked.",
+  "swipe": true,
+  "page": "1/5"
+ },
+ "CA03-02": {
+  "kind": "quote",
+  "quote": "We’d been friends nine years. He asked how I was. I said fine, the way I always did. He nodded, then didn’t move. “No, really.”",
+  "page": "2/5"
+ },
+ "CA03-03": {
+  "kind": "quote",
+  "quote": "I laughed. He waited. The kettle clicked off and neither of us got up. I told him about the job, then the not sleeping, then my dad, which I hadn’t planned to.",
+  "page": "3/5"
+ },
+ "CA03-04": {
+  "kind": "quote",
+  "quote": "He didn’t fix anything. He made the tea twenty minutes late and said, “Thanks for telling me.” That was the whole thing. I still think about the kettle.",
+  "page": "4/5"
+ },
+ "CA03-05": {
+  "kind": "signoff",
+  "line": "Ask twice. Then stay for the answer.",
+  "action": "Send this to the friend who asked you twice.",
+  "cite": "A composite story, not one real person · Moodius",
+  "page": "5/5"
+ },
+ "CA04-01": {
+  "kind": "cover",
+  "kicker": "Mechanism",
+  "claim": "Why you feel behind, even when you’re not",
+  "sub": "(and the comparison that actually helps)",
+  "swipe": true,
+  "page": "1/6"
+ },
+ "CA04-02": {
+  "kind": "term",
+  "tag": "What’s happening",
+  "term": "Social comparison",
+  "definition": "We judge ourselves by looking at others, especially when we’re unsure. The feed gives you everyone’s best day, every day.",
+  "cite": "Idea: Festinger (1954) · Moodius words",
+  "page": "2/6"
+ },
+ "CA04-03": {
+  "kind": "pair",
+  "left": "You compare",
+  "right": "With",
+  "rows": [
+   [
+    "Your Tuesday",
+    "Their highlight reel"
+   ],
+   [
+    "Your middle",
+    "Their chapter 20"
+   ],
+   [
+    "Everything you know about you",
+    "One photo of them"
+   ]
+  ],
+  "page": "3/6"
+ },
+ "CA04-04": {
+  "kind": "step",
+  "n": 1,
+  "title": "Compare with one person: you, a year ago",
+  "body": "What can you do now that you couldn’t then? Write three.",
+  "page": "4/6"
+ },
+ "CA04-05": {
+  "kind": "step",
+  "n": 2,
+  "title": "Mute, don’t judge",
+  "body": "If one account leaves you worse every time, it’s not a lesson. Mute it.",
+  "page": "5/6"
+ },
+ "CA04-06": {
+  "kind": "signoff",
+  "line": "You’re not behind. You’re comparing the wrong things.",
+  "action": "Save it for the next 1am scroll.",
+  "page": "6/6"
+ },
+ "CA05-01": {
+  "kind": "cover",
+  "kicker": "Myth versus text",
+  "claim": "Myth: a real Stoic doesn’t cry.",
+  "swipe": true,
+  "page": "1/5"
+ },
+ "CA05-02": {
+  "kind": "term",
+  "tag": "What the text says",
+  "term": "Seneca, on losing a friend",
+  "definition": "He tells Lucilius the eyes shouldn’t stay dry, and shouldn’t flood either. Grief is allowed. Being swept away by it is what he warns against.",
+  "cite": "Idea: Seneca, Letters 63 · Moodius paraphrase",
+  "page": "2/5"
+ },
+ "CA05-03": {
+  "kind": "term",
+  "tag": "Why the myth spread",
+  "term": "“Stoic” became a face",
+  "definition": "In English, “stoic” came to mean showing nothing. The philosophy was about judging well, not feeling less.",
+  "page": "3/5"
+ },
+ "CA05-04": {
+  "kind": "step",
+  "n": 1,
+  "title": "Let it out, then let it move",
+  "body": "Cry. Then walk, eat, call someone. Feeling it and functioning aren’t opposites.",
+  "page": "4/5"
+ },
+ "CA05-05": {
+  "kind": "signoff",
+  "line": "Stoicism was never about feeling less. It’s about not being ruled by it.",
+  "action": "Send this to someone who thinks they have to hold it in.",
+  "page": "5/5"
+ },
+ "ST01-poll": {
+  "kind": "story",
+  "label": "Daily",
+  "lines": [
+   [
+    "When someone says “look at that”…",
+    "claim"
+   ],
+   [
+    "Do you usually look up?",
+    "body"
+   ],
+   [
+    "(poll sticker: Always / Honestly, not always)",
+    "small"
+   ]
+  ],
+  "footer": "Idea: Gottman, bids for connection (2001)"
+ },
+ "ST02-question": {
+  "kind": "story",
+  "label": "Journal",
+  "lines": [
+   [
+    "Who’s the friend you’ve only ever asked once?",
+    "claim"
+   ],
+   [
+    "Don’t name them. Just text them tonight.",
+    "body"
+   ],
+   [
+    "(question sticker: “What stopped you asking twice?”)",
+    "small"
+   ]
+  ],
+  "footer": "Moodius"
+ }
+}
