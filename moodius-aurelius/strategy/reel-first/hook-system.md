@@ -64,7 +64,7 @@ Each line: hook (card 1 and cover) · the gap it opens · midpoint break · payo
 
 ## Angle mix (from 2 Nov, Surafel's direction 22 Oct)
 
-Not everything comes from hurt. Each week's 12 reels aim for: 3+ **appreciation** (noticing what's good: people, time, small things, memory), 3+ **history or psychology** (a real figure, a study, a mechanism), at most 4 **hurt, conflict or other-person** reels (still the best tested hooks, kept but capped), the rest **life and philosophy**. The tracker's `angle` column tags each reel. Appreciation hooks follow the same 7 rules: start mid-scene, open a gap, pay it off ("Yesterday had sixteen waking hours. Which one would you keep?").
+Not everything comes from hurt. Each week's 12 reels aim for: 3+ **appreciation** (noticing what's good: people, time, small things, memory), 3+ **history or psychology** (a real figure, a study, a mechanism), no more than 5 **hurt, conflict or other-person** reels (still the best tested hooks, kept but capped), the rest **life and philosophy**. The tracker's `angle` column tags each reel. Appreciation hooks follow the same 7 rules: start mid-scene, open a gap, pay it off ("Yesterday had sixteen waking hours. Which one would you keep?").
 
 ## Comment rule (every post)
 
