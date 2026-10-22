@@ -23,6 +23,7 @@ const cfg = JSON.parse(readFileSync(cfgPath, "utf8"));
 if (args.operator) cfg.operator_name = args.operator;
 if (args.address) cfg.postal_address = args.address;
 cfg.support_email = support;
+cfg.site_url = `https://${domain}`;
 if (args.substack) cfg.substack_url = args.substack;
 if (args.pinterest) cfg.pinterest_url = args.pinterest;
 writeFileSync(cfgPath, JSON.stringify(cfg, null, 2) + "\n");

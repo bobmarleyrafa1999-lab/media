@@ -39,7 +39,9 @@ binding = "FILES"
 bucket_name = "moodius-products"
 
 [env.production.vars]
-SITE_URL = "https://REPLACE_WITH_YOUR_DOMAIN"
+EMAIL_FROM = "Moodius Aurelius <hello@moodius.co.uk>"
+SUPPORT_EMAIL = "hello@moodius.co.uk"
+SITE_URL = "https://moodius.co.uk"
 PAYMENT_PROVIDER = "stripe"
 ALLOW_MOCK_PAYMENTS = "false"
 LIVE_MODE = "false"                       # flip to "true" only with sk_live_ keys, after a test purchase

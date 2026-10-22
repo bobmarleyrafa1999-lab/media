@@ -48,5 +48,5 @@ echo "== Build and deploy"
 npm run deploy
 
 echo
-echo "Done. Next: add the Stripe and Resend keys in the Cloudflare dashboard (business/setup/your-part.md),"
+echo "Done. Next: add moodius.co.uk under Custom domains, then the Stripe and Resend keys (business/setup/your-part.md),"
 echo "then make a test purchase with card 4242 4242 4242 4242."

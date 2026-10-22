@@ -2,9 +2,10 @@
   "_comment": "Filled in by Surafel before going live. Empty values render as a visible [to be added] and `npm run build -- --strict` fails.",
   "operator_name": "",
   "postal_address": "",
-  "support_email": "",
+  "support_email": "hello@moodius.co.uk",
   "instagram_url": "https://www.instagram.com/moodiusaurelius/",
   "pinterest_url": "",
   "substack_url": "",
-  "refund_window_days": "14"
+  "refund_window_days": "14",
+  "site_url": "https://moodius.co.uk"
 }

@@ -12,14 +12,18 @@ const strict = process.argv.includes("--strict");
 const layout = readFileSync(join(root, "pages", "_layout.html"), "utf8");
 const missing = new Set();
 
+// Optional settings: an empty one hides its <!--if:key-->...<!--/if--> block, or falls back.
+const OPTIONAL = { pinterest_url: null, substack_url: "/guide/" };
 const fill = (s) =>
-  s.replace(/\{\{(\w+)\}\}/g, (_, k) => {
+  s.replace(/<!--if:(\w+)-->([\s\S]*?)<!--\/if-->/g, (_, k, inner) => (cfg[k] ? inner : "")).replace(/\{\{(\w+)\}\}/g, (_, k) => {
     if (cfg[k]) return cfg[k];
+    if (k in OPTIONAL && OPTIONAL[k] !== null) return OPTIONAL[k];
     missing.add(k);
     return k.endsWith("_url") ? "#" : "[to be added]";
   });
 
 let n = 0;
+const indexable = [];
 for (const file of readdirSync(join(root, "pages")).filter((f) => f.endsWith(".html") && !f.startsWith("_"))) {
   const src = readFileSync(join(root, "pages", file), "utf8");
   const meta = Object.fromEntries([...src.matchAll(/^<!--\s*(\w+):\s*(.*?)\s*-->$/gm)].map((m) => [m[1], m[2]]));
@@ -40,7 +44,15 @@ for (const file of readdirSync(join(root, "pages")).filter((f) => f.endsWith(".h
   const out = meta.path === "/404" ? join(root, "public", "404.html") : join(root, "public", meta.path, "index.html");
   mkdirSync(dirname(out), { recursive: true });
   writeFileSync(out, html);
+  if (meta.path !== "/404" && !(meta.robots || "").includes("noindex")) indexable.push(meta.path);
   n++;
+}
+// Search engines: robots.txt and a sitemap on the canonical domain.
+const site = (cfg.site_url || "").replace(/\/$/, "");
+if (site) {
+  const urls = indexable.sort().map((p) => `  <url><loc>${site}${p}</loc></url>`).join("\n");
+  writeFileSync(join(root, "public", "sitemap.xml"), `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`);
+  writeFileSync(join(root, "public", "robots.txt"), `User-agent: *\nDisallow: /api/\nDisallow: /download/\nDisallow: /backoffice/\nDisallow: /mock-checkout/\nDisallow: /thank-you/\n\nSitemap: ${site}/sitemap.xml\n`);
 }
 console.log(`built ${n} pages`);
 if (missing.size) {
