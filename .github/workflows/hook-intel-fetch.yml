@@ -1,11 +1,10 @@
 name: Hook intel fetch
-# Runs only when a fetch request file is pushed. No schedule: nothing runs unless a request is committed.
+# Runs only when a request file under moodius-aurelius/hook-intel/requests/ is pushed. No schedule.
+# Public metadata only (yt-dlp flat lists, YouTube RSS, Apple Podcasts search). Results are committed back.
 on:
   push:
     branches: ["claude/project-thread-*"]
-    paths:
-      - "moodius-aurelius/hook-intel/requests/**"
-      - "moodius-aurelius/hook-intel/remote/**"
+    paths: ["moodius-aurelius/hook-intel/requests/**"]
 permissions:
   contents: write
 concurrency:
@@ -14,13 +13,25 @@ concurrency:
 jobs:
   fetch:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 40
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install -q "yt-dlp>=2026.1.1" || pip install -q yt-dlp
-      - name: Probe
-        if: hashFiles('moodius-aurelius/hook-intel/remote/probe.py') != ''
-        run: python moodius-aurelius/hook-intel/remote/probe.py
+      - run: pip install -q yt-dlp && sudo apt-get install -y -qq tesseract-ocr >/dev/null
+      - name: Fetch every request changed in this push
+        working-directory: moodius-aurelius/hook-intel
+        run: |
+          for f in $(git diff --name-only HEAD~1 HEAD -- requests/ | sed 's#moodius-aurelius/hook-intel/##'); do
+            [ -f "$f" ] && python remote/fetch.py "$f"
+          done
+      - name: Commit results
+        run: |
+          git config user.name "hook-intel-fetch"
+          git config user.email "actions@users.noreply.github.com"
+          git add moodius-aurelius/hook-intel/data/raw
+          git diff --cached --quiet || git commit -m "hook-intel: fetched data for $(ls -t moodius-aurelius/hook-intel/data/raw | head -1)"
+          git push
