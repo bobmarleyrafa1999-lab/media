@@ -1,0 +1,505 @@
+{
+  "name": "Moodius agent: scheduler",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 1
+            }
+          ]
+        }
+      },
+      "id": "t0",
+      "name": "Every: process-queue",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$env.AGENT_URL}}/api/cron/process-queue",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{$env.CRON_SECRET}}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 120000,
+          "retry": {}
+        }
+      },
+      "id": "h0",
+      "name": "POST /api/cron/process-queue",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        300,
+        0
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "minutes",
+              "minutesInterval": 5
+            }
+          ]
+        }
+      },
+      "id": "t1",
+      "name": "Every: poll-comments",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        160
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$env.AGENT_URL}}/api/cron/poll-comments",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{$env.CRON_SECRET}}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 120000,
+          "retry": {}
+        }
+      },
+      "id": "h1",
+      "name": "POST /api/cron/poll-comments",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        300,
+        160
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 30 8,20 * * *"
+            }
+          ]
+        }
+      },
+      "id": "t2",
+      "name": "Every: sync-insights",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        320
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$env.AGENT_URL}}/api/cron/sync-insights",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{$env.CRON_SECRET}}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 120000,
+          "retry": {}
+        }
+      },
+      "id": "h2",
+      "name": "POST /api/cron/sync-insights",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        300,
+        320
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 30 20 * * *"
+            }
+          ]
+        }
+      },
+      "id": "t3",
+      "name": "Every: daily-digest",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        480
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$env.AGENT_URL}}/api/cron/daily-digest",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{$env.CRON_SECRET}}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 120000,
+          "retry": {}
+        }
+      },
+      "id": "h3",
+      "name": "POST /api/cron/daily-digest",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        300,
+        480
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 0 8 * * 1"
+            }
+          ]
+        }
+      },
+      "id": "t4",
+      "name": "Every: weekly-report",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        640
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$env.AGENT_URL}}/api/cron/weekly-report",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{$env.CRON_SECRET}}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 120000,
+          "retry": {}
+        }
+      },
+      "id": "h4",
+      "name": "POST /api/cron/weekly-report",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        300,
+        640
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 15 4 * * 0"
+            }
+          ]
+        }
+      },
+      "id": "t5",
+      "name": "Every: refresh-token",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        800
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$env.AGENT_URL}}/api/cron/refresh-token",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{$env.CRON_SECRET}}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 120000,
+          "retry": {}
+        }
+      },
+      "id": "h5",
+      "name": "POST /api/cron/refresh-token",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        300,
+        800
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 45 3 * * *"
+            }
+          ]
+        }
+      },
+      "id": "t6",
+      "name": "Every: retention",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        960
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$env.AGENT_URL}}/api/cron/retention",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{$env.CRON_SECRET}}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 120000,
+          "retry": {}
+        }
+      },
+      "id": "h6",
+      "name": "POST /api/cron/retention",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        300,
+        960
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    },
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 0 9 * * *"
+            }
+          ]
+        }
+      },
+      "id": "t7",
+      "name": "Every: sponsor-followups",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        0,
+        1120
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{$env.AGENT_URL}}/api/cron/sponsor-followups",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{$env.CRON_SECRET}}"
+            }
+          ]
+        },
+        "options": {
+          "timeout": 120000,
+          "retry": {}
+        }
+      },
+      "id": "h7",
+      "name": "POST /api/cron/sponsor-followups",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        300,
+        1120
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 5000
+    }
+  ],
+  "connections": {
+    "Every: process-queue": {
+      "main": [
+        [
+          {
+            "node": "POST /api/cron/process-queue",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Every: poll-comments": {
+      "main": [
+        [
+          {
+            "node": "POST /api/cron/poll-comments",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Every: sync-insights": {
+      "main": [
+        [
+          {
+            "node": "POST /api/cron/sync-insights",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Every: daily-digest": {
+      "main": [
+        [
+          {
+            "node": "POST /api/cron/daily-digest",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Every: weekly-report": {
+      "main": [
+        [
+          {
+            "node": "POST /api/cron/weekly-report",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Every: refresh-token": {
+      "main": [
+        [
+          {
+            "node": "POST /api/cron/refresh-token",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Every: retention": {
+      "main": [
+        [
+          {
+            "node": "POST /api/cron/retention",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Every: sponsor-followups": {
+      "main": [
+        [
+          {
+            "node": "POST /api/cron/sponsor-followups",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Europe/Madrid",
+    "saveDataSuccessExecution": "none",
+    "saveDataErrorExecution": "all"
+  },
+  "meta": {
+    "note": "Calls the agent's /api/cron/* endpoints. The agent does the work; n8n only keeps time. Needs env AGENT_URL and CRON_SECRET (set in docker-compose.yml)."
+  }
+}

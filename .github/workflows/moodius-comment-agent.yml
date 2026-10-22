@@ -1,0 +1,77 @@
+# Moodius comment agent, free version: GitHub runs it on a schedule, no server needed.
+# Draft-only: it reads comments, drafts replies and emails Surafel. It never posts or DMs.
+# Setup: moodius-aurelius/community-agent/docs/08-free-setup.md
+name: Moodius comment agent
+
+on:
+  schedule:
+    - cron: "*/10 * * * *"   # every 10 min: new comments → drafts → alert emails
+    - cron: "30 19 * * *"    # 20:30 Madrid (winter time): digest, insights, clean-up
+    - cron: "0 7 * * 1"      # Monday 08:00 Madrid: weekly report + Instagram token refresh
+  workflow_dispatch:
+    inputs:
+      jobs:
+        description: "Jobs to run (blank = poll + process)"
+        required: false
+
+concurrency:
+  group: moodius-comment-agent
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  run:
+    # Off until Surafel sets the repository variable MOODIUS_AGENT_ENABLED=true (after adding the secrets).
+    if: ${{ vars.MOODIUS_AGENT_ENABLED == 'true' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    defaults:
+      run:
+        working-directory: moodius-aurelius/community-agent
+    env:
+      DATABASE_URL: ${{ secrets.MOODIUS_DATABASE_URL }}
+      IG_ACCESS_TOKEN: ${{ secrets.MOODIUS_IG_ACCESS_TOKEN }}
+      IG_USER_ID: ${{ secrets.MOODIUS_IG_USER_ID }}
+      IG_USERNAME: moodiusaurelius
+      ANTHROPIC_API_KEY: ${{ secrets.MOODIUS_ANTHROPIC_API_KEY }}
+      CLAUDE_MODEL: claude-haiku-5-5
+      RESEND_API_KEY: ${{ secrets.MOODIUS_RESEND_API_KEY }}
+      EMAIL_FROM: Moodius Agent <onboarding@resend.dev>
+      OWNER_EMAIL: ${{ secrets.MOODIUS_OWNER_EMAIL }}
+      ENCRYPTION_KEY: ${{ secrets.MOODIUS_ENCRYPTION_KEY }}
+      SESSION_SECRET: ${{ secrets.MOODIUS_ENCRYPTION_KEY }}
+      APP_BASE_URL: https://www.instagram.com/moodiusaurelius
+      AGENT_MODE: draft_only
+      DM_KEYWORDS_ENABLED: "false"
+      NO_ADMIN: "true"
+      LOG_PUBLIC: "true"       # this repo is public: logs never show names, comments or emails
+      APP_TIMEZONE: Europe/Madrid
+      NODE_ENV: production
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: moodius-aurelius/community-agent
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: moodius-aurelius/community-agent/package-lock.json
+      - run: npm ci --no-audit --no-fund
+      - run: npx tsx scripts/migrate.ts
+      - name: Run jobs
+        env:
+          JOBS_INPUT: ${{ github.event.inputs.jobs }}
+          SCHEDULE: ${{ github.event.schedule }}
+        run: |
+          case "$SCHEDULE" in
+            "30 19 * * *") JOBS="poll-comments process-queue sync-insights daily-digest retention" ;;
+            "0 7 * * 1")   JOBS="weekly-report refresh-token" ;;
+            *)             JOBS="" ;;
+          esac
+          # Manual runs may only name known jobs.
+          for j in $JOBS_INPUT; do
+            case "$j" in poll-comments|process-queue|sync-insights|daily-digest|weekly-report|refresh-token|retention) JOBS="$JOBS $j" ;; *) echo "unknown job $j"; exit 1 ;; esac
+          done
+          npx tsx scripts/worker.ts --once $JOBS

@@ -1,0 +1,16 @@
+# Automatic HTTPS (Let's Encrypt). Point both DNS A records at the VPS first.
+{$AGENT_HOST} {
+	encode gzip
+	header {
+		Strict-Transport-Security "max-age=31536000"
+		X-Content-Type-Options nosniff
+		Referrer-Policy strict-origin-when-cross-origin
+		X-Frame-Options DENY
+	}
+	reverse_proxy app:3000
+}
+
+# n8n editor (protected by the owner account you create on first visit).
+{$N8N_HOST} {
+	reverse_proxy n8n:5678
+}
