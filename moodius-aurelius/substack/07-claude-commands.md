@@ -1,6 +1,6 @@
 # 7. Reusable Claude Code commands
 
-Saved in the repo at `.claude/commands/`, so they appear as slash commands in any Claude Code session on `bobmarleyrafa1999-lab/media`. Each one follows `publication/CLAUDE.md` (no publishing without approval, no invented sources, evidence labels).
+Saved in the repo at `.claude/commands/`, so they appear as slash commands in any Claude Code session on `bobmarleyrafa1999-lab/media`. Each one follows `moodius-aurelius/substack/CLAUDE.md` (no publishing without approval, no invented sources, evidence labels).
 
 | Command | Argument | What it does | Ends with |
 |---|---|---|---|

@@ -35,6 +35,11 @@ No credentials are stored in these files. Placeholders start with `PUT_`.
 6. Import both JSON files (Workflows > Import from file), replace the `PUT_` values (Instagram business account id, Page id, Kit URL, a long random webhook path, a verify token you invent), pick the credentials on each node, and activate.
 7. Meta app > Webhooks > Instagram: callback `https://<domain>/webhook/<your path>`, the same verify token, subscribe to `comments`.
 
+## Workflow 03: reply drafts and your approval (added 21 Oct 2026)
+`03-comment-reply-queue.json` drafts a reply for each new `comments-inbox` row with Claude, sends sensitive comments to you, and posts only rows you mark `approved`. Why we built it instead of using the two GitHub repos Surafel sent: `comment-repos-review.md`. The prompt is `comment-reply-prompt.md`.
+Extra setup on top of steps 1 to 7: add these columns to the right of `keyword_dm` in `comments-inbox`: `status, category, draft_reply, final_reply, note, drafted_utc, posted_utc, reply_id, attempts` (make `status` a dropdown: awaiting_approval, approved, posted, escalate, skip, rejected, post_failed). Create an Anthropic API key at console.anthropic.com, then in n8n Credentials > New > *Header Auth*, name `x-api-key`, value = the key, and pick it on the "Ask Claude for a draft" node. Pick the `access_token` Query Auth credential on the two Graph nodes and the Google credential on the two Sheet nodes. Import, then activate.
+Known gap: if n8n posts a reply but crashes before writing `posted` to the Sheet, the next run posts it again. Rare, and visible on the post.
+
 ## What Claude does once it's live
 Reads the `ig-stats` tab in the Friday routine instead of asking you for numbers, writes the "comment TOOLS" CTA into one carousel and one reel a week, and drafts replies from `comments-inbox`.
 

@@ -35,14 +35,14 @@ jobs:
         with:
           python-version: "3.12"
       - name: Unit tests
-        run: python -m unittest discover -s liberation/tests
+        run: python -m unittest discover -s moodius-aurelius/liberation/tests
       - name: Fetch
         env:
           SOURCE: ${{ inputs.source }}
           QUERY: ${{ inputs.query }}
           TAG: ${{ inputs.tag }}
           N: ${{ inputs.n }}
-        run: python liberation/tools/fetch_archive.py --source "$SOURCE" --query "$QUERY" --tag "$TAG" --n "$N" --out archive-out
+        run: python moodius-aurelius/liberation/tools/fetch_archive.py --source "$SOURCE" --query "$QUERY" --tag "$TAG" --n "$N" --out archive-out
       - uses: actions/upload-artifact@v4
         with:
           name: archive-${{ inputs.tag }}

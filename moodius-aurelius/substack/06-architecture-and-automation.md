@@ -27,7 +27,7 @@
 ```
 .claude/commands/          8 reusable Claude Code commands (deliverable 7)
 .github/workflows/         research-feed.yml (weekly, opens a PR) · editorial-qc.yml (on every change)
-publication/
+moodius-aurelius/substack/
   CLAUDE.md                rules every Claude session follows in this folder
   01–10 *.md               the ten deliverables
   data/

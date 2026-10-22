@@ -1,6 +1,6 @@
 # Obsidian vault
 
-Open this `vault/` folder (or the whole `publication/` folder) as a vault in Obsidian.
+Open this `vault/` folder (or the whole `moodius-aurelius/substack/` folder) as a vault in Obsidian.
 
 - `00-inbox/` new papers and feed items from `scripts/research_feed.py`, one dated checklist per run. Tick what's worth keeping, then run /research-topic or add a source row.
 - `10-sources/` one note per research-library row (generated; edit `data/sources.csv`, not these notes).

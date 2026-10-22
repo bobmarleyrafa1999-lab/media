@@ -21,7 +21,7 @@ jobs:
         env:
           OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
           CROSSREF_MAILTO: ${{ secrets.CROSSREF_MAILTO }}
-        run: python3 publication/scripts/research_feed.py weekly
+        run: python3 moodius-aurelius/substack/scripts/research_feed.py weekly
       - id: d
         run: echo "date=$(date +%F)" >> "$GITHUB_OUTPUT"
       - name: Open pull request
@@ -29,7 +29,7 @@ jobs:
         with:
           branch: research/inbox-${{ github.run_number }}
           title: "Research inbox: ${{ steps.d.outputs.date }}"
-          body: "New papers and feed items for review. Nothing here is verified yet; tick items in `publication/vault/00-inbox/` and run /research-topic."
+          body: "New papers and feed items for review. Nothing here is verified yet; tick items in `moodius-aurelius/substack/vault/00-inbox/` and run /research-topic."
           add-paths: |
-            publication/data/inbox.csv
-            publication/vault/00-inbox/**
+            moodius-aurelius/substack/data/inbox.csv
+            moodius-aurelius/substack/vault/00-inbox/**

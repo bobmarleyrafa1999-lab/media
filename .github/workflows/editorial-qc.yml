@@ -2,9 +2,9 @@ name: Editorial QC
 # Runs the essay quality gate and rebuilds the database on every change to the publication folder.
 on:
   pull_request:
-    paths: ["publication/**"]
+    paths: ["moodius-aurelius/substack/**"]
   push:
-    paths: ["publication/**"]
+    paths: ["moodius-aurelius/substack/**"]
 jobs:
   qc:
     runs-on: ubuntu-latest
@@ -13,5 +13,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: python3 publication/scripts/qc.py
-      - run: python3 publication/scripts/build_db.py
+      - run: python3 moodius-aurelius/substack/scripts/qc.py
+      - run: python3 moodius-aurelius/substack/scripts/build_db.py

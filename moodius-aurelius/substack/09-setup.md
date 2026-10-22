@@ -30,8 +30,8 @@ About an hour in total, once. Menu names are Substack's as of late 2026 and may 
 Copy the Note text from `packages/NN-slug.md` §6, start a new Note in the Substack app, paste, and add the essay as an embed (paste the post URL on its own line; Substack turns it into a card). Embeds tend to convert better than outside links (see research §5).
 
 ## 5. Obsidian (10 minutes, optional)
-1. Install Obsidian (free for personal use) and clone this repo with GitHub Desktop, or download the `publication/` folder.
-2. **Open folder as vault** → choose `publication/vault/` (or `publication/` to see everything).
+1. Install Obsidian (free for personal use) and clone this repo with GitHub Desktop, or download the `moodius-aurelius/substack/` folder.
+2. **Open folder as vault** → choose `moodius-aurelius/substack/vault/` (or `moodius-aurelius/substack/` to see everything).
 3. Settings → Community plugins → turn off Restricted mode → install **Dataview** and **Obsidian Git**. In Obsidian Git, set auto-pull on open.
 4. Browse `20-ideas/` (backlog) and `10-sources/` (library). Tick items in `00-inbox/` that look worth using.
 
