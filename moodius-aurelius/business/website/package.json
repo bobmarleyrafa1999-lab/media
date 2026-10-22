@@ -9,7 +9,8 @@
     "db:migrate:remote": "wrangler d1 migrations apply moodius --remote",
     "test": "node --test test/unit/*.test.mjs",
     "test:e2e": "node test/e2e/run.mjs",
-    "deploy": "node scripts/build-pages.mjs --strict && wrangler pages deploy public --project-name moodius --branch main"
+    "deploy": "node scripts/build-pages.mjs --strict && wrangler pages deploy public --project-name moodius --branch main",
+    "deploy:test": "node scripts/build-pages.mjs && wrangler pages deploy public --project-name moodius --branch main"
   },
   "devDependencies": {
     "wrangler": "4.146.0"

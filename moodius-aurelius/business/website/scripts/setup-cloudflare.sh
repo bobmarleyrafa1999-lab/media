@@ -45,7 +45,8 @@ if [ ! -f .admin-token-set ]; then
 fi
 
 echo "== Build and deploy"
-npm run deploy
+# Test mode can go up before the seller name and address are in; going live uses the strict build.
+if grep -q '^LIVE_MODE = "true"' wrangler.toml; then npm run deploy; else npm run deploy:test; fi
 
 echo
 echo "Done. Next: add moodius.co.uk under Custom domains, then the Stripe and Resend keys (business/setup/your-part.md),"
