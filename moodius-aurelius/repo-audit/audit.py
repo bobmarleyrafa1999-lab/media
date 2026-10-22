@@ -267,7 +267,9 @@ def check_branches(repo, open_pr_branches):
             continue
         merged = subprocess.run(["git", "merge-base", "--is-ancestor", ref, f"origin/{default}"]).returncode == 0
         age = int((now - int(ts)) / 86400)
-        if name in open_pr_branches:
+        if name in rules.get("keep_branches", {}):
+            kept.append(f"`{name}`: {rules['keep_branches'][name]} (rules.json keep_branches)")
+        elif name in open_pr_branches:
             kept.append(f"`{name}`: open pull request")
         elif name in url_refs:
             kept.append(f"`{name}`: {len(url_refs[name])} file(s) link to it by URL (Metricool media), kept")
@@ -454,7 +456,9 @@ def apply(args):
         exists = os.path.exists(path) and (path in tracked or any(f.startswith(path + "/") for f in tracked))
         if action == "delete-branch":
             ok = subprocess.run(["git", "merge-base", "--is-ancestor", f"origin/{path}", "origin/" + os.environ.get("AUDIT_DEFAULT_BRANCH", "main")]).returncode == 0
-            if ok:
+            if path in rules.get("keep_branches", {}):
+                skipped.append(f"`{path}`: in keep_branches ({rules['keep_branches'][path]})")
+            elif ok:
                 branches.append(path)
                 done.append(f"delete branch `{path}`")
             else:

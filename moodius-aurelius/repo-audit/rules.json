@@ -35,6 +35,14 @@
   "grace_days": 7,
   "size_hog_mb": 5,
   "stale_branch_days": 14,
+  "keep_branches": {
+    "claude/project-thread-bxasif": "the Friday routine commits new weeks here; Metricool media links",
+    "claude/project-thread-lt6tim": "upload pack 21 Oct-1 Nov served to Metricool from here",
+    "claude/project-thread-09lr07": "engine renders R001-R010 served to Metricool from here",
+    "claude/project-thread-akxgh6": "Threads cards not yet scheduled; Metricool will fetch from here",
+    "claude/project-thread-o20fqk": "fixes-2026-10-22 R003 re-render served from here",
+    "claude/project-thread-4g837c": "Remotion prototype media served from here"
+  },
   "never_touch": [
     "moodius-aurelius/strategy/calendar-30-day-tracker.csv",
     "moodius-aurelius/strategy/experiments.csv",
@@ -42,7 +50,11 @@
     "moodius-aurelius/strategy/grid-patterns/",
     "moodius-aurelius/repo-audit/",
     "moodius-aurelius/_archive/",
-    ".github/"
+    ".github/",
+    "moodius-aurelius/strategy/post-log.csv",
+    "moodius-aurelius/reels-engine/reels-log.csv",
+    "moodius-aurelius/strategy/upload-pack/manifest.json",
+    "moodius-aurelius/strategy/reel-first/"
   ],
   "unreferenced_exts": [
     ".jpg",

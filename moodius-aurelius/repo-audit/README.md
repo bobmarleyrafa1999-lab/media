@@ -14,7 +14,8 @@ A weekly check that keeps this repo tidy without ever deleting anything on its o
    appears in no doc, script, tracker or ledger.
 4. **Large files** (report only): everything over 5 MB and size by folder.
 5. **Branches merged into main**: offered for deletion. Branches with an open PR, or that any file links to by
-   URL (Metricool media served from `raw.githubusercontent.com`), are always kept.
+   URL (Metricool media served from `raw.githubusercontent.com`), or that are listed in `rules.json` →
+   `keep_branches` (branches the account routines still serve media from or commit to), are always kept.
 6. **Possible secrets** (report only, values never printed). Revoke at the provider first.
 7. **Files naming the owner personally**: offered for a scrub (personal terms become "the owner", private
    emails become "[email removed]"). The names are read from the `AUDIT_PERSONAL_TERMS` repository secret,
@@ -42,6 +43,8 @@ and the archive itself (`rules.json` → `never_touch`).
 
 - When a post goes live, append `path,published_at,metricool_id,note` to `published-ledger.csv` (repo path of
   the render or pack, ISO date). The audit offers it for the archive 7 days later.
+- Only renders whose Metricool post is PUBLISHED may go in the ledger; anything PENDING stays where it is.
+- When a branch stops serving media (its posts are all published), remove it from `keep_branches`.
 - When a week folder or pack is finished, add it to `retired_folders` in `rules.json`.
 - Run locally: `python3 moodius-aurelius/repo-audit/audit.py scan` (report to stdout), and
   `python3 moodius-aurelius/repo-audit/audit.py apply --body issue.md --dry-run`.
