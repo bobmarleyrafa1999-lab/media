@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Wrapper: runs "python3 -m hookintel generate-reels" from the hook-intel folder.
+cd "$(dirname "$0")/.." && { [ -f .env ] && set -a && . ./.env && set +a; true; } && exec "${HOOKINTEL_PYTHON:-python3}" -m hookintel generate-reels "$@"
