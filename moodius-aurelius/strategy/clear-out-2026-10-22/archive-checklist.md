@@ -1,5 +1,7 @@
 # Profile clear-out: your 9 taps (22 Oct 2026)
 
+**Status 22 Oct 11:51 UTC:** 7 archived. Surafel chose to keep #6 ("5 things you can't control"). Only #5, the "Me at 2am" meme, is left.
+
 Instagram does not let Metricool or any API remove a published post, so this one is yours. It takes about 3 minutes on your phone.
 
 **Use Archive, not Delete.** Archive hides the post from your grid and Reels tab but keeps every stat, and you can bring it back any time (Profile > ☰ > Archive > open post > ⋯ > Show on profile). Delete is permanent and throws the numbers away.
