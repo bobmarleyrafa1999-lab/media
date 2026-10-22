@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Hook-intel fetcher: public metadata only. No login, no cookies, no video downloads.
 
-Runs anywhere yt-dlp can reach the platforms (GitHub Actions runner, or Surafel's Mac).
+Runs anywhere yt-dlp can reach the platforms (GitHub Actions runner, or the owner's Mac).
 The cloud container that builds this project cannot reach YouTube, TikTok or Instagram.
 
     python3 remote/fetch.py requests/2026-10-22-mvp.json     # writes data/raw/<request name>/
