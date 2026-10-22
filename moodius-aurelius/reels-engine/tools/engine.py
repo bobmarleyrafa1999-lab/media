@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.join(PROJECT, "tools"))
 from design import *  # noqa: E402,F401  (SLATE, BONE, ASH, EMBER, fonts, MARGIN, HANDLE)
 ENGINE_TOOLS = os.path.dirname(os.path.abspath(__file__))  # design.py also defines HERE
 
-VERSION = "1.0"
+VERSION = "1.1"  # 1.1 (20 Oct 2026): no one-word last lines
 W, H = 1080, 1920
 MAX_W = W - 2 * MARGIN
 FOOTAGE = os.path.join(ENGINE_DIR, "footage")
@@ -57,6 +57,8 @@ def registry(exclude_engine=True):
         if not path.endswith((".json", ".md", ".csv", ".txt")):
             continue
         if exclude_engine and path.startswith(ENGINE_DIR):
+            continue
+        if os.sep + "upload-pack" + os.sep in path:   # copies of already-scheduled posts
             continue
         try:
             text = open(path, encoding="utf-8").read()
@@ -128,19 +130,31 @@ def qc(script, used):
 
 # ---------- rendering ----------
 def wrap(text, font, fs):
+    """Greedy wrap; if the last line is a single word, balance the lines instead (no runts)."""
     from PIL import ImageFont
     width = ImageFont.truetype(font, fs).getlength
-    out = []
-    for ln in text.split("\n"):
-        cur = ""
+
+    def greedy(ln, max_w):
+        out, cur = [], ""
         for word in ln.split(" "):
             cand = f"{cur} {word}".strip()
-            if cur and width(cand) > MAX_W:
+            if cur and width(cand) > max_w:
                 out.append(cur)
                 cur = word
             else:
                 cur = cand
-        out.append(cur)
+        return out + [cur]
+
+    out = []
+    for ln in text.split("\n"):
+        lines = greedy(ln, MAX_W)
+        if len(lines) > 1 and " " not in lines[-1]:
+            lo, hi = MAX_W * 0.5, MAX_W
+            for _ in range(14):
+                mid = (lo + hi) / 2
+                lo, hi = (lo, mid) if len(greedy(ln, mid)) == len(lines) else (mid, hi)
+            lines = greedy(ln, hi)
+        out += lines
     return out
 
 

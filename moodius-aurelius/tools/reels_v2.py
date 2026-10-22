@@ -5,7 +5,8 @@ then mix a score.py cue under each.
     python3 reels_v2.py spec.json out_dir
 
 spec.json: {"reel-name": {"style": "elegy", "seed": 17, "segments": [[text, seconds, kind], ...]}}
-kind: true = display serif, false = body sans, "cite" = small-caps citation. Left-aligned on the 96px margin.
+kind: true = display serif, false = body sans, "quote" = italic serif pull quote, "cite" = caps citation
+(plain caps: the old letter-spaced version lost its word spaces in drawtext, fixed 20 Oct 2026). Left-aligned on the 96px margin.
 """
 import json, os, subprocess, sys, tempfile
 from design import *
@@ -20,19 +21,31 @@ def esc(s):
 
 
 def wrap(text, font, fs):
+    """Greedy wrap; if the last line is a single word, balance the lines instead (no runts)."""
     from PIL import ImageFont
     width = ImageFont.truetype(font, fs).getlength
-    out = []
-    for ln in text.split("\n"):
-        cur = ""
+
+    def greedy(ln, max_w):
+        out, cur = [], ""
         for word in ln.split(" "):
             cand = f"{cur} {word}".strip()
-            if cur and width(cand) > MAX_W:
+            if cur and width(cand) > max_w:
                 out.append(cur)
                 cur = word
             else:
                 cur = cand
-        out.append(cur)
+        return out + [cur]
+
+    out = []
+    for ln in text.split("\n"):
+        lines = greedy(ln, MAX_W)
+        if len(lines) > 1 and " " not in lines[-1]:
+            lo, hi = MAX_W * 0.5, MAX_W
+            for _ in range(14):
+                mid = (lo + hi) / 2
+                lo, hi = (lo, mid) if len(greedy(ln, mid)) == len(lines) else (mid, hi)
+            lines = greedy(ln, hi)
+        out += lines
     return out
 
 
@@ -45,7 +58,9 @@ def render(name, spec, out_dir):
     i = 0
     for text, d, kind in segs:
         if kind == "cite":
-            font, fs, col, text = BODY_M, 34, hexc(ASH), " ".join(text.upper())
+            font, fs, col, text = BODY_M, 34, hexc(ASH), text.upper()
+        elif kind == "quote":
+            font, fs, col = QUOTE, 64, hexc(BONE)
         elif kind:
             font, fs, col = DISPLAY, 82, hexc(BONE)
         else:
