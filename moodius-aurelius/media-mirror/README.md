@@ -7,7 +7,8 @@ renders-only** repo, `bobmarleyrafa1999-lab/moodius-media`, that holds only fini
 - `mirror.py list` shows exactly what would be public: about 494 files, 0.85 GB, only `.mp4/.jpg/.jpeg/.png`
   from the render and post folders in `ALLOW`. No scripts, docs, data, strategy, ledgers, hook-intel
   thumbnails or personal order files.
-- `.github/workflows/moodius-media-mirror.yml` copies them on every push to `main`, at the **same paths**,
+- `.github/workflows/moodius-media-mirror.yml` copies them on every push to `main` and every 3 hours from
+  `main` plus the routine branch `claude/project-thread-bxasif`, at the **same paths**,
   and never deletes anything there (archived files stay reachable at their old public path too).
 - `mirror.py repoint FILE... [--write]` swaps old links for new ones. Only the prefix changes:
   `raw.githubusercontent.com/bobmarleyrafa1999-lab/media/<branch>/moodius-aurelius/...` becomes
@@ -30,7 +31,7 @@ Links matter only for new posts, re-schedules and edits. These build or store `m
 
 | Where | What to change |
 |---|---|
-| Friday routine prompt (`trig_011adyEthea3vbBPNS2Dwnov`) | Build media links from `moodius-media/main/` instead of `media/claude/project-thread-*`, and commit new weeks to `main` of `media` (pushes to `bxasif` are not mirrored) |
+| Friday routine prompt (`trig_011adyEthea3vbBPNS2Dwnov`) | Build media links from `moodius-media/main/` instead of `media/claude/project-thread-*` (it can keep committing to `bxasif`: the mirror picks that branch up every 3 hours) |
 | Daily publish check (`trig_01KuimLeNzzqrFNe6Tp4DMNq`) | Same prefix, if it re-posts or edits anything |
 | `strategy/schedule-21-25-oct.json` | 52 links into `claude/project-thread-bxasif` (posts already queued; only for re-schedules) |
 | `week3/posts.json` | 1 link into `claude/project-thread-o20fqk` |

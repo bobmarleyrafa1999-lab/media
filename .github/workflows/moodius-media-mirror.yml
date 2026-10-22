@@ -8,6 +8,8 @@ on:
   push:
     branches: [main]
     paths: ["moodius-aurelius/**"]
+  schedule:
+    - cron: "17 */3 * * *"   # every 3 hours: picks up what the weekly routine commits to its branch
   workflow_dispatch:
 permissions:
   contents: read
@@ -21,13 +23,21 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
       - uses: actions/checkout@v4
         with:
           repository: bobmarleyrafa1999-lab/moodius-media
           token: ${{ secrets.MOODIUS_MEDIA_TOKEN }}
           path: _public
       - name: Copy public renders
-        run: python3 moodius-aurelius/media-mirror/mirror.py copy _public
+        run: |
+          python3 moodius-aurelius/media-mirror/mirror.py copy _public
+          # branches the routines commit to before their work reaches main (same paths, main wins on a clash)
+          for b in claude/project-thread-bxasif; do
+            git fetch -q --depth 1 origin "$b" && python3 moodius-aurelius/media-mirror/mirror.py copy _public --ref FETCH_HEAD
+          done
+          python3 moodius-aurelius/media-mirror/mirror.py copy _public
       - name: Push
         working-directory: _public
         run: |

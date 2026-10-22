@@ -2,14 +2,15 @@
 """Pick the final renders that may be public, and rewrite media links to the public repo.
 
     python3 mirror.py list                      # tracked files that go to the public media repo
-    python3 mirror.py copy TARGET_DIR           # copy them into a checkout of the public repo (never deletes)
+    python3 mirror.py copy TARGET_DIR [--ref R]  # copy them into a checkout of the public repo (never deletes);
+                                                # --ref copies from another branch, e.g. origin/claude/project-thread-bxasif
     python3 mirror.py repoint FILE... [--write] # swap raw.githubusercontent links from this repo to the public one
 
 Only .mp4/.jpg/.jpeg/.png under the folders in ALLOW are mirrored, at the same path, so a link changes by its
 repo and branch prefix only. No scripts, docs, data, strategy or personal files ever leave this repo.
 Stdlib only.
 """
-import fnmatch, os, re, shutil, subprocess, sys
+import fnmatch, os, re, subprocess, sys
 
 PUBLIC = "bobmarleyrafa1999-lab/moodius-media"
 PUBLIC_BRANCH = "main"
@@ -45,9 +46,19 @@ def selected(paths):
             yield p
 
 
-def tracked():
+def tracked(ref=None):
+    if ref:
+        out = subprocess.run(["git", "ls-tree", "-r", "-z", "--name-only", ref], capture_output=True, text=True, check=True).stdout
+        return [p for p in out.split("\0") if p]
     out = subprocess.run(["git", "ls-files", "-z"], capture_output=True, text=True, check=True).stdout
     return [p for p in out.split("\0") if p and os.path.isfile(p)]
+
+
+def content(p, ref=None):
+    if ref:
+        return subprocess.run(["git", "show", f"{ref}:{p}"], capture_output=True, check=True).stdout
+    with open(p, "rb") as f:
+        return f.read()
 
 
 def repoint(text):
@@ -69,21 +80,22 @@ def main(argv):
             print(f"{f}: {n} link(s){' rewritten' if n and write else ''}")
         return
     os.chdir(subprocess.run(["git", "rev-parse", "--show-toplevel"], capture_output=True, text=True, check=True).stdout.strip())
-    files = sorted(selected(tracked()))
+    ref = rest[rest.index("--ref") + 1] if "--ref" in rest else None
+    files = sorted(selected(tracked(ref)))
     if cmd == "list":
         print("\n".join(files))
         return
     target, copied = rest[0], 0
     for p in files:
         dst = os.path.join(target, p)
-        if os.path.exists(dst) and os.path.getsize(dst) == os.path.getsize(p) \
-                and open(dst, "rb").read() == open(p, "rb").read():
+        data = content(p, ref)
+        if os.path.exists(dst) and open(dst, "rb").read() == data:
             continue
         os.makedirs(os.path.dirname(dst), exist_ok=True)
-        shutil.copyfile(p, dst)
+        with open(dst, "wb") as f:
+            f.write(data)
         copied += 1
-    print(f"{len(files)} public files, {copied} new or changed")
-
+    print(f"{len(files)} public files{' on ' + ref if ref else ''}, {copied} new or changed")
 
 if __name__ == "__main__":
     main(sys.argv[1:])
