@@ -13,6 +13,11 @@ A script must pass at least 6 of the 7 before it is rendered. The render gate al
 | 6 | **Re-engage at the midpoint** | Around 7-9 s, change the pattern: an Ember "BUT" or "THE OTHER READING" label, a number, or a question card. | MrBeast guide: "It's important to re-engage the viewer around this time because they could get bored ... and click off." |
 | 7 | **Pay off in the hook's own words** | The second-last card answers the gap from card 1, reusing its key word, so the ending reads back into the start and the reel loops. | Neistat on the ending delivering on the opening ("I'm gonna deliver on" it) and on "surprise and delight". |
 
+Three additions from the profile clear-out thread's per-post review (strategy/16-lessons-2026-10-22.md):
+- **Card 2 by second 3 must part-pay the hook.** Viewers drop between seconds 3 and 6, so card 2 gives a first real piece of the answer. The full payoff still lands on the second-last card (rule 7).
+- **Named pattern "Two branches".** "If it's true... If it's false..." held 16.5 s average watch against 3-6 s for every other reel. Use it in at least 1 reel a week (C formats or R3).
+- **Spacing.** Never post two reels within 2 hours of each other, and never more than 2 reels a day. On the one 3-reel day, the first two reached about 20 people each.
+
 Our own data backs rules 2-3 and 6: hooks about another person or a conflict kept a median 43% past 3 s (others 29%), and the one reel with a two-branch turn ("if true... if false...") held 16.5 s against a 4.3 s median. Instagram's head Adam Mosseri is widely reported to name watch time, sends per reach and likes per reach as the main ranking signals; we could not find his exact wording, so treat that as reported, not quoted.
 
 What we don't copy: vlog jump-cuts, faces, pranks, loud music, fake urgency ("WAIT for it"), bait covers. Phase 1 rules (palette, citations, anonymity) stay.
