@@ -1,0 +1,163 @@
+{
+  "story-01-start-here": {
+    "kind": "story", "label": "Start here",
+    "lines": [
+      ["Ancient philosophy for young men who want a life that means something.", "big"],
+      ["Purpose. Meaning in suffering. Amor fati. Being a good man. Seeing the beauty in this life.", "body"],
+      ["“It is impossible for a man to learn what he thinks he already knows.”", "quote"],
+      ["Epictetus, Discourses 2.17", "cite"]
+    ],
+    "footer": "Three posts a day. Turn on notifications."
+  },
+  "story-02-purpose-plato": {
+    "kind": "story", "label": "Purpose",
+    "lines": [
+      ["“The unexamined life is not worth living.”", "quote"],
+      ["Plato, Apology 38a", "cite"],
+      ["Socrates said this at his own trial, choosing death over a life without questions.", "body"],
+      ["Ask yourself today: what am I actually living for?", "body"]
+    ]
+  },
+  "story-03-suffering-epictetus": {
+    "kind": "story", "label": "Suffering",
+    "lines": [
+      ["“It is difficulties that show what men are.”", "quote"],
+      ["Epictetus, Discourses 1.24", "cite"],
+      ["Epictetus was born a slave and walked with a limp. He didn’t ask for an easier life. He asked to be equal to the one he had.", "body"]
+    ],
+    "footer": "Screenshot this for your next hard day."
+  },
+  "story-04-virtue-aristotle": {
+    "kind": "story", "label": "Virtue",
+    "lines": [
+      ["“We become just by doing just acts, temperate by doing temperate acts, brave by doing brave acts.”", "quote"],
+      ["Aristotle, Nicomachean Ethics II.1", "cite"],
+      ["You don’t find your character. You build it, one choice at a time.", "body"]
+    ]
+  },
+  "story-05-amorfati-epictetus": {
+    "kind": "story", "label": "Amor fati",
+    "lines": [
+      ["“Do not seek to have events happen as you want them to, but instead want them to happen as they do happen, and your life will go well.”", "quote"],
+      ["Epictetus, Enchiridion 8", "cite"],
+      ["Not giving up. Saying yes to the life in front of you.", "body"]
+    ]
+  },
+  "story-06-purpose-aristotle": {
+    "kind": "story", "label": "Purpose",
+    "lines": [
+      ["Aristotle asked what a good life is for. His answer:", "body"],
+      ["“The human good turns out to be activity of soul in accordance with virtue.”", "quote"],
+      ["Nicomachean Ethics I.7", "cite"],
+      ["Happiness isn’t a feeling you wait for. It’s the way you live.", "body"]
+    ]
+  },
+  "story-07-suffering-frankl": {
+    "kind": "story", "label": "Suffering",
+    "lines": [
+      ["“In some ways suffering ceases to be suffering at the moment it finds a meaning.”", "quote"],
+      ["Viktor Frankl, Man’s Search for Meaning", "cite"],
+      ["He wrote it after surviving Auschwitz. Your pain can become your purpose.", "body"]
+    ]
+  },
+  "story-08-virtue-plato": {
+    "kind": "story", "label": "Virtue",
+    "lines": [
+      ["“The victory over self is of all victories the first and best.”", "quote"],
+      ["Plato, Laws 626e", "cite"],
+      ["Before you try to win anything out there, win the fight in here.", "body"]
+    ]
+  },
+  "story-09-beauty-marcus": {
+    "kind": "story", "label": "Beauty",
+    "lines": [
+      ["“Dwell on the beauty of life. Watch the stars, and see yourself running with them.”", "quote"],
+      ["Marcus Aurelius, Meditations 7.47", "cite"],
+      ["Go outside tonight. Look up for one full minute.", "body"]
+    ]
+  },
+  "story-10-amorfati-nietzsche": {
+    "kind": "story", "label": "Amor fati",
+    "lines": [
+      ["“My formula for greatness in a human being is amor fati: that one wants nothing to be different, not forward, not backward, not in all eternity.”", "quote"],
+      ["Friedrich Nietzsche, Ecce Homo", "cite"],
+      ["Love your fate. Even the parts that hurt made you.", "body"]
+    ]
+  },
+  "story-11-suffering-seneca": {
+    "kind": "story", "label": "Suffering",
+    "lines": [
+      ["“Calamity is virtue’s opportunity.”", "quote"],
+      ["Seneca, On Providence 4", "cite"],
+      ["The hard week ahead isn’t in your way. It’s your chance.", "body"]
+    ],
+    "footer": "New week. Same mission."
+  },
+  "cover-start": {"kind": "cover", "glyph": "M·A", "word": "Start", "size": 200},
+  "cover-purpose": {"kind": "cover", "glyph": "Τ", "word": "Purpose"},
+  "cover-suffering": {"kind": "cover", "glyph": "Π", "word": "Suffering"},
+  "cover-amorfati": {"kind": "cover", "glyph": "∞", "word": "Amor fati"},
+  "cover-virtue": {"kind": "cover", "glyph": "Α", "word": "Virtue"},
+  "cover-beauty": {"kind": "cover", "glyph": "Κ", "word": "Beauty"},
+  "carousel-1": {
+    "kind": "slide", "label": "For young men",
+    "lines": [
+      ["5 ancient one-liners for young men who want a life that matters.", "big"],
+      ["Swipe →", "small"]
+    ]
+  },
+  "carousel-2": {
+    "kind": "slide", "label": "1",
+    "lines": [
+      ["“No man is free who is not master of himself.”", "quote"],
+      ["Epictetus, Fragments", "cite"],
+      ["Freedom starts with your habits, not your circumstances.", "body"]
+    ]
+  },
+  "carousel-3": {
+    "kind": "slide", "label": "2",
+    "lines": [
+      ["“When a man does not know what harbour he is making for, no wind is the right wind.”", "quote"],
+      ["Seneca, Letter 71", "cite"],
+      ["Pick a direction. Then the storms start working for you.", "body"]
+    ]
+  },
+  "carousel-4": {
+    "kind": "slide", "label": "3",
+    "lines": [
+      ["“One swallow does not make a summer, nor does one day.”", "quote"],
+      ["Aristotle, Nicomachean Ethics I.7", "cite"],
+      ["One good day isn’t a good life. Keep showing up.", "body"]
+    ]
+  },
+  "carousel-5": {
+    "kind": "slide", "label": "4",
+    "lines": [
+      ["“Do not act as if you were going to live ten thousand years. While you live, while it is in your power, be good.”", "quote"],
+      ["Marcus Aurelius, Meditations 4.17", "cite"]
+    ]
+  },
+  "carousel-6": {
+    "kind": "slide", "label": "5",
+    "lines": [
+      ["“How long will you wait before you demand the best of yourself?”", "quote"],
+      ["Epictetus, Enchiridion 51", "cite"],
+      ["Not next year. Today.", "body"]
+    ]
+  },
+  "carousel-7": {
+    "kind": "slide", "label": "Your turn",
+    "lines": [
+      ["Which one are you living by this week?", "big"],
+      ["Save this. Send it to a brother who needs it.", "body"]
+    ]
+  },
+  "meme-2am": {
+    "kind": "meme",
+    "panels": [
+      ["Me at 2am:", "*replays an awkward conversation from 2019 for the 40th time*"],
+      ["Marcus Aurelius, almost 2,000 years ago:", "“Confine yourself to the present.”"]
+    ],
+    "cite": "Meditations 7.29"
+  }
+}

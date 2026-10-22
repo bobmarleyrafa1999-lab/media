@@ -1,0 +1,169 @@
+{
+  "reel-8-overthinkers": {
+    "style": "elegy",
+    "seed": 811,
+    "segments": [
+      ["3 Stoic rules for overthinkers.", 2.6, true],
+      ["1. Ask: is this up to me?\nIf not, it isn’t yours to carry.", 3.0, false],
+      ["2. Name the worst case.\nSeneca did. It’s usually survivable.", 3.2, false],
+      ["3. Do the next small thing.\nThought ends where action starts.", 3.2, false],
+      ["Save this for the next 2am spiral.", 2.6, true]
+    ]
+  },
+  "reel-9-anger": {
+    "style": "battle",
+    "seed": 922,
+    "segments": [
+      ["The fastest way to lose an argument?\nGet angry.", 3.0, true],
+      ["Marcus Aurelius wrote this down:", 2.2, false],
+      ["“How much more grievous are\nthe consequences of anger\nthan the causes of it.”", 3.8, false],
+      ["Pause. Breathe. Answer later.", 2.6, false],
+      ["Whoever stays calm\nstays in control.", 2.8, true],
+      ["Send this to someone\nwith a short fuse.", 2.6, false]
+    ]
+  },
+  "reel-10-memento-mori": {
+    "style": "elegy",
+    "seed": 1033,
+    "segments": [
+      ["You’re acting like you have forever.", 2.8, true],
+      ["Marcus Aurelius reminded himself:", 2.2, false],
+      ["“You could leave life right now.\nLet that determine what you do\nand say and think.”", 4.0, false],
+      ["Not to scare you.\nTo wake you up.", 2.8, false],
+      ["What are you still postponing?", 2.6, true],
+      ["Follow for one Stoic rule a day.", 2.4, false]
+    ]
+  },
+  "reel-11-approval": {
+    "style": "march",
+    "seed": 1144,
+    "segments": [
+      ["You can’t make everyone like you.", 2.6, true],
+      ["Epictetus told his students:", 2.2, false],
+      ["“If you want to improve,\nbe content to be thought\nfoolish and stupid.”", 3.8, false],
+      ["Their approval isn’t the goal.", 2.4, false],
+      ["Your character is.", 2.4, true],
+      ["Send this to a people pleaser.", 2.4, false]
+    ]
+  },
+  "reel-12-obstacle": {
+    "style": "battle",
+    "seed": 1255,
+    "segments": [
+      ["The thing blocking your path?", 2.4, true],
+      ["That is the path.", 2.2, true],
+      ["“The impediment to action\nadvances action. What stands\nin the way becomes the way.”", 4.0, false],
+      ["Marcus Aurelius, Meditations 5.20", 2.2, false],
+      ["Every setback is training.\nUse it.", 2.8, true],
+      ["Save this for your next bad day.", 2.4, false]
+    ]
+  },
+  "reel-13-busy": {
+    "style": "march",
+    "seed": 1366,
+    "segments": [
+      ["Busy all day.\nNothing done.", 2.6, true],
+      ["Seneca saw this 2,000 years ago.", 2.4, false],
+      ["“It is not that we have\na short time to live, but\nthat we waste a lot of it.”", 3.8, false],
+      ["You guard your money.", 2.2, false],
+      ["Guard your hours harder.", 2.6, true],
+      ["Follow for more Stoic rules.", 2.4, false]
+    ]
+  },
+  "reel-14-can-cannot": {
+    "style": "dawn",
+    "seed": 1477,
+    "segments": [
+      ["5 things you can’t control:", 2.4, true],
+      ["What they think of you.\nThe past. Other people’s choices.\nThe weather. The outcome.", 3.6, false],
+      ["5 things you can:", 2.2, true],
+      ["Your effort. Your words.\nYour response. Your habits.\nYour attention.", 3.6, false],
+      ["Epictetus:\n“Some things are up to us,\nand some are not.”", 3.2, false],
+      ["Save this.", 2.0, true]
+    ]
+  },
+  "reel-15-revenge": {
+    "style": "battle",
+    "seed": 1588,
+    "segments": [
+      ["Not every insult deserves a reply.", 2.8, true],
+      ["Marcus Aurelius had a better idea.", 2.4, false],
+      ["“The best revenge is to be unlike\nhim who performed the injury.”", 3.6, false],
+      ["Silence isn’t weakness.", 2.4, false],
+      ["It’s control.", 2.2, true],
+      ["Send this to someone who needs it.", 2.4, false]
+    ]
+  },
+  "reel-16-what-you-have": {
+    "style": "dawn",
+    "seed": 1699,
+    "segments": [
+      ["Stop counting what you don’t have.", 2.8, true],
+      ["Marcus Aurelius:", 1.8, false],
+      ["“Think not so much\nof what you lack\nas of what you have.”", 3.4, false],
+      ["Picture losing it all.\nThen look again.", 2.8, false],
+      ["You’re richer than you think.", 2.4, true],
+      ["Follow for one Stoic rule a day.", 2.4, false]
+    ]
+  },
+  "reel-17-get-up": {
+    "style": "march",
+    "seed": 1711,
+    "segments": [
+      ["Motivation isn’t coming.", 2.4, true],
+      ["Marcus Aurelius didn’t want\nto get out of bed either.", 3.0, false],
+      ["“At dawn, when you have\ntrouble getting out of bed,\ntell yourself: I have to go\nto work, as a human being.”", 4.2, false],
+      ["He didn’t wait to feel ready.", 2.4, false],
+      ["Neither should you.", 2.2, true],
+      ["Save this for tomorrow morning.", 2.4, false]
+    ]
+  },
+  "reel-18-story": {
+    "style": "elegy",
+    "seed": 1822,
+    "segments": [
+      ["It’s not what happened that hurts.", 2.8, true],
+      ["It’s the story you tell about it.", 2.6, false],
+      ["“Choose not to be harmed,\nand you won’t feel harmed.”", 3.2, false],
+      ["Marcus Aurelius, Meditations 4.7", 2.2, false],
+      ["Change the story.\nChange the feeling.", 2.8, true],
+      ["Send this to someone\nhurting today.", 2.4, false]
+    ]
+  },
+  "reel-19-returned": {
+    "style": "elegy",
+    "seed": 1933,
+    "segments": [
+      ["Lost something you loved?", 2.4, true],
+      ["Epictetus offered one sentence.", 2.4, false],
+      ["“Never say of anything,\n‘I have lost it’; but,\n‘I have returned it.’”", 3.6, false],
+      ["Nothing was ever really ours.\nIt was lent.", 3.0, false],
+      ["Be grateful you had it.", 2.4, true],
+      ["Follow for more Stoic rules.", 2.2, false]
+    ]
+  },
+  "reel-20-your-circle": {
+    "style": "march",
+    "seed": 2044,
+    "segments": [
+      ["Look at your five closest friends.", 2.6, true],
+      ["That’s who you’re becoming.", 2.4, false],
+      ["Seneca to Lucilius:", 1.8, false],
+      ["“Associate with those who will\nmake a better man of you.”", 3.4, false],
+      ["Choose your circle on purpose.", 2.6, true],
+      ["Tag the friend who\nmakes you better.", 2.4, false]
+    ]
+  },
+  "reel-21-only-now": {
+    "style": "dawn",
+    "seed": 2155,
+    "segments": [
+      ["You keep living in yesterday.", 2.6, true],
+      ["Or worrying about tomorrow.", 2.2, false],
+      ["“Each of us lives only now,\nthis brief instant.\nThe rest has been lived already.”", 3.8, false],
+      ["Marcus Aurelius, Meditations 3.10", 2.2, false],
+      ["This is the only moment you get.", 2.6, true],
+      ["Save this for when you drift.", 2.2, false]
+    ]
+  }
+}
