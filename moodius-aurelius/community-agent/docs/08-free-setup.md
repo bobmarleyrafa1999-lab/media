@@ -1,7 +1,7 @@
 # 08 · Free setup: no server (about 40 minutes, once)
 
-**Cost: €0 a month.** GitHub runs the agent every 10 minutes for free (the repo is public, so Actions
-minutes are unlimited), Supabase's free plan holds the database, and Resend's free plan sends the
+**Cost: €0 a month.** GitHub runs the agent once an hour for free (about 1,100 Actions minutes a month,
+inside the 2,000 free minutes even if the repo goes private), Supabase's free plan holds the database, and Resend's free plan sends the
 emails. Claude is optional: without a key the agent drafts from its own templates. With a key it uses
 Claude Haiku 5.5, at about $0.0005 per comment (well under €1 a month at today's volume).
 
@@ -10,7 +10,7 @@ priority and a link to the comment; urgent emails for crisis or sponsorship comm
 a Monday report. You paste the replies you like into Instagram yourself.
 
 **What you don't get, compared with the €5 server:** no web dashboard or approve button (you reply
-in Instagram), alerts arrive within 10 to 20 minutes instead of seconds, and no keyword DMs. You can move to
+in Instagram), alerts arrive within about an hour instead of seconds, and no keyword DMs. You can move to
 the server later without losing anything: the database stays the same.
 
 Never paste keys into chat or into a file. They go only into the GitHub secrets screen in step 4.
@@ -51,4 +51,5 @@ emails for any recent comments arrive straight after. From then on it runs by it
 ## Good to know
 - The logs are public (public repo), so the agent hides names, comments and emails in them.
 - GitHub pauses scheduled workflows in a repo with no commits for 60 days. This repo gets commits weekly.
-- GitHub may run the 10-minute schedule late at busy times. That's normal.
+- GitHub may run the hourly schedule late at busy times. That's normal.
+- Public repo: you can go back to every 10 minutes (cron `*/10 * * * *`), since public repos have unlimited minutes.
