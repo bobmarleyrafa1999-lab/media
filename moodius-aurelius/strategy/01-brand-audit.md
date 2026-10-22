@@ -29,12 +29,8 @@ Old highlights map like this: Start → Manifesto, Purpose → Identity, Virtue 
 1. Every quote cites book and section (e.g. Meditations 4.7) in a public-domain translation (Long for Marcus and Epictetus, Gummere for Seneca). Paraphrases are labelled "Moodius paraphrase".
 2. No AI statues, gold, marble or gradients.
 
-## Bio
-```
-Moodius Aurelius | Stoicism for people who feel things
-Regulate, decide and act when emotions are loud.
-Daily carousel + reel · Free guide ↓
-```
+## Profile
+Final name, bio, link, category, highlights and pins: see `12-profile-setup.md` (20 Oct 2026).
 
 ## Claude does (automatic)
 - New captions, first comments and stories use the positioning and the two rules.

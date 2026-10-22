@@ -1,6 +1,6 @@
 # 11. Community layer
 
-Goal: turn viewers into people who talk back, then into people on the email list. Everything here is real conversation by the account owner. **No engagement pods, no bought engagement, no auto-DMs to strangers, no comment bots.** The Instagram API can't reply to comments or send DMs for us in a way that's allowed for this use, so those steps are yours; Claude writes the drafts.
+Goal: turn viewers into people who talk back, then into people on the email list. Everything here is real conversation by the account owner. **No engagement pods, no bought engagement, no auto-DMs to strangers, no comment bots.** Claude writes the drafts and you approve each one before it's posted (the official API can post a reply you approved: see automation/n8n/comment-repos-review.md). Until that runs, replying is yours by hand.
 
 ## The ladder
 | Step | What happens | Where |

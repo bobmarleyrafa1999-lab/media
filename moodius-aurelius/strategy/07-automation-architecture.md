@@ -41,3 +41,6 @@ Everything in the pipeline except the community row. That covers the weekly buil
 
 ## You do (by hand)
 Community actions, adding stories to highlights and stickers, pasting metrics into the Sheet, approving any spend. All of it is in `../your-checklist.md`.
+
+## n8n (proposed 21 Oct 2026, waiting on your OK for ≈ €5/month hosting)
+Self-hosted n8n adds two things the Claude routines can't do: Instagram stats straight into the Sheet twice a day, and an instant DM with the guide when someone comments the keyword. It doesn't touch writing, rendering or Metricool scheduling. Details and importable workflows: `automation/n8n/README.md`.

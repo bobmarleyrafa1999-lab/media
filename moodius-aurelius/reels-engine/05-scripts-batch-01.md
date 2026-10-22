@@ -6,7 +6,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 |---|---|---|---|---|---|
 | R001 | You'd never let a stranger decide what you're worth. | R2 Situation → old line | Daily | 20.6s | Marcus Aurelius, Meditations 12.4 |
 | R002 | Kafka wrote the most accurate book about work. | R4 Dry humour | Daily | 18.0s | idea: Franz Kafka |
-| R003 | Solitude: your phone is off. | R1 Quiet Truth | Journal | 18.6s | data: Gallup |
+| R003 | Solitude: your phone is off. | R1 Quiet Truth | Journal | 17.8s | Epictetus, Discourses 3.13 (On solitude) |
 | R004 | The first year of getting better looks embarrassing. | R2 Situation → old line | Identity | 19.3s | Epictetus, Enchiridion 13 |
 | R005 | You want to be chosen. You don't choose anyone. | R2 Situation → old line | Journal | 19.2s | Seneca (quoting Hecato), Moral Letters to Lucilius 9.6 |
 | R006 | Angry men are usually something else first. | R3 Myth vs the text | Journal | 18.2s | idea: bell hooks |
@@ -98,7 +98,7 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 
 ## R003 · Solitude: your phone is off.
 
-**Format** R1 Quiet Truth · **Pillar** Journal · **Length** 18.6s · **CTA** save
+**Format** R1 Quiet Truth · **Pillar** Journal · **Length** 17.8s · **CTA** save
 **Hook B (test arm):** There are two ways to be alone. Only one of them is good.
 
 | Card | On screen | Seconds | Style |
@@ -106,26 +106,26 @@ Machine-readable source: `scripts/batch-01.json` (render with `tools/engine.py`)
 | 1 | Solitude: your phone is off. | 2.2 | hook |
 | 2 | Loneliness: your phone is on. And quiet. | 2.6 | hook |
 | 3 | One you choose. The other happens to you. From the outside they look the same. | 3.8 | body |
-| 4 | 1 in 4 young men in the US felt lonely for a lot of yesterday. | 3.8 | body |
-| 5 | Gallup World Poll 2023–24 · men 15–34 | 1.6 | cite |
+| 4 | Being alone isn't being lonely. Epictetus wrote that 1,900 years ago. | 3.2 | body |
+| 5 | Epictetus, Discourses 3.13 (Long) · Moodius paraphrase | 1.8 | cite |
 | 6 | Text one person today. Not a meme. A sentence. | 2.4 | body |
 | 7 | Save this for a quiet night. | 1.8 | cta |
 
 **Visual:** V2 footage tag 'phone-table' (phone face up on a table at night, screen dark), Slate overlay 72%. Fallback V1.
 **Audio:** ambient bed, mood 'night', seed 103. No voice-over.
-**Source (data):** Gallup, *Younger Men in the U.S. Among the Loneliest in West (May 2025)* 25% of US men aged 15-34 felt lonely 'a lot of the day yesterday' · n/a
+**Source (quote):** Epictetus, *Discourses* 3.13 (On solitude) · Long (1887): 'Solitude is a certain condition of a helpless man. For because a man is alone, he is not for that reason also solitary'
 
 **Caption**
 
 > Being alone isn't the problem. Being alone when you didn't choose it is.
 > 
-> If the quiet lately is the second kind, you're not broken and you're not rare. A quarter of young men in the US said they felt lonely for a lot of the previous day (Gallup, 2025).
+> Epictetus made the same split in Discourses 3.13 (Long): being alone doesn't by itself make you solitary. Lonely is what the quiet becomes when it wasn't your choice. If that's where you are, you're not broken and you're not rare.
 > 
 > The fix is smaller than it feels: one real sentence to one real person. Who's the first name that came to mind?
 > 
 > — Moodius
 
-**Hashtags** #loneliness #mentalhealth #menshealth #solitude
+**Hashtags** #loneliness #mentalhealth #solitude #stoicism
 
 **First comment:** Solitude you choose recharges you. Loneliness drains you. If you can't tell which one this is, ask: would I pick up if someone called?
 

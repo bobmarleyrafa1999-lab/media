@@ -16,6 +16,8 @@
 | 08-testing-dashboard.md + post-log.csv + experiments.csv | One experiment at a time, 10+ posts per variant |
 | 09-scaling-roadmap.md | 1 → 10–20 brands, gated on thresholds |
 | 11-community.md | Community layer: replies, DMs, stories, email list, broadcast channel |
+| 12-profile-setup.md | Profile: name, bio, link, category, highlights, pins, Kit page (paste-ready) |
+| 13-distribution-channels.md | Where else to post: Threads, Pinterest, Reddit (rules per sub), Medium, Quora, Stoicism Today; ranked, with rollout |
 | schedule-21-25-oct.json | The switch-over schedule for this week |
 | ../your-checklist.md | **Everything you do by hand, in one place** |
 

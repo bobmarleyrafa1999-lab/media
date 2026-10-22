@@ -176,13 +176,13 @@
      "body"
     ],
     [
-     "1 in 4 young men in the US felt lonely for a lot of yesterday.",
-     3.8,
+     "Being alone isn't being lonely. Epictetus wrote that 1,900 years ago.",
+     3.2,
      "body"
     ],
     [
-     "Gallup World Poll 2023–24 · men 15–34",
-     1.6,
+     "Epictetus, Discourses 3.13 (Long) · Moodius paraphrase",
+     1.8,
      "cite"
     ],
     [
@@ -204,23 +204,25 @@
     "seed": 103
    },
    "source": {
-    "type": "data",
-    "author": "Gallup",
-    "work": "Younger Men in the U.S. Among the Loneliest in West (May 2025)",
-    "section": "25% of US men aged 15-34 felt lonely 'a lot of the day yesterday'",
-    "translation": "n/a"
+    "type": "quote",
+    "author": "Epictetus",
+    "work": "Discourses",
+    "section": "3.13 (On solitude)",
+    "translation": "Long (1887): 'Solitude is a certain condition of a helpless man. For because a man is alone, he is not for that reason also solitary'"
    },
-   "caption": "Being alone isn't the problem. Being alone when you didn't choose it is.\n\nIf the quiet lately is the second kind, you're not broken and you're not rare. A quarter of young men in the US said they felt lonely for a lot of the previous day (Gallup, 2025).\n\nThe fix is smaller than it feels: one real sentence to one real person. Who's the first name that came to mind?\n\n— Moodius",
+   "caption": "Being alone isn't the problem. Being alone when you didn't choose it is.\n\nEpictetus made the same split in Discourses 3.13 (Long): being alone doesn't by itself make you solitary. Lonely is what the quiet becomes when it wasn't your choice. If that's where you are, you're not broken and you're not rare.\n\nThe fix is smaller than it feels: one real sentence to one real person. Who's the first name that came to mind?\n\n— Moodius",
    "first_comment": "Solitude you choose recharges you. Loneliness drains you. If you can't tell which one this is, ask: would I pick up if someone called?",
    "hashtags": [
     "#loneliness",
     "#mentalhealth",
-    "#menshealth",
-    "#solitude"
+    "#solitude",
+    "#stoicism"
    ],
    "cta": "save",
-   "length_s": 18.6,
-   "metricool_id": "400908945"
+   "length_s": 17.8,
+   "metricool_id": "400908945",
+   "alt": "Text reel: Solitude: your phone is off. Loneliness: your phone is on and quiet. Epictetus, Discourses 3.13 (Long), Moodius paraphrase.",
+   "metricool_note": "re-rendered 22 Oct 2026 without the Gallup young-men line; media on branch claude/project-thread-o20fqk/moodius-aurelius/fixes-2026-10-22/"
   },
   {
    "id": "R004",
