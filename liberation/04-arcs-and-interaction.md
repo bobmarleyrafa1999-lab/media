@@ -31,14 +31,14 @@ What works with the tools we have. Metricool can't read or answer comments, so r
 | Ask Moodius | Monthly question-box story | Questions answered as short reels |
 
 ## 4. Build-up arcs (short posts → a deep dive)
-**Shape (two weeks, no extra volume):** three short teaser reels use the normal reel slots, then one deep dive.
+**Shape (every three weeks, agreed with the reel-first plan, no extra volume):** three short reels Thursday to Saturday marked "Part 1/2/3 of 3", then a 10-12 slide deep-dive carousel on Sunday at 12:00. Arc 1 is Epictetus: parts on Thu 12, Fri 13 (reel-first thread) and Sat 14 Nov (this thread, Discourses 4.1), and the deep dive on Sun 15 Nov (this thread, Meditations 1.7 + Discourses 1.18).
 
 1. **Teaser 1, the mystery** (12-18 s): a striking fact, no name. "Who was this?" in the caption.
 2. **Teaser 2, the turn** (12-18 s): the moment things changed; the name is revealed.
 3. **Teaser 3, the lesson** (12-18 s): the Stoic or psychology link, plus the "deep dive Sunday" line and a quiz sticker on the story.
 4. **Deep dive**: a 10-slide carousel (Sunday 12:00), a 45-60 s reel (engine format D, `max_s` 45-60), and, once Substack is live, the Thursday essay on the same person. Sources go in the caption.
 
-One arc every two weeks. Free Minds reels can be teasers inside an arc.
+Free Minds reels can be teasers inside an arc.
 
 ## 5. First six arcs
 Ordered by how ready they are. ✓ = checked word for word this week; "verify" = source known, check before render.
