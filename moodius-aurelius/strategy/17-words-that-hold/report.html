@@ -1,0 +1,281 @@
+<title>Words That Hold</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one reading column on Bone paper, Slate type, Ember only for the word being measured. Wide tables scroll inside their own box. */
+:root{
+  --bg:#F3EFE7; --surface:#ECE7DC; --fg:#1B1F24; --muted:#5E5A52; --rule:#D6D0C3;
+  --accent:#B5621F; --bar:#2A2F36; --bar-dim:#B8B3A9; --good:#3F6B4E; --bad:#9A3B2E;
+  --display:"Cormorant Garamond","Iowan Old Style",Georgia,serif;
+  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1B1F24; --surface:#2A2F36; --fg:#F3EFE7; --muted:#B8B3A9; --rule:#3A4049;
+  --accent:#D9874A; --bar:#F3EFE7; --bar-dim:#5E646D; --good:#7FB08E; --bad:#E08A7C; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1B1F24; --surface:#2A2F36; --fg:#F3EFE7; --muted:#B8B3A9; --rule:#3A4049;
+  --accent:#D9874A; --bar:#F3EFE7; --bar-dim:#5E646D; --good:#7FB08E; --bad:#E08A7C; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6}
+.wrap{max-width:46rem;margin:0 auto;padding-block:3rem 4rem;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:2.75rem}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:clamp(2.4rem,7vw,3.4rem)}
+h2{font-size:1.9rem;padding-top:.5rem;border-top:1px solid var(--rule)}
+h3{font-size:1.35rem}
+p{margin:0}
+section{display:flex;flex-direction:column;gap:1rem}
+.eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.lede{font-size:1.1rem;color:var(--muted);max-width:40rem}
+em.w{font-style:normal;color:var(--accent);font-weight:600}
+.caveat{background:var(--surface);padding:1rem 1.15rem;border-radius:4px;font-size:.92rem;color:var(--muted)}
+ol.short{margin:0;padding-left:1.4rem;display:flex;flex-direction:column;gap:.75rem}
+ol.short b{color:var(--fg)}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{border-collapse:collapse;width:100%;font-size:.9rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:.55rem .6rem;border-bottom:1px solid var(--rule);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+td.n{white-space:nowrap}
+.hook{font-family:var(--display);font-size:1.12rem;line-height:1.3}
+.chart{display:flex;flex-direction:column;gap:.6rem}
+.row{display:grid;grid-template-columns:minmax(0,13rem) minmax(0,1fr);gap:.75rem;align-items:center}
+.row .lab{font-size:.85rem;line-height:1.3}
+.bars{display:flex;flex-direction:column;gap:3px}
+.bar{height:12px;border-radius:2px;background:var(--bar)}
+.bar.dim{background:var(--bar-dim)}
+.bar span{position:relative;left:calc(100% + 6px);top:-4px;font-size:.75rem;white-space:nowrap;color:var(--fg)}
+.legend{display:flex;gap:1.2rem;font-size:.8rem;color:var(--muted);flex-wrap:wrap}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:2px;margin-right:.35rem;vertical-align:-1px}
+.pattern{display:flex;flex-direction:column;gap:.6rem;padding-left:1rem;border-left:2px solid var(--rule)}
+.pattern .meta{font-size:.85rem;color:var(--muted)}
+.pattern .rule{font-weight:500}
+.tag{display:inline-block;font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;padding:.1rem .45rem;border-radius:3px;border:1px solid currentColor}
+.tag.up{color:var(--good)} .tag.down{color:var(--bad)}
+.refs{font-size:.85rem;color:var(--muted);display:flex;flex-direction:column;gap:.45rem;padding-left:1.4rem;margin:0}
+a{color:var(--accent)} a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.never{color:var(--bad)}
+@media (max-width:520px){.row{grid-template-columns:1fr}.wrap{padding-block:2rem 3rem}}
+</style>
+
+<div class="wrap">
+<header style="display:flex;flex-direction:column;gap:1rem">
+  <div class="eyebrow">Moodius Aurelius · 24 October 2026</div>
+  <h1>Words that hold</h1>
+  <p class="lede">Which words and sentence shapes in your posts keep people watching, liking and following, what other creators' outlier hooks share, and the published research on why. Then a rewrite of every hook queued for 26 Oct to 1 Nov.</p>
+  <p class="caveat">Built from 15 reels and 8 feed posts (Metricool, 6-23 Oct) and 168 on-topic creator hooks from the hook-intel library. Each number is a median of 2-10 posts, so these are leads to test, not findings. Metricool shows far fewer views than Instagram, so read the numbers post against post. The three newest reels, in the new look, all held fewer people, so part of that drop may be the look rather than the words.</p>
+</header>
+
+<section>
+  <h2>The short version</h2>
+  <ol class="short">
+    <li><b>Open on another person or a scene the viewer is in.</b> Hooks with a person or a conflict in them held 43% of viewers past 3 seconds. The rest held 29%.</li>
+    <li><b>Ask, then make them wait for the second half.</b> "Someone disrespected you today?" followed by "if it's true... if it's false..." was watched for 16.5 seconds. Every other reel got 2.5-5.7.</li>
+    <li><b>Set up the obvious reading, then overturn it.</b> "You don't have a discipline problem. You have a self-trust problem." is the only post that has brought follows (5).</li>
+    <li><b>Put two things side by side that felt like one.</b> "X vs Y" and "hurts more than" had the highest lift in the creator set, 5.8 times their usual views.</li>
+    <li><b>Name the hurt, then end on relief.</b> Pain words lift views across 17 creators, but sadness gets watched more than it gets shared.</li>
+    <li><b>Stop opening with a number, a thinker's name, or "motivation".</b> All three held fewer people.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Your posts: who stays past 3 seconds</h2>
+  <p>The median 3-second rate of reels whose hook contains each pattern, against the reels that don't.</p>
+  <div class="legend"><span><i style="background:var(--bar)"></i>Hook has it</span><span><i style="background:var(--bar-dim)"></i>Hook doesn't</span></div>
+  <div class="chart" role="img" aria-label="3-second view rate with and without each word pattern">
+    <div class="row"><div class="lab">Another person or conflict (5)</div><div class="bars"><div class="bar" style="width:86%"><span>43.1%</span></div><div class="bar dim" style="width:59%"><span>29.4%</span></div></div></div>
+    <div class="row"><div class="lab">A question mark (2)</div><div class="bars"><div class="bar" style="width:82%"><span>41.2%</span></div><div class="bar dim" style="width:59%"><span>29.7%</span></div></div></div>
+    <div class="row"><div class="lab">You / your (7)</div><div class="bars"><div class="bar" style="width:69%"><span>34.7%</span></div><div class="bar dim" style="width:60%"><span>29.8%</span></div></div></div>
+    <div class="row"><div class="lab">Self-help noun: motivation, rules, things (6)</div><div class="bars"><div class="bar" style="width:59%"><span>29.4%</span></div><div class="bar dim" style="width:74%"><span>37.0%</span></div></div></div>
+    <div class="row"><div class="lab">Number or list first (4)</div><div class="bars"><div class="bar" style="width:54%"><span>27.2%</span></div><div class="bar dim" style="width:69%"><span>34.7%</span></div></div></div>
+    <div class="row"><div class="lab">Thinker's name first (3)</div><div class="bars"><div class="bar" style="width:50%"><span>25.2%</span></div><div class="bar dim" style="width:66%"><span>33.2%</span></div></div></div>
+  </div>
+  <p style="font-size:.85rem;color:var(--muted)">Bar length is to scale, 0-50%. Numbers in brackets are how many reels have the pattern.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>What</th><th>Post</th><th>Number</th></tr></thead>
+    <tbody>
+      <tr><td>Most likes</td><td class="hook">You can't make everyone like you.</td><td class="n">11 likes</td></tr>
+      <tr><td>Most shares and saves</td><td class="hook">Some things are up to you. Most aren't.</td><td class="n">4 shares, 2 saves</td></tr>
+      <tr><td>Only follows</td><td class="hook">You don't have a discipline problem. You have a self-trust problem.</td><td class="n">5 follows, 342 reach</td></tr>
+      <tr><td>Longest watch</td><td class="hook">Someone disrespected you today?</td><td class="n">16.5 s average</td></tr>
+      <tr><td>Exception</td><td class="hook">They got away with it. You didn't.</td><td class="n">23.7% past 3s</td></tr>
+    </tbody>
+  </table></div>
+  <p>The exception is useful. It's an other-person hook, but "You didn't" reads two ways on the first frame. A first line has to be readable in one pass before it can make anyone curious.</p>
+</section>
+
+<section>
+  <h2>Other creators: which words lift views</h2>
+  <p>How many times their own usual views each creator's video got, for hooks with these words, against hooks without. 168 hooks from Stoic, psychology and Jung channels, mostly YouTube Shorts.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Words</th><th>Hooks / creators</th><th>With vs without</th><th>Real example (lift)</th></tr></thead>
+    <tbody>
+      <tr><td><em class="w">vs</em>, <em class="w">more than</em></td><td class="n">4 / 4</td><td class="n">5.79x vs 1.06x</td><td>Being Ignored Hurts MORE Than Being Hated (6.2x)</td></tr>
+      <tr><td><em class="w">psychological</em>, brain, therapist</td><td class="n">6 / 6</td><td class="n">2.33x vs 1.08x</td><td>The psychological cost of being available (9.5x)</td></tr>
+      <tr><td><em class="w">secret</em>, truth, real, actually</td><td class="n">12 / 9</td><td class="n">1.97x vs 1.00x</td><td>The Secret to Never Getting Upset (5.8x)</td></tr>
+      <tr><td><em class="w">why you keep</em></td><td class="n">7 / 2</td><td class="n">1.82x vs 1.07x</td><td>Why You Keep Giving Your Heart to the Wrong People (3.2x)</td></tr>
+      <tr><td><em class="w">hurt</em>, lonely, ignored, broken</td><td class="n">26 / 17</td><td class="n">1.81x vs 1.03x</td><td>How Modern Life Created a Loneliness Epidemic (74.5x)</td></tr>
+      <tr><td><em class="w">stop</em>, never, don't</td><td class="n">14 / 10</td><td class="n">1.70x vs 1.02x</td><td>Stop doing these five things according to the Stoics (15.8x)</td></tr>
+      <tr><td><em class="w">still</em>, cost</td><td class="n">4 / 3</td><td class="n">1.48x vs 1.07x</td><td>You Have Free Time. Why Does It Still Feel Like Work? (7.3x)</td></tr>
+      <tr><td>thinker's name</td><td class="n">46 / 9</td><td class="n">1.29x vs 1.03x</td><td>What Marcus Aurelius Teaches About Waking Up Early (7.2x)</td></tr>
+      <tr><td>you, your</td><td class="n">54 / 18</td><td class="n">1.00x vs 1.13x</td><td></td></tr>
+      <tr><td>number or list</td><td class="n">21 / 7</td><td class="n">1.00x vs 1.08x</td><td></td></tr>
+      <tr><td>question mark</td><td class="n">12 / 8</td><td class="n">0.89x vs 1.08x</td><td></td></tr>
+    </tbody>
+  </table></div>
+  <p>Both data sets agree on one thing. "You" alone does nothing, and neither does a question mark or a list. What lifts is <b>what the "you" is put into</b>: a cost, a contrast, a hurt, a correction, a hidden reason. The three biggest outliers in the whole set are about loneliness, from three different channels.</p>
+  <p class="caveat">Left out on purpose, though they scored high: "What Happens To Manipulators The Day You Go Cold", "The 4-Second Silence Trick That Exposes Anyone", "Loneliness KILLS More Than Smoking!". Threat and power over other people get attention, but they turn the viewer against people, which is the opposite of the page.</p>
+</section>
+
+<section>
+  <h2>Ranked patterns and why they work</h2>
+
+  <div class="pattern">
+    <h3>1. The other-person scene, in the second person</h3>
+    <p class="meta"><span class="tag up">Strongest on your page</span> 43% vs 29% past 3 seconds</p>
+    <p>Information about the self is processed more deeply and remembered better than the same information about someone else: the self-reference effect, confirmed across 129 studies <a href="https://doi.org/10.1037/0033-2909.121.3.371">(Symons &amp; Johnson 1997)</a>, and run by the brain's midline structures <a href="https://doi.org/10.1016/j.neuroimage.2005.12.002">(Northoff et al. 2006)</a>. A threat from another person adds weight, because bad events get more attention than good ones of the same size <a href="https://doi.org/10.1037/1089-2680.5.4.323">(Baumeister et al. 2001)</a>. Question headlines that addressed the reader ("Is <i>your</i> boss...") got more clicks than statements <a href="https://doi.org/10.1080/15534510.2013.847859">(Lai &amp; Farbrot 2014)</a>.</p>
+    <p class="rule">Frame 0 names a person and what they did to "you", in under 10 words. "Someone left you on read" beats "toxic people".</p>
+  </div>
+
+  <div class="pattern">
+    <h3>2. The question with a delayed second half</h3>
+    <p class="meta"><span class="tag up">Longest watch</span> 16.5 s vs 2.5-5.7 s, one reel</p>
+    <p>Curiosity rises when people notice a gap between what they know and what they want to know, most of all when the gap feels small enough to close soon <a href="https://doi.org/10.1037/0033-2909.116.1.75">(Loewenstein 1994)</a>. Waiting for an answer activates reward areas and improves memory for it <a href="https://doi.org/10.1111/j.1467-9280.2009.02402.x">(Kang et al. 2009)</a>, through the dopamine circuit and the hippocampus <a href="https://doi.org/10.1016/j.neuron.2014.08.060">(Gruber et al. 2014)</a>. The waiting is rewarding in itself <a href="https://doi.org/10.1523/JNEUROSCI.21-16-j0002.2001">(Knutson et al. 2001)</a>.</p>
+    <p class="rule">Use a question only when the answer has two parts and the second lands after second 6. Always pay off both.</p>
+  </div>
+
+  <div class="pattern">
+    <h3>3. The overturned expectation</h3>
+    <p class="meta"><span class="tag up">Only source of follows</span> self-trust carousel, 5 follows</p>
+    <p>Dopamine neurons respond most to outcomes that differ from what was expected, the reward prediction error <a href="https://doi.org/10.1126/science.275.5306.1593">(Schultz et al. 1997)</a>. The eyes go to whatever changes expectations most <a href="https://doi.org/10.1016/j.visres.2008.09.007">(Itti &amp; Baldi 2009)</a>. Line 1 sets the prediction ("you're lazy"), line 2 breaks it ("you're avoiding a feeling"). My reading, not a study: a follow is a bet that later posts will keep paying, and a reframe that changes how someone sees their own week is the best evidence of that.</p>
+    <p class="rule">Line 1 says what they already believe, in their words. Line 2 replaces it within 3 seconds.</p>
+  </div>
+
+  <div class="pattern">
+    <h3>4. X vs Y</h3>
+    <p class="meta"><span class="tag up">Highest creator lift</span> 5.8x, only 4 hooks</p>
+    <p>The same prediction error, plus a promise to settle a question the viewer already asks themself. Rest or avoidance? Grief or self-pity? The answer updates a belief about the self, so the self-reference effect applies too.</p>
+    <p class="rule">Both sides are feelings the viewer has had, never two kinds of people.</p>
+  </div>
+
+  <div class="pattern">
+    <h3>5. Pain words with a relief payoff</h3>
+    <p class="meta"><span class="tag up">17 creators</span> 1.81x, loneliness tops the set</p>
+    <p>Across 105,000 headline variants at Upworthy, each extra negative word raised click-through by about 2.3%, and sadness words had the clearest effect <a href="https://doi.org/10.1038/s41562-023-01538-4">(Robertson et al. 2023)</a>. But sadness made New York Times articles less likely to be emailed, while awe made them more likely <a href="https://doi.org/10.1509/jmr.10.0353">(Berger &amp; Milkman 2012)</a>. Naming a feeling also calms it: labelling emotions reduced the amygdala's response <a href="https://doi.org/10.1111/j.1467-9280.2007.01916.x">(Lieberman et al. 2007)</a>.</p>
+    <p class="rule">Name the hurt in line 1, end on relief, awe or one small action. Your three newest reels got zero sends, and this is the most likely fix.</p>
+  </div>
+
+  <div class="pattern">
+    <h3>6. The correction</h3>
+    <p class="meta"><span class="tag up">10 creators</span> 1.70x; your "Not every insult deserves a reply" held 43%</p>
+    <p>"Stop" implies the viewer is losing something now, and losses weigh more than gains <a href="https://doi.org/10.1037/1089-2680.5.4.323">(Baumeister et al. 2001)</a>.</p>
+    <p class="rule">Correct a habit, never a person or a group.</p>
+  </div>
+
+  <div class="pattern">
+    <h3>7. "You" meaning anyone</h3>
+    <p class="meta"><span class="tag up">Most likes</span> "You can't make everyone like you", 11</p>
+    <p>People use generic "you" to turn a personal hurt into a general lesson <a href="https://doi.org/10.1126/science.aaj2014">(Orvell, Kross &amp; Gelman 2017)</a>. It includes the viewer. Accusing "you" ("Motivation isn't coming... neither should you") corners them, and that reel reached 20.</p>
+  </div>
+
+  <div class="pattern">
+    <h3>Weak: a number, a name or a self-help noun first</h3>
+    <p class="meta"><span class="tag down">Holds fewer</span> 27%, 25% and 29%, against 33-37% without</p>
+    <p>A number says how long they'll be there and not why. A thinker's name is a reason to believe, not a reason to stay, so keep Marcus, Seneca and Epictetus on line 2. "Motivation" and "productivity" gave the two worst reels on the page.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Likes, follows and the social side</h2>
+  <ul style="margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:.6rem">
+    <li><b>Likes beget likes.</b> Teenagers liked photos more when they already had many likes, with more reward-area activity <a href="https://doi.org/10.1177/0956797616645673">(Sherman et al. 2016)</a>; showing download counts made popular songs more popular <a href="https://doi.org/10.1126/science.1121066">(Salganik et al. 2006)</a>. The honest use is replying to comments in the first hour. Never buy likes or join engagement pods.</li>
+    <li><b>Talking about yourself feels rewarding.</b> People gave up money to disclose things about themselves <a href="https://doi.org/10.1073/pnas.1202129109">(Tamir &amp; Mitchell 2012)</a>. That backs the 1-3 word question at the end of every post, answered first by Moodius.</li>
+    <li><b>Posts get sent when they're about the viewer and someone they know.</b> Articles that went viral raised activity in brain areas for thinking about the self and about others <a href="https://doi.org/10.1073/pnas.1615259114">(Scholz et al. 2017)</a>. "Send this to someone who..." works only once the reel has made them picture that person.</li>
+    <li><b>Moral words spread, mostly within a side.</b> Each moral-emotional word raised retweets by about 20% <a href="https://doi.org/10.1073/pnas.1618923114">(Brady et al. 2017)</a>. That's how outrage pages grow. Use those words about the viewer's own conduct, never against a group.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Keyword bank</h2>
+  <div class="scroll"><table>
+    <thead><tr><th>Word or frame</th><th>Why it works</th><th>House version</th></tr></thead>
+    <tbody>
+      <tr><td><em class="w">someone</em> ___ you</td><td>Self-reference, social threat</td><td class="hook">Someone left you on read.</td></tr>
+      <tr><td><em class="w">again</em></td><td>A scene they've lived more than once</td><td class="hook">You replayed it again.</td></tr>
+      <tr><td><em class="w">2am</em>, tonight, today</td><td>Puts it in their own day</td><td class="hook">It's 2am and you're winning the argument.</td></tr>
+      <tr><td><em class="w">isn't</em> ___. It's ___.</td><td>Prediction error</td><td class="hook">You're not lazy. You're avoiding a feeling.</td></tr>
+      <tr><td>you don't have a ___ <em class="w">problem</em></td><td>Prediction error about the self</td><td class="hook">You don't have a confidence problem.</td></tr>
+      <tr><td>___ <em class="w">or</em> ___?</td><td>Two-option gap</td><td class="hook">Rest or avoidance?</td></tr>
+      <tr><td><em class="w">hurts more than</em></td><td>Contrast plus a pain word</td><td class="hook">Being ignored hurts more than being hated.</td></tr>
+      <tr><td>the <em class="w">quiet cost</em> of</td><td>Hidden cost, 9.5x in the set</td><td class="hook">The quiet cost of always being available.</td></tr>
+      <tr><td><em class="w">why you keep</em></td><td>Names a loop they're in</td><td class="hook">Why you keep apologising first.</td></tr>
+      <tr><td><em class="w">actually</em>, the real</td><td>Promises a belief update</td><td class="hook">What Epictetus actually meant.</td></tr>
+      <tr><td><em class="w">stop</em> (a habit)</td><td>Correction, loss weight</td><td class="hook">Stop explaining yourself to people committed to misreading you.</td></tr>
+      <tr><td><em class="w">lonely</em>, ignored, left out</td><td>Sadness words get watched</td><td class="hook">Lonely at a full table.</td></tr>
+      <tr><td>only <em class="w">one of them</em></td><td>Two-branch wait</td><td class="hook">Two people skip the gym. Only one is resting.</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>Retire as openers:</b> numbers, "rules", "signs", "things", "motivation", "productivity", "discipline" unless it's reframed as a feeling, a thinker's name, "Did you know", "Save this".</p>
+  <p class="never"><b>Never:</b> fake urgency, "wait for the end" when the end doesn't pay, rage bait about a group, "Comment YES if...", made-up numbers or studies, manipulation sold as a skill.</p>
+</section>
+
+<section>
+  <h2>Rewrites for 26 Oct to 1 Nov</h2>
+  <p>Suggestions only. Nothing in Metricool has changed. Each one still ends on a 1-3 word question.</p>
+  <div class="scroll"><table>
+    <thead><tr><th>Slot</th><th>Now</th><th>Suggested first frame</th><th>Ends on</th></tr></thead>
+    <tbody>
+      <tr><td class="n">Mon 26 · 12:00</td><td>You're not lazy. You're avoiding a feeling.</td><td class="hook">Keep. Add above it: "You opened that email four times."</td><td>Which feeling?</td></tr>
+      <tr><td class="n">Mon 26 · 18:00</td><td>Likes are a vote from people who gave your post half a second...</td><td class="hook">You checked the likes again.</td><td>Whose vote counts?</td></tr>
+      <tr><td class="n">Tue 27 · 12:00</td><td>How to stop rehearsing disasters that never come.</td><td class="hook">You've lived this disaster ten times tonight. It hasn't happened once.</td><td>Sound familiar?</td></tr>
+      <tr><td class="n">Tue 27 · 18:00</td><td>Being alone isn't the problem. Being alone when you didn't choose it is.</td><td class="hook">Keep. Loneliness is the strongest topic in the creator set.</td><td>Chosen or not?</td></tr>
+      <tr><td class="n">Wed 28 · 12:00</td><td>Do less, better: the Stoic answer to burnout.</td><td class="hook">The quiet cost of saying yes to everything.</td><td>What's one no?</td></tr>
+      <tr><td class="n">Wed 28 · 18:00</td><td>Gregor Samsa turns into an insect overnight...</td><td class="hook">He woke up as an insect. His first worry? Being late for work.</td><td>Relatable?</td></tr>
+      <tr><td class="n">Thu 29 · 12:00</td><td>Why one comment ruins your whole day.</td><td class="hook">Ten kind comments. One cruel one. Guess which you replayed.</td><td>Which one stuck?</td></tr>
+      <tr><td class="n">Thu 29 · 18:00</td><td>Nobody warns you that the early version of a better life looks a bit ridiculous...</td><td class="hook">Leaving at eleven looks ridiculous. For about a month.</td><td>Worth it?</td></tr>
+      <tr><td class="n">Fri 30 · 12:00</td><td>Who you let close becomes who you are.</td><td class="hook">Listen to how you talk after an hour with them.</td><td>Who's rubbing off?</td></tr>
+      <tr><td class="n">Fri 30 · 17:00</td><td>If anger was the only feeling that was safe to show growing up...</td><td class="hook">Your anger is carrying something heavier.</td><td>What's underneath?</td></tr>
+      <tr><td class="n">Sat 31 · 12:00</td><td>Stop explaining your philosophy. Show it.</td><td class="hook">Keep. A correction aimed at a habit.</td><td>Show or tell?</td></tr>
+      <tr><td class="n">Sat 31 · 18:00</td><td>There's a version of independence that's really just fear with good posture...</td><td class="hook">You don't reach out, so you can't be turned down.</td><td>Sound familiar?</td></tr>
+      <tr><td class="n">Sun 1 · 12:00</td><td>The two horses pulling your mind.</td><td class="hook">Two horses are pulling your mind. Only one listens.</td><td>Which one wins?</td></tr>
+      <tr><td class="n">Sun 1 · 18:00</td><td>In a 2014 study (Wilson et al., Science), many people left alone...</td><td class="hook">People chose an electric shock over 15 minutes alone with their thoughts.</td><td>Could you?</td></tr>
+    </tbody>
+  </table></div>
+  <p>For the hook-intel drafts, the variants that fit best are HI01 B, HI02 A, HI03 A, HI04 A and HI05 C.</p>
+</section>
+
+<section>
+  <h2>What to test next</h2>
+  <ul style="margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:.5rem">
+    <li>From 2 Nov, tag each X5 reel with the pattern it uses, so the 19 Nov review can rerun this on more posts.</li>
+    <li>For two weeks, end other-person reels on relief or awe instead of "Send this to...", and compare sends.</li>
+    <li>Check every first frame reads one way, in one pass, at phone size.</li>
+    <li>Try one reframe reel that ends "Part 1 of 3" before the Epictetus arc, and compare follows per reach.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Sources</h2>
+  <ol class="refs">
+    <li>Baumeister et al. (2001). Bad is stronger than good. <i>Review of General Psychology</i>. <a href="https://doi.org/10.1037/1089-2680.5.4.323">doi</a></li>
+    <li>Berger &amp; Milkman (2012). What makes online content viral? <i>Journal of Marketing Research</i>. <a href="https://doi.org/10.1509/jmr.10.0353">doi</a></li>
+    <li>Brady et al. (2017). Emotion shapes the diffusion of moralized content in social networks. <i>PNAS</i>. <a href="https://doi.org/10.1073/pnas.1618923114">doi</a></li>
+    <li>Gruber, Gelman &amp; Ranganath (2014). States of curiosity modulate hippocampus-dependent learning via the dopaminergic circuit. <i>Neuron</i>. <a href="https://doi.org/10.1016/j.neuron.2014.08.060">doi</a></li>
+    <li>Itti &amp; Baldi (2009). Bayesian surprise attracts human attention. <i>Vision Research</i>. <a href="https://doi.org/10.1016/j.visres.2008.09.007">doi</a></li>
+    <li>Kang et al. (2009). The wick in the candle of learning. <i>Psychological Science</i>. <a href="https://doi.org/10.1111/j.1467-9280.2009.02402.x">doi</a></li>
+    <li>Kidd &amp; Hayden (2015). The psychology and neuroscience of curiosity. <i>Neuron</i>. <a href="https://doi.org/10.1016/j.neuron.2015.09.010">doi</a></li>
+    <li>Knutson et al. (2001). Anticipation of increasing monetary reward selectively recruits nucleus accumbens. <i>Journal of Neuroscience</i>. <a href="https://doi.org/10.1523/JNEUROSCI.21-16-j0002.2001">doi</a></li>
+    <li>Lai &amp; Farbrot (2014). What makes you click? The effect of question headlines on readership. <i>Social Influence</i>. <a href="https://doi.org/10.1080/15534510.2013.847859">doi</a></li>
+    <li>Lieberman et al. (2007). Putting feelings into words. <i>Psychological Science</i>. <a href="https://doi.org/10.1111/j.1467-9280.2007.01916.x">doi</a></li>
+    <li>Loewenstein (1994). The psychology of curiosity. <i>Psychological Bulletin</i>. <a href="https://doi.org/10.1037/0033-2909.116.1.75">doi</a></li>
+    <li>Northoff et al. (2006). Self-referential processing in our brain. <i>NeuroImage</i>. <a href="https://doi.org/10.1016/j.neuroimage.2005.12.002">doi</a></li>
+    <li>Orvell, Kross &amp; Gelman (2017). How "you" makes meaning. <i>Science</i>. <a href="https://doi.org/10.1126/science.aaj2014">doi</a></li>
+    <li>Robertson et al. (2023). Negativity drives online news consumption. <i>Nature Human Behaviour</i>. <a href="https://doi.org/10.1038/s41562-023-01538-4">doi</a></li>
+    <li>Rogers, Kuiper &amp; Kirker (1977). Self-reference and the encoding of personal information. <i>JPSP</i>. <a href="https://doi.org/10.1037/0022-3514.35.9.677">doi</a></li>
+    <li>Salganik, Dodds &amp; Watts (2006). Inequality and unpredictability in an artificial cultural market. <i>Science</i>. <a href="https://doi.org/10.1126/science.1121066">doi</a></li>
+    <li>Scholz et al. (2017). A neural model of valuation and information virality. <i>PNAS</i>. <a href="https://doi.org/10.1073/pnas.1615259114">doi</a></li>
+    <li>Schultz, Dayan &amp; Montague (1997). A neural substrate of prediction and reward. <i>Science</i>. <a href="https://doi.org/10.1126/science.275.5306.1593">doi</a></li>
+    <li>Sherman et al. (2016). The power of the like in adolescence. <i>Psychological Science</i>. <a href="https://doi.org/10.1177/0956797616645673">doi</a></li>
+    <li>Symons &amp; Johnson (1997). The self-reference effect in memory: a meta-analysis. <i>Psychological Bulletin</i>. <a href="https://doi.org/10.1037/0033-2909.121.3.371">doi</a></li>
+    <li>Tamir &amp; Mitchell (2012). Disclosing information about the self is intrinsically rewarding. <i>PNAS</i>. <a href="https://doi.org/10.1073/pnas.1202129109">doi</a></li>
+  </ol>
+</section>
+</div>
