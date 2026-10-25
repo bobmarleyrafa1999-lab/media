@@ -2,7 +2,7 @@
  "batch": "mino-01",
  "written": "2026-10-25",
  "grammar": "beat",
- "note": "Faceless test batch from Mino Lee's formulas (strategy/22-mino-formulas). Facts from research/library/tidbits/epictetus.csv (EP001, EP003, EP006-EP009, EP012, EP020, EP023, EP025). Not scheduled: needs the owner's OK.",
+ "note": "Faceless test batch from Mino Lee's formulas (strategy/22-mino-formulas). Facts from research/library/tidbits/epictetus.csv (EP001, EP003, EP006-EP009, EP012, EP020, EP023, EP025). Not scheduled: needs the owner's OK. Engine 1.4 'cuts: hard' applies the editing rules in 06-editing-rules.md.",
  "scripts": [
   {
    "id": "MZ01",
@@ -413,7 +413,7 @@
     "tidbits": "EP025"
    },
    "caption": "Epictetus's two-word rule, as a Roman writer heard it second-hand: bear and forbear. Put up with what other people do, and hold yourself back from the things you'd regret.\n\nApplied to the friend who's always late: bear the wait, skip the lecture, still order them a drink.\n\nHow late is your latest friend, in minutes?\n\nSource: Aulus Gellius, Attic Nights 17.19 (J. C. Rolfe translation), reporting Favorinus on Epictetus.\n\n— Moodius",
-   "first_comment": "Moodius: personal best wait is 47 minutes. I bore. I did not forbear. 😅",
+   "first_comment": "Moodius: personal best wait is 47 minutes. I bore. I did not forbear.",
    "hashtags": [
     "#friendship",
     "#stoicism",
@@ -432,5 +432,6 @@
     "by": "Claude, 25 Oct 2026"
    }
   }
- ]
+ ],
+ "cuts": "hard"
 }

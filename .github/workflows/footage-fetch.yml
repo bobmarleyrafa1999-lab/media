@@ -1,0 +1,34 @@
+name: Footage fetch
+# Runs only when a footage request is pushed to a claude/project-thread-* branch. No schedule.
+# Free-licence clips from Wikimedia Commons (public domain, CC0, CC BY); results are committed back.
+on:
+  push:
+    branches: ["claude/project-thread-*"]
+    paths: ["moodius-aurelius/reels-engine/footage-fetch/requests/**"]
+permissions:
+  contents: write
+concurrency:
+  group: footage-fetch-${{ github.ref }}
+  cancel-in-progress: false
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - run: sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends ffmpeg >/dev/null
+      - name: Fetch every request changed in this push
+        working-directory: moodius-aurelius/reels-engine/footage-fetch
+        run: |
+          for f in $(git diff --name-only HEAD~1 HEAD -- requests/ | sed 's#moodius-aurelius/reels-engine/footage-fetch/##'); do
+            [ -f "$f" ] && python3 fetch_footage.py "$f" --out ../footage-pool
+          done
+      - name: Commit results
+        run: |
+          git config user.name "footage-fetch"
+          git config user.email "actions@users.noreply.github.com"
+          git add moodius-aurelius/reels-engine/footage-pool
+          git diff --cached --quiet || git commit -m "footage: fetched free-licence clips"
+          for i in 1 2 3; do git pull --rebase -q && git push && break; sleep 5; done
