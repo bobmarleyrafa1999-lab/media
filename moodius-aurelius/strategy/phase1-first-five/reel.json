@@ -1,0 +1,43 @@
+{
+ "p5-regulating": {
+  "style": "dawn",
+  "seed": 5151,
+  "segments": [
+   [
+    "Three signs you’re regulating, not suppressing.",
+    2.8,
+    true
+   ],
+   [
+    "1. You can name the feeling.",
+    2.2,
+    false
+   ],
+   [
+    "2. You feel it, then choose\nwhat to do.",
+    2.4,
+    false
+   ],
+   [
+    "3. It passes instead of\nleaking out later.",
+    2.4,
+    false
+   ],
+   [
+    "“It is not this thing that disturbs you, but your own judgement about it.”",
+    3.8,
+    true
+   ],
+   [
+    "Marcus Aurelius · Meditations 8.47",
+    1.8,
+    "cite"
+   ],
+   [
+    "Feel it. Then decide.",
+    2.0,
+    true
+   ]
+  ]
+ }
+}

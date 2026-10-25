@@ -1,0 +1,72 @@
+{
+ "id": "R001",
+ "slug": "opinion-of-others",
+ "format": "R2",
+ "pillar": "Daily",
+ "rank": 1,
+ "hook": "You'd never let a stranger decide what you're worth.",
+ "hook_b": "Marcus Aurelius noticed a strange habit. You have it.",
+ "cards": [
+  [
+   "You'd never let a stranger decide what you're worth.",
+   2.4,
+   "hook"
+  ],
+  [
+   "Then you post something and refresh it forty times.",
+   2.4,
+   "body"
+  ],
+  [
+   "Marcus Aurelius noticed it 1,800 years before likes:",
+   2.4,
+   "body"
+  ],
+  [
+   "\u201cEvery man loves himself more than all the rest of men, but yet sets less value on his own opinion of himself than on the opinion of others.\u201d",
+   6.7,
+   "quote"
+  ],
+  [
+   "Meditations 12.4 \u00b7 tr. George Long",
+   1.6,
+   "cite"
+  ],
+  [
+   "Before you check what they think, ask what you think.",
+   2.7,
+   "body"
+  ],
+  [
+   "Send this to the friend who refreshes.",
+   2.0,
+   "cta"
+  ]
+ ],
+ "visual": "V1 flat Slate. Hook top-left on the 96px margin, Ember rule under it. Quote card in Playfair italic.",
+ "footage": null,
+ "audio": {
+  "engine": "ambient",
+  "mood": "night",
+  "seed": 101
+ },
+ "source": {
+  "type": "quote",
+  "author": "Marcus Aurelius",
+  "work": "Meditations",
+  "section": "12.4",
+  "translation": "George Long",
+  "verified_at": "lexundria.com/m_aur_med/12.4/lg"
+ },
+ "caption": "Likes are a vote from people who gave your post half a second. Your own opinion of you has watched every day of your life.\n\nMarcus wrote this with no phone, about the same habit. Tonight, before you open the app, answer one thing: what do you actually think of what you made?\n\n\u2014 Moodius",
+ "first_comment": "What would you post if nobody could see the likes?",
+ "hashtags": [
+  "#stoicism",
+  "#marcusaurelius",
+  "#selfworth",
+  "#overthinking"
+ ],
+ "cta": "send",
+ "length_s": 20.6,
+ "metricool_id": "400908861"
+}

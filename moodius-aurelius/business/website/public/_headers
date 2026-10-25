@@ -1,0 +1,20 @@
+/*
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=(), interest-cohort=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains
+  X-Frame-Options: DENY
+  Content-Security-Policy: default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; form-action 'self' https://checkout.stripe.com https://*.lemonsqueezy.com; frame-ancestors 'none'; base-uri 'self'
+
+/assets/*
+  Cache-Control: public, max-age=3600
+
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/backoffice/*
+  X-Robots-Tag: noindex
+  Cache-Control: no-store
+
+/mock-checkout/*
+  X-Robots-Tag: noindex

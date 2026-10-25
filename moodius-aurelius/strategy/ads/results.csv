@@ -1,0 +1,3 @@
+test_id,channel,start,end,spend_eur,impressions,reach,views,link_clicks,landing_page_views,profile_views,followers_gained,guide_signups,journal_sales,cost_per_signup_gbp,cost_per_follower,verdict,notes
+A1,instagram_reels,,,35,,,,,,,,,,,,not_launched,gate: 25 organic sign-ups + guide live + reel >=2x median
+B1,tiktok_promote,,,18,,,,,,,,,,,,not_launched,gate: TikTok 14 days + reel >=2x TikTok median

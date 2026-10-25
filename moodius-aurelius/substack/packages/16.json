@@ -1,0 +1,206 @@
+{
+ "n": 16,
+ "essay": "essays/16-what-would-you-do.md",
+ "title": "What Would You Do If Nobody Was Watching?",
+ "ab_alt": "The Ring of Gyges Test",
+ "pillar": "Tools",
+ "reels": [
+  {
+   "id": "S16B",
+   "slug": "ring-of-gyges",
+   "format": "B",
+   "series": "Quiet Truths",
+   "pillar": "Tools",
+   "hook": "Plato's ring made its wearer invisible.",
+   "hook_b": "Plato asked it 2,400 years ago with a magic ring.",
+   "cards": [
+    [
+     "Plato's ring made its wearer invisible.",
+     2.2,
+     "hook"
+    ],
+    [
+     "Glaucon's bet: give it to anyone, and they'd take what they liked.",
+     3.1,
+     "body"
+    ],
+    [
+     "Idea: Plato, Republic II · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "But there's a second test hidden in the question.",
+     2.4,
+     "body"
+    ],
+    [
+     "Not what you'd take. What you'd finally try.",
+     2.2,
+     "body"
+    ],
+    [
+     "Quiet Truths · Moodius",
+     1.2,
+     "body"
+    ],
+    [
+     "Full essay on the Substack. Link in bio.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate (series control look).",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 331
+   },
+   "source": {
+    "type": "idea",
+    "author": "Plato",
+    "work": "Republic",
+    "section": "II",
+    "translation": "paraphrase"
+   },
+   "evidence": "Tier 2 primary text (N72), paraphrased",
+   "caption": "In Plato's Republic, Glaucon tells the story of a ring that makes its wearer invisible, and bets that anyone who had it would stop behaving well.\n\nThat's the usual test: what would you do wrong if nobody was watching? There's a second one: what would you finally do if nobody would ever know?\n\nWhat would you try?\n\nSource: Plato, Republic II (paraphrased). Full essay on the Substack, link in bio.",
+   "first_comment": "What would you try if nobody would ever know?",
+   "hashtags": [
+    "#philosophy",
+    "#plato",
+    "#decisionmaking",
+    "#regret",
+    "#stoicism"
+   ],
+   "cta": "save",
+   "length_s": 15.3
+  },
+  {
+   "id": "S16A",
+   "slug": "regrets-nobody-sees",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Tools",
+   "hook": "What would you do if nobody would ever find out?",
+   "hook_b": "The regrets that last are the ones nobody else sees.",
+   "cards": [
+    [
+     "What would you do if nobody would ever find out?",
+     2.7,
+     "question"
+    ],
+    [
+     "Most lasting regrets were about hopes not pursued, not duties missed.",
+     3.0,
+     "body"
+    ],
+    [
+     "72% ideal-self regrets. 28% duty regrets.",
+     2.2,
+     "body"
+    ],
+    [
+     "Studies: Davidai & Gilovich, Emotion (2018)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Take away the audience. What's left is often what you want.",
+     2.9,
+     "body"
+    ],
+    [
+     "Save this for the decision you're putting off.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V3 still of an empty theatre, seats and a single light, no people (tag theatre-empty), else V1 + grain.",
+   "footage": "theatre-empty",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 332
+   },
+   "source": {
+    "type": "data",
+    "author": "Davidai & Gilovich",
+    "work": "The ideal road not taken (Emotion 18(3))",
+    "section": "studies",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 studies (N76)",
+   "caption": "Across six studies, people's regrets were mostly about their ideal selves, hopes and goals they didn't pursue (72%), rather than duties they didn't meet (28%). Asked for their single biggest regret, 76% named an ideal-self one.\n\nThose are often the choices most shaped by an audience. Ask what you'd do if nobody would ever know.\n\nWhat's the decision you're putting off?\n\nEvidence: Davidai & Gilovich (2018). Full essay on the Substack, link in bio.",
+   "first_comment": "One hope you haven't pursued yet. Just the word.",
+   "hashtags": [
+    "#philosophy",
+    "#plato",
+    "#decisionmaking",
+    "#regret",
+    "#stoicism"
+   ],
+   "cta": "save",
+   "length_s": 15.0
+  }
+ ],
+ "carousel": [
+  [
+   "Cover",
+   "What would you do if nobody was watching?",
+   "Two honest answers →",
+   "claim cover"
+  ],
+  [
+   "The ring",
+   "\"No man would keep his hands off what was not his own when he could safely take what he liked out of the market.\"",
+   "Plato, Republic II · tr. Benjamin Jowett (Glaucon's challenge)",
+   "pull quote"
+  ],
+  [
+   "The eyes",
+   "Under a picture of eyes, people paid 2.76× as much into an honesty box.",
+   "Experiment · Bateson, Nettle & Roberts (2006)",
+   "term card"
+  ],
+  [
+   "The catch",
+   "Across dozens of experiments, eye images didn't reliably make people more generous.",
+   "Meta-analysis · Northover et al. (2017)",
+   "term card"
+  ],
+  [
+   "What we regret",
+   "72% of regrets were about hopes not pursued; 28% about duties missed.",
+   "Studies · Davidai & Gilovich, Emotion (2018)",
+   "term card"
+  ],
+  [
+   "The Invisible Decision",
+   "If everyone approved · If everyone disapproved · If nobody ever knew. Keep what you owe. Question what you fear.",
+   "Moodius practice",
+   "numbered step"
+  ],
+  [
+   "Sign-off",
+   "One answer shows your character. The other shows your courage.",
+   "Full essay on the Substack · link in bio · save this",
+   "sign-off"
+  ]
+ ],
+ "carousel_caption": "The question is usually a test of honesty. It's also a decision tool.\n\nRemove the audience and two things show up: where your behaviour depends on being watched, and where your life does. The second kind of choice is the one people most often regret not making.\n\nWhat would you do if nobody would ever know?\n\nEvidence: Bateson, Nettle & Roberts 2006; Northover et al. 2017; Gilovich & Medvec 1995; Davidai & Gilovich 2018. Philosophy: Plato, Republic II (Jowett).",
+ "notes": [
+  "In 2006, a picture of eyes above a coffee-room honesty box nearly tripled what people paid for milk. It became one of the most cited findings in behavioural science. Then two meta-analyses of dozens of experiments found eye images didn't reliably make people more generous. The honest answer is: sometimes, a little.",
+  "Plato's Glaucon bet that anyone with a ring of invisibility would stop behaving well. That's one reading of 'what would you do if nobody was watching?' The other: what would you finally do? The first tests your character. The second tests your courage.",
+  "Most of people's lasting regrets are about hopes they didn't pursue, not duties they missed. Those hopes are often the choices most shaped by imagined judgement. This week: take one decision and ask what you'd choose if nobody would ever know."
+ ],
+ "visuals": {
+  "look": "V1 flat for the Quiet Truths reel; V3 empty theatre with a single light; no people",
+  "type": "Standard; Jowett slide in Playfair italic on Bone; 2.76× set large in Inter",
+  "music": "dawn and low (ambient.py); spacious",
+  "pinterest": "1000×1500, Bone background, Slate type, Ember on 'watching'"
+ }
+}

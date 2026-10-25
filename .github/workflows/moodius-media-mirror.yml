@@ -1,0 +1,49 @@
+name: Moodius media mirror
+# Copies final renders (mp4/jpg/png in the folders listed in moodius-aurelius/media-mirror/mirror.py) to the
+# public repo bobmarleyrafa1999-lab/moodius-media at the same paths, so Metricool keeps public links if this
+# repo goes private. Additive only: it never deletes anything in the public repo. Nothing else is copied.
+# Off until the repo variable MOODIUS_MEDIA_MIRROR is "true" and the secret MOODIUS_MEDIA_TOKEN is set
+# (a fine-grained token with Contents: read and write on moodius-media only).
+on:
+  push:
+    branches: [main]
+    paths: ["moodius-aurelius/**"]
+  schedule:
+    - cron: "17 */3 * * *"   # every 3 hours: picks up what the weekly routine commits to its branch
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: moodius-media-mirror
+  cancel-in-progress: false
+jobs:
+  mirror:
+    if: vars.MOODIUS_MEDIA_MIRROR == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+      - uses: actions/checkout@v4
+        with:
+          repository: bobmarleyrafa1999-lab/moodius-media
+          token: ${{ secrets.MOODIUS_MEDIA_TOKEN }}
+          path: _public
+      - name: Copy public renders
+        run: |
+          python3 moodius-aurelius/media-mirror/mirror.py copy _public
+          # branches the routines commit to before their work reaches main (same paths, main wins on a clash)
+          for b in claude/project-thread-bxasif; do
+            git fetch -q --depth 1 origin "$b" && python3 moodius-aurelius/media-mirror/mirror.py copy _public --ref FETCH_HEAD
+          done
+          python3 moodius-aurelius/media-mirror/mirror.py copy _public
+      - name: Push
+        working-directory: _public
+        run: |
+          git config user.name "moodius-media-mirror"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A
+          git diff --cached --quiet && { echo "Nothing new."; exit 0; }
+          git commit -q -m "Mirror renders from ${GITHUB_REF_NAME}@${GITHUB_SHA::7}"
+          for i in 1 2 3; do git pull --rebase -q && git push -q && break; sleep 5; done
