@@ -208,7 +208,8 @@ class CalendarTest(unittest.TestCase):
         os.makedirs(briefs)
         self.make_briefs(briefs)
         plan, need, hurt, rejected, summary = calendar_build.run(
-            briefs, [os.path.join(FIX, "tidbits-sample.csv")], dt.date(2026, 11, 9), os.path.join(tmp, "out"))
+            briefs, [os.path.join(FIX, "tidbits-sample.csv")], dt.date(2026, 11, 9), os.path.join(tmp, "out"),
+            "reel-first")
         self.assertEqual(len(plan), 14)
         self.assertEqual(sum(1 for s in plan if s["kind"] == "carousel"), 2)
         self.assertLessEqual(hurt, 3)
@@ -219,6 +220,11 @@ class CalendarTest(unittest.TestCase):
         with open(os.path.join(tmp, "out", "handoff-2026-11-09.json"), encoding="utf-8") as f:
             self.assertEqual(json.load(f)["status"], "draft_not_scheduled")
         self.assertIn("Nothing is in Metricool", summary)
+
+    def test_default_layout_runs_a_daily_carousel(self):
+        slots = calendar_build.week_slots(dt.date(2026, 11, 9))
+        self.assertEqual([k for *_, k in slots].count("carousel"), 7)
+        self.assertEqual(slots[9][2], "17:00")
 
     def test_week_must_start_monday(self):
         with self.assertRaises(SystemExit):

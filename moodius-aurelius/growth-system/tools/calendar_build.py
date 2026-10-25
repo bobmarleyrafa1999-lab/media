@@ -2,9 +2,11 @@
 """Weekly calendar builder (Stage 6 prototype).
 
 Takes a folder of post briefs, keeps only the ones that pass brief_lint, and
-fills one week of reel-first slots so the pillar mix meets pillars.json:
-  * 12 reels: 12:00 Mon/Tue/Thu/Fri/Sat, 18:00 daily (Friday 17:00)
-  * 2 carousels: Wednesday and Sunday 12:00 (book reviews count as carousels)
+fills one week of 14 feed slots so the pillar mix meets pillars.json.
+Layouts (--layout):
+  * carousel-daily (default): 12:00 carousel every day, 18:00 reel (Fri 17:00)
+  * reel-first: 12:00 reels Mon/Tue/Thu/Fri/Sat, carousels Wed and Sun 12:00
+Book reviews count as carousels.
 Rules while filling: biggest pillar shortfall first, never the same pillar in
 two consecutive slots when another fits, hurt/conflict reels capped, a brief's
 own "not_before" date respected.
@@ -30,14 +32,22 @@ import brief_lint
 DAYS = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 
 
-def week_slots(monday):
+# Slot layouts. "carousel-daily" matches the Friday-routine addendum from the
+# reach-batch work (PR #13): carousels drove the 21-23 Oct reach jump, so a
+# 12:00 carousel runs every day until the 19 Nov review. "reel-first" is the
+# 22 Oct plan (12 reels, carousels Wed and Sun).
+LAYOUTS = {
+    "carousel-daily": {dow: "carousel" for dow in DAYS},
+    "reel-first": {dow: ("carousel" if dow in ("Wed", "Sun") else "reel") for dow in DAYS},
+}
+
+
+def week_slots(monday, layout="carousel-daily"):
+    noon = LAYOUTS[layout]
     slots = []
     for i, dow in enumerate(DAYS):
         day = monday + dt.timedelta(days=i)
-        if dow in ("Wed", "Sun"):
-            slots.append((day, dow, "12:00", "carousel"))
-        else:
-            slots.append((day, dow, "12:00", "reel"))
+        slots.append((day, dow, "12:00", noon[dow]))
         slots.append((day, dow, "17:00" if dow == "Fri" else "18:00", "reel"))
     return slots
 
@@ -47,13 +57,13 @@ def fits(brief, kind):
     return fmt == kind or (kind == "carousel" and fmt == "book_review")
 
 
-def build(briefs, cfg, monday):
+def build(briefs, cfg, monday, layout="carousel-daily"):
     pillars = cfg["pillars"]
     need = {k: p["per_week"] for k, p in pillars.items()}
     cap = pillars["human_mind"]["max_hurt_conflict_per_week"]
     pool = list(briefs)
     plan, hurt, prev = [], 0, None
-    for day, dow, time, kind in week_slots(monday):
+    for day, dow, time, kind in week_slots(monday, layout):
         options = [b for b in pool if fits(b, kind)
                    and day.isoformat() >= b.get("not_before", "")
                    and not (b.get("hurt_conflict") and hurt >= cap)]
@@ -127,7 +137,7 @@ def write_outputs(plan, need, hurt, leftover, rejected, cfg, monday, out):
     return "\n".join(lines)
 
 
-def run(brief_dir, library, monday, out):
+def run(brief_dir, library, monday, out, layout="carousel-daily"):
     cfg = brief_lint.load_config()
     lib = brief_lint.load_library(library)
     ok, rejected = [], []
@@ -139,7 +149,7 @@ def run(brief_dir, library, monday, out):
             rejected.append((brief.get("id", os.path.basename(path)), errors))
         else:
             ok.append(brief)
-    plan, need, hurt, leftover = build(ok, cfg, monday)
+    plan, need, hurt, leftover = build(ok, cfg, monday, layout)
     summary = write_outputs(plan, need, hurt, leftover, rejected, cfg, monday, out)
     return plan, need, hurt, rejected, summary
 
@@ -150,11 +160,13 @@ def main(argv=None):
     ap.add_argument("--week-start", required=True, help="a Monday, YYYY-MM-DD")
     ap.add_argument("--library", action="append", default=[])
     ap.add_argument("--out", required=True)
+    ap.add_argument("--layout", choices=sorted(LAYOUTS), default="carousel-daily",
+                    help="carousel-daily (default until the 19 Nov review) or reel-first")
     args = ap.parse_args(argv)
     monday = dt.date.fromisoformat(args.week_start)
     if monday.weekday() != 0:
         ap.error("--week-start must be a Monday")
-    *_, summary = run(args.briefs, args.library, monday, args.out)
+    *_, summary = run(args.briefs, args.library, monday, args.out, args.layout)
     print(summary)
     return 0
 
