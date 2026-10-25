@@ -1,0 +1,360 @@
+<title>Moodius Tone Audit</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one reading column, ~720px, brand Slate/Bone with Ember used once per section for the key number */
+:root{
+  --bg:#F3EFE7; --surface:#FBF8F2; --fg:#1B1F24; --muted:#5F625F; --line:#D9D3C7; --accent:#A85B1E;
+  --hurt:#9C4A1C; --strug:#D89A62; --prac:#9FA3A6; --cur:#5E7D6A; --app:#C9A85A;
+  --display:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --body:Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1B1F24; --surface:#2A2F36; --fg:#F3EFE7; --muted:#B8B3A9; --line:#3A4049; --accent:#E08A45;
+  --hurt:#C9612A; --strug:#E2A877; --prac:#7E848C; --cur:#7FA38C; --app:#D8BC72; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1B1F24; --surface:#2A2F36; --fg:#F3EFE7; --muted:#B8B3A9; --line:#3A4049; --accent:#E08A45;
+  --hurt:#C9612A; --strug:#E2A877; --prac:#7E848C; --cur:#7FA38C; --app:#D8BC72; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:15px/1.6 var(--body);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:32px 64px}
+main{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:44px}
+h1,h2,h3{font-family:var(--display);font-weight:600;line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:2.6rem}
+h2{font-size:1.75rem;margin-bottom:10px}
+h3{font-size:1.25rem;margin:18px 0 8px}
+p{margin:0 0 12px;max-width:68ch}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.lede{font-size:1.1rem}
+.big{font-family:var(--display);font-size:3.2rem;color:var(--accent);line-height:1;font-weight:700}
+.verdict{display:flex;gap:20px;align-items:center;flex-wrap:wrap;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding-block:18px;margin-top:18px}
+.verdict p{margin:0;flex:1;min-width:220px}
+.muted{color:var(--muted)}
+.tablewrap{overflow-x:auto;margin:6px 0 14px}
+table{border-collapse:collapse;width:100%;font-size:.9rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-weight:600;font-size:.75rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+td.num{text-align:right;white-space:nowrap}
+.bad{color:var(--hurt);font-weight:600}.ok{color:var(--cur);font-weight:600}
+.legend{display:flex;flex-wrap:wrap;gap:6px 16px;font-size:.8rem;color:var(--muted);margin:6px 0 12px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:2px;margin-right:6px;vertical-align:-1px}
+.barrow{display:grid;grid-template-columns:170px 1fr 48px;gap:12px;align-items:center;padding-block:6px}
+.barrow.proposed{border-top:1px dashed var(--line);margin-top:6px;padding-top:12px}
+.barlabel{font-size:.88rem}.barlabel span{display:block;font-size:.72rem;color:var(--muted)}
+.bar{display:flex;height:18px;border-radius:3px;overflow:hidden;background:var(--line)}
+.seg{display:block;height:100%}
+.hurt{background:var(--hurt)}.strug{background:var(--strug)}.prac{background:var(--prac)}.cur{background:var(--cur)}.app{background:var(--app)}
+.barval{font-variant-numeric:tabular-nums;text-align:right;font-weight:600}
+@media (max-width:520px){.barrow{grid-template-columns:1fr 44px}.barlabel{grid-column:1/-1}}
+ul.hooks{padding-left:18px;margin:0 0 12px}ul.hooks li{margin-bottom:4px}
+.tids{display:flex;flex-direction:column;gap:14px}
+.tid{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px 16px;min-width:0}
+.tid header{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;margin-bottom:6px}
+.tid-id{font-weight:600;font-variant-numeric:tabular-nums}
+.tid-fig{color:var(--muted);font-size:.85rem;flex:1}
+.pill{font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;padding:2px 8px;border-radius:99px;border:1px solid var(--line)}
+.pill.verified{color:var(--cur);border-color:var(--cur)}.pill.manual{color:var(--accent);border-color:var(--accent)}
+.claim{font-weight:500;margin-bottom:6px}
+blockquote{margin:0 0 6px;padding-left:12px;border-left:2px solid var(--line);font-family:var(--display);font-size:1.1rem;font-style:italic}
+.src,.cav{font-size:.82rem;color:var(--muted);margin-bottom:4px;overflow-wrap:anywhere}
+details{border-top:1px solid var(--line);padding-top:10px}
+summary{cursor:pointer;font-weight:600}
+pre{white-space:pre-wrap;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px;font-size:.8rem;line-height:1.5;overflow-x:auto;margin:10px 0 0}
+button{font:600 .85rem var(--body);background:var(--fg);color:var(--bg);border:0;border-radius:4px;padding:8px 14px;cursor:pointer}
+.owe li{margin-bottom:6px}
+footer{font-size:.8rem;color:var(--muted);border-top:1px solid var(--line);padding-top:14px}
+</style>
+
+<main>
+<header>
+  <div class="eyebrow">@moodiusaurelius · audit of 93 posts and drafts · 25 Oct 2026</div>
+  <h1>Is the page too heavy?</h1>
+  <div class="verdict">
+    <div class="big">65%</div>
+    <p>Yes. Two in three feed posts, published and planned, are about hurt or inner struggle. On the live grid it is closer to four in five, and every published post is Stoic. Only one post ever was about appreciation, and none about kindness, health or other philosophies.</p>
+  </div>
+</header>
+
+<section>
+  <h2>Theme share by set</h2>
+  <p class="muted">Each post tagged by what it is about. The number on the right is hurt + struggle.</p>
+  <div class="legend"><span><i class="hurt"></i>Hurt / conflict / grief</span><span><i class="strug"></i>Inner struggle</span><span><i class="prac"></i>Practice / body</span><span><i class="cur"></i>Curiosity / ideas</span><span><i class="app"></i>Appreciation / kindness</span></div>
+  <div class="barrow"><div class="barlabel">Published, 6–25 Oct<span>n=26</span></div><div class="bar"><span class="seg hurt" style="width:38.5%" title="hurt 10"></span><span class="seg strug" style="width:34.6%" title="strug 9"></span><span class="seg prac" style="width:23.1%" title="prac 6"></span><span class="seg app" style="width:3.8%" title="app 1"></span></div><div class="barval">73%</div></div><div class="barrow"><div class="barlabel">Queue, 25 Oct–1 Nov<span>n=15</span></div><div class="bar"><span class="seg hurt" style="width:20.0%" title="hurt 3"></span><span class="seg strug" style="width:46.7%" title="strug 7"></span><span class="seg prac" style="width:13.3%" title="prac 2"></span><span class="seg cur" style="width:6.7%" title="cur 1"></span><span class="seg app" style="width:13.3%" title="app 2"></span></div><div class="barval">67%</div></div><div class="barrow"><div class="barlabel">Plan, 2–19 Nov<span>n=36</span></div><div class="bar"><span class="seg hurt" style="width:22.2%" title="hurt 8"></span><span class="seg strug" style="width:36.1%" title="strug 13"></span><span class="seg prac" style="width:5.6%" title="prac 2"></span><span class="seg cur" style="width:25.0%" title="cur 9"></span><span class="seg app" style="width:11.1%" title="app 4"></span></div><div class="barval">58%</div></div><div class="barrow"><div class="barlabel">Substack essays<span>n=16</span></div><div class="bar"><span class="seg hurt" style="width:18.8%" title="hurt 3"></span><span class="seg strug" style="width:56.2%" title="strug 9"></span><span class="seg prac" style="width:6.2%" title="prac 1"></span><span class="seg cur" style="width:18.8%" title="cur 3"></span></div><div class="barval">75%</div></div><div class="barrow proposed"><div class="barlabel">Proposed week<span>n=14</span></div><div class="bar"><span class="seg hurt" style="width:7.1%" title="hurt 1"></span><span class="seg strug" style="width:14.3%" title="strug 2"></span><span class="seg prac" style="width:14.3%" title="prac 2"></span><span class="seg cur" style="width:35.7%" title="cur 5"></span><span class="seg app" style="width:28.6%" title="app 4"></span></div><div class="barval">21%</div></div>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Set</th><th class="num">Opens on pain</th><th class="num">Negative tone</th><th class="num">Stoic only</th></tr></thead>
+    <tbody>
+      <tr><td>Published 6–25 Oct (26)</td><td class="num">62%</td><td class="num">54%</td><td class="num">100%</td></tr>
+      <tr><td>Live grid, not archived (18)</td><td class="num">72%</td><td class="num">61%</td><td class="num">100%</td></tr>
+      <tr><td>Metricool queue to 1 Nov (15)</td><td class="num">60%</td><td class="num">33%</td><td class="num">67%</td></tr>
+      <tr><td>Reel-first plan 2–19 Nov (36)</td><td class="num">50%</td><td class="num">31%</td><td class="num">64%</td></tr>
+      <tr><td>Substack essays (16)</td><td class="num">75%</td><td class="num">75%</td><td class="num">6%</td></tr>
+    </tbody></table></div>
+</section>
+
+<section>
+  <h2>Does the queue keep the 22 Oct rule?</h2>
+  <p>The rule: at most 4 hurt/conflict reels a week, and at least 2 in 3 posts opening from appreciation or curiosity.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Week</th><th class="num">Posts</th><th class="num">Hurt reels (max 4)</th><th class="num">Appreciation / curiosity openers (67%)</th></tr></thead>
+    <tbody>
+      <tr><td>26 Oct–1 Nov (in Metricool)</td><td class="num">14</td><td class="num ok">3</td><td class="num bad">29%</td></tr>
+      <tr><td>2–8 Nov (plan)</td><td class="num">14</td><td class="num bad">5</td><td class="num bad">29%</td></tr>
+      <tr><td>9–15 Nov (plan)</td><td class="num">14</td><td class="num ok">1</td><td class="num">64%</td></tr>
+      <tr><td>16–19 Nov (plan, 4 days)</td><td class="num">8</td><td class="num ok">1</td><td class="num bad">38%</td></tr>
+    </tbody></table></div>
+  <p>Most of the queue was written before the rule. The 2–8 Nov week came after it and still breaks both halves. Two more flags: the 30 Oct reel's on-screen hook says <i>“Angry men are usually something else first”</i>, and two old drafts for 25 Oct still carry #youngmen (drafts never publish, but they can go).</p>
+</section>
+
+<section>
+  <h2>What your Instagram export says</h2>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Feed post</th><th>Theme</th><th class="num">Reach</th><th class="num">Follows</th></tr></thead>
+    <tbody>
+      <tr><td>When someone is rude to you today… (22 Oct)</td><td>Hurt</td><td class="num">585</td><td class="num">0</td></tr>
+      <tr><td>Why you replay the argument at 2am (23 Oct)</td><td>Hurt</td><td class="num">473</td><td class="num">0</td></tr>
+      <tr><td>Not a discipline problem, a self-trust problem (21 Oct)</td><td>Struggle, reframed</td><td class="num">342</td><td class="num"><b>5</b></td></tr>
+      <tr><td>The evening review (24 Oct, a day old)</td><td>Practice</td><td class="num">6</td><td class="num">0</td></tr>
+      <tr><td>Five quote cards and a meme (7–14 Oct)</td><td>Mixed, one gratitude</td><td class="num">4–9</td><td class="num">0</td></tr>
+    </tbody></table></div>
+  <p>Conflict hooks pull reach, which matches the earlier lessons. But the only follows came from a reframe, and a positive topic has never had a fair test: the one gratitude post was a 10:00 quote card, the format and slot that failed for everything. Research from the Words That Hold report points the same way: sadness makes people share less, awe makes them share more.</p>
+  <h3>The fix: keep the tension, change the payoff</h3>
+  <p>Open on a scene, a question or a surprising fact. Land on kindness, discovery or a practice. End on a 1–3 word question.</p>
+  <ul class="hooks">
+    <li>“The man who stopped Boston's smallpox was enslaved.” <span class="muted">Onesimus, HM014</span></li>
+    <li>“A 1,600-year-old recipe won a Nobel Prize.” <span class="muted">Ge Hong to Tu Youyou, HM001</span></li>
+    <li>“Your brain treats giving like getting.” <span class="muted">KH001</span></li>
+    <li>“Nobody knows which tree this is.” <span class="muted">Timbuktu, HM012</span></li>
+    <li>“Confucius told his student: not yet.” <span class="muted">PH004</span></li>
+    <li>“Marcus had a trick for bad moods: other people.” <span class="muted">KH005</span></li>
+  </ul>
+</section>
+
+<section>
+  <h2>A new weekly mix</h2>
+  <p>Fourteen feed posts a week, as in the reel-first plan. Psychology and philosophy stay the frame; Stoicism becomes one voice among several.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Lane</th><th class="num">Per week</th><th>Draws on</th></tr></thead>
+    <tbody>
+      <tr><td>Inner life: Stoic reframes of hurt and struggle</td><td class="num">3</td><td>existing engine and hook rules; hurt cap stays 4, aim for 3</td></tr>
+      <tr><td>Kindness and good deeds</td><td class="num">3</td><td>giving research, Marcus on kindness, Onesimus, Mutual Aid, Humankind</td></tr>
+      <tr><td>Psychology and neuroscience</td><td class="num">2</td><td>KH001–004, Behave, Awe</td></tr>
+      <tr><td>Philosophies of the world beside the Stoics</td><td class="num">2</td><td>Daoist, Confucian, Buddhist, Andalusian, Epicurean, Ubuntu, existentialist</td></tr>
+      <tr><td>Body and health (never body image)</td><td class="num">2</td><td>exercise and mood review, Exercised, Seneca on exercise</td></tr>
+      <tr><td>History of medicine</td><td class="num">1</td><td>Chinese, Mongol, African and Andalusian sources below</td></tr>
+      <tr><td>Appreciation and awe</td><td class="num">1</td><td>Meditations 6.48, Awe</td></tr>
+    </tbody></table></div>
+  <p>Struggle drops from about 65% to under 30%, and roughly 10 of 14 posts open from curiosity or appreciation, which meets your rule. Book reviews take the Wednesday carousel once you've read one. New deep-dive arc candidates: Onesimus and the 1721 inoculation, Ge Hong to Tu Youyou, the Andalusian doctors, and the Timbuktu medical manuscripts.</p>
+  <h3>Swaps that would fix 2–8 Nov</h3>
+  <div class="tablewrap"><table>
+    <thead><tr><th>Slot</th><th>Now</th><th>Swap to</th></tr></thead>
+    <tbody>
+      <tr><td>Mon 2 Nov 18:00</td><td>You laughed at something they used to say. Then felt guilty.</td><td>Spend £5 on someone else today (KH002–003)</td></tr>
+      <tr><td>Tue 3 Nov 18:00</td><td>You checked their profile again.</td><td>Laozi 33 beside Marcus on knowing yourself (PH003)</td></tr>
+      <tr><td>Wed 4 Nov 18:00</td><td>You can forgive them and still not let them back in.</td><td>“Hatred ceases by love”, Dhammapada 5 (PH001)</td></tr>
+      <tr><td>Thu 5 Nov 12:00</td><td>People I've said ‘I'm fine’ to:</td><td>Walking and mood, BMJ 2024 review (KH004)</td></tr>
+      <tr><td>Sat 7 Nov 18:00</td><td>You told them everything in week one.</td><td>“Why look for a third thing?” Meditations 7.73 (KH006)</td></tr>
+    </tbody></table></div>
+  <p class="muted">That week would go to 2 hurt reels and about 9 of 14 good openers. Nothing has been changed in Metricool.</p>
+</section>
+
+<section>
+  <h2>History of medicine: starter tidbits</h2>
+  <p>Every medical item is history, not advice, and the posts carry: <b>“Historical interest only, not medical advice. Some traditional remedies are toxic.”</b> No “ancient secret” framing. All are marked manual: read on 25 Oct with the exact sentence copied, and each one gets a second look before a deep dive.</p>
+  <div class="tids"><article class="tid"><header><span class="tid-id">HM001</span><span class="tid-fig">Ge Hong / Tu Youyou · China: Jin dynasty to Nobel</span><span class="pill manual">manual</span></header>
+<p class="claim">A 4th-century Chinese first-aid handbook told readers to soak a handful of qinghao (sweet wormwood) in water and drink the juice for fevers. In the 1970s Tu Youyou read that line and it led her team to artemisinin, now a frontline malaria drug.</p>
+<blockquote>“A handful of qinghao immersed with 2 liters of water, wring out the juice and drink it all”</blockquote>
+<p class="src">Tu Y. The discovery of artemisinin (qinghaosu) and gifts from Chinese medicine. Nature Medicine 17(10): 1217-1220, 2011 · quoting Ge Hong, Zhouhou Beiji Fang (Handbook of Prescriptions for Emergencies) · <a href="https://doi.org/10.1038/nm.2471">link</a></p>
+<p class="cav"><b>Caveat.</b> Tu won the 2015 Nobel Prize for this. Modern artemisinin drugs are purified and dosed; drinking wormwood juice is NOT a malaria treatment. Historical interest only, not medical advice. Some traditional remedies are toxic.</p></article><article class="tid"><header><span class="tid-id">HM002</span><span class="tid-fig">Tu Youyou · China: method</span><span class="pill manual">manual</span></header>
+<p class="claim">Her breakthrough came from reading the old recipe closely: it used cold water, not boiling. Heat was destroying the active compound, so her team switched to low-temperature extraction.</p>
+<blockquote>“extraction at a lower temperature might be necessary to preserve antimalarial activity”</blockquote>
+<p class="src">Tu Y. Nature Medicine 17(10): 1217-1220, 2011 · Lasker Award essay · <a href="https://doi.org/10.1038/nm.2471">link</a></p>
+<p class="cav"><b>Caveat.</b> Fragment of a longer sentence. Historical interest only, not medical advice. Some traditional remedies are toxic.</p></article><article class="tid"><header><span class="tid-id">HM003</span><span class="tid-fig">Shennong Bencao Jing · China: Han dynasty</span><span class="pill manual">manual</span></header>
+<p class="claim">China&#x27;s oldest surviving materia medica lists 365 medicines and sorts them into three grades by their effects and how toxic they are.</p>
+<blockquote>“This text records 365 medicinals and summarizes medicinal experiences up to the Han Dynasty.”</blockquote>
+<p class="src">Zhao Z, Guo P, Brand E. A concise classification of bencao (materia medica). Chinese Medicine 13:18, 2018 · section on Shennong Bencao Jing · <a href="https://doi.org/10.1186/s13020-018-0176-y">link</a></p>
+<p class="cav"><b>Caveat.</b> The book is attributed to the mythical &#x27;Divine Farmer&#x27; Shennong; it was compiled by unknown authors around the Han period. Grades = high/medium/low by effect and toxicity. Historical interest only, not medical advice. Some traditional remedies are toxic.</p></article><article class="tid"><header><span class="tid-id">HM004</span><span class="tid-fig">Li Shizhen · China: Ming dynasty</span><span class="pill manual">manual</span></header>
+<p class="claim">Li Shizhen spent 27 years writing the Bencao Gangmu, a huge Ming-dynasty compendium of medicines; UNESCO lists it as world documentary heritage.</p>
+<blockquote>“Compiled and written by LI Shi-zhen (1518~1593), a medical expert of the Ming Dynasty (1368-1644) over a period of 27 years.”</blockquote>
+<p class="src">UNESCO Silk Roads: Ben Cao Gang Mu (Compendium of Materia Medica) · web page · <a href="https://en.unesco.org/silkroad/silk-road-themes/documentary-heritage/ben-cao-gang-mu-bencaogangmu-compendium-materia-medica">link</a></p>
+<p class="cav"><b>Caveat.</b> First draft completed 1578; printed after his death (c. 1593-96). Entry counts (often given as 1,892) not checked yet. Historical interest only, not medical advice. Some traditional remedies are toxic.</p></article><article class="tid"><header><span class="tid-id">HM005</span><span class="tid-fig">Hu Sihui · Mongol Yuan court</span><span class="pill manual">manual</span></header>
+<p class="claim">In 1330 Hu Sihui, dietician at the Mongol Yuan court, wrote the Yinshan Zhengyao, a food-as-medicine manual drawing on Chinese, Mongol and Arab sources.</p>
+<blockquote>“Hu Sihui incorporated a wide variety of dietary and medical knowledge from Chinese, Mongol, and Arab sources for his work.”</blockquote>
+<p class="src">Medievalists.net (Sept 2024) summarising Niu H. et al., Yinshan Zhengyao: exploring the power of food and inheriting healthy thoughts. Food &amp; Medicine Homology, 2024 · news summary of article · <a href="https://doi.org/10.26599/FMH.2024.9420006">link</a></p>
+<p class="cav"><b>Caveat.</b> Read the journal article itself before posting counts (232 foods, 174 medicinal plants come from the summary). English translation: Buell &amp; Anderson, A Soup for the Qan. Historical interest only, not medical advice. Some traditional remedies are toxic.</p></article><article class="tid"><header><span class="tid-id">HM006</span><span class="tid-fig">Rashid al-Din · Mongol Ilkhanate</span><span class="pill manual">manual</span></header>
+<p class="claim">Under the Mongol Ilkhans, the vizier Rashid al-Din had a Chinese medical book translated into Persian, the Tanksuqname. Only the first of its four volumes survives, in Istanbul.</p>
+<blockquote>“The Tānksūqnāme was translated by order of Faḍl-Allah Rashīd al-Dīn Ibn ʿImād al-Dawla Abū al-Khayr (1247-1318).”</blockquote>
+<p class="src">Acıduman A, Şems Ş, Arda B, Kırilen G. A Preliminary Study on Chapters Related to Human Anatomy in an Illustrated Persian Medical Book: Tānksūqnāme. Belleten 87(309): 415-437, 2023 · abstract · <a href="https://belleten.gov.tr/eng/abstarct/3730/eng">link</a></p>
+<p class="cav"><b>Caveat.</b> Copy made in Tabriz, 10 December 1313; Ayasofya 3596, Süleymaniye Library. Genuine &#x27;lost knowledge&#x27;: three volumes are gone.</p></article><article class="tid"><header><span class="tid-id">HM007</span><span class="tid-fig">Ibn al-Baytar · al-Andalus (Málaga)</span><span class="pill manual">manual</span></header>
+<p class="claim">Ibn al-Baytar, a botanist born in Málaga, compiled a dictionary of about 1,400 simple medicines from plants, animals and minerals.</p>
+<blockquote>“se enumeran alrededor de 1400 simples de origen vegetal, animal y mineral.”</blockquote>
+<p class="src">Cabo-González AM. El Kitāb Mīzān al-Ṭabīb de Ibn al-Bayṭār. Folia Orientalia LVI, 2019 · introduction · <a href="https://journals.pan.pl/Content/114145/PDF/FoliaOrientalia%2056-19%207Cabo-Gonz%C3%A1lez1.pdf">link</a></p>
+<p class="cav"><b>Caveat.</b> Evidence sentence is Spanish; translate on the post. Dates c. 1180/1187-1248. The big work is Kitāb al-Jāmiʿ. Historical interest only, not medical advice. Some traditional remedies are toxic.</p></article><article class="tid"><header><span class="tid-id">HM008</span><span class="tid-fig">al-Zahrawi (Abulcasis) · al-Andalus (Córdoba)</span><span class="pill manual">manual</span></header>
+<p class="claim">Al-Zahrawi of Córdoba wrote a thirty-volume medical encyclopedia and drew the surgical instruments he used, probably the first illustrations of their kind.</p>
+<blockquote>“He included illustrations of the surgical instruments, probably the first of their kind”</blockquote>
+<p class="src">Manaf F. Abulcasis, the pharmacist surgeon. Hektoen International 7(1), Winter 2015 · web article · <a href="https://hekint.org/abulcasis-the-pharmacist-surgeon/">link</a></p>
+<p class="cav"><b>Caveat.</b> Hektoen is a medical-humanities journal, not peer-reviewed research; confirm &#x27;200 instruments&#x27; against a scholarly edition (Spink &amp; Lewis 1973) before a deep dive.</p></article><article class="tid"><header><span class="tid-id">HM009</span><span class="tid-fig">Ibn Zuhr (Avenzoar) · al-Andalus (Seville)</span><span class="pill manual">manual</span></header>
+<p class="claim">Ibn Zuhr of Seville tested a tracheotomy on a goat to show it was safe before anyone tried it on people.</p>
+<blockquote>“performed experimentally a tracheotomy on a goat, proving the safety of this operation in humans”</blockquote>
+<p class="src">Karamanou M. et al. Avenzoar&#x27;s (1091-1162) clinical description of cancer. JBUON 20(4): 1171-1174, 2015 · text · <a href="https://jbuon.com/archive/20-4-34.pdf">link</a></p>
+<p class="cav"><b>Caveat.</b> Same paper says he gave the first detailed description of scabies and of a polypoid colorectal tumour; &#x27;first&#x27; claims in medical history are often disputed, say &#x27;one of the first&#x27;.</p></article><article class="tid"><header><span class="tid-id">HM010</span><span class="tid-fig">Ibn al-Khatib · al-Andalus (Granada)</span><span class="pill manual">manual</span></header>
+<p class="claim">During the Black Death, Ibn al-Khatib of Granada argued from what he saw that plague spread by contagion, at a time when many denied it.</p>
+<blockquote>“determined that the bubonic plague was transmitted through contagion”</blockquote>
+<p class="src">Lapham&#x27;s Quarterly contributor page; scholarly study: Ober WB, Aloush N. The plague at Granada, 1348-1349: Ibn al-Khatib and ideas of contagion. Bull N Y Acad Med 58(4): 418-424, 1982 · web page; article not yet read · <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1808550">link</a></p>
+<p class="cav"><b>Caveat.</b> Article text was blocked (captcha); read Ober &amp; Aloush or Aberth, The Black Death (2005) pp. 114-116 for his own words before posting. He was later executed (1374), officially for heresy.</p></article><article class="tid"><header><span class="tid-id">HM011</span><span class="tid-fig">Timbuktu manuscripts · West Africa (Mali)</span><span class="pill manual">manual</span></header>
+<p class="claim">An 18th-century Timbuktu manuscript gives diagnoses and cures using plants, animals and minerals, alongside prayers.</p>
+<blockquote>“The remedies described draw upon animal, plant, and mineral matter as well as prayers and Qur&#x27;anic verses.”</blockquote>
+<p class="src">The Met, &#x27;Curing Diseases and Effects both Apparent and Hidden&#x27;, Mali, Timbuktu, 18th century · collection record 736515 · <a href="https://www.metmuseum.org/art/collection/search/736515">link</a></p>
+<p class="cav"><b>Caveat.</b> HMML attributes the text Shifāʼ al-asqām to Aḥmad al-Raqqādī of the Kunta family (d. 1681 or 1684). Historical interest only, not medical advice. Some traditional remedies are toxic.</p></article><article class="tid"><header><span class="tid-id">HM012</span><span class="tid-fig">Timbuktu manuscripts · West Africa (Mali)</span><span class="pill manual">manual</span></header>
+<p class="claim">Some Timbuktu medical handbooks name local trees in Bambara, and today&#x27;s scholars cannot identify all of them. The knowledge is in the text, but the plant is lost.</p>
+<blockquote>“Most entries include the names of local trees and plants (in Bambara, as well as other local languages)”</blockquote>
+<p class="src">Hill Museum &amp; Manuscript Library, &#x27;Medical Texts From Timbuktu: Local Pharmacological Remedies With Qur&#x27;anic Verses&#x27; · web article · <a href="https://hmml.org/stories/series-medicine-medical-texts-from-timbuktu/">link</a></p>
+<p class="cav"><b>Caveat.</b> The article&#x27;s example is a tree called Ṣukuru that the authors could not identify. Honest &#x27;lost knowledge&#x27; angle, no &#x27;ancient secret&#x27; framing.</p></article><article class="tid"><header><span class="tid-id">HM013</span><span class="tid-fig">Timbuktu manuscripts · West Africa (Mali)</span><span class="pill manual">manual</span></header>
+<p class="claim">A 2011 survey counted more than 100,000 manuscripts in at least 408 private family libraries in Mali.</p>
+<blockquote>“A 2011 survey accounted for more than 100,000 such manuscripts preserved in no fewer than 408 private family libraries”</blockquote>
+<p class="src">The Met, collection record 736515 · record text · <a href="https://www.metmuseum.org/art/collection/search/736515">link</a></p>
+<p class="cav"><b>Caveat.</b> Counts vary by survey; quote the Met&#x27;s figure with its date.</p></article><article class="tid"><header><span class="tid-id">HM014</span><span class="tid-fig">Onesimus · West Africa to Boston</span><span class="pill manual">manual</span></header>
+<p class="claim">An enslaved West African man, Onesimus, told Cotton Mather how inoculation was done in Africa. In Boston&#x27;s 1721 smallpox epidemic about 2% of inoculated people died versus about 14% of those who caught it naturally.</p>
+<blockquote>“had undergone an Operation, which had given him something of the Small-Pox, and would forever preserve him from it”</blockquote>
+<p class="src">Cotton Mather, letter to the Royal Society, 1716, as quoted in Wikipedia &#x27;Onesimus (Bostonian)&#x27;; numbers from Brown TH, JAMA 1988 and Boylston A, J R Soc Med 2012 (&#x27;The origins of inoculation&#x27;) · Mather 1716 · <a href="https://en.wikipedia.org/wiki/Onesimus_(Bostonian)">link</a></p>
+<p class="cav"><b>Caveat.</b> Death figures differ by source (242 or 280 inoculated; ~2% vs ~14%). Check Boylston 2012 before posting. Mather owned Onesimus: tell it as Onesimus&#x27;s knowledge, not Mather&#x27;s. Inoculation (variolation) was risky and is no longer used.</p></article><article class="tid"><header><span class="tid-id">HM015</span><span class="tid-fig">Ebers Papyrus · Ancient Egypt</span><span class="pill manual">manual</span></header>
+<p class="claim">The Ebers Papyrus, about 1550 BCE, is one of the oldest medical books known, with around 700 formulas and folk remedies.</p>
+<blockquote>“The scroll contains 700 magical formulas and folk remedies meant to cure afflictions”</blockquote>
+<p class="src">Encyclopaedia Britannica, &#x27;Ebers papyrus&#x27; · article · <a href="https://www.britannica.com/topic/Ebers-papyrus">link</a></p>
+<p class="cav"><b>Caveat.</b> Counts vary (700 to 800+ prescriptions) by edition. Held at Leipzig University Library. Historical interest only, not medical advice. Some traditional remedies are toxic.</p></article><article class="tid"><header><span class="tid-id">HM016</span><span class="tid-fig">Ethiopian healers&#x27; books · Ethiopia</span><span class="pill manual">manual</span></header>
+<p class="claim">Ethiopian healers kept handbooks that preserved and reused medical knowledge across generations; scholars study four such manuscripts in London and Paris.</p>
+<blockquote>“The analysis shows how the specialist knowledge was transmitted, preserved and reused.”</blockquote>
+<p class="src">Burtea B. Traditional Medicine and Magic According to Some Ethiopian Manuscripts from European Collections. Aethiopica 18: 87-100, 2015 · abstract · <a href="https://doi.org/10.15460/aethiopica.18.1.924">link</a></p>
+<p class="cav"><b>Caveat.</b> Abstract names no specific plants; read the article before posting remedies. Historical interest only, not medical advice. Some traditional remedies are toxic.</p></article></div>
+</section>
+
+<section>
+  <h2>Kindness, health and other philosophies</h2>
+  <p class="muted">The three Marcus lines are checked word for word against Standard Ebooks. The rest were read by hand.</p>
+  <div class="tids"><article class="tid"><header><span class="tid-id">KH001</span><span class="tid-fig">Harbaugh, Mayr &amp; Burghart · Neuroscience of giving</span><span class="pill 2026-10-25">2026-10-25</span></header>
+<p class="claim">Brain scans show that even tax-like, compulsory gifts to charity light up reward areas, and voluntary giving lights them up more.</p>
+<blockquote>“even mandatory, tax-like transfers to a charity elicit neural activity in areas linked to reward processing”</blockquote>
+<p class="src">Harbaugh WT, Mayr U, Burghart DR. Neural responses to taxation and voluntary giving reveal motives for charitable donations. Science 316: 1622, 2007 · abstract · <a href="https://doi.org/10.1126/science.1140738">link</a></p>
+<p class="cav"><b>Caveat.</b> Small fMRI sample (19 students; DOI not yet resolved</p></article><article class="tid"><header><span class="tid-id">KH002</span><span class="tid-fig">Aknin et al. · Psychology of giving</span><span class="pill manual">manual</span></header>
+<p class="claim">People who had spent money on others in the past month reported more wellbeing in 120 of 136 countries surveyed.</p>
+<blockquote>“a positive relationship between personal well-being and spending on others in 120 of 136 countries”</blockquote>
+<p class="src">Aknin LB et al. Prosocial spending and well-being: cross-cultural evidence for a psychological universal. J Pers Soc Psychol 104(4), 2013 (APA press release) · press release · <a href="https://www.apa.org/news/press/releases/2013/02/people-giving">link</a></p>
+<p class="cav"><b>Caveat.</b> Correlational (Gallup World Poll 2006-08). A 2020 registered replication found smaller effects for the experimental version: say &#x27;linked to&#x27;, not &#x27;causes&#x27;.</p></article><article class="tid"><header><span class="tid-id">KH003</span><span class="tid-fig">Dunn, Aknin &amp; Norton · Psychology of giving</span><span class="pill 2026-10-25">2026-10-25</span></header>
+<p class="claim">A Science paper argued that how you spend money may matter as much for happiness as how much you earn; spending on others beat spending on yourself.</p>
+<blockquote>“we suggest that how people spend their money may be at least as important as how much money they earn”</blockquote>
+<p class="src">Dunn EW, Aknin LB, Norton MI. Spending money on others promotes happiness. Science 319(5870): 1687-1688, 2008 · abstract · <a href="https://doi.org/10.1126/science.1150952">link</a></p>
+<p class="cav"><b>Caveat.</b> Experiment was small (46 people; DOI not yet resolved</p></article><article class="tid"><header><span class="tid-id">KH004</span><span class="tid-fig">Noetel et al. · Exercise and mood</span><span class="pill manual">manual</span></header>
+<p class="claim">A 2024 BMJ review of randomised trials found walking or jogging, yoga and strength training all reduced depression, with walking/jogging among the strongest.</p>
+<blockquote>“walking or jogging (n=1210, κ=51, Hedges’ g −0.62, 95% credible interval −0.80 to −0.45)”</blockquote>
+<p class="src">Noetel M et al. Effect of exercise for depression: systematic review and network meta-analysis of randomised controlled trials. BMJ 384: e075847, 2024 · abstract, results · <a href="https://doi.org/10.1136/bmj-2023-075847">link</a></p>
+<p class="cav"><b>Caveat.</b> Not a replacement for treatment; say &#x27;alongside&#x27;, never &#x27;instead of&#x27;. Many trials were low certainty.</p></article><article class="tid"><header><span class="tid-id">KH005</span><span class="tid-fig">Marcus Aurelius · Kindness (Stoic)</span><span class="pill verified">verified</span></header>
+<p class="claim">Marcus told himself that when he wanted cheering up, he should think about the good qualities of the people around him.</p>
+<blockquote>“When thou wishest to delight thyself, think of the virtues of those who live with thee”</blockquote>
+<p class="src">meditations · 6.48 · tr. George Long · <a href="https://standardebooks.org/ebooks/marcus-aurelius/meditations/george-long/text/book-6">link</a></p>
+<p class="cav"><b>Caveat.</b> Section number by convention; Standard Ebooks has no section numbers (book-level check).</p></article><article class="tid"><header><span class="tid-id">KH006</span><span class="tid-fig">Marcus Aurelius · Kindness (Stoic)</span><span class="pill verified">verified</span></header>
+<p class="claim">Marcus: when you&#x27;ve done someone a good turn, why look for a third thing, like credit or a favour back?</p>
+<blockquote>“When thou hast done a good act and another has received it, why dost thou look for a third thing besides these”</blockquote>
+<p class="src">meditations · 7.73 · tr. George Long · <a href="https://standardebooks.org/ebooks/marcus-aurelius/meditations/george-long/text/book-7">link</a></p>
+<p class="cav"><b>Caveat.</b> Section by convention.</p></article><article class="tid"><header><span class="tid-id">KH007</span><span class="tid-fig">Marcus Aurelius · Kindness (Stoic)</span><span class="pill verified">verified</span></header>
+<p class="claim">Marcus thought real kindness can&#x27;t be beaten, as long as it is genuine and not a performance.</p>
+<blockquote>“a good disposition is invincible, if it be genuine, and not an affected smile and acting a part”</blockquote>
+<p class="src">meditations · 11.18 · tr. George Long · <a href="https://standardebooks.org/ebooks/marcus-aurelius/meditations/george-long/text/book-11">link</a></p>
+<p class="cav"><b>Caveat.</b> The tracker&#x27;s 16 Nov reel cites 11.18 with &#x27;verify wording&#x27;: this is Long&#x27;s wording.</p></article><article class="tid"><header><span class="tid-id">PH001</span><span class="tid-fig">The Dhammapada · Buddhist</span><span class="pill manual">manual</span></header>
+<p class="claim">An old Buddhist verse: hatred does not end by hatred, only by love.</p>
+<blockquote>“For hatred does not cease by hatred at any time: hatred ceases by love, this is an old rule.”</blockquote>
+<p class="src">The Dhammapada, Sacred Books of the East vol. X (Project Gutenberg #2017) · verse 5 · tr. F. Max Müller · <a href="https://www.gutenberg.org/ebooks/2017">link</a></p>
+<p class="cav"><b>Caveat.</b> Müller&#x27;s 1881 translation; modern ones say &#x27;non-hatred&#x27; or &#x27;love&#x27;.</p></article><article class="tid"><header><span class="tid-id">PH002</span><span class="tid-fig">Laozi · Daoist</span><span class="pill manual">manual</span></header>
+<p class="claim">The Tao Te Ching compares the highest good to water: it helps everything and doesn&#x27;t compete.</p>
+<blockquote>“The highest excellence is like (that of) water.”</blockquote>
+<p class="src">The Tao Teh King (Project Gutenberg #216) · chapter 8 · tr. James Legge · <a href="https://www.gutenberg.org/ebooks/216">link</a></p>
+<p class="cav"><b>Caveat.</b> Authorship of the Tao Te Ching is traditional, not certain.</p></article><article class="tid"><header><span class="tid-id">PH003</span><span class="tid-fig">Laozi · Daoist</span><span class="pill manual">manual</span></header>
+<p class="claim">Knowing others is clever; knowing yourself is wiser.</p>
+<blockquote>“He who knows other men is discerning; he who knows himself is intelligent.”</blockquote>
+<p class="src">The Tao Teh King (Project Gutenberg #216) · chapter 33 · tr. James Legge · <a href="https://www.gutenberg.org/ebooks/216">link</a></p>
+<p class="cav"><b>Caveat.</b> None noted.</p></article><article class="tid"><header><span class="tid-id">PH004</span><span class="tid-fig">Confucius · Confucian</span><span class="pill manual">manual</span></header>
+<p class="claim">A student said he did not want to do to others what he wouldn&#x27;t want done to him. Confucius told him he hadn&#x27;t got there yet.</p>
+<blockquote>“What I do not wish men to do to me, I also wish not to do to men.&quot; The Master said, &quot;Ts&#x27;ze, you have not attained to that.”</blockquote>
+<p class="src">The Analects (Project Gutenberg #3330) · Book V, chapter XI · tr. James Legge · <a href="https://www.gutenberg.org/ebooks/3330">link</a></p>
+<p class="cav"><b>Caveat.</b> The better-known version is Analects XV.23; it was beyond the part of the Gutenberg file we could read, so check it before using.</p></article></div>
+</section>
+
+<section>
+  <h2>Books to read, then review</h2>
+  <p>Seven are free (public domain), eight modern. The draft reviews in the repo have <b>[MY TAKE]</b> gaps, and none goes out before you've read the book.</p>
+  <div class="tablewrap"><table>
+    <thead><tr><th class="num">#</th><th>Book</th><th>Tradition</th><th>Cost</th><th>Why it fits</th></tr></thead>
+    <tbody><tr><td class="num">1</td><td><b>Tao Te Ching (tr. James Legge, 1891)</b><br><span class="muted">Laozi (attributed)</span></td><td>Daoist</td><td>free</td><td>The softest counterpart to the Stoics: water, yielding, not forcing. Gives the page a second voice on control.</td></tr><tr><td class="num">2</td><td><b>The Analects (tr. James Legge)</b><br><span class="muted">Confucius</span></td><td>Confucian</td><td>free</td><td>Character built through relationships and small daily duties, not alone. Perfect for kindness and friendship posts.</td></tr><tr><td class="num">3</td><td><b>The Dhammapada (tr. F. Max Müller, 1881)</b><br><span class="muted">attributed to the Buddha</span></td><td>Buddhist</td><td>free</td><td>423 short verses on the mind, anger and compassion. Short enough to read in a week.</td></tr><tr><td class="num">4</td><td><b>Hayy ibn Yaqzan (tr. Simon Ockley, 1708)</b><br><span class="muted">Ibn Tufayl, al-Andalus, 12th c.</span></td><td>Andalusian philosophy</td><td>free</td><td>A philosophical novel from Moorish Spain: a child grows up alone on an island and reasons his way to wisdom. Links the Moors arc to philosophy.</td></tr><tr><td class="num">5</td><td><b>Letter to Menoeceus (tr. R. D. Hicks, 1925)</b><br><span class="muted">Epicurus</span></td><td>Epicurean</td><td>free</td><td>The &quot;other&quot; Hellenistic school. Pleasure as calm, friends and simple food. Great Stoic-vs-Epicurean carousel.</td></tr><tr><td class="num">6</td><td><b>Narrative of the Life of Frederick Douglass (1845)</b><br><span class="muted">Frederick Douglass</span></td><td>Free Minds, courage</td><td>free</td><td>Learning to read as an act of freedom. Ties to the Free Minds pillar.</td></tr><tr><td class="num">7</td><td><b>Mutual Aid (1902)</b><br><span class="muted">Peter Kropotkin</span></td><td>Altruism in nature</td><td>free</td><td>A naturalist&#x27;s answer to &quot;survival of the fittest&quot;: cooperation runs through animal and human life. Note: the author was a political anarchist; review the science and history, not the politics.</td></tr><tr><td class="num">8</td><td><b>Man&#x27;s Search for Meaning (1946)</b><br><span class="muted">Viktor Frankl</span></td><td>Existential psychology</td><td>©</td><td>Already cited on the page (19 Nov). Meaning as something you choose even in the worst conditions.</td></tr><tr><td class="num">9</td><td><b>No Future Without Forgiveness (1999)</b><br><span class="muted">Desmond Tutu</span></td><td>Ubuntu, forgiveness</td><td>©</td><td>Explains ubuntu (&quot;a person is a person through other persons&quot;) from inside South Africa&#x27;s Truth and Reconciliation Commission. Pairs with the 4 Nov forgiveness posts.</td></tr><tr><td class="num">10</td><td><b>Humankind (2019/2020)</b><br><span class="muted">Rutger Bregman</span></td><td>Altruism, history</td><td>©</td><td>A historian&#x27;s case that most people are decent most of the time. The altruism pillar&#x27;s anchor book.</td></tr><tr><td class="num">11</td><td><b>Awe (2023)</b><br><span class="muted">Dacher Keltner</span></td><td>Psychology of wonder</td><td>©</td><td>Awe is the emotion research links to sharing and generosity. Feeds the appreciation posts.</td></tr><tr><td class="num">12</td><td><b>Behave (2017)</b><br><span class="muted">Robert Sapolsky</span></td><td>Neuroscience</td><td>©</td><td>Why we do what we do, from a second before an act back to evolution. Long, so a 3-part reel series.</td></tr><tr><td class="num">13</td><td><b>Exercised (2020)</b><br><span class="muted">Daniel Lieberman</span></td><td>Fitness, evolution</td><td>©</td><td>A Harvard evolutionary biologist on why we never evolved to exercise and how to do it anyway. Fitness without body-image talk.</td></tr><tr><td class="num">14</td><td><b>The Joy of Movement (2019)</b><br><span class="muted">Kelly McGonigal</span></td><td>Fitness and connection</td><td>©</td><td>Movement as a route to hope and belonging. Bridges health and kindness.</td></tr><tr><td class="num">15</td><td><b>The House of Wisdom (2010; UK title Pathfinders)</b><br><span class="muted">Jim Al-Khalili</span></td><td>History of science, al-Andalus</td><td>©</td><td>The Arabic-language scientific age, including Córdoba. Context for the historical-remedy posts.</td></tr></tbody></table></div>
+</section>
+
+<section>
+  <h2>Does n8n earn a place here?</h2>
+  <p>Only for one job: a weekly feed of new papers and archive posts (OpenAlex, PubMed, the HMML and Met blogs) dropped into a sheet for a thread to turn into tidbits. That needs the self-hosting you haven't approved yet (about €5 a month). Everything else is already covered for free: the research-search GitHub Action in the library PR, the quote checker, and the Claude routines for writing and scheduling. Metricool's API is Advanced-plan only either way. No new spend is needed for this stream.</p>
+</section>
+
+<section>
+  <h2>The ChatGPT prompt</h2>
+  <p>Turn on Deep Research first and paste your captions where marked.</p>
+  <button type="button" id="copy-prompt">Copy prompt</button>
+  <pre id="prompt">You are a content strategist and research assistant for an anonymous Instagram page about psychology and philosophy. It started from Stoicism (&quot;Stoicism for people who feel things&quot;) and is widening into other philosophical traditions. Tone: calm, warm, curious, never preachy. No red-pill, &quot;young men&quot;, alpha or hustle framing. No faces in visuals.
+
+PART 1: AUDIT
+Below are my recent captions and reel scripts. I feel almost everything is about struggling and the tone is negative.
+1. Tag every post by theme (e.g. hurt/conflict, discipline, appreciation, curiosity/history, psychology), by tone (negative, neutral, uplifting) and by philosophical tradition.
+2. Give me the percentages and say plainly whether the pattern is real, and how much of the page is Stoic only.
+3. Check two rules I already set: at least 2 in 3 posts start from appreciation or curiosity, and at most 4 hurt/conflict posts a week. Say where I break them.
+
+[PASTE CAPTIONS HERE, one per line with the date]
+
+PART 2: NEW THEME MIX
+The overall frame is psychology and philosophy. Propose a weekly theme mix (as percentages and a 7-day example) that adds:
+- Other schools of philosophy beyond Stoicism, for example: Confucian and Daoist (Analects, Mencius, Zhuangzi, Tao Te Ching), Buddhist (Dhammapada), Ubuntu and other African thought, Islamic and Andalusian philosophy (Ibn Rushd, Ibn Tufayl, Maimonides), Epicurean, Aristotelian virtue ethics, existentialist (Kierkegaard, Camus, de Beauvoir), Indigenous philosophies. Show where they agree and disagree with the Stoics.
+- Altruism and good deeds (real historical and modern examples of kindness, generosity, service, and what each tradition says about them)
+- Neuroscience and psychology (what the research actually says about emotion, habits, kindness, resilience)
+- Fitness and general health (sleep, movement, breath, food, framed as self-care, not body image)
+- Lost or forgotten herbal and medical knowledge from: Chinese dynasties (e.g. Shennong Bencao Jing, Li Shizhen&#x27;s Bencao Gangmu), the Mongol Empire (e.g. Yinshan Zhengyao, Hu Sihui 1330), African traditions (e.g. Timbuktu manuscripts, Ebers Papyrus, Ethiopian medical texts), and the Moors of al-Andalus (e.g. al-Zahrawi&#x27;s Kitab al-Tasrif, Ibn al-Baytar)
+Keep some room for struggle content, but make it the minority.
+For each theme give 5 post ideas, each with a hook line under 10 words.
+
+PART 3: BOOKS
+Give me 15 books I can read and recommend on the page, spread across the traditions above plus psychology, neuroscience, kindness, health and history. About half should be public-domain classics, half well-known modern books. For each: author, year, tradition, why it fits this page, and a 120-word review draft with blanks [MY TAKE] for my own reaction, ending with a 1-3 word question. I will only post a review after I&#x27;ve actually read the book.
+
+PART 4: SOURCED FACTS
+Give me 25 short facts I can turn into posts (5 each: philosophy beyond Stoicism, neuroscience/psychology, good deeds in history, fitness/health, historical remedies). For each fact give:
+- the claim in one sentence
+- the exact sentence from the source that supports it
+- the source: author, title, translator, year, page/chapter/section
+- a link (DOI, archive.org, journal page)
+- a caveat line
+
+RULES (strict):
+- Every fact must come from a named primary text or peer-reviewed/academic source. If you can&#x27;t find one, say &quot;not found&quot; instead of guessing.
+- Never invent studies, statistics, quotes or page numbers. Mark anything you are unsure of as UNVERIFIED.
+- Quotes from old texts must be from public-domain translations (e.g. Long, Gummere, Higginson for the Stoics; Legge for Confucius and Laozi; Müller for the Dhammapada) with book and section.
+- Herbal and medical items are history, not advice. Each one ends with: &quot;Historical interest only, not medical advice. Some traditional remedies are toxic.&quot; Never say a remedy works unless a modern clinical review says so, and cite that review.
+- Treat every tradition with respect and accuracy: no exoticising, no &quot;ancient secret&quot; clickbait.
+- Every post idea ends on a question of 1-3 words (e.g. &quot;Who helped you?&quot;).
+- UK English. Output in clear headed sections, with Part 4 as a table I can copy.</pre>
+</section>
+
+<section>
+  <h2>What I need from you</h2>
+  <ul class="owe">
+    <li>🟠 Say yes, change or no to the weekly mix, and pick which of the five 2–8 Nov swaps to make.</li>
+    <li>🟠 Pick your first book from the list.</li>
+    <li>🟠 Choose one new deep-dive arc: Onesimus, Ge Hong to Tu Youyou, the Andalusian doctors, or Timbuktu.</li>
+    <li>🟠 Merge the PR with these files when you're happy.</li>
+  </ul>
+</section>
+
+<footer>Sources: Instagram export 25 Sep–24 Oct, Metricool queue read 25 Oct, reel-first tracker, Substack drafts. Tags are one reader's judgement; the repo has the tagged CSV and a script to recount. Repo folder: moodius-aurelius/strategy/18-tone-rebalance/.</footer>
+</main>
+<script>
+document.getElementById('copy-prompt').addEventListener('click', function(){
+  var b=this, t=document.getElementById('prompt').innerText;
+  navigator.clipboard.writeText(t).then(function(){b.textContent='Copied'}).catch(function(){
+    var r=document.createRange(); r.selectNodeContents(document.getElementById('prompt'));
+    var s=getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent='Selected, press copy';
+  });
+});
+</script>
