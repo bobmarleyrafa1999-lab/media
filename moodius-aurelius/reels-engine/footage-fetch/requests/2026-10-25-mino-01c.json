@@ -1,0 +1,13 @@
+{
+ "note": "Third pass after run 2 timed out: short clips only (180 s max), saves after every clip, 22-minute budget. Tags the 5 Mino reels still need, most needed first.",
+ "per_tag": 2,
+ "budget_min": 22,
+ "tags": {
+  "city-night": ["city night", "night timelapse", "traffic night"],
+  "rain-window": ["rain", "raindrops"],
+  "sky": ["clouds timelapse", "timelapse sky", "night sky"],
+  "desk-book": ["book", "pages", "library"],
+  "clock": ["clock", "pendulum", "hourglass"],
+  "blanket-table": ["tea", "wool", "fabric"]
+ }
+}

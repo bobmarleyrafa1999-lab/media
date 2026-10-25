@@ -96,7 +96,7 @@ def usable(c):
     if not (lic.startswith("public domain") or lic.startswith("cc0") or lic.startswith("pd") or
             re.match(r"^cc by [0-9.]+$", lic)):
         return False
-    return (c["w"] or 0) >= 640 and 4 <= (c["duration"] or 0) <= 900
+    return (c["w"] or 0) >= 640 and 4 <= (c["duration"] or 0) <= 180
 
 
 def main():
@@ -110,10 +110,23 @@ def main():
     rows = list(csv.DictReader(open(man_path))) if os.path.exists(man_path) else []
     have = {r["source"] for r in rows}
     log = []
+    deadline = time.time() + req.get("budget_min", 25) * 60  # stop in time for the commit step
+
+    def save():
+        with open(man_path, "w", newline="") as fh:
+            w = csv.DictWriter(fh, fieldnames=["file", "tag", "term", "title", "licence", "author", "page", "source", "desc", "faces_checked"])
+            w.writeheader()
+            w.writerows(rows)
+        open(os.path.join(a.out, "fetch-log.txt"), "a").write("\n".join(log) + "\n")
+        log.clear()
+
     for tag, terms in req["tags"].items():
         got = sum(1 for r in rows if r["tag"] == tag)
         for term in terms:
             if got >= req.get("per_tag", 3):
+                break
+            if time.time() > deadline:
+                log.append(f"time budget reached before {tag}/{term}")
                 break
             try:
                 if req.get("source") == "pexels":
@@ -125,6 +138,7 @@ def main():
                 log.append(f"search {term}: {ex}")
                 continue
             log.append(f"search {term}: {len(cands)} usable")
+            print(log[-1], flush=True)
             for c in cands[:2]:
                 if got >= req.get("per_tag", 3):
                     break
@@ -142,7 +156,7 @@ def main():
                     mp4 = os.path.join(a.out, name + ".mp4")
                     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{start:.1f}", "-i", src, "-t", "8", "-an",
                                     "-vf", "scale=1080:1920:force_original_aspect_ratio=increase,crop=1080:1920,fps=30",
-                                    "-c:v", "libx264", "-crf", "26", "-preset", "slow", "-pix_fmt", "yuv420p", mp4], check=True)
+                                    "-c:v", "libx264", "-crf", "26", "-preset", "medium", "-pix_fmt", "yuv420p", mp4], check=True)
                     sheet = os.path.join(a.out, name + "-sheet.jpg")
                     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", mp4, "-vf",
                                     "fps=0.5,scale=270:480,tile=4x1", "-frames:v", "1", sheet], check=True)
@@ -158,13 +172,11 @@ def main():
                 have.add(c["url"])
                 got += 1
                 log.append(f"  kept {name}: {c['title']} ({c['licence']})")
+                print(log[-1], flush=True)
+                save()
                 time.sleep(4)
-    with open(man_path, "w", newline="") as fh:
-        w = csv.DictWriter(fh, fieldnames=["file", "tag", "term", "title", "licence", "author", "page", "source", "desc", "faces_checked"])
-        w.writeheader()
-        w.writerows(rows)
-    open(os.path.join(a.out, "fetch-log.txt"), "a").write("\n".join(log) + "\n")
     print("\n".join(log))
+    save()
 
 
 if __name__ == "__main__":
