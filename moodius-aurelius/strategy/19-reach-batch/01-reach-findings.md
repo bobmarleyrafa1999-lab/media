@@ -16,7 +16,7 @@ Small account, small numbers: 25 posts, 59 followers. Read every rule below as "
 
 ## Gaps the data can't close
 
-- On 22 Oct the account reached 5,734 people, but the per-post numbers add up to about 700. Instagram's API doesn't credit most of that day to one post (shares into DMs, Explore and profile visits aren't split out), and it reports no follows at all for reels. The Instagram app's own "Top content" view would show it. Optional for Surafel: a screenshot of Professional dashboard → Accounts reached → Top content (last 30 days).
+- On 22 Oct the account reached 5,734 people, but the per-post numbers add up to about 700. Instagram's API doesn't credit most of that day to one post (shares into DMs, Explore and profile visits aren't split out), and it reports no follows at all for reels. The Instagram app's own "Top content" view would show it. Optional for the account owner: a screenshot of Professional dashboard → Accounts reached → Top content (last 30 days).
 - Story reach comes back empty from the API, so stories can't be judged yet.
 
 ## What this batch does with it
