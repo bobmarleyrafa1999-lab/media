@@ -1,0 +1,121 @@
+[
+ {
+  "source": "youtube_search",
+  "target": "Mino Lee instagram [results_month_short]",
+  "ok": true,
+  "detail": "0 results",
+  "at": "2026-10-25T15:22:02+00:00"
+ },
+ {
+  "source": "youtube_search",
+  "target": "Mino Lee content academy [results_month_short]",
+  "ok": true,
+  "detail": "0 results",
+  "at": "2026-10-25T15:22:04+00:00"
+ },
+ {
+  "source": "youtube_search",
+  "target": "minolee.mp4 [results_month_short]",
+  "ok": true,
+  "detail": "0 results",
+  "at": "2026-10-25T15:22:05+00:00"
+ },
+ {
+  "source": "youtube_search",
+  "target": "Mino Lee how to go viral [results_month_short]",
+  "ok": true,
+  "detail": "0 results",
+  "at": "2026-10-25T15:22:07+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "@minolee",
+  "ok": true,
+  "detail": "15 shorts, followers=63700",
+  "at": "2026-10-25T15:22:09+00:00"
+ },
+ {
+  "source": "youtube_videos_tab",
+  "target": "@minolee",
+  "ok": true,
+  "detail": "5 items",
+  "at": "2026-10-25T15:22:10+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCor83tfS0a1a9A_vZ7c1-eg",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-25T15:22:12+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "@MinoLee",
+  "ok": true,
+  "detail": "15 shorts, followers=63700",
+  "at": "2026-10-25T15:22:14+00:00"
+ },
+ {
+  "source": "youtube_videos_tab",
+  "target": "@MinoLee",
+  "ok": true,
+  "detail": "5 items",
+  "at": "2026-10-25T15:22:15+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UCor83tfS0a1a9A_vZ7c1-eg",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-25T15:22:16+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "@minolee.mp4",
+  "ok": false,
+  "detail": "ERROR: [youtube:tab] @minolee.mp4/shorts: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)",
+  "at": "2026-10-25T15:22:18+00:00"
+ },
+ {
+  "source": "youtube_videos_tab",
+  "target": "@minolee.mp4",
+  "ok": false,
+  "detail": "ERROR: [youtube:tab] @minolee.mp4/videos: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)",
+  "at": "2026-10-25T15:22:20+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "@minoleemp4",
+  "ok": false,
+  "detail": "ERROR: [youtube:tab] @minoleemp4/shorts: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)",
+  "at": "2026-10-25T15:22:22+00:00"
+ },
+ {
+  "source": "youtube_videos_tab",
+  "target": "@minoleemp4",
+  "ok": false,
+  "detail": "ERROR: [youtube:tab] @minoleemp4/videos: Unable to download API page: HTTP Error 404: Not Found (caused by <HTTPError 404: Not Found>)",
+  "at": "2026-10-25T15:22:24+00:00"
+ },
+ {
+  "source": "tiktok_user",
+  "target": "minolee.mp4",
+  "ok": true,
+  "detail": "40 videos",
+  "at": "2026-10-25T15:22:28+00:00"
+ },
+ {
+  "source": "tiktok_user",
+  "target": "minolee",
+  "ok": true,
+  "detail": "1 videos",
+  "at": "2026-10-25T15:22:30+00:00"
+ },
+ {
+  "source": "podcasts",
+  "target": "Mino Lee",
+  "ok": true,
+  "detail": "15 episodes",
+  "at": "2026-10-25T15:22:32+00:00"
+ }
+]

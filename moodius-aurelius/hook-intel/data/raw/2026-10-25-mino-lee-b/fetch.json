@@ -1,0 +1,3341 @@
+{
+ "request": {
+  "name": "2026-10-25-mino-lee-b",
+  "note": "Second pass with the confirmed YouTube channel (@mino.mp4, UCnl1-ovhacwVAeuL7lUSDyQ) and TikTok @mino.mp4. Metadata only.",
+  "per_query": 10,
+  "max_channels": 2,
+  "expand_search_channels": false,
+  "youtube_search": [],
+  "youtube_channels": [
+   "UCnl1-ovhacwVAeuL7lUSDyQ",
+   "@mino.mp4"
+  ],
+  "channel_tabs": [
+   "videos",
+   "shorts"
+  ],
+  "tab_n": 120,
+  "tiktok_users": [
+   "mino.mp4"
+  ],
+  "tiktok_per_user": 60,
+  "urls": [
+   "https://www.youtube.com/watch?v=ofwR7fhxCSI"
+  ],
+  "thumbnails": true
+ },
+ "fetched_at": "2026-10-25T15:23:45+00:00",
+ "youtube_search": [],
+ "youtube_channels": [
+  {
+   "ref": "UCnl1-ovhacwVAeuL7lUSDyQ",
+   "channel_id": "UCnl1-ovhacwVAeuL7lUSDyQ",
+   "channel": "Mino Lee",
+   "handle": "@mino.mp4",
+   "followers": 36900,
+   "shorts": [
+    {
+     "id": "d5noN-Ika6I",
+     "title": "We finally did it 🥹",
+     "views": 2800,
+     "duration": null
+    },
+    {
+     "id": "DSZyXTGTniw",
+     "title": "33 DAYS TIL LAUNCH",
+     "views": 4300,
+     "duration": null
+    },
+    {
+     "id": "Us4Crzb3dGs",
+     "title": "35 days until launch",
+     "views": 4700,
+     "duration": null
+    },
+    {
+     "id": "Dy5KvZzUgf4",
+     "title": "still trying to find more meaning in what i do trying not to let work consume me trying to be more",
+     "views": 2900,
+     "duration": null
+    },
+    {
+     "id": "5-T13MbIJuE",
+     "title": "how to make AI script videos that are authentically you 👇 1",
+     "views": 2500,
+     "duration": null
+    },
+    {
+     "id": "dl7OwZ11_y0",
+     "title": "Making my 5 year-old dream come true",
+     "views": 3900,
+     "duration": null
+    },
+    {
+     "id": "MEej1A1wZmM",
+     "title": "Youtube: Mino Lee",
+     "views": 2100,
+     "duration": null
+    },
+    {
+     "id": "41k5NkFlCoE",
+     "title": "Ghost AI releases in 2 days.",
+     "views": 1300,
+     "duration": null
+    },
+    {
+     "id": "QCpvQpe_EIw",
+     "title": "Ghost AI launching march 1",
+     "views": 3400,
+     "duration": null
+    },
+    {
+     "id": "xaiIw86ytYA",
+     "title": "YT: Mino Lee",
+     "views": 1200,
+     "duration": null
+    },
+    {
+     "id": "iiRxxn9uHZc",
+     "title": "WE HIT $50K A MONTH!!!! WOOP WOOP",
+     "views": 2500,
+     "duration": null
+    },
+    {
+     "id": "4g48FqoaHfA",
+     "title": "day 304 of road to $100k a month",
+     "views": 1900,
+     "duration": null
+    },
+    {
+     "id": "SXahlo3vBJs",
+     "title": "working longer JUST to work longer usually leads to a whole lotta NOTHIN that gets done ☠️ I have",
+     "views": 1800,
+     "duration": null
+    },
+    {
+     "id": "L1t0v19I3is",
+     "title": "day 313 of road to $100k a month",
+     "views": 1000,
+     "duration": null
+    },
+    {
+     "id": "6kAcvu2w_1E",
+     "title": "Winter arc starts now 😭😭🥺",
+     "views": 8300,
+     "duration": null
+    },
+    {
+     "id": "WOyaw-Ilbhs",
+     "title": "WE’RE SO BACK",
+     "views": 2200,
+     "duration": null
+    },
+    {
+     "id": "4MlCrngYJlM",
+     "title": "day 320 of road to $100k a month",
+     "views": 785,
+     "duration": null
+    },
+    {
+     "id": "bkNbgW87B8w",
+     "title": "No growth in comfort",
+     "views": 1700,
+     "duration": null
+    },
+    {
+     "id": "IP9J4hdLVVw",
+     "title": "i gotta start cookin bruh",
+     "views": 1400,
+     "duration": null
+    },
+    {
+     "id": "0OrE-XxPlO8",
+     "title": "subtle reminder",
+     "views": 2500,
+     "duration": null
+    },
+    {
+     "id": "FPmNuKMts7s",
+     "title": "Day 332 of road to $100k a month",
+     "views": 1100,
+     "duration": null
+    },
+    {
+     "id": "o4P7lnBujbY",
+     "title": "day 340 of road to $100k a month",
+     "views": 1000,
+     "duration": null
+    },
+    {
+     "id": "mRykYlTjpDc",
+     "title": "THIS IS YOUR SIGN.",
+     "views": 899,
+     "duration": null
+    },
+    {
+     "id": "W8XBzZ5N5Oc",
+     "title": "i’ll go first for new years goals: - run a sub 1:30 half marathon - post once a day on tiktok,",
+     "views": 1400,
+     "duration": null
+    },
+    {
+     "id": "N5XlOpwualQ",
+     "title": "Bro did NOT make $35,000 😹",
+     "views": 1300,
+     "duration": null
+    },
+    {
+     "id": "wam7sNdAxMU",
+     "title": "AIRBNB ARC - day 1 of 5",
+     "views": 459,
+     "duration": null
+    },
+    {
+     "id": "ICfK54bhS3s",
+     "title": "road to $100k a month - the finale.",
+     "views": 1900,
+     "duration": null
+    },
+    {
+     "id": "rYIJ-mWfvXw",
+     "title": "the \"you\" method",
+     "views": 1300,
+     "duration": null
+    },
+    {
+     "id": "h0dHCETDGzQ",
+     "title": "the key to selling ANYTHING on TikTok.",
+     "views": 1300,
+     "duration": null
+    },
+    {
+     "id": "FN5uHRqs1vY",
+     "title": "you simply just have to stop giving a f*ck.",
+     "views": 768,
+     "duration": null
+    },
+    {
+     "id": "rsE07r0ISh8",
+     "title": "the ONLY viral video structure you will ever need",
+     "views": 703,
+     "duration": null
+    },
+    {
+     "id": "EszLFY9x654",
+     "title": "how the most viral creators do hooks differently",
+     "views": 2900,
+     "duration": null
+    },
+    {
+     "id": "_fr4A6V0BJk",
+     "title": "the literal easiest $1m opportunity in 2025.",
+     "views": 996,
+     "duration": null
+    },
+    {
+     "id": "CJmsRdY7bUE",
+     "title": "lessons from a $300k/month TikTok genius.",
+     "views": 685,
+     "duration": null
+    },
+    {
+     "id": "kGu5Ti7JtCQ",
+     "title": "stop being a scared little b*tch and START POSTING.",
+     "views": 582,
+     "duration": null
+    },
+    {
+     "id": "B21pruOpW3Q",
+     "title": "the ONLY discipline hack you need to get shredded",
+     "views": 633,
+     "duration": null
+    },
+    {
+     "id": "Q__plYje-w0",
+     "title": "turning my life into a video game day 2",
+     "views": 803,
+     "duration": null
+    },
+    {
+     "id": "0LSujngDvYU",
+     "title": "can I build a $1M video game startup in 99 days? (day 1)",
+     "views": 3400,
+     "duration": null
+    },
+    {
+     "id": "QHNFSLUdGTA",
+     "title": "this scripting structure got me 100M views",
+     "views": 1500,
+     "duration": null
+    },
+    {
+     "id": "8iV0fw2T5Yo",
+     "title": "the marketing GENIUS behind Iman Gadzhi's success",
+     "views": 1200,
+     "duration": null
+    },
+    {
+     "id": "t114DPu_qTU",
+     "title": "stop chasing views and focus on THIS instead.",
+     "views": 588,
+     "duration": null
+    },
+    {
+     "id": "GYdC6y0KNs8",
+     "title": "Hamza is an unethical marketing GENIUS.",
+     "views": 610,
+     "duration": null
+    },
+    {
+     "id": "DdCi93RrZuM",
+     "title": "congratulate yourself for the small wins.",
+     "views": 735,
+     "duration": null
+    },
+    {
+     "id": "aXwgg5Tj5Nc",
+     "title": "this HOOK strategy got me 100M views",
+     "views": 5800,
+     "duration": null
+    },
+    {
+     "id": "xgX8xsy8hlQ",
+     "title": "FULL guide to hitting 100k TikTok followers",
+     "views": 551,
+     "duration": null
+    },
+    {
+     "id": "LKGVyCOr-eU",
+     "title": "how much $ did I make from 900,000 TikTok followers?",
+     "views": 725,
+     "duration": null
+    },
+    {
+     "id": "MEcDXTZNOrk",
+     "title": "how I script videos to ALWAYS get 1M+ views",
+     "views": 1500,
+     "duration": null
+    },
+    {
+     "id": "wbLVJpUO9QM",
+     "title": "the content strategy to exponentially grow your TikTok",
+     "views": 919,
+     "duration": null
+    },
+    {
+     "id": "2wHgwMGekec",
+     "title": "online business (in league of legends terms)",
+     "views": 796,
+     "duration": null
+    },
+    {
+     "id": "L94mCVUIrD0",
+     "title": "3 hacks to get 13X more views on TikTok",
+     "views": 746,
+     "duration": null
+    },
+    {
+     "id": "chIHQ09EpDM",
+     "title": "busting TikTok MYTHS (part 2)",
+     "views": 2700,
+     "duration": null
+    },
+    {
+     "id": "JhBOUaCkltg",
+     "title": "this ONE video script got me 100M views",
+     "views": 1700,
+     "duration": null
+    },
+    {
+     "id": "-N518ohoy8w",
+     "title": "does hyper-editing help your videos go viral?",
+     "views": 2300,
+     "duration": null
+    },
+    {
+     "id": "8G6Qcp5DNIE",
+     "title": "how to kill loneliness as an entrepreneur",
+     "views": 2400,
+     "duration": null
+    },
+    {
+     "id": "vweCNxd-8Eo",
+     "title": "a 3am guide to locking in - day 1",
+     "views": 1500,
+     "duration": null
+    },
+    {
+     "id": "2CjrGTj2db8",
+     "title": "the ONE strategy I used to consistently viral",
+     "views": 5000,
+     "duration": null
+    },
+    {
+     "id": "P3Ye4A_ZTVg",
+     "title": "avoid THIS mistake to go viral on TikTok",
+     "views": 767,
+     "duration": null
+    },
+    {
+     "id": "sAronp0Z3qI",
+     "title": "i regret self-improving.",
+     "views": 761,
+     "duration": null
+    },
+    {
+     "id": "-8bHM7zLJKA",
+     "title": "do #hashtags get you more views?",
+     "views": 1000,
+     "duration": null
+    },
+    {
+     "id": "QagIcROVwxM",
+     "title": "how to NEVER get shadowbanned on TikTok",
+     "views": 17000,
+     "duration": null
+    },
+    {
+     "id": "f9S2hhcya6Q",
+     "title": "How to do the viral TikTok caption strategy",
+     "views": 9300,
+     "duration": null
+    },
+    {
+     "id": "5jvw_i139o0",
+     "title": "Can I build a successful business in 1 DAY?",
+     "views": 13000,
+     "duration": null
+    },
+    {
+     "id": "JWq7PWT3ujI",
+     "title": "Can I ACE a midterm studying 1 HOUR?",
+     "views": 13000,
+     "duration": null
+    },
+    {
+     "id": "eM86iCkcMg8",
+     "title": "Can I ACE a FINAL studying 1 HOUR?",
+     "views": 12000,
+     "duration": null
+    },
+    {
+     "id": "vE2BUybbfR8",
+     "title": "Can I ACE a midterm after studying 1 HOUR?",
+     "views": 13000,
+     "duration": null
+    }
+   ],
+   "videos": [
+    {
+     "id": "jhz9xLYZQ1Y",
+     "title": "Claude edited my video and got me 1M views overnight (full guide)",
+     "views": 2100,
+     "duration": 1873
+    },
+    {
+     "id": "6aFkjn9YjNY",
+     "title": "how i got 300k app downloads (even though i hate posting content)",
+     "views": 1600,
+     "duration": 3172
+    },
+    {
+     "id": "lNKn2QnK0Nc",
+     "title": "i told my korean mom i dropped out, then i made it",
+     "views": 1900,
+     "duration": 1480
+    },
+    {
+     "id": "hlYezd2pcO8",
+     "title": "how i built a $400k/month personal brand in college",
+     "views": 3700,
+     "duration": 1718
+    },
+    {
+     "id": "wVhsaWbG3jo",
+     "title": "if you have a job, start a personal brand",
+     "views": 15000,
+     "duration": 987
+    },
+    {
+     "id": "nLuBbR3eWG8",
+     "title": "how i create viral hooks with ai that get 1M+ views every time (just copy me)",
+     "views": 7400,
+     "duration": 1747
+    },
+    {
+     "id": "CnvZ6BwTmJY",
+     "title": "$131,462/week selling courses at 22 - just copy me",
+     "views": 7600,
+     "duration": 3190
+    },
+    {
+     "id": "rK7Mnky772M",
+     "title": "how I became a master storyteller (copy me)",
+     "views": 8500,
+     "duration": 3104
+    },
+    {
+     "id": "AW2sKDVs3u0",
+     "title": "how i run a $200k/mo business at 22 (day in my life in NYC)",
+     "views": 2800,
+     "duration": 1654
+    },
+    {
+     "id": "cACHSsjOyGA",
+     "title": "i made $100k in a month and completely lost my motivation",
+     "views": 7400,
+     "duration": 810
+    },
+    {
+     "id": "Mhm5Qxk6Y-o",
+     "title": "\"become the niche\" is terrible advice (how to actually find your niche)",
+     "views": 3700,
+     "duration": 2711
+    },
+    {
+     "id": "seJAvDMzXgg",
+     "title": "the only 2 hooks you need to hit 100k followers",
+     "views": 6500,
+     "duration": 1696
+    },
+    {
+     "id": "BLnxJvVQLQ8",
+     "title": "how to go from 400 views to 1M (full process)",
+     "views": 9200,
+     "duration": 2083
+    },
+    {
+     "id": "hn6ASXoVRoA",
+     "title": "i got everything i wanted. i also lost my friends.",
+     "views": 5600,
+     "duration": 1412
+    },
+    {
+     "id": "f9XR-b2FFeg",
+     "title": "script, film, edit, & post a viral reel with me (full process)",
+     "views": 3500,
+     "duration": 14223
+    },
+    {
+     "id": "t3OGy0oMFZc",
+     "title": "10,000 hours of studying the best viral hooks in 51 minutes (just copy me)",
+     "views": 11000,
+     "duration": 3117
+    },
+    {
+     "id": "sRIT5fMPIqY",
+     "title": "how i make money from instagram in 2026 (full funnel breakdown)",
+     "views": 10000,
+     "duration": 3569
+    },
+    {
+     "id": "ApvIx02QIDU",
+     "title": "i created 7 reels in 2 hours (full process)",
+     "views": 8600,
+     "duration": 8402
+    },
+    {
+     "id": "aF-L1ra5mnc",
+     "title": "how i made a fulltime income from instagram with 0 followers",
+     "views": 5700,
+     "duration": 2924
+    },
+    {
+     "id": "1qJhGEE1I9Y",
+     "title": "roasting my students' reels until they actually go viral",
+     "views": 2500,
+     "duration": 3392
+    },
+    {
+     "id": "uESxPOKKzmo",
+     "title": "i studied 500 hooks, here’s how to ACTUALLY go viral",
+     "views": 8700,
+     "duration": 2440
+    },
+    {
+     "id": "EgbgmZ6cjWQ",
+     "title": "How to build a personal brand with a fulltime job (tutorial)",
+     "views": 3500,
+     "duration": 3454
+    },
+    {
+     "id": "4IHpOlWhdS0",
+     "title": "my secret framework to help you hit 1M views fast (FULL COURSE)",
+     "views": 3900,
+     "duration": 2746
+    },
+    {
+     "id": "4mWCrtGnXlY",
+     "title": "i made $1.2M from social media - here's which platform will make you rich",
+     "views": 5800,
+     "duration": 2047
+    },
+    {
+     "id": "pogEJc41qq4",
+     "title": "I told 9 creators why their reels get no views (and fixed it)",
+     "views": 3600,
+     "duration": 2911
+    },
+    {
+     "id": "GyD_71zxYZg",
+     "title": "can i make a viral Instagram Reel in 1 HOUR? (full tutorial)",
+     "views": 15000,
+     "duration": 1881
+    },
+    {
+     "id": "ZYVER3lFwzc",
+     "title": "how i built a $1M business with instagram reels (complete roadmap)",
+     "views": 7300,
+     "duration": 3004
+    },
+    {
+     "id": "kVisNx5C3zA",
+     "title": "watch me make a viral reel in 1 hour (full course)",
+     "views": 24000,
+     "duration": 3588
+    },
+    {
+     "id": "Y32V8XBZqWc",
+     "title": "if i were to start a personal brand in 2026, here's what i'd do",
+     "views": 11000,
+     "duration": 1734
+    },
+    {
+     "id": "sMzEYw7mdTI",
+     "title": "what is up with these ABGs promoting study apps on Reels?",
+     "views": 1800,
+     "duration": 560
+    },
+    {
+     "id": "FLy2dzVyzZM",
+     "title": "Create a Viral Reel with me in 39 minutes (LIVE WALKTHROUGH)",
+     "views": 18000,
+     "duration": 2384
+    },
+    {
+     "id": "mE-n4AomcyQ",
+     "title": "3 traits of the top 1% creators who become millionaires",
+     "views": 2700,
+     "duration": 614
+    },
+    {
+     "id": "hHGkj0wPWCM",
+     "title": "Content Games | Official Trailer",
+     "views": 1200,
+     "duration": 174
+    },
+    {
+     "id": "7YEo1myKG_E",
+     "title": "do NOT \"become the niche.\"",
+     "views": 5800,
+     "duration": 474
+    },
+    {
+     "id": "a7FF6ybra5k",
+     "title": "I made $26k in 2 hours, and it made me relapse to my biggest addiction",
+     "views": 3500,
+     "duration": 943
+    },
+    {
+     "id": "_Ea13Cb6t3k",
+     "title": "i mastered viewer psychology, and i got 100k followers in 30 days",
+     "views": 6100,
+     "duration": 719
+    },
+    {
+     "id": "BIQcYY3XxjA",
+     "title": "copy this video style, it'll blow up your personal brand",
+     "views": 14000,
+     "duration": 1590
+    },
+    {
+     "id": "thaH6-R7uTY",
+     "title": "how i built a 450k follower personal brand (working 10 hours a week)",
+     "views": 5300,
+     "duration": 1689
+    },
+    {
+     "id": "GsqW7DYLE-M",
+     "title": "i cracked instagram's algorithm and grew 400k followers in 2 years",
+     "views": 9400,
+     "duration": 1153
+    },
+    {
+     "id": "f7eIST__x-o",
+     "title": "how i grew 100k followers in 128 days without getting lucky (copy me)",
+     "views": 9800,
+     "duration": 1373
+    },
+    {
+     "id": "nMKoB8BE5LQ",
+     "title": "i took a stranger from 0 to $10k a month in 90 days to prove it’s not luck",
+     "views": 3100,
+     "duration": 3275
+    },
+    {
+     "id": "EDeSc_ypzF8",
+     "title": "pov: u documented every day from dropping out to $100k/month",
+     "views": 3100,
+     "duration": 987
+    },
+    {
+     "id": "kcHLmfSeN00",
+     "title": "how i made $101k last month (just copy my funnel)",
+     "views": 3300,
+     "duration": 2201
+    },
+    {
+     "id": "smnjliA7mZk",
+     "title": "how i use AI to create hooks that get 1M+ views every time",
+     "views": 15000,
+     "duration": 751
+    },
+    {
+     "id": "AA1LoZwW_2Y",
+     "title": "FULL COURSE - how to start your personal brand (copy these 6 videos)",
+     "views": 59000,
+     "duration": 11638
+    },
+    {
+     "id": "npO_5O0fRrc",
+     "title": "laziest way to make $10k/mo on instagram in 2025",
+     "views": 4400,
+     "duration": 1712
+    },
+    {
+     "id": "1zcePelGWjY",
+     "title": "how i grew 360k followers in 20 months (copy these 4 steps)",
+     "views": 8700,
+     "duration": 592
+    },
+    {
+     "id": "0R7IgD6cB0w",
+     "title": "my honest advice if you wanna start a personal brand in 2025",
+     "views": 7200,
+     "duration": 2076
+    },
+    {
+     "id": "SVikuuB2vkU",
+     "title": "how i create hooks that get 1M+ views every time (just copy me)",
+     "views": 130000,
+     "duration": 2414
+    },
+    {
+     "id": "WgLJ7MxohcY",
+     "title": "This 19/yo STUDENT makes $152k/mo from Instagram stories",
+     "views": 4600,
+     "duration": 4141
+    },
+    {
+     "id": "bpR1ePAYuI0",
+     "title": "how i script videos to get 1M+ views every time (just copy me)",
+     "views": 36000,
+     "duration": 1453
+    },
+    {
+     "id": "LBgajvWeG7E",
+     "title": "how i made $491k last year selling a LEGIT online course",
+     "views": 6600,
+     "duration": 1145
+    },
+    {
+     "id": "zvDlj5k811E",
+     "title": "“i wanna post but i’m scared of being judged.”",
+     "views": 6200,
+     "duration": 414
+    },
+    {
+     "id": "sEd4fK8YKh8",
+     "title": "this video flopped but makes me $1,243 every day",
+     "views": 5300,
+     "duration": 725
+    },
+    {
+     "id": "ffJJ7t43o3U",
+     "title": "brutal life lessons after making $100K/month at 21",
+     "views": 3400,
+     "duration": 1726
+    },
+    {
+     "id": "UG1wZloyrkM",
+     "title": "the content academy NYC meetup",
+     "views": 1400,
+     "duration": 1509
+    },
+    {
+     "id": "lxgNhM3seo0",
+     "title": "he grew 29K followers in 4 days to prove it's not luck.",
+     "views": 6000,
+     "duration": 1112
+    },
+    {
+     "id": "7EHqhKXjzzs",
+     "title": "how i grew 200K followers in 1 year (working 90 minutes a day)",
+     "views": 148000,
+     "duration": 1869
+    },
+    {
+     "id": "fpM37RaTzs0",
+     "title": "i abused THIS hack to grow 200k followers in 1 year",
+     "views": 6000,
+     "duration": 633
+    },
+    {
+     "id": "vC4YfSTX67k",
+     "title": "i will make $1 million in 2025.",
+     "views": 5900,
+     "duration": 904
+    },
+    {
+     "id": "YsvD35QNmW4",
+     "title": "your personal brand will not grow if you think logically.",
+     "views": 11000,
+     "duration": 442
+    },
+    {
+     "id": "yvgJQN8bqlQ",
+     "title": "i’m 21 and i made $26,551 today. this is my live reaction.",
+     "views": 3100,
+     "duration": 238
+    },
+    {
+     "id": "r2rq6tK4XaE",
+     "title": "the 3 levels of online business",
+     "views": 5100,
+     "duration": 993
+    },
+    {
+     "id": "PpEGXpYPO_M",
+     "title": "how online business made me a better boyfriend",
+     "views": 1900,
+     "duration": 191
+    },
+    {
+     "id": "Bz0hnMSu61s",
+     "title": "is it possible to sell 13 high-ticket clients in 6 hours?",
+     "views": 2500,
+     "duration": 325
+    },
+    {
+     "id": "B7EK_pI3lFE",
+     "title": "watch me take 8 high-ticket sales calls in 6 hours",
+     "views": 6600,
+     "duration": 252
+    },
+    {
+     "id": "w2CnMEAiEJc",
+     "title": "i need to make $30,000 in 3 days or my business will go bankrupt.",
+     "views": 3200,
+     "duration": 392
+    },
+    {
+     "id": "euhYC_jXIQc",
+     "title": "pov: you dropped out to be a full-time content creator in NYC",
+     "views": 1800,
+     "duration": 408
+    },
+    {
+     "id": "QuaY4i0RD5I",
+     "title": "a day in the life of a 21 y/o 6-figure entrepreneur in NYC",
+     "views": 2700,
+     "duration": 1108
+    },
+    {
+     "id": "uwamu7FGm_g",
+     "title": "i posted every day for 150 days and it changed my life.",
+     "views": 4700,
+     "duration": 638
+    },
+    {
+     "id": "ttLzDiyQ53Q",
+     "title": "the benefit of being an unemployed college dropout",
+     "views": 3900,
+     "duration": 291
+    },
+    {
+     "id": "WBQajZfguUQ",
+     "title": "i make $240K/year working 2 hours a week: how passive income works",
+     "views": 4000,
+     "duration": 483
+    },
+    {
+     "id": "r9BLAnKDqlI",
+     "title": "i quit league of legends and it changed my life.",
+     "views": 6800,
+     "duration": 513
+    },
+    {
+     "id": "ZXK-k1w7tLs",
+     "title": "how i built a $45,000/mo course business WITHOUT scamming",
+     "views": 3100,
+     "duration": 490
+    },
+    {
+     "id": "kszroguIEMI",
+     "title": "day in the life of a $45,000/mo TikTok influencer | day 5",
+     "views": 2800,
+     "duration": 634
+    },
+    {
+     "id": "KzqLsJU3dsw",
+     "title": "why I gave up the 'college experience' | road to $100k/mo day 4",
+     "views": 2100,
+     "duration": 535
+    },
+    {
+     "id": "s2BRJ-floUs",
+     "title": "road to $100k a month: day 3",
+     "views": 1700,
+     "duration": 227
+    },
+    {
+     "id": "MOocZANGSFU",
+     "title": "why I never leave my apartment in NYC: road to $100k/month day 2",
+     "views": 6700,
+     "duration": 578
+    },
+    {
+     "id": "ayK9AUKMneg",
+     "title": "$30,000 in 3 days: road to $100k/month day 1",
+     "views": 6900,
+     "duration": 558
+    },
+    {
+     "id": "YVbRtsZzyTM",
+     "title": "give me 5 minutes, and i'll improve your content skills by 91%...",
+     "views": 4300,
+     "duration": 309
+    },
+    {
+     "id": "Qwv0T4D-x1s",
+     "title": "how to grow an audience in 2025 - the 3 levels",
+     "views": 18000,
+     "duration": 761
+    },
+    {
+     "id": "y1KnpDTsgKo",
+     "title": "the instagram follower formula",
+     "views": 2700,
+     "duration": 411
+    },
+    {
+     "id": "vQuwxkXdHGY",
+     "title": "why self-improvement ruined my life.",
+     "views": 3700,
+     "duration": 490
+    },
+    {
+     "id": "CV5-X_oh3yw",
+     "title": "the 3 things i gave up to make $10,000/month in college.",
+     "views": 1900,
+     "duration": 545
+    },
+    {
+     "id": "sFklszoItnI",
+     "title": "how i grew an instagram business from $0 to $20k/month",
+     "views": 1400,
+     "duration": 355
+    },
+    {
+     "id": "TdYEEGGrlQY",
+     "title": "9 minutes of BRUTALLY honest social media advice",
+     "views": 2400,
+     "duration": 568
+    },
+    {
+     "id": "tb-rQj1roik",
+     "title": "this tiktok strat got me over 200M views",
+     "views": 1000,
+     "duration": 563
+    },
+    {
+     "id": "Sr8jkpwN57o",
+     "title": "do it tired and bloated.",
+     "views": 1300,
+     "duration": 385
+    },
+    {
+     "id": "ycOBfx5nNf4",
+     "title": "this video will kill your anxiety for 3 hours",
+     "views": 2300,
+     "duration": 369
+    },
+    {
+     "id": "YbmtOXxoRwA",
+     "title": "start creating content NOW in college.",
+     "views": 3700,
+     "duration": 334
+    },
+    {
+     "id": "L1wms2menbg",
+     "title": "boring person’s guide to viral creativity",
+     "views": 1200,
+     "duration": 678
+    },
+    {
+     "id": "Y69lg5FXCWM",
+     "title": "how to ACTUALLY blow up ur business on social media",
+     "views": 4700,
+     "duration": 883
+    },
+    {
+     "id": "UohjAS_K314",
+     "title": "this is your sign to go all in.",
+     "views": 1300,
+     "duration": 677
+    },
+    {
+     "id": "AVZLRmiWpug",
+     "title": "“talent” is bullsh*t",
+     "views": 2700,
+     "duration": 373
+    },
+    {
+     "id": "e8XQcnx7Fp4",
+     "title": "“it’s not that deep bro.”",
+     "views": 3800,
+     "duration": 458
+    },
+    {
+     "id": "C0VFMwK8D3Y",
+     "title": "the reality of making money as a content creator",
+     "views": 1400,
+     "duration": 835
+    },
+    {
+     "id": "5d7HfcbE2mQ",
+     "title": "it’s cringe until it works",
+     "views": 4100,
+     "duration": 1045
+    },
+    {
+     "id": "h3BepSXrIhE",
+     "title": "i tried bowling a PERFECT GAME in 7 days",
+     "views": 36000,
+     "duration": 688
+    }
+   ],
+   "rss": [
+    {
+     "id": "jhz9xLYZQ1Y",
+     "title": "Claude edited my video and got me 1M views overnight (full guide)",
+     "url": "https://www.youtube.com/watch?v=jhz9xLYZQ1Y",
+     "is_short": false,
+     "published": "2026-10-22T14:01:58+00:00",
+     "views": 2118,
+     "rating_count": 55,
+     "description": "👉 Get my exact Claude editing setup, installed for you (Mino AI Frontier):\nhttps://contentacademy.io/frontier?el=yt10-22"
+    },
+    {
+     "id": "6aFkjn9YjNY",
+     "title": "how i got 300k app downloads (even though i hate posting content)",
+     "url": "https://www.youtube.com/watch?v=6aFkjn9YjNY",
+     "is_short": false,
+     "published": "2026-10-19T16:00:33+00:00",
+     "views": 1644,
+     "rating_count": 23,
+     "description": "👉 Watch this next: my full 3+ hour course on how to start your personal brand from scratch today: https://www.youtube.com/watch?v=AA1LoZwW_2Y\n\n\nMyle's Instagram:\nhttps://www.instagram.com/myles.slayton/"
+    },
+    {
+     "id": "lNKn2QnK0Nc",
+     "title": "i'm 22. if you're in college, watch this",
+     "url": "https://www.youtube.com/watch?v=lNKn2QnK0Nc",
+     "is_short": false,
+     "published": "2026-10-17T01:53:38+00:00",
+     "views": 1991,
+     "rating_count": 41,
+     "description": "if you found this video helpful and want direct 1:1 coaching,\napply to join my community here👇\nhttps://contentacademy.io?el=yt10-16"
+    },
+    {
+     "id": "ZyenAQ8rocI",
+     "title": "Mino Lee Live Stream",
+     "url": "https://www.youtube.com/watch?v=ZyenAQ8rocI",
+     "is_short": false,
+     "published": "2026-10-16T18:30:15+00:00",
+     "views": 0,
+     "rating_count": 0,
+     "description": ""
+    },
+    {
+     "id": "hlYezd2pcO8",
+     "title": "how i built a $400k/month personal brand in college",
+     "url": "https://www.youtube.com/watch?v=hlYezd2pcO8",
+     "is_short": false,
+     "published": "2026-10-07T21:45:03+00:00",
+     "views": 3753,
+     "rating_count": 77,
+     "description": "Your complete guide to building a personal brand from scratch:\nhttps://youtu.be/7EHqhKXjzzs\n\n0:00 Introduction to the experiment\n1:00 Overcoming personal roadblocks\n6:00 Humanizing the growth process\n12:00 Tactical gear and setup\n15:33 Content formats and strategy\n20:33 The 90-day growth roadmap\n28:14 Closing and next steps"
+    },
+    {
+     "id": "wVhsaWbG3jo",
+     "title": "if you have a job, start a personal brand",
+     "url": "https://www.youtube.com/watch?v=wVhsaWbG3jo",
+     "is_short": false,
+     "published": "2026-09-30T02:15:14+00:00",
+     "views": 15092,
+     "rating_count": 239,
+     "description": "if you found this video helpful and want direct 1:1 coaching,\napply to join my community here👇\nhttps://start.contentacademy.io?el=yt9-29"
+    },
+    {
+     "id": "nLuBbR3eWG8",
+     "title": "how i create viral hooks with ai that get 1M+ views every time (just copy me)",
+     "url": "https://www.youtube.com/watch?v=nLuBbR3eWG8",
+     "is_short": false,
+     "published": "2026-09-04T18:00:15+00:00",
+     "views": 7467,
+     "rating_count": 103,
+     "description": "Script viral videos with Mino AI (trained on 1,000+ viral videos)\nhttps://contenthooks.ai?el=yt9-04\n\nif you found this training and want direct 1:1 coaching, apply to join my community here👇\nhttps://start.contentacademy.io?el=yt9-04\n\n0:00 What makes a good hook?\n3:01 What is Mino AI?\n4:42 The Viral Hook Formula\n13:36 How to write viral hooks with Mino AI\n18:19 How I got 3M views with Mino AI"
+    },
+    {
+     "id": "CnvZ6BwTmJY",
+     "title": "$131,462/week selling courses at 22 - just copy me",
+     "url": "https://www.youtube.com/watch?v=CnvZ6BwTmJY",
+     "is_short": false,
+     "published": "2026-08-29T15:04:48+00:00",
+     "views": 7632,
+     "rating_count": 88,
+     "description": "👇join my next FREE CLASS: How to Build a Full-Time Creator Career in just 1 hour/day:\nhttps://start.contentacademy.io/class?el=yt8-28\n\n👉 Watch this next: my full 3+ hour course on how to start your personal brand from scratch today https://www.youtube.com/watch?v=AA1LoZwW_2Y\n\n00:00 Intro\n01:25 How selling info actually works\n04:50 Offer examples you haven't thought of\n08:35 Common fears (imposter syndrome, grifter label)\n14:50 Tier list: startups vs brand deals vs info\n20:00 How to pick one (and stick to it)\n26:20 Q&A"
+    },
+    {
+     "id": "rK7Mnky772M",
+     "title": "how I became a master storyteller (copy me)",
+     "url": "https://www.youtube.com/watch?v=rK7Mnky772M",
+     "is_short": false,
+     "published": "2026-08-20T16:00:17+00:00",
+     "views": 8540,
+     "rating_count": 235,
+     "description": "👇join my next FREE CLASS: How to Build a Full-Time Creator Career in just 1 hour/day:\nhttps://start.contentacademy.io/class?el=yt8-19\n\n👉 Watch this next: my full 3+ hour course on how to start your personal brand from scratch today https://www.youtube.com/watch?v=AA1LoZwW_2Y\n\n00:00 Intro\n00:35 Why storytelling works\n05:53 Rule 1: One clear message\n07:58 Rule 2: The 3-act structure\n22:14 Rule 3: Curiosity loops\n35:15 Rule 4: The sound design\n48:06 Q&A"
+    },
+    {
+     "id": "AW2sKDVs3u0",
+     "title": "how i run a $200k/mo business at 22 (day in my life in NYC)",
+     "url": "https://www.youtube.com/watch?v=AW2sKDVs3u0",
+     "is_short": false,
+     "published": "2026-08-14T16:00:12+00:00",
+     "views": 2840,
+     "rating_count": 85,
+     "description": "👇join my next FREE CLASS: How to Build a Full-Time Creator Career in just 1 hour/day:\nhttps://start.contentacademy.io/class?el=yt8-14\n\n\n0:00 4am wake up, morning routine\n4:04 How much I made last month\n7:08 imposter syndrome as a leader\n16:05 how I am reinvesting into my team\n21:14 The Tom Holland Cindy challenge\n25:11 it doesn't get easier"
+    },
+    {
+     "id": "cACHSsjOyGA",
+     "title": "i made $100k in a month and completely lost my motivation",
+     "url": "https://www.youtube.com/watch?v=cACHSsjOyGA",
+     "is_short": false,
+     "published": "2026-08-05T16:00:19+00:00",
+     "views": 7466,
+     "rating_count": 209,
+     "description": "👇join my next FREE CLASS: How to Build a Full-Time Creator Career in just 1 hour/day:\nhttps://start.contentacademy.io/class?el=yt8-4"
+    },
+    {
+     "id": "Mhm5Qxk6Y-o",
+     "title": "\"become the niche\" is terrible advice (how to actually find your niche)",
+     "url": "https://www.youtube.com/watch?v=Mhm5Qxk6Y-o",
+     "is_short": false,
+     "published": "2026-07-29T19:15:30+00:00",
+     "views": 3715,
+     "rating_count": 123,
+     "description": "👇join my next FREE CLASS: How to Build a Full-Time Creator Career in just 1 hour/day:\nhttps://start.contentacademy.io/class?el=yt7-29\n\n0:00 Why \"find your niche\" advice is broken\n3:04 Part A: Finding your direction\n15:12 Part B: Finding your unique moat\n27:04 Part C: Researching demand & stealing like an artist\n33:09 Part D: Hunting outliers (quantity vs quality)"
+    },
+    {
+     "id": "seJAvDMzXgg",
+     "title": "the only 2 hooks you need to hit 100k followers",
+     "url": "https://www.youtube.com/watch?v=seJAvDMzXgg",
+     "is_short": false,
+     "published": "2026-07-22T20:47:35+00:00",
+     "views": 6511,
+     "rating_count": 298,
+     "description": "👇join my next FREE CLASS: How to Build a Full-Time Creator Career in just 1 hour/day:\nhttps://start.contentacademy.io/class?el=yt7-22\n\n00:00 Intro\n00:54 Hook #1: \"Is It Possible?\" challenge\n17:27 Hook #2: \"Here's how to\" + objection\n27:05 Outro"
+    },
+    {
+     "id": "BLnxJvVQLQ8",
+     "title": "how to go from 400 views to 1M (full process)",
+     "url": "https://www.youtube.com/watch?v=BLnxJvVQLQ8",
+     "is_short": false,
+     "published": "2026-07-16T21:45:37+00:00",
+     "views": 9221,
+     "rating_count": 408,
+     "description": "Script viral videos with Mino AI (trained on 1,000+ viral videos)\nhttps://contenthooks.ai?el=yt7-16\n\nif you found this helpful and want direct coaching, apply to join my community here 👇\nhttps://start.contentacademy.io?el=yt7-16\n\n00:00 Intro\n00:40 Mistake 15\n03:05 Mistake 14\n04:05 Mistake 13\n11:58 Mistake 12\n13:50 Mistake 11\n16:23 Mistake 10\n18:17 Mistake 9\n19:19 Mistake 8\n20:23 Mistake 7\n22:15 Mistake 6\n24:33 Mistake 5\n25:00 Mistake 4\n26:15 Mistake 3\n27:22 Mistake 2\n27:45 Mistake 1\n29:58 FAQ"
+    },
+    {
+     "id": "hn6ASXoVRoA",
+     "title": "i got everything i wanted. i also lost my friends.",
+     "url": "https://www.youtube.com/watch?v=hn6ASXoVRoA",
+     "is_short": false,
+     "published": "2026-07-08T20:30:11+00:00",
+     "views": 5675,
+     "rating_count": 215,
+     "description": "free guide on how to grow 200k followers in just 90 minutes per day:\nhttps://www.youtube.com/watch?v=7EHqhKXjzzs\n\nScript viral videos with the AI trained on 1,000+ viral videos:\nhttps://contenthooks.ai?el=yt\n\n0:00 Why nobody around you gets it\n4:10 Taking a gap year to escape my environment\n9:33 How long the lonely phase actually lasts\n10:34 What kept me sane with zero friends\n11:51 How I found friends who actually push me"
+    }
+   ]
+  },
+  {
+   "ref": "@mino.mp4",
+   "channel_id": "UCnl1-ovhacwVAeuL7lUSDyQ",
+   "channel": "Mino Lee",
+   "handle": "@mino.mp4",
+   "followers": 36900,
+   "shorts": [
+    {
+     "id": "d5noN-Ika6I",
+     "title": "We finally did it 🥹",
+     "views": 2800,
+     "duration": null
+    },
+    {
+     "id": "DSZyXTGTniw",
+     "title": "33 DAYS TIL LAUNCH",
+     "views": 4300,
+     "duration": null
+    },
+    {
+     "id": "Us4Crzb3dGs",
+     "title": "35 days until launch",
+     "views": 4700,
+     "duration": null
+    },
+    {
+     "id": "Dy5KvZzUgf4",
+     "title": "still trying to find more meaning in what i do trying not to let work consume me trying to be more",
+     "views": 2900,
+     "duration": null
+    },
+    {
+     "id": "5-T13MbIJuE",
+     "title": "how to make AI script videos that are authentically you 👇 1",
+     "views": 2500,
+     "duration": null
+    },
+    {
+     "id": "dl7OwZ11_y0",
+     "title": "Making my 5 year-old dream come true",
+     "views": 3900,
+     "duration": null
+    },
+    {
+     "id": "MEej1A1wZmM",
+     "title": "Youtube: Mino Lee",
+     "views": 2100,
+     "duration": null
+    },
+    {
+     "id": "41k5NkFlCoE",
+     "title": "Ghost AI releases in 2 days.",
+     "views": 1300,
+     "duration": null
+    },
+    {
+     "id": "QCpvQpe_EIw",
+     "title": "Ghost AI launching march 1",
+     "views": 3400,
+     "duration": null
+    },
+    {
+     "id": "xaiIw86ytYA",
+     "title": "YT: Mino Lee",
+     "views": 1200,
+     "duration": null
+    },
+    {
+     "id": "iiRxxn9uHZc",
+     "title": "WE HIT $50K A MONTH!!!! WOOP WOOP",
+     "views": 2500,
+     "duration": null
+    },
+    {
+     "id": "4g48FqoaHfA",
+     "title": "day 304 of road to $100k a month",
+     "views": 1900,
+     "duration": null
+    },
+    {
+     "id": "SXahlo3vBJs",
+     "title": "working longer JUST to work longer usually leads to a whole lotta NOTHIN that gets done ☠️ I have",
+     "views": 1800,
+     "duration": null
+    },
+    {
+     "id": "L1t0v19I3is",
+     "title": "day 313 of road to $100k a month",
+     "views": 1000,
+     "duration": null
+    },
+    {
+     "id": "6kAcvu2w_1E",
+     "title": "Winter arc starts now 😭😭🥺",
+     "views": 8300,
+     "duration": null
+    },
+    {
+     "id": "WOyaw-Ilbhs",
+     "title": "WE’RE SO BACK",
+     "views": 2200,
+     "duration": null
+    },
+    {
+     "id": "4MlCrngYJlM",
+     "title": "day 320 of road to $100k a month",
+     "views": 785,
+     "duration": null
+    },
+    {
+     "id": "bkNbgW87B8w",
+     "title": "No growth in comfort",
+     "views": 1700,
+     "duration": null
+    },
+    {
+     "id": "IP9J4hdLVVw",
+     "title": "i gotta start cookin bruh",
+     "views": 1400,
+     "duration": null
+    },
+    {
+     "id": "0OrE-XxPlO8",
+     "title": "subtle reminder",
+     "views": 2500,
+     "duration": null
+    },
+    {
+     "id": "FPmNuKMts7s",
+     "title": "Day 332 of road to $100k a month",
+     "views": 1100,
+     "duration": null
+    },
+    {
+     "id": "o4P7lnBujbY",
+     "title": "day 340 of road to $100k a month",
+     "views": 1000,
+     "duration": null
+    },
+    {
+     "id": "mRykYlTjpDc",
+     "title": "THIS IS YOUR SIGN.",
+     "views": 899,
+     "duration": null
+    },
+    {
+     "id": "W8XBzZ5N5Oc",
+     "title": "i’ll go first for new years goals: - run a sub 1:30 half marathon - post once a day on tiktok,",
+     "views": 1400,
+     "duration": null
+    },
+    {
+     "id": "N5XlOpwualQ",
+     "title": "Bro did NOT make $35,000 😹",
+     "views": 1300,
+     "duration": null
+    },
+    {
+     "id": "wam7sNdAxMU",
+     "title": "AIRBNB ARC - day 1 of 5",
+     "views": 459,
+     "duration": null
+    },
+    {
+     "id": "ICfK54bhS3s",
+     "title": "road to $100k a month - the finale.",
+     "views": 1900,
+     "duration": null
+    },
+    {
+     "id": "rYIJ-mWfvXw",
+     "title": "the \"you\" method",
+     "views": 1300,
+     "duration": null
+    },
+    {
+     "id": "h0dHCETDGzQ",
+     "title": "the key to selling ANYTHING on TikTok.",
+     "views": 1300,
+     "duration": null
+    },
+    {
+     "id": "FN5uHRqs1vY",
+     "title": "you simply just have to stop giving a f*ck.",
+     "views": 768,
+     "duration": null
+    },
+    {
+     "id": "rsE07r0ISh8",
+     "title": "the ONLY viral video structure you will ever need",
+     "views": 703,
+     "duration": null
+    },
+    {
+     "id": "EszLFY9x654",
+     "title": "how the most viral creators do hooks differently",
+     "views": 2900,
+     "duration": null
+    },
+    {
+     "id": "_fr4A6V0BJk",
+     "title": "the literal easiest $1m opportunity in 2025.",
+     "views": 996,
+     "duration": null
+    },
+    {
+     "id": "CJmsRdY7bUE",
+     "title": "lessons from a $300k/month TikTok genius.",
+     "views": 685,
+     "duration": null
+    },
+    {
+     "id": "kGu5Ti7JtCQ",
+     "title": "stop being a scared little b*tch and START POSTING.",
+     "views": 582,
+     "duration": null
+    },
+    {
+     "id": "B21pruOpW3Q",
+     "title": "the ONLY discipline hack you need to get shredded",
+     "views": 633,
+     "duration": null
+    },
+    {
+     "id": "Q__plYje-w0",
+     "title": "turning my life into a video game day 2",
+     "views": 803,
+     "duration": null
+    },
+    {
+     "id": "0LSujngDvYU",
+     "title": "can I build a $1M video game startup in 99 days? (day 1)",
+     "views": 3400,
+     "duration": null
+    },
+    {
+     "id": "QHNFSLUdGTA",
+     "title": "this scripting structure got me 100M views",
+     "views": 1500,
+     "duration": null
+    },
+    {
+     "id": "8iV0fw2T5Yo",
+     "title": "the marketing GENIUS behind Iman Gadzhi's success",
+     "views": 1200,
+     "duration": null
+    },
+    {
+     "id": "t114DPu_qTU",
+     "title": "stop chasing views and focus on THIS instead.",
+     "views": 588,
+     "duration": null
+    },
+    {
+     "id": "GYdC6y0KNs8",
+     "title": "Hamza is an unethical marketing GENIUS.",
+     "views": 610,
+     "duration": null
+    },
+    {
+     "id": "DdCi93RrZuM",
+     "title": "congratulate yourself for the small wins.",
+     "views": 735,
+     "duration": null
+    },
+    {
+     "id": "aXwgg5Tj5Nc",
+     "title": "this HOOK strategy got me 100M views",
+     "views": 5800,
+     "duration": null
+    },
+    {
+     "id": "xgX8xsy8hlQ",
+     "title": "FULL guide to hitting 100k TikTok followers",
+     "views": 551,
+     "duration": null
+    },
+    {
+     "id": "LKGVyCOr-eU",
+     "title": "how much $ did I make from 900,000 TikTok followers?",
+     "views": 725,
+     "duration": null
+    },
+    {
+     "id": "MEcDXTZNOrk",
+     "title": "how I script videos to ALWAYS get 1M+ views",
+     "views": 1500,
+     "duration": null
+    },
+    {
+     "id": "wbLVJpUO9QM",
+     "title": "the content strategy to exponentially grow your TikTok",
+     "views": 919,
+     "duration": null
+    },
+    {
+     "id": "2wHgwMGekec",
+     "title": "online business (in league of legends terms)",
+     "views": 796,
+     "duration": null
+    },
+    {
+     "id": "L94mCVUIrD0",
+     "title": "3 hacks to get 13X more views on TikTok",
+     "views": 746,
+     "duration": null
+    },
+    {
+     "id": "chIHQ09EpDM",
+     "title": "busting TikTok MYTHS (part 2)",
+     "views": 2700,
+     "duration": null
+    },
+    {
+     "id": "JhBOUaCkltg",
+     "title": "this ONE video script got me 100M views",
+     "views": 1700,
+     "duration": null
+    },
+    {
+     "id": "-N518ohoy8w",
+     "title": "does hyper-editing help your videos go viral?",
+     "views": 2300,
+     "duration": null
+    },
+    {
+     "id": "8G6Qcp5DNIE",
+     "title": "how to kill loneliness as an entrepreneur",
+     "views": 2400,
+     "duration": null
+    },
+    {
+     "id": "vweCNxd-8Eo",
+     "title": "a 3am guide to locking in - day 1",
+     "views": 1500,
+     "duration": null
+    },
+    {
+     "id": "2CjrGTj2db8",
+     "title": "the ONE strategy I used to consistently viral",
+     "views": 5000,
+     "duration": null
+    },
+    {
+     "id": "P3Ye4A_ZTVg",
+     "title": "avoid THIS mistake to go viral on TikTok",
+     "views": 767,
+     "duration": null
+    },
+    {
+     "id": "sAronp0Z3qI",
+     "title": "i regret self-improving.",
+     "views": 761,
+     "duration": null
+    },
+    {
+     "id": "-8bHM7zLJKA",
+     "title": "do #hashtags get you more views?",
+     "views": 1000,
+     "duration": null
+    },
+    {
+     "id": "QagIcROVwxM",
+     "title": "how to NEVER get shadowbanned on TikTok",
+     "views": 17000,
+     "duration": null
+    },
+    {
+     "id": "f9S2hhcya6Q",
+     "title": "How to do the viral TikTok caption strategy",
+     "views": 9300,
+     "duration": null
+    },
+    {
+     "id": "5jvw_i139o0",
+     "title": "Can I build a successful business in 1 DAY?",
+     "views": 13000,
+     "duration": null
+    },
+    {
+     "id": "JWq7PWT3ujI",
+     "title": "Can I ACE a midterm studying 1 HOUR?",
+     "views": 13000,
+     "duration": null
+    },
+    {
+     "id": "eM86iCkcMg8",
+     "title": "Can I ACE a FINAL studying 1 HOUR?",
+     "views": 12000,
+     "duration": null
+    },
+    {
+     "id": "vE2BUybbfR8",
+     "title": "Can I ACE a midterm after studying 1 HOUR?",
+     "views": 13000,
+     "duration": null
+    }
+   ],
+   "videos": [
+    {
+     "id": "jhz9xLYZQ1Y",
+     "title": "Claude edited my video and got me 1M views overnight (full guide)",
+     "views": 2100,
+     "duration": 1873
+    },
+    {
+     "id": "6aFkjn9YjNY",
+     "title": "If you have an app, post content",
+     "views": 1600,
+     "duration": 3172
+    },
+    {
+     "id": "lNKn2QnK0Nc",
+     "title": "i told my korean mom i dropped out, then i made it",
+     "views": 1900,
+     "duration": 1480
+    },
+    {
+     "id": "hlYezd2pcO8",
+     "title": "how i built a $400k/month personal brand in college",
+     "views": 3700,
+     "duration": 1718
+    },
+    {
+     "id": "wVhsaWbG3jo",
+     "title": "if you have a job, start a personal brand",
+     "views": 15000,
+     "duration": 987
+    },
+    {
+     "id": "nLuBbR3eWG8",
+     "title": "how i create viral hooks with ai that get 1M+ views every time (just copy me)",
+     "views": 7400,
+     "duration": 1747
+    },
+    {
+     "id": "CnvZ6BwTmJY",
+     "title": "$131,462/week selling courses at 22 - just copy me",
+     "views": 7600,
+     "duration": 3190
+    },
+    {
+     "id": "rK7Mnky772M",
+     "title": "how I became a master storyteller (copy me)",
+     "views": 8500,
+     "duration": 3104
+    },
+    {
+     "id": "AW2sKDVs3u0",
+     "title": "how i run a $200k/mo business at 22 (day in my life in NYC)",
+     "views": 2800,
+     "duration": 1654
+    },
+    {
+     "id": "cACHSsjOyGA",
+     "title": "i made $100k in a month and completely lost my motivation",
+     "views": 7400,
+     "duration": 810
+    },
+    {
+     "id": "Mhm5Qxk6Y-o",
+     "title": "\"become the niche\" is terrible advice (how to actually find your niche)",
+     "views": 3700,
+     "duration": 2711
+    },
+    {
+     "id": "seJAvDMzXgg",
+     "title": "the only 2 hooks you need to hit 100k followers",
+     "views": 6500,
+     "duration": 1696
+    },
+    {
+     "id": "BLnxJvVQLQ8",
+     "title": "how to go from 400 views to 1M (full process)",
+     "views": 9200,
+     "duration": 2083
+    },
+    {
+     "id": "hn6ASXoVRoA",
+     "title": "i got everything i wanted. i also lost my friends.",
+     "views": 5600,
+     "duration": 1412
+    },
+    {
+     "id": "f9XR-b2FFeg",
+     "title": "script, film, edit, & post a viral reel with me (full process)",
+     "views": 3500,
+     "duration": 14223
+    },
+    {
+     "id": "t3OGy0oMFZc",
+     "title": "10,000 hours of studying the best viral hooks in 51 minutes (just copy me)",
+     "views": 11000,
+     "duration": 3117
+    },
+    {
+     "id": "sRIT5fMPIqY",
+     "title": "how i make money from instagram in 2026 (full funnel breakdown)",
+     "views": 10000,
+     "duration": 3569
+    },
+    {
+     "id": "ApvIx02QIDU",
+     "title": "i created 7 reels in 2 hours (full process)",
+     "views": 8600,
+     "duration": 8402
+    },
+    {
+     "id": "aF-L1ra5mnc",
+     "title": "how i made a fulltime income from instagram with 0 followers",
+     "views": 5700,
+     "duration": 2924
+    },
+    {
+     "id": "1qJhGEE1I9Y",
+     "title": "roasting my students' reels until they actually go viral",
+     "views": 2500,
+     "duration": 3392
+    },
+    {
+     "id": "uESxPOKKzmo",
+     "title": "i studied 500 hooks, here’s how to ACTUALLY go viral",
+     "views": 8700,
+     "duration": 2440
+    },
+    {
+     "id": "EgbgmZ6cjWQ",
+     "title": "How to build a personal brand with a fulltime job (tutorial)",
+     "views": 3500,
+     "duration": 3454
+    },
+    {
+     "id": "4IHpOlWhdS0",
+     "title": "my secret framework to help you hit 1M views fast (FULL COURSE)",
+     "views": 3900,
+     "duration": 2746
+    },
+    {
+     "id": "4mWCrtGnXlY",
+     "title": "i made $1.2M from social media - here's which platform will make you rich",
+     "views": 5800,
+     "duration": 2047
+    },
+    {
+     "id": "pogEJc41qq4",
+     "title": "I told 9 creators why their reels get no views (and fixed it)",
+     "views": 3600,
+     "duration": 2911
+    },
+    {
+     "id": "GyD_71zxYZg",
+     "title": "can i make a viral Instagram Reel in 1 HOUR? (full tutorial)",
+     "views": 15000,
+     "duration": 1881
+    },
+    {
+     "id": "ZYVER3lFwzc",
+     "title": "how i built a $1M business with instagram reels (complete roadmap)",
+     "views": 7300,
+     "duration": 3004
+    },
+    {
+     "id": "kVisNx5C3zA",
+     "title": "watch me make a viral reel in 1 hour (full course)",
+     "views": 24000,
+     "duration": 3588
+    },
+    {
+     "id": "Y32V8XBZqWc",
+     "title": "if i were to start a personal brand in 2026, here's what i'd do",
+     "views": 11000,
+     "duration": 1734
+    },
+    {
+     "id": "sMzEYw7mdTI",
+     "title": "what is up with these ABGs promoting study apps on Reels?",
+     "views": 1800,
+     "duration": 560
+    },
+    {
+     "id": "FLy2dzVyzZM",
+     "title": "Create a Viral Reel with me in 39 minutes (LIVE WALKTHROUGH)",
+     "views": 18000,
+     "duration": 2384
+    },
+    {
+     "id": "mE-n4AomcyQ",
+     "title": "3 traits of the top 1% creators who become millionaires",
+     "views": 2700,
+     "duration": 614
+    },
+    {
+     "id": "hHGkj0wPWCM",
+     "title": "Content Games | Official Trailer",
+     "views": 1200,
+     "duration": 174
+    },
+    {
+     "id": "7YEo1myKG_E",
+     "title": "do NOT \"become the niche.\"",
+     "views": 5800,
+     "duration": 474
+    },
+    {
+     "id": "a7FF6ybra5k",
+     "title": "I made $26k in 2 hours, and it made me relapse to my biggest addiction",
+     "views": 3500,
+     "duration": 943
+    },
+    {
+     "id": "_Ea13Cb6t3k",
+     "title": "i mastered viewer psychology, and i got 100k followers in 30 days",
+     "views": 6100,
+     "duration": 719
+    },
+    {
+     "id": "BIQcYY3XxjA",
+     "title": "copy this video style, it'll blow up your personal brand",
+     "views": 14000,
+     "duration": 1590
+    },
+    {
+     "id": "thaH6-R7uTY",
+     "title": "how i built a 450k follower personal brand (working 10 hours a week)",
+     "views": 5300,
+     "duration": 1689
+    },
+    {
+     "id": "GsqW7DYLE-M",
+     "title": "i cracked instagram's algorithm and grew 400k followers in 2 years",
+     "views": 9400,
+     "duration": 1153
+    },
+    {
+     "id": "f7eIST__x-o",
+     "title": "how i grew 100k followers in 128 days without getting lucky (copy me)",
+     "views": 9800,
+     "duration": 1373
+    },
+    {
+     "id": "nMKoB8BE5LQ",
+     "title": "i took a stranger from 0 to $10k a month in 90 days to prove it’s not luck",
+     "views": 3100,
+     "duration": 3275
+    },
+    {
+     "id": "EDeSc_ypzF8",
+     "title": "pov: u documented every day from dropping out to $100k/month",
+     "views": 3100,
+     "duration": 987
+    },
+    {
+     "id": "kcHLmfSeN00",
+     "title": "how i made $101k last month (just copy my funnel)",
+     "views": 3300,
+     "duration": 2201
+    },
+    {
+     "id": "smnjliA7mZk",
+     "title": "how i use AI to create hooks that get 1M+ views every time",
+     "views": 15000,
+     "duration": 751
+    },
+    {
+     "id": "AA1LoZwW_2Y",
+     "title": "FULL COURSE - how to start your personal brand (copy these 6 videos)",
+     "views": 59000,
+     "duration": 11638
+    },
+    {
+     "id": "npO_5O0fRrc",
+     "title": "laziest way to make $10k/mo on instagram in 2025",
+     "views": 4400,
+     "duration": 1712
+    },
+    {
+     "id": "1zcePelGWjY",
+     "title": "how i grew 360k followers in 20 months (copy these 4 steps)",
+     "views": 8700,
+     "duration": 592
+    },
+    {
+     "id": "0R7IgD6cB0w",
+     "title": "my honest advice if you wanna start a personal brand in 2025",
+     "views": 7200,
+     "duration": 2076
+    },
+    {
+     "id": "SVikuuB2vkU",
+     "title": "how i create hooks that get 1M+ views every time (just copy me)",
+     "views": 130000,
+     "duration": 2414
+    },
+    {
+     "id": "WgLJ7MxohcY",
+     "title": "This 19/yo STUDENT makes $152k/mo from Instagram stories",
+     "views": 4600,
+     "duration": 4141
+    },
+    {
+     "id": "bpR1ePAYuI0",
+     "title": "how i script videos to get 1M+ views every time (just copy me)",
+     "views": 36000,
+     "duration": 1453
+    },
+    {
+     "id": "LBgajvWeG7E",
+     "title": "how i made $491k last year selling a LEGIT online course",
+     "views": 6600,
+     "duration": 1145
+    },
+    {
+     "id": "zvDlj5k811E",
+     "title": "“i wanna post but i’m scared of being judged.”",
+     "views": 6200,
+     "duration": 414
+    },
+    {
+     "id": "sEd4fK8YKh8",
+     "title": "this video flopped but makes me $1,243 every day",
+     "views": 5300,
+     "duration": 725
+    },
+    {
+     "id": "ffJJ7t43o3U",
+     "title": "brutal life lessons after making $100K/month at 21",
+     "views": 3400,
+     "duration": 1726
+    },
+    {
+     "id": "UG1wZloyrkM",
+     "title": "the content academy NYC meetup",
+     "views": 1400,
+     "duration": 1509
+    },
+    {
+     "id": "lxgNhM3seo0",
+     "title": "he grew 29K followers in 4 days to prove it's not luck.",
+     "views": 6000,
+     "duration": 1112
+    },
+    {
+     "id": "7EHqhKXjzzs",
+     "title": "how i grew 200K followers in 1 year (working 90 minutes a day)",
+     "views": 148000,
+     "duration": 1869
+    },
+    {
+     "id": "fpM37RaTzs0",
+     "title": "i abused THIS hack to grow 200k followers in 1 year",
+     "views": 6000,
+     "duration": 633
+    },
+    {
+     "id": "vC4YfSTX67k",
+     "title": "i will make $1 million in 2025.",
+     "views": 5900,
+     "duration": 904
+    },
+    {
+     "id": "YsvD35QNmW4",
+     "title": "your personal brand will not grow if you think logically.",
+     "views": 11000,
+     "duration": 442
+    },
+    {
+     "id": "yvgJQN8bqlQ",
+     "title": "i’m 21 and i made $26,551 today. this is my live reaction.",
+     "views": 3100,
+     "duration": 238
+    },
+    {
+     "id": "r2rq6tK4XaE",
+     "title": "the 3 levels of online business",
+     "views": 5100,
+     "duration": 993
+    },
+    {
+     "id": "PpEGXpYPO_M",
+     "title": "how online business made me a better boyfriend",
+     "views": 1900,
+     "duration": 191
+    },
+    {
+     "id": "Bz0hnMSu61s",
+     "title": "is it possible to sell 13 high-ticket clients in 6 hours?",
+     "views": 2500,
+     "duration": 325
+    },
+    {
+     "id": "B7EK_pI3lFE",
+     "title": "watch me take 8 high-ticket sales calls in 6 hours",
+     "views": 6600,
+     "duration": 252
+    },
+    {
+     "id": "w2CnMEAiEJc",
+     "title": "i need to make $30,000 in 3 days or my business will go bankrupt.",
+     "views": 3200,
+     "duration": 392
+    },
+    {
+     "id": "euhYC_jXIQc",
+     "title": "pov: you dropped out to be a full-time content creator in NYC",
+     "views": 1800,
+     "duration": 408
+    },
+    {
+     "id": "QuaY4i0RD5I",
+     "title": "a day in the life of a 21 y/o 6-figure entrepreneur in NYC",
+     "views": 2700,
+     "duration": 1108
+    },
+    {
+     "id": "uwamu7FGm_g",
+     "title": "i posted every day for 150 days and it changed my life.",
+     "views": 4700,
+     "duration": 638
+    },
+    {
+     "id": "ttLzDiyQ53Q",
+     "title": "the benefit of being an unemployed college dropout",
+     "views": 3900,
+     "duration": 291
+    },
+    {
+     "id": "WBQajZfguUQ",
+     "title": "i make $240K/year working 2 hours a week: how passive income works",
+     "views": 4000,
+     "duration": 483
+    },
+    {
+     "id": "r9BLAnKDqlI",
+     "title": "i quit league of legends and it changed my life.",
+     "views": 6800,
+     "duration": 513
+    },
+    {
+     "id": "ZXK-k1w7tLs",
+     "title": "how i built a $45,000/mo course business WITHOUT scamming",
+     "views": 3100,
+     "duration": 490
+    },
+    {
+     "id": "kszroguIEMI",
+     "title": "day in the life of a $45,000/mo TikTok influencer | day 5",
+     "views": 2800,
+     "duration": 634
+    },
+    {
+     "id": "KzqLsJU3dsw",
+     "title": "why I gave up the 'college experience' | road to $100k/mo day 4",
+     "views": 2100,
+     "duration": 535
+    },
+    {
+     "id": "s2BRJ-floUs",
+     "title": "road to $100k a month: day 3",
+     "views": 1700,
+     "duration": 227
+    },
+    {
+     "id": "MOocZANGSFU",
+     "title": "why I never leave my apartment in NYC: road to $100k/month day 2",
+     "views": 6700,
+     "duration": 578
+    },
+    {
+     "id": "ayK9AUKMneg",
+     "title": "$30,000 in 3 days: road to $100k/month day 1",
+     "views": 6900,
+     "duration": 558
+    },
+    {
+     "id": "YVbRtsZzyTM",
+     "title": "give me 5 minutes, and i'll improve your content skills by 91%...",
+     "views": 4300,
+     "duration": 309
+    },
+    {
+     "id": "Qwv0T4D-x1s",
+     "title": "how to grow an audience in 2025 - the 3 levels",
+     "views": 18000,
+     "duration": 761
+    },
+    {
+     "id": "y1KnpDTsgKo",
+     "title": "the instagram follower formula",
+     "views": 2700,
+     "duration": 411
+    },
+    {
+     "id": "vQuwxkXdHGY",
+     "title": "why self-improvement ruined my life.",
+     "views": 3700,
+     "duration": 490
+    },
+    {
+     "id": "CV5-X_oh3yw",
+     "title": "the 3 things i gave up to make $10,000/month in college.",
+     "views": 1900,
+     "duration": 545
+    },
+    {
+     "id": "sFklszoItnI",
+     "title": "how i grew an instagram business from $0 to $20k/month",
+     "views": 1400,
+     "duration": 355
+    },
+    {
+     "id": "TdYEEGGrlQY",
+     "title": "9 minutes of BRUTALLY honest social media advice",
+     "views": 2400,
+     "duration": 568
+    },
+    {
+     "id": "tb-rQj1roik",
+     "title": "this tiktok strat got me over 200M views",
+     "views": 1000,
+     "duration": 563
+    },
+    {
+     "id": "Sr8jkpwN57o",
+     "title": "do it tired and bloated.",
+     "views": 1300,
+     "duration": 385
+    },
+    {
+     "id": "ycOBfx5nNf4",
+     "title": "this video will kill your anxiety for 3 hours",
+     "views": 2300,
+     "duration": 369
+    },
+    {
+     "id": "YbmtOXxoRwA",
+     "title": "start creating content NOW in college.",
+     "views": 3700,
+     "duration": 334
+    },
+    {
+     "id": "L1wms2menbg",
+     "title": "boring person’s guide to viral creativity",
+     "views": 1200,
+     "duration": 678
+    },
+    {
+     "id": "Y69lg5FXCWM",
+     "title": "how to ACTUALLY blow up ur business on social media",
+     "views": 4700,
+     "duration": 883
+    },
+    {
+     "id": "UohjAS_K314",
+     "title": "this is your sign to go all in.",
+     "views": 1300,
+     "duration": 677
+    },
+    {
+     "id": "AVZLRmiWpug",
+     "title": "“talent” is bullsh*t",
+     "views": 2700,
+     "duration": 373
+    },
+    {
+     "id": "e8XQcnx7Fp4",
+     "title": "“it’s not that deep bro.”",
+     "views": 3800,
+     "duration": 458
+    },
+    {
+     "id": "C0VFMwK8D3Y",
+     "title": "the reality of making money as a content creator",
+     "views": 1400,
+     "duration": 835
+    },
+    {
+     "id": "5d7HfcbE2mQ",
+     "title": "it’s cringe until it works",
+     "views": 4100,
+     "duration": 1045
+    },
+    {
+     "id": "h3BepSXrIhE",
+     "title": "i tried bowling a PERFECT GAME in 7 days",
+     "views": 36000,
+     "duration": 688
+    }
+   ],
+   "rss": [
+    {
+     "id": "jhz9xLYZQ1Y",
+     "title": "Claude edited my video and got me 1M views overnight (full guide)",
+     "url": "https://www.youtube.com/watch?v=jhz9xLYZQ1Y",
+     "is_short": false,
+     "published": "2026-10-22T14:01:58+00:00",
+     "views": 2118,
+     "rating_count": 55,
+     "description": "👉 Get my exact Claude editing setup, installed for you (Mino AI Frontier):\nhttps://contentacademy.io/frontier?el=yt10-22"
+    },
+    {
+     "id": "6aFkjn9YjNY",
+     "title": "how i got 300k app downloads (even though i hate posting content)",
+     "url": "https://www.youtube.com/watch?v=6aFkjn9YjNY",
+     "is_short": false,
+     "published": "2026-10-19T16:00:33+00:00",
+     "views": 1645,
+     "rating_count": 23,
+     "description": "👉 Watch this next: my full 3+ hour course on how to start your personal brand from scratch today: https://www.youtube.com/watch?v=AA1LoZwW_2Y\n\n\nMyle's Instagram:\nhttps://www.instagram.com/myles.slayton/"
+    },
+    {
+     "id": "lNKn2QnK0Nc",
+     "title": "i'm 22. if you're in college, watch this",
+     "url": "https://www.youtube.com/watch?v=lNKn2QnK0Nc",
+     "is_short": false,
+     "published": "2026-10-17T01:53:38+00:00",
+     "views": 1989,
+     "rating_count": 41,
+     "description": "if you found this video helpful and want direct 1:1 coaching,\napply to join my community here👇\nhttps://contentacademy.io?el=yt10-16"
+    },
+    {
+     "id": "ZyenAQ8rocI",
+     "title": "Mino Lee Live Stream",
+     "url": "https://www.youtube.com/watch?v=ZyenAQ8rocI",
+     "is_short": false,
+     "published": "2026-10-16T18:30:15+00:00",
+     "views": 0,
+     "rating_count": 0,
+     "description": ""
+    },
+    {
+     "id": "hlYezd2pcO8",
+     "title": "how i built a $400k/month personal brand in college",
+     "url": "https://www.youtube.com/watch?v=hlYezd2pcO8",
+     "is_short": false,
+     "published": "2026-10-07T21:45:03+00:00",
+     "views": 3753,
+     "rating_count": 77,
+     "description": "Your complete guide to building a personal brand from scratch:\nhttps://youtu.be/7EHqhKXjzzs\n\n0:00 Introduction to the experiment\n1:00 Overcoming personal roadblocks\n6:00 Humanizing the growth process\n12:00 Tactical gear and setup\n15:33 Content formats and strategy\n20:33 The 90-day growth roadmap\n28:14 Closing and next steps"
+    },
+    {
+     "id": "wVhsaWbG3jo",
+     "title": "if you have a job, start a personal brand",
+     "url": "https://www.youtube.com/watch?v=wVhsaWbG3jo",
+     "is_short": false,
+     "published": "2026-09-30T02:15:14+00:00",
+     "views": 15092,
+     "rating_count": 239,
+     "description": "if you found this video helpful and want direct 1:1 coaching,\napply to join my community here👇\nhttps://start.contentacademy.io?el=yt9-29"
+    },
+    {
+     "id": "nLuBbR3eWG8",
+     "title": "how i create viral hooks with ai that get 1M+ views every time (just copy me)",
+     "url": "https://www.youtube.com/watch?v=nLuBbR3eWG8",
+     "is_short": false,
+     "published": "2026-09-04T18:00:15+00:00",
+     "views": 7467,
+     "rating_count": 103,
+     "description": "Script viral videos with Mino AI (trained on 1,000+ viral videos)\nhttps://contenthooks.ai?el=yt9-04\n\nif you found this training and want direct 1:1 coaching, apply to join my community here👇\nhttps://start.contentacademy.io?el=yt9-04\n\n0:00 What makes a good hook?\n3:01 What is Mino AI?\n4:42 The Viral Hook Formula\n13:36 How to write viral hooks with Mino AI\n18:19 How I got 3M views with Mino AI"
+    },
+    {
+     "id": "CnvZ6BwTmJY",
+     "title": "$131,462/week selling courses at 22 - just copy me",
+     "url": "https://www.youtube.com/watch?v=CnvZ6BwTmJY",
+     "is_short": false,
+     "published": "2026-08-29T15:04:48+00:00",
+     "views": 7632,
+     "rating_count": 88,
+     "description": "👇join my next FREE CLASS: How to Build a Full-Time Creator Career in just 1 hour/day:\nhttps://start.contentacademy.io/class?el=yt8-28\n\n👉 Watch this next: my full 3+ hour course on how to start your personal brand from scratch today https://www.youtube.com/watch?v=AA1LoZwW_2Y\n\n00:00 Intro\n01:25 How selling info actually works\n04:50 Offer examples you haven't thought of\n08:35 Common fears (imposter syndrome, grifter label)\n14:50 Tier list: startups vs brand deals vs info\n20:00 How to pick one (and stick to it)\n26:20 Q&A"
+    },
+    {
+     "id": "rK7Mnky772M",
+     "title": "how I became a master storyteller (copy me)",
+     "url": "https://www.youtube.com/watch?v=rK7Mnky772M",
+     "is_short": false,
+     "published": "2026-08-20T16:00:17+00:00",
+     "views": 8540,
+     "rating_count": 235,
+     "description": "👇join my next FREE CLASS: How to Build a Full-Time Creator Career in just 1 hour/day:\nhttps://start.contentacademy.io/class?el=yt8-19\n\n👉 Watch this next: my full 3+ hour course on how to start your personal brand from scratch today https://www.youtube.com/watch?v=AA1LoZwW_2Y\n\n00:00 Intro\n00:35 Why storytelling works\n05:53 Rule 1: One clear message\n07:58 Rule 2: The 3-act structure\n22:14 Rule 3: Curiosity loops\n35:15 Rule 4: The sound design\n48:06 Q&A"
+    },
+    {
+     "id": "AW2sKDVs3u0",
+     "title": "how i run a $200k/mo business at 22 (day in my life in NYC)",
+     "url": "https://www.youtube.com/watch?v=AW2sKDVs3u0",
+     "is_short": false,
+     "published": "2026-08-14T16:00:12+00:00",
+     "views": 2840,
+     "rating_count": 85,
+     "description": "👇join my next FREE CLASS: How to Build a Full-Time Creator Career in just 1 hour/day:\nhttps://start.contentacademy.io/class?el=yt8-14\n\n\n0:00 4am wake up, morning routine\n4:04 How much I made last month\n7:08 imposter syndrome as a leader\n16:05 how I am reinvesting into my team\n21:14 The Tom Holland Cindy challenge\n25:11 it doesn't get easier"
+    },
+    {
+     "id": "cACHSsjOyGA",
+     "title": "i made $100k in a month and completely lost my motivation",
+     "url": "https://www.youtube.com/watch?v=cACHSsjOyGA",
+     "is_short": false,
+     "published": "2026-08-05T16:00:19+00:00",
+     "views": 7466,
+     "rating_count": 209,
+     "description": "👇join my next FREE CLASS: How to Build a Full-Time Creator Career in just 1 hour/day:\nhttps://start.contentacademy.io/class?el=yt8-4"
+    },
+    {
+     "id": "Mhm5Qxk6Y-o",
+     "title": "\"become the niche\" is terrible advice (how to actually find your niche)",
+     "url": "https://www.youtube.com/watch?v=Mhm5Qxk6Y-o",
+     "is_short": false,
+     "published": "2026-07-29T19:15:30+00:00",
+     "views": 3715,
+     "rating_count": 123,
+     "description": "👇join my next FREE CLASS: How to Build a Full-Time Creator Career in just 1 hour/day:\nhttps://start.contentacademy.io/class?el=yt7-29\n\n0:00 Why \"find your niche\" advice is broken\n3:04 Part A: Finding your direction\n15:12 Part B: Finding your unique moat\n27:04 Part C: Researching demand & stealing like an artist\n33:09 Part D: Hunting outliers (quantity vs quality)"
+    },
+    {
+     "id": "seJAvDMzXgg",
+     "title": "the only 2 hooks you need to hit 100k followers",
+     "url": "https://www.youtube.com/watch?v=seJAvDMzXgg",
+     "is_short": false,
+     "published": "2026-07-22T20:47:35+00:00",
+     "views": 6511,
+     "rating_count": 298,
+     "description": "👇join my next FREE CLASS: How to Build a Full-Time Creator Career in just 1 hour/day:\nhttps://start.contentacademy.io/class?el=yt7-22\n\n00:00 Intro\n00:54 Hook #1: \"Is It Possible?\" challenge\n17:27 Hook #2: \"Here's how to\" + objection\n27:05 Outro"
+    },
+    {
+     "id": "BLnxJvVQLQ8",
+     "title": "how to go from 400 views to 1M (full process)",
+     "url": "https://www.youtube.com/watch?v=BLnxJvVQLQ8",
+     "is_short": false,
+     "published": "2026-07-16T21:45:37+00:00",
+     "views": 9221,
+     "rating_count": 408,
+     "description": "Script viral videos with Mino AI (trained on 1,000+ viral videos)\nhttps://contenthooks.ai?el=yt7-16\n\nif you found this helpful and want direct coaching, apply to join my community here 👇\nhttps://start.contentacademy.io?el=yt7-16\n\n00:00 Intro\n00:40 Mistake 15\n03:05 Mistake 14\n04:05 Mistake 13\n11:58 Mistake 12\n13:50 Mistake 11\n16:23 Mistake 10\n18:17 Mistake 9\n19:19 Mistake 8\n20:23 Mistake 7\n22:15 Mistake 6\n24:33 Mistake 5\n25:00 Mistake 4\n26:15 Mistake 3\n27:22 Mistake 2\n27:45 Mistake 1\n29:58 FAQ"
+    },
+    {
+     "id": "hn6ASXoVRoA",
+     "title": "i got everything i wanted. i also lost my friends.",
+     "url": "https://www.youtube.com/watch?v=hn6ASXoVRoA",
+     "is_short": false,
+     "published": "2026-07-08T20:30:11+00:00",
+     "views": 5675,
+     "rating_count": 215,
+     "description": "free guide on how to grow 200k followers in just 90 minutes per day:\nhttps://www.youtube.com/watch?v=7EHqhKXjzzs\n\nScript viral videos with the AI trained on 1,000+ viral videos:\nhttps://contenthooks.ai?el=yt\n\n0:00 Why nobody around you gets it\n4:10 Taking a gap year to escape my environment\n9:33 How long the lonely phase actually lasts\n10:34 What kept me sane with zero friends\n11:51 How I found friends who actually push me"
+    }
+   ]
+  }
+ ],
+ "tiktok": {
+  "mino.mp4": [
+   {
+    "id": "7699725853860580638",
+    "title": "how to ACTUALLY edit good videos with claude",
+    "description": "how to ACTUALLY edit good videos with claude",
+    "timestamp": 1792732154,
+    "duration": 66,
+    "view_count": 7201,
+    "like_count": 381,
+    "comment_count": 75,
+    "repost_count": 51,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7699725853860580638"
+   },
+   {
+    "id": "7698648837698719006",
+    "title": "golden handcuffs.",
+    "description": "golden handcuffs.",
+    "timestamp": 1792481419,
+    "duration": 60,
+    "view_count": 2364,
+    "like_count": 133,
+    "comment_count": 18,
+    "repost_count": 1,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7698648837698719006"
+   },
+   {
+    "id": "7698633534461709599",
+    "title": "setup guide for a claude editor is in my biooo 😼💯🥀🔥",
+    "description": "setup guide for a claude editor is in my biooo 😼💯🥀🔥",
+    "timestamp": 1792477836,
+    "duration": 62,
+    "view_count": 12100,
+    "like_count": 756,
+    "comment_count": 131,
+    "repost_count": 54,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7698633534461709599"
+   },
+   {
+    "id": "7698447586549714206",
+    "title": "$10K MRR. THEY SAID WE COULDNT. ",
+    "description": "$10K MRR. THEY SAID WE COULDNT. ",
+    "timestamp": 1792434542,
+    "duration": 70,
+    "view_count": 2236,
+    "like_count": 81,
+    "comment_count": 10,
+    "repost_count": 3,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7698447586549714206"
+   },
+   {
+    "id": "7697476681669414174",
+    "title": "every level of tiktok view jail explained",
+    "description": "every level of tiktok view jail explained",
+    "timestamp": 1792208464,
+    "duration": 165,
+    "view_count": 8870,
+    "like_count": 601,
+    "comment_count": 178,
+    "repost_count": 70,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7697476681669414174"
+   },
+   {
+    "id": "7697450050439367967",
+    "title": "claude edited this video btw. skill is in my bio lol",
+    "description": "claude edited this video btw. skill is in my bio lol",
+    "timestamp": 1792202263,
+    "duration": 74,
+    "view_count": 7668,
+    "like_count": 291,
+    "comment_count": 37,
+    "repost_count": 13,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7697450050439367967"
+   },
+   {
+    "id": "7697303759520632095",
+    "title": "the skill is in my bio, i can’t message it on tiktok 😭🙏",
+    "description": "the skill is in my bio, i can’t message it on tiktok 😭🙏",
+    "timestamp": 1792168208,
+    "duration": 67,
+    "view_count": 26600,
+    "like_count": 1493,
+    "comment_count": 361,
+    "repost_count": 138,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7697303759520632095"
+   },
+   {
+    "id": "7696916687039335710",
+    "title": "full AI editing tutorial in my bio🫪   this was also FULLY edited by m...",
+    "description": "full AI editing tutorial in my bio🫪   this was also FULLY edited by my clanker army",
+    "timestamp": 1792078077,
+    "duration": 31,
+    "view_count": 188300,
+    "like_count": 12500,
+    "comment_count": 2567,
+    "repost_count": 742,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7696916687039335710"
+   },
+   {
+    "id": "7696790877670362398",
+    "title": "i’ll email this free claude editing tutorial to everyone who signs up...",
+    "description": "i’ll email this free claude editing tutorial to everyone who signs up for my free class in my bio ❤️",
+    "timestamp": 1792048843,
+    "duration": 75,
+    "view_count": 7772,
+    "like_count": 381,
+    "comment_count": 154,
+    "repost_count": 47,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7696790877670362398"
+   },
+   {
+    "id": "7696791062173453599",
+    "title": "i’ll email this free claude editing tutorial to everyone who signs up...",
+    "description": "i’ll email this free claude editing tutorial to everyone who signs up for my free class in my bio ❤️",
+    "timestamp": 1792048830,
+    "duration": 42,
+    "view_count": 223700,
+    "like_count": 17600,
+    "comment_count": 1221,
+    "repost_count": 1944,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7696791062173453599"
+   },
+   {
+    "id": "7696732936208387358",
+    "title": "vid made me look so submissive bru 😭😭😭",
+    "description": "vid made me look so submissive bru 😭😭😭",
+    "timestamp": 1792035299,
+    "duration": 50,
+    "view_count": 4132,
+    "like_count": 99,
+    "comment_count": 8,
+    "repost_count": 1,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7696732936208387358"
+   },
+   {
+    "id": "7696704174758563103",
+    "title": "😭😭",
+    "description": "😭😭",
+    "timestamp": 1792028599,
+    "duration": 7,
+    "view_count": 5396,
+    "like_count": 192,
+    "comment_count": 6,
+    "repost_count": 7,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7696704174758563103"
+   },
+   {
+    "id": "7696628081657744671",
+    "title": "not that IQ really means that much anyways",
+    "description": "not that IQ really means that much anyways",
+    "timestamp": 1792010879,
+    "duration": 56,
+    "view_count": 1214,
+    "like_count": 43,
+    "comment_count": 4,
+    "repost_count": 0,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7696628081657744671"
+   },
+   {
+    "id": "7696166412007542047",
+    "title": "tiktok’s algorithm explained as if you’re 5 years old",
+    "description": "tiktok’s algorithm explained as if you’re 5 years old",
+    "timestamp": 1791903389,
+    "duration": 55,
+    "view_count": 2744,
+    "like_count": 46,
+    "comment_count": 2,
+    "repost_count": 2,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7696166412007542047"
+   },
+   {
+    "id": "7695748254801169694",
+    "title": "i tried EVERYTHING from cold showers, morning routines (i still am hi...",
+    "description": "i tried EVERYTHING from cold showers, morning routines (i still am highly non-routine of a person), and manifestation   not to knock any of those (some have helped me)    but the most impactful over time has been consistent “shitty” effort over 1-2 years",
+    "timestamp": 1791806068,
+    "duration": 91,
+    "view_count": 13100,
+    "like_count": 914,
+    "comment_count": 18,
+    "repost_count": 44,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7695748254801169694"
+   },
+   {
+    "id": "7695580788733021470",
+    "title": "the lonely chapter when starting content that no one seems to talk abt",
+    "description": "the lonely chapter when starting content that no one seems to talk abt",
+    "timestamp": 1791767040,
+    "duration": 71,
+    "view_count": 7238,
+    "like_count": 563,
+    "comment_count": 26,
+    "repost_count": 27,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7695580788733021470"
+   },
+   {
+    "id": "7695500993810664734",
+    "title": "how to become so recognized it gets obnoxious",
+    "description": "how to become so recognized it gets obnoxious",
+    "timestamp": 1791748462,
+    "duration": 67,
+    "view_count": 3942,
+    "like_count": 153,
+    "comment_count": 5,
+    "repost_count": 5,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7695500993810664734"
+   },
+   {
+    "id": "7694709146511363358",
+    "title": "you’d be BUGGIN if u didn’t join my free zoom on how to turn your sto...",
+    "description": "you’d be BUGGIN if u didn’t join my free zoom on how to turn your story into compelling viral Reels, followers, and a creator career‼️   there are currently over 100 creators in our community who we’ve helped get to 10K+ followers, and in the free zoom class i’ll teach you everything the best creators are doing to escape 1K view jail, find their “unique” angle, and monetize   so join up in my bio 💯",
+    "timestamp": 1791564109,
+    "duration": 17,
+    "view_count": 8679,
+    "like_count": 228,
+    "comment_count": 10,
+    "repost_count": 25,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7694709146511363358"
+   },
+   {
+    "id": "7694157419244539166",
+    "title": "day 6 road to $1m/month",
+    "description": "day 6 road to $1m/month",
+    "timestamp": 1791435655,
+    "duration": 136,
+    "view_count": 9472,
+    "like_count": 698,
+    "comment_count": 23,
+    "repost_count": 24,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "sonido original",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7694157419244539166"
+   },
+   {
+    "id": "7692890399806967070",
+    "title": "day 3 road to $1M/month",
+    "description": "day 3 road to $1M/month",
+    "timestamp": 1791140638,
+    "duration": 33,
+    "view_count": 4034,
+    "like_count": 104,
+    "comment_count": 7,
+    "repost_count": 5,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7692890399806967070"
+   },
+   {
+    "id": "7692693508221603102",
+    "title": "day 2 road to $1m/month",
+    "description": "day 2 road to $1m/month",
+    "timestamp": 1791094810,
+    "duration": 75,
+    "view_count": 17700,
+    "like_count": 1383,
+    "comment_count": 17,
+    "repost_count": 44,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7692693508221603102"
+   },
+   {
+    "id": "7692693387991944478",
+    "title": "day 1 road to $1M/month",
+    "description": "day 1 road to $1M/month",
+    "timestamp": 1791094782,
+    "duration": 22,
+    "view_count": 7852,
+    "like_count": 331,
+    "comment_count": 8,
+    "repost_count": 5,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7692693387991944478"
+   },
+   {
+    "id": "7691238406407408927",
+    "title": "day 1 of road to $1m/month After hitting back-to-back $400K months, I...",
+    "description": "day 1 of road to $1m/month After hitting back-to-back $400K months, I almost cried at dinner in front of my whole team.  For the past 2 years of building this business, I've lost motivation so many months to actually grow.  Is it greedy to want bigger numbers? is it ego? Am I just watching too much Jeremy Haynes? This past week we had our first ever team retreat, with 9 of our team members, all in person, making memories.  We're gunning for back to back $400K months this month.  things had never been better, yet ironically I’ve been feeling so anxious this whole trip.  So when i was forced to give a surprise toast to my whole team of 9 at a steakhouse, my voice literally started to shake from the fear  In that moment, I realized why i had so much anxiety.  I lowkey thought it’s cuz we weren’t making enough money not gonna lie.  But deep down, I was scared of losing something so special that we had built. When i was in college, i felt like i left friends behind to drop out, and isolate myself to pursue my social media dreams.  ever since then, i think friendship always felt temporary, and frankly too easy to leave.  I think i was scared of letting that happen this time too.  But this time, it was with a group of friends who i have the gift of working with every day, on the same mission, the same business, sharing the same fruits of our labor.  There is nothing more i could’ve asked for in life, and when you’re there, you start to just fear how long it can truly last like this.  A lot of business gurus talk about culture like it's some genius 200 IQ chess play.  Maybe I'm just dumb, cuz I never planned for our team to feel like we got along this well.  So why $1M/month? Obviously the number's sick, I'm not gonna lie — it sounds cool, come on now.  But I truly believe $1M/month represents the umbrella of everyone's dreams, being able to keep creating memories and growth for this group of 20-something year old Content Academy Avengers.  And yes I will put every follicle into it.",
+    "timestamp": 1790756005,
+    "duration": 25,
+    "view_count": 11100,
+    "like_count": 470,
+    "comment_count": 11,
+    "repost_count": 9,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7691238406407408927"
+   },
+   {
+    "id": "7684938764887608607",
+    "title": "This video is a tax writeoff",
+    "description": "This video is a tax writeoff",
+    "timestamp": 1789289306,
+    "duration": 58,
+    "view_count": 431100,
+    "like_count": 61100,
+    "comment_count": 153,
+    "repost_count": 1150,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7684938764887608607"
+   },
+   {
+    "id": "7683647321564941598",
+    "title": "hey claude, make me viral, make no mistakes",
+    "description": "hey claude, make me viral, make no mistakes",
+    "timestamp": 1788988561,
+    "duration": 27,
+    "view_count": 61500,
+    "like_count": 3386,
+    "comment_count": 62,
+    "repost_count": 510,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7683647321564941598"
+   },
+   {
+    "id": "7683351986426744094",
+    "title": "mastering text hooks in 2 minutes",
+    "description": "mastering text hooks in 2 minutes",
+    "timestamp": 1788919798,
+    "duration": 101,
+    "view_count": 110300,
+    "like_count": 7860,
+    "comment_count": 194,
+    "repost_count": 1170,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7683351986426744094"
+   },
+   {
+    "id": "7683316017220701471",
+    "title": "wandering eyes in business",
+    "description": "wandering eyes in business",
+    "timestamp": 1788911432,
+    "duration": 82,
+    "view_count": 11900,
+    "like_count": 486,
+    "comment_count": 12,
+    "repost_count": 25,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7683316017220701471"
+   },
+   {
+    "id": "7683035496179715359",
+    "title": "yo chat yo chat",
+    "description": "yo chat yo chat",
+    "timestamp": 1788846138,
+    "duration": 44,
+    "view_count": 63400,
+    "like_count": 3452,
+    "comment_count": 65,
+    "repost_count": 197,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7683035496179715359"
+   },
+   {
+    "id": "7683032506714574110",
+    "title": "fun fact my cousin is a pro league of legends esports player in korea",
+    "description": "fun fact my cousin is a pro league of legends esports player in korea",
+    "timestamp": 1788845429,
+    "duration": 87,
+    "view_count": 6296,
+    "like_count": 113,
+    "comment_count": 7,
+    "repost_count": 6,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7683032506714574110"
+   },
+   {
+    "id": "7683028138162408735",
+    "title": "subconscious projections",
+    "description": "subconscious projections",
+    "timestamp": 1788844413,
+    "duration": 56,
+    "view_count": 44100,
+    "like_count": 2140,
+    "comment_count": 125,
+    "repost_count": 92,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7683028138162408735"
+   },
+   {
+    "id": "7682872533334674719",
+    "title": "people will forget you lowkey 3 scrolls later",
+    "description": "people will forget you lowkey 3 scrolls later",
+    "timestamp": 1788808172,
+    "duration": 153,
+    "view_count": 9800,
+    "like_count": 585,
+    "comment_count": 26,
+    "repost_count": 25,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7682872533334674719"
+   },
+   {
+    "id": "7680996585978858783",
+    "title": "yesterday my business hit its first 400k month, and i wanted to refle...",
+    "description": "yesterday my business hit its first 400k month, and i wanted to reflect on this idea of goal setting    i feel like it’s been this odd push and pull of my inner hormozi saying:  “Do more. Outwork your doubt. Become the man you’d be proud of.”   and my kid saying that a goal will just disappoint me again, when i hit it.   but i look back and i have no regrets, not because bwahahaha i became a business beast!!1!    but becuz some of the best memories i had came from those 13 months of chasing   and i know most ppl say “uaghh you only chase more becuz u feel insecure!!”   but i started to miss the feeling of having a pursuit that got me up at 9am feeling equally anxious and excited    and i now know my next goal of $800k/month won’t make me feel any different   but i think i’m truly in my happy place when i have that dream that i can truly put my all into",
+    "timestamp": 1788371414,
+    "duration": 66,
+    "view_count": 323600,
+    "like_count": 48600,
+    "comment_count": 252,
+    "repost_count": 1283,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7680996585978858783"
+   },
+   {
+    "id": "7680608235002400031",
+    "title": "the la peaceful scaling book",
+    "description": "the la peaceful scaling book",
+    "timestamp": 1788280987,
+    "duration": 92,
+    "view_count": 3769,
+    "like_count": 158,
+    "comment_count": 1,
+    "repost_count": 5,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7680608235002400031"
+   },
+   {
+    "id": "7679158057149975839",
+    "title": "get my free escaping 1K view jail book is in my bio when u join my fr...",
+    "description": "get my free escaping 1K view jail book is in my bio when u join my free class",
+    "timestamp": 1787943332,
+    "duration": 79,
+    "view_count": 2311,
+    "like_count": 93,
+    "comment_count": 13,
+    "repost_count": 8,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "sonido original",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7679158057149975839"
+   },
+   {
+    "id": "7679153332258163998",
+    "title": "8 signs ur cooked",
+    "description": "8 signs ur cooked",
+    "timestamp": 1787942241,
+    "duration": 64,
+    "view_count": 415800,
+    "like_count": 26100,
+    "comment_count": 1561,
+    "repost_count": 1598,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "Every Living Breathing Moment",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7679153332258163998"
+   },
+   {
+    "id": "7678806415426800927",
+    "title": "holy cope",
+    "description": "holy cope",
+    "timestamp": 1787861460,
+    "duration": 69,
+    "view_count": 9899,
+    "like_count": 408,
+    "comment_count": 18,
+    "repost_count": 12,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7678806415426800927"
+   },
+   {
+    "id": "7678787193631968542",
+    "title": "just start. #motivation #sigma ",
+    "description": "just start. #motivation #sigma ",
+    "timestamp": 1787856987,
+    "duration": 20,
+    "view_count": 14900,
+    "like_count": 926,
+    "comment_count": 57,
+    "repost_count": 28,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7678787193631968542"
+   },
+   {
+    "id": "7676311348946406686",
+    "title": "selfless content",
+    "description": "selfless content",
+    "timestamp": 1787280523,
+    "duration": 48,
+    "view_count": 27100,
+    "like_count": 1528,
+    "comment_count": 53,
+    "repost_count": 93,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7676311348946406686"
+   },
+   {
+    "id": "7676306069349518622",
+    "title": "#foryoupage ",
+    "description": "#foryoupage ",
+    "timestamp": 1787279297,
+    "duration": 85,
+    "view_count": 6542,
+    "like_count": 116,
+    "comment_count": 6,
+    "repost_count": 7,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7676306069349518622"
+   },
+   {
+    "id": "7676146251515170079",
+    "title": "the game gets easier past 20k/mo",
+    "description": "the game gets easier past 20k/mo",
+    "timestamp": 1787242085,
+    "duration": 168,
+    "view_count": 14300,
+    "like_count": 930,
+    "comment_count": 34,
+    "repost_count": 28,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7676146251515170079"
+   },
+   {
+    "id": "7676138520297180447",
+    "title": "ungatekeeping the method.",
+    "description": "ungatekeeping the method.",
+    "timestamp": 1787240284,
+    "duration": 179,
+    "view_count": 3672,
+    "like_count": 216,
+    "comment_count": 10,
+    "repost_count": 12,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "Every Living Breathing Moment",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7676138520297180447"
+   },
+   {
+    "id": "7675762227433196830",
+    "title": "i’m also doing a live masterclass in my bio, on way more of these tip...",
+    "description": "i’m also doing a live masterclass in my bio, on way more of these tips, so join for free there!!",
+    "timestamp": 1787152674,
+    "duration": 66,
+    "view_count": 26500,
+    "like_count": 1897,
+    "comment_count": 47,
+    "repost_count": 252,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "Originalton",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7675762227433196830"
+   },
+   {
+    "id": "7675447381025951006",
+    "title": "7hrs a week content system",
+    "description": "7hrs a week content system",
+    "timestamp": 1787079375,
+    "duration": 107,
+    "view_count": 29600,
+    "like_count": 1253,
+    "comment_count": 38,
+    "repost_count": 74,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7675447381025951006"
+   },
+   {
+    "id": "7675378518120811806",
+    "title": "post and forget it",
+    "description": "post and forget it",
+    "timestamp": 1787063345,
+    "duration": 61,
+    "view_count": 1500000,
+    "like_count": 85100,
+    "comment_count": 6984,
+    "repost_count": 6543,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7675378518120811806"
+   },
+   {
+    "id": "7675236223073471775",
+    "title": "i think a lot of my claude code obsession came from wanting to valida...",
+    "description": "i think a lot of my claude code obsession came from wanting to validate this idea of being a legit “founder”",
+    "timestamp": 1787030214,
+    "duration": 105,
+    "view_count": 197800,
+    "like_count": 21900,
+    "comment_count": 96,
+    "repost_count": 493,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7675236223073471775"
+   },
+   {
+    "id": "7674384037300964639",
+    "title": ":)",
+    "description": ":)",
+    "timestamp": 1786831792,
+    "duration": 66,
+    "view_count": 10300,
+    "like_count": 345,
+    "comment_count": 6,
+    "repost_count": 7,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7674384037300964639"
+   },
+   {
+    "id": "7674288012657691934",
+    "title": "is this my sign im not worthy of true fck you money yet",
+    "description": "is this my sign im not worthy of true fck you money yet",
+    "timestamp": 1786809429,
+    "duration": 30,
+    "view_count": 13400,
+    "like_count": 635,
+    "comment_count": 10,
+    "repost_count": 3,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7674288012657691934"
+   },
+   {
+    "id": "7673559810771635487",
+    "title": "shiny object syndrome",
+    "description": "shiny object syndrome",
+    "timestamp": 1786639882,
+    "duration": 64,
+    "view_count": 7468,
+    "like_count": 316,
+    "comment_count": 11,
+    "repost_count": 15,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7673559810771635487"
+   },
+   {
+    "id": "7673550378302000415",
+    "title": "8 lessons 👇 1. Content is efficiency, not just views  2. Speed in sol...",
+    "description": "8 lessons 👇 1. Content is efficiency, not just views  2. Speed in solving bottlenecks.  3. Everything in business is a test 4. Dont be emotionally tied to ONE way of doing things 5. Build pay incentives that make ppl feel ownership 6. Being present/grateful to be on calls 7. Upsell revenue 8. You need reasons",
+    "timestamp": 1786637683,
+    "duration": 296,
+    "view_count": 6867,
+    "like_count": 383,
+    "comment_count": 16,
+    "repost_count": 16,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "Ambient music with a wilderness image(1544269)",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7673550378302000415"
+   },
+   {
+    "id": "7672380176780610846",
+    "title": "i’m sending the view jail cheatsheet to everyone who attends my free ...",
+    "description": "i’m sending the view jail cheatsheet to everyone who attends my free live class this week! (in my bio hehe)",
+    "timestamp": 1786365255,
+    "duration": 110,
+    "view_count": 107500,
+    "like_count": 6160,
+    "comment_count": 719,
+    "repost_count": 678,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7672380176780610846"
+   },
+   {
+    "id": "7672367820864261406",
+    "title": "how i dropped out of boston college and 2 years later made my first $...",
+    "description": "how i dropped out of boston college and 2 years later made my first $1M online",
+    "timestamp": 1786362382,
+    "duration": 166,
+    "view_count": 31400,
+    "like_count": 1104,
+    "comment_count": 40,
+    "repost_count": 49,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7672367820864261406"
+   },
+   {
+    "id": "7672360960815910174",
+    "title": "yes i woke up at 4am today. yes that does make me better than u.",
+    "description": "yes i woke up at 4am today. yes that does make me better than u.",
+    "timestamp": 1786360785,
+    "duration": 112,
+    "view_count": 231400,
+    "like_count": 22200,
+    "comment_count": 431,
+    "repost_count": 1772,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "Ambient music with a wilderness image(1544269)",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7672360960815910174"
+   },
+   {
+    "id": "7671789398605810974",
+    "title": "leaking behind the scenes of the million $ creator course industry",
+    "description": "leaking behind the scenes of the million $ creator course industry",
+    "timestamp": 1786227686,
+    "duration": 162,
+    "view_count": 14600,
+    "like_count": 614,
+    "comment_count": 14,
+    "repost_count": 37,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7671789398605810974"
+   },
+   {
+    "id": "7671000375675161886",
+    "title": "if ur looking for the checklist, u can find it in my tt bio!!",
+    "description": "if ur looking for the checklist, u can find it in my tt bio!!",
+    "timestamp": 1786043972,
+    "duration": 55,
+    "view_count": 13200,
+    "like_count": 923,
+    "comment_count": 163,
+    "repost_count": 139,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7671000375675161886"
+   },
+   {
+    "id": "7670987425421872414",
+    "title": "“authenticity” is also an overrated buzzword that is vague.    u can ...",
+    "description": "“authenticity” is also an overrated buzzword that is vague.    u can be “authentic” yet lack a connection with strangers in ur videos because authentically portraying only your good sides makes it harder to subconsciously trust you ",
+    "timestamp": 1786040952,
+    "duration": 119,
+    "view_count": 20000,
+    "like_count": 1478,
+    "comment_count": 27,
+    "repost_count": 124,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7670987425421872414"
+   },
+   {
+    "id": "7670970883325824287",
+    "title": "i spontaneously booked a flight here with my girlfriend because i saw...",
+    "description": "i spontaneously booked a flight here with my girlfriend because i saw a cool video on twitter",
+    "timestamp": 1786037098,
+    "duration": 6,
+    "view_count": 5543,
+    "like_count": 226,
+    "comment_count": 5,
+    "repost_count": 6,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "原創音樂",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7670970883325824287"
+   },
+   {
+    "id": "7670970020310060319",
+    "title": "how i unlearned and relearned how to be motivated ",
+    "description": "how i unlearned and relearned how to be motivated ",
+    "timestamp": 1786036899,
+    "duration": 155,
+    "view_count": 8638,
+    "like_count": 429,
+    "comment_count": 22,
+    "repost_count": 11,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7670970020310060319"
+   },
+   {
+    "id": "7670946675581603103",
+    "title": "how to manipulate friends to go to the gym with you",
+    "description": "how to manipulate friends to go to the gym with you",
+    "timestamp": 1786031465,
+    "duration": 125,
+    "view_count": 9069,
+    "like_count": 495,
+    "comment_count": 9,
+    "repost_count": 25,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7670946675581603103"
+   },
+   {
+    "id": "7670221075745131806",
+    "title": "how to ACTUALLY create impactful authentic content",
+    "description": "how to ACTUALLY create impactful authentic content",
+    "timestamp": 1785862531,
+    "duration": 143,
+    "view_count": 38000,
+    "like_count": 2621,
+    "comment_count": 121,
+    "repost_count": 106,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7670221075745131806"
+   },
+   {
+    "id": "7670206049818905887",
+    "title": "had to lock in towards the end of this 💀",
+    "description": "had to lock in towards the end of this 💀",
+    "timestamp": 1785859041,
+    "duration": 70,
+    "view_count": 25300,
+    "like_count": 1411,
+    "comment_count": 34,
+    "repost_count": 74,
+    "channel": "Mino",
+    "uploader": "mino.mp4",
+    "uploader_id": "7147105966541538346",
+    "track": "original sound",
+    "artist": null,
+    "url": "https://www.tiktok.com/@mino.mp4/video/7670206049818905887"
+   }
+  ]
+ },
+ "podcasts": {},
+ "full": {
+  "https://www.youtube.com/watch?v=ofwR7fhxCSI": null
+ }
+}
