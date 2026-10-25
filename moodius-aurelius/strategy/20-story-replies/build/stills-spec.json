@@ -1,0 +1,423 @@
+{
+ "D01-monday-putting-off": {
+  "kind": "story",
+  "label": "Monday check-in",
+  "lines": [
+   [
+    "What are you putting off today?",
+    "claim"
+   ],
+   [
+    "Just the word. Nobody else sees your reply.",
+    "body"
+   ],
+   [
+    "I’ll go first: the dentist. Every year.",
+    "small"
+   ]
+  ],
+  "footer": "Why we do it, at 12:00"
+ },
+ "D02-quiz-dreaded": {
+  "kind": "story",
+  "label": "Be honest",
+  "lines": [
+   [
+    "Everything you dreaded this year.",
+    "claim"
+   ],
+   [
+    "How much of it actually happened?",
+    "body"
+   ],
+   [
+    "A  most of it\nB  hardly any",
+    "quote"
+   ],
+   [
+    "Reply with A or B. Answer tomorrow at 9.",
+    "small"
+   ]
+  ]
+ },
+ "D03-answer-dreaded": {
+  "kind": "story",
+  "label": "Answer",
+  "lines": [
+   [
+    "If you said B, the data agrees.",
+    "claim"
+   ],
+   [
+    "People with anxiety logged their worries for weeks. 91% never came true.",
+    "body"
+   ],
+   [
+    "LaFreniere & Newman, Behavior Therapy, 2020. Small study, 29 people.",
+    "small"
+   ]
+  ],
+  "footer": "What Marcus did about it, at 12:00"
+ },
+ "D04-quiz-99-kind": {
+  "kind": "story",
+  "label": "Quick one",
+  "lines": [
+   [
+    "99 kind comments. 1 mean one.",
+    "claim"
+   ],
+   [
+    "Which one are you still thinking about at bedtime?",
+    "body"
+   ],
+   [
+    "Reply “the 1” or “the 99”. Answer tomorrow at 9.",
+    "small"
+   ]
+  ]
+ },
+ "D05-answer-99-kind": {
+  "kind": "story",
+  "label": "Answer",
+  "lines": [
+   [
+    "The 1. You’re normal.",
+    "claim"
+   ],
+   [
+    "Psychologists call it “bad is stronger than good”: one sting outweighs a lot of kindness.",
+    "body"
+   ],
+   [
+    "Baumeister et al., Review of General Psychology, 2001.",
+    "small"
+   ]
+  ],
+  "footer": "How to turn the volume down, at 12:00"
+ },
+ "D06-quiz-friend-texted": {
+  "kind": "story",
+  "label": "Think of one person",
+  "lines": [
+   [
+    "The friend you’ve texted most this month.",
+    "claim"
+   ],
+   [
+    "Are you more like them than a year ago?",
+    "body"
+   ],
+   [
+    "Reply yes or no. Or send this to them and ask.",
+    "small"
+   ]
+  ]
+ },
+ "D07-answer-friend-texted": {
+  "kind": "story",
+  "label": "Answer",
+  "lines": [
+   [
+    "Aristotle would say yes.",
+    "claim"
+   ],
+   [
+    "He thought good friends improve each other just by spending time together.",
+    "body"
+   ],
+   [
+    "Moodius paraphrase of Nicomachean Ethics, Book IX.",
+    "small"
+   ]
+  ],
+  "footer": "Choose them well, at 12:00"
+ },
+ "D08-quiz-confucius": {
+  "kind": "story",
+  "label": "Guess",
+  "lines": [
+   [
+    "A student tells Confucius: “I’ve mastered kindness.”",
+    "claim"
+   ],
+   [
+    "What does Confucius say?",
+    "body"
+   ],
+   [
+    "A  “Well done.”\nB  “Not yet.”",
+    "quote"
+   ],
+   [
+    "Reply with A or B. Answer tomorrow at 9.",
+    "small"
+   ]
+  ]
+ },
+ "D09-answer-confucius": {
+  "kind": "story",
+  "label": "Answer",
+  "lines": [
+   [
+    "B. Brutal. Weirdly hopeful.",
+    "claim"
+   ],
+   [
+    "“Ts’ze, you have not attained to that.”",
+    "quote"
+   ],
+   [
+    "Analects V.11, tr. James Legge.",
+    "small"
+   ]
+  ],
+  "footer": "Why “not yet” isn’t never, at 12:00"
+ },
+ "D10-quiz-who-paid": {
+  "kind": "story",
+  "label": "Dinner’s over",
+  "lines": [
+   [
+    "Who’s happier walking home?",
+    "claim"
+   ],
+   [
+    "A  the friend who paid\nB  the friend who didn’t",
+    "quote"
+   ],
+   [
+    "Reply with A or B. Answer tomorrow at 9.",
+    "small"
+   ]
+  ]
+ },
+ "D11-answer-who-paid": {
+  "kind": "story",
+  "label": "Answer",
+  "lines": [
+   [
+    "Maybe A.",
+    "claim"
+   ],
+   [
+    "In 120 of 136 countries, people who’d spent on others lately reported more wellbeing.",
+    "body"
+   ],
+   [
+    "Aknin et al., 2013. Linked, not proven to cause it.",
+    "small"
+   ]
+  ],
+  "footer": "The cheap experiment, at 12:00"
+ },
+ "D12-quiz-emperor-mood": {
+  "kind": "story",
+  "label": "Guess",
+  "lines": [
+   [
+    "A Roman emperor’s fix for a bad mood.",
+    "claim"
+   ],
+   [
+    "A  wine\nB  a list of his friends’ best bits",
+    "quote"
+   ],
+   [
+    "Reply with A or B. Answer tomorrow at 9.",
+    "small"
+   ]
+  ]
+ },
+ "D13-answer-emperor-mood": {
+  "kind": "story",
+  "label": "Answer",
+  "lines": [
+   [
+    "B. Very wholesome. Slightly annoying.",
+    "claim"
+   ],
+   [
+    "Marcus Aurelius thought about the good qualities of the people around him.",
+    "body"
+   ],
+   [
+    "Meditations 6.48.",
+    "small"
+   ]
+  ],
+  "footer": "Try his list, at 12:00"
+ },
+ "D14-quiz-timbuktu": {
+  "kind": "story",
+  "label": "Guess",
+  "lines": [
+   [
+    "A medical book in Timbuktu names a tree.",
+    "claim"
+   ],
+   [
+    "Where can you see one today?",
+    "body"
+   ],
+   [
+    "A  a park in Mali\nB  nobody knows which tree it is",
+    "quote"
+   ],
+   [
+    "Reply with A or B. Answer tomorrow at 9.",
+    "small"
+   ]
+  ]
+ },
+ "D15-answer-timbuktu": {
+  "kind": "story",
+  "label": "Answer",
+  "lines": [
+   [
+    "B. Still a mystery.",
+    "claim"
+   ],
+   [
+    "Scholars still can’t identify some trees named in Timbuktu’s handbooks.",
+    "body"
+   ],
+   [
+    "History, not medical advice.",
+    "small"
+   ]
+  ],
+  "footer": "The library behind it, at 12:00"
+ },
+ "D16-quiz-li-shizhen": {
+  "kind": "story",
+  "label": "Guess",
+  "lines": [
+   [
+    "How long did Li Shizhen spend writing one book of medicines?",
+    "claim"
+   ],
+   [
+    "A  2 years\nB  27 years",
+    "quote"
+   ],
+   [
+    "Reply with A or B. Answer tomorrow at 9.",
+    "small"
+   ]
+  ]
+ },
+ "D17-answer-li-shizhen": {
+  "kind": "story",
+  "label": "Answer",
+  "lines": [
+   [
+    "27 years.",
+    "claim"
+   ],
+   [
+    "UNESCO now lists his Bencao Gangmu as world heritage. Your unfinished project has time.",
+    "body"
+   ],
+   [
+    "UNESCO Silk Roads. History, not medical advice.",
+    "small"
+   ]
+  ]
+ },
+ "D18-ask-thank-you": {
+  "kind": "story",
+  "label": "One word",
+  "lines": [
+   [
+    "Something a friend did this year that you never thanked them for.",
+    "claim"
+   ],
+   [
+    "Reply with one word. Then go and thank them.",
+    "body"
+   ],
+   [
+    "I’ll check tomorrow. Gently.",
+    "small"
+   ]
+  ]
+ },
+ "D19-answer-thank-you": {
+  "kind": "story",
+  "label": "Did you?",
+  "lines": [
+   [
+    "Sent the thank-you? Reply “done”.",
+    "claim"
+   ],
+   [
+    "In one study, writing and delivering a thank-you letter gave the biggest happiness boost of five exercises. It faded after a month, so repeat.",
+    "body"
+   ],
+   [
+    "Seligman et al., American Psychologist, 2005.",
+    "small"
+   ]
+  ]
+ },
+ "D20-quiz-ebers": {
+  "kind": "story",
+  "label": "Guess",
+  "lines": [
+   [
+    "Egypt’s Ebers Papyrus, c. 1550 BCE, one of the oldest medical books.",
+    "claim"
+   ],
+   [
+    "Where is it kept today?",
+    "body"
+   ],
+   [
+    "A  Cairo\nB  Leipzig",
+    "quote"
+   ],
+   [
+    "Reply with A or B. Answer tomorrow at 9.",
+    "small"
+   ]
+  ]
+ },
+ "D21-answer-ebers": {
+  "kind": "story",
+  "label": "Answer",
+  "lines": [
+   [
+    "B. Leipzig, Germany.",
+    "claim"
+   ],
+   [
+    "Around 700 remedies, 3,500 years old, living in a university library. It has seen things.",
+    "body"
+   ],
+   [
+    "Encyclopaedia Britannica. History, not medical advice.",
+    "small"
+   ]
+  ],
+  "footer": "The friend who always pays, at 18:00"
+ },
+ "D22-vote-next": {
+  "kind": "story",
+  "label": "You pick",
+  "lines": [
+   [
+    "Two weeks of stories. Which do you want more of?",
+    "claim"
+   ],
+   [
+    "A  forgotten history\nB  how your mind works\nC  being kind, with evidence",
+    "quote"
+   ],
+   [
+    "Reply A, B or C. Most replies wins next week.",
+    "small"
+   ]
+  ]
+ }
+}

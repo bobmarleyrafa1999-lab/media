@@ -1,0 +1,222 @@
+[
+ {
+  "slot": "2026-10-26 09:00",
+  "replaces": "402026011",
+  "id": "D01-monday-putting-off",
+  "type": "STORY",
+  "alt": "What are you putting off today? Just the word. Nobody else sees your reply. I’ll go first: the dentist. Every year.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D01-monday-putting-off.jpg"
+  ]
+ },
+ {
+  "slot": "2026-10-26 21:00",
+  "replaces": "402026240",
+  "id": "D02-quiz-dreaded",
+  "type": "STORY",
+  "alt": "Everything you dreaded this year. How much of it actually happened? A  most of it / B  hardly any Reply with A or B. Answer tomorrow at 9.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D02-quiz-dreaded.jpg"
+  ]
+ },
+ {
+  "slot": "2026-10-27 09:00",
+  "replaces": "402026274",
+  "id": "D03-answer-dreaded",
+  "type": "STORY",
+  "alt": "If you said B, the data agrees. People with anxiety logged their worries for weeks. 91% never came true. LaFreniere & Newman, Behavior Therapy, 2020. Small study, 29 people.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D03-answer-dreaded.jpg"
+  ]
+ },
+ {
+  "slot": "2026-10-28 21:00",
+  "replaces": "402026718",
+  "id": "D04-quiz-99-kind",
+  "type": "STORY",
+  "alt": "99 kind comments. 1 mean one. Which one are you still thinking about at bedtime? Reply “the 1” or “the 99”. Answer tomorrow at 9.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D04-quiz-99-kind.jpg"
+  ]
+ },
+ {
+  "slot": "2026-10-29 09:00",
+  "replaces": "402026761",
+  "id": "D05-answer-99-kind",
+  "type": "STORY",
+  "alt": "The 1. You’re normal. Psychologists call it “bad is stronger than good”: one sting outweighs a lot of kindness. Baumeister et al., Review of General Psychology, 2001.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D05-answer-99-kind.jpg"
+  ]
+ },
+ {
+  "slot": "2026-10-29 21:00",
+  "replaces": "402026941",
+  "id": "D06-quiz-friend-texted",
+  "type": "STORY",
+  "alt": "The friend you’ve texted most this month. Are you more like them than a year ago? Reply yes or no. Or send this to them and ask.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D06-quiz-friend-texted.jpg"
+  ]
+ },
+ {
+  "slot": "2026-10-30 09:00",
+  "replaces": "402026980",
+  "id": "D07-answer-friend-texted",
+  "type": "STORY",
+  "alt": "Aristotle would say yes. He thought good friends improve each other just by spending time together. Moodius paraphrase of Nicomachean Ethics, Book IX.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D07-answer-friend-texted.jpg"
+  ]
+ },
+ {
+  "slot": "2026-10-30 21:00",
+  "replaces": "402027189",
+  "id": "D08-quiz-confucius",
+  "type": "STORY",
+  "alt": "A student tells Confucius: “I’ve mastered kindness.” What does Confucius say? A  “Well done.” / B  “Not yet.” Reply with A or B. Answer tomorrow at 9.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D08-quiz-confucius.jpg"
+  ]
+ },
+ {
+  "slot": "2026-10-31 09:00",
+  "replaces": "402027253",
+  "id": "D09-answer-confucius",
+  "type": "STORY",
+  "alt": "B. Brutal. Weirdly hopeful. “Ts’ze, you have not attained to that.” Analects V.11, tr. James Legge.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D09-answer-confucius.jpg"
+  ]
+ },
+ {
+  "slot": "2026-11-01 21:00",
+  "replaces": "402027761",
+  "id": "D10-quiz-who-paid",
+  "type": "STORY",
+  "alt": "Who’s happier walking home? A  the friend who paid / B  the friend who didn’t Reply with A or B. Answer tomorrow at 9.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D10-quiz-who-paid.jpg"
+  ]
+ },
+ {
+  "slot": "2026-11-02 09:00",
+  "replaces": null,
+  "id": "D11-answer-who-paid",
+  "type": "STORY",
+  "alt": "Maybe A. In 120 of 136 countries, people who’d spent on others lately reported more wellbeing. Aknin et al., 2013. Linked, not proven to cause it.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D11-answer-who-paid.jpg"
+  ]
+ },
+ {
+  "slot": "2026-11-02 21:00",
+  "replaces": null,
+  "id": "D12-quiz-emperor-mood",
+  "type": "STORY",
+  "alt": "A Roman emperor’s fix for a bad mood. A  wine / B  a list of his friends’ best bits Reply with A or B. Answer tomorrow at 9.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D12-quiz-emperor-mood.jpg"
+  ]
+ },
+ {
+  "slot": "2026-11-03 09:00",
+  "replaces": null,
+  "id": "D13-answer-emperor-mood",
+  "type": "STORY",
+  "alt": "B. Very wholesome. Slightly annoying. Marcus Aurelius thought about the good qualities of the people around him. Meditations 6.48.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D13-answer-emperor-mood.jpg"
+  ]
+ },
+ {
+  "slot": "2026-11-03 21:00",
+  "replaces": null,
+  "id": "D14-quiz-timbuktu",
+  "type": "STORY",
+  "alt": "A medical book in Timbuktu names a tree. Where can you see one today? A  a park in Mali / B  nobody knows which tree it is Reply with A or B. Answer tomorrow at 9.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D14-quiz-timbuktu.jpg"
+  ]
+ },
+ {
+  "slot": "2026-11-04 09:00",
+  "replaces": null,
+  "id": "D15-answer-timbuktu",
+  "type": "STORY",
+  "alt": "B. Still a mystery. Scholars still can’t identify some trees named in Timbuktu’s handbooks. History, not medical advice.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D15-answer-timbuktu.jpg"
+  ]
+ },
+ {
+  "slot": "2026-11-04 21:00",
+  "replaces": null,
+  "id": "D16-quiz-li-shizhen",
+  "type": "STORY",
+  "alt": "How long did Li Shizhen spend writing one book of medicines? A  2 years / B  27 years Reply with A or B. Answer tomorrow at 9.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D16-quiz-li-shizhen.jpg"
+  ]
+ },
+ {
+  "slot": "2026-11-05 09:00",
+  "replaces": null,
+  "id": "D17-answer-li-shizhen",
+  "type": "STORY",
+  "alt": "27 years. UNESCO now lists his Bencao Gangmu as world heritage. Your unfinished project has time. UNESCO Silk Roads. History, not medical advice.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D17-answer-li-shizhen.jpg"
+  ]
+ },
+ {
+  "slot": "2026-11-05 21:00",
+  "replaces": null,
+  "id": "D18-ask-thank-you",
+  "type": "STORY",
+  "alt": "Something a friend did this year that you never thanked them for. Reply with one word. Then go and thank them. I’ll check tomorrow. Gently.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D18-ask-thank-you.jpg"
+  ]
+ },
+ {
+  "slot": "2026-11-06 09:00",
+  "replaces": null,
+  "id": "D19-answer-thank-you",
+  "type": "STORY",
+  "alt": "Sent the thank-you? Reply “done”. In one study, writing and delivering a thank-you letter gave the biggest happiness boost of five exercises. It faded after a month, so repeat. Seligman et al., American Psychologist, 2005.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D19-answer-thank-you.jpg"
+  ]
+ },
+ {
+  "slot": "2026-11-06 21:00",
+  "replaces": null,
+  "id": "D20-quiz-ebers",
+  "type": "STORY",
+  "alt": "Egypt’s Ebers Papyrus, c. 1550 BCE, one of the oldest medical books. Where is it kept today? A  Cairo / B  Leipzig Reply with A or B. Answer tomorrow at 9.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D20-quiz-ebers.jpg"
+  ]
+ },
+ {
+  "slot": "2026-11-07 09:00",
+  "replaces": null,
+  "id": "D21-answer-ebers",
+  "type": "STORY",
+  "alt": "B. Leipzig, Germany. Around 700 remedies, 3,500 years old, living in a university library. It has seen things. Encyclopaedia Britannica. History, not medical advice.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D21-answer-ebers.jpg"
+  ]
+ },
+ {
+  "slot": "2026-11-07 21:00",
+  "replaces": null,
+  "id": "D22-vote-next",
+  "type": "STORY",
+  "alt": "Two weeks of stories. Which do you want more of? A  forgotten history / B  how your mind works / C  being kind, with evidence Reply A, B or C. Most replies wins next week.",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-1yud38/moodius-aurelius/strategy/20-story-replies/renders/D22-vote-next.jpg"
+  ]
+ }
+]
