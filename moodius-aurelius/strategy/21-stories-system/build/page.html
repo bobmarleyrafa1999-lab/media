@@ -1,0 +1,254 @@
+<title>Moodius Stories System</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,500&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: a magazine contents page. Masthead + section tabs, then one "department" at a time. Dark-first, in the page's own Slate/Bone palette. */
+:root{
+  --bg:#1B1F24; --panel:#2A2F36; --rule:#3A4049; --fg:#F3EFE7; --muted:#B8B3A9; --accent:#C9742E; --accent-ink:#1B1F24;
+  --ok:#7FA37A;
+  --display:"Playfair Display",Georgia,"Times New Roman",serif;
+  --body:"Inter",-apple-system,"Segoe UI",Roboto,sans-serif;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#F3EFE7;--panel:#E8E2D6;--rule:#D3CCBE;--fg:#1B1F24;--muted:#5E594F;--accent:#A85A1E;--accent-ink:#F3EFE7;--ok:#4E7449;color-scheme:light}}
+:root[data-theme="light"]{--bg:#F3EFE7;--panel:#E8E2D6;--rule:#D3CCBE;--fg:#1B1F24;--muted:#5E594F;--accent:#A85A1E;--accent-ink:#F3EFE7;--ok:#4E7449;color-scheme:light}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font:16px/1.6 var(--body);margin:0}
+.wrap{max-width:1180px;margin:0 auto;padding-block:28px 80px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.mast{display:flex;align-items:center;gap:10px;font:600 13px var(--body);letter-spacing:.22em;text-transform:uppercase}
+.mast i{width:10px;height:10px;background:var(--accent);display:inline-block}
+.mast .issue{margin-left:auto;color:var(--muted);letter-spacing:.12em;font-weight:500}
+hr.rule{border:0;border-top:1px solid var(--rule);margin:14px 0 0}
+h1{font:600 clamp(36px,6vw,64px)/1.04 var(--display);margin:34px 0 12px;text-wrap:balance;max-width:16ch}
+h2{font:600 clamp(26px,3.4vw,36px)/1.15 var(--display);margin:8px 0 14px;text-wrap:balance}
+h3{font:600 22px/1.25 var(--display);margin:26px 0 8px}
+.lede{font-size:19px;color:var(--muted);max-width:62ch;margin:0}
+.kick{font:600 12px var(--body);letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+nav.tabs{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);display:flex;gap:4px;overflow-x:auto;margin:30px 0 26px;border-bottom:1px solid var(--rule);scrollbar-width:none}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+nav.tabs button{background:none;border:0;color:var(--muted);font:500 15px var(--body);padding:12px 12px 13px;cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent}
+nav.tabs button[aria-selected="true"]{color:var(--fg);border-bottom-color:var(--accent)}
+nav.tabs button:focus-visible,button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:18px}
+.card{background:var(--panel);border-radius:14px;padding:20px 22px;min-width:0}
+.yes{display:flex;flex-direction:column;gap:6px}
+.yes b{font:600 18px var(--display)}
+.stat{display:flex;flex-wrap:wrap;gap:28px;margin:26px 0 6px}
+.stat div{min-width:110px}
+.stat strong{display:block;font:800 40px/1 var(--display);color:var(--accent);font-variant-numeric:tabular-nums}
+.stat span{color:var(--muted);font-size:14px}
+.prose{max-width:76ch;min-width:0}
+.prose p,.prose li{color:var(--fg)}
+.prose a,.card a{color:var(--accent)}
+.prose code{background:var(--panel);padding:1px 6px;border-radius:5px;font-size:.9em}
+.prose pre{background:var(--panel);padding:14px;border-radius:10px;overflow-x:auto}
+.tw{overflow-x:auto;margin:14px 0;max-width:100%}
+table{border-collapse:collapse;width:100%;font-size:14.5px}
+th,td{text-align:left;vertical-align:top;padding:9px 10px;border-bottom:1px solid var(--rule)}
+th{font:600 12px var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.toolbar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:0 0 18px}
+.seg{display:inline-flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden}
+.seg button{background:none;border:0;color:var(--muted);padding:8px 14px;font:500 14px var(--body);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--accent);color:var(--accent-ink)}
+select,input[type=search]{background:var(--panel);color:var(--fg);border:1px solid var(--rule);border-radius:10px;padding:8px 12px;font:15px var(--body);min-width:0}
+.seq{border-top:1px solid var(--rule);padding:26px 0 8px}
+.seq header{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline}
+.seq header h3{margin:0}
+.chip{font:600 11px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);border:1px solid var(--rule);border-radius:999px;padding:3px 9px}
+.chip.on{color:var(--accent-ink);background:var(--accent);border-color:var(--accent)}
+.why{color:var(--muted);max-width:75ch;margin:8px 0 14px}
+.strip{display:flex;gap:14px;overflow-x:auto;padding-bottom:10px}
+.fr{flex:0 0 200px;min-width:0}
+.fr img{width:200px;aspect-ratio:9/16;border-radius:10px;display:block;border:1px solid var(--rule)}
+.fr .cap{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.4}
+.fr .cap b{color:var(--accent);font-weight:600}
+.daypart{font:600 11px var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.cal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+.cal .dow{font:600 11px var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);padding:0 4px}
+.day{background:var(--panel);border-radius:10px;padding:10px;min-height:118px;min-width:0;display:flex;flex-direction:column;gap:4px}
+.day .d{font:800 20px var(--display);font-variant-numeric:tabular-nums}
+.day .t{font-size:13px;line-height:1.35;overflow-wrap:anywhere}
+.day .p{font-size:11px;color:var(--muted)}
+.day.hand{box-shadow:inset 0 0 0 2px var(--accent)}
+.day.blank{background:transparent}
+.legend{display:flex;gap:16px;flex-wrap:wrap;font-size:13px;color:var(--muted);margin:10px 0 0}
+.legend i{display:inline-block;width:12px;height:12px;border-radius:3px;box-shadow:inset 0 0 0 2px var(--accent);vertical-align:-1px;margin-right:6px}
+@media (max-width:760px){.cal{grid-template-columns:1fr}.cal .dow,.day.blank{display:none}.day{min-height:0}}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:14px}
+.con{background:var(--panel);border-radius:12px;padding:16px 18px;min-width:0}
+.con .h{font:600 19px/1.3 var(--display);margin:8px 0}
+.con dl{margin:0;font-size:14px;display:grid;gap:6px}
+.con dt{font:600 11px var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.con dd{margin:0}
+.con .src{color:var(--muted);font-size:12.5px;margin-top:10px}
+.q td:first-child{color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tpls{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.tpls figure{margin:0}.tpls img{width:100%;aspect-ratio:9/16;border-radius:8px;border:1px solid var(--rule)}
+.tpls figcaption{font-size:12px;color:var(--muted);margin-top:4px}
+.note{border-left:3px solid var(--accent);padding:4px 0 4px 14px;color:var(--fg);max-width:75ch}
+.empty{color:var(--muted);padding:20px 0}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+
+<div class="wrap">
+  <div class="mast"><i></i>Moodius<span class="issue">Stories · 8 Nov to 7 Dec 2026</span></div>
+  <hr class="rule">
+
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button role="tab" data-v="start">Start here</button>
+    <button role="tab" data-v="sequences">15 sequences</button>
+    <button role="tab" data-v="calendar">30-day calendar</button>
+    <button role="tab" data-v="concepts">50 concepts</button>
+    <button role="tab" data-v="questions">100 questions</button>
+    <button role="tab" data-v="conversation">Replies &amp; formats</button>
+    <button role="tab" data-v="research">Research</button>
+    <button role="tab" data-v="workflow">Workflow &amp; tests</button>
+  </nav>
+
+  <section data-view="start">
+    <div class="kick">The Stories system</div>
+    <h1>Stories that start conversations</h1>
+    <p class="lede">A month of ready stories that teach one true thing, ask one good question, and pay it off the next morning. Built on what's already scheduled to 7 Nov; it takes over on Sunday 8 Nov.</p>
+    <div class="stat">
+      <div><strong>15</strong><span>sequences, written and rendered</span></div>
+      <div><strong>50</strong><span>concepts with sources</span></div>
+      <div><strong>100</strong><span>questions, 20 per pillar</span></div>
+      <div><strong>92</strong><span>story images</span></div>
+      <div><strong>£0</strong><span>added monthly cost</span></div>
+    </div>
+    <h2 style="margin-top:34px">Three things to know</h2>
+    <div class="grid2">
+      <div class="card"><div class="kick">Stickers</div><p>No scheduler can add a poll, quiz, slider or question sticker. That's Meta's rule. So each interactive story comes twice: a <b>scheduled</b> version that asks for a typed reply, and a <b>sticker</b> version you post from your phone in about a minute. Posting by hand is optional, and test X11 checks whether it's worth the minute.</p></div>
+      <div class="card"><div class="kick">Scoreboard</div><p>Metricool's story analytics come back empty, and Meta's API reports <b>0 replies for accounts in Europe</b>. Replies get counted in the app and your DMs. The tracker spreadsheet is built around that: about 10 minutes on Sundays.</p></div>
+      <div class="card"><div class="kick">What stories are for</div><p>Instagram's head says feed posts reach new people and stories reach "your most passionate audience". Carousels stay the growth engine. Stories turn viewers into people who reply, and replies move you up their story bar.</p></div>
+    </div>
+    <h2 style="margin-top:34px">Your two yes/no answers</h2>
+    <div class="grid2">
+      <div class="card yes"><b>1. Use this calendar from 8 Nov?</b><span>Yes: the Friday routine builds and schedules the scheduled versions each week. No: the routine keeps writing stories the current way.</span></div>
+      <div class="card yes"><b>2. Save story numbers automatically?</b><span>A free GitHub job copies each story's reach, taps, exits, shares and follows before they expire. It needs the page token the comment agent is already waiting for. You'd still count replies by hand.</span></div>
+    </div>
+    <h2 style="margin-top:34px">Twelve templates</h2>
+    <p class="lede" style="margin-bottom:16px">Same palette and type as the feed. Two background treatments: Slate for most, Bone paper for books and kindness.</p>
+    <div class="tpls" id="tpls"></div>
+  </section>
+
+  <section data-view="sequences" hidden>
+    <div class="kick">Ready to publish</div>
+    <h2>The 15 strongest sequences</h2>
+    <p class="why">Evening set at 21:00, payoff at 09:00 next morning. "Moodius take" frames are drafts in the page's voice, so change anything that isn't your view. Frames in [brackets] are filled by hand with real answers.</p>
+    <div class="toolbar">
+      <div class="seg" role="group" aria-label="Version">
+        <button id="m-auto" aria-pressed="true">Scheduled version</button>
+        <button id="m-hand" aria-pressed="false">Sticker version</button>
+      </div>
+      <select id="seq-pillar" aria-label="Pillar"><option value="">All pillars</option></select>
+    </div>
+    <div id="seqs"></div>
+  </section>
+
+  <section data-view="calendar" hidden>
+    <div class="kick">8 November to 7 December</div>
+    <h2>30 nights of stories</h2>
+    <p class="why">Each square is the 21:00 evening set; its payoff runs at 09:00 the next morning. Mondays ask about you, Fridays let followers pick next week's topic.</p>
+    <div class="cal" id="cal"></div>
+    <div class="legend"><span><i></i>Sticker night: post the sticker version by hand if you feel like it (test X11)</span></div>
+  </section>
+
+  <section data-view="concepts" hidden>
+    <div class="kick">The idea bank</div>
+    <h2>50 concepts, plus three recurring formats</h2>
+    <div class="toolbar">
+      <select id="c-pillar" aria-label="Pillar"><option value="">All pillars</option></select>
+      <select id="c-format" aria-label="Format"><option value="">All formats</option></select>
+      <input type="search" id="c-q" placeholder="Search hooks" aria-label="Search concepts">
+    </div>
+    <div class="cards" id="cons"></div>
+  </section>
+
+  <section data-view="questions" hidden>
+    <div class="kick">Conversation starters</div>
+    <h2>100 questions</h2>
+    <p class="why">Light = one tap, medium = one line, deep = a real answer (two a week at most, and Moodius answers first).</p>
+    <div class="toolbar">
+      <select id="q-pillar" aria-label="Pillar"><option value="">All pillars</option></select>
+      <select id="q-depth" aria-label="Depth"><option value="">Any depth</option><option>light</option><option>medium</option><option>deep</option></select>
+      <select id="q-st" aria-label="Sticker"><option value="">Any sticker</option><option>poll</option><option>box</option><option>slider</option><option>quiz</option><option>addyours</option></select>
+    </div>
+    <div class="tw"><table class="q"><thead><tr><th>#</th><th>Question</th><th>Pillar</th><th>Sticker</th><th>Depth</th></tr></thead><tbody id="qs"></tbody></table></div>
+  </section>
+
+  <section data-view="conversation" hidden>
+    <div class="grid2" style="align-items:start">
+      <div class="prose"><div class="kick">Formats</div><h2>Making the account conversational</h2><!--DOC:conv--></div>
+      <div class="prose"><div class="kick">For real messages</div><h2>Response bank</h2><!--DOC:bank--></div>
+    </div>
+  </section>
+
+  <section data-view="research" hidden>
+    <div class="prose"><div class="kick">Verified, estimated, assumed</div><h2>What works in Stories</h2><!--DOC:research--></div>
+  </section>
+
+  <section data-view="workflow" hidden>
+    <div class="prose"><div class="kick">£0 a month</div><h2>Workflow, tools and repositories</h2><!--DOC:work-->
+      <h2 style="margin-top:40px">A/B tests</h2><!--DOC:tests-->
+      <h2 style="margin-top:40px">Templates spec</h2><!--DOC:tpl-->
+      <h2 style="margin-top:40px">Tracker</h2>
+      <p class="note">The spreadsheet <code>09-tracker.xlsx</code> is in the project files (strategy/21-stories-system). It has one row per story frame for all 30 nights already filled in, a per-sequence sheet that works out completion, replies per 100 reached and follows per 1,000, a weekly sheet, and a "how to fill" sheet.</p>
+    </div>
+  </section>
+</div>
+
+<script>
+/*DATA*/
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const P=DATA.pillars, F=DATA.formats;
+// tabs
+const views=$$("section[data-view]").map(s=>s.dataset.view);
+function show(v){ if(!views.includes(v)) v="start";
+  $$("section[data-view]").forEach(s=>s.hidden=s.dataset.view!==v);
+  $$("nav.tabs button").forEach(b=>b.setAttribute("aria-selected",b.dataset.v===v));
+  try{history.replaceState(null,"","#"+v)}catch(e){} }
+$$("nav.tabs button").forEach(b=>b.onclick=()=>{show(b.dataset.v);window.scrollTo({top:0})});
+show((location.hash||"").slice(1));
+// templates
+$("#tpls").innerHTML=DATA.templates.map(f=>`<figure><img loading="lazy" src="img/${f}" alt="Template ${esc(f.split("_")[0])}"><figcaption>${esc(f.split("_")[0].replace(/-/g," "))}</figcaption></figure>`).join("");
+// fill pillar selects
+for(const id of ["#seq-pillar","#c-pillar","#q-pillar"]) $(id).insertAdjacentHTML("beforeend",Object.entries(P).map(([k,v])=>`<option value="${k}">${esc(v)}</option>`).join(""));
+$("#c-format").insertAdjacentHTML("beforeend",Object.entries(F).map(([k,v])=>`<option value="${k}">${esc(v)}</option>`).join(""));
+// sequences
+let mode="auto";
+function frameFile(seq,i){ const rs=DATA.renders.filter(r=>r.seq===seq&&r.frame===i);
+  return (rs.find(r=>r.mode===mode)||rs.find(r=>r.mode==="all")||rs[0]); }
+function renderSeqs(){ const p=$("#seq-pillar").value;
+  $("#seqs").innerHTML=DATA.sequences.filter(s=>!p||s.pillar===p).map(s=>{
+    const frames=[...s.evening.map(f=>["Evening 21:00",f]),...s.morning.map(f=>["Morning 09:00",f])];
+    return `<article class="seq"><header><h3>${esc(s.id)} · ${esc(s.name)}</h3><span class="chip">${esc(P[s.pillar])}</span><span class="chip">${esc(F[s.format])}</span></header>
+    <p class="why">${esc(s.why)}</p><div class="strip">${frames.map(([part,f],k)=>{const r=frameFile(s.id,k+1);
+      const cap=f.sticker?(mode==="hand"?`<b>Add:</b> ${esc(f.sticker)}`:`<b>Says:</b> ${esc(f.reply||"")}`):(f.footer?`CTA: ${esc(f.footer)}`:"");
+      return `<div class="fr"><div class="daypart">${part}</div><img loading="lazy" src="img/${esc(r.file)}" alt="${esc([f.kicker,f.title,f.body].filter(Boolean).join(". "))}"><div class="cap">${cap}</div></div>`}).join("")}</div></article>`}).join("")||'<p class="empty">No sequences for this pillar.</p>'; }
+$("#m-auto").onclick=()=>{mode="auto";$("#m-auto").setAttribute("aria-pressed","true");$("#m-hand").setAttribute("aria-pressed","false");renderSeqs()};
+$("#m-hand").onclick=()=>{mode="hand";$("#m-hand").setAttribute("aria-pressed","true");$("#m-auto").setAttribute("aria-pressed","false");renderSeqs()};
+$("#seq-pillar").onchange=renderSeqs; renderSeqs();
+// calendar
+(function(){ const dows=["Mon","Tue","Wed","Thu","Fri","Sat","Sun"]; let h=dows.map(d=>`<div class="dow">${d}</div>`).join("");
+  const first=new Date(DATA.calendar[0].date+"T12:00:00"); const lead=(first.getDay()+6)%7;
+  for(let i=0;i<lead;i++) h+=`<div class="day blank" aria-hidden="true"></div>`;
+  for(const r of DATA.calendar){ const d=new Date(r.date+"T12:00:00");
+    h+=`<div class="day ${r.hand_sticker_night?"hand":""}"><span class="d">${d.getDate()} <span class="p">${r.day} ${d.toLocaleString("en-GB",{month:"short"})}</span></span><span class="t">${esc(r.evening_2100)}</span><span class="p">${esc(r.pillar)} · ${esc(r.format)}</span>${r.note?`<span class="p" style="color:var(--accent)">${esc(r.note)}</span>`:""}</div>`; }
+  $("#cal").innerHTML=h; })();
+// concepts
+function renderCons(){ const p=$("#c-pillar").value,f=$("#c-format").value,q=$("#c-q").value.toLowerCase();
+  const list=DATA.concepts.filter(c=>(!p||c.pillar===p)&&(!f||c.format===f)&&(!q||(c.hook+c.question+c.follow_up).toLowerCase().includes(q)));
+  $("#cons").innerHTML=list.map(c=>`<div class="con"><span class="chip ${c.bonus?"on":""}">${esc(c.id)}</span> <span class="chip">${esc(P[c.pillar])}</span>
+   <div class="h">${esc(c.hook)}</div><dl><dt>Format · layout</dt><dd>${esc(F[c.format])} · ${esc(c.layout)}</dd><dt>Sticker (by hand)</dt><dd>${esc(c.sticker)}</dd>
+   <dt>Scheduled version</dt><dd>${esc(c.reply_fallback)}</dd><dt>Discussion question</dt><dd>${esc(c.question)}</dd><dt>Follow-up story</dt><dd>${esc(c.follow_up)}</dd>
+   ${c.cta?`<dt>CTA</dt><dd>${esc(c.cta)}</dd>`:""}</dl><div class="src">Source: ${esc(c.source)}</div></div>`).join("")||'<p class="empty">Nothing matches. Clear a filter.</p>'; }
+["#c-pillar","#c-format"].forEach(s=>$(s).onchange=renderCons); $("#c-q").oninput=renderCons; renderCons();
+// questions
+function renderQs(){ const p=$("#q-pillar").value,d=$("#q-depth").value,s=$("#q-st").value;
+  const list=DATA.questions.filter(q=>(!p||q.pillar===p)&&(!d||q.depth===d)&&(!s||q.sticker===s));
+  $("#qs").innerHTML=list.map(q=>`<tr><td>${q.id}</td><td>${esc(q.question)}</td><td>${esc(q.pillar_name)}</td><td>${esc(q.sticker)}</td><td>${esc(q.depth)}</td></tr>`).join("")||'<tr><td colspan="5" class="empty">Nothing matches.</td></tr>'; }
+["#q-pillar","#q-depth","#q-st"].forEach(s=>$(s).onchange=renderQs); renderQs();
+</script>

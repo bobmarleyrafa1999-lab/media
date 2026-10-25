@@ -1,0 +1,922 @@
+[
+ {
+  "seq": "S01",
+  "frame": 1,
+  "part": "evening 21:00",
+  "mode": "all",
+  "file": "renders/S01/S01-01e_all.jpg",
+  "template": "T01",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S01",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "hand",
+  "file": "renders/S01/S01-02e_hand.jpg",
+  "template": "T08",
+  "sticker": "Quiz sticker: A about half / B about a quarter / C nearly everyone. Mark B correct.",
+  "reply": "Reply A, B or C. Answer tomorrow at 9."
+ },
+ {
+  "seq": "S01",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "auto",
+  "file": "renders/S01/S01-02e_auto.jpg",
+  "template": "T08",
+  "sticker": "Quiz sticker: A about half / B about a quarter / C nearly everyone. Mark B correct.",
+  "reply": "Reply A, B or C. Answer tomorrow at 9."
+ },
+ {
+  "seq": "S01",
+  "frame": 3,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S01/S01-03m_all.jpg",
+  "template": "T08",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S01",
+  "frame": 4,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S01/S01-04m_all.jpg",
+  "template": "T12",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S02",
+  "frame": 1,
+  "part": "evening 21:00",
+  "mode": "all",
+  "file": "renders/S02/S02-01e_all.jpg",
+  "template": "T01",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S02",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "hand",
+  "file": "renders/S02/S02-02e_hand.jpg",
+  "template": "T02",
+  "sticker": "Poll sticker: Up to me / Not up to me.",
+  "reply": "Reply 'mine' or 'not mine'."
+ },
+ {
+  "seq": "S02",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "auto",
+  "file": "renders/S02/S02-02e_auto.jpg",
+  "template": "T02",
+  "sticker": "Poll sticker: Up to me / Not up to me.",
+  "reply": "Reply 'mine' or 'not mine'."
+ },
+ {
+  "seq": "S02",
+  "frame": 3,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S02/S02-03m_all.jpg",
+  "template": "T03",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S02",
+  "frame": 4,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S02/S02-04m_all.jpg",
+  "template": "T12",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S02",
+  "frame": 5,
+  "part": "morning 09:00",
+  "mode": "hand",
+  "file": "renders/S02/S02-05m_hand.jpg",
+  "template": "T04",
+  "sticker": "Question box: 'The part that's up to me is…'",
+  "reply": "Reply with one sentence. I read every one."
+ },
+ {
+  "seq": "S02",
+  "frame": 5,
+  "part": "morning 09:00",
+  "mode": "auto",
+  "file": "renders/S02/S02-05m_auto.jpg",
+  "template": "T04",
+  "sticker": "Question box: 'The part that's up to me is…'",
+  "reply": "Reply with one sentence. I read every one."
+ },
+ {
+  "seq": "S03",
+  "frame": 1,
+  "part": "evening 21:00",
+  "mode": "all",
+  "file": "renders/S03/S03-01e_all.jpg",
+  "template": "T01",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S03",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "hand",
+  "file": "renders/S03/S03-02e_hand.jpg",
+  "template": "T02",
+  "sticker": "Poll sticker: Look at the bird / Keep typing.",
+  "reply": "Reply 'bird' or 'typing'."
+ },
+ {
+  "seq": "S03",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "auto",
+  "file": "renders/S03/S03-02e_auto.jpg",
+  "template": "T02",
+  "sticker": "Poll sticker: Look at the bird / Keep typing.",
+  "reply": "Reply 'bird' or 'typing'."
+ },
+ {
+  "seq": "S03",
+  "frame": 3,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S03/S03-03m_all.jpg",
+  "template": "T03",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S03",
+  "frame": 4,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S03/S03-04m_all.jpg",
+  "template": "T12",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S04",
+  "frame": 1,
+  "part": "evening 21:00",
+  "mode": "all",
+  "file": "renders/S04/S04-01e_all.jpg",
+  "template": "T01",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S04",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "hand",
+  "file": "renders/S04/S04-02e_hand.jpg",
+  "template": "T02",
+  "sticker": "Poll sticker: Calm down / I'm excited.",
+  "reply": "Reply 'calm' or 'excited'. Answer at 9."
+ },
+ {
+  "seq": "S04",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "auto",
+  "file": "renders/S04/S04-02e_auto.jpg",
+  "template": "T02",
+  "sticker": "Poll sticker: Calm down / I'm excited.",
+  "reply": "Reply 'calm' or 'excited'. Answer at 9."
+ },
+ {
+  "seq": "S04",
+  "frame": 3,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S04/S04-03m_all.jpg",
+  "template": "T03",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S04",
+  "frame": 4,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S04/S04-04m_all.jpg",
+  "template": "T12",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S04",
+  "frame": 5,
+  "part": "morning 09:00",
+  "mode": "hand",
+  "file": "renders/S04/S04-05m_hand.jpg",
+  "template": "T04",
+  "sticker": "Question box: 'This week I'm nervous about…'",
+  "reply": "Reply with one word. I'll be rooting for you."
+ },
+ {
+  "seq": "S04",
+  "frame": 5,
+  "part": "morning 09:00",
+  "mode": "auto",
+  "file": "renders/S04/S04-05m_auto.jpg",
+  "template": "T04",
+  "sticker": "Question box: 'This week I'm nervous about…'",
+  "reply": "Reply with one word. I'll be rooting for you."
+ },
+ {
+  "seq": "S05",
+  "frame": 1,
+  "part": "evening 21:00",
+  "mode": "all",
+  "file": "renders/S05/S05-01e_all.jpg",
+  "template": "T07",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S05",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "hand",
+  "file": "renders/S05/S05-02e_hand.jpg",
+  "template": "T02",
+  "sticker": "Poll sticker: Your view / The case against.",
+  "reply": "Reply 'view' or 'against'."
+ },
+ {
+  "seq": "S05",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "auto",
+  "file": "renders/S05/S05-02e_auto.jpg",
+  "template": "T02",
+  "sticker": "Poll sticker: Your view / The case against.",
+  "reply": "Reply 'view' or 'against'."
+ },
+ {
+  "seq": "S05",
+  "frame": 3,
+  "part": "evening 21:00",
+  "mode": "hand",
+  "file": "renders/S05/S05-03e_hand.jpg",
+  "template": "T04",
+  "sticker": "Question box: 'Change my mind…'",
+  "reply": "Reply and argue with me. Politely."
+ },
+ {
+  "seq": "S05",
+  "frame": 3,
+  "part": "evening 21:00",
+  "mode": "auto",
+  "file": "renders/S05/S05-03e_auto.jpg",
+  "template": "T04",
+  "sticker": "Question box: 'Change my mind…'",
+  "reply": "Reply and argue with me. Politely."
+ },
+ {
+  "seq": "S05",
+  "frame": 4,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S05/S05-04m_all.jpg",
+  "template": "T12",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S06",
+  "frame": 1,
+  "part": "evening 21:00",
+  "mode": "all",
+  "file": "renders/S06/S06-01e_all.jpg",
+  "template": "T06",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S06",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "hand",
+  "file": "renders/S06/S06-02e_hand.jpg",
+  "template": "T04",
+  "sticker": "Question box: 'A stranger once…'",
+  "reply": "Reply with one line. I'll share a few (no names)."
+ },
+ {
+  "seq": "S06",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "auto",
+  "file": "renders/S06/S06-02e_auto.jpg",
+  "template": "T04",
+  "sticker": "Question box: 'A stranger once…'",
+  "reply": "Reply with one line. I'll share a few (no names)."
+ },
+ {
+  "seq": "S06",
+  "frame": 3,
+  "part": "morning 09:00",
+  "mode": "hand",
+  "file": "renders/S06/S06-03m_hand.jpg",
+  "template": "T06",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S06",
+  "frame": 4,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S06/S06-04m_all.jpg",
+  "template": "T03",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S06",
+  "frame": 5,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S06/S06-05m_all.jpg",
+  "template": "T12",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S07",
+  "frame": 1,
+  "part": "evening 21:00",
+  "mode": "all",
+  "file": "renders/S07/S07-01e_all.jpg",
+  "template": "T01",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S07",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "hand",
+  "file": "renders/S07/S07-02e_hand.jpg",
+  "template": "T08",
+  "sticker": "Quiz sticker: A wash their hands / B open the windows / C wear masks. Mark A correct.",
+  "reply": "Reply A, B or C. Answer at 9."
+ },
+ {
+  "seq": "S07",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "auto",
+  "file": "renders/S07/S07-02e_auto.jpg",
+  "template": "T08",
+  "sticker": "Quiz sticker: A wash their hands / B open the windows / C wear masks. Mark A correct.",
+  "reply": "Reply A, B or C. Answer at 9."
+ },
+ {
+  "seq": "S07",
+  "frame": 3,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S07/S07-03m_all.jpg",
+  "template": "T08",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S07",
+  "frame": 4,
+  "part": "morning 09:00",
+  "mode": "hand",
+  "file": "renders/S07/S07-04m_hand.jpg",
+  "template": "T04",
+  "sticker": "Question box",
+  "reply": "Reply with one word. Mine: going to bed earlier."
+ },
+ {
+  "seq": "S07",
+  "frame": 4,
+  "part": "morning 09:00",
+  "mode": "auto",
+  "file": "renders/S07/S07-04m_auto.jpg",
+  "template": "T04",
+  "sticker": "Question box",
+  "reply": "Reply with one word. Mine: going to bed earlier."
+ },
+ {
+  "seq": "S08",
+  "frame": 1,
+  "part": "evening 21:00",
+  "mode": "all",
+  "file": "renders/S08/S08-01e_all.jpg",
+  "template": "T01",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S08",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "hand",
+  "file": "renders/S08/S08-02e_hand.jpg",
+  "template": "T08",
+  "sticker": "Quiz sticker: A more selfies / B they got smaller in the frame / C nothing. Mark B correct.",
+  "reply": "Reply A, B or C. Answer at 9."
+ },
+ {
+  "seq": "S08",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "auto",
+  "file": "renders/S08/S08-02e_auto.jpg",
+  "template": "T08",
+  "sticker": "Quiz sticker: A more selfies / B they got smaller in the frame / C nothing. Mark B correct.",
+  "reply": "Reply A, B or C. Answer at 9."
+ },
+ {
+  "seq": "S08",
+  "frame": 3,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S08/S08-03m_all.jpg",
+  "template": "T08",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S08",
+  "frame": 4,
+  "part": "morning 09:00",
+  "mode": "hand",
+  "file": "renders/S08/S08-04m_hand.jpg",
+  "template": "T09",
+  "sticker": "Emoji slider 🏢 → 🌌: 'How much awe this week?'",
+  "reply": "Reply with a number from 1 to 10."
+ },
+ {
+  "seq": "S08",
+  "frame": 4,
+  "part": "morning 09:00",
+  "mode": "auto",
+  "file": "renders/S08/S08-04m_auto.jpg",
+  "template": "T09",
+  "sticker": "Emoji slider 🏢 → 🌌: 'How much awe this week?'",
+  "reply": "Reply with a number from 1 to 10."
+ },
+ {
+  "seq": "S08",
+  "frame": 5,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S08/S08-05m_all.jpg",
+  "template": "T12",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S09",
+  "frame": 1,
+  "part": "evening 21:00",
+  "mode": "all",
+  "file": "renders/S09/S09-01e_all.jpg",
+  "template": "T01",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S09",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "hand",
+  "file": "renders/S09/S09-02e_hand.jpg",
+  "template": "T02",
+  "sticker": "Poll sticker: Honest now / Encourage + questions.",
+  "reply": "Reply 'honest' or 'encourage'."
+ },
+ {
+  "seq": "S09",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "auto",
+  "file": "renders/S09/S09-02e_auto.jpg",
+  "template": "T02",
+  "sticker": "Poll sticker: Honest now / Encourage + questions.",
+  "reply": "Reply 'honest' or 'encourage'."
+ },
+ {
+  "seq": "S09",
+  "frame": 3,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S09/S09-03m_all.jpg",
+  "template": "T07",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S09",
+  "frame": 4,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S09/S09-04m_all.jpg",
+  "template": "T12",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S09",
+  "frame": 5,
+  "part": "morning 09:00",
+  "mode": "hand",
+  "file": "renders/S09/S09-05m_hand.jpg",
+  "template": "T04",
+  "sticker": "Question box",
+  "reply": "Reply with one line."
+ },
+ {
+  "seq": "S09",
+  "frame": 5,
+  "part": "morning 09:00",
+  "mode": "auto",
+  "file": "renders/S09/S09-05m_auto.jpg",
+  "template": "T04",
+  "sticker": "Question box",
+  "reply": "Reply with one line."
+ },
+ {
+  "seq": "S10",
+  "frame": 1,
+  "part": "evening 21:00",
+  "mode": "all",
+  "file": "renders/S10/S10-01e_all.jpg",
+  "template": "T01",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S10",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "hand",
+  "file": "renders/S10/S10-02e_hand.jpg",
+  "template": "T08",
+  "sticker": "Quiz sticker: A 21 days / B about 66 days / C 254 days. Mark B correct.",
+  "reply": "Reply A, B or C. Answer at 9."
+ },
+ {
+  "seq": "S10",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "auto",
+  "file": "renders/S10/S10-02e_auto.jpg",
+  "template": "T08",
+  "sticker": "Quiz sticker: A 21 days / B about 66 days / C 254 days. Mark B correct.",
+  "reply": "Reply A, B or C. Answer at 9."
+ },
+ {
+  "seq": "S10",
+  "frame": 3,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S10/S10-03m_all.jpg",
+  "template": "T08",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S10",
+  "frame": 4,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S10/S10-04m_all.jpg",
+  "template": "T12",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S10",
+  "frame": 5,
+  "part": "morning 09:00",
+  "mode": "hand",
+  "file": "renders/S10/S10-05m_hand.jpg",
+  "template": "T09",
+  "sticker": "Emoji slider 🐢 → 🚀: 'How automatic is it yet?'",
+  "reply": "Reply with the habit, one word."
+ },
+ {
+  "seq": "S10",
+  "frame": 5,
+  "part": "morning 09:00",
+  "mode": "auto",
+  "file": "renders/S10/S10-05m_auto.jpg",
+  "template": "T09",
+  "sticker": "Emoji slider 🐢 → 🚀: 'How automatic is it yet?'",
+  "reply": "Reply with the habit, one word."
+ },
+ {
+  "seq": "S11",
+  "frame": 1,
+  "part": "evening 21:00",
+  "mode": "all",
+  "file": "renders/S11/S11-01e_all.jpg",
+  "template": "T05",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S11",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "hand",
+  "file": "renders/S11/S11-02e_hand.jpg",
+  "template": "T04",
+  "sticker": "Question box: 'The book that changed how I think'",
+  "reply": "Reply with the title. I'll share the list tomorrow."
+ },
+ {
+  "seq": "S11",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "auto",
+  "file": "renders/S11/S11-02e_auto.jpg",
+  "template": "T04",
+  "sticker": "Question box: 'The book that changed how I think'",
+  "reply": "Reply with the title. I'll share the list tomorrow."
+ },
+ {
+  "seq": "S11",
+  "frame": 3,
+  "part": "morning 09:00",
+  "mode": "hand",
+  "file": "renders/S11/S11-03m_hand.jpg",
+  "template": "T05",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S11",
+  "frame": 4,
+  "part": "morning 09:00",
+  "mode": "hand",
+  "file": "renders/S11/S11-04m_hand.jpg",
+  "template": "T05",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S11",
+  "frame": 5,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S11/S11-05m_all.jpg",
+  "template": "T12",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S12",
+  "frame": 1,
+  "part": "evening 21:00",
+  "mode": "all",
+  "file": "renders/S12/S12-01e_all.jpg",
+  "template": "T01",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S12",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "hand",
+  "file": "renders/S12/S12-02e_hand.jpg",
+  "template": "T04",
+  "sticker": "Question box: 'What does your envy want?' (answers show no names)",
+  "reply": "Reply with the thing, not the person."
+ },
+ {
+  "seq": "S12",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "auto",
+  "file": "renders/S12/S12-02e_auto.jpg",
+  "template": "T04",
+  "sticker": "Question box: 'What does your envy want?' (answers show no names)",
+  "reply": "Reply with the thing, not the person."
+ },
+ {
+  "seq": "S12",
+  "frame": 3,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S12/S12-03m_all.jpg",
+  "template": "T12",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S12",
+  "frame": 4,
+  "part": "morning 09:00",
+  "mode": "hand",
+  "file": "renders/S12/S12-04m_hand.jpg",
+  "template": "T02",
+  "sticker": "Poll sticker: Their life / One thing in it.",
+  "reply": "Reply 'life' or 'one thing'."
+ },
+ {
+  "seq": "S12",
+  "frame": 4,
+  "part": "morning 09:00",
+  "mode": "auto",
+  "file": "renders/S12/S12-04m_auto.jpg",
+  "template": "T02",
+  "sticker": "Poll sticker: Their life / One thing in it.",
+  "reply": "Reply 'life' or 'one thing'."
+ },
+ {
+  "seq": "S13",
+  "frame": 1,
+  "part": "evening 21:00",
+  "mode": "all",
+  "file": "renders/S13/S13-01e_all.jpg",
+  "template": "T01",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S13",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "hand",
+  "file": "renders/S13/S13-02e_hand.jpg",
+  "template": "T08",
+  "sticker": "Quiz sticker: A a bit happy / B as you'd guess / C happier than you'd guess. Mark C correct.",
+  "reply": "Reply A, B or C. Answer at 9."
+ },
+ {
+  "seq": "S13",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "auto",
+  "file": "renders/S13/S13-02e_auto.jpg",
+  "template": "T08",
+  "sticker": "Quiz sticker: A a bit happy / B as you'd guess / C happier than you'd guess. Mark C correct.",
+  "reply": "Reply A, B or C. Answer at 9."
+ },
+ {
+  "seq": "S13",
+  "frame": 3,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S13/S13-03m_all.jpg",
+  "template": "T08",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S13",
+  "frame": 4,
+  "part": "morning 09:00",
+  "mode": "hand",
+  "file": "renders/S13/S13-04m_hand.jpg",
+  "template": "T04",
+  "sticker": "Question box: first name only, or just 'got one'",
+  "reply": "Reply with a first name. That's your note."
+ },
+ {
+  "seq": "S13",
+  "frame": 4,
+  "part": "morning 09:00",
+  "mode": "auto",
+  "file": "renders/S13/S13-04m_auto.jpg",
+  "template": "T04",
+  "sticker": "Question box: first name only, or just 'got one'",
+  "reply": "Reply with a first name. That's your note."
+ },
+ {
+  "seq": "S13",
+  "frame": 5,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S13/S13-05m_all.jpg",
+  "template": "T12",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S14",
+  "frame": 1,
+  "part": "evening 21:00",
+  "mode": "all",
+  "file": "renders/S14/S14-01e_all.jpg",
+  "template": "T01",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S14",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "hand",
+  "file": "renders/S14/S14-02e_hand.jpg",
+  "template": "T08",
+  "sticker": "Quiz sticker: A a chart / B a letter to the Queen / C a scalpel. Mark A correct.",
+  "reply": "Reply A, B or C. Answer at 9."
+ },
+ {
+  "seq": "S14",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "auto",
+  "file": "renders/S14/S14-02e_auto.jpg",
+  "template": "T08",
+  "sticker": "Quiz sticker: A a chart / B a letter to the Queen / C a scalpel. Mark A correct.",
+  "reply": "Reply A, B or C. Answer at 9."
+ },
+ {
+  "seq": "S14",
+  "frame": 3,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S14/S14-03m_all.jpg",
+  "template": "T08",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S14",
+  "frame": 4,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S14/S14-04m_all.jpg",
+  "template": "T12",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S15",
+  "frame": 1,
+  "part": "evening 21:00",
+  "mode": "all",
+  "file": "renders/S15/S15-01e_all.jpg",
+  "template": "T01",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S15",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "hand",
+  "file": "renders/S15/S15-02e_hand.jpg",
+  "template": "T09",
+  "sticker": "Emoji slider 🏢 → 🌳: 'Minutes in nature this week'",
+  "reply": "Reply with your guess in minutes."
+ },
+ {
+  "seq": "S15",
+  "frame": 2,
+  "part": "evening 21:00",
+  "mode": "auto",
+  "file": "renders/S15/S15-02e_auto.jpg",
+  "template": "T09",
+  "sticker": "Emoji slider 🏢 → 🌳: 'Minutes in nature this week'",
+  "reply": "Reply with your guess in minutes."
+ },
+ {
+  "seq": "S15",
+  "frame": 3,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S15/S15-03m_all.jpg",
+  "template": "T03",
+  "sticker": null,
+  "reply": null
+ },
+ {
+  "seq": "S15",
+  "frame": 4,
+  "part": "morning 09:00",
+  "mode": "all",
+  "file": "renders/S15/S15-04m_all.jpg",
+  "template": "T12",
+  "sticker": null,
+  "reply": null
+ }
+]
