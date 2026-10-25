@@ -1,0 +1,15 @@
+{
+  "name": "2026-10-25-mino-lee-b",
+  "note": "Second pass with the confirmed YouTube channel (@mino.mp4, UCnl1-ovhacwVAeuL7lUSDyQ) and TikTok @mino.mp4. Metadata only.",
+  "per_query": 10,
+  "max_channels": 2,
+  "expand_search_channels": false,
+  "youtube_search": [],
+  "youtube_channels": ["UCnl1-ovhacwVAeuL7lUSDyQ", "@mino.mp4"],
+  "channel_tabs": ["videos", "shorts"],
+  "tab_n": 120,
+  "tiktok_users": ["mino.mp4"],
+  "tiktok_per_user": 60,
+  "urls": ["https://www.youtube.com/watch?v=ofwR7fhxCSI"],
+  "thumbnails": true
+}
