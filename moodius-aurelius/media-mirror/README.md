@@ -4,8 +4,8 @@ If this repo (`media`) goes private, `raw.githubusercontent.com` links into it s
 needs public links whenever a post is created, re-scheduled or updated. Option A keeps a second, **public,
 renders-only** repo, `bobmarleyrafa1999-lab/moodius-media`, that holds only finished images and videos.
 
-- `mirror.py list` shows exactly what would be public: about 494 files, 0.85 GB, only `.mp4/.jpg/.jpeg/.png`
-  from the render and post folders in `ALLOW`. No scripts, docs, data, strategy, ledgers, hook-intel
+- `mirror.py list` shows exactly what would be public: about 471 files, 844 MB, only `.mp4/.jpg/.jpeg/.png`
+  from the render and posted-media folders in `ALLOW` (from strategy/ only the upload packs, Manifesto stories and highlight covers that were posted). Nothing from business/ or community-agent/. No scripts, docs, data, ledgers, hook-intel
   thumbnails or personal order files.
 - `.github/workflows/moodius-media-mirror.yml` copies them on every push to `main` and every 3 hours from
   `main` plus the routine branch `claude/project-thread-bxasif`, at the **same paths**,

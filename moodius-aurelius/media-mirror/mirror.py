@@ -22,11 +22,9 @@ ALLOW = [
     "moodius-aurelius/strategy/upload-pack/*",
     "moodius-aurelius/strategy/manifesto-stories/*",
     "moodius-aurelius/strategy/highlight-covers/*",
-    "moodius-aurelius/strategy/grid-patterns/*",
     "moodius-aurelius/reels-engine/renders/*",
     "moodius-aurelius/research/adaptations/renders/*",
     "moodius-aurelius/substack/renders/*",
-    "moodius-aurelius/business/funnel/reels/renders/*",
     "moodius-aurelius/hook-intel/reports/reels/*/renders/*",
     "moodius-aurelius/audio/renders/*",
     "moodius-aurelius/threads/*",
@@ -35,7 +33,7 @@ ALLOW = [
     "moodius-aurelius/brand/*",
     "moodius-aurelius/_archive/*",
 ]
-DENY = ["*/hook-intel/data/*", "*/business/journal/out/*", "*/thumbs/*", "*/_build/*"]
+DENY = ["moodius-aurelius/business/*", "moodius-aurelius/community-agent/*", "*/hook-intel/data/*", "*/business/journal/out/*", "*/thumbs/*", "*/_build/*"]
 LINK = re.compile(r"raw\.githubusercontent\.com/bobmarleyrafa1999-lab/media/(?:claude/project-thread-[A-Za-z0-9]+|[A-Za-z0-9._-]+)/")
 
 
