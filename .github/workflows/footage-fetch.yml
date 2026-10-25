@@ -21,6 +21,8 @@ jobs:
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq --no-install-recommends ffmpeg >/dev/null
       - name: Fetch every request changed in this push
         working-directory: moodius-aurelius/reels-engine/footage-fetch
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
         run: |
           for f in $(git diff --name-only HEAD~1 HEAD -- requests/ | sed 's#moodius-aurelius/reels-engine/footage-fetch/##'); do
             [ -f "$f" ] && python3 fetch_footage.py "$f" --out ../footage-pool

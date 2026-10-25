@@ -3,7 +3,9 @@
 
     python3 fetch_footage.py requests/<name>.json --out ../footage-pool
 
-Only Public domain, CC0 and CC BY (attribution, no share-alike) files are kept; every clip's
+Sources: Wikimedia Commons by default; Pexels when the request says "source": "pexels" and the
+PEXELS_API_KEY secret is set (Pexels licence: free to use, no attribution needed; we still log the
+photographer). Only Public domain, CC0 and CC BY (attribution, no share-alike) files are kept; every clip's
 licence, author and source page go into manifest.csv so captions can credit them. Each clip is
 cut to a 9:16 1080x1920 H.264 file with no audio, plus a 4-frame contact sheet for a face check.
 No account, no API key, no spend.
@@ -67,7 +69,27 @@ def transcoded(url):
     return [f"{m[1]}/transcoded/{m[2]}/{m[3]}/{m[4]}/{m[4]}.720p.vp9.webm", url] if m else [url]
 
 
+def pexels(term, n):
+    q = urllib.parse.urlencode({"query": term, "orientation": "portrait", "size": "medium", "per_page": n})
+    req = urllib.request.Request(f"https://api.pexels.com/videos/search?{q}",
+                                 headers=UA | {"Authorization": os.environ["PEXELS_API_KEY"]})
+    with urllib.request.urlopen(req, timeout=40) as r:
+        js = json.load(r)
+    out = []
+    for v in js.get("videos", []):
+        files = sorted([f for f in v.get("video_files", []) if (f.get("height") or 0) >= 1280 and
+                        (f.get("height") or 0) > (f.get("width") or 0)], key=lambda f: f["height"])
+        if not files or not 4 <= (v.get("duration") or 0) <= 120:
+            continue
+        out.append({"title": f"Pexels {v['id']}: {v.get('url', '').rstrip('/').split('/')[-1]}", "url": files[0]["link"],
+                    "page": v.get("url"), "duration": v.get("duration"), "w": files[0]["width"], "h": files[0]["height"],
+                    "licence": "Pexels licence", "author": (v.get("user") or {}).get("name", ""), "desc": ""})
+    return out
+
+
 def usable(c):
+    if c["licence"] == "Pexels licence":
+        return not BLOCK.search(c["title"])
     lic = c["licence"].lower().replace("-", " ")
     if "sa" in lic.split() or "share" in lic or "nc" in lic.split() or "nd" in lic.split():
         return False
@@ -94,7 +116,10 @@ def main():
             if got >= req.get("per_tag", 3):
                 break
             try:
-                cands = [c for c in search(term, 40) if usable(c) and relevant(c, term) and c["url"] not in have]
+                if req.get("source") == "pexels":
+                    cands = [c for c in pexels(term, 15) if usable(c) and c["url"] not in have]
+                else:
+                    cands = [c for c in search(term, 40) if usable(c) and relevant(c, term) and c["url"] not in have]
                 time.sleep(2)
             except Exception as ex:  # noqa: BLE001
                 log.append(f"search {term}: {ex}")
@@ -106,7 +131,7 @@ def main():
                 name = f"{tag}-{got + 1}"
                 src = os.path.join(a.out, "_src")
                 try:
-                    for u in transcoded(c["url"]):
+                    for u in ([c["url"]] if c["licence"] == "Pexels licence" else transcoded(c["url"])):
                         try:
                             open(src, "wb").write(fetch(u))
                             break
