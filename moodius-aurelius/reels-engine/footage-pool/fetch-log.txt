@@ -69,3 +69,30 @@ search clock ticking: HTTP Error 401: Unauthorized
 search pocket watch: HTTP Error 401: Unauthorized
 search city lights night: HTTP Error 401: Unauthorized
 search street lights bokeh: HTTP Error 401: Unauthorized
+search city night: 6 usable
+  kept city-night-1: File:City at night.webm (CC BY 3.0)
+  kept city-night-2: File:Ljubljana city by night (4k).webm (CC BY 3.0)
+search rain: 9 usable
+  kept rain-window-1: File:Freezing rain at night in Shandong, China (20240220).webm (CC BY 2.0)
+  kept rain-window-2: File:Heavy rain in Nanshan District, Shenzhen (20250424).webm (CC BY 4.0)
+search clouds timelapse: 21 usable
+  kept sky-1: File:2011-06-06-Timelapse-clouds.ogv (CC BY 2.0)
+  kept sky-2: File:2011-08-05 21-45-00-timelapse-clouds-seloncourt.ogv (CC BY 3.0)
+search book: 1 usable
+  kept desk-book-1: File:I Found My Savior Through The Book of Mormon.webm (CC BY 3.0)
+search pages: 6 usable
+  kept desk-book-2: File:Find other pages on Translate extension.webm (CC0)
+search clock: 6 usable
+  kept clock-1: File:Clock by Veo 2.webm (Public domain)
+  File:Grandfather clock - kanagawa japan - 2022 may 2.webm: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+search pendulum: 8 usable
+  File:3-double-pendulums.webm: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+  File:Foucault pendulum.ogv: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+search hourglass: 0 usable
+search tea: 2 usable
+  File:Japanese Tea Garden.webm: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+  kept blanket-table-1: File:Tea- I don't think so....webm (CC BY 3.0)
+search wool: 0 usable
+search fabric: 5 usable
+  File:Multifunctional-non-woven-fabrics-of-interfused-graphene-fibres-ncomms13684-s2.ogv: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+  File:Multifunctional-non-woven-fabrics-of-interfused-graphene-fibres-ncomms13684-s5.ogv: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
