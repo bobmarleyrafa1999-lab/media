@@ -1,0 +1,436 @@
+{
+ "batch": "mino-01",
+ "written": "2026-10-25",
+ "grammar": "beat",
+ "note": "Faceless test batch from Mino Lee's formulas (strategy/22-mino-formulas). Facts from research/library/tidbits/epictetus.csv (EP001, EP003, EP006-EP009, EP012, EP020, EP023, EP025). Not scheduled: needs the owner's OK.",
+ "scripts": [
+  {
+   "id": "MZ01",
+   "slug": "handbook-day-1",
+   "format": "F1 Counter Serial",
+   "series": "The Handbook, 7 days",
+   "pillar": "The Reading Room",
+   "hook": "Day 1 of 7: one line from an old handbook.",
+   "hook_b": "Is it possible to read a whole Stoic handbook in 7 days?",
+   "cards": [
+    [
+     "Day 1 of 7: one line from an old handbook.",
+     2.6,
+     "hook"
+    ],
+    [
+     "Written down by a student around 100 AD. It opens like this:",
+     3.2,
+     "body"
+    ],
+    [
+     "Some things are up to you?",
+     2.4,
+     "quiz"
+    ],
+    [
+     "Some are.\nMost aren't.",
+     2.4,
+     "reveal"
+    ],
+    [
+     "Idea: Epictetus, Enchiridion 1 · Moodius words",
+     1.8,
+     "cite"
+    ],
+    [
+     "Today's job: one worry, two columns. Mine. Not mine.",
+     3.0,
+     "body"
+    ],
+    [
+     "Cross out the second column. Out loud if you like.",
+     2.8,
+     "body"
+    ],
+    [
+     "Reply DONE. Day 2 opens with how many of you did it.",
+     3.0,
+     "cta"
+    ]
+   ],
+   "visual": "Same pocket book on the same desk every day of the series; hand draws one tally mark at the end. Counter 'DAY 1/7' top third in Ember. V1 Slate + grain if no footage.",
+   "footage": "desk-book",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 301
+   },
+   "source": {
+    "type": "idea",
+    "author": "Epictetus (recorded by Arrian)",
+    "work": "Enchiridion",
+    "section": "1",
+    "translation": "George Long (paraphrased)",
+    "tidbits": "EP020, EP001"
+   },
+   "caption": "Day 1 of 7.\n\nEpictetus never wrote a book. A student, Arrian, took notes and later boiled them down into a pocket handbook. This is how it opens: some things are up to us, some aren't.\n\nToday: take one worry. Two columns, mine and not mine. Cross out the second.\n\nReply DONE (or comment it). Tomorrow's post opens with the real count.\n\nWhich column is bigger?\n\n— Moodius",
+   "first_comment": "Moodius: mine had one line in 'mine' and nine in 'not mine'. Classic. Source: Enchiridion 1 (George Long's translation, public domain), in our words.",
+   "hashtags": [
+    "#stoicism",
+    "#epictetus",
+    "#philosophy",
+    "#books"
+   ],
+   "cta": "reply",
+   "length_s": null,
+   "max_s": 20,
+   "doctor": {
+    "score": 78,
+    "issues": [
+     "Day 2 must open with the real reply count; never estimate it",
+     "Quiz is a soft question on purpose: the reveal splits the answer"
+    ],
+    "rewritten": false,
+    "by": "Claude, 25 Oct 2026"
+   }
+  },
+  {
+   "id": "MZ02",
+   "slug": "teacher-who-drove-students-away",
+   "format": "F2 Story Arc",
+   "pillar": "Forgotten Knowledge",
+   "hook": "A teacher spent years trying to lose his students.",
+   "hook_b": "His lectures failed if you clapped.",
+   "cards": [
+    [
+     "A teacher spent years trying to lose his students.",
+     2.6,
+     "hook"
+    ],
+    [
+     "Musonius Rufus, Rome, first century.",
+     1.8,
+     "body"
+    ],
+    [
+     "He tried to talk new students out of it. On purpose.",
+     2.9,
+     "body"
+    ],
+    [
+     "If you only praised his lecture, he'd spoken for nothing.",
+     2.9,
+     "body"
+    ],
+    [
+     "So who stayed?",
+     2.2,
+     "quiz"
+    ],
+    [
+     "A lame, formerly enslaved student.\nEpictetus.",
+     2.8,
+     "reveal"
+    ],
+    [
+     "Idea: Epictetus, Discourses 1.9, 3.6, 3.23 · Moodius words",
+     1.8,
+     "cite"
+    ],
+    [
+     "He tried to lose him. The world still reads him.",
+     3.0,
+     "body"
+    ],
+    [
+     "Send this to the teacher who never let you off easy.",
+     2.8,
+     "cta"
+    ]
+   ],
+   "visual": "Public-domain engraving of Epictetus (Wikimedia Commons, credited in caption) behind the reveal card; colour flip Slate → Bone at the reveal. V1 otherwise.",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 302
+   },
+   "source": {
+    "type": "idea",
+    "author": "Epictetus (recorded by Arrian)",
+    "work": "Discourses",
+    "section": "1.9, 3.6, 3.23",
+    "translation": "George Long",
+    "tidbits": "EP007, EP008, EP009, EP003, EP006"
+   },
+   "caption": "Musonius Rufus judged a lecture a failure if his students only praised it, and he tried to put new students off, as a test of who would come back.\n\nOne who came back had been enslaved in Rome and walked with a limp. His name was Epictetus, and nearly 2,000 years later people still read his notes.\n\nWho was the teacher who never let you off easy?\n\nSources: Epictetus, Discourses 1.9, 3.6, 3.23 (George Long's translation, public domain).\n\n— Moodius",
+   "first_comment": "Moodius: mine was a maths teacher who returned every page covered in red. I complained. I still check my working.",
+   "hashtags": [
+    "#history",
+    "#stoicism",
+    "#epictetus",
+    "#teachers",
+    "#philosophy"
+   ],
+   "cta": "send",
+   "length_s": null,
+   "max_s": 24,
+   "doctor": {
+    "score": 82,
+    "issues": [
+     "Callback reuses 'get rid of' from the hook: good",
+     "Moodius first comment is a voice draft; the owner may swap in his own story or drop it"
+    ],
+    "rewritten": false,
+    "by": "Claude, 25 Oct 2026"
+   }
+  },
+  {
+   "id": "MZ03",
+   "slug": "philosopher-adopts-baby",
+   "format": "F3 Result First",
+   "pillar": "The Good Life",
+   "hook": "A philosopher with nothing took in a baby nobody wanted.",
+   "hook_b": "No wife. No money. One lamp. Then a baby.",
+   "cards": [
+    [
+     "A philosopher with nothing took in a baby nobody wanted.",
+     2.6,
+     "hook"
+    ],
+    [
+     "Epictetus. Formerly enslaved. Lame. Never married.",
+     2.4,
+     "body"
+    ],
+    [
+     "A friend was going to abandon his newborn.",
+     2.4,
+     "body"
+    ],
+    [
+     "What did Epictetus do?",
+     2.2,
+     "quiz"
+    ],
+    [
+     "Took the child.\nBrought it up himself.",
+     2.6,
+     "reveal"
+    ],
+    [
+     "Idea: Simplicius, via George Long's introduction · Moodius words",
+     1.8,
+     "cite"
+    ],
+    [
+     "He taught that we control little. He used it to raise a child.",
+     3.2,
+     "body"
+    ],
+    [
+     "Send this to someone who took in someone nobody else would.",
+     3.0,
+     "cta"
+    ]
+   ],
+   "visual": "Hands folding a small blanket on a wooden table (owned b-roll, no faces), then Slate cards; warm Bone flip at the reveal.",
+   "footage": "blanket-table",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 303
+   },
+   "source": {
+    "type": "idea",
+    "author": "Simplicius, as relayed by George Long",
+    "work": "Introduction to The Discourses of Epictetus",
+    "section": "1877",
+    "translation": "n/a",
+    "tidbits": "EP012, EP003, EP006"
+   },
+   "caption": "Epictetus had been enslaved, walked with a limp and never married. An ancient commentator, Simplicius, records that late in life, when a friend was going to abandon his baby, Epictetus took the child and brought it up.\n\nWe only have this from a writer centuries later, so treat it as testimony, not a birth certificate. It's still a good one.\n\nWho took someone in when nobody else would?\n\nSource: George Long's introduction to the Discourses (1877), relaying Simplicius.\n\n— Moodius",
+   "first_comment": "Moodius: for everyone whose grandparent, aunt, neighbour or foster carer did this without making a speech about it.",
+   "hashtags": [
+    "#history",
+    "#kindness",
+    "#stoicism",
+    "#epictetus"
+   ],
+   "cta": "send",
+   "length_s": null,
+   "max_s": 22,
+   "doctor": {
+    "score": 82,
+    "issues": [
+     "Ancient testimony, flagged as such in the caption",
+     "Appreciation post, not a hurt post: fits the 2-in-3 positive rule"
+    ],
+    "rewritten": false,
+    "by": "Claude, 25 Oct 2026"
+   }
+  },
+  {
+   "id": "MZ04",
+   "slug": "pep-talk-vs-old-version",
+   "format": "F4 Pep Talk vs Old Version",
+   "pillar": "The Human Mind",
+   "hook": "Manifesting vs a 1,900-year-old handbook.",
+   "hook_b": "Same bad week. Two pieces of advice.",
+   "cards": [
+    [
+     "Manifesting vs a 1,900-year-old handbook.",
+     2.4,
+     "hook"
+    ],
+    [
+     "A:\nVisualise it going your way.",
+     2.4,
+     "labelled"
+    ],
+    [
+     "B:\nWant it the way it actually goes.",
+     2.6,
+     "labelled"
+    ],
+    [
+     "Idea: Epictetus, Enchiridion 8 · Moodius words",
+     1.8,
+     "cite"
+    ],
+    [
+     "A bets on the world. B bets on you.",
+     2.6,
+     "body"
+    ],
+    [
+     "The handbook doesn't need a vision board.",
+     2.4,
+     "body"
+    ],
+    [
+     "A or B? Comment one letter.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "Split layout: A in Ash on Graphite (deliberately flat), B in Bone with the Ember rule. Engine renders the two labelled cards in sequence; Remotion split screen only if switched on.",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 304
+   },
+   "source": {
+    "type": "idea",
+    "author": "Epictetus (recorded by Arrian)",
+    "work": "Enchiridion",
+    "section": "8",
+    "translation": "George Long (paraphrased)",
+    "tidbits": "EP023"
+   },
+   "caption": "Version A is half the internet. Version B is from a handbook a student wrote down about 1,900 years ago: don't ask for things to happen the way you wish; wish for them to happen the way they do.\n\nOne bets on the world bending. The other bets on you bending a little.\n\nA or B, honestly?\n\nSource: Enchiridion 8, after George Long's translation (public domain), in our words.\n\n— Moodius",
+   "first_comment": "Moodius: I have a vision board. It's a list of bins to put out. B wins.",
+   "hashtags": [
+    "#stoicism",
+    "#epictetus",
+    "#psychology",
+    "#philosophy"
+   ],
+   "cta": "comment",
+   "length_s": null,
+   "max_s": 20,
+   "doctor": {
+    "score": 76,
+    "issues": [
+     "Makes fun of an idea, not of people",
+     "A is a common slogan, not attributed to anyone"
+    ],
+    "rewritten": false,
+    "by": "Claude, 25 Oct 2026"
+   }
+  },
+  {
+   "id": "MZ05",
+   "slug": "that-one-friend-always-late",
+   "format": "F5 That One Friend",
+   "pillar": "The Good Life",
+   "hook": "That one friend who is late. Every. Single. Time.",
+   "hook_b": "'5 mins away' (has not left the house)",
+   "cards": [
+    [
+     "That one friend who is late. Every. Single. Time.",
+     2.6,
+     "hook"
+    ],
+    [
+     "“5 mins away”\n(still in the shower)",
+     2.4,
+     "body"
+    ],
+    [
+     "Epictetus had a two-word rule for this friend.",
+     2.6,
+     "body"
+    ],
+    [
+     "Can you guess the two words?",
+     2.4,
+     "quiz"
+    ],
+    [
+     "Bear.\nAnd forbear.",
+     2.2,
+     "reveal"
+    ],
+    [
+     "Idea: Gellius, Attic Nights 17.19, quoting Epictetus · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Bear the wait. Forbear the lecture. Order them a drink anyway.",
+     3.0,
+     "body"
+    ],
+    [
+     "Send this to that friend. They'll see it in 20 minutes.",
+     2.8,
+     "cta"
+    ]
+   ],
+   "visual": "Phone-chat mock-up rendered from text (no real chat, no names): '5 mins away' bubble, three dots, timestamp jumping 20 min. Then Slate cards.",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 305
+   },
+   "source": {
+    "type": "idea",
+    "author": "Aulus Gellius quoting Favorinus on Epictetus",
+    "work": "Attic Nights",
+    "section": "17.19",
+    "translation": "John C. Rolfe",
+    "tidbits": "EP025"
+   },
+   "caption": "Epictetus's two-word rule, as a Roman writer heard it second-hand: bear and forbear. Put up with what other people do, and hold yourself back from the things you'd regret.\n\nApplied to the friend who's always late: bear the wait, skip the lecture, still order them a drink.\n\nHow late is your latest friend, in minutes?\n\nSource: Aulus Gellius, Attic Nights 17.19 (J. C. Rolfe translation), reporting Favorinus on Epictetus.\n\n— Moodius",
+   "first_comment": "Moodius: personal best wait is 47 minutes. I bore. I did not forbear. 😅",
+   "hashtags": [
+    "#friendship",
+    "#stoicism",
+    "#epictetus",
+    "#funny"
+   ],
+   "cta": "send",
+   "length_s": null,
+   "max_s": 22,
+   "doctor": {
+    "score": 84,
+    "issues": [
+     "Positive, humorous, other-person opener: matches the reach-batch rules"
+    ],
+    "rewritten": false,
+    "by": "Claude, 25 Oct 2026"
+   }
+  }
+ ]
+}
