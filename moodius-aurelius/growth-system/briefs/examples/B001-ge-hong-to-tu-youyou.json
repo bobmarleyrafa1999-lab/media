@@ -1,13 +1,21 @@
 {
   "id": "B001",
-  "pillar": "forgotten_knowledge",
+  "pillar": "body",
+  "series": "S6",
+  "arc": "From a handbook to a Nobel (Part 1 of 3)",
+  "opener_tone": "curiosity",
+  "evidence_label": "tradition, not clinically tested",
   "format": "reel",
-  "series": "From a handbook to a Nobel (Part 1 of 3)",
   "hook": "A 1,600-year-old first-aid book won a Nobel Prize.",
   "idea": "Tu Youyou found the clue to artemisinin in Ge Hong's 4th-century handbook: soak qinghao in cold water, don't boil it.",
-  "evidence": ["HM001"],
+  "evidence": [
+    "HM001"
+  ],
   "explanation": "Her team's extracts kept failing. The old recipe said cold water. Heat was destroying the active compound, so they switched to low-temperature extraction and it worked.",
-  "visual": {"direction": "Slate background, Bone serif text, one hand-drawn wormwood sprig in Ember line art; frame 0 shows the hook in full.", "faces": false},
+  "visual": {
+    "direction": "Slate background, Bone serif text, one hand-drawn wormwood sprig in Ember line art; frame 0 shows the hook in full.",
+    "faces": false
+  },
   "caption": "In the 1970s a Chinese pharmacologist reread a 4th-century first-aid handbook and noticed one word: cold.\n\nThat word led to artemisinin, now a frontline malaria drug, and a Nobel Prize in 2015 (Tu, Nature Medicine 2011).\n\nPart 2 on Thursday: why the method mattered more than the plant.\n\nHistorical interest only, not medical advice. Some traditional remedies are toxic.\n\nWhich book next?\n\n#historyofmedicine #tuyouyou",
   "question": "Which book next?",
   "follow_reason": "Part 2 and 3 of the series arrive this week."

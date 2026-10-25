@@ -2,12 +2,15 @@
 """Post-brief checker for Moodius Aurelius.
 
 Every post starts as a small JSON brief (see briefs/examples/). This script
-checks a brief against the master brief (25 Oct 2026) before anything is
+checks a brief against the approved 90-day plan (25 Oct 2026) before anything is
 drafted, rendered or scheduled:
 
   * the eight parts every post needs (hook, idea, evidence, explanation,
     visual direction, caption, discussion question, reason to follow)
-  * one of the five pillars, and the pillar's disclaimer where it has one
+  * one of the three pillars (Mind, Body, People) and one of the six series,
+    with each series' own rules (book label, film credit, named tradition)
+  * Body posts carry an evidence label and no doses; medical history carries
+    its disclaimer
   * the caption ends on a 1-3 word question
   * every evidence id exists in the tidbit library; hand-read ids are flagged
   * no red-pill / young-men framing, no miracle-cure wording, no faces
@@ -27,7 +30,7 @@ import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PILLARS_PATH = os.path.join(HERE, "..", "pillars.json")
-REQUIRED = ["id", "pillar", "format", "hook", "idea", "evidence", "explanation",
+REQUIRED = ["id", "pillar", "series", "format", "opener_tone", "hook", "idea", "evidence", "explanation",
             "visual", "caption", "question", "follow_reason"]
 
 
@@ -72,6 +75,16 @@ def lint(brief, cfg, lib):
         return errors, warnings
     if brief["format"] not in cfg["formats"]:
         errors.append(f"format '{brief['format']}' is not one of {cfg['formats']}")
+    series = cfg["series"].get(brief["series"])
+    if not series:
+        errors.append(f"series '{brief['series']}' is not one of {sorted(cfg['series'])}")
+        return errors, warnings
+    if brief["pillar"] not in series["pillars"]:
+        errors.append(f"{series['name']} runs in {series['pillars']}, not '{brief['pillar']}'")
+    if brief["format"] not in series["formats"]:
+        errors.append(f"{series['name']} is made as {series['formats']}, not '{brief['format']}'")
+    if brief["opener_tone"] not in cfg["opener_tones"]:
+        errors.append(f"opener_tone must be one of {cfg['opener_tones']}")
 
     # Hook: short, on screen at frame 0, no numbered-list opener.
     hook_words = words(brief["hook"])
@@ -99,19 +112,41 @@ def lint(brief, cfg, lib):
         elif row.get("status", "").strip() != "verified":
             warnings.append(f"evidence '{eid}' is '{row.get('status') or 'unverified'}': hand-read the source before publishing")
 
-    # Disclaimer for health and historical medicine.
-    if pillar.get("needs_disclaimer") and pillar["disclaimer"] not in brief["caption"]:
-        errors.append(f"{pillar['name']} needs the line: \"{pillar['disclaimer']}\"")
+    # Body: an evidence label on every post, no doses, and medical history carries its line.
+    text = " ".join(str(brief.get(k, "")) for k in ("hook", "idea", "explanation", "caption", "follow_reason"))
+    if pillar.get("needs_evidence_label") or series.get("needs_evidence_label"):
+        if brief.get("evidence_label") not in cfg["evidence_labels"]:
+            errors.append(f"{pillar['name']} posts need an evidence_label: one of {cfg['evidence_labels']}")
+    if pillar.get("no_doses") and re.search(cfg["dose_pattern"], text, re.IGNORECASE):
+        errors.append("no doses in Body posts (found an amount with a unit)")
+    if series.get("medical_history_disclaimer_when_body") and brief["pillar"] == "body" \
+            and cfg["medical_history_disclaimer"] not in brief["caption"]:
+        errors.append(f"medical history needs the line: \"{cfg['medical_history_disclaimer']}\"")
+
+    # Series rules.
+    if series.get("needs_book_label"):
+        label = brief.get("book_label")
+        if label not in cfg["book_labels"]:
+            errors.append(f"{series['name']} needs book_label: one of {cfg['book_labels']}")
+        elif label == cfg["book_labels"][1] and not brief.get("read_by_surafel"):
+            errors.append("a Moodius review needs \"read_by_surafel\": true (he has read it and said what he thought)")
+    if brief["format"] == "book_review" and not brief.get("read_by_surafel"):
+        errors.append("book reviews need \"read_by_surafel\": true (authentic reviews only)")
+    if series.get("needs_film"):
+        film = brief.get("film") or {}
+        if not all(film.get(k) for k in ("title", "year", "director")):
+            errors.append(f"{series['name']} needs film.title, film.year and film.director")
+    if series.get("needs_tradition_source") and not brief.get("tradition_source"):
+        errors.append(f"{series['name']} needs tradition_source naming the tradition and text")
 
     # Framing and claims, across every text field.
-    text = " ".join(str(brief.get(k, "")) for k in ("hook", "idea", "explanation", "caption", "follow_reason"))
     for phrase in cfg["banned_phrases"]:
         if contains_phrase(text, phrase):
             errors.append(f"banned framing: '{phrase}'")
     for phrase in cfg["claim_words"]:
         if contains_phrase(text, phrase):
             msg = f"claim wording '{phrase}': history and education, never treatment claims"
-            (errors if pillar.get("needs_disclaimer") else warnings).append(msg)
+            (errors if brief["pillar"] == "body" else warnings).append(msg)
 
     # Visual: no faces in automated posts, no house-style bans.
     visual = brief["visual"]
@@ -122,11 +157,7 @@ def lint(brief, cfg, lib):
             errors.append("faces are only allowed in posts Surafel makes by hand")
         for word in cfg["banned_visuals"]:
             if contains_phrase(visual["direction"], word):
-                warnings.append(f"visual mentions '{word}', which the design system avoids")
-
-    # Book reviews must be authentic.
-    if brief["format"] == "book_review" and not brief.get("read_by_surafel"):
-        errors.append("book reviews need \"read_by_surafel\": true (authentic reviews only)")
+                warnings.append(f"visual mentions '{word}', which the design system or film rules avoid")
 
     if brief.get("affiliate") and "affiliate" not in brief["caption"].lower():
         errors.append("affiliate link present: the caption must say so")

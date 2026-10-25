@@ -113,7 +113,8 @@ def pillar_of(text, cfg, post_pillar=""):
         scores[key] = sum(1 for k in p.get("keywords", []) if re.search(r"(?<![a-z])" + re.escape(k) + r"(?![a-z])", t))
     best = max(scores, key=scores.get)
     if scores[best] == 0:
-        return post_pillar or "unknown"
+        key = (post_pillar or "").strip().lower()
+        return key if key in cfg["pillars"] else "unknown"
     return best
 
 
@@ -231,7 +232,7 @@ def run(comments_path, library, out):
         label = ", ".join(sorted(c["terms"])[:4])
         lines.append(f"- **{label}** ({cfg['pillars'].get(pillar, {}).get('name', pillar)}, asked {len(group)} times): "
                      + " / ".join(f"\"{g['text'][:90]}\"" for g in group[:3]))
-        brief = {"id": f"IDEA{i:02d}", "pillar": pillar if pillar in cfg["pillars"] else "human_mind",
+        brief = {"id": f"IDEA{i:02d}", "pillar": pillar if pillar in cfg["pillars"] else "mind",
                  "format": "carousel", "hook": "", "idea": f"Answer the repeated question: {group[0]['question']}",
                  "evidence": [], "explanation": "", "visual": {"direction": "", "faces": False},
                  "caption": "", "question": "", "follow_reason": "You asked; this answers it.",

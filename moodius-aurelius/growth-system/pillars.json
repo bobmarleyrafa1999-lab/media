@@ -1,176 +1,245 @@
 {
-  "version": "2026-10-25",
-  "note": "Five content pillars from Surafel's master brief (25 Oct 2026). Weekly targets are for 14 feed posts. The old tone-audit lanes (strategy/18-tone-rebalance) map in via 'from_lanes'.",
+  "version": "2026-10-25b",
+  "note": "Three pillars approved by Surafel 25 Oct 2026 19:44 UTC (\"Yes whatever is optimal\"), replacing the five-pillar draft. Spec: strategy/22-90-day-plan/three-pillars.json and plan.md section 5. Reading Room and Forgotten Knowledge are now series used across pillars. Weekly targets are share x the week's feed slots.",
+  "promise": "Old wisdom, new evidence: one idea a day to help you live a little better, with every source shown.",
   "pillars": {
-    "human_mind": {
-      "name": "The Human Mind",
-      "covers": "Neuroscience, neuroplasticity, psychology, behaviour, cognition, emotional intelligence. Stoic reframes of hurt and struggle live here.",
-      "per_week": 4,
-      "from_lanes": [
-        "inner life",
-        "psychology and neuroscience"
+    "mind": {
+      "name": "Mind",
+      "share": 0.4,
+      "covers": "Psychology, neuroscience, philosophy, spiritual practice.",
+      "from": [
+        "The Human Mind",
+        "The Reading Room (philosophy)"
       ],
-      "needs_disclaimer": false,
-      "max_hurt_conflict_per_week": 3,
       "keywords": [
-        "brain",
-        "mind",
-        "psychology",
-        "neuroscience",
-        "neuroplasticity",
+        "anger",
         "anxiety",
-        "overthinking",
+        "aristotle",
+        "author",
+        "book",
+        "books",
+        "brain",
+        "buddha",
+        "camus",
+        "cbt",
+        "confucius",
+        "dhammapada",
+        "discipline",
         "emotion",
         "emotions",
-        "anger",
+        "epictetus",
+        "epicurus",
+        "focus",
         "habit",
         "habits",
-        "stoic",
-        "stoicism",
+        "laozi",
+        "library",
         "marcus",
-        "epictetus",
-        "seneca",
-        "therapy",
-        "cbt",
         "memory",
-        "focus",
+        "mind",
+        "neuroplasticity",
+        "neuroscience",
+        "novel",
+        "overthinking",
+        "philosophy",
+        "psychology",
+        "read",
+        "reading",
+        "recommend",
+        "recommendation",
         "rumination",
         "self-trust",
-        "discipline"
+        "seneca",
+        "stoic",
+        "stoicism",
+        "therapy",
+        "translation",
+        "translator",
+        "ubuntu"
       ]
     },
-    "good_life": {
-      "name": "The Good Life",
-      "covers": "Altruism, kindness, generosity, friendship, relationships, community, ethical living, appreciation and awe.",
-      "per_week": 3,
-      "from_lanes": [
-        "kindness and good deeds",
-        "appreciation and awe"
+    "body": {
+      "name": "Body",
+      "share": 0.25,
+      "covers": "Movement, sleep, health claims checked, the history of medicine told as history.",
+      "from": [
+        "The Living Body",
+        "Forgotten Knowledge (medical)"
       ],
-      "needs_disclaimer": false,
+      "needs_evidence_label": true,
+      "no_doses": true,
       "keywords": [
-        "kindness",
-        "kind",
-        "generosity",
-        "giving",
-        "gift",
+        "al-andalus",
+        "andalus",
+        "artemisinin",
+        "breath",
+        "breathing",
+        "cardio",
+        "diet",
+        "dynasty",
+        "ethiopia",
+        "ethiopian",
+        "exercise",
+        "fitness",
+        "ge hong",
+        "gym",
+        "healer",
+        "heart",
+        "herb",
+        "herbal",
+        "herbs",
+        "ibn",
+        "inoculation",
+        "longevity",
+        "manuscript",
+        "medical",
+        "medicine",
+        "mongol",
+        "mongols",
+        "moors",
+        "nutrition",
+        "protein",
+        "remedies",
+        "remedy",
+        "run",
+        "running",
+        "sleep",
+        "smallpox",
+        "strength",
+        "stretch",
+        "timbuktu",
+        "tu youyou",
+        "walk",
+        "walking",
+        "wormwood",
+        "yoga"
+      ]
+    },
+    "people": {
+      "name": "People",
+      "share": 0.35,
+      "covers": "Relationships, kindness, everyday good deeds, character.",
+      "from": [
+        "The Good Life"
+      ],
+      "keywords": [
+        "altruism",
+        "awe",
+        "charity",
+        "community",
         "friend",
         "friends",
         "friendship",
-        "altruism",
-        "community",
+        "generosity",
+        "gift",
+        "giving",
+        "gratitude",
         "help",
         "helping",
-        "gratitude",
+        "kind",
+        "kindness",
         "love",
+        "neighbour",
         "relationship",
         "relationships",
-        "neighbour",
-        "volunteer",
-        "charity",
-        "awe"
-      ]
-    },
-    "reading_room": {
-      "name": "The Reading Room",
-      "covers": "Books, literature, philosophy from every tradition, authentic reviews, intellectual debates, recommendations.",
-      "per_week": 3,
-      "from_lanes": [
-        "philosophies of the world"
-      ],
-      "needs_disclaimer": false,
-      "review_needs_his_reading": true,
-      "keywords": [
-        "book",
-        "books",
-        "read",
-        "reading",
-        "novel",
-        "author",
-        "translation",
-        "translator",
-        "recommend",
-        "recommendation",
-        "philosophy",
-        "laozi",
-        "confucius",
-        "buddha",
-        "dhammapada",
-        "epicurus",
-        "aristotle",
-        "camus",
-        "ubuntu",
-        "library"
-      ]
-    },
-    "living_body": {
-      "name": "The Living Body",
-      "covers": "Fitness, strength, cardiovascular health, nutrition, longevity, sleep, evidence-based wellbeing. Never body image.",
-      "per_week": 2,
-      "from_lanes": [
-        "body and health"
-      ],
-      "needs_disclaimer": true,
-      "disclaimer": "General education, not medical advice. Check with a doctor before changing exercise, diet or medication.",
-      "keywords": [
-        "exercise",
-        "walk",
-        "walking",
-        "run",
-        "running",
-        "strength",
-        "gym",
-        "sleep",
-        "nutrition",
-        "diet",
-        "heart",
-        "cardio",
-        "longevity",
-        "protein",
-        "stretch",
-        "yoga",
-        "fitness",
-        "breath",
-        "breathing"
-      ]
-    },
-    "forgotten_knowledge": {
-      "name": "Forgotten Knowledge",
-      "covers": "Historical medicine, Chinese dynasties, Mongolian traditions, Ethiopian and African intellectual history, al-Andalus, herbal traditions, ethnobotany.",
-      "per_week": 2,
-      "from_lanes": [
-        "history of medicine"
-      ],
-      "needs_disclaimer": true,
-      "disclaimer": "Historical interest only, not medical advice. Some traditional remedies are toxic.",
-      "keywords": [
-        "herb",
-        "herbs",
-        "herbal",
-        "remedy",
-        "remedies",
-        "medicine",
-        "medical",
-        "healer",
-        "dynasty",
-        "mongol",
-        "mongols",
-        "ethiopia",
-        "ethiopian",
-        "timbuktu",
-        "andalus",
-        "al-andalus",
-        "moors",
-        "manuscript",
-        "inoculation",
-        "smallpox",
-        "wormwood",
-        "artemisinin",
-        "ibn",
-        "ge hong",
-        "tu youyou"
+        "volunteer"
       ]
     }
+  },
+  "series": {
+    "S1": {
+      "name": "One Book, One Idea, One Action",
+      "pillars": [
+        "mind",
+        "body",
+        "people"
+      ],
+      "formats": [
+        "carousel",
+        "book_review"
+      ],
+      "needs_book_label": true
+    },
+    "S2": {
+      "name": "The Scene",
+      "pillars": [
+        "mind",
+        "people"
+      ],
+      "formats": [
+        "reel",
+        "carousel"
+      ],
+      "needs_film": true
+    },
+    "S3": {
+      "name": "Claim Check",
+      "pillars": [
+        "body"
+      ],
+      "formats": [
+        "carousel",
+        "reel"
+      ],
+      "needs_evidence_label": true
+    },
+    "S4": {
+      "name": "Old Idea, Ordinary Day",
+      "pillars": [
+        "mind",
+        "people"
+      ],
+      "formats": [
+        "reel",
+        "carousel"
+      ],
+      "needs_tradition_source": true
+    },
+    "S5": {
+      "name": "Small Good Thing",
+      "pillars": [
+        "people"
+      ],
+      "formats": [
+        "reel",
+        "carousel"
+      ]
+    },
+    "S6": {
+      "name": "Forgotten Knowledge",
+      "pillars": [
+        "body",
+        "mind",
+        "people"
+      ],
+      "formats": [
+        "carousel",
+        "reel"
+      ],
+      "medical_history_disclaimer_when_body": true
+    }
+  },
+  "evidence_labels": [
+    "strong trials",
+    "mixed",
+    "observational only",
+    "animal or lab only",
+    "tradition, not clinically tested"
+  ],
+  "book_labels": [
+    "Researched introduction",
+    "Moodius review (read it)"
+  ],
+  "medical_history_disclaimer": "Historical interest only, not medical advice. Some traditional remedies are toxic.",
+  "opener_tones": [
+    "curiosity",
+    "appreciation",
+    "tension",
+    "hurt"
+  ],
+  "tone": {
+    "max_hurt_or_conflict_per_week": 4,
+    "min_curiosity_or_appreciation_share": 0.6667
   },
   "formats": [
     "reel",
@@ -191,15 +260,6 @@
     "real men",
     "masculine energy"
   ],
-  "banned_visuals": [
-    "statue",
-    "marble",
-    "gold",
-    "gradient",
-    "stock photo"
-  ],
-  "hook_max_words": 12,
-  "question_max_words": 3,
   "claim_words": [
     "ancient secret",
     "secret cure",
@@ -212,11 +272,24 @@
     "boost your immune",
     "proven to"
   ],
+  "dose_pattern": "\\b\\d+(?:[.,]\\d+)?\\s?(?:mg|mcg|µg|g|ml|iu|drops?|teaspoons?|tsp|tablespoons?|tbsp|capsules?|tablets?)\\b",
+  "banned_visuals": [
+    "statue",
+    "marble",
+    "gold",
+    "gradient",
+    "stock photo",
+    "film still",
+    "movie still",
+    "film clip",
+    "movie clip",
+    "poster"
+  ],
+  "hook_max_words": 12,
+  "question_max_words": 3,
   "follow_up_questions": {
-    "human_mind": "Which part felt most familiar?",
-    "good_life": "Who came to mind?",
-    "reading_room": "Want the full reading list?",
-    "living_body": "What would make it easier to start?",
-    "forgotten_knowledge": "Which tradition should we dig into next?"
+    "mind": "Which part felt most familiar?",
+    "body": "What would make it easier to start?",
+    "people": "Who came to mind?"
   }
 }

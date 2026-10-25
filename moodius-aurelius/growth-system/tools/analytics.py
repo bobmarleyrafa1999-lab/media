@@ -4,7 +4,9 @@
 Reads what we already have, with no account connection:
   * Instagram's own "posts" CSV export (Professional dashboard > export)
   * strategy/post-log.csv (reel metrics copied from Instagram / Metricool)
-  * a tags CSV that gives each post a pillar, format and hook type
+  * strategy/22-90-day-plan/tracker.csv (the 90-day plan's log: metrics plus
+    pillar, series, opener tone, experiment and arm in one row)
+  * a tags CSV that gives older posts a pillar (Mind, Body, People) and hook type
 
 Later the same tables take rows from the Instagram Graph API pull (official
 API, same token as the comment agent) once Surafel approves that connection.
@@ -36,6 +38,9 @@ METRICS = ["views", "reach", "likes", "comments", "saves", "shares", "follows", 
 MIN_N = 5          # below this a group result is a lead, not a finding
 MIN_REACH = 50     # posts under this reach are too small to rank
 MIN_AGE_DAYS = 3   # younger posts are still collecting reach
+
+with open(PILLARS_PATH, encoding="utf-8") as _f:
+    CFG = json.load(_f)
 
 
 def num(value):
@@ -108,6 +113,23 @@ def read_post_log(path):
     return rows
 
 
+def read_tracker(path):
+    """The 90-day plan's tracker.csv: metrics and tags in one row per post. Story rows are skipped."""
+    rows = []
+    with open(path, encoding="utf-8-sig", newline="") as f:
+        for r in csv.DictReader(f):
+            if not r.get("date") or (r.get("format") or "").lower().startswith("story"):
+                continue
+            rows.append({
+                "key": hook_key(r["date"], r.get("hook")), "source": "tracker", "url": None,
+                "date": r["date"], "kind": kind_of(r.get("format")), "hook": r.get("hook", ""),
+                **{m: num(r.get(m)) for m in METRICS},
+                "hold_3s_pct": num(r.get("hold_3s_pct")), "avg_watch_s": num(r.get("avg_watch_s")),
+                "tags": {k: r.get(k, "") for k in ("pillar", "series", "opener_tone", "experiment", "arm")},
+            })
+    return rows
+
+
 def read_tags(path):
     tags = {}
     if not path:
@@ -116,6 +138,15 @@ def read_tags(path):
         for r in csv.DictReader(f):
             tags[hook_key(r["date"], r["hook"])] = r
     return tags
+
+
+def pillar_key(value):
+    """Accept a pillar key ('mind') or its name ('Mind'); anything else is 'untagged'."""
+    v = (value or "").strip().lower()
+    for key, p in CFG["pillars"].items():
+        if v in (key, p["name"].lower()):
+            return key
+    return "untagged"
 
 
 def merge(sources, tags):
@@ -131,12 +162,16 @@ def merge(sources, tags):
                 if cur.get(k) is None and v is not None:
                     cur[k] = v
     for key, p in posts.items():
-        t = tags.get(key, {})
-        p["pillar"] = t.get("pillar") or "untagged"
+        t = dict(p.pop("tags", {}) or {})
+        t.update({k: v for k, v in tags.get(key, {}).items() if v})
+        p["pillar"] = pillar_key(t.get("pillar"))
+        p["series"] = t.get("series") or ""
+        p["opener_tone"] = (t.get("opener_tone") or "").lower()
         p["hook_type"] = t.get("hook_type") or ""
         p["experiment"] = t.get("experiment") or ""
         p["arm"] = t.get("arm") or ""
-        p["hurt_conflict"] = (t.get("hurt_conflict") or "").lower() in ("1", "yes", "true", "y")
+        p["hurt_conflict"] = (t.get("hurt_conflict") or "").lower() in ("1", "yes", "true", "y") \
+            or p["opener_tone"] == "hurt"
         p.setdefault("hold_3s_pct", None)
         p.setdefault("avg_watch_s", None)
     return sorted(posts.values(), key=lambda p: (p["date"], p["hook"]))
@@ -146,7 +181,8 @@ def write_db(posts, path):
     if os.path.exists(path):
         os.remove(path)
     con = sqlite3.connect(path)
-    cols = ["key", "source", "url", "date", "kind", "pillar", "hook_type", "hurt_conflict", "experiment", "arm", "hook",
+    cols = ["key", "source", "url", "date", "kind", "pillar", "series", "opener_tone", "hook_type", "hurt_conflict",
+            "experiment", "arm", "hook",
             *METRICS, "hold_3s_pct", "avg_watch_s"]
     con.execute(f"CREATE TABLE posts ({', '.join(cols)}, PRIMARY KEY (key))")
     con.executemany(f"INSERT INTO posts VALUES ({', '.join('?' * len(cols))})",
@@ -223,49 +259,73 @@ def recommendations(posts, cfg, week_end):
     lines.append(f"\n**Pillar balance, {start} to {week_end.isoformat()}** ({len(week)} posts):")
     for key, pillar in cfg["pillars"].items():
         have = sum(1 for p in week if p["pillar"] == key)
-        flag = "on target" if have >= pillar["per_week"] else f"{pillar['per_week'] - have} short"
-        lines.append(f"- {pillar['name']}: {have} of {pillar['per_week']} ({flag})")
+        goal = round(pillar["share"] * len(week))
+        flag = "on target" if have >= goal else f"{goal - have} short"
+        lines.append(f"- {pillar['name']}: {have} of {goal} ({pillar['share']:.0%} share; {flag})")
     untagged = sum(1 for p in week if p["pillar"] not in cfg["pillars"])
     if untagged:
-        lines.append(f"- old or untagged pillar: {untagged}")
-    hurt = sum(1 for p in week if p["hurt_conflict"] and p["kind"] == "reel")
-    cap = cfg["pillars"]["human_mind"]["max_hurt_conflict_per_week"]
-    lines.append(f"- hurt/conflict reels: {hurt} (cap {cap})" + ("  **over cap**" if hurt > cap else ""))
+        lines.append(f"- untagged: {untagged}")
+    hurt = sum(1 for p in week if p["hurt_conflict"])
+    cap = cfg["tone"]["max_hurt_or_conflict_per_week"]
+    lines.append(f"- hurt/conflict openers: {hurt} (cap {cap})" + ("  **over cap**" if hurt > cap else ""))
+    tagged = [p for p in week if p["opener_tone"]]
+    if tagged:
+        light = sum(1 for p in tagged if p["opener_tone"] in ("curiosity", "appreciation"))
+        below = light / len(tagged) < cfg["tone"]["min_curiosity_or_appreciation_share"] - 1e-9
+        lines.append(f"- curiosity or appreciation openers: {light} of {len(tagged)} (rule 2 in 3)"
+                     + ("  **below the rule**" if below else ""))
     return "\n".join(lines)
 
 
-def experiment_readout(posts, experiments_path):
-    """One line per experiment: posts, events and rate per 1,000 reached for each arm, then the call.
+def per_post(p, metric):
+    """A post's value for an experiment metric: '<x>_per_1k' or a raw column such as hold_3s_pct."""
+    if metric.endswith("_per_1k"):
+        base = metric[:-len("_per_1k")]
+        if p.get(base) is None or not p.get("reach"):
+            return None
+        return 1000 * p[base] / p["reach"]
+    return p.get(metric)
 
-    The call follows the decision rule written down before the test started:
-    enough posts in both arms, enough events in total, and a gap of at least
-    min_diff_per_1k. Anything short of that is reported as 'keep running'.
+
+def experiment_readout(posts, experiments_path):
+    """One line per experiment, called by the rule fixed before it started (the 90-day plan's 30% rule).
+
+    Per arm: the median of the per-post metric. A lead is called only when both
+    arms have min_per_arm posts, one arm's median is at least rule_ratio times
+    the other's, and the leader's median reach is no more than 30% lower.
+    Otherwise: 'keep running' or 'no clear winner'.
     """
     lines = []
     with open(experiments_path, encoding="utf-8-sig", newline="") as f:
         exps = list(csv.DictReader(f))
     for e in exps:
-        metric = e["primary_metric"]
+        metric, need, ratio = e["primary_metric"], int(e["min_per_arm"]), float(e["rule_ratio"])
         mine = [p for p in posts if p.get("experiment") == e["id"]]
         if not mine:
             lines.append(f"- {e['id']} ({e['status']}): no posts logged yet.")
             continue
         arms = {}
         for arm in (e["arm_a"], e["arm_b"]):
-            g = [p for p in mine if p.get("arm") == arm]
-            r, n = rate(g, metric)
-            arms[arm] = (r, n, sum(p.get(metric) or 0 for p in g))
-        (ra, na, ea), (rb, nb, eb) = arms[e["arm_a"]], arms[e["arm_b"]]
-        need_n, need_ev, gap = int(e["min_posts_per_arm"]), int(e["min_events"]), float(e["min_diff_per_1k"])
-        if min(na, nb) < need_n:
-            call = f"keep running ({na} and {nb} of {need_n} posts per arm)"
-        elif ea + eb < need_ev:
-            call = f"keep running (only {int(ea + eb)} {metric} in total, need {need_ev})"
-        elif abs(ra - rb) < gap:
-            call = f"no meaningful difference (gap {abs(ra - rb):.1f} per 1k, rule needs {gap})"
+            vals = [v for v in (per_post(p, metric) for p in mine if p.get("arm") == arm) if v is not None]
+            reach = [p["reach"] for p in mine if p.get("arm") == arm and p.get("reach")]
+            arms[arm] = (statistics.median(vals) if vals else None, len(vals),
+                         statistics.median(reach) if reach else None)
+        (ma, na, ra), (mb, nb, rb) = arms[e["arm_a"]], arms[e["arm_b"]]
+        if min(na, nb) < need:
+            call = f"keep running ({na} and {nb} of {need} posts per arm)"
         else:
-            call = f"{e['arm_a'] if ra > rb else e['arm_b']} ahead by {abs(ra - rb):.1f} per 1k"
-        lines.append(f"- {e['id']} {metric} per 1k: {e['arm_a']} {fmt(ra)} (n={na}) vs {e['arm_b']} {fmt(rb)} (n={nb}). {call}.")
+            lead, (ml, rl), (mo, ro) = ((e["arm_a"], (ma, ra), (mb, rb)) if ma >= mb
+                                        else (e["arm_b"], (mb, rb), (ma, ra)))
+            big_enough = ml >= ratio * mo if mo > 0 else ml > 0
+            reach_ok = rl is None or ro is None or rl >= 0.7 * ro
+            if big_enough and reach_ok:
+                call = f"lead for {lead} (median {fmt(ml)} vs {fmt(mo)})"
+            elif big_enough:
+                call = f"no clear winner: {lead} is ahead but its reach median is over 30% lower"
+            else:
+                call = f"no clear winner (needs a {ratio - 1:.0%} higher median)"
+        lines.append(f"- {e['id']} median {metric}: {e['arm_a']} {fmt(ma)} (n={na}) vs "
+                     f"{e['arm_b']} {fmt(mb)} (n={nb}). {call}.")
     return "\n".join(lines)
 
 
@@ -320,12 +380,13 @@ th,td{{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);white
 </body></html>"""
 
 
-def run(ig_export, post_log, tags_path, out, week_end, experiments=None):
-    with open(PILLARS_PATH, encoding="utf-8") as f:
-        cfg = json.load(f)
+def run(ig_export, post_log, tags_path, out, week_end, experiments=None, tracker=None):
+    cfg = CFG
     sources = []
     if ig_export:
         sources.append(read_ig_export(ig_export))
+    if tracker:
+        sources.append(read_tracker(tracker))
     if post_log:
         sources.append(read_post_log(post_log))
     posts = merge(sources, read_tags(tags_path))
@@ -346,15 +407,16 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     ap.add_argument("--ig-export")
     ap.add_argument("--post-log")
+    ap.add_argument("--tracker", help="strategy/22-90-day-plan/tracker.csv (metrics and tags in one file)")
     ap.add_argument("--tags")
     ap.add_argument("--out", required=True)
     ap.add_argument("--week-ending", default=dt.date.today().isoformat())
-    ap.add_argument("--experiments", help="experiments CSV with decision rules (experiments-proposed.csv)")
+    ap.add_argument("--experiments", help="experiments CSV with decision rules (experiments.csv)")
     args = ap.parse_args(argv)
-    if not (args.ig_export or args.post_log):
-        ap.error("give --ig-export and/or --post-log")
+    if not (args.ig_export or args.post_log or args.tracker):
+        ap.error("give --ig-export, --post-log and/or --tracker")
     _, _, _, recs = run(args.ig_export, args.post_log, args.tags, args.out,
-                        dt.date.fromisoformat(args.week_ending), args.experiments)
+                        dt.date.fromisoformat(args.week_ending), args.experiments, args.tracker)
     print(recs)
     return 0
 

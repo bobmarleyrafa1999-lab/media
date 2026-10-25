@@ -1,7 +1,7 @@
 date,hook,pillar,hook_type,hurt_conflict
-2026-10-19,"SYNTHETIC: A 1,600-year-old first-aid book won a Nobel Prize.",forgotten_knowledge,surprising fact,no
-2026-10-20,"SYNTHETIC: Why you replay the argument at 2am.",human_mind,recognisable scene,yes
-2026-10-21,"SYNTHETIC: Your brain treats giving like getting.",good_life,question a received fact,no
-2026-10-22,"SYNTHETIC: Confine yourself to the present.",reading_room,quote,no
-2026-10-23,"SYNTHETIC: The humblest exercise did surprisingly well.",living_body,surprising fact,no
-2026-10-24,"SYNTHETIC: Knowing others is clever. Knowing yourself is wiser.",reading_room,X vs Y,no
+2026-10-19,"SYNTHETIC: A 1,600-year-old first-aid book won a Nobel Prize.",Body,surprising fact,no
+2026-10-20,"SYNTHETIC: Why you replay the argument at 2am.",Mind,recognisable scene,yes
+2026-10-21,"SYNTHETIC: Your brain treats giving like getting.",People,question a received fact,no
+2026-10-22,"SYNTHETIC: Confine yourself to the present.",Mind,quote,no
+2026-10-23,"SYNTHETIC: The humblest exercise did surprisingly well.",Body,surprising fact,no
+2026-10-24,"SYNTHETIC: Knowing others is clever. Knowing yourself is wiser.",Mind,X vs Y,no

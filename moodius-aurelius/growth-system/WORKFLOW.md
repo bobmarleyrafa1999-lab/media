@@ -30,8 +30,9 @@ are the only ones that need him.
    library, the idea briefs and the series in progress.
 2. `brief_lint.py` checks each one. Failures are fixed or dropped, never
    waved through.
-3. `calendar_build.py --week-start <Monday>` fills the 14 feed slots against
-   the pillar targets and the hurt/conflict cap. It writes `week-*.md` for the
+3. `calendar_build.py --week-start <Monday>` fills the week's feed slots (14
+   until 22 Nov, the 8-post standard week from 23 Nov) against the pillar
+   shares, the hurt cap and the 2-in-3 opener rule. It writes `week-*.md` for the
    check and `handoff-*.json` for the account thread.
 4. The account thread renders the posts with the reels engine and queues them
    in Metricool, the same way as now. **Surafel** only sees exceptions:
@@ -43,7 +44,7 @@ are the only ones that need him.
 1. Data comes in two ways:
    - Today: Surafel downloads Instagram's export by hand (Professional dashboard > Export).
    - Once he approves: a weekly job pulls the same numbers through the official API.
-2. Run `analytics.py --experiments experiments-proposed.csv`. It produces the
+2. Run `analytics.py --tracker <90-day tracker.csv> --experiments experiments.csv`. It produces the
    dashboard and `weekly.md`, which list:
    - follow-up candidates
    - posts that produced follows
@@ -51,8 +52,10 @@ are the only ones that need him.
    - pillar balance
    - one readout line per experiment
 3. Each experiment is called only by the rule written down in
-   `experiments-proposed.csv` before it started: posts per arm, total events
-   and minimum gap. Until all three are met, the readout says "keep running".
+   `experiments.csv` before it started. Until both arms have enough posts, the
+   readout says "keep running". After that it calls a lead only when one
+   arm's median is 30% higher and its reach median is no more than 30% lower.
+   Otherwise it says "no clear winner".
 4. The next Friday's briefs follow from it: more of the follow-up
    candidates, fewer of the underperformers.
 
@@ -62,5 +65,5 @@ are the only ones that need him.
 - Sending a reply or a DM
 - Any spend
 - Connecting a new account or token
-- Changing the five-pillar mix
+- Changing the pillar shares or the standard week
 - Making the repo private or public
