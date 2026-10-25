@@ -1,0 +1,101 @@
+id,pillar,pillar_name,question,sticker,depth,reply_fallback
+Q001,HM,The Human Mind,What's a feeling you've never had a good word for?,box,medium,Reply with one line.
+Q002,HM,The Human Mind,"Which do you replay more: what you said, or what you didn't say?",poll,light,Reply with your pick.
+Q003,HM,The Human Mind,What's something you believed at 18 that you'd argue against now?,box,deep,Reply with one line.
+Q004,HM,The Human Mind,"When you're stressed, do you go quiet or get busy?",poll,light,Reply with your pick.
+Q005,HM,The Human Mind,What's the most useful thing you've ever been told about your own mind?,box,deep,Reply with one line.
+Q006,HM,The Human Mind,How loud is your inner critic today?,slider,light,Reply with a number 1-10.
+Q007,HM,The Human Mind,"If your inner critic were a houseguest, what would it complain about first?",box,medium,Reply with one line.
+Q008,HM,The Human Mind,What do you do in the first ten minutes after something goes wrong?,box,medium,Reply with one line.
+Q009,HM,The Human Mind,Do you decide faster when you're tired or when you're rested?,poll,light,Reply with your pick.
+Q010,HM,The Human Mind,What's a worry you've had for years that never came true?,box,deep,Reply with one line.
+Q011,HM,The Human Mind,Which is harder: asking for help or accepting it?,poll,light,Reply with your pick.
+Q012,HM,The Human Mind,What would you stop doing if nobody would notice?,box,medium,Reply with one line.
+Q013,HM,The Human Mind,How much of today were you actually present for?,slider,light,Reply with a number 1-10.
+Q014,HM,The Human Mind,What's a compliment you've never managed to believe?,box,deep,Reply with one line.
+Q015,HM,The Human Mind,Are you more patient with strangers or with people you love?,poll,light,Reply with your pick.
+Q016,HM,The Human Mind,What does 'calm' feel like in your body?,box,medium,Reply with one line.
+Q017,HM,The Human Mind,Name a mistake you're glad you made.,box,deep,Reply with one line.
+Q018,HM,The Human Mind,When did you last change your mind about a person?,box,medium,Reply with one line.
+Q019,HM,The Human Mind,Overthinker or underthinker?,poll,light,Reply with your pick.
+Q020,HM,The Human Mind,What's one thing you'd tell yourself last Monday?,box,medium,Reply with one line.
+Q021,FK,Forgotten Knowledge,"Which century would you visit for one day, just to listen?",box,light,Reply with one line.
+Q022,FK,Forgotten Knowledge,"Guess: the Ebers Papyrus, one of the oldest medical books known. 500 or 3,500 years old?",quiz,light,Reply with your guess.
+Q023,FK,Forgotten Knowledge,Whose idea do you think history forgot to credit?,box,medium,Reply with one line.
+Q024,FK,Forgotten Knowledge,Would you rather read a lost library or meet its librarian?,poll,light,Reply with your pick.
+Q025,FK,Forgotten Knowledge,"What's a family remedy you grew up with? (History, not advice.)",box,medium,Reply with one line.
+Q026,FK,Forgotten Knowledge,Which old invention do you secretly think was better than its replacement?,box,light,Reply with one line.
+Q027,FK,Forgotten Knowledge,Do you trust an old idea more or less because it's old?,poll,medium,Reply with your pick.
+Q028,FK,Forgotten Knowledge,What's something your grandparents knew that nobody taught you?,box,deep,Reply with one line.
+Q029,FK,Forgotten Knowledge,Handwritten letters: lost art or overrated?,poll,light,Reply with your pick.
+Q030,FK,Forgotten Knowledge,Which historical figure would be terrible at Instagram?,box,light,Reply with one line.
+Q031,FK,Forgotten Knowledge,Would you have believed the doctor who said 'wash your hands' in 1847?,poll,medium,Reply with your pick.
+Q032,FK,Forgotten Knowledge,What's a piece of history you only learned as an adult?,box,medium,Reply with one line.
+Q033,FK,Forgotten Knowledge,Map or diary: which tells you more about the past?,poll,light,Reply with your pick.
+Q034,FK,Forgotten Knowledge,"If you could save one book from a fire, which?",box,medium,Reply with one line.
+Q035,FK,Forgotten Knowledge,Which language would you learn just to read one old book?,box,light,Reply with one line.
+Q036,FK,Forgotten Knowledge,Do you think people in 2526 will laugh at our medicine or our manners?,poll,light,Reply with your pick.
+Q037,FK,Forgotten Knowledge,Name a place you'd like to know the full history of.,box,light,Reply with one line.
+Q038,FK,Forgotten Knowledge,Which is more impressive: building a pyramid or keeping a library alive for 500 years?,poll,medium,Reply with your pick.
+Q039,FK,Forgotten Knowledge,What would you want a historian to say about ordinary people in 2026?,box,deep,Reply with one line.
+Q040,FK,Forgotten Knowledge,Whose knowledge gets ignored because of who they are?,box,deep,Reply with one line.
+Q041,RR,The Reading Room,One book that changed how you think. Title only.,box,medium,Reply with one line.
+Q042,RR,The Reading Room,"Paper, screen or audio?",poll,light,Reply with your pick.
+Q043,RR,The Reading Room,Which book did you abandon and feel guilty about?,box,light,Reply with one line.
+Q044,RR,The Reading Room,A sentence you've reread more than five times?,box,deep,Reply with one line.
+Q045,RR,The Reading Room,"Do you underline in books, or is that a crime?",poll,light,Reply with your pick.
+Q046,RR,The Reading Room,Which book would you give a friend having a hard year?,box,medium,Reply with one line.
+Q047,RR,The Reading Room,Fiction or non-fiction: which taught you more about people?,poll,medium,Reply with your pick.
+Q048,RR,The Reading Room,What are you reading right now? (Cereal box counts.),box,light,Reply with one line.
+Q049,RR,The Reading Room,Which book did school ruin for you?,box,light,Reply with one line.
+Q050,RR,The Reading Room,"How many pages a day, honestly?",slider,light,Reply with a number 1-10.
+Q051,RR,The Reading Room,A book you disagreed with but couldn't stop thinking about?,box,deep,Reply with one line.
+Q052,RR,The Reading Room,Do you finish every book you start?,poll,light,Reply with your pick.
+Q053,RR,The Reading Room,Which character would make a good friend? Which a terrible one?,box,medium,Reply with one line.
+Q054,RR,The Reading Room,Short books or long books?,poll,light,Reply with your pick.
+Q055,RR,The Reading Room,What's a book you'd reread at 80?,box,deep,Reply with one line.
+Q056,RR,The Reading Room,Where do you read best?,box,light,Reply with one line.
+Q057,RR,The Reading Room,Old classic or new release for your next read?,poll,light,Reply with your pick.
+Q058,RR,The Reading Room,Which idea from a book do you actually use every week?,box,deep,Reply with one line.
+Q059,RR,The Reading Room,Have you ever read a book because someone you liked loved it?,poll,medium,Reply with your pick.
+Q060,RR,The Reading Room,Recommend one book in three words.,box,medium,Reply with one line.
+Q061,LB,The Living Body,"How rested are you, honestly?",slider,light,Reply with a number 1-10.
+Q062,LB,The Living Body,Where does stress show up first in your body?,box,medium,Reply with one line.
+Q063,LB,The Living Body,Morning walk or evening walk?,poll,light,Reply with your pick.
+Q064,LB,The Living Body,Minutes outside today?,slider,light,Reply with a number 1-10.
+Q065,LB,The Living Body,What helps you fall asleep that nobody would guess?,box,medium,Reply with one line.
+Q066,LB,The Living Body,When did you last move just because it felt good?,box,medium,Reply with one line.
+Q067,LB,The Living Body,"Gym, walk, dance in the kitchen, or none of your business?",poll,light,Reply with your pick.
+Q068,LB,The Living Body,How many glasses of water so far? Be honest.,slider,light,Reply with a number 1-10.
+Q069,LB,The Living Body,What does your body need more of this week?,box,medium,Reply with one line.
+Q070,LB,The Living Body,Phone in the bedroom: yes or no?,poll,light,Reply with your pick.
+Q071,LB,The Living Body,"Breathe in for four, out for six. Did you just do it?",poll,light,Reply with your pick.
+Q072,LB,The Living Body,What's your favourite boring meal?,box,light,Reply with one line.
+Q073,LB,The Living Body,Do you rest before you're tired or after you collapse?,poll,medium,Reply with your pick.
+Q074,LB,The Living Body,What's one thing you do for your body that's actually for your mind?,box,deep,Reply with one line.
+Q075,LB,The Living Body,Stairs or lift?,poll,light,Reply with your pick.
+Q076,LB,The Living Body,When did you last feel awe outdoors?,box,medium,Reply with one line.
+Q077,LB,The Living Body,How tense are your shoulders right now? (Now drop them.),slider,light,Reply with a number 1-10.
+Q078,LB,The Living Body,Cold shower: discipline or punishment?,poll,light,Reply with your pick.
+Q079,LB,The Living Body,What would you do with a free hour that's only for your body?,box,medium,Reply with one line.
+Q080,LB,The Living Body,What's a sign you're running on empty?,box,deep,Reply with one line.
+Q081,GL,The Good Life,Who would you call at 3am?,poll,deep,Reply with your pick.
+Q082,GL,The Good Life,A stranger's kindness you still remember?,box,medium,Reply with one line.
+Q083,GL,The Good Life,Who has done more for you than you've told them?,box,deep,Reply with one line.
+Q084,GL,The Good Life,Small thing that made today better?,addyours,light,Reply with yours.
+Q085,GL,The Good Life,"Lend money to a friend, or give it?",poll,medium,Reply with your pick.
+Q086,GL,The Good Life,"Who taught you to be kind, without saying a word?",box,deep,Reply with one line.
+Q087,GL,The Good Life,Being nice and being kind: same thing?,poll,medium,Reply with your pick.
+Q088,GL,The Good Life,What's a tiny tradition you'd keep forever?,box,medium,Reply with one line.
+Q089,GL,The Good Life,Would you rather be admired or trusted?,poll,medium,Reply with your pick.
+Q090,GL,The Good Life,What's the best advice you ignored and later took?,box,deep,Reply with one line.
+Q091,GL,The Good Life,Do you talk to strangers in queues?,poll,light,Reply with your pick.
+Q092,GL,The Good Life,When did you last compliment someone out loud?,slider,light,Reply with a number 1-10.
+Q093,GL,The Good Life,Busy or full: which describes your week?,poll,light,Reply with your pick.
+Q094,GL,The Good Life,Who in your life makes ordinary things funny?,box,medium,Reply with one line.
+Q095,GL,The Good Life,What does a good Sunday look like?,box,light,Reply with one line.
+Q096,GL,The Good Life,What would you do differently if you knew nobody was judging?,box,deep,Reply with one line.
+Q097,GL,The Good Life,What's a kindness that cost you nothing but mattered a lot?,box,medium,Reply with one line.
+Q098,GL,The Good Life,Friends who challenge you or friends who comfort you?,poll,medium,Reply with your pick.
+Q099,GL,The Good Life,"What's enough, for you?",box,deep,Reply with one line.
+Q100,GL,The Good Life,Send this to the friend who… (finish the sentence),box,light,Reply with one line.
