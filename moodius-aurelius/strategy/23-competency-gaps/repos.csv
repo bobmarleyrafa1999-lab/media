@@ -1,0 +1,14 @@
+repo,owner,licence,last_commit,needs_instagram_login,runs_where,gap,what_it_does_for_us,verdict
+metmuseum/openaccess,The Metropolitan Museum of Art,CC0 1.0 (data),2026-10-19,No,GitHub Actions (API blocked from container),G02,"CSV of every catalogued object with an is-public-domain flag; filter to landscapes, manuscripts, maps, instruments, still life (no portraits, no statues)",Green
+WordPress/openverse,Openverse (WordPress Foundation),MIT (code); each result has its own licence,2026-10-25,No,GitHub Actions,G02,"Search API across Wikimedia, Flickr Commons, museums; filter license=cc0,pdm only and store the licence line",Green
+Smithsonian/OpenAccess,Smithsonian Institution,CC0 1.0,2021-12-21,No,GitHub Actions,G02,Same idea as the Met; repo is stale but the API is live; use only if the Met + Openverse run short,Amber
+ManimCommunity/manim,Manim Community,MIT,2026-10-25,No,Container,G03,"Code-drawn animation (timelines, maps, simple diagrams) in brand colours; adds Cairo/Pango system libraries",Amber (one test)
+rapidfuzz/RapidFuzz,Max Bachmann,MIT,2026-10-21,No,Container,G04,Fast fuzzy matching: flags a quote that is 95% right and prints the exact translation sentence to use,Green
+gitleaks/gitleaks,Zachary Rice (gitleaks org),MIT,2026-10-23,No,GitHub Actions,G05,Scans each push for secrets plus custom rules (owner identifiers stored as a repo secret so the rule itself doesn't leak),Green
+newren/git-filter-repo,Elijah Newren,MIT (most files; some GPL-2),2026-07-09,No,Container,G05,"Rewrites history to strip identifiers. Destructive: every branch changes, open PRs break. Only if the repo stays public",Amber (needs explicit OK)
+textstat/textstat,textstat org,MIT,2026-10-13,No,Container,G11,Reading-ease and syllable counts so brief_lint can flag a heavy first or second line,Green (small)
+hexgrad/kokoro,hexgrad,Apache-2.0 (code and weights),2025-08-06,No,Container (CPU),G12,82M-parameter text-to-speech; would need an 'AI voice' label; repo quiet for 14 months,Amber (not now)
+OHF-Voice/piper1-gpl,Open Home Foundation,GPL-3.0,2026-10-23,No,Container,G12,Local TTS; successor to rhasspy/piper (MIT; archived Aug 2025); voices sound robotic for this tone,Red
+jjjake/internetarchive,Internet Archive (jjjake),AGPL-3.0,2026-10-22,No,GitHub Actions,G02,"Downloads Prelinger/archive footage; most clips show real people's faces, which breaks the no-faces rule",Red
+instaloader / instagrapi,various,MIT,—,Yes,—,G08,Would read story replies and profile data by logging into Instagram,Rejected (needs Instagram credentials)
+trufflesecurity/trufflehog,Truffle Security,AGPL-3.0,—,No,GitHub Actions,G05,Secret scanner; overlaps gitleaks,Red (gitleaks is enough)
