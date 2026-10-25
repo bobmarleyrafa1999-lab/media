@@ -1,0 +1,184 @@
+<title>Ajené Pinnock Hook Study</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one reading column; each formula is a card that sets his hook beside a reel-style Moodius text box. Moodius brand palette, dark first. */
+:root{
+  --bg:#1B1F24; --panel:#2A2F36; --line:#3A4049; --fg:#F3EFE7; --muted:#B8B3A9; --accent:#C9742E; --box:#F3EFE7; --boxfg:#1B1F24;
+  --ok:#7FA37A; --warn:#C9A13E; --later:#8C8780;
+  --display:"Playfair Display",Georgia,"Times New Roman",serif; --body:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+  color-scheme:dark;
+}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#F3EFE7;--panel:#EAE5DB;--line:#D3CDC1;--fg:#1B1F24;--muted:#5A5650;--accent:#A85A1E;--box:#1B1F24;--boxfg:#F3EFE7;--ok:#4C7448;--warn:#8A6A12;--later:#6E6A63;color-scheme:light}}
+:root[data-theme="light"]{--bg:#F3EFE7;--panel:#EAE5DB;--line:#D3CDC1;--fg:#1B1F24;--muted:#5A5650;--accent:#A85A1E;--box:#1B1F24;--boxfg:#F3EFE7;--ok:#4C7448;--warn:#8A6A12;--later:#6E6A63;color-scheme:light}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.6}
+.wrap{max-width:860px;margin:0 auto;padding-block:40px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:40px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;line-height:1.2;margin:0}
+h1{font-size:clamp(30px,5vw,44px)} h2{font-size:26px} h3{font-size:20px}
+h4{font-family:var(--body);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 8px;font-weight:600}
+p{margin:0;max-width:65ch} .muted{color:var(--muted)}
+.eyebrow{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);font-weight:600}
+section{display:grid;gap:16px}
+.lede{font-size:18px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.stat{border-top:2px solid var(--line);padding-top:10px}
+.stat b{display:block;font-family:var(--display);font-size:26px;font-variant-numeric:tabular-nums}
+.stat span{font-size:14px;color:var(--muted)}
+.picks{display:grid;gap:12px;padding:0;margin:0;list-style:none}
+.picks li{display:grid;grid-template-columns:auto 1fr;gap:12px;align-items:baseline}
+.picks a{color:var(--accent);font-weight:600;text-decoration:none;font-variant-numeric:tabular-nums}
+.f{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px;display:grid;gap:14px}
+.f header{display:flex;flex-wrap:wrap;gap:10px;align-items:baseline}
+.fid{font-size:13px;font-weight:600;color:var(--accent);font-variant-numeric:tabular-nums}
+.fit{margin-left:auto;font-size:12px;font-weight:600;padding:2px 10px;border-radius:999px;border:1px solid currentColor}
+.fit-strong{color:var(--ok)} .fit-good,.fit-adapt{color:var(--warn)} .fit-later{color:var(--later)}
+.shape{font-style:italic;color:var(--muted)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.cols>div{min-width:0;display:grid;gap:10px;align-content:start}
+@media (max-width:640px){.cols{grid-template-columns:1fr}}
+.ev{margin:0;padding:0;list-style:none;display:grid;gap:8px;font-size:15px}
+.plat{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;display:block}
+.ev q{quotes:"“" "”"}
+.num{display:block;font-size:13px;color:var(--accent);font-variant-numeric:tabular-nums}
+.why,.fact{font-size:14px;color:var(--muted)} .fact b{color:var(--fg)}
+.hook{background:var(--box);color:var(--boxfg);border-radius:8px;padding:12px 14px;font-weight:600;font-size:15px;line-height:1.45}
+.table{overflow-x:auto;border:1px solid var(--line);border-radius:8px}
+table{border-collapse:collapse;width:100%;font-size:14px;min-width:560px}
+th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+td.n{font-variant-numeric:tabular-nums;white-space:nowrap}
+ol.steps{margin:0;padding-left:22px;display:grid;gap:10px;max-width:65ch}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+code{font-size:13px;background:var(--panel);padding:1px 5px;border-radius:4px}
+</style>
+<div class="wrap">
+<section>
+<span class="eyebrow">Hook study · 25 Oct 2026</span>
+<h1>Ajené Pinnock's hooks, rebuilt for a faceless page</h1>
+<p class="lede">I collected 267 of his public hooks across Instagram, TikTok and YouTube and sorted the ones that beat his own average into 12 formulas. Each one below has a Moodius rewrite that needs no face and no made-up numbers.</p>
+<div class="stats">
+<div class="stat"><b>267</b><span>hooks collected (6 Instagram, 120 TikTok, 141 YouTube)</span></div>
+<div class="stat"><b>2.6x</b><span>TikTok captions with a "…" cliffhanger vs without (median views)</span></div>
+<div class="stat"><b>8,316</b><span>shares on "I didn't think I was going to like it here. 9/10", his most shared</span></div>
+<div class="stat"><b>0</b><span>spoken hooks: transcripts are behind a sign-in wall</span></div>
+</div>
+</section>
+
+<section>
+<h2>Try these three first</h2>
+<ul class="picks">
+<li><a href="#a06">A06</a><span><b>Don't do it yet.</b> "Don't send that text yet…" His version reached 1.1M with a 7% like rate. It is a conflict opener, which already works for Moodius.</span></li>
+<li><a href="#a02">A02</a><span><b>Labelled-role skit.</b> "You, 2am" vs "Epictetus". His biggest visible reel (242K) is a skit with name labels, and labels work without faces.</span></li>
+<li><a href="#a12">A12</a><span><b>Question about the obvious odd thing.</b> "Why did the most powerful man alive keep a diary nobody was meant to read?" Curiosity, not hurt, so it fits the 2-in-3 positive rule.</span></li>
+</ul>
+</section>
+
+<section>
+<h2>The twelve formulas</h2>
+<p class="muted">"x" means times his own median on that platform (TikTok 1,900 views, YouTube long-form 3,050, Shorts 520). Most formulas rest on one or two of his posts, so treat them as leads to test.</p>
+<article class="f" id="a06">
+<header><span class="fid">A06</span><h3>Don&#x27;t do it yet</h3><span class="fit fit-strong">Use as is</span></header>
+<p class="shape">Don&#x27;t [do the thing you&#x27;re about to do] yet… [reason in line 2].</p>
+<div class="cols"><div><h4>His version</h4><ul class="ev"><li><span class="plat">TikTok</span> <q>Dont buy a new iPhone yet… iPhone 16 is 1 month away.</q> <span class="num">1.1M views, 78.4K likes (7%), 579x his median</span></li><li><span class="plat">YouTube Shorts</span> <q>Never Record Until You Know These Best Practices</q> <span class="num">4.7K, 9x his Shorts median</span></li></ul><p class="why">It stops a decision the viewer is about to make. Waiting costs nothing, so they stay to hear why.</p></div>
+<div><h4>Moodius rewrite</h4><div class="hook"><span>Don&#x27;t send that text yet…</span></div><div class="hook"><span>Don&#x27;t reply to that message tonight. Read this first.</span></div><p class="fact"><b>Check source.</b> Line 2 can be Seneca&#x27;s advice to wait out anger (On Anger). Check the exact book and section against Standard Ebooks before it goes in a post.</p></div></div>
+</article>
+<article class="f" id="a02">
+<header><span class="fid">A02</span><h3>Labelled-role skit</h3><span class="fit fit-strong">Use as is</span></header>
+<p class="shape">Two characters with name labels on screen, a short exchange, a funny last line.</p>
+<div class="cols"><div><h4>His version</h4><ul class="ev"><li><span class="plat">Instagram</span> <q>&#x27;Social Media Consultant&#x27; vs &#x27;Online Coach/Consultant&#x27;, ends &#x27;Thank you&#x27; + a Follow button</q> <span class="num">242K views, his biggest pinned reel</span></li></ul><p class="why">Viewers know both roles in one second, so there is no setup. The labels do the explaining.</p></div>
+<div><h4>Moodius rewrite</h4><div class="hook"><span>Label left: &#x27;You, 2am&#x27;. Label right: &#x27;Epictetus, Nicopolis&#x27;. You: &#x27;What if they&#x27;re angry with me?&#x27; Epictetus: &#x27;Is their anger yours to run?&#x27; You: &#x27;…going back to sleep.&#x27; (Moodius paraphrase, labelled.)</span></div><p class="fact"><b>Ready.</b> Epictetus taught at Nicopolis after Domitian expelled philosophers (library EP010, verified). The line is a Moodius paraphrase of &#x27;up to us / not up to us&#x27; and must say so on screen.</p></div></div>
+</article>
+<article class="f" id="a03">
+<header><span class="fid">A03</span><h3>Headline + twist subline</h3><span class="fit fit-strong">Use as is</span></header>
+<p class="shape">Big claim on line 1, a small line under it that turns it into a joke on yourself.</p>
+<div class="cols"><div><h4>His version</h4><ul class="ev"><li><span class="plat">Instagram</span> <q>I fired my video editor and hired Claude (By the way, that editor was me 😂)</q> <span class="num">pinned grid, views not shown</span></li><li><span class="plat">TikTok</span> <q>£7 a video is crazy. I guess we all start somewhere lol.</q> <span class="num">11.1K, 5.8x</span></li></ul><p class="why">The subline rewards people who read it, and the self-own makes the account feel human without a face.</p></div>
+<div><h4>Moodius rewrite</h4><div class="hook"><span>I stopped arguing with the person who ruins my mornings. (It was me. It was always me.)</span></div><div class="hook"><span>An emperor wrote twelve books of advice. (He was the only reader he wanted.)</span></div><p class="fact"><b>Ready.</b> Meditations has 12 books and was written to himself; its Greek title is usually given as &#x27;To Himself&#x27;. Standard history, check wording before use.</p></div></div>
+</article>
+<article class="f" id="a10">
+<header><span class="fid">A10</span><h3>Tip for a named problem</h3><span class="fit fit-strong">Use as is</span></header>
+<p class="shape">Useful [kind of] tip if you keep [specific annoying thing].</p>
+<div class="cols"><div><h4>His version</h4><ul class="ev"><li><span class="plat">TikTok</span> <q>Useful Mac tip if you keep running out of storage</q> <span class="num">117.6K, 62x</span></li><li><span class="plat">YouTube Shorts</span> <q>Filming Tips for Talking Head Videos</q> <span class="num">23K, 44x</span></li></ul><p class="why">The viewer self-selects in four words. If they keep doing the thing, the video is for them.</p></div>
+<div><h4>Moodius rewrite</h4><div class="hook"><span>Useful Stoic trick if you keep replaying that conversation.</span></div><div class="hook"><span>Useful trick if you keep checking whether they replied.</span></div><p class="fact"><b>Check source.</b> Body: sort the thought into &#x27;mine to change&#x27; and &#x27;not mine&#x27;, Epictetus&#x27;s opening rule (Enchiridion 1). Check translation wording before use.</p></div></div>
+</article>
+<article class="f" id="a12">
+<header><span class="fid">A12</span><h3>Question about the obvious odd thing</h3><span class="fit fit-strong">Use as is</span></header>
+<p class="shape">Why [is this strange thing everyone has seen] like that?</p>
+<div class="cols"><div><h4>His version</h4><ul class="ev"><li><span class="plat">TikTok</span> <q>Why are iPads bezels so big?????</q> <span class="num">125.6K, 66x</span></li><li><span class="plat">YouTube Shorts</span> <q>The Best Wireless Microphone?</q> <span class="num">231K, 444x his Shorts median</span></li></ul><p class="why">Everyone has noticed it and nobody has asked. Curiosity, not pain, does the work, which fits the 2-in-3 appreciation rule.</p></div>
+<div><h4>Moodius rewrite</h4><div class="hook"><span>Why did the most powerful man alive keep a diary nobody was meant to read?</span></div><div class="hook"><span>Why did an enslaved teacher end up on an emperor&#x27;s bookshelf?</span></div><p class="fact"><b>Ready.</b> Epictetus was enslaved in Rome (EP003) and Marcus thanks Rusticus for lending him Epictetus&#x27;s discourses, Meditations 1.7 (EP026). Both verified in the library.</p></div></div>
+</article>
+<article class="f" id="a07">
+<header><span class="fid">A07</span><h3>Big name, against the crowd</h3><span class="fit fit-good">Use with care</span></header>
+<p class="shape">[Famous name] created his own problem… [your calmer verdict].</p>
+<div class="cols"><div><h4>His version</h4><ul class="ev"><li><span class="plat">TikTok</span> <q>MKBHD created his own problem… I think people are just overreacting.</q> <span class="num">1M views, 30.9K likes, 527x</span></li><li><span class="plat">YouTube long</span> <q>YouTube Changed Forever &amp; What&#x27;s Working In Content Right Now...</q> <span class="num">13K, 4.3x</span></li><li><span class="plat">TikTok (miss)</span> <q>They say never upload short form in 4K… I say different.</q> <span class="num">1.4K, 0.7x: no name, so it fell flat</span></li></ul><p class="why">A name people already know plus a verdict they can disagree with. The miss shows the name is what carries it.</p></div>
+<div><h4>Moodius rewrite</h4><div class="hook"><span>Marcus Aurelius created his own problem… and it was his son.</span></div><div class="hook"><span>The wisest emperor in Rome made his worst call at home.</span></div><p class="fact"><b>Check source.</b> History pillar: Marcus made Commodus co-emperor, and Commodus&#x27;s reign is remembered badly. Check dates against a public-domain history (for example Gibbon) before use.</p></div></div>
+</article>
+<article class="f" id="a08">
+<header><span class="fid">A08</span><h3>Low expectations, then a score</h3><span class="fit fit-strong">Use as is</span></header>
+<p class="shape">I didn&#x27;t think I&#x27;d like [it]. [Score]/10.</p>
+<div class="cols"><div><h4>His version</h4><ul class="ev"><li><span class="plat">TikTok</span> <q>I didn&#x27;t think I was going to like it here tbf. 9/10.</q> <span class="num">300.4K views, 8,316 shares: the most shared of his 120 TikToks</span></li></ul><p class="why">An honest-sounding reversal plus a number people want to argue with. It drew shares, which is the metric that tracks reach for Moodius.</p></div>
+<div><h4>Moodius rewrite</h4><div class="hook"><span>Rating Stoic habits I expected to hate. Getting up early: 4/10. Writing down three lines at night: 9/10.</span></div><div class="hook"><span>I didn&#x27;t think a book this old would get me. 9/10.</span></div><p class="fact"><b>Ready.</b> Scores are the page&#x27;s opinion, not data. Fine as voice. Make it a &#x27;you pick the next one&#x27; Friday story.</p></div></div>
+</article>
+<article class="f" id="a11">
+<header><span class="fid">A11</span><h3>X &gt;&gt; Y verdict</h3><span class="fit fit-good">Use with care</span></header>
+<p class="shape">[Thing] &gt;&gt; [thing]. or Hands down the best [n] [things].</p>
+<div class="cols"><div><h4>His version</h4><ul class="ev"><li><span class="plat">TikTok</span> <q>Apple Watch &gt;&gt; Whoop.</q> <span class="num">88.5K, 47x</span></li><li><span class="plat">TikTok</span> <q>Hands down the best 3 premiere pro plugins</q> <span class="num">129.9K, 68x</span></li></ul><p class="why">A verdict in two words. It matches the Moodius hook bank, where X vs Y openers ran 3.4x.</p></div>
+<div><h4>Moodius rewrite</h4><div class="hook"><span>Writing it down &gt;&gt; talking yourself in circles.</span></div><div class="hook"><span>Bear and forbear &gt;&gt; &#x27;just stay positive&#x27;.</span></div><p class="fact"><b>Ready.</b> &#x27;Bear and forbear&#x27; is Epictetus&#x27;s two-word rule as reported by Gellius, Attic Nights 17.19 (EP025, verified).</p></div></div>
+</article>
+<article class="f" id="a01">
+<header><span class="fid">A01</span><h3>Receipts first</h3><span class="fit fit-adapt">Changed for Moodius</span></header>
+<p class="shape">Show the result and who got it before you explain anything.</p>
+<div class="cols"><div><h4>His version</h4><ul class="ev"><li><span class="plat">Instagram</span> <q>Coach Makes $3000 MRR + Closed $8K Client</q> <span class="num">74.5K, pinned</span></li><li><span class="plat">YouTube long</span> <q>How I Edit My Videos Using Claude Code (Fully Automated)</q> <span class="num">42K, 14x his long-form median</span></li><li><span class="plat">TikTok</span> <q>How much YouTube paid me for 100k views…</q> <span class="num">14.3K, 7.5x</span></li></ul><p class="why">Proof before promise. His client case on the agency page backs the numbers.</p></div>
+<div><h4>Moodius rewrite</h4><div class="hook"><span>Born enslaved. Ended up on an emperor&#x27;s bookshelf.</span></div><p class="fact"><b>Ready.</b> Moodius has no client results and must never invent stats or ROI, so the &#x27;receipt&#x27; is always from the historical record (EP003 + EP026, verified).</p></div></div>
+</article>
+<article class="f" id="a05">
+<header><span class="fid">A05</span><h3>Reintroduce yourself (pinned)</h3><span class="fit fit-strong">Use as is</span></header>
+<p class="shape">A pinned reel that says who the page is for and what they get, made for new visitors.</p>
+<div class="cols"><div><h4>His version</h4><ul class="ev"><li><span class="plat">Instagram</span> <q>&#x27;to reintroduce&#x27; (him pointing at the camera)</q> <span class="num">15.6K, pinned</span></li></ul><p class="why">The top 9-12 tiles decide whether a visitor follows. A pinned intro answers &#x27;what is this page&#x27; in one tap.</p></div>
+<div><h4>Moodius rewrite</h4><div class="hook"><span>Time to reintroduce this page. No face. No name. Just old notes that keep working on new problems.</span></div><p class="fact"><b>Ready.</b> Faceless by design: the anonymity becomes the hook. Fits the 90-day plan&#x27;s &#x27;pin 3&#x27; action.</p></div></div>
+</article>
+<article class="f" id="a13">
+<header><span class="fid">A13</span><h3>Identity order, big outcome</h3><span class="fit fit-adapt">Changed for Moodius</span></header>
+<p class="shape">You need to treat yourself like [role]. / How to build [trait] so strong it&#x27;s impossible to [fail].</p>
+<div class="cols"><div><h4>His version</h4><ul class="ev"><li><span class="plat">YouTube long</span> <q>You Need To Treat Yourself Like An Athlete</q> <span class="num">116K, 38x</span></li><li><span class="plat">YouTube long</span> <q>You need to kill the old version of yourself &amp; become delusional</q> <span class="num">52K, 17x</span></li><li><span class="plat">YouTube long (miss)</span> <q>How to Turn Your Viewers Into Thirsty Buyers</q> <span class="num">341, 0.1x</span></li></ul><p class="why">His self-improvement titles beat his business titles by a wide margin.</p></div>
+<div><h4>Moodius rewrite</h4><div class="hook"><span>Epictetus said to train like you&#x27;re going to the Olympics. Here is the training plan. (Carousel title.)</span></div><p class="fact"><b>Check source.</b> Keep the athlete image, drop the hype words (&#x27;delusional&#x27;, &#x27;kill&#x27;): pep talks are on the Moodius wasted-effort list. Enchiridion 29 is the Olympics passage; check before use.</p></div></div>
+</article>
+<article class="f" id="a04">
+<header><span class="fid">A04</span><h3>Comment a keyword</h3><span class="fit fit-later">Not now</span></header>
+<p class="shape">Comment &quot;[word]&quot; and I&#x27;ll send you [thing]. Reverse version: Don&#x27;t comment [word] here, go to the link.</p>
+<div class="cols"><div><h4>His version</h4><ul class="ev"><li><span class="plat">Instagram</span> <q>Comment &quot;templates&quot; for the AI editing pack</q> <span class="num">pinned grid, views not shown</span></li><li><span class="plat">TikTok</span> <q>Don&#x27;t comment TEMPLATES here, go to the 🔗 in my bio!</q> <span class="num">939 views but 18 comments, 4.5x his median comment count</span></li></ul><p class="why">It turns a viewer into a lead. The reverse version still pulled comments on a weak-view post.</p></div>
+<div><h4>Moodius rewrite</h4><div class="hook"><span>Later, when there is a real thing to send: Comment LETTER and I&#x27;ll send you Seneca&#x27;s letter on anger, one page.</span></div><p class="fact"><b>Needs your OK later.</b> Not now. Moodius has nothing to send yet, Metricool can&#x27;t read comments, and the comment agent only drafts, so every keyword means you replying by hand. Keep &#x27;send this to the friend who…&#x27; as the main ask.</p></div></div>
+</article>
+</section>
+
+<section>
+<h2>What works for him, and what doesn't</h2>
+<div class="table"><table>
+<thead><tr><th>Pattern (organic TikToks only)</th><th>Posts</th><th>Median views</th><th>Rest</th></tr></thead>
+<tbody>
+<tr><td>First line ends on "…"</td><td class="n">20</td><td class="n">4,142</td><td class="n">1,619</td></tr>
+<tr><td>Tied to big news (Apple, iPhone, iOS)</td><td class="n">37</td><td class="n">5,448</td><td class="n">1,488</td></tr>
+<tr><td>Creator tips (content, editing)</td><td class="n">32</td><td class="n">1,771</td><td class="n">1,877</td></tr>
+<tr><td>Question in the first line</td><td class="n">11</td><td class="n">2,494</td><td class="n">1,801</td></tr>
+</tbody></table></div>
+<p>On YouTube, his self-improvement titles beat his business titles by far: "You Need To Treat Yourself Like An Athlete" has 116K, "How to Turn Your Viewers Into Thirsty Buyers" has 341. His three biggest TikToks (2.4M, 1.6M, 943K) are sponsored, with likes under 0.5% of views, which usually means paid promotion. I left them out of the formulas.</p>
+<h3>His editing style, translated</h3>
+<p>He puts the hook in a white text box in the top third with one word in an orange box, adds a small twist line under the headline, stacks two clips in a split screen, and labels people with arrows. For Moodius the same grammar works with a Bone text box on Slate, the key word in Ember, labels and chat bubbles instead of faces, and plain interface shapes rather than any real app's logo.</p>
+</section>
+
+<section>
+<h2>What I could not reach</h2>
+<p>Instagram is blocked from here, so his Instagram hooks are only the six tiles in your screenshot. YouTube transcripts need a sign-in, so I have no spoken opening lines. To get them, the transcript tool would have to run on your Mac, which takes about 15 minutes of your time. That is optional and can wait.</p>
+</section>
+
+<section>
+<h2>What you decide</h2>
+<ol class="steps">
+<li><b>Yes or no:</b> use A06, A02 and A12 in the Friday 30 Oct build. If yes, reply "yes Ajené hooks" in the project chat and they go to the account thread.</li>
+<li><b>Later, yes or no:</b> a "Comment LETTER" keyword post (A04). It means you answer each comment by hand, so it only makes sense once there is a one-page letter to send.</li>
+<li><b>Merge the pull request</b> when you are happy. On github.com, open the pull request named "Ajené Pinnock hook study", tap <b>Merge pull request</b>, then <b>Confirm merge</b>.</li>
+</ol>
+<p class="muted">Sources: <a href="https://www.tiktok.com/@ajenepinnock">TikTok @ajenepinnock</a>, <a href="https://www.youtube.com/@AjenePinnock">YouTube @AjenePinnock</a>, <a href="https://editing.ajenepinnock.com/">editing.ajenepinnock.com</a>, <a href="https://youtube.ajenepinnock.com/">youtube.ajenepinnock.com</a>, <a href="https://stan.store/AjenePinnock">stan.store/AjenePinnock</a>, <a href="https://www.graytalent.co.uk/talent-profile/ajene-pinnock">Gray Talent</a>, Apple Podcasts. Full list with links: <code>02-hook-catalogue.csv</code>. Nothing was scheduled, bought or published.</p>
+</section>
+</div>

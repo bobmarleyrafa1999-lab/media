@@ -1,0 +1,58 @@
+[
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UC6f6ttpBax9bOgg3nACtgwA",
+  "ok": true,
+  "detail": "30 shorts, followers=16300",
+  "at": "2026-10-25T18:55:15+00:00"
+ },
+ {
+  "source": "youtube_videos_tab",
+  "target": "UC6f6ttpBax9bOgg3nACtgwA",
+  "ok": true,
+  "detail": "46 items",
+  "at": "2026-10-25T18:55:17+00:00"
+ },
+ {
+  "source": "youtube_shorts_tab",
+  "target": "UC6f6ttpBax9bOgg3nACtgwA",
+  "ok": true,
+  "detail": "95 items",
+  "at": "2026-10-25T18:55:19+00:00"
+ },
+ {
+  "source": "youtube_rss",
+  "target": "UC6f6ttpBax9bOgg3nACtgwA",
+  "ok": true,
+  "detail": "15 uploads",
+  "at": "2026-10-25T18:55:20+00:00"
+ },
+ {
+  "source": "tiktok_user",
+  "target": "ajenepinnock",
+  "ok": true,
+  "detail": "120 videos",
+  "at": "2026-10-25T18:55:28+00:00"
+ },
+ {
+  "source": "podcasts",
+  "target": "Ajene Pinnock",
+  "ok": true,
+  "detail": "3 episodes",
+  "at": "2026-10-25T18:55:30+00:00"
+ },
+ {
+  "source": "full_video",
+  "target": "https://www.youtube.com/watch?v=vpAWIF6OZkU",
+  "ok": false,
+  "detail": "-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+  "at": "2026-10-25T18:55:32+00:00"
+ },
+ {
+  "source": "full_video",
+  "target": "https://www.youtube.com/watch?v=kID9ns1Bp5c",
+  "ok": false,
+  "detail": "-from-browser or --cookies for the authentication. See  https://github.com/yt-dlp/yt-dlp/wiki/FAQ#how-do-i-pass-cookies-to-yt-dlp  for how to manually pass cookies. Also see  https://github.com/yt-dlp/yt-dlp/wiki/Extractors#exporting-youtube-cookies  for tips on effectively exporting YouTube cookies",
+  "at": "2026-10-25T18:55:34+00:00"
+ }
+]
