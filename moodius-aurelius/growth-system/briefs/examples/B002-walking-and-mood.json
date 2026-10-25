@@ -1,0 +1,13 @@
+{
+  "id": "B002",
+  "pillar": "living_body",
+  "format": "carousel",
+  "hook": "The humblest exercise did surprisingly well.",
+  "idea": "A 2024 BMJ network meta-analysis put walking or jogging among the strongest exercise types for reducing depression symptoms.",
+  "evidence": ["KH004"],
+  "explanation": "Slides: what a network meta-analysis is; walking/jogging, yoga and strength all helped; many trials were low certainty; alongside treatment, never instead of it.",
+  "visual": {"direction": "Graphite cards, Inter body text, a single Ember line tracing a walking route.", "faces": false},
+  "caption": "Walking or jogging, yoga and strength training all reduced depression symptoms in a 2024 BMJ review of randomised trials (Noetel et al.). Many of the trials were low certainty, and exercise sits alongside treatment, not instead of it.\n\nGeneral education, not medical advice. Check with a doctor before changing exercise, diet or medication.\n\nWalked today?",
+  "question": "Walked today?",
+  "follow_reason": "One evidence-checked health idea every week."
+}

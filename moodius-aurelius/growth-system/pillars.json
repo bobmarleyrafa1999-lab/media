@@ -1,0 +1,97 @@
+{
+  "version": "2026-10-25",
+  "note": "Five content pillars from Surafel's master brief (25 Oct 2026). Weekly targets are for 14 feed posts. The old tone-audit lanes (strategy/18-tone-rebalance) map in via 'from_lanes'.",
+  "pillars": {
+    "human_mind": {
+      "name": "The Human Mind",
+      "covers": "Neuroscience, neuroplasticity, psychology, behaviour, cognition, emotional intelligence. Stoic reframes of hurt and struggle live here.",
+      "per_week": 4,
+      "from_lanes": [
+        "inner life",
+        "psychology and neuroscience"
+      ],
+      "needs_disclaimer": false,
+      "max_hurt_conflict_per_week": 3
+    },
+    "good_life": {
+      "name": "The Good Life",
+      "covers": "Altruism, kindness, generosity, friendship, relationships, community, ethical living, appreciation and awe.",
+      "per_week": 3,
+      "from_lanes": [
+        "kindness and good deeds",
+        "appreciation and awe"
+      ],
+      "needs_disclaimer": false
+    },
+    "reading_room": {
+      "name": "The Reading Room",
+      "covers": "Books, literature, philosophy from every tradition, authentic reviews, intellectual debates, recommendations.",
+      "per_week": 3,
+      "from_lanes": [
+        "philosophies of the world"
+      ],
+      "needs_disclaimer": false,
+      "review_needs_his_reading": true
+    },
+    "living_body": {
+      "name": "The Living Body",
+      "covers": "Fitness, strength, cardiovascular health, nutrition, longevity, sleep, evidence-based wellbeing. Never body image.",
+      "per_week": 2,
+      "from_lanes": [
+        "body and health"
+      ],
+      "needs_disclaimer": true,
+      "disclaimer": "General education, not medical advice. Check with a doctor before changing exercise, diet or medication."
+    },
+    "forgotten_knowledge": {
+      "name": "Forgotten Knowledge",
+      "covers": "Historical medicine, Chinese dynasties, Mongolian traditions, Ethiopian and African intellectual history, al-Andalus, herbal traditions, ethnobotany.",
+      "per_week": 2,
+      "from_lanes": [
+        "history of medicine"
+      ],
+      "needs_disclaimer": true,
+      "disclaimer": "Historical interest only, not medical advice. Some traditional remedies are toxic."
+    }
+  },
+  "formats": [
+    "reel",
+    "carousel",
+    "story",
+    "substack",
+    "book_review"
+  ],
+  "banned_phrases": [
+    "young men",
+    "youngmen",
+    "alpha male",
+    "sigma",
+    "red pill",
+    "redpill",
+    "high-value man",
+    "high value man",
+    "real men",
+    "masculine energy"
+  ],
+  "banned_visuals": [
+    "statue",
+    "marble",
+    "gold",
+    "gradient",
+    "stock photo"
+  ],
+  "hook_max_words": 12,
+  "question_max_words": 3,
+  "claim_words": [
+    "ancient secret",
+    "secret cure",
+    "miracle",
+    "detox",
+    "doctors don't want",
+    "big pharma",
+    "cures",
+    "cure for",
+    "boost your immune",
+    "proven to"
+  ]
+}
