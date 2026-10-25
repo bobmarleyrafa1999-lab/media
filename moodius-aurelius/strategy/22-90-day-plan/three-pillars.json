@@ -1,0 +1,53 @@
+{
+  "proposed": "2026-10-25",
+  "status": "awaiting yes/no; supersedes growth-system/pillars.json five pillars if approved",
+  "promise": "Old wisdom, new evidence: one idea a day to help you live a little better, with every source shown.",
+  "pillars": {
+    "Mind": {
+      "share": 0.4,
+      "covers": "psychology, neuroscience, philosophy, spiritual practice",
+      "from": [
+        "Human Mind"
+      ]
+    },
+    "Body": {
+      "share": 0.25,
+      "covers": "movement, sleep, health claims checked, history of medicine as history",
+      "from": [
+        "Living Body",
+        "Forgotten Knowledge (medical)"
+      ],
+      "rules": [
+        "evidence label on every claim",
+        "no doses",
+        "disclaimer on medical history"
+      ]
+    },
+    "People": {
+      "share": 0.35,
+      "covers": "relationships, kindness, everyday good deeds, character",
+      "from": [
+        "Good Life"
+      ]
+    }
+  },
+  "lenses": [
+    "books",
+    "films",
+    "history",
+    "science",
+    "faith traditions"
+  ],
+  "series": {
+    "S1": "One Book, One Idea, One Action",
+    "S2": "The Scene",
+    "S3": "Claim Check",
+    "S4": "Old Idea, Ordinary Day",
+    "S5": "Small Good Thing",
+    "S6": "Forgotten Knowledge"
+  },
+  "tone": {
+    "min_curiosity_or_appreciation_openers": "2 in 3",
+    "max_hurt_or_conflict_per_week": 4
+  }
+}

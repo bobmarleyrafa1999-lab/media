@@ -1,0 +1,1504 @@
+<title>Moodius 90-Day Plan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one reading column with a sticky section bar; wide tables scroll inside their own frame. */
+:root {
+  --bg: #F3EFE7; --surface: #FBF8F2; --fg: #1B1F24; --muted: #565B62; --line: #D9D2C4;
+  --accent: #A3561B; --accent-soft: #EBDCC9; --m1: #2F6DB5; --m2: #B5621F;
+  --display: "Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  --body: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #1B1F24; --surface: #23282E; --fg: #F3EFE7; --muted: #B8B3A9; --line: #3A4049;
+  --accent: #E0965A; --accent-soft: #3A2F26; --m1: #5B8FD6; --m2: #C9742E; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #1B1F24; --surface: #23282E; --fg: #F3EFE7; --muted: #B8B3A9; --line: #3A4049;
+  --accent: #E0965A; --accent-soft: #3A2F26; --m1: #5B8FD6; --m2: #C9742E; color-scheme: dark; }
+body { background: var(--bg); color: var(--fg); font: 15px/1.6 var(--body); }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
+.wrap { max-width: 980px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 64px; }
+header.top { padding-block: 40px 20px; border-bottom: 1px solid var(--line); }
+.eyebrow { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+h1 { font-family: var(--display); font-weight: 600; font-size: clamp(34px, 6vw, 54px); line-height: 1.05; margin: 8px 0 12px; text-wrap: balance; }
+h1 em { color: var(--accent); font-style: italic; }
+.lede { max-width: 65ch; color: var(--muted); margin: 0; }
+nav.sec { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--bg); border-bottom: 1px solid var(--line); display: flex; gap: 4px 18px; flex-wrap: wrap; padding-block: 10px; font-size: 13px; }
+nav.sec a { color: var(--fg); text-decoration: none; padding: 2px 0; border-bottom: 2px solid transparent; }
+nav.sec a:hover, nav.sec a:focus-visible { border-color: var(--accent); outline: none; }
+main { min-width: 0; }
+main > p, main > ul, main > ol, main > blockquote, main h3, main h4 { max-width: 70ch; }
+h2 { font-family: var(--display); font-weight: 600; font-size: clamp(28px, 4.4vw, 38px); line-height: 1.1; margin: 56px 0 12px; text-wrap: balance; scroll-margin-top: 64px; }
+h3 { font-family: var(--display); font-weight: 600; font-size: 24px; line-height: 1.2; margin: 36px 0 8px; text-wrap: balance; }
+h4 { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; margin: 28px 0 6px; color: var(--accent); }
+hr { border: 0; border-top: 1px solid var(--line); margin: 40px 0 0; }
+a { color: var(--accent); }
+strong { font-weight: 600; }
+blockquote { margin: 12px 0; padding: 12px 16px; background: var(--surface); border-left: 3px solid var(--accent); }
+blockquote p { margin: 0 0 8px; } blockquote p:last-child { margin: 0; }
+code { font-family: var(--mono); font-size: .9em; }
+.copy { position: relative; max-width: 70ch; }
+.copy pre { background: var(--surface); border: 1px solid var(--line); padding: 14px 16px; overflow-x: auto; margin: 6px 0; white-space: pre; }
+.cbtn { position: absolute; top: 8px; right: 8px; font: 500 12px var(--body); background: var(--accent); color: var(--bg); border: 0; padding: 5px 10px; cursor: pointer; }
+.cbtn:focus-visible { outline: 2px solid var(--fg); outline-offset: 2px; }
+.tbl { overflow-x: auto; margin: 12px 0 18px; border: 1px solid var(--line); background: var(--surface); }
+table { border-collapse: collapse; width: 100%; font-size: 13.5px; font-variant-numeric: tabular-nums; }
+th, td { text-align: left; vertical-align: top; padding: 8px 10px; border-bottom: 1px solid var(--line); }
+th { font-size: 12px; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); font-weight: 600; white-space: nowrap; }
+tr:last-child td { border-bottom: 0; }
+td.n { text-align: right; }
+#the-priority-table + p + h3 + figure ~ .tbl table, .wide table { min-width: 900px; }
+.tbl table { min-width: 640px; }
+figure.chart { margin: 16px 0 24px; padding: 16px; background: var(--surface); border: 1px solid var(--line); max-width: 720px; }
+figcaption { display: flex; flex-wrap: wrap; gap: 6px 18px; justify-content: space-between; font-size: 14px; margin-bottom: 8px; }
+.legend { display: flex; gap: 14px; color: var(--muted); font-size: 12.5px; }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 6px; vertical-align: -1px; }
+.k1 { background: var(--m1); } .k2 { background: var(--m2); }
+.cwrap { position: relative; }
+svg { width: 100%; height: auto; display: block; }
+.m1 { fill: var(--m1); } .m2 { fill: var(--m2); }
+.gl { stroke: var(--line); stroke-width: 1; }
+.ax { fill: var(--muted); font: 11px var(--body); }
+.dl { fill: var(--fg); font: 600 12px var(--body); }
+.bar:hover path { opacity: .8; }
+.tip { position: absolute; pointer-events: none; background: var(--fg); color: var(--bg); font-size: 12px; padding: 6px 8px; white-space: nowrap; transform: translate(-50%, -110%); }
+details { margin-top: 8px; font-size: 13px; } summary { cursor: pointer; color: var(--accent); }
+#my-three-actions-today + p + ol { background: var(--accent-soft); padding: 18px 18px 18px 38px; }
+@media (max-width: 600px) { nav.sec { position: static; font-size: 12.5px; gap: 2px 12px; } }
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+html { scroll-behavior: smooth; }
+</style>
+<div class="wrap">
+<header class="top">
+<div class="eyebrow">@moodiusaurelius · 26 Oct 2026 – 23 Jan 2027</div>
+<h1>Ninety days of <em>old wisdom, new evidence</em></h1>
+<p class="lede">A 90-day organic growth plan built on the account's own Metricool numbers to 24 Oct, the posts already scheduled to 7 Nov, and Instagram's current guidance. Every number marked as a hypothesis is one.</p>
+</header>
+<nav class="sec" aria-label="Sections"><a href="#my-three-actions-today">My three actions today</a><a href="#the-priority-table">The priority table</a><a href="#the-90-day-plan">The 90-day plan</a><a href="#the-first-14-days-and-starter-content">The first 14 days and starter content</a><a href="#the-measurement-system">The measurement system</a><a href="#the-minimal-tool-stack">The minimal tool stack</a><a href="#platform-facts-vs-my-hypotheses">Platform facts vs my hypotheses</a><a href="#questions-that-would-change-the-plan">Questions that would change the plan</a></nav>
+<main>
+<p>Written 25 Oct 2026. Day 1 is Monday 26 October; day 90 is Saturday 23 January 2027.</p>
+<p><strong>What this plan is built on.</strong> Account data pulled from Metricool today (brand 7224060, daily account totals 12–24 Oct, every published post since 6 Oct), the Instagram feed export of 24 Oct, the posts already scheduled to 7 Nov, and current official Instagram guidance (links in the last section). It is not a live audit of the Instagram app: Instagram itself can't be opened from here, and some numbers (non-follower reach, profile visits, story replies) only exist in the app. Where a number is missing, the plan says so.</p>
+<p><strong>Small-sample warning.</strong> The account has 59 followers and 25 published posts. Every pattern below is the strongest lead available, not a law. Nothing here promises a viral post or a follower count.</p>
+<hr />
+<h2 id="my-three-actions-today">1. My three actions today</h2>
+<p>About 15 minutes, all in the Instagram app.</p>
+<ol>
+<li><strong>Paste the new name and bio</strong> (3 min). Profile → Edit profile. Both are below, ready to copy. This bio replaces the one drafted earlier today in the page-refocus file, and it works whether or not you say yes to the three pillars.</li>
+<li><strong>Pin three posts</strong> (2 min). Open each post → ⋯ → Pin to your profile, in this order so the last one shows first: the "someone is rude to you" carousel (585 reach, most shares), the "2am replay" carousel (473), then "You don't have a discipline problem. You have a self-trust problem." (the only post Instagram credits with follows).</li>
+<li><strong>Reply to every unanswered comment from the last seven days</strong> (10 min). End each reply with one real question back. The engagement section has examples.</li>
+</ol>
+<p><strong>Name</strong> (43 characters):</p>
+<div class="copy"><button type="button" class="cbtn">Copy</button><pre><code>Moodius Aurelius | Old wisdom, new evidence
+</code></pre></div>
+<p><strong>Bio</strong> (134 of 150 characters):</p>
+<div class="copy"><button type="button" class="cbtn">Copy</button><pre><code>Mind, body, people: ideas for living well.
+From old books, films, science and faith traditions.
+Every source cited · Story quiz at 9pm
+</code></pre></div>
+<p>Everything else in this plan can wait until tomorrow.</p>
+<hr />
+<h2 id="the-priority-table">2. The priority table</h2>
+<h3>First, a challenge to the baseline</h3><figure class="chart" aria-label="Daily account reach, 12 to 24 October 2026">
+<figcaption><strong>Accounts reached per day, 12–24 Oct</strong><span class="legend"><span><i class="k1"></i>Reels or no feed post</span><span><i class="k2"></i>Daily carousel began</span></span></figcaption>
+<div class="cwrap"><svg viewBox="0 0 640 260" role="img" aria-label="Reach was 1 to 227 a day before 21 October, then 2,141, 5,734, 2,398 and 804 once a daily carousel started.">
+<line x1="48" x2="632" y1="226.0" y2="226.0" class="gl"/><text x="40" y="230.0" class="ax" text-anchor="end">0</text><line x1="48" x2="632" y1="156.7" y2="156.7" class="gl"/><text x="40" y="160.7" class="ax" text-anchor="end">2,000</text><line x1="48" x2="632" y1="87.3" y2="87.3" class="gl"/><text x="40" y="91.3" class="ax" text-anchor="end">4,000</text><line x1="48" x2="632" y1="18.0" y2="18.0" class="gl"/><text x="40" y="22.0" class="ax" text-anchor="end">6,000</text><g class="bar" data-tip="12 Oct: 227 reached · 2 reels + quote card"><rect x="51.0" y="18" width="38.9" height="208" fill="transparent"/><path d="M51.0,226 v-3.9 q0,-4 4,-4 h30.9 q4,0 4,4 v3.9 z" class="m1"/><text x="70.5" y="242" class="ax" text-anchor="middle">12</text></g><g class="bar" data-tip="13 Oct: 159 reached · 3 reels"><rect x="95.9" y="18" width="38.9" height="208" fill="transparent"/><path d="M95.9,226 v-1.5 q0,-4 4,-4 h30.9 q4,0 4,4 v1.5 z" class="m1"/><text x="115.4" y="242" class="ax" text-anchor="middle">13</text></g><g class="bar" data-tip="14 Oct: 206 reached · 2 reels + meme"><rect x="140.8" y="18" width="38.9" height="208" fill="transparent"/><path d="M140.8,226 v-3.1 q0,-4 4,-4 h30.9 q4,0 4,4 v3.1 z" class="m1"/><text x="160.3" y="242" class="ax" text-anchor="middle">14</text></g><g class="bar" data-tip="15 Oct: 123 reached · 2 reels"><rect x="185.8" y="18" width="38.9" height="208" fill="transparent"/><path d="M185.8,226 v-0.3 q0,-4 4,-4 h30.9 q4,0 4,4 v0.3 z" class="m1"/><text x="205.2" y="242" class="ax" text-anchor="middle">15</text></g><g class="bar" data-tip="16 Oct: 2 reached · nothing posted"><rect x="230.7" y="18" width="38.9" height="208" fill="transparent"/><path d="M230.7,226 v-0.0 q0,-4 4,-4 h30.9 q4,0 4,4 v0.0 z" class="m1"/><text x="250.2" y="242" class="ax" text-anchor="middle">16</text></g><g class="bar" data-tip="17 Oct: 3 reached · nothing posted"><rect x="275.6" y="18" width="38.9" height="208" fill="transparent"/><path d="M275.6,226 v-0.0 q0,-4 4,-4 h30.9 q4,0 4,4 v0.0 z" class="m1"/><text x="295.1" y="242" class="ax" text-anchor="middle">17</text></g><g class="bar" data-tip="18 Oct: 1 reached · nothing posted"><rect x="320.5" y="18" width="38.9" height="208" fill="transparent"/><path d="M320.5,226 v-0.0 q0,-4 4,-4 h30.9 q4,0 4,4 v0.0 z" class="m1"/><text x="340.0" y="242" class="ax" text-anchor="middle">18</text></g><g class="bar" data-tip="19 Oct: 1 reached · stories only"><rect x="365.5" y="18" width="38.9" height="208" fill="transparent"/><path d="M365.5,226 v-0.0 q0,-4 4,-4 h30.9 q4,0 4,4 v0.0 z" class="m1"/><text x="384.9" y="242" class="ax" text-anchor="middle">19</text></g><g class="bar" data-tip="20 Oct: 220 reached · stories"><rect x="410.4" y="18" width="38.9" height="208" fill="transparent"/><path d="M410.4,226 v-3.6 q0,-4 4,-4 h30.9 q4,0 4,4 v3.6 z" class="m1"/><text x="429.8" y="242" class="ax" text-anchor="middle">20</text></g><g class="bar" data-tip="21 Oct: 2,141 reached · first carousel + reel"><rect x="455.3" y="18" width="38.9" height="208" fill="transparent"/><path d="M455.3,226 v-70.2 q0,-4 4,-4 h30.9 q4,0 4,4 v70.2 z" class="m2"/><text x="474.8" y="242" class="ax" text-anchor="middle">21</text></g><g class="bar" data-tip="22 Oct: 5,734 reached · carousel + reel"><rect x="500.2" y="18" width="38.9" height="208" fill="transparent"/><path d="M500.2,226 v-194.8 q0,-4 4,-4 h30.9 q4,0 4,4 v194.8 z" class="m2"/><text x="519.7" y="242" class="ax" text-anchor="middle">22</text></g><g class="bar" data-tip="23 Oct: 2,398 reached · carousel + reel"><rect x="545.2" y="18" width="38.9" height="208" fill="transparent"/><path d="M545.2,226 v-79.1 q0,-4 4,-4 h30.9 q4,0 4,4 v79.1 z" class="m2"/><text x="564.6" y="242" class="ax" text-anchor="middle">23</text></g><g class="bar" data-tip="24 Oct: 804 reached · calm carousel + reel"><rect x="590.1" y="18" width="38.9" height="208" fill="transparent"/><path d="M590.1,226 v-23.9 q0,-4 4,-4 h30.9 q4,0 4,4 v23.9 z" class="m2"/><text x="609.5" y="242" class="ax" text-anchor="middle">24</text></g>
+<text x="519.7" y="19.2" text-anchor="middle" class="dl">5,734</text>
+<text x="340.0" y="258" class="ax" text-anchor="middle">October 2026 · source: Metricool, brand account totals</text>
+</svg><div class="tip" hidden></div></div>
+<details><summary>Show as a table</summary><div class="tbl"><table><thead><tr><th>Date</th><th>Reached</th><th>What went out</th></tr></thead><tbody>
+<tr><td>12 Oct</td><td class='n'>227</td><td>2 reels + quote card</td></tr><tr><td>13 Oct</td><td class='n'>159</td><td>3 reels</td></tr><tr><td>14 Oct</td><td class='n'>206</td><td>2 reels + meme</td></tr><tr><td>15 Oct</td><td class='n'>123</td><td>2 reels</td></tr><tr><td>16 Oct</td><td class='n'>2</td><td>nothing posted</td></tr><tr><td>17 Oct</td><td class='n'>3</td><td>nothing posted</td></tr><tr><td>18 Oct</td><td class='n'>1</td><td>nothing posted</td></tr><tr><td>19 Oct</td><td class='n'>1</td><td>stories only</td></tr><tr><td>20 Oct</td><td class='n'>220</td><td>stories</td></tr><tr><td>21 Oct</td><td class='n'>2,141</td><td>first carousel + reel</td></tr><tr><td>22 Oct</td><td class='n'>5,734</td><td>carousel + reel</td></tr><tr><td>23 Oct</td><td class='n'>2,398</td><td>carousel + reel</td></tr><tr><td>24 Oct</td><td class='n'>804</td><td>calm carousel + reel</td></tr>
+</tbody></table></div></details></figure>
+<p>You proposed three reels and one carousel a week. Your own numbers point the other way.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>What happened</th>
+<th>Numbers (Metricool, 25 Oct)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Account reach before carousels (12–15 Oct, 2–3 reels a day)</td>
+<td>123–227 people a day; +1 follower in four days</td>
+</tr>
+<tr>
+<td>Account reach once a daily carousel started (21–24 Oct)</td>
+<td>2,141 · 5,734 · 2,398 · 804; followers 7 → 59</td>
+</tr>
+<tr>
+<td>Every reel since 6 Oct</td>
+<td>median reach 122; range 20–211; none above 211</td>
+</tr>
+<tr>
+<td>Carousels with a tension opener (rude person, 2am replay, self-trust)</td>
+<td>585 · 473 · 342</td>
+</tr>
+<tr>
+<td>A calm "routine" carousel (24 Oct)</td>
+<td>6</td>
+</tr>
+</tbody>
+</table></div>
+<p>Two caveats. On 22 Oct the account reached 5,734 people, but the posts themselves add up to about 700, so Instagram doesn't credit most of that reach to any one post. And the calm carousel shows the format alone doesn't carry it: the opener matters.</p>
+<p><strong>Recommendation.</strong> Until the 19 Nov review, keep what's already scheduled: a carousel every day at 12:00 and one reel at 18:00, made by the content engine, with you reviewing. From 20 Nov the standard week becomes <strong>five carousels, three reels, and story sequences on four nights</strong>, unless the review data says otherwise. That is more posts than your baseline but less of your time, because the engine drafts and renders and your time goes to the things only you can do: checking, replying, and relationships.</p>
+<p>If you ever produce posts by hand without the engine, your baseline is too heavy for 45 minutes a day. A hand-made carousel takes 45–60 minutes in Canva and a text reel 30–45 minutes, so three reels plus one carousel is 2.5–3.5 hours before any replying. The by-hand version is <strong>two carousels and one reel a week</strong>.</p>
+<h3>Where your 5¾ hours a week go</h3>
+<p>Your budget is 45 minutes × 5 weekdays plus a 2-hour weekend batch: 345 minutes. The table counts your minutes only. Ranked by what each hour does for growth right now.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Rank</th>
+<th>Activity</th>
+<th>Job</th>
+<th>Purpose</th>
+<th>Your time / week</th>
+<th>Expected outcome (hypothesis)</th>
+<th>Metric</th>
+<th>Opportunity cost</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Carousels</strong></td>
+<td>Reach</td>
+<td>The format that moved the account. Shares and saves carry it to non-followers.</td>
+<td>35 min (5 × 7 min check)</td>
+<td>Most of the week's non-follower reach</td>
+<td>Median reach per carousel; shares per 1,000 reach; follows per 1,000 reach</td>
+<td>By hand, each costs 45–60 min</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Replying to comments on my posts</strong></td>
+<td>Retain, convert</td>
+<td>Turns a passer-by into a regular. A reply that asks something back often gets a second comment.</td>
+<td>65 min (10/weekday, 15 at weekend)</td>
+<td>More repeat commenters; fewer "one comment and gone"</td>
+<td>Share of comments answered within 24 h; repeat commenters per week</td>
+<td>Almost none. Never drop this.</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Profile: bio, pins, Highlights</strong></td>
+<td>Convert</td>
+<td>When a post spikes, visitors decide in seconds from the bio and top 9–12 tiles. 21–24 Oct turned 11,077 reach into 52 follows (4.7 per 1,000).</td>
+<td>30 min in week 1, then 10 min</td>
+<td>A better visit-to-follow rate on the next spike</td>
+<td>Account follows per 1,000 reach (weekly); profile visits → follows (app only)</td>
+<td>One-off cost</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Reels</strong></td>
+<td>Reach (testing)</td>
+<td>Reels reach non-followers through the Reels tab, but ours have stalled at 106–211. Keep them as the hook-testing lab.</td>
+<td>40 min (3 × 7 min check, about 20 min optional filming at weekend)</td>
+<td>Find one hook pattern that gets a reel past 300 reach</td>
+<td>3-second hold %; average watch time; sends per 1,000 reach</td>
+<td>By hand, 30–45 min each</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Stories</strong></td>
+<td>Retain</td>
+<td>Mosseri says stories reach "your most passionate audience". They don't find new people.</td>
+<td>20 min (2 hand-posted sticker nights × 5 min, 10 min Sunday reply count)</td>
+<td>Warmer followers, more DMs (Instagram counts DM replies as interest)</td>
+<td>Replies per 1,000 story reach; last-frame reach ÷ first-frame reach</td>
+<td>Low. Nightly quizzes are already automated.</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Thoughtful comments on other pages</strong></td>
+<td>Reach (small), relationships</td>
+<td>A good comment on a mid-sized page can bring a few profile visits. The real value is relationships for collaborations later.</td>
+<td>40 min (4 × 10 min)</td>
+<td>A shortlist of 5–10 creators who know the page by day 60</td>
+<td>Replies from those creators; profile visits on comment days (app)</td>
+<td>Comes after your own replies</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>Following relevant accounts</strong></td>
+<td>Research</td>
+<td>A watch list for ideas, formats and future collaborators.</td>
+<td>10 min</td>
+<td>Better ideas; a collaboration shortlist</td>
+<td>Ideas logged per week</td>
+<td>None for growth (see below)</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Collaborations</strong></td>
+<td>Reach</td>
+<td>A Collab post sits on both profiles, in front of both sets of followers. Needs a body of work and a relationship first.</td>
+<td>0 now; 30–45 min from day 61</td>
+<td>2–3 collab posts in days 61–90</td>
+<td>Reach and follows on collab posts vs your median</td>
+<td>Too early now. Cold pitches from a 59-follower page rarely land.</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Weekly review</strong></td>
+<td>All</td>
+<td>Fill the tracker, call experiments, pick next week's ideas.</td>
+<td>20 min Sunday</td>
+<td>Decisions from data instead of mood</td>
+<td>Tracker filled</td>
+<td>—</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Source spot checks</strong></td>
+<td>Quality</td>
+<td>Open the source behind each quote or study claim before approving.</td>
+<td>45 min</td>
+<td>Nothing goes out unchecked</td>
+<td>Corrections per batch</td>
+<td>—</td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Slack</strong></td>
+<td></td>
+<td>Late drafts, a bad day, life.</td>
+<td>60 min</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td><strong>Total</strong></td>
+<td></td>
+<td></td>
+<td><strong>345 of 345 min</strong></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>About following accounts.</strong> Following a page helps you research it and lets its owner notice you. There's no evidence that following anyone makes Instagram show your posts to that account's followers, and Instagram's own description of ranking (watch time, likes and sends per reach) doesn't include it. Never use follow/unfollow to get noticed.</p>
+<p><strong>Reach, conversion and retention are separate jobs.</strong>
+- <em>Reaching new people</em>: carousels, reels, comments on other pages, and later collabs. Measure non-follower reach and shares.
+- <em>Converting profile visitors</em>: the name, bio, pins and top tiles. Measure follows per 1,000 reach.
+- <em>Keeping followers</em>: replies, stories, a consistent promise. Measure repeat commenters, story replies, and followers lost.</p>
+<hr />
+<h2 id="the-90-day-plan">3. The 90-day plan</h2>
+<h3>One audience promise</h3>
+<p><strong>Old wisdom, new evidence: one idea a day to help you live a little better, with every source shown.</strong></p>
+<p>For curious adults who like books and ideas, feel things deeply, and are tired of hustle slogans and "alpha" motivation. Warm, curious and hopeful in tone, careful about evidence. (Audience age and location are a hypothesis: Instagram shows demographics only once an account has enough followers.)</p>
+<p>You're right that the interest list is broad. It stays coherent if you separate three things:</p>
+<ul>
+<li><strong>Pillars are topics</strong>: what a post is about. Three of them.</li>
+<li><strong>Lenses are sources</strong>: where the idea comes from. Books, films, history, science, faith traditions. A lens is not a pillar.</li>
+<li><strong>Series are recurring formats</strong>: the shape a post takes. Six of them.</li>
+</ul>
+<h3>Three pillars</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Pillar</th>
+<th>What it covers</th>
+<th>Share of posts</th>
+<th>From the current five</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Mind</strong></td>
+<td>How thoughts and feelings work and what to do with them: psychology, neuroscience, philosophy, spiritual practice</td>
+<td>about 40%</td>
+<td>Human Mind</td>
+</tr>
+<tr>
+<td><strong>Body</strong></td>
+<td>The body you live in: movement, sleep, health claims checked, the history of medicine told as history</td>
+<td>about 25%</td>
+<td>Living Body, plus the medical half of Forgotten Knowledge</td>
+</tr>
+<tr>
+<td><strong>People</strong></td>
+<td>Other people and character: relationships, kindness, everyday good deeds, how people in history treated each other</td>
+<td>about 35%</td>
+<td>Good Life</td>
+</tr>
+</tbody>
+</table></div>
+<p>The Reading Room and Forgotten Knowledge stop being pillars. They become series 1 and 6, used across all three pillars. <strong>If you say yes, this replaces the five-pillar plan from this morning's master brief</strong> (growth-system/pillars.json). The rules that came with it stay: medical history carries the disclaimer, no doses, and you only review books you've read.</p>
+<p>Two tone rules carry over from the earlier work: at least two in three posts open from curiosity or appreciation, and no more than four hurt or conflict posts a week. A hard opening line is fine when it pays off in kindness, discovery or a laugh.</p>
+<h3>Six series</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>#</th>
+<th>Series</th>
+<th>Pillars</th>
+<th>Format</th>
+<th>Hook structure</th>
+<th>Visual approach</th>
+<th>Why someone saves, shares or follows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>One Book, One Idea, One Action</strong></td>
+<td>Any</td>
+<td>Carousel, 7–8 slides</td>
+<td>A surprising fact about the author or book, then the idea, then a seven-day action</td>
+<td>Typographic "spine" cover in the brand colours; no cover art</td>
+<td>Save for the action; follow for a weekly book</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>The Scene</strong></td>
+<td>Mind, People</td>
+<td>Reel (text over your own b-roll) or carousel</td>
+<td>"In [film], [character] has to choose between A and B" → the dilemma → the real-life version</td>
+<td>No clips, stills, posters or film music. Your own footage of everyday objects, or type cards</td>
+<td>Share with "the friend who'd choose A"</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Claim Check</strong></td>
+<td>Body</td>
+<td>Carousel; reel for simple claims</td>
+<td>The claim as people say it → what the human studies show → how sure we are → what to do</td>
+<td>An evidence label on every post: strong trials / mixed / observational only / animal or lab only / tradition, not clinically tested</td>
+<td>Save as a reference; share to settle an argument</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Old Idea, Ordinary Day</strong></td>
+<td>Mind, People</td>
+<td>Reel</td>
+<td>An ordinary moment (queue, inbox, argument) → what one named tradition says → one way to try it today</td>
+<td>Slate and Bone type cards, your own b-roll of daily life</td>
+<td>Save the practice; follow for "one idea a day"</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Small Good Thing</strong></td>
+<td>People</td>
+<td>Reel or carousel</td>
+<td>A specific small scene → what happened or what research found → one act to try this week</td>
+<td>Warm Ember accent, hands and objects, no faces</td>
+<td>Share with a named kind of friend (naturally, not as bait)</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Forgotten Knowledge</strong></td>
+<td>Body, Mind, People</td>
+<td>Carousel</td>
+<td>A puzzle or contradiction from history ("a Nobel Prize hiding in a 1,600-year-old first-aid book") → how someone worked it out → why it matters now</td>
+<td>Manuscript-style type, maps you draw, public-domain images only</td>
+<td>Shares well because it's a story; follow for curiosity</td>
+</tr>
+</tbody>
+</table></div>
+<p>The "when someone is rude to you" opener, which won your best reach so far, is a hook pattern you can use inside series 4 and 5. It isn't a seventh series.</p>
+<h3>Rules each series follows</h3>
+<p><strong>Books (series 1).</strong> Every post is labelled either <em>Researched introduction</em> or <em>Moodius review (read it)</em>. Only the second is a personal review, and only when you've told me you read the book and what you thought. Never write "I read this" or invent your reaction. Quote briefly, name the author, work, translation or edition, and comment on it in your own words. Modern books are paraphrased and labelled; short quotations come only from editions we can check.</p>
+<p><strong>Quotations (all series).</strong> Check every quotation against the text: Standard Ebooks, Project Gutenberg, MIT Classics, or the publisher's edition. Name the translator. If wording can't be confirmed, paraphrase and label it "Moodius paraphrase". Watch the common fakes (for example, "We are what we repeatedly do" is Will Durant summarising Aristotle, not Aristotle).</p>
+<p><strong>Films (series 2).</strong> Original analysis only. Name the film, year and director. Don't use clips, stills, posters or soundtrack. Attribution, short length or editing don't make a copyrighted clip safe to use, and Instagram now removes repost-heavy accounts from recommendations (see platform facts). Public-domain films are fine, but check their status for the UK and US separately.</p>
+<p><strong>Religion and spirituality (series 4).</strong> Name the specific tradition and text, for example "Theravada Buddhism, Karaniya Metta Sutta (Sutta Nipata 1.8)" or "Zhuangzi, chapter 3, tr. James Legge". Keep three things apart on the slide: what the tradition teaches, how people interpret it, and any empirical claim (with its own source). Never line up quotes from different religions as if they say the same thing.</p>
+<p><strong>Health and neuroscience (series 3, 6).</strong> Use systematic reviews and large studies first. Say whether the evidence comes from humans, animals or cells, and whether it's an experiment or an observed link. State uncertainty in plain words. Traditional remedies are history unless clinical trials support a claim, and every medical-history post carries: <em>Historical interest only, not medical advice. Some traditional remedies are toxic.</em> Instagram also keeps exaggerated health claims out of recommendations, so careful wording protects reach too.</p>
+<h3>Phase by phase</h3>
+<h4>Days 1–7 (26 Oct–1 Nov): positioning, profile and launch</h4>
+<ul>
+<li>Profile: today's three actions. Sunday 1 Nov, add a "Quizzes" highlight last so it sits first (steps in strategy/20-story-replies/03-page-refocus.md).</li>
+<li>Content: nothing new to make. Seven carousels and seven reels are already scheduled. Experiment E1 starts on its own (section 5).</li>
+<li>Habits: start the 10-minute reply routine every day. Build a watch list of 20 accounts in your space (books, psychology, history of science, philosophy) and follow them for research.</li>
+<li>Decide: yes or no on the three pillars, and on the standard week from 20 Nov.</li>
+<li>Done when: bio and pins are live, every comment has a reply, and the watch list has 20 names.</li>
+</ul>
+<h4>Days 8–30 (2–24 Nov): baseline and format testing</h4>
+<ul>
+<li>Cadence: daily carousel at 12:00 and reel at 18:00 (Friday 17:00) until the 19 Nov review. Stories: nightly quiz at 21:00 and the answer at 09:00 until 7 Nov, then the stories-system calendar if you approve it.</li>
+<li>Series: by 24 Nov each of the six series has at least two posts, so every format has a baseline.</li>
+<li>Experiments: E1 (carousel opener tone) and E2 (reel hook) run to 19 Nov. No other test changes at the same time.</li>
+<li>Outbound: four 10-minute comment sessions a week on watch-list accounts.</li>
+<li>19 Nov review: call E1 and E2, set the standard week from 20 Nov, refresh pins from the best carousels, archive anything under 25 reach that's older than seven days, as long as at least 9 tiles remain.</li>
+<li>Done when: the tracker has 40+ rows and both experiments have a call (even "no clear winner").</li>
+</ul>
+<h4>Days 31–60 (25 Nov–24 Dec): repeat what works, improve conversion</h4>
+<ul>
+<li>Cadence: the standard week (five carousels, three reels, four story nights).</li>
+<li>Repeat or stop: apply the series rules in section 5 to each series once it has five or more posts. Give the winners more slots and drop or rework the bottom one.</li>
+<li>Conversion test (E3): the last slide of carousels alternates between "Follow for one idea a day" and no follow ask. Primary metric: follows per 1,000 reach (feed posts report follows).</li>
+<li>Profile: refresh pins monthly. Reduce Highlights to four: Start here, Mind, Body, People, plus Quizzes.</li>
+<li>21–24 Dec: use the difficult-week minimum.</li>
+<li>Done when: two or three series have earned a regular weekly slot, and E3 has a call.</li>
+</ul>
+<h4>Days 61–90 (25 Dec–23 Jan): deepen community, test collaborations</h4>
+<ul>
+<li>Community: a weekly "you pick" story vote decides one post. Questions that people really ask in comments become posts, with their permission and without names. Never invent a question.</li>
+<li>Collaborations: from the people who've replied to your comments, pick two or three aligned creators (books, psychology, history; roughly 1,000–20,000 followers). Propose one Collab carousel each, in a series you both fit. Each outreach message needs your OK, under the project rule.</li>
+<li>The brand stays anonymous in collaborations: no faces, no real name, the Moodius account only.</li>
+<li>Day 90 review: compare the last four weeks with the first four on median reach per post, follows per 1,000 reach, and repeat commenters. Decide the next 90 days from that.</li>
+</ul>
+<h3>The standard week (from 20 Nov, if you approve)</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Day</th>
+<th>12:00</th>
+<th>18:00</th>
+<th>21:00 story</th>
+<th>Your time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mon</td>
+<td>Carousel</td>
+<td>—</td>
+<td>About-you question</td>
+<td>45 min</td>
+</tr>
+<tr>
+<td>Tue</td>
+<td>Carousel</td>
+<td>Reel</td>
+<td>—</td>
+<td>45 min</td>
+</tr>
+<tr>
+<td>Wed</td>
+<td>Carousel</td>
+<td>—</td>
+<td>Quiz + next-day answer</td>
+<td>45 min</td>
+</tr>
+<tr>
+<td>Thu</td>
+<td>Carousel</td>
+<td>Reel</td>
+<td>—</td>
+<td>45 min</td>
+</tr>
+<tr>
+<td>Fri</td>
+<td>Carousel</td>
+<td>Reel (17:00)</td>
+<td>"You pick" vote</td>
+<td>45 min</td>
+</tr>
+<tr>
+<td>Sat</td>
+<td>—</td>
+<td>—</td>
+<td>—</td>
+<td>Weekend batch, 2 h</td>
+</tr>
+<tr>
+<td>Sun</td>
+<td>—</td>
+<td>—</td>
+<td>Weekly recap</td>
+<td>(in batch)</td>
+</tr>
+</tbody>
+</table></div>
+<p>The engine drafts and renders every post in the Friday build. You check and approve in the weekend batch.</p>
+<p><strong>Weekday 45 minutes</strong>: 10 min replying to comments and DMs, 10 min commenting on watch-list pages, 10 min checking tomorrow's post and its source line, 15 min for a hand-posted story or filming b-roll.</p>
+<p><strong>Weekend 2 hours</strong>: 60 min checking next week's posts and their sources, 30 min filming b-roll (optional), 20 min weekly review and tracker, 10 min profile and Highlights.</p>
+<h3>What to drop when time is short</h3>
+<p>Drop from the top of this list first:</p>
+<ol>
+<li>Collaboration outreach</li>
+<li>Comments on other pages</li>
+<li>Hand-posted sticker stories (the automated quizzes keep running)</li>
+<li>Filming your own b-roll (reels fall back to type cards)</li>
+<li>Reels 2 and 3 of the week</li>
+<li>The weekly review (do it fortnightly)</li>
+</ol>
+<p>Never drop: replying to comments within 24 hours, checking sources before anything publishes, and the carousels.</p>
+<h3>Minimum version for a difficult week (about 1 hour in total)</h3>
+<ul>
+<li>3 carousels and 1 reel, picked from drafts already approved. Nothing new is made.</li>
+<li>Automated stories only.</li>
+<li>10 minutes a day replying to comments, nothing else.</li>
+<li>No experiments called that week. Mark the week "minimum" in the tracker so it doesn't distort the medians.</li>
+</ul>
+<h3>One workflow, start to finish</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Who</th>
+<th>Tool</th>
+<th>Time</th>
+<th>Gate before the next step</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Research</td>
+<td>Engine</td>
+<td>Research library (research/library, tidbit CSV), studies, primary texts</td>
+<td>in the Friday build</td>
+<td>Each idea has a named source</td>
+</tr>
+<tr>
+<td>2. Verify</td>
+<td>Engine, then you</td>
+<td>Standard Ebooks / Gutenberg / MIT Classics for quotes; PubMed or the journal for studies</td>
+<td>2 min per post for your spot check</td>
+<td>Quote matches the edition; study type and size stated; evidence label set</td>
+</tr>
+<tr>
+<td>3. Original angle</td>
+<td>Engine</td>
+<td>Series template</td>
+<td>—</td>
+<td>One sentence saying what we add that the source doesn't</td>
+</tr>
+<tr>
+<td>4. Script</td>
+<td>Engine</td>
+<td>brief_lint.py (PR #12)</td>
+<td>—</td>
+<td>Lint passes: hook, payoff by 3–6 s, 1–3 word closing question, no banned phrases</td>
+</tr>
+<tr>
+<td>5. Produce</td>
+<td>Engine</td>
+<td>reels-engine/tools/engine.py (FFmpeg), stills renderer</td>
+<td>—</td>
+<td>Renders at 1080×1920 or 1080×1350; brand palette; no faces, no film stills</td>
+</tr>
+<tr>
+<td>6. Quality check</td>
+<td>You</td>
+<td>Preview sheet</td>
+<td>5 min per post</td>
+<td>Reads well aloud, voice sounds like you, nothing you wouldn't sign</td>
+</tr>
+<tr>
+<td>7. Publish</td>
+<td>Account thread</td>
+<td>Metricool (auto-publish)</td>
+<td>—</td>
+<td>Scheduled only after your approval</td>
+</tr>
+<tr>
+<td>8. Respond</td>
+<td>You</td>
+<td>Instagram app</td>
+<td>10 min a day</td>
+<td>Every comment answered within 24 h</td>
+</tr>
+<tr>
+<td>9. Review</td>
+<td>You + engine</td>
+<td>Tracker, Metricool pull</td>
+<td>20 min Sunday</td>
+<td>Tracker row filled; experiments checked</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="the-first-14-days-and-starter-content">4. The first 14 days and starter content</h2>
+<p>The full calendar is in <code>calendar-14-day.csv</code>. Most slots to 4 Nov are already scheduled in Metricool and stay as they are. New drafts fill the open slots from 4 Nov. Story nights 26 Oct–7 Nov are the 22 quiz stories already scheduled; sequences A and B are extra, posted by hand.</p>
+<p>"Your time" counts your minutes only: review and replies for engine-made posts, plus filming where noted.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Day</th>
+<th>Date</th>
+<th>Pillar</th>
+<th>Format · series</th>
+<th>Hook</th>
+<th>Core lesson</th>
+<th>Source needed</th>
+<th>Natural CTA</th>
+<th>Your time</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Mon 26 Oct</td>
+<td>Mind</td>
+<td>Carousel · Old Idea (scheduled)</td>
+<td>You're not lazy. You're avoiding a feeling.</td>
+<td>Procrastination is often mood repair</td>
+<td>Meditations 2.4 (Long) ✓; mood-repair research</td>
+<td>One word: the feeling</td>
+<td>2</td>
+</tr>
+<tr>
+<td>1</td>
+<td>Mon 26 Oct</td>
+<td>Mind</td>
+<td>Reel (scheduled)</td>
+<td>Likes are a vote from people who gave your post half a second.</td>
+<td>Your own judgement outweighs likes</td>
+<td>Moodius words</td>
+<td>What would you post if nobody saw likes?</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Tue 27 Oct</td>
+<td>Mind</td>
+<td>Carousel (scheduled)</td>
+<td>How to stop rehearsing disasters that never come.</td>
+<td>Rehearsal is not preparation</td>
+<td>Meditations 7.8 (Long) ✓</td>
+<td>One word: the disaster</td>
+<td>2</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Tue 27 Oct</td>
+<td>People</td>
+<td>Reel (scheduled)</td>
+<td>Being alone isn't the problem. Being alone when you didn't choose it is.</td>
+<td>Solitude vs loneliness</td>
+<td>Discourses 3.13 (Long) ✓</td>
+<td>Would you pick up if someone called?</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Wed 28 Oct</td>
+<td>Body</td>
+<td>Carousel · Forgotten Knowledge (scheduled)</td>
+<td>A Nobel Prize was hiding in a 1,600-year-old first-aid book.</td>
+<td>Old texts can hold real clues</td>
+<td>Tu Youyou, Nature Medicine 2011 ✓</td>
+<td>Send to the friend who never reads instructions</td>
+<td>2</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Wed 28 Oct</td>
+<td>Mind</td>
+<td>Reel · The Scene, book (scheduled)</td>
+<td>Gregor Samsa turns into an insect overnight…</td>
+<td>Work can take more than it pays for</td>
+<td>Kafka, The Metamorphosis</td>
+<td>What would you stop if work didn't count?</td>
+<td>2</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Thu 29 Oct</td>
+<td>Mind</td>
+<td>Carousel (scheduled)</td>
+<td>Why one comment ruins your whole day.</td>
+<td>Negativity bias; buy time</td>
+<td>Enchiridion 20 (Higginson) ✓</td>
+<td>Reacting or responding?</td>
+<td>2</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Thu 29 Oct</td>
+<td>Mind</td>
+<td>Reel (scheduled)</td>
+<td>Nobody warns you that the early version of a better life looks a bit ridiculous…</td>
+<td>Accept looking foolish</td>
+<td>Epictetus (paraphrase)</td>
+<td>The habit you'd start?</td>
+<td>2</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Fri 30 Oct</td>
+<td>People</td>
+<td>Carousel (scheduled)</td>
+<td>Who you let close becomes who you are.</td>
+<td>Friends shape character</td>
+<td>Nicomachean Ethics IX.12, IX.4 (Ross) ✓</td>
+<td>Send to the friend who makes you better</td>
+<td>2</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Fri 30 Oct</td>
+<td>Mind</td>
+<td>Reel 17:00 (scheduled)</td>
+<td>If anger was the only feeling that was safe to show growing up…</td>
+<td>Name what's under anger</td>
+<td>Moodius words</td>
+<td>What's under yours?</td>
+<td>2</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Sat 31 Oct</td>
+<td>People</td>
+<td>Carousel · Old Idea (scheduled)</td>
+<td>A student told Confucius he'd mastered kindness.</td>
+<td>"Not yet" is hopeful</td>
+<td>Analects V.11 (Legge) ✓</td>
+<td>Not yet?</td>
+<td>2</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Sat 31 Oct</td>
+<td>People</td>
+<td>Reel (scheduled)</td>
+<td>There's a version of independence that's really just fear with good posture.</td>
+<td>Move closer first</td>
+<td>Seneca (paraphrase)</td>
+<td>Who are you waiting on?</td>
+<td>2</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Sun 1 Nov</td>
+<td>Body</td>
+<td>Carousel · Forgotten Knowledge (scheduled)</td>
+<td>Medieval Seville's best doctor tested surgery on a goat first.</td>
+<td>Test, draw, write it down</td>
+<td>Karamanou 2015; Manaf 2015 ✓</td>
+<td>Goat or you?</td>
+<td>2</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Sun 1 Nov</td>
+<td>Mind</td>
+<td>Reel (scheduled)</td>
+<td>People chose an electric shock over 15 minutes alone with their thoughts.</td>
+<td>Quiet takes practice</td>
+<td>Wilson et al., Science 2014 ✓</td>
+<td>How long did you last?</td>
+<td>2</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Mon 2 Nov</td>
+<td>People</td>
+<td>Carousel · Small Good Thing (scheduled)</td>
+<td>The friend who always pays might be the happiest one at the table.</td>
+<td>Giving is linked to wellbeing</td>
+<td>Aknin 2013; Dunn 2008 ✓</td>
+<td>Whose round?</td>
+<td>2</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Mon 2 Nov</td>
+<td>Body</td>
+<td>Reel · Forgotten Knowledge (scheduled)</td>
+<td>Tu Youyou's extracts kept failing…</td>
+<td>Cold extraction, artemisinin</td>
+<td>Tu Youyou 2011 ✓</td>
+<td>Hot or cold?</td>
+<td>2</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Tue 3 Nov</td>
+<td>People</td>
+<td>Carousel · Old Idea (scheduled)</td>
+<td>Bad mood? An emperor's fix: think about other people.</td>
+<td>Notice others' best qualities</td>
+<td>Meditations 6.48 (Long) ✓</td>
+<td>Tell one of them</td>
+<td>2</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Tue 3 Nov</td>
+<td>People</td>
+<td>Reel · Small Good Thing (scheduled)</td>
+<td>Even Marcus Aurelius stood in a doorway waiting for a thank-you.</td>
+<td>The kindness was already finished</td>
+<td>Meditations 7.73 (Long) ✓</td>
+<td>Door holder?</td>
+<td>2</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Wed 4 Nov</td>
+<td>Body</td>
+<td>Carousel · Forgotten Knowledge (scheduled)</td>
+<td>A medical book in Timbuktu names a tree nobody can find.</td>
+<td>Lost knowledge still being decoded</td>
+<td>HMML; The Met ✓</td>
+<td>Would you look?</td>
+<td>2</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Wed 4 Nov</td>
+<td>People</td>
+<td><strong>Reel 1 · Small Good Thing (new, drafted below)</strong></td>
+<td>That conversation you keep replaying? They probably liked you more than you think.</td>
+<td>The liking gap</td>
+<td>Boothby et al., Psychological Science 2018 ✓</td>
+<td>Who'd you text?</td>
+<td>10</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Wed 4 Nov</td>
+<td>People</td>
+<td><strong>Story sequence A (new, by hand)</strong></td>
+<td>After meeting someone new, do you think it went better or worse?</td>
+<td>The liking gap</td>
+<td>as Reel 1</td>
+<td>Poll + question</td>
+<td>5</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Thu 5 Nov</td>
+<td>Mind</td>
+<td><strong>Carousel · One Book (new, drafted below)</strong></td>
+<td>Benjamin Franklin kept a chart of his own faults. It didn't go well.</td>
+<td>Watching a fault shrinks it</td>
+<td>Franklin, Autobiography ✓ (spelling check)</td>
+<td>Which virtue first?</td>
+<td>10</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Thu 5 Nov</td>
+<td>Mind</td>
+<td><strong>Reel 2 · The Scene (new, drafted below)</strong></td>
+<td>Phil Connors lives the same day over and over. Watch what he does with it.</td>
+<td>You become what you rehearse</td>
+<td>Groundhog Day (1993); NE II.1 (Ross) ✓</td>
+<td>Your same day?</td>
+<td>10 (+15 if filming)</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Fri 6 Nov</td>
+<td>People</td>
+<td>Carousel · Small Good Thing (new, to draft)</td>
+<td>You think a thank-you note would be awkward. The person getting it disagrees.</td>
+<td>People underrate how much thanks lands</td>
+<td>Kumar &amp; Epley, Psychological Science 2018 (to verify)</td>
+<td>Who's owed one?</td>
+<td>10</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Fri 6 Nov</td>
+<td>Body</td>
+<td><strong>Reel 3 · Claim Check (new, drafted below)</strong></td>
+<td>Your watch says 10,000 steps or you failed. The research is kinder.</td>
+<td>Benefits rise, then level off</td>
+<td>Paluch 2022; Ding 2025 ✓</td>
+<td>Your number?</td>
+<td>10 (+15 if filming)</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Fri 6 Nov</td>
+<td>Body</td>
+<td><strong>Story sequence B (new, by hand)</strong></td>
+<td>Guess yesterday's steps. Don't check.</td>
+<td>Movement counts below 10k</td>
+<td>as Reel 3</td>
+<td>Poll + question</td>
+<td>5</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Sat 7 Nov</td>
+<td>People</td>
+<td>Carousel · Old Idea (new, to draft)</td>
+<td>A 2,500-year-old practice for the person who annoys you.</td>
+<td>Loving-kindness, one named tradition</td>
+<td>Karaniya Metta Sutta, Sutta Nipata 1.8 (PD translation); one LKM review (to verify)</td>
+<td>Who's yours?</td>
+<td>10</td>
+</tr>
+<tr>
+<td>13</td>
+<td>Sat 7 Nov</td>
+<td>People</td>
+<td>Reel · Small Good Thing (scheduled)</td>
+<td>Everyone has the friend who grabs the bill…</td>
+<td>Giving and reward</td>
+<td>Harbaugh 2007; Aknin 2013 ✓</td>
+<td>Whose round?</td>
+<td>2</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Sun 8 Nov</td>
+<td>Body</td>
+<td>Carousel · Forgotten Knowledge (new, to draft)</td>
+<td>In 1721 Boston, an enslaved man explained how to stop smallpox. Few listened.</td>
+<td>Onesimus and inoculation</td>
+<td>Tone-audit tidbit (recheck)</td>
+<td>Would you have listened?</td>
+<td>10</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Sun 8 Nov</td>
+<td>Mind</td>
+<td>Reel · Old Idea (new, to draft)</td>
+<td>A cook explains the secret of effortless work to a king.</td>
+<td>Skill feels like ease after practice</td>
+<td>Zhuangzi ch. 3 (Legge, PD) (to verify)</td>
+<td>What's your Cook Ding skill?</td>
+<td>10</td>
+</tr>
+</tbody>
+</table></div>
+<p>Mix across the 28 feed posts: Mind 11, People 11, Body 6 (close to the 40/35/25 target). Hurt or conflict openers: 6 of 28, under the cap.</p>
+<h3>Reel 1 · "The liking gap" (Wed 4 Nov, 18:00)</h3>
+<p>Series: Small Good Thing · Pillar: People · Length: about 30 s · Experiment E2 arm: situation hook</p>
+<p><strong>On-screen text and narration</strong> (narration optional: record on your phone in a quiet room, or run it as text only over the original ambient track MO-REL-2)</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Time</th>
+<th>On-screen text</th>
+<th>Narration</th>
+<th>Shot (no faces)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0–3 s</td>
+<td>That conversation you keep replaying? / They probably liked you more than you think.</td>
+<td>That conversation you keep replaying? They probably liked you more than you think.</td>
+<td>Phone face-down on a café table, a cup beside it</td>
+</tr>
+<tr>
+<td>3–8 s</td>
+<td>2018: strangers, five-minute chats</td>
+<td>In 2018, psychologists paired strangers for five-minute chats.</td>
+<td>Two cups on a table, hands only</td>
+</tr>
+<tr>
+<td>8–14 s</td>
+<td>Afterwards, most people underestimated how much their partner liked them.</td>
+<td>Afterwards, most people underestimated how much their partner liked them.</td>
+<td>Type card, Slate background</td>
+</tr>
+<tr>
+<td>14–20 s</td>
+<td>They called it "the liking gap". With real roommates, it lasted months.</td>
+<td>They called it the liking gap. In a study of college roommates, it lasted for months.</td>
+<td>Window, street at dusk</td>
+</tr>
+<tr>
+<td>20–26 s</td>
+<td>You're grading your awkward bits. / They're enjoying the talk.</td>
+<td>You're busy grading your own awkward moments. They're busy enjoying talking to you.</td>
+<td>Hand writing in a notebook</td>
+</tr>
+<tr>
+<td>26–30 s</td>
+<td>Send the follow-up text. / Who'd you text?</td>
+<td>So send the follow-up text. It's probably welcome.</td>
+<td>Thumb hovering over "send" (blank screen, no names)</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Caption</strong></p>
+<blockquote>
+<p>After a conversation with someone new, most of us think it went worse than it did. Psychologists call it the liking gap: in five-minute chats between strangers, people consistently underestimated how much the other person liked them. A study of college roommates found the gap lasted for months.</p>
+<p>It's an average, not a promise. But it means the text you're not sending is probably more welcome than you think.</p>
+<p>Who'd you text?</p>
+<p>Source: Boothby, Cooney, Sandstrom &amp; Clark, Psychological Science (2018), doi:10.1177/0956797618783714</p>
+<h1>psychology #friendship #socialanxiety #kindness</h1>
+</blockquote>
+<p><strong>Pinned first comment</strong>: <em>[Yours to write: who you'd text, in a line. Skip it if you'd rather not.]</em></p>
+<p><strong>Alternative hooks</strong>
+- Curiosity (E2 arm B): "Psychologists found a gap in almost every first conversation."
+- Other-person: "The person you met this week left thinking about you too."</p>
+<h3>Reel 2 · "Groundhog Day and how character changes" (Thu 5 Nov, 18:00)</h3>
+<p>Series: The Scene · Pillar: Mind · Length: about 35 s · E2 arm: curiosity hook</p>
+<p>No film footage, stills, poster or music. Shots are your own everyday b-roll or engine type cards.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Time</th>
+<th>On-screen text</th>
+<th>Narration</th>
+<th>Shot (no faces)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0–3 s</td>
+<td>There's a scene in Groundhog Day that explains how people change.</td>
+<td>There's a scene in Groundhog Day that explains how people actually change.</td>
+<td>Alarm clock, 6:00</td>
+</tr>
+<tr>
+<td>3–9 s</td>
+<td>Phil Connors relives one day. / Over and over.</td>
+<td>Phil Connors is stuck reliving the same day in a small town.</td>
+<td>Same window, two angles</td>
+</tr>
+<tr>
+<td>9–15 s</td>
+<td>First he uses it for himself. It works. It's empty.</td>
+<td>At first he uses it for himself. Tricks, food, getting what he wants. It works, and it feels empty.</td>
+<td>Type card</td>
+</tr>
+<tr>
+<td>15–23 s</td>
+<td>Then he uses the day for other people. / Same boy. Same tree. Every day.</td>
+<td>Then he starts using the day for other people. He catches a boy who falls from the same tree, every single day. The boy never thanks him.</td>
+<td>A tree from below</td>
+</tr>
+<tr>
+<td>23–31 s</td>
+<td>"We become just by doing just acts." Aristotle, Nicomachean Ethics II.1 (tr. W. D. Ross)</td>
+<td>Aristotle said it about 2,300 years earlier: we become just by doing just acts.</td>
+<td>Type card, Ember rule</td>
+</tr>
+<tr>
+<td>31–35 s</td>
+<td>You become what you rehearse. / Your same day?</td>
+<td>You become what you rehearse. What's your same day for?</td>
+<td>Kettle, keys, a front door</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Caption</strong></p>
+<blockquote>
+<p>Groundhog Day (1993, dir. Harold Ramis) is a comedy about the oldest idea in ethics. Phil only changes once he stops using the repeated day for himself and starts using it for other people: lessons, small rescues, a boy who never says thanks.</p>
+<p>Aristotle, Nicomachean Ethics II.1 (tr. W. D. Ross): "we become just by doing just acts, temperate by doing temperate acts, brave by doing brave acts."</p>
+<p>Your ordinary day repeats too. What's it practising?</p>
+<p>Your same day?</p>
+<p>Film analysis by Moodius. No footage used.</p>
+<h1>groundhogday #aristotle #philosophy #character #film</h1>
+</blockquote>
+<p><strong>Pinned first comment</strong>: <em>[Yours to write: one small thing your ordinary day repeats.]</em></p>
+<p><strong>Alternative hooks</strong>
+- Situation (E2 arm A): "Phil Connors lives the same day over and over. Watch what he does with it."
+- Other-person: "A boy falls from the same tree every day. Someone catches him every time."</p>
+<h3>Reel 3 · "Do you need 10,000 steps?" (Fri 6 Nov, 17:00)</h3>
+<p>Series: Claim Check · Pillar: Body · Length: about 35 s · Evidence label: observational, large</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Time</th>
+<th>On-screen text</th>
+<th>Narration</th>
+<th>Shot (no faces)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0–3 s</td>
+<td>Your watch says 10,000 steps or you failed. / The research is kinder.</td>
+<td>Your watch says ten thousand steps or you failed. The research is kinder.</td>
+<td>Feet on a pavement</td>
+</tr>
+<tr>
+<td>3–11 s</td>
+<td>2022: 15 studies, ~47,000 adults</td>
+<td>A 2022 analysis of 15 studies, about forty-seven thousand adults,</td>
+<td>Stairs</td>
+</tr>
+<tr>
+<td>11–18 s</td>
+<td>Benefit rose with steps, then levelled off: 6,000–8,000 (60+), 8,000–10,000 (under 60)</td>
+<td>found the benefit rose with steps, then levelled off: around six to eight thousand for over-sixties, eight to ten thousand for younger adults.</td>
+<td>Type card with a simple rising-then-flat line</td>
+</tr>
+<tr>
+<td>18–25 s</td>
+<td>2025: 57 studies. ~7,000 steps ≈ most of the benefit of 10,000</td>
+<td>A 2025 review of fifty-seven studies found about seven thousand steps a day gave most of the benefit linked to ten thousand.</td>
+<td>Park path</td>
+</tr>
+<tr>
+<td>25–31 s</td>
+<td>Evidence: observational. Linked, not proven.</td>
+<td>These studies show links, not proof. Healthier people may just walk more.</td>
+<td>Type card, evidence label</td>
+</tr>
+<tr>
+<td>31–35 s</td>
+<td>More than you do now still counts. / Your number?</td>
+<td>But more than you do now still counts. What's your number?</td>
+<td>Shoes by a door</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Caption</strong></p>
+<blockquote>
+<p>10,000 steps is a round number, not a finish line. A 2022 meta-analysis of 15 cohorts (about 47,000 adults) found the drop in risk of death levelled off around 6,000–8,000 steps a day for adults over 60 and 8,000–10,000 for younger adults. A 2025 review of 57 studies found about 7,000 steps a day was linked to a 47% lower risk of death than 2,000, close to the figure for 10,000.</p>
+<p>These are observational studies: they show links, not proof that steps cause the benefit. If you're at 3,000, 5,000 is progress.</p>
+<p>Your number?</p>
+<p>Sources: Paluch et al., Lancet Public Health 7(3), 2022, doi:10.1016/S2468-2667(21)00302-9 · Ding et al., Lancet Public Health, 2025, doi:10.1016/S2468-2667(25)00164-1
+General information, not medical advice.</p>
+<h1>walking #health #fitness #steps</h1>
+</blockquote>
+<p><strong>Pinned first comment</strong>: <em>[Yours to write: your rough daily steps, only if you're happy to share.]</em></p>
+<p><strong>Alternative hooks</strong>
+- Curiosity (E2 arm B): "How many steps a day does the research actually support?"
+- Other-person: "Your friend's 10,000-step streak isn't the bar."</p>
+<h3>Carousel · "Franklin's chart of faults" (Thu 5 Nov, 12:00)</h3>
+<p>Series: One Book, One Idea, One Action · Pillar: Mind · Label: <strong>Researched introduction</strong> · 8 slides, 1080×1350</p>
+<ol>
+<li><strong>Cover</strong>: Benjamin Franklin kept a chart of his own faults. / It didn't go well.</li>
+<li>As a young printer in Philadelphia, Franklin decided to work on his character on purpose, one trait at a time.</li>
+<li>He picked 13 virtues: Temperance, Silence, Order, Resolution, Frugality, Industry, Sincerity, Justice, Moderation, Cleanliness, Tranquillity, Chastity, Humility.</li>
+<li>The method (Moodius paraphrase): a small book with a page for each virtue and a column for each day. Every slip got a black dot. One virtue got his full attention each week, so he could go through all 13 in thirteen weeks.</li>
+<li>What he found: "I was surprised to find myself so much fuller of faults than I had imagined." Benjamin Franklin, <em>Autobiography</em></li>
+<li>He admits Order beat him for the rest of his life. He kept going anyway, and says the faults did shrink.</li>
+<li><strong>The action</strong>: Pick one trait. One week. One dot per slip. On Sunday, count. The goal isn't a clean page. It's noticing.</li>
+<li>Researched introduction: we haven't written a personal review of this book. The Autobiography is free to read (public domain). / Which virtue first?</li>
+</ol>
+<p><strong>Caption</strong></p>
+<blockquote>
+<p>Franklin's plan for "moral perfection" produced mostly a page of black dots. He kept it anyway, because watching a habit is the first thing that changes it.</p>
+<p>Try the one-week version: one trait, one dot per slip, count on Sunday.</p>
+<p>Which virtue first?</p>
+<p>Source: Benjamin Franklin, Autobiography (public domain). Quote checked against the ushistory.org transcription; spelling differs between editions ("surpris'd" in older ones).</p>
+<h1>books #benjaminfranklin #habits #character #reading</h1>
+</blockquote>
+<p><strong>Pinned first comment</strong>: <em>[Yours to write: which virtue you'd pick.]</em></p>
+<p><strong>Before rendering</strong>: confirm slide 5's wording against the Standard Ebooks edition and keep that edition's spelling.</p>
+<h3>Story sequence A · "The liking gap" (Wed 4 Nov, by hand after the reel)</h3>
+<p>Four frames, posted by hand because Metricool can't add stickers.</p>
+<ol>
+<li>"Quick one about conversations." (Bone on Slate)</li>
+<li><strong>Poll sticker</strong>: "After meeting someone new, do you usually think it went…" / <em>Better than it did</em> / <em>Worse than it did</em></li>
+<li>"Most people guess worse. Psychologists call it the liking gap (Boothby et al., 2018)."</li>
+<li><strong>Question sticker</strong>: "Who do you owe a follow-up message? No names. Just who: a colleague, an old friend…"</li>
+</ol>
+<p><strong>Your follow-up next morning</strong> (honest commentary from your account): share the real poll result. "X% of you said worse, same as the study. Today's job: send it." Share only answers people gave, without names. If nobody replies, post the study line instead. Never make up a reply.</p>
+<p><strong>Reply-only version</strong> (if you'd rather not post by hand): frame 2 becomes "Reply BETTER or WORSE".</p>
+<h3>Story sequence B · "Steps, honestly" (Fri 6 Nov, by hand after the reel)</h3>
+<ol>
+<li>"Friday, gentle one." (Bone on Slate)</li>
+<li><strong>Poll sticker</strong> (four options): "Yesterday's steps? Guess, don't check." / <em>Under 4k</em> / <em>4–7k</em> / <em>7–10k</em> / <em>10k+</em></li>
+<li>"In big studies the benefit rises, then levels off around 7–8k for many adults. More than you do now still counts."</li>
+<li><strong>Question sticker</strong>: "What's your favourite walk? Where, and when?"</li>
+</ol>
+<p><strong>Your follow-up Saturday</strong>: share two or three real answers without names, with a line from you about each ("A canal at 7am, that's the one."). If none arrive, skip the follow-up.</p>
+<h3>Comment replies: examples</h3>
+<p>Write each one fresh. These show the shape, not text to paste.</p>
+<ul>
+<li><strong>Someone shares something personal</strong> ("This is me every night"): "That replay at 2am is exhausting. What's the one conversation it usually picks?" Keep it warm, ask one thing, no advice unless asked. If a comment suggests risk to the person, reply gently and point to Samaritans (116 123 in the UK and Ireland); the comment agent's crisis rule applies.</li>
+<li><strong>Someone disputes a source</strong> ("Marcus never said that"): "Fair challenge. It's Meditations 6.48 in George Long's translation. Here's the line: … Which translation do you read?" Thank them, show the source, fix the post if they're right.</li>
+<li><strong>Someone asks for a book</strong>: "If you liked this, Franklin's Autobiography is free online and short. What are you reading now?"</li>
+<li><strong>A joke</strong>: answer the joke. "The goat did not consent, no."</li>
+<li><strong>Spam or a promo account</strong>: no reply. Hide or delete.</li>
+</ul>
+<h3>Comments on other pages: examples</h3>
+<p>Add something to their post. Never write "check my page" or paste a link.</p>
+<ul>
+<li>On a history-of-science post about penicillin: "There's a nice echo in Tu Youyou's story: she found artemisinin by noticing an old recipe never said to boil the herb. Accidents and close reading both count."</li>
+<li>On a book account's Meditations post: "Which translation is this? Long's 1862 version reads very differently from Hays. I'd love to know which one people prefer."</li>
+<li>On a psychology account's post about loneliness: "The liking-gap studies fit this well. People underestimate how much a new acquaintance liked them, which makes the second message feel riskier than it is."</li>
+<li>On a fitness account's step-count post: "The 2025 Lancet review is a good companion to this: most of the benefit linked to 10k shows up around 7k."</li>
+</ul>
+<hr />
+<h2 id="the-measurement-system">5. The measurement system</h2>
+<h3>The tracker</h3>
+<p><code>tracker.csv</code> (one row per post or story sequence) and <code>tracker.xlsx</code> (the same columns, formulas filled in). Fill it in during the Sunday review. Metricool supplies most columns; the ones marked <em>app</em> only exist in the Instagram app (Insights on the post).</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Column</th>
+<th>From</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>date, slot, pillar, series, format, hook, opener_tone, cta, experiment, arm</td>
+<td>You / the build</td>
+<td>opener_tone: curiosity, appreciation, tension, hurt</td>
+</tr>
+<tr>
+<td>your_minutes</td>
+<td>You</td>
+<td>Your time only</td>
+</tr>
+<tr>
+<td>reach, views, likes, comments, saves, shares</td>
+<td>Metricool</td>
+<td>Per post</td>
+</tr>
+<tr>
+<td>non_follower_reach_pct</td>
+<td>App</td>
+<td>Post insights → Accounts reached → Followers / Non-followers</td>
+</tr>
+<tr>
+<td>avg_watch_s, hold_3s_pct</td>
+<td>Metricool (reels)</td>
+<td>Instagram shows hold as "skip rate" in the app; hold = 100 − skip</td>
+</tr>
+<tr>
+<td>follows</td>
+<td>Metricool (feed posts) / App (reels)</td>
+<td>The API gives follows for feed posts only</td>
+</tr>
+<tr>
+<td>profile_visits</td>
+<td>App</td>
+<td>Not available from Metricool</td>
+</tr>
+<tr>
+<td>story_reach_first, story_reach_last, story_replies, sticker_taps</td>
+<td>App</td>
+<td>Story insights disappear after 24 h unless saved; story replies read 0 through the API for European accounts</td>
+</tr>
+</tbody>
+</table></div>
+<h3>Formulas</h3>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Formula</th>
+<th>What it tells you</th>
+<th>Limitation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shares per 1,000 reach</td>
+<td>shares ÷ reach × 1000</td>
+<td>Whether people pass it on. Instagram says sends matter most for reaching non-followers</td>
+<td>Tiny numbers (0–2 a post) swing wildly. Use medians across 5+ posts</td>
+</tr>
+<tr>
+<td>Saves per 1,000 reach</td>
+<td>saves ÷ reach × 1000</td>
+<td>Whether it's useful enough to keep</td>
+<td>Same small-number problem</td>
+</tr>
+<tr>
+<td>Likes per 1,000 reach</td>
+<td>likes ÷ reach × 1000</td>
+<td>Approval from people already connected</td>
+<td>Followers like more than strangers, so it mixes audiences</td>
+</tr>
+<tr>
+<td>Follows per 1,000 reach (post)</td>
+<td>follows ÷ reach × 1000</td>
+<td>Conversion from that post</td>
+<td>Feed posts only via the API; reels in the app; Instagram counts only follows from that post's screen</td>
+</tr>
+<tr>
+<td>Follows per 1,000 reach (account, weekly)</td>
+<td>(followers at end − followers at start) ÷ weekly account reach × 1000</td>
+<td>Overall conversion</td>
+<td>Net figure: unfollows are subtracted, and it includes follows from anywhere</td>
+</tr>
+<tr>
+<td>Profile visit rate</td>
+<td>profile_visits ÷ reach</td>
+<td>How often a post makes someone curious</td>
+<td>App only</td>
+</tr>
+<tr>
+<td>Visit-to-follow</td>
+<td>follows ÷ profile_visits</td>
+<td>How well the profile converts</td>
+<td>App only; small numbers</td>
+</tr>
+<tr>
+<td>Non-follower share</td>
+<td>non-follower reach ÷ reach</td>
+<td>Whether a post is finding new people</td>
+<td>App only, rounded percentages</td>
+</tr>
+<tr>
+<td>3-second hold</td>
+<td>hold_3s_pct</td>
+<td>Whether the hook works</td>
+<td>Reels only</td>
+</tr>
+<tr>
+<td>Story completion</td>
+<td>story_reach_last ÷ story_reach_first</td>
+<td>Whether people stay to the end</td>
+<td>Story reach counts unique viewers per frame</td>
+</tr>
+<tr>
+<td>Story replies per 1,000</td>
+<td>story_replies ÷ story_reach_first × 1000</td>
+<td>Conversation</td>
+<td>Count in the app; the API reports 0 for Europe</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>What Instagram doesn't tell you.</strong> It doesn't say which post a follower came from when they followed from your profile, doesn't credit reach from shared DMs to the original post reliably (22 Oct: 5,734 account reach vs about 700 credited to posts), and doesn't give reel follows through the API. Don't fill those gaps with guesses. Leave the cell empty.</p>
+<h3>Two experiments</h3>
+<p>One main variable each. Compare medians across several comparable posts. No winner from one viral post.</p>
+<p><strong>E1 · Carousel opener tone</strong> (already running on the scheduled posts, 26 Oct–19 Nov)
+- Question: do carousels that open with curiosity or appreciation get shared as much as ones that open with tension or hurt?
+- Arm A (tension/hurt): 26, 27, 29, 30 Oct, then alternate days 5–19 Nov.
+- Arm B (curiosity/appreciation): 28, 31 Oct, 1, 2, 3, 4 Nov, then alternate days 5–19 Nov.
+- Kept the same: carousel, 12:00, same design system, a share-style CTA.
+- Primary metric: median shares per 1,000 reach. Secondary: median reach, follows per 1,000 reach.
+- Minimum: 8 posts per arm. Arm B gets its first six in a row, so dates are confounded until the alternating days balance it.
+- Call at the 19 Nov review: one arm leads only if its primary median is at least 30% higher and its reach median isn't more than 30% lower. Otherwise it's "no clear winner", and the brand preference for a hopeful tone decides.</p>
+<p><strong>E2 · Reel hook type</strong> (the planned X5 test, 2–19 Nov, 18:00 reels, alternate days)
+- Arm A: situation hook ("Phil Connors lives the same day…"). Arm B: curiosity hook ("There's a scene in Groundhog Day that explains…"). Every new reel above carries both.
+- Kept the same: 18:00 slot, 30–35 s, engine template, closing 1–3 word question.
+- Primary metric: median 3-second hold. Secondary: average watch time, sends per 1,000 reach.
+- Minimum: 8 reels per arm. Call at the 19 Nov review on the same 30% rule.</p>
+<p>E1 replaces the cover-style test X1 for carousels, so only one variable changes per format at a time.</p>
+<h3>When to repeat, revise or stop a series</h3>
+<p>Judge each series after five posts, against the account's own 30-day medians for that format.</p>
+<ul>
+<li><strong>Repeat</strong>: median reach and median shares per 1,000 reach both at or above the account median. Give it more slots.</li>
+<li><strong>Revise</strong>: one of the two below median. Change one thing (hook, length, visual) for the next three posts.</li>
+<li><strong>Stop</strong>: both below median after five posts plus three revised ones. Park it for 60 days.</li>
+<li>With under five posts, the call is "too early". A single post far above the rest is a lead to repeat, not a verdict.</li>
+</ul>
+<hr />
+<h2 id="the-minimal-tool-stack">6. The minimal tool stack</h2>
+<p><strong>Verdict: install nothing new.</strong> The reels are already rendered by our own FFmpeg engine (reels-engine/tools/engine.py), which has a quality gate and has produced every scheduled reel. Adding MoviePy or Remotion would duplicate it, and Whisper only helps once you record voice narration.</p>
+<div class="tbl"><table>
+<thead>
+<tr>
+<th></th>
+<th>MoviePy</th>
+<th>Whisper</th>
+<th>Remotion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verdict</td>
+<td>Not needed: duplicates our engine</td>
+<td>Optional later, only if you narrate and captions take over 10 min a reel</td>
+<td>Not now: prototyped 21 Oct, 2.8× slower than our engine, kept for kinetic-text formats only</td>
+</tr>
+<tr>
+<td>Canonical repo</td>
+<td>github.com/Zulko/moviepy (owner Zulko)</td>
+<td>github.com/openai/whisper (OpenAI organisation)</td>
+<td>github.com/remotion-dev/remotion (Remotion organisation)</td>
+</tr>
+<tr>
+<td>Latest release</td>
+<td>2.2.1 on PyPI, 21 May 2025</td>
+<td>20250625 on PyPI, 26 Jun 2025</td>
+<td>4.0.538 on npm, 22 Oct 2026</td>
+</tr>
+<tr>
+<td>Recent maintenance</td>
+<td>Last commit 26 Aug 2026; 2 commits in the past 12 months; README says "Maintainers wanted" and v1 is unmaintained</td>
+<td>Last commit 31 Aug 2026; 5 commits in the past 12 months</td>
+<td>Very active: releases most days</td>
+</tr>
+<tr>
+<td>Stars</td>
+<td>15.0k</td>
+<td>109k</td>
+<td>67.3k</td>
+</tr>
+<tr>
+<td>Contributors</td>
+<td>~215 distinct commit authors (git history; may double-count people with two emails)</td>
+<td>~85 (same method)</td>
+<td>Not verified (repository too large to clone here; GitHub page didn't show it)</td>
+</tr>
+<tr>
+<td>Downloads</td>
+<td>4.21 million / month on PyPI</td>
+<td>5.19 million / month on PyPI</td>
+<td>Not verified (npm statistics unreachable from here)</td>
+</tr>
+<tr>
+<td>Licence</td>
+<td>MIT: free commercial use</td>
+<td>MIT: free commercial use, and model weights</td>
+<td>Remotion Licence: free for individuals, non-profits and for-profit companies with up to 3 employees; a paid company licence above that; terms change in v5</td>
+</tr>
+<tr>
+<td>Security policy</td>
+<td>No SECURITY.md</td>
+<td>No SECURITY.md</td>
+<td>No SECURITY.md; private reporting is enabled</td>
+</tr>
+<tr>
+<td>Published advisories</td>
+<td>None on GitHub</td>
+<td>None on GitHub</td>
+<td>None on GitHub</td>
+</tr>
+<tr>
+<td>Known risks</td>
+<td>Version 2.2.1 caps Pillow below 12, so it can hold back Pillow security fixes</td>
+<td>Model files download from OpenAI's CDN; the code checks each file's SHA-256 and loads with weights_only=True on PyTorch 1.13+</td>
+<td>Needs Node and a headless Chromium; 455 MB of node_modules in our prototype</td>
+</tr>
+<tr>
+<td>Install size and dependencies</td>
+<td>Light: numpy, Pillow, imageio-ffmpeg, decorator, proglog, python-dotenv</td>
+<td>Heavy: PyTorch (large download), numba, tiktoken; ffmpeg on the system</td>
+<td>Heavy: Node, Chromium, 455 MB</td>
+</tr>
+<tr>
+<td>Cost</td>
+<td>£0 locally</td>
+<td>£0 locally. CPU is fine for 30–60 s clips with the base.en or small.en model</td>
+<td>£0 under the free licence</td>
+</tr>
+</tbody>
+</table></div>
+<p>Checked 25 Oct 2026. Stars, issues and security tabs come from the GitHub pages, release dates from PyPI and npm, maintenance from cloned git history, and downloads from pypistats.org. An OSV vulnerability query couldn't be completed from this network, so "none" means none published on GitHub. Stars measure popularity. They aren't downloads and they aren't a security audit.</p>
+<p><strong>If Whisper becomes worth it</strong>: install <code>openai-whisper==20250625</code> in its own virtual environment with a pinned CPU-only PyTorch. Read the dependency list first (above) and run it only on your own audio. No account, cookie or password is involved.</p>
+<p><strong>The no-code route</strong>, if code would ever delay publishing: Canva's free plan for carousels (Canva is already connected here) and the Instagram app's own editor for text and trims, posting by hand. No new account needed.</p>
+<p><strong>What we don't use.</strong> No auto-follow or unfollow, bought engagement, engagement pods, mass comments, bulk DMs, or tools that need your Instagram password, cookies or browser profile (this rules out instagrapi and Instaloader, checked earlier). Publishing already goes through Metricool, which uses Meta's official API. If more automation is ever justified, check Meta's current official APIs and account requirements first.</p>
+<hr />
+<h2 id="platform-facts-vs-my-hypotheses">Platform facts vs my hypotheses</h2>
+<h3>Verified from Instagram or primary reporting (checked 25 Oct 2026)</h3>
+<ul>
+<li>Adam Mosseri, January 2025: "The top three signals that matter most for ranking are watch time, likes and sends." Likes count slightly more for followers, sends slightly more for non-followers. Track average watch time, likes per reach and sends per reach. <a href="https://www.socialmediatoday.com/news/instagram-shares-algorithm-insights-2025/738034/">Social Media Today, 22 Jan 2025</a>, <a href="https://www.instagram.com/p/DFFyRp-pINJ/">original post</a></li>
+<li>Recommendations favour original content without watermarks. Engagement bait, low-quality repurposed content and exaggerated health claims aren't recommended. Accounts that mostly repost others' content are excluded from recommendations. <a href="https://creators.instagram.com/recommendations-and-Originality">Instagram Creators, 30 Apr 2024</a></li>
+<li>Reels: vertical 9:16, hook in the first 3 seconds, keep text from covering most of the screen, 3 minutes or less to be recommended. Keywords in your name and bio help search. Check Account Status for eligibility. <a href="https://creators.instagram.com/blog/instagram-recommendations-eligibility-tips-creators">Instagram Creators, Aug 2022, updated Apr 2023</a></li>
+<li>Trial reels go to non-followers first; results show after about 24 hours. <a href="https://creators.instagram.com/blog/instagram-trial-reels">Instagram Creators, 10 Dec 2024</a></li>
+<li>Hashtags are capped at five per post, rolling out from December 2025. Mosseri says hashtags don't increase reach but do label a topic. <a href="https://www.socialmediatoday.com/news/instagrams-implementing-new-limits-on-hashtag-use/808309/">Social Media Today, 18 Dec 2025</a></li>
+<li>The repost policy was extended to photos and carousels, judged across an account's posts over a month. <a href="https://petapixel.com/2026/04/30/new-instagram-policies-target-reposted-content/">PetaPixel, 30 Apr 2026</a></li>
+<li>From earlier work on this project: story replies read 0 through the API for European accounts, and the API gives follows and profile visits for feed posts and stories, not reels.</li>
+</ul>
+<h3>My hypotheses (to be tested, not facts)</h3>
+<ul>
+<li>Carousels with a tension opener and a kind payoff are this account's best reach format.</li>
+<li>Hopeful and curious openers will be shared at least as much as hurt ones (E1 tests this).</li>
+<li>Five carousels a week will beat your three-reel baseline for reach per hour of your time.</li>
+<li>"Send this to the friend who…" helps when it's natural. Used on every post, it starts to look like the engagement bait Instagram demotes. Use it on about half the posts, and vary the wording.</li>
+<li>Collaborations will pay off only after relationships built through comments.</li>
+<li>Following accounts doesn't change distribution. There's no evidence it does.</li>
+</ul>
+<hr />
+<h2 id="questions-that-would-change-the-plan">Questions that would change the plan</h2>
+<ol>
+<li><strong>Three pillars (Mind, Body, People) instead of the five from this morning?</strong> Yes or no.</li>
+<li><strong>Standard week from 20 Nov: five carousels, three reels, four story nights?</strong> Yes or no. Until 19 Nov nothing changes.</li>
+<li>Optional: a screenshot of Instagram → Insights → Accounts reached (last 30 days), showing the follower/non-follower split and top content. It would tell us what really drove 22 Oct.</li>
+<li>Optional, any time: the books you've read and films you've watched that you'd happily talk about. Those can become personal reviews; everything else stays a researched introduction.</li>
+</ol>
+</main>
+</div>
+<script>
+document.querySelectorAll('.cbtn').forEach(b => b.addEventListener('click', () => {
+  const t = b.parentElement.querySelector('code').innerText.trim();
+  const done = () => { b.textContent = 'Copied'; setTimeout(() => b.textContent = 'Copy', 1500); };
+  try { navigator.clipboard.writeText(t).then(done, () => sel(b)); } catch (e) { sel(b); }
+}));
+function sel(b) { const r = document.createRange(); r.selectNodeContents(b.parentElement.querySelector('code')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); b.textContent = 'Selected'; }
+const tip = document.querySelector('.tip'), cw = document.querySelector('.cwrap');
+document.querySelectorAll('.bar').forEach(g => {
+  g.addEventListener('mousemove', e => { const r = cw.getBoundingClientRect(); tip.textContent = g.dataset.tip; tip.style.left = (e.clientX - r.left) + 'px'; tip.style.top = (e.clientY - r.top) + 'px'; tip.hidden = false; });
+  g.addEventListener('mouseleave', () => tip.hidden = true);
+});
+</script>
