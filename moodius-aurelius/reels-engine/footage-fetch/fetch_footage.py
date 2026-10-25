@@ -8,7 +8,7 @@ licence, author and source page go into manifest.csv so captions can credit them
 cut to a 9:16 1080x1920 H.264 file with no audio, plus a 4-frame contact sheet for a face check.
 No account, no API key, no spend.
 """
-import argparse, csv, json, os, re, subprocess, time, urllib.parse, urllib.request
+import argparse, csv, json, os, re, subprocess, time, urllib.error, urllib.parse, urllib.request
 
 API = "https://commons.wikimedia.org/w/api.php"
 UA = {"User-Agent": "moodius-footage-fetch/1.0 (GitHub Actions; contact via repository)"}
@@ -40,6 +40,33 @@ def search(term, n):
     return out
 
 
+BLOCK = re.compile(r"police|deput|suspect|chase|marine|army|soldier|navy|protest|interview|people|\bman\b|woman|girl|boy|kid|"
+                   r"festival|competition|trailer|disassembl|upgrade|cartoon|episode|news|parade|match|game|speech|lecture", re.I)
+
+
+def relevant(c, term):
+    title = c["title"].lower()
+    words = [w for w in re.findall(r"[a-z]+", term.lower()) if len(w) > 2]
+    return all(w.rstrip("s") in title for w in words) and not BLOCK.search(title + " " + c["desc"])
+
+
+def fetch(url, tries=4):
+    for k in range(tries):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=120) as r:
+                return r.read()
+        except urllib.error.HTTPError as ex:
+            if ex.code != 429 or k == tries - 1:
+                raise
+            time.sleep(20 * (k + 1))
+
+
+def transcoded(url):
+    """Wikimedia's 720p VP9 derivative (smaller, kinder to their servers); the original if it is missing."""
+    m = re.match(r"(https://upload\.wikimedia\.org/wikipedia/commons)/(\w)/(\w\w)/(.+)$", url or "")
+    return [f"{m[1]}/transcoded/{m[2]}/{m[3]}/{m[4]}/{m[4]}.720p.vp9.webm", url] if m else [url]
+
+
 def usable(c):
     lic = c["licence"].lower().replace("-", " ")
     if "sa" in lic.split() or "share" in lic or "nc" in lic.split() or "nd" in lic.split():
@@ -67,7 +94,8 @@ def main():
             if got >= req.get("per_tag", 3):
                 break
             try:
-                cands = [c for c in search(term, 25) if usable(c) and c["url"] not in have]
+                cands = [c for c in search(term, 40) if usable(c) and relevant(c, term) and c["url"] not in have]
+                time.sleep(2)
             except Exception as ex:  # noqa: BLE001
                 log.append(f"search {term}: {ex}")
                 continue
@@ -78,8 +106,13 @@ def main():
                 name = f"{tag}-{got + 1}"
                 src = os.path.join(a.out, "_src")
                 try:
-                    with urllib.request.urlopen(urllib.request.Request(c["url"], headers=UA), timeout=120) as r:
-                        open(src, "wb").write(r.read())
+                    for u in transcoded(c["url"]):
+                        try:
+                            open(src, "wb").write(fetch(u))
+                            break
+                        except urllib.error.HTTPError as ex:
+                            if ex.code != 404:
+                                raise
                     start = max(0.0, min((c["duration"] or 10) * 0.3, (c["duration"] or 10) - 9))
                     mp4 = os.path.join(a.out, name + ".mp4")
                     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{start:.1f}", "-i", src, "-t", "8", "-an",
@@ -100,7 +133,7 @@ def main():
                 have.add(c["url"])
                 got += 1
                 log.append(f"  kept {name}: {c['title']} ({c['licence']})")
-                time.sleep(1)
+                time.sleep(4)
     with open(man_path, "w", newline="") as fh:
         w = csv.DictWriter(fh, fieldnames=["file", "tag", "term", "title", "licence", "author", "page", "source", "desc", "faces_checked"])
         w.writeheader()

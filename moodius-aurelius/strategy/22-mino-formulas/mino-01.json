@@ -10,11 +10,11 @@
    "format": "F1 Counter Serial",
    "series": "The Handbook, 7 days",
    "pillar": "The Reading Room",
-   "hook": "Day 1 of 7: one line from an old handbook.",
+   "hook": "One line from an old handbook.",
    "hook_b": "Is it possible to read a whole Stoic handbook in 7 days?",
    "cards": [
     [
-     "Day 1 of 7: one line from an old handbook.",
+     "One line from an old handbook.",
      2.6,
      "hook"
     ],
@@ -89,7 +89,22 @@
     ],
     "rewritten": false,
     "by": "Claude, 25 Oct 2026"
-   }
+   },
+   "kicker": "Day 1 / 7",
+   "broll": [
+    {
+     "tag": "desk-book-1",
+     "from": 0
+    },
+    {
+     "tag": "desk-book-2",
+     "from": 3
+    },
+    {
+     "tag": "lamp-night-1",
+     "from": 5
+    }
+   ]
   },
   {
    "id": "MZ02",
@@ -180,7 +195,26 @@
     ],
     "rewritten": false,
     "by": "Claude, 25 Oct 2026"
-   }
+   },
+   "kicker": "A story from Rome",
+   "broll": [
+    {
+     "tag": "ruins-1",
+     "from": 0
+    },
+    {
+     "tag": "ruins-2",
+     "from": 2
+    },
+    {
+     "tag": "desk-book-3",
+     "from": 5
+    },
+    {
+     "tag": "sky-1",
+     "from": 7
+    }
+   ]
   },
   {
    "id": "MZ03",
@@ -266,7 +300,26 @@
     ],
     "rewritten": false,
     "by": "Claude, 25 Oct 2026"
-   }
+   },
+   "kicker": "From the record",
+   "broll": [
+    {
+     "tag": "lamp-night-1",
+     "from": 0
+    },
+    {
+     "tag": "blanket-table-1",
+     "from": 2
+    },
+    {
+     "tag": "sky-2",
+     "from": 4
+    },
+    {
+     "tag": "blanket-table-2",
+     "from": 6
+    }
+   ]
   },
   {
    "id": "MZ04",
@@ -346,7 +399,22 @@
     ],
     "rewritten": false,
     "by": "Claude, 25 Oct 2026"
-   }
+   },
+   "kicker": "A or B",
+   "broll": [
+    {
+     "tag": "city-night-1",
+     "from": 0
+    },
+    {
+     "tag": "sky-1",
+     "from": 2
+    },
+    {
+     "tag": "rain-window-1",
+     "from": 4
+    }
+   ]
   },
   {
    "id": "MZ05",
@@ -430,8 +498,28 @@
     ],
     "rewritten": false,
     "by": "Claude, 25 Oct 2026"
-   }
+   },
+   "kicker": "That one friend",
+   "broll": [
+    {
+     "tag": "clock-1",
+     "from": 0
+    },
+    {
+     "tag": "city-night-2",
+     "from": 2
+    },
+    {
+     "tag": "rain-window-2",
+     "from": 4
+    },
+    {
+     "tag": "lamp-night-2",
+     "from": 6
+    }
+   ]
   }
  ],
- "cuts": "hard"
+ "cuts": "hard",
+ "style": "ledger"
 }
