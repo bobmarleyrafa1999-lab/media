@@ -1,0 +1,295 @@
+{
+  "version": "2026-10-25b",
+  "note": "Three pillars approved by Surafel 25 Oct 2026 19:44 UTC (\"Yes whatever is optimal\"), replacing the five-pillar draft. Spec: strategy/22-90-day-plan/three-pillars.json and plan.md section 5. Reading Room and Forgotten Knowledge are now series used across pillars. Weekly targets are share x the week's feed slots.",
+  "promise": "Old wisdom, new evidence: one idea a day to help you live a little better, with every source shown.",
+  "pillars": {
+    "mind": {
+      "name": "Mind",
+      "share": 0.4,
+      "covers": "Psychology, neuroscience, philosophy, spiritual practice.",
+      "from": [
+        "The Human Mind",
+        "The Reading Room (philosophy)"
+      ],
+      "keywords": [
+        "anger",
+        "anxiety",
+        "aristotle",
+        "author",
+        "book",
+        "books",
+        "brain",
+        "buddha",
+        "camus",
+        "cbt",
+        "confucius",
+        "dhammapada",
+        "discipline",
+        "emotion",
+        "emotions",
+        "epictetus",
+        "epicurus",
+        "focus",
+        "habit",
+        "habits",
+        "laozi",
+        "library",
+        "marcus",
+        "memory",
+        "mind",
+        "neuroplasticity",
+        "neuroscience",
+        "novel",
+        "overthinking",
+        "philosophy",
+        "psychology",
+        "read",
+        "reading",
+        "recommend",
+        "recommendation",
+        "rumination",
+        "self-trust",
+        "seneca",
+        "stoic",
+        "stoicism",
+        "therapy",
+        "translation",
+        "translator",
+        "ubuntu"
+      ]
+    },
+    "body": {
+      "name": "Body",
+      "share": 0.25,
+      "covers": "Movement, sleep, health claims checked, the history of medicine told as history.",
+      "from": [
+        "The Living Body",
+        "Forgotten Knowledge (medical)"
+      ],
+      "needs_evidence_label": true,
+      "no_doses": true,
+      "keywords": [
+        "al-andalus",
+        "andalus",
+        "artemisinin",
+        "breath",
+        "breathing",
+        "cardio",
+        "diet",
+        "dynasty",
+        "ethiopia",
+        "ethiopian",
+        "exercise",
+        "fitness",
+        "ge hong",
+        "gym",
+        "healer",
+        "heart",
+        "herb",
+        "herbal",
+        "herbs",
+        "ibn",
+        "inoculation",
+        "longevity",
+        "manuscript",
+        "medical",
+        "medicine",
+        "mongol",
+        "mongols",
+        "moors",
+        "nutrition",
+        "protein",
+        "remedies",
+        "remedy",
+        "run",
+        "running",
+        "sleep",
+        "smallpox",
+        "strength",
+        "stretch",
+        "timbuktu",
+        "tu youyou",
+        "walk",
+        "walking",
+        "wormwood",
+        "yoga"
+      ]
+    },
+    "people": {
+      "name": "People",
+      "share": 0.35,
+      "covers": "Relationships, kindness, everyday good deeds, character.",
+      "from": [
+        "The Good Life"
+      ],
+      "keywords": [
+        "altruism",
+        "awe",
+        "charity",
+        "community",
+        "friend",
+        "friends",
+        "friendship",
+        "generosity",
+        "gift",
+        "giving",
+        "gratitude",
+        "help",
+        "helping",
+        "kind",
+        "kindness",
+        "love",
+        "neighbour",
+        "relationship",
+        "relationships",
+        "volunteer"
+      ]
+    }
+  },
+  "series": {
+    "S1": {
+      "name": "One Book, One Idea, One Action",
+      "pillars": [
+        "mind",
+        "body",
+        "people"
+      ],
+      "formats": [
+        "carousel",
+        "book_review"
+      ],
+      "needs_book_label": true
+    },
+    "S2": {
+      "name": "The Scene",
+      "pillars": [
+        "mind",
+        "people"
+      ],
+      "formats": [
+        "reel",
+        "carousel"
+      ],
+      "needs_film": true
+    },
+    "S3": {
+      "name": "Claim Check",
+      "pillars": [
+        "body"
+      ],
+      "formats": [
+        "carousel",
+        "reel"
+      ],
+      "needs_evidence_label": true
+    },
+    "S4": {
+      "name": "Old Idea, Ordinary Day",
+      "pillars": [
+        "mind",
+        "people"
+      ],
+      "formats": [
+        "reel",
+        "carousel"
+      ],
+      "needs_tradition_source": true
+    },
+    "S5": {
+      "name": "Small Good Thing",
+      "pillars": [
+        "people"
+      ],
+      "formats": [
+        "reel",
+        "carousel"
+      ]
+    },
+    "S6": {
+      "name": "Forgotten Knowledge",
+      "pillars": [
+        "body",
+        "mind",
+        "people"
+      ],
+      "formats": [
+        "carousel",
+        "reel"
+      ],
+      "medical_history_disclaimer_when_body": true
+    }
+  },
+  "evidence_labels": [
+    "strong trials",
+    "mixed",
+    "observational only",
+    "animal or lab only",
+    "tradition, not clinically tested"
+  ],
+  "book_labels": [
+    "Researched introduction",
+    "Moodius review (read it)"
+  ],
+  "medical_history_disclaimer": "Historical interest only, not medical advice. Some traditional remedies are toxic.",
+  "opener_tones": [
+    "curiosity",
+    "appreciation",
+    "tension",
+    "hurt"
+  ],
+  "tone": {
+    "max_hurt_or_conflict_per_week": 4,
+    "min_curiosity_or_appreciation_share": 0.6667
+  },
+  "formats": [
+    "reel",
+    "carousel",
+    "story",
+    "substack",
+    "book_review"
+  ],
+  "banned_phrases": [
+    "young men",
+    "youngmen",
+    "alpha male",
+    "sigma",
+    "red pill",
+    "redpill",
+    "high-value man",
+    "high value man",
+    "real men",
+    "masculine energy"
+  ],
+  "claim_words": [
+    "ancient secret",
+    "secret cure",
+    "miracle",
+    "detox",
+    "doctors don't want",
+    "big pharma",
+    "cures",
+    "cure for",
+    "boost your immune",
+    "proven to"
+  ],
+  "dose_pattern": "\\b\\d+(?:[.,]\\d+)?\\s?(?:mg|mcg|µg|g|ml|iu|drops?|teaspoons?|tsp|tablespoons?|tbsp|capsules?|tablets?)\\b",
+  "banned_visuals": [
+    "statue",
+    "marble",
+    "gold",
+    "gradient",
+    "stock photo",
+    "film still",
+    "movie still",
+    "film clip",
+    "movie clip",
+    "poster"
+  ],
+  "hook_max_words": 12,
+  "question_max_words": 3,
+  "follow_up_questions": {
+    "mind": "Which part felt most familiar?",
+    "body": "What would make it easier to start?",
+    "people": "Who came to mind?"
+  }
+}
