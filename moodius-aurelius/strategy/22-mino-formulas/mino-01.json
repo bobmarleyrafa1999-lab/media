@@ -93,18 +93,19 @@
    "kicker": "Day 1 / 7",
    "broll": [
     {
-     "tag": "desk-book-1",
+     "tag": "lamp-night-1",
      "from": 0
     },
     {
-     "tag": "desk-book-2",
+     "tag": "sky-1",
      "from": 3
     },
     {
-     "tag": "lamp-night-1",
+     "tag": "lamp-night-2",
      "from": 5
     }
-   ]
+   ],
+   "footage_credit": "Footage via Wikimedia Commons: \"Timelapse clouds\" (2011), Thomas Bresson, CC BY 2.0."
   },
   {
    "id": "MZ02",
@@ -199,22 +200,19 @@
    "kicker": "A story from Rome",
    "broll": [
     {
-     "tag": "ruins-1",
+     "tag": "ruins-2",
      "from": 0
     },
     {
-     "tag": "ruins-2",
-     "from": 2
+     "tag": "sky-2",
+     "from": 3
     },
     {
-     "tag": "desk-book-3",
+     "tag": "lamp-night-1",
      "from": 5
-    },
-    {
-     "tag": "sky-1",
-     "from": 7
     }
-   ]
+   ],
+   "footage_credit": "Footage via Wikimedia Commons: \"Timelapse clouds, Seloncourt\", Thomas Bresson, CC BY 3.0."
   },
   {
    "id": "MZ03",
@@ -308,7 +306,7 @@
      "from": 0
     },
     {
-     "tag": "blanket-table-1",
+     "tag": "city-night-2",
      "from": 2
     },
     {
@@ -316,10 +314,11 @@
      "from": 4
     },
     {
-     "tag": "blanket-table-2",
+     "tag": "lamp-night-2",
      "from": 6
     }
-   ]
+   ],
+   "footage_credit": "Footage via Wikimedia Commons: \"Ljubljana city by night\", Miha Lesjak, CC BY 3.0; \"Timelapse clouds, Seloncourt\", Thomas Bresson, CC BY 3.0."
   },
   {
    "id": "MZ04",
@@ -411,10 +410,11 @@
      "from": 2
     },
     {
-     "tag": "rain-window-1",
+     "tag": "city-night-2",
      "from": 4
     }
-   ]
+   ],
+   "footage_credit": "Footage via Wikimedia Commons: \"City at night\", Editor, CC BY 3.0; \"Timelapse clouds\" (2011), Thomas Bresson, CC BY 2.0; \"Ljubljana city by night\", Miha Lesjak, CC BY 3.0."
   },
   {
    "id": "MZ05",
@@ -502,22 +502,23 @@
    "kicker": "That one friend",
    "broll": [
     {
-     "tag": "clock-1",
+     "tag": "city-night-1",
      "from": 0
     },
     {
-     "tag": "city-night-2",
+     "tag": "lamp-night-2",
      "from": 2
     },
     {
-     "tag": "rain-window-2",
+     "tag": "sky-2",
      "from": 4
     },
     {
-     "tag": "lamp-night-2",
+     "tag": "city-night-2",
      "from": 6
     }
-   ]
+   ],
+   "footage_credit": "Footage via Wikimedia Commons: \"City at night\", Editor, CC BY 3.0; \"Timelapse clouds, Seloncourt\", Thomas Bresson, CC BY 3.0; \"Ljubljana city by night\", Miha Lesjak, CC BY 3.0."
   }
  ],
  "cuts": "hard",
