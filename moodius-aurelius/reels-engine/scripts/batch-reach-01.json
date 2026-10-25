@@ -1,0 +1,274 @@
+{
+ "batch": "reach-01",
+ "written": "2026-10-25",
+ "note": "Positive/history reels from strategy/19-reach-batch. Facts from tidbits HM001-002, KH001-002; quote Meditations 7.73 Long.",
+ "scripts": [
+  {
+   "id": "RB01",
+   "slug": "cold-water",
+   "format": "R2",
+   "pillar": "Forgotten Knowledge",
+   "rank": 1,
+   "hook": "A Nobel Prize was hiding in an ancient first-aid book.",
+   "hook_b": "She found a malaria drug in a recipe from the year 340.",
+   "cards": [
+    [
+     "A Nobel Prize was hiding in an ancient first-aid book.",
+     2.7,
+     "hook"
+    ],
+    [
+     "Her team's malaria extracts kept failing. So she reread the old recipe.",
+     2.9,
+     "body"
+    ],
+    [
+     "Hot water or cold?",
+     2.5,
+     "quiz"
+    ],
+    [
+     "Cold.\nHeat was destroying the medicine.",
+     2.8,
+     "reveal"
+    ],
+    [
+     "That detail led to artemisinin, a frontline malaria drug, and a 2015 Nobel.",
+     3.4,
+     "body"
+    ],
+    [
+     "Tu Youyou, Nature Medicine, 2011 · history, not medical advice",
+     1.8,
+     "cite"
+    ],
+    [
+     "The prize was in the boring detail. Read the ancient book twice.",
+     2.9,
+     "body"
+    ],
+    [
+     "Send this to the friend who skips instructions.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate, beat grammar.",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 201
+   },
+   "source": {
+    "type": "data",
+    "author": "Tu Youyou",
+    "work": "Nature Medicine 17(10): 1217-1220",
+    "section": "2011",
+    "tidbits": "HM001, HM002",
+    "link": "https://doi.org/10.1038/nm.2471"
+   },
+   "caption": "In the 1970s Tu Youyou's team was hunting a malaria drug and their extracts kept failing. She went back to a 4th-century first-aid handbook by Ge Hong, which said to soak sweet wormwood in water and drink the juice. It never said boil. Heat had been destroying the active compound. Cold extraction worked, and artemisinin became a frontline malaria drug. Nobel Prize, 2015.\n\nTag the friend who never reads the instructions. Tu Youyou read them twice. 😅\n\nHistorical interest only, not medical advice. Modern artemisinin is purified and dosed; wormwood juice is not a treatment. Some traditional remedies are toxic.\n\nInstructions or vibes?\n\n— Moodius",
+   "first_comment": "Moodius: vibes first, instructions once it's on fire. Tu Youyou would not approve. 🙃 Source: Tu Y., Nature Medicine 17 (2011), quoting Ge Hong's Zhouhou Beiji Fang.",
+   "hashtags": [
+    "#history",
+    "#science",
+    "#medicalhistory",
+    "#curiosity",
+    "#china"
+   ],
+   "cta": "send",
+   "length_s": null,
+   "grammar": "beat",
+   "max_s": 24,
+   "doctor": {
+    "score": 80,
+    "issues": [
+     "Card 2 is 12 words; tight at 2.9s",
+     "Total about 21s, above the 12-18s target"
+    ],
+    "rewritten": false,
+    "by": "Claude, 25 Oct 2026"
+   }
+  },
+  {
+   "id": "RB02",
+   "slug": "held-the-door",
+   "format": "R2",
+   "pillar": "The Human Mind",
+   "rank": 1,
+   "hook": "You held the door. They walked through. No thank you.",
+   "hook_b": "You did a nice thing today and it's still bugging you.",
+   "cards": [
+    [
+     "You held the door. They walked through. No thank you.",
+     2.6,
+     "hook"
+    ],
+    [
+     "Now you're annoyed at a stranger for the rest of the walk.",
+     2.9,
+     "body"
+    ],
+    [
+     "What were you actually waiting for?",
+     2.4,
+     "quiz"
+    ],
+    [
+     "A thank you.\nCredit.\nA tiny receipt.",
+     2.8,
+     "reveal"
+    ],
+    [
+     "“When thou hast done a good act and another has received it, why dost thou look for a third thing besides these”",
+     5.6,
+     "quote"
+    ],
+    [
+     "Meditations 7.73 · tr. George Long",
+     1.6,
+     "cite"
+    ],
+    [
+     "The door was the good part. The thank you is optional.",
+     2.8,
+     "body"
+    ],
+    [
+     "Send this to the friend who holds every door.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate, beat grammar.",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 202
+   },
+   "source": {
+    "type": "quote",
+    "author": "Marcus Aurelius",
+    "work": "Meditations",
+    "section": "7.73",
+    "translation": "George Long",
+    "verified_at": "Standard Ebooks book-7 text, fetched 25 Oct 2026"
+   },
+   "caption": "An emperor of Rome wrote this note to himself, which means even Marcus Aurelius stood in a doorway once waiting for a thank you that never came.\n\nHis point: you did the good thing, they got the good thing. Looking for a third thing (credit, a favour back) is where the annoyance comes from. The kindness was already finished.\n\nTag the friend who holds every door, including the ones 20 metres away. 🚪\n\nStill waiting?\n\n— Moodius",
+   "first_comment": "Moodius: yes. Since 2019. They know what they did. 😅",
+   "hashtags": [
+    "#stoicism",
+    "#marcusaurelius",
+    "#kindness",
+    "#philosophy"
+   ],
+   "cta": "send",
+   "length_s": null,
+   "grammar": "beat",
+   "max_s": 24,
+   "doctor": {
+    "score": 82,
+    "issues": [
+     "Quote card is 5.6s of reading",
+     "Total about 23s"
+    ],
+    "rewritten": false,
+    "by": "Claude, 25 Oct 2026"
+   }
+  },
+  {
+   "id": "RB03",
+   "slug": "always-pays",
+   "format": "R2",
+   "pillar": "The Good Life",
+   "rank": 1,
+   "hook": "The friend who always pays might be winning.",
+   "hook_b": "Your generous friend has a secret. It's in a brain scan.",
+   "cards": [
+    [
+     "The friend who always pays might be winning.",
+     2.2,
+     "hook"
+    ],
+    [
+     "One small brain-scan study watched people give money to charity.",
+     2.8,
+     "body"
+    ],
+    [
+     "Did giving feel like losing?",
+     2.4,
+     "quiz"
+    ],
+    [
+     "No.\nReward areas lit up.\nMore when they chose to give.",
+     3.4,
+     "reveal"
+    ],
+    [
+     "Harbaugh, Mayr & Burghart, Science, 2007 · 19 people",
+     1.8,
+     "cite"
+    ],
+    [
+     "Spending on others is linked to more wellbeing in 120 of 136 countries.",
+     3.4,
+     "body"
+    ],
+    [
+     "Aknin et al., 2013 · linked, not proven to cause",
+     1.8,
+     "cite"
+    ],
+    [
+     "Always paying might be winning. Get the next round anyway.",
+     2.8,
+     "body"
+    ],
+    [
+     "Send this to the friend who always pays.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate, beat grammar.",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 203
+   },
+   "source": {
+    "type": "data",
+    "author": "Harbaugh, Mayr & Burghart; Aknin et al.",
+    "work": "Science 316: 1622 (2007); J Pers Soc Psychol 104(4) (2013)",
+    "section": "2007",
+    "tidbits": "KH001, KH002"
+   },
+   "caption": "Everyone has the friend who grabs the bill before you've found your wallet. Turns out they might be getting something out of it.\n\nOne small brain-scan study (19 people, Science 2007) found that giving to charity lit up reward areas, even when the gift was compulsory, and more when it was chosen. A Gallup-based study across 136 countries linked spending on others to more wellbeing in 120 of them. Linked, not proven to cause it.\n\nTag the friend who always pays. It's your round. 🍻\n\nWhose round?\n\n— Moodius",
+   "first_comment": "Moodius: mine, apparently. Tagging myself so I can't escape. ☕ Sources: Harbaugh et al., Science 2007; Aknin et al., JPSP 2013.",
+   "hashtags": [
+    "#psychology",
+    "#kindness",
+    "#friendship",
+    "#science",
+    "#generosity"
+   ],
+   "cta": "send",
+   "length_s": null,
+   "grammar": "beat",
+   "max_s": 24,
+   "doctor": {
+    "score": 78,
+    "issues": [
+     "Two cite cards slow the middle",
+     "Study is small; caveat is on screen"
+    ],
+    "rewritten": false,
+    "by": "Claude, 25 Oct 2026"
+   }
+  }
+ ]
+}

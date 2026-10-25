@@ -1,0 +1,205 @@
+[
+ {
+  "slot": "2026-10-27 21:00",
+  "type": "STORY",
+  "replaces": "402026453 (Journal story)",
+  "id": "S1a",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/stories/S1a-quiz-cold-water.jpg"
+  ],
+  "caption": "",
+  "first_comment": "",
+  "alt": "Story quiz: a Nobel Prize came out of a 4th-century recipe. What detail did everyone miss?"
+ },
+ {
+  "slot": "2026-10-28 09:00",
+  "type": "STORY",
+  "replaces": "402026502 (Daily story)",
+  "id": "S1b",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/stories/S1b-answer-cold-water.jpg"
+  ],
+  "caption": "",
+  "first_comment": "",
+  "alt": "Story answer: cold water. Full story at 12:00."
+ },
+ {
+  "slot": "2026-10-28 12:00",
+  "type": "CAROUSEL",
+  "replaces": "402026673 (Do less, better)",
+  "id": "C1",
+  "pillar": "Forgotten Knowledge",
+  "tidbits": "HM001, HM002",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C1-tu-youyou/01.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C1-tu-youyou/02.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C1-tu-youyou/03.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C1-tu-youyou/04.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C1-tu-youyou/05.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C1-tu-youyou/06.jpg"
+  ],
+  "caption": "A Nobel Prize was hiding in a 1,600-year-old first-aid book.\n\nGe Hong's 4th-century handbook said: for fevers, soak a handful of sweet wormwood in water, wring out the juice, drink it. In the 1970s Tu Youyou's team kept failing to get a working malaria extract. She noticed the recipe never said boil. Heat was destroying the compound. Cold extraction worked: artemisinin, now a frontline malaria drug. Nobel Prize, 2015.\n\nTag the friend who never reads the instructions. Tu Youyou read them twice. 😅\n\nHistorical interest only, not medical advice. Some traditional remedies are toxic. Modern artemisinin is purified and dosed; wormwood juice is not a treatment.\n\nInstructions or vibes?\n\n#history #science #medicalhistory #curiosity #china",
+  "first_comment": "Moodius: vibes first, instructions once something's on fire. 🙃\n\nSource: Tu Youyou, Nature Medicine 17 (2011), quoting Ge Hong's Zhouhou Beiji Fang.",
+  "alt": "Six-slide carousel: Ge Hong's 4th-century fever recipe led Tu Youyou to artemisinin and a 2015 Nobel; the clue was cold water."
+ },
+ {
+  "slot": "2026-10-31 12:00",
+  "type": "CAROUSEL",
+  "replaces": "402027397 (Stop explaining your philosophy)",
+  "id": "C2",
+  "pillar": "The Good Life",
+  "tidbits": "PH004 (wording checked vs Gutenberg #3330, 25 Oct)",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C2-confucius-not-yet/01.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C2-confucius-not-yet/02.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C2-confucius-not-yet/03.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C2-confucius-not-yet/04.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C2-confucius-not-yet/05.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C2-confucius-not-yet/06.jpg"
+  ],
+  "caption": "A student told Confucius he'd mastered kindness.\n\nTsze-kung: \"What I do not wish men to do to me, I also wish not to do to men.\" Confucius: \"Ts'ze, you have not attained to that.\" (Analects V.11, tr. James Legge)\n\nIt sounds like a put-down. It's the opposite. He didn't say the idea was wrong. He said living it is harder than saying it, which means there's still somewhere to get to.\n\nTag the friend who says \"I'm basically a saint.\" 😇\n\nGot there yet?\n\n#confucius #philosophy #kindness #wisdom #goldenrule",
+  "first_comment": "Moodius: not yet. Yesterday I held a door and wanted a medal for it. 🙃",
+  "alt": "Six-slide carousel: Confucius tells his student Tsze-kung he hasn't yet attained the golden rule, Analects V.11, Legge translation."
+ },
+ {
+  "slot": "2026-10-31 21:00",
+  "type": "STORY",
+  "replaces": "402027454 (Journal story)",
+  "id": "S2a",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/stories/S2a-quiz-goat.jpg"
+  ],
+  "caption": "",
+  "first_comment": "",
+  "alt": "Story quiz: a 12th-century Seville doctor tested a new throat surgery on someone first. Who?"
+ },
+ {
+  "slot": "2026-11-01 09:00",
+  "type": "STORY",
+  "replaces": "402027505 (Identity story)",
+  "id": "S2b",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/stories/S2b-answer-goat.jpg"
+  ],
+  "caption": "",
+  "first_comment": "",
+  "alt": "Story answer: a goat. Full story at 12:00."
+ },
+ {
+  "slot": "2026-11-01 12:00",
+  "type": "CAROUSEL",
+  "replaces": "402027704 (The two horses, six steps)",
+  "id": "C3",
+  "pillar": "Forgotten Knowledge",
+  "tidbits": "HM007, HM008, HM009",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C3-goat-first/01.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C3-goat-first/02.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C3-goat-first/03.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C3-goat-first/04.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C3-goat-first/05.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C3-goat-first/06.jpg"
+  ],
+  "caption": "Medieval Seville's best doctor tested surgery on a goat first.\n\nIbn Zuhr (Avenzoar) performed a tracheotomy on a goat to show it could be done safely before anyone tried it on a person. In Córdoba, al-Zahrawi wrote a thirty-volume medical encyclopedia and drew the tools he used. In Málaga, Ibn al-Baytar listed about 1,400 simple medicines. Test it, draw it, write it down: al-Andalus, a thousand years ago.\n\nTag the friend who'd volunteer the goat. 🐐\n\nHistorical interest only, not medical advice. Some traditional remedies are toxic.\n\nGoat or you?\n\n#history #medicalhistory #alandalus #science #curiosity",
+  "first_comment": "Moodius: goat. Sorry, goat. 🐐\n\nSources: Karamanou et al., JBUON 20(4), 2015 (Ibn Zuhr); Manaf, Hektoen International, 2015 (al-Zahrawi); Cabo-González, Folia Orientalia 56, 2019 (Ibn al-Baytar).",
+  "alt": "Six-slide carousel: Andalusian doctors Ibn Zuhr, al-Zahrawi and Ibn al-Baytar; Ibn Zuhr tested a tracheotomy on a goat first."
+ },
+ {
+  "slot": "2026-11-02 12:00",
+  "type": "CAROUSEL",
+  "replaces": "new (2 Nov week)",
+  "id": "C4",
+  "pillar": "The Good Life",
+  "tidbits": "KH002, KH003",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C4-always-pays/01.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C4-always-pays/02.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C4-always-pays/03.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C4-always-pays/04.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C4-always-pays/05.jpg"
+  ],
+  "caption": "The friend who always pays might be the happiest one at the table.\n\nAcross 136 countries, people who'd spent money on others in the past month reported more wellbeing in 120 of them (Aknin et al., 2013). Linked, not proven to cause it. A small 2008 experiment (46 people, Science) found spending on someone else beat spending on yourself; later studies found smaller effects. So: promising, not magic.\n\nCheap experiment: £3, one coffee, one person, don't post it.\n\nTag the friend who always pays. It's your round. ☕\n\nWhose round?\n\n#psychology #kindness #friendship #generosity #science",
+  "first_comment": "Moodius: mine, apparently. Tagging myself so I can't escape. ☕\n\nSources: Aknin et al., J Pers Soc Psychol 104(4), 2013; Dunn, Aknin & Norton, Science 319, 2008.",
+  "alt": "The friend who always pays might be the happiest one at the table."
+ },
+ {
+  "slot": "2026-11-03 12:00",
+  "type": "CAROUSEL",
+  "replaces": "new (2 Nov week)",
+  "id": "C5",
+  "pillar": "The Human Mind",
+  "tidbits": "KH005",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C5-cheering-up-list/01.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C5-cheering-up-list/02.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C5-cheering-up-list/03.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C5-cheering-up-list/04.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C5-cheering-up-list/05.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C5-cheering-up-list/06.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C5-cheering-up-list/07.jpg"
+  ],
+  "caption": "Bad mood? An emperor's fix: think about other people.\n\nNot their faults. Their best bits. Marcus Aurelius, Meditations 6.48 (Long): \"When thou wishest to delight thyself, think of the virtues of those who live with thee; for instance, the activity of one, and the modesty of another, and the liberality of a third.\"\n\nPick four people. One good quality each. Tell one of them.\n\nTag the person you'd list first. 🫶\n\nWho's first?\n\n#stoicism #marcusaurelius #friendship #gratitude #kindness",
+  "first_comment": "Moodius: the friend who answers \"how are you\" honestly every single time. Terrifying. Excellent.",
+  "alt": "Bad mood? An emperor's fix: think about other people."
+ },
+ {
+  "slot": "2026-11-04 12:00",
+  "type": "CAROUSEL",
+  "replaces": "new (2 Nov week)",
+  "id": "C6",
+  "pillar": "Forgotten Knowledge",
+  "tidbits": "HM011, HM012, HM013",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C6-timbuktu-tree/01.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C6-timbuktu-tree/02.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C6-timbuktu-tree/03.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C6-timbuktu-tree/04.jpg",
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/C6-timbuktu-tree/05.jpg"
+  ],
+  "caption": "A medical book in Timbuktu names a tree nobody can find.\n\nTimbuktu scholars wrote handbooks of diagnoses and cures from plants, animals and minerals, alongside prayers. Many entries name local trees in Bambara and other languages, and some, like a tree called Ṣukuru, scholars still can't identify. A 2011 survey counted more than 100,000 manuscripts in at least 408 private family libraries in Mali.\n\nTag the friend who'd go looking for it. 🌳\n\nHistorical interest only, not medical advice. Some traditional remedies are toxic.\n\nWould you look?\n\n#history #timbuktu #africanhistory #manuscripts #curiosity",
+  "first_comment": "Moodius: yes, with a notebook, a snack and no sense of direction.\n\nSources: Hill Museum & Manuscript Library, \"Medical Texts From Timbuktu\"; The Met, collection record 736515.",
+  "alt": "A medical book in Timbuktu names a tree nobody can find."
+ },
+ {
+  "slot": "2026-11-02 18:00",
+  "type": "REEL",
+  "replaces": "new (2 Nov week)",
+  "id": "RB01",
+  "pillar": "Forgotten Knowledge",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/reels/RB01-cold-water.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/reels/RB01-cold-water-cover.jpg",
+  "caption": "In the 1970s Tu Youyou's team was hunting a malaria drug and their extracts kept failing. She went back to a 4th-century first-aid handbook by Ge Hong, which said to soak sweet wormwood in water and drink the juice. It never said boil. Heat had been destroying the active compound. Cold extraction worked, and artemisinin became a frontline malaria drug. Nobel Prize, 2015.\n\nTag the friend who never reads the instructions. Tu Youyou read them twice. 😅\n\nHistorical interest only, not medical advice. Modern artemisinin is purified and dosed; wormwood juice is not a treatment. Some traditional remedies are toxic.\n\nInstructions or vibes?\n\n— Moodius\n\n#history #science #medicalhistory #curiosity #china",
+  "first_comment": "Moodius: vibes first, instructions once it's on fire. Tu Youyou would not approve. 🙃 Source: Tu Y., Nature Medicine 17 (2011), quoting Ge Hong's Zhouhou Beiji Fang.",
+  "alt": "Text reel: A Nobel Prize was hiding in an ancient first-aid book."
+ },
+ {
+  "slot": "2026-11-03 18:00",
+  "type": "REEL",
+  "replaces": "new (2 Nov week)",
+  "id": "RB02",
+  "pillar": "The Human Mind",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/reels/RB02-held-the-door.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/reels/RB02-held-the-door-cover.jpg",
+  "caption": "An emperor of Rome wrote this note to himself, which means even Marcus Aurelius stood in a doorway once waiting for a thank you that never came.\n\nHis point: you did the good thing, they got the good thing. Looking for a third thing (credit, a favour back) is where the annoyance comes from. The kindness was already finished.\n\nTag the friend who holds every door, including the ones 20 metres away. 🚪\n\nStill waiting?\n\n— Moodius\n\n#stoicism #marcusaurelius #kindness #philosophy",
+  "first_comment": "Moodius: yes. Since 2019. They know what they did. 😅",
+  "alt": "Text reel: You held the door. They walked through. No thank you."
+ },
+ {
+  "slot": "2026-11-07 18:00",
+  "type": "REEL",
+  "replaces": "new (2 Nov week)",
+  "id": "RB03",
+  "pillar": "The Good Life",
+  "media": [
+   "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/reels/RB03-always-pays.mp4"
+  ],
+  "cover": "https://raw.githubusercontent.com/bobmarleyrafa1999-lab/media/claude/project-thread-chfmhh/moodius-aurelius/strategy/19-reach-batch/renders/reels/RB03-always-pays-cover.jpg",
+  "caption": "Everyone has the friend who grabs the bill before you've found your wallet. Turns out they might be getting something out of it.\n\nOne small brain-scan study (19 people, Science 2007) found that giving to charity lit up reward areas, even when the gift was compulsory, and more when it was chosen. A Gallup-based study across 136 countries linked spending on others to more wellbeing in 120 of them. Linked, not proven to cause it.\n\nTag the friend who always pays. It's your round. 🍻\n\nWhose round?\n\n— Moodius\n\n#psychology #kindness #friendship #science #generosity",
+  "first_comment": "Moodius: mine, apparently. Tagging myself so I can't escape. ☕ Sources: Harbaugh et al., Science 2007; Aknin et al., JPSP 2013.",
+  "alt": "Text reel: The friend who always pays might be winning."
+ }
+]
