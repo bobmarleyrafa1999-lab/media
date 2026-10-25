@@ -134,6 +134,8 @@ def merge(sources, tags):
         t = tags.get(key, {})
         p["pillar"] = t.get("pillar") or "untagged"
         p["hook_type"] = t.get("hook_type") or ""
+        p["experiment"] = t.get("experiment") or ""
+        p["arm"] = t.get("arm") or ""
         p["hurt_conflict"] = (t.get("hurt_conflict") or "").lower() in ("1", "yes", "true", "y")
         p.setdefault("hold_3s_pct", None)
         p.setdefault("avg_watch_s", None)
@@ -144,7 +146,7 @@ def write_db(posts, path):
     if os.path.exists(path):
         os.remove(path)
     con = sqlite3.connect(path)
-    cols = ["key", "source", "url", "date", "kind", "pillar", "hook_type", "hurt_conflict", "hook",
+    cols = ["key", "source", "url", "date", "kind", "pillar", "hook_type", "hurt_conflict", "experiment", "arm", "hook",
             *METRICS, "hold_3s_pct", "avg_watch_s"]
     con.execute(f"CREATE TABLE posts ({', '.join(cols)}, PRIMARY KEY (key))")
     con.executemany(f"INSERT INTO posts VALUES ({', '.join('?' * len(cols))})",
@@ -232,6 +234,41 @@ def recommendations(posts, cfg, week_end):
     return "\n".join(lines)
 
 
+def experiment_readout(posts, experiments_path):
+    """One line per experiment: posts, events and rate per 1,000 reached for each arm, then the call.
+
+    The call follows the decision rule written down before the test started:
+    enough posts in both arms, enough events in total, and a gap of at least
+    min_diff_per_1k. Anything short of that is reported as 'keep running'.
+    """
+    lines = []
+    with open(experiments_path, encoding="utf-8-sig", newline="") as f:
+        exps = list(csv.DictReader(f))
+    for e in exps:
+        metric = e["primary_metric"]
+        mine = [p for p in posts if p.get("experiment") == e["id"]]
+        if not mine:
+            lines.append(f"- {e['id']} ({e['status']}): no posts logged yet.")
+            continue
+        arms = {}
+        for arm in (e["arm_a"], e["arm_b"]):
+            g = [p for p in mine if p.get("arm") == arm]
+            r, n = rate(g, metric)
+            arms[arm] = (r, n, sum(p.get(metric) or 0 for p in g))
+        (ra, na, ea), (rb, nb, eb) = arms[e["arm_a"]], arms[e["arm_b"]]
+        need_n, need_ev, gap = int(e["min_posts_per_arm"]), int(e["min_events"]), float(e["min_diff_per_1k"])
+        if min(na, nb) < need_n:
+            call = f"keep running ({na} and {nb} of {need_n} posts per arm)"
+        elif ea + eb < need_ev:
+            call = f"keep running (only {int(ea + eb)} {metric} in total, need {need_ev})"
+        elif abs(ra - rb) < gap:
+            call = f"no meaningful difference (gap {abs(ra - rb):.1f} per 1k, rule needs {gap})"
+        else:
+            call = f"{e['arm_a'] if ra > rb else e['arm_b']} ahead by {abs(ra - rb):.1f} per 1k"
+        lines.append(f"- {e['id']} {metric} per 1k: {e['arm_a']} {fmt(ra)} (n={na}) vs {e['arm_b']} {fmt(rb)} (n={nb}). {call}.")
+    return "\n".join(lines)
+
+
 def fmt(v, digits=1):
     return "n/a" if v is None else (f"{v:,.{digits}f}" if isinstance(v, float) else str(v))
 
@@ -283,7 +320,7 @@ th,td{{text-align:left;padding:6px 8px;border-bottom:1px solid var(--line);white
 </body></html>"""
 
 
-def run(ig_export, post_log, tags_path, out, week_end):
+def run(ig_export, post_log, tags_path, out, week_end, experiments=None):
     with open(PILLARS_PATH, encoding="utf-8") as f:
         cfg = json.load(f)
     sources = []
@@ -296,6 +333,8 @@ def run(ig_export, post_log, tags_path, out, week_end):
     write_db(posts, os.path.join(out, "moodius.sqlite"))
     by_pillar, by_kind = group(posts, "pillar"), group(posts, "kind")
     recs = recommendations(posts, cfg, week_end)
+    if experiments:
+        recs += "\n\n**Experiments**\n" + experiment_readout(posts, experiments)
     with open(os.path.join(out, "dashboard.html"), "w", encoding="utf-8") as f:
         f.write(dashboard(posts, by_pillar, by_kind, recs, cfg))
     with open(os.path.join(out, "weekly.md"), "w", encoding="utf-8") as f:
@@ -310,11 +349,12 @@ def main(argv=None):
     ap.add_argument("--tags")
     ap.add_argument("--out", required=True)
     ap.add_argument("--week-ending", default=dt.date.today().isoformat())
+    ap.add_argument("--experiments", help="experiments CSV with decision rules (experiments-proposed.csv)")
     args = ap.parse_args(argv)
     if not (args.ig_export or args.post_log):
         ap.error("give --ig-export and/or --post-log")
     _, _, _, recs = run(args.ig_export, args.post_log, args.tags, args.out,
-                        dt.date.fromisoformat(args.week_ending))
+                        dt.date.fromisoformat(args.week_ending), args.experiments)
     print(recs)
     return 0
 

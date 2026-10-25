@@ -3,6 +3,7 @@
 
 Run: python3 -m unittest discover -s moodius-aurelius/growth-system/tools
 """
+import csv
 import datetime as dt
 import json
 import os
@@ -12,6 +13,8 @@ import unittest
 
 import analytics
 import brief_lint
+import calendar_build
+import comments
 
 ROOT = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..")
 FIX = os.path.join(ROOT, "fixtures")
@@ -83,6 +86,7 @@ class AnalyticsTest(unittest.TestCase):
             self.assertTrue(os.path.exists(os.path.join(self.tmp, name)), name)
         con = sqlite3.connect(os.path.join(self.tmp, "moodius.sqlite"))
         self.assertEqual(con.execute("select count(*) from posts").fetchone()[0], 6)
+        con.close()
 
     def test_rates_use_summed_denominators(self):
         rp = {r["group"]: r for r in self.by_pillar}["reading_room"]
@@ -113,6 +117,112 @@ class AnalyticsTest(unittest.TestCase):
         self.assertEqual(p["reach"], 300)
         self.assertEqual(p["hold_3s_pct"], 41)
         self.assertEqual(len(posts), 6)
+
+
+    def test_experiment_readout_follows_the_rule(self):
+        tags = os.path.join(self.tmp, "tags-x.csv")
+        with open(os.path.join(FIX, "tags-sample.csv"), encoding="utf-8", newline="") as f:
+            rows = list(csv.DictReader(f))
+        rows[0].update(experiment="X7", arm="forgotten_knowledge")
+        rows[5].update(experiment="X7", arm="human_mind")
+        with open(tags, "w", encoding="utf-8", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=list(rows[0]))  # rows[0] now carries experiment, arm
+            w.writeheader()
+            w.writerows(rows)
+        _, _, _, recs = analytics.run(os.path.join(FIX, "ig-export-sample.csv"), None, tags, self.tmp,
+                                      dt.date(2026, 10, 25), os.path.join(ROOT, "experiments-proposed.csv"))
+        line = next(l for l in recs.splitlines() if l.startswith("- X7"))
+        self.assertIn("keep running (1 and 1 of 6 posts per arm)", line)
+        self.assertIn("X8 (proposed): no posts logged yet", recs)
+
+
+class CommentsTest(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.tmp = tempfile.mkdtemp()
+        rows, cls.ideas = comments.run(os.path.join(FIX, "comments-sample.csv"),
+                                       [os.path.join(FIX, "tidbits-sample.csv")], cls.tmp)
+        cls.by_id = {r["comment_id"]: r for r in rows}
+
+    def test_intents(self):
+        want = {"c01": "genuine_question", "c02": "reading_request", "c06": "personal_story",
+                "c07": "philosophical_disagreement", "c10": "appreciation", "c11": "spam",
+                "c12": "sponsorship", "c13": "crisis", "c14": "criticism"}
+        for cid, intent in want.items():
+            self.assertEqual(self.by_id[cid]["intent"], intent, cid)
+
+    def test_human_only_gets_no_draft(self):
+        for cid in ("c12", "c13", "c14"):
+            r = self.by_id[cid]
+            self.assertEqual(r["needs_surafel"], "yes")
+            self.assertEqual(r["draft_reply"], "")
+        self.assertIn("Samaritans 116 123", self.by_id["c13"]["note"])
+
+    def test_nothing_is_sent(self):
+        self.assertTrue(all(r["status"] in ("awaiting_approval", "skip") for r in self.by_id.values()))
+        self.assertTrue(all(r["draft_reply"].startswith("DRAFT") or not r["draft_reply"] for r in self.by_id.values()))
+
+    def test_research_retrieval_and_health_disclaimer(self):
+        self.assertEqual(self.by_id["c01"]["tidbit"], "HM001")
+        c05 = self.by_id["c05"]
+        self.assertEqual(c05["tidbit"], "KH004")
+        self.assertIn("not medical advice", c05["draft_reply"])
+
+    def test_commenter_never_written(self):
+        with open(os.path.join(self.tmp, "queue.csv"), encoding="utf-8") as f:
+            header = f.readline()
+        self.assertNotIn("commenter", header)
+
+    def test_repeated_questions_become_failing_briefs(self):
+        self.assertEqual(len(self.ideas), 2)
+        cfg, lib = brief_lint.load_config(), {}
+        with open(os.path.join(self.tmp, "idea-briefs", "IDEA01.json"), encoding="utf-8") as f:
+            brief = json.load(f)
+        self.assertEqual(len(brief["from_comments"]), 2)
+        self.assertTrue(brief_lint.lint(brief, cfg, lib)[0])
+
+
+class CalendarTest(unittest.TestCase):
+    def make_briefs(self, folder):
+        base = load("B002-walking-and-mood.json")
+        pillars = ["human_mind"] * 6 + ["good_life"] * 4 + ["reading_room"] * 4 + ["living_body"] * 3 + \
+                  ["forgotten_knowledge"] * 3
+        cfg = brief_lint.load_config()
+        for i, p in enumerate(pillars):
+            b = json.loads(json.dumps(base))
+            b.update(id=f"T{i:02d}", pillar=p, format="carousel" if i % 5 == 0 else "reel",
+                     hurt_conflict=(p == "human_mind"))
+            if cfg["pillars"][p].get("needs_disclaimer"):
+                b["caption"] = b["caption"].replace(cfg["pillars"]["living_body"]["disclaimer"],
+                                                    cfg["pillars"][p]["disclaimer"])
+            else:
+                b["caption"] = b["caption"].replace(cfg["pillars"]["living_body"]["disclaimer"], "")
+            with open(os.path.join(folder, f"T{i:02d}.json"), "w", encoding="utf-8") as f:
+                json.dump(b, f)
+        with open(os.path.join(folder, "bad.json"), "w", encoding="utf-8") as f:
+            json.dump(load("B003-bad-example.json"), f)
+
+    def test_week_meets_mix_and_cap(self):
+        tmp = tempfile.mkdtemp()
+        briefs = os.path.join(tmp, "briefs")
+        os.makedirs(briefs)
+        self.make_briefs(briefs)
+        plan, need, hurt, rejected, summary = calendar_build.run(
+            briefs, [os.path.join(FIX, "tidbits-sample.csv")], dt.date(2026, 11, 9), os.path.join(tmp, "out"))
+        self.assertEqual(len(plan), 14)
+        self.assertEqual(sum(1 for s in plan if s["kind"] == "carousel"), 2)
+        self.assertLessEqual(hurt, 3)
+        self.assertEqual([r[0] for r in rejected], ["B003"])
+        filled = [s for s in plan if s["brief"]]
+        for s in filled:
+            self.assertTrue(calendar_build.fits(s["brief"], s["kind"]))
+        with open(os.path.join(tmp, "out", "handoff-2026-11-09.json"), encoding="utf-8") as f:
+            self.assertEqual(json.load(f)["status"], "draft_not_scheduled")
+        self.assertIn("Nothing is in Metricool", summary)
+
+    def test_week_must_start_monday(self):
+        with self.assertRaises(SystemExit):
+            calendar_build.main(["--briefs", EXAMPLES, "--week-start", "2026-11-10", "--out", tempfile.mkdtemp()])
 
 
 if __name__ == "__main__":

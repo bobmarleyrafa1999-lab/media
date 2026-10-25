@@ -11,7 +11,33 @@
         "psychology and neuroscience"
       ],
       "needs_disclaimer": false,
-      "max_hurt_conflict_per_week": 3
+      "max_hurt_conflict_per_week": 3,
+      "keywords": [
+        "brain",
+        "mind",
+        "psychology",
+        "neuroscience",
+        "neuroplasticity",
+        "anxiety",
+        "overthinking",
+        "emotion",
+        "emotions",
+        "anger",
+        "habit",
+        "habits",
+        "stoic",
+        "stoicism",
+        "marcus",
+        "epictetus",
+        "seneca",
+        "therapy",
+        "cbt",
+        "memory",
+        "focus",
+        "rumination",
+        "self-trust",
+        "discipline"
+      ]
     },
     "good_life": {
       "name": "The Good Life",
@@ -21,7 +47,29 @@
         "kindness and good deeds",
         "appreciation and awe"
       ],
-      "needs_disclaimer": false
+      "needs_disclaimer": false,
+      "keywords": [
+        "kindness",
+        "kind",
+        "generosity",
+        "giving",
+        "gift",
+        "friend",
+        "friends",
+        "friendship",
+        "altruism",
+        "community",
+        "help",
+        "helping",
+        "gratitude",
+        "love",
+        "relationship",
+        "relationships",
+        "neighbour",
+        "volunteer",
+        "charity",
+        "awe"
+      ]
     },
     "reading_room": {
       "name": "The Reading Room",
@@ -31,7 +79,29 @@
         "philosophies of the world"
       ],
       "needs_disclaimer": false,
-      "review_needs_his_reading": true
+      "review_needs_his_reading": true,
+      "keywords": [
+        "book",
+        "books",
+        "read",
+        "reading",
+        "novel",
+        "author",
+        "translation",
+        "translator",
+        "recommend",
+        "recommendation",
+        "philosophy",
+        "laozi",
+        "confucius",
+        "buddha",
+        "dhammapada",
+        "epicurus",
+        "aristotle",
+        "camus",
+        "ubuntu",
+        "library"
+      ]
     },
     "living_body": {
       "name": "The Living Body",
@@ -41,7 +111,28 @@
         "body and health"
       ],
       "needs_disclaimer": true,
-      "disclaimer": "General education, not medical advice. Check with a doctor before changing exercise, diet or medication."
+      "disclaimer": "General education, not medical advice. Check with a doctor before changing exercise, diet or medication.",
+      "keywords": [
+        "exercise",
+        "walk",
+        "walking",
+        "run",
+        "running",
+        "strength",
+        "gym",
+        "sleep",
+        "nutrition",
+        "diet",
+        "heart",
+        "cardio",
+        "longevity",
+        "protein",
+        "stretch",
+        "yoga",
+        "fitness",
+        "breath",
+        "breathing"
+      ]
     },
     "forgotten_knowledge": {
       "name": "Forgotten Knowledge",
@@ -51,7 +142,34 @@
         "history of medicine"
       ],
       "needs_disclaimer": true,
-      "disclaimer": "Historical interest only, not medical advice. Some traditional remedies are toxic."
+      "disclaimer": "Historical interest only, not medical advice. Some traditional remedies are toxic.",
+      "keywords": [
+        "herb",
+        "herbs",
+        "herbal",
+        "remedy",
+        "remedies",
+        "medicine",
+        "medical",
+        "healer",
+        "dynasty",
+        "mongol",
+        "mongols",
+        "ethiopia",
+        "ethiopian",
+        "timbuktu",
+        "andalus",
+        "al-andalus",
+        "moors",
+        "manuscript",
+        "inoculation",
+        "smallpox",
+        "wormwood",
+        "artemisinin",
+        "ibn",
+        "ge hong",
+        "tu youyou"
+      ]
     }
   },
   "formats": [
@@ -93,5 +211,12 @@
     "cure for",
     "boost your immune",
     "proven to"
-  ]
+  ],
+  "follow_up_questions": {
+    "human_mind": "Which part felt most familiar?",
+    "good_life": "Who came to mind?",
+    "reading_room": "Want the full reading list?",
+    "living_body": "What would make it easier to start?",
+    "forgotten_knowledge": "Which tradition should we dig into next?"
+  }
 }
