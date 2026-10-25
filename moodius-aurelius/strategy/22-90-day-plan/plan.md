@@ -104,7 +104,7 @@ You're right that the interest list is broad. It stays coherent if you separate 
 | **Body** | The body you live in: movement, sleep, health claims checked, the history of medicine told as history | about 25% | Living Body, plus the medical half of Forgotten Knowledge |
 | **People** | Other people and character: relationships, kindness, everyday good deeds, how people in history treated each other | about 35% | Good Life |
 
-The Reading Room and Forgotten Knowledge stop being pillars. They become series 1 and 6, used across all three pillars. **If you say yes, this replaces the five-pillar plan from this morning's master brief** (growth-system/pillars.json). The rules that came with it stay: medical history carries the disclaimer, no doses, and you only review books you've read.
+The Reading Room and Forgotten Knowledge stop being pillars. They become series 1 and 6, used across all three pillars. **Approved 25 Oct: this replaces the five-pillar plan from this morning's master brief** (growth-system/pillars.json). The rules that came with it stay: medical history carries the disclaimer, no doses, and you only review books you've read.
 
 Two tone rules carry over from the earlier work: at least two in three posts open from curiosity or appreciation, and no more than four hurt or conflict posts a week. A hard opening line is fine when it pays off in kindness, discovery or a laugh.
 
@@ -168,7 +168,7 @@ The "when someone is rude to you" opener, which won your best reach so far, is a
 - The brand stays anonymous in collaborations: no faces, no real name, the Moodius account only.
 - Day 90 review: compare the last four weeks with the first four on median reach per post, follows per 1,000 reach, and repeat commenters. Decide the next 90 days from that.
 
-### The standard week (from 20 Nov, if you approve)
+### The standard week (from 20 Nov, approved 25 Oct)
 
 | Day | 12:00 | 18:00 | 21:00 story | Your time |
 |---|---|---|---|---|
@@ -258,7 +258,7 @@ The full calendar is in `calendar-14-day.csv`. Most slots to 4 Nov are already s
 | 12 | Fri 6 Nov | Body | **Story sequence B (new, by hand)** | Guess yesterday's steps. Don't check. | Movement counts below 10k | as Reel 3 | Poll + question | 5 |
 | 13 | Sat 7 Nov | People | Carousel · Old Idea (new, to draft) | A 2,500-year-old practice for the person who annoys you. | Loving-kindness, one named tradition | Karaniya Metta Sutta, Sutta Nipata 1.8 (PD translation); one LKM review (to verify) | Who's yours? | 10 |
 | 13 | Sat 7 Nov | People | Reel · Small Good Thing (scheduled) | Everyone has the friend who grabs the bill… | Giving and reward | Harbaugh 2007; Aknin 2013 ✓ | Whose round? | 2 |
-| 14 | Sun 8 Nov | Body | Carousel · Forgotten Knowledge (new, to draft) | In 1721 Boston, an enslaved man explained how to stop smallpox. Few listened. | Onesimus and inoculation | Tone-audit tidbit (recheck) | Would you have listened? | 10 |
+| 14 | Sun 8 Nov | Body | Carousel · Forgotten Knowledge (moved: 8 Nov 12:00 is now the scheduled AJ01 diary carousel; Onesimus goes to the next free carousel slot) | In 1721 Boston, an enslaved man explained how to stop smallpox. Few listened. | Onesimus and inoculation | Tone-audit tidbit (recheck) | Would you have listened? | 10 |
 | 14 | Sun 8 Nov | Mind | Reel · Old Idea (new, to draft) | A cook explains the secret of effortless work to a king. | Skill feels like ease after practice | Zhuangzi ch. 3 (Legge, PD) (to verify) | What's your Cook Ding skill? | 10 |
 
 Mix across the 28 feed posts: Mind 11, People 11, Body 6 (close to the 40/35/25 target). Hurt or conflict openers: 6 of 28, under the cap.
@@ -552,6 +552,9 @@ Checked 25 Oct 2026. Stars, issues and security tabs come from the GitHub pages,
 ---
 
 ## Questions that would change the plan
+
+**Answered 25 Oct 2026, 19:44 UTC: yes to both.** The three pillars replace the five, and the standard week below starts on 20 Nov.
+
 
 1. **Three pillars (Mind, Body, People) instead of the five from this morning?** Yes or no.
 2. **Standard week from 20 Nov: five carousels, three reels, four story nights?** Yes or no. Until 19 Nov nothing changes.

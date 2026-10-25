@@ -1,6 +1,6 @@
 {
   "proposed": "2026-10-25",
-  "status": "awaiting yes/no; supersedes growth-system/pillars.json five pillars if approved",
+  "status": "APPROVED 25 Oct 2026 19:44 UTC (\"Yes whatever is optimal\"); supersedes growth-system/pillars.json five pillars",
   "promise": "Old wisdom, new evidence: one idea a day to help you live a little better, with every source shown.",
   "pillars": {
     "Mind": {
@@ -49,5 +49,6 @@
   "tone": {
     "min_curiosity_or_appreciation_openers": "2 in 3",
     "max_hurt_or_conflict_per_week": 4
-  }
+  },
+  "standard_week_from_2026-11-20": "5 carousels (Mon-Fri 12:00) + 3 reels (Tue/Thu 18:00, Fri 17:00) + story sequences Mon/Wed/Fri/Sun 21:00 (APPROVED 25 Oct)"
 }
