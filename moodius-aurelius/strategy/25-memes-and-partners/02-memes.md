@@ -22,6 +22,15 @@ Text, image and context are judged together. The queue flags words linked to the
 
 Scores (1–5) for humour, relevance and thoughtfulness only decide the review order. A 15/15 meme with no permission still can't be approved.
 
+## What your first batch says (27 Oct)
+
+You approved 9 of 20: MM01, MM02, MM06, MM08, MB02, MB04, MP01, MP02, MP07. Your notes: MM03 "corny, too on the button, and pick me"; MM05 "cheeky, negative tone"; MM08 "funny".
+
+- Kept: jokes that show an observation (charts, a Venn, knowing vs doing, montage vs real life). 7 of the 9 scored 4–5 for thought.
+- Dropped: "look how bad I am at X" self-deprecation (shaker, rest day, meditation, shower rehearsal), anything that reads as fishing for sympathy, and jokes that poke at someone (even Marcus).
+- New drafting rule: the joke must notice something true about people, warmly. No "pick me" humility, no mild put-downs.
+- Calendar updated with approved memes only; spares are MM01 and MB02.
+
 ## The 20 concepts
 All are `original`: our words, drawn in Pillow or set on a CC0 object photo with no people. Previews: `renders/<ID>.png`.
 
