@@ -172,7 +172,7 @@ def build(con, scenarios_cfg, week_ending=None, is_demo=False):
         L.append("7-day-ahead backtests so far" + (" (descriptive only: too few origins to choose a model)" if few else "") + ": " +
                  "; ".join(f"{b['model']} MAE {_n(b['mae'], 1)} followers over {b['origins']} origins" for b in usable) + ".\n")
 
-    inputs = fc.scenario_inputs(daily.loc[:end], scenarios_cfg)
+    inputs = fc.scenario_inputs(daily.loc[:end], scenarios_cfg, posted_dates(posts))
     start_total = cur["followers_end"]
     L.append(f"**Assumption-based scenarios from {_n(start_total)} followers** (projections, not forecasts):\n")
     L.append("| Scenario | Reach / day | Net followers per 1k reach | +30 d | +60 d | +90 d | 1k | 5k | 10k | 25k | 50k |")
@@ -217,6 +217,13 @@ def build(con, scenarios_cfg, week_ending=None, is_demo=False):
              "Post times are converted to UK time exactly.\n")
     return "\n".join(L), {"actions": actions[:3], "current": cur, "previous": prev, "by_format": by_format,
                           "inputs": inputs, "forecast": f30}
+
+
+def posted_dates(posts):
+    if posts.empty:
+        return []
+    feed = posts[posts["format"] != "story"].dropna(subset=["published_at_london"])
+    return sorted(set(feed["published_at_london"].dt.tz_localize(None).dt.normalize()))
 
 
 def choose_actions(cur, by_format, posts, acc):

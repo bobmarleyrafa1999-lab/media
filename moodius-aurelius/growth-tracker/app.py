@@ -111,7 +111,8 @@ with tab_fc:
         st.dataframe(pd.DataFrame([s for e in res["horizons"].values() for s in e["scores"]]), use_container_width=True)
 
     st.markdown("**Scenario explorer** (assumption-based projections, not forecasts)")
-    inputs = fc.scenario_inputs(daily, cfg)
+    from moodius_growth.report import posted_dates
+    inputs = fc.scenario_inputs(daily, cfg, posted_dates(posts))
     c1, c2, c3 = st.columns(3)
     ratio = c1.slider("Posts per week vs now", 0.5, 2.0, 1.0, 0.1, help="1.0 = keep the current schedule")
     elast = c2.slider("Reach elasticity (assumption)", 0.0, 1.0, float(cfg["posting_explorer"]["elasticity"]), 0.1,

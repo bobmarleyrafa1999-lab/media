@@ -2,13 +2,14 @@
   "_read_me": "Assumption-based projections, not forecasts. Each scenario measures reach and conversion from your own recent data, then applies the stated assumptions. Edit the numbers here; the dashboard sliders change them temporarily.",
   "horizon_days": 180,
   "exclude_bot_wave_days": true,
+  "posting_days_only": true,
   "scenarios": {
     "conservative": {
       "reach_window_days": 28,
       "conversion": "pooled",
       "reach_growth_month_pct": 0,
       "churn_month_pct": 2,
-      "assumptions": "Reach falls back to the 28-day typical level (the recent carousel lift fades), no reach growth, 2% of followers leave each month."
+      "assumptions": "Reach falls back to the typical posting-day level of the last 28 days (the recent carousel lift fades), no reach growth, 2% of followers leave each month."
     },
     "base": {
       "reach_window_days": 14,

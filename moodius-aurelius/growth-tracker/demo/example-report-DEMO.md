@@ -2,7 +2,7 @@
 
 > **DEMO DATA. Synthetic numbers for testing, not @moodiusaurelius.**
 
-_Reporting days follow Europe/London. Sources: demo. Generated 27 Oct 2026 12:16 (UK time on your Mac)._
+_Reporting days follow Europe/London. Sources: demo. Generated 27 Oct 2026 12:23 (UK time on your Mac)._
 
 ## 1. What changed
 
@@ -92,9 +92,9 @@ Where the point sits outside its 80% range, the model has been consistently too 
 | base | 1,301 | 5.5 | 1,492 | 1,690 | 1,885 | already reached | not within 180 d | not within 180 d | not within 180 d | not within 180 d |
 | optimistic | 1,498 | 6.3 | 1,584 | 1,903 | 2,252 | already reached | not within 180 d | not within 180 d | not within 180 d | not within 180 d |
 
-- *conservative*: Reach falls back to the 28-day typical level (the recent carousel lift fades), no reach growth, 2% of followers leave each month. Reach basis: median daily reach over the last 28 days (28 days with data). Conversion basis: pooled net followers per 1,000 reached over the same days (proxy).
-- *base*: Reach stays at the 14-day typical level, conversion stays at the 14-day pooled rate, 1% monthly churn. No growth in reach is assumed. Reach basis: median daily reach over the last 14 days (14 days with data). Conversion basis: pooled net followers per 1,000 reached over the same days (proxy).
-- *optimistic*: Reach holds at the last-7-day typical level and then grows 10% a month (an assumption, not measured), 0.5% monthly churn. Reach basis: median daily reach over the last 7 days (7 days with data). Conversion basis: pooled net followers per 1,000 reached over the same days (proxy).
+- *conservative*: Reach falls back to the typical posting-day level of the last 28 days (the recent carousel lift fades), no reach growth, 2% of followers leave each month. Reach basis: median daily reach over the last 28 days (28 posting days with data). Conversion basis: pooled net followers per 1,000 reached over the same days (proxy).
+- *base*: Reach stays at the 14-day typical level, conversion stays at the 14-day pooled rate, 1% monthly churn. No growth in reach is assumed. Reach basis: median daily reach over the last 14 days (14 posting days with data). Conversion basis: pooled net followers per 1,000 reached over the same days (proxy).
+- *optimistic*: Reach holds at the last-7-day typical level and then grows 10% a month (an assumption, not measured), 0.5% monthly churn. Reach basis: median daily reach over the last 7 days (7 posting days with data). Conversion basis: pooled net followers per 1,000 reached over the same days (proxy).
 
 Days 91-180 are exploratory. None of these assume viral spikes repeat; they use medians.
 
@@ -102,7 +102,7 @@ Days 91-180 are exploratory. None of these assume viral spikes repeat; they use 
 
 | Source | Last collected (UTC) | Age | Status |
 |---|---|---|---|
-| demo | 2026-09-28T07:00:00+00:00 | 701.3 h | old |
+| demo | 2026-09-28T07:00:00+00:00 | 701.4 h | old |
 
 Not available in the last 28 days: story_reach. Shown as n/a, never as 0.
 

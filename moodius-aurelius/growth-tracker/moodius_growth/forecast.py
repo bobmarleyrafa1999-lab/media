@@ -207,11 +207,16 @@ def short_backtest(daily, h=7):
 
 # ---------- assumption-based scenarios ----------
 
-def scenario_inputs(daily, cfg):
-    """Turn scenarios.json into numbers measured from the data, with labels."""
+def scenario_inputs(daily, cfg, posted_dates=None):
+    """Turn scenarios.json into numbers measured from the data, with labels.
+    posted_dates: dates with at least one feed post or reel. With
+    "posting_days_only", days when nothing went out are left out, because the
+    plan posts every day and those quiet days would understate reach."""
     d = daily.copy()
     if cfg.get("exclude_bot_wave_days", True):
         d = d[~d["bot_wave_flag"].fillna(False)]
+    if cfg.get("posting_days_only", True) and posted_dates is not None and len(posted_dates):
+        d = d[d.index.isin(pd.to_datetime(sorted(posted_dates)))]
     end = daily.index.max()
     out = {}
     for name, sc in cfg["scenarios"].items():
@@ -224,7 +229,7 @@ def scenario_inputs(daily, cfg):
                 "p75": conv_daily.quantile(0.75) if len(conv_daily) else np.nan}[sc["conversion"]]
         out[name] = {
             "reach_per_day": float(reach.median()) if len(reach) else np.nan,
-            "reach_basis": f"median daily reach over the last {sc['reach_window_days']} days ({len(reach)} days with data)",
+            "reach_basis": f"median daily reach over the last {sc['reach_window_days']} days ({len(reach)} posting days with data)",
             "net_per_1k": float(conv) if pd.notna(conv) else np.nan,
             "net_per_1k_basis": f"{sc['conversion']} net followers per 1,000 reached over the same days (proxy)",
             "reach_growth_month_pct": sc["reach_growth_month_pct"],
