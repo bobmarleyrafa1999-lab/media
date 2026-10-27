@@ -1,0 +1,3 @@
+media_id,pillar,topic,hook_type,cta,duration_s,production_minutes,experiment_id,arm,notes
+EXAMPLE-1,Mind,procrastination,tension,save this,,40,E1,tension,
+EXAMPLE-2,Mind,self-worth,contrast,none,30,25,,,
