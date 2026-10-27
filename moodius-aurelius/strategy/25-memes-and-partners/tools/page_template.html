@@ -1,0 +1,255 @@
+<title>Moodius Meme Desk</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,500&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one reading column for decisions, a two-up grid for memes; brand Slate/Bone with one Ember accent */
+:root{
+  --bg:#F3EFE7; --surface:#FBF9F4; --fg:#1B1F24; --muted:#5E5A53; --line:#D9D3C7; --accent:#A85A1C;
+  --ok:#3D6B4F; --warn:#8A5A00; --bad:#9B3B32; --chip:#E7E1D5;
+  --display:"Playfair Display",Georgia,"Times New Roman",serif;
+  --body:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1B1F24; --surface:#2A2F36; --fg:#F3EFE7; --muted:#B8B3A9; --line:#3A4049; --accent:#D9894A;
+  --ok:#7FB592; --warn:#E0B060; --bad:#E08A80; --chip:#3A4049; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1B1F24; --surface:#2A2F36; --fg:#F3EFE7; --muted:#B8B3A9; --line:#3A4049; --accent:#D9894A;
+  --ok:#7FB592; --warn:#E0B060; --bad:#E08A80; --chip:#3A4049; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15px/1.55 var(--body)}
+.wrap{max-width:980px;margin:0 auto;padding-block:28px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:44px}
+h1,h2,h3{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0}
+h1{font-size:clamp(30px,6vw,46px);line-height:1.1}
+h2{font-size:26px}
+h3{font-size:18px}
+p{margin:0}
+.lede{max-width:62ch;color:var(--muted);margin-top:10px}
+.eyebrow{font:600 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+section{display:grid;gap:16px}
+.sub{color:var(--muted);max-width:65ch}
+ol.changes{margin:0;padding-left:22px;display:grid;gap:10px;max-width:70ch}
+ol.changes b{font-weight:600}
+.bios{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.bio{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:16px;display:grid;gap:10px;align-content:start}
+.bio pre{white-space:pre-wrap;font:14px/1.5 var(--body);margin:0}
+.bio .row{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.covers{max-width:100%;border-radius:10px}
+.qhead{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between}
+.tally{font-variant-numeric:tabular-nums;color:var(--muted)}
+.memes{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:18px}
+.meme{background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:grid;grid-template-rows:auto 1fr}
+.meme img{width:100%;height:auto;display:block;aspect-ratio:4/5}
+.meta{padding:14px;display:grid;gap:8px;align-content:start;min-width:0}
+.row{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.id{font:600 12px/1 var(--body);letter-spacing:.06em;color:var(--muted);font-variant-numeric:tabular-nums}
+.chip{font:500 12px/1 var(--body);background:var(--chip);border-radius:999px;padding:5px 9px}
+.chip.ok{color:var(--ok)}
+.cap{font-family:var(--display);font-style:italic;font-weight:500;font-size:16px}
+.tags{font:12px var(--body);color:var(--muted);font-style:normal}
+.score,.fmt{font-size:13px;color:var(--muted)}
+.why,.concern,.foot{font-size:13.5px}
+.concern b{font-weight:600}
+.actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:4px}
+button{font:500 14px/1 var(--body);border:1px solid var(--line);background:transparent;color:var(--fg);border-radius:8px;padding:10px 12px;cursor:pointer;min-height:40px}
+button:hover{border-color:var(--fg)}
+button:focus-visible,input:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button[aria-pressed="true"][data-v="approve"]{background:var(--ok);border-color:var(--ok);color:var(--bg)}
+button[aria-pressed="true"][data-v="edit"]{background:var(--warn);border-color:var(--warn);color:var(--bg)}
+button[aria-pressed="true"][data-v="reject"]{background:var(--bad);border-color:var(--bad);color:var(--bg)}
+button.primary{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+button:disabled{opacity:.5;cursor:default}
+input.note{font:14px var(--body);width:100%;padding:9px 10px;border-radius:8px;border:1px solid var(--line);background:var(--bg);color:var(--fg)}
+.state{font-size:12.5px;color:var(--muted);min-height:1em}
+.cards{display:grid;gap:18px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:12px;min-width:0}
+.tablewrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:7px 10px 7px 0;border-bottom:1px solid var(--line)}
+th{font-weight:600;white-space:nowrap;color:var(--muted);width:1%}
+.cal td{padding-right:12px}
+.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.st{color:var(--muted);font-size:13px;white-space:nowrap}
+.lane{font:600 11px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;padding:5px 8px;border-radius:6px;background:var(--chip)}
+.lane.meme{color:var(--accent)}
+.split{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.split > div{display:grid;gap:8px;align-content:start;min-width:0}
+ul{margin:0;padding-left:20px;display:grid;gap:6px}
+.notice{border-left:3px solid var(--accent);padding:4px 0 4px 14px;color:var(--muted);max-width:70ch}
+@media (prefers-reduced-motion: no-preference){button{transition:background .15s,border-color .15s}}
+</style>
+
+<div class="wrap">
+<header>
+  <p class="eyebrow">@moodiusaurelius · 27 Oct 2026</p>
+  <h1>Meme Desk</h1>
+  <p class="lede">Twenty original memes to approve, the page changes, two revenue routes and a 30-day test. Tap a button on any card and it saves. Nothing posts, schedules or contacts anyone until you say so.</p>
+</header>
+
+<section aria-labelledby="h-changes">
+  <h2 id="h-changes">Five changes, in order</h2>
+  <ol class="changes">
+    <li><b>Add a meme lane.</b> 3–4 of the 8 weekly feed slots from Mon 23 Nov, as 2-slide carousels, inside the approved standard week. Shares are the gap: 5 shares across 11 posts on 21–26 Oct.</li>
+    <li><b>New bio + business email button.</b> hello@moodius.co.uk under Contact options. No personal details.</li>
+    <li><b>Give your four new highlights a job.</b> Covers are below.</li>
+    <li><b>Pins.</b> Keep self-trust and 2am replay; the first meme that beats the median replaces the rude-person pin.</li>
+    <li><b>Commercial guardrails first.</b> employer OBI declaration, "Ad" labels, approval cards. No commercial posts during the test.</li>
+  </ol>
+</section>
+
+<section aria-labelledby="h-bio">
+  <h2 id="h-bio">Three bios</h2>
+  <div class="bios">
+    <div class="bio"><div class="row"><h3>B1 · recommended</h3><button class="copy" data-t="b1">Copy</button></div><pre id="b1">Old wisdom, new evidence, and the odd joke at our own expense.
+Mind · Body · People. Every source cited.
+Book picks in Reading ↓</pre><p class="score">128 / 150 characters</p></div>
+    <div class="bio"><div class="row"><h3>B2 · humour first</h3><button class="copy" data-t="b2">Copy</button></div><pre id="b2">Philosophy for people who know what to do and still don't do it.
+Ideas, memes and book picks. Every source cited.</pre><p class="score">113 / 150 characters</p></div>
+    <div class="bio"><div class="row"><h3>B3 · plainest</h3><button class="copy" data-t="b3">Copy</button></div><pre id="b3">Stoicism, psychology and good books. Useful, and a bit funny.
+Mind · Body · People · Every source cited
+New ideas every weekday</pre><p class="score">127 / 150 characters</p></div>
+  </div>
+</section>
+
+<section aria-labelledby="h-hl">
+  <h2 id="h-hl">Your four highlights</h2>
+  <img class="covers" src="{{COVERS}}" alt="Highlight covers: Zeno, Resilience, Training Room, Reading" width="900" height="252">
+  <div class="tablewrap"><table>
+    <tr><th>Zeno</th><td>Start here: the promise, the three pillars, "every source cited", how the 9pm quiz works.</td></tr>
+    <tr><th>Resilience</th><td>Hard-day ideas: anger, rejection, overthinking carousels.</td></tr>
+    <tr><th>Training Room</th><td>Habits, rest, consistency, Body memes.</td></tr>
+    <tr><th>Reading</th><td>Every book and film pick, shared the day it posts. Later, the affiliate disclosure frame.</td></tr>
+  </table></div>
+  <p class="sub">Add stories on Sundays in this order so Zeno shows first: Training Room, Resilience, Reading, Zeno. Full-size covers are in the PR folder.</p>
+</section>
+
+<section aria-labelledby="h-q">
+  <div class="qhead">
+    <h2 id="h-q">Meme queue</h2>
+    <p class="tally" id="tally">Loading your decisions…</p>
+  </div>
+  <p class="sub">All twenty are our own jokes on our own drawings, so they're cleared to post once you approve. Scores only set the order; they never override a rule. Tap <b>Approve all left</b> to clear a batch, then change any single card.</p>
+  <div class="actions"><button class="primary" id="all">Approve all left</button></div>
+  <p class="state" id="save-note"></p>
+  <div class="memes">{{MEMES}}</div>
+</section>
+
+<section aria-labelledby="h-c">
+  <h2 id="h-c">Commercial approval cards</h2>
+  <p class="notice">Nobody has been contacted. Approving a card approves the route, not any email, sign-up or post; each of those gets its own yes. Both routes wait for your OBI declaration.</p>
+  <div class="cards">{{CARDS}}</div>
+</section>
+
+<section aria-labelledby="h-cal">
+  <h2 id="h-cal">Two-week sample calendar</h2>
+  <p class="sub">Feed slots only (stories unchanged). Works around the Mino reels already scheduled. Mix over the two weeks: 7 memes, 8 learn, 3 picks (39 / 44 / 17%).</p>
+  <div class="tablewrap"><table class="cal">{{CAL}}</table></div>
+</section>
+
+<section aria-labelledby="h-rev">
+  <h2 id="h-rev">Revenue and measurement</h2>
+  <div class="split">
+    <div>
+      <h3>Route 1 · your journal + guide + newsletter</h3>
+      <p>Built in test mode. About £10.77 kept per £14 sale. Needs OBI, Stripe live, your test purchase. Max 1 shop post per 8 feed posts, labelled "Our own product".</p>
+      <h3>Route 2 · Bookshop.org UK affiliate</h3>
+      <p>10% commission, 30-day attribution (Awin 62675). Fits the Reading lane. A £10 book earns £1, so it's a small, honest trickle. Captions start "Ad · affiliate link in bio".</p>
+      <h3>Later</h3>
+      <p>Sponsorships, Creator Marketplace and merch wait for 1,000 real followers. The media-kit outline is ready with verified numbers only.</p>
+    </div>
+    <div>
+      <h3>30-day test · 23 Nov – 22 Dec</h3>
+      <ul>
+        <li>Main metric: (shares + saves) per 1,000 reach at day 7. Baseline now: carousels 4.8, reels 6.4.</li>
+        <li>Also: meaningful comments (arguments don't count), follows per 1,000 reach, unfollows, your minutes per post.</li>
+        <li>Medians, same post age, outliers above 3× shown separately, at least 8 memes before a verdict.</li>
+        <li>Keep and grow if memes reach 1.3× the learn posts without losing follows.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="h-tools">
+  <h2 id="h-tools">Tools and sources</h2>
+  <ul>
+    <li><b>Pillow 12.3.0</b>: use. It draws every meme here. 12.2.0+ fixes a 2026 heap-overflow bug.</li>
+    <li><b>instaloader, gallery-dl</b>: skip. They need an Instagram login, break every few weeks, and fetch posts we have no right to repost.</li>
+    <li><b>Cheapest route</b>: save memes you like to an Instagram collection, paste the links in chat weekly. Claude writes original jokes from them. £0, about 15 minutes a week.</li>
+  </ul>
+  <p class="notice">Not inspected: the live profile, your new highlights' contents, comments and DMs (Instagram is blocked from Claude's workspace). Numbers are from Metricool, pulled 27 Oct.</p>
+</section>
+</div>
+
+<script>
+(function(){
+  const $ = (s, el=document) => Array.from(el.querySelectorAll(s));
+  const items = $('[data-id]');
+  const memeIds = $('.meme').map(e => e.dataset.id);
+  let db = null, decisions = {};
+  const label = {approve:'Approved', edit:'Needs edit', reject:'Rejected'};
+
+  function paint(){
+    items.forEach(el => {
+      const d = decisions[el.dataset.id];
+      $('button[data-v]', el).forEach(b => b.setAttribute('aria-pressed', d && d.decision === b.dataset.v ? 'true' : 'false'));
+      const note = el.querySelector('.note');
+      if (d && note && document.activeElement !== note && !note.dataset.dirty) note.value = d.note || '';
+      el.querySelector('.state').textContent = d ? label[d.decision] + (d.at ? ' · ' + new Date(d.at).toLocaleString('en-GB',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'}) : '') : '';
+    });
+    const c = {approve:0, edit:0, reject:0};
+    memeIds.forEach(id => { if (decisions[id]) c[decisions[id].decision]++; });
+    const left = memeIds.length - c.approve - c.edit - c.reject;
+    document.getElementById('tally').textContent = db ? `${c.approve} approved · ${c.edit} to edit · ${c.reject} rejected · ${left} to go` : 'Read-only here';
+  }
+
+  async function save(id, decision, kind){
+    const el = document.querySelector(`[data-id="${id}"]`);
+    const note = el.querySelector('.note').value.trim().slice(0, 500);
+    if (!db) { el.querySelector('.state').textContent = 'Saving is off in this view. Reply in chat instead.'; return; }
+    el.querySelector('.state').textContent = 'Saving…';
+    try {
+      await db.collection('decisions').doc(id).set({decision, note, kind, at: new Date().toISOString()});
+      delete el.querySelector('.note').dataset.dirty;
+    } catch (e) {
+      el.querySelector('.state').textContent = 'Not saved: ' + (e && e.message ? e.message : 'try again');
+    }
+  }
+
+  items.forEach(el => {
+    const kind = el.classList.contains('meme') ? 'meme' : 'commercial';
+    $('button[data-v]', el).forEach(b => b.addEventListener('click', () => save(el.dataset.id, b.dataset.v, kind)));
+    const n = el.querySelector('.note');
+    n.addEventListener('input', () => { n.dataset.dirty = '1'; });
+    n.addEventListener('change', () => { const d = decisions[el.dataset.id]; if (d) save(el.dataset.id, d.decision, kind); });
+  });
+
+  document.getElementById('all').addEventListener('click', async (ev) => {
+    const btn = ev.currentTarget; btn.disabled = true;
+    const left = memeIds.filter(id => !decisions[id]);
+    for (const id of left) await save(id, 'approve', 'meme');
+    document.getElementById('save-note').textContent = left.length ? `Approved ${left.length}.` : 'Nothing left to approve.';
+    btn.disabled = false;
+  });
+
+  $('.copy').forEach(b => b.addEventListener('click', () => {
+    const t = document.getElementById(b.dataset.t).textContent;
+    const done = () => { b.textContent = 'Copied'; setTimeout(() => b.textContent = 'Copy', 1500); };
+    try { navigator.clipboard.writeText(t).then(done, () => sel(b.dataset.t)); } catch (e) { sel(b.dataset.t); }
+  }));
+  function sel(id){ const r = document.createRange(); r.selectNodeContents(document.getElementById(id)); const s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+
+  paint();
+  if (window.claude && window.claude.use) {
+    window.claude.use('db').then(h => {
+      db = h;
+      if (!db) { paint(); $('button[data-v]').forEach(b => b.disabled = true); document.getElementById('all').disabled = true; return; }
+      db.collection('decisions').onSnapshot(snap => {
+        const next = {};
+        snap.docs.forEach(d => { const v = d.data(); if (v) next[d.id] = v; });
+        decisions = next; paint();
+      }, () => { document.getElementById('tally').textContent = 'Could not load decisions. Reload the page.'; });
+    });
+  } else {
+    document.getElementById('tally').textContent = 'Read-only here';
+  }
+})();
+</script>
