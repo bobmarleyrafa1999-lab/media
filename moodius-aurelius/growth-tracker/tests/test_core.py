@@ -85,6 +85,15 @@ if __name__ == "__main__":
     unittest.main()
 
 
+class SourcePreference(unittest.TestCase):
+    def test_reported_value_beats_missing_from_preferred_source(self):
+        con = db.connect(os.path.join(TMP, "pref.sqlite"))
+        con.execute("INSERT INTO account_metric VALUES ('2026-10-27','Europe/Madrid','followers_total',NULL,'unknown','metricool_connector','2026-10-27T12:10:00+00:00',NULL,0)")
+        con.execute("INSERT INTO account_metric VALUES ('2026-10-27','Europe/London','followers_total',168,'unknown','manual_csv','2026-10-27T12:41:00+00:00',NULL,0)")
+        acc, _ = mx.load_account(con)
+        self.assertEqual(acc.loc["2026-10-27", "followers_total"], 168)
+
+
 class MetaStore(unittest.TestCase):
     def test_meta_response_is_normalised(self):
         from moodius_growth import meta_api

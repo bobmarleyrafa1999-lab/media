@@ -33,7 +33,8 @@ def load_account(con):
     if df.empty:
         return pd.DataFrame(), {}
     df["rank"] = df["source"].map(SOURCE_RANK).fillna(9)
-    df = df.sort_values(["date", "metric", "rank"]).drop_duplicates(["date", "metric"], keep="first")
+    df["missing"] = df["value"].isna()          # a source that reported a number beats one that reported n/a
+    df = df.sort_values(["date", "metric", "missing", "rank"]).drop_duplicates(["date", "metric"], keep="first")
     wide = df.pivot(index="date", columns="metric", values="value")
     wide.index = pd.to_datetime(wide.index)
     wide = wide.sort_index()
