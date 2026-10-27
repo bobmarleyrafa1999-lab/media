@@ -17,11 +17,11 @@ What the data says first (Metricool, 6–26 Oct 2026):
 
 Name field (keeps search terms): `Moodius Aurelius | Old wisdom, new evidence` (no change if already set).
 
-**B1, recommended (128 characters)**: warmth added, still says what you get
+**B1, recommended (133 characters)**: warmth added, still says what you get
 ```
 Old wisdom, new evidence, and the odd joke at our own expense.
 Mind · Body · People. Every source cited.
-Book picks in Reading ↓
+Book picks in Reading Room ↓
 ```
 
 **B2 (113)**: humour first
@@ -43,16 +43,16 @@ Reply only from hello@, never from your personal Gmail. Phone and address stay b
 
 ## 3. Highlights (your four)
 
-Covers: `highlights/1-Zeno.png` … `4-Reading.png` (1080×1920; Instagram crops the middle circle). Press and hold a highlight → Edit highlight → Edit cover → pick from camera roll.
+Covers (set 27 Oct): Zeno and Resilience are your own dark text cards; Reading Room and Training Room use the matching cards in `highlights/text-cards/`. Names as set on the profile: Zeno, Resilience, Training Room, Reading Room.
 
 | Highlight | Its job | What goes in |
 |---|---|---|
 | Zeno | Start here: what the page is | 3–4 story frames: the promise, the three pillars, "every source cited", how the 9pm quiz works |
 | Resilience | Hard-day ideas | Re-shared carousels on anger, rejection, overthinking (the 2am replay, the rude-person one) |
 | Training Room | Body pillar | Habit, rest and consistency posts; Body memes |
-| Reading | Book and film picks | Every recommendation post, re-shared the day it goes out. Later the affiliate disclosure frame lives here too |
+| Reading Room | Book and film picks | Every recommendation post, re-shared the day it goes out. Later the affiliate disclosure frame lives here too |
 
-Order: Instagram puts the highlight you added to last first. Add in this order on Sundays: Training Room, Resilience, Reading, Zeno (Zeno ends up first).
+Order: Instagram puts the highlight you added to last first. Add in this order on Sundays: Training Room, Resilience, Reading Room, Zeno (Zeno ends up first).
 The older seven-highlight plan (strategy/12-profile-setup.md) is replaced by these four.
 
 ## 4. Pins

@@ -10,7 +10,7 @@ The audience today: 146 followers on 26 Oct (Metricool), of which up to 56 arriv
 |---|---|---|---|
 | Own products: £14 journal, £19 personal, £22 gift, free guide | Made for this audience, quotes already verified | Built in test mode; needs OBI, Stripe live, your test purchase | 🟢 Route 1 |
 | Newsletter (Substack, drafted) | Turns a few hundred reach into an owned list | Drafted, not launched | 🟢 part of Route 1 |
-| Book affiliate: Bookshop.org UK | Fits the Reading highlight and the 20% recommendation lane | Needs OBI and an Awin publisher account | 🟢 Route 2 |
+| Book affiliate: Bookshop.org UK | Fits the Reading Room highlight and the 20% recommendation lane | Needs OBI and an Awin publisher account | 🟢 Route 2 |
 | Amazon Associates UK | Works, but jars with a page about attention and small good things | Possible | 🟠 backup only |
 | Sponsorships / paid posts | Brands want reach we don't have yet | No. The finance model's gate is 1,000 followers + 1,000 median reel views + PO box | 🔴 later |
 | Instagram Creator Marketplace | No official follower minimum, but brands filter for about 1,000+ and reposted content can block eligibility ([inro.social](https://www.inro.social/blog/instagram-creator-marketplace)) | No | 🔴 later |

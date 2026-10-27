@@ -21,7 +21,7 @@ def main(out):
     concepts = json.load(open(os.path.join(ROOT, "data", "concepts.json")))["concepts"]
     commercial = list(csv.DictReader(open(os.path.join(ROOT, "data", "commercial.csv"))))
     cal = [r for r in csv.DictReader(open(os.path.join(ROOT, "04-calendar-14-day.csv"))) if r["lane"] != "stories"]
-    covers = thumb(os.path.join(ROOT, "highlights", "preview-row.png"), 900, 85)
+    covers = thumb(os.path.join(ROOT, "highlights", "text-cards", "preview.png"), 620, 88)
 
     memes = []
     for c in concepts:

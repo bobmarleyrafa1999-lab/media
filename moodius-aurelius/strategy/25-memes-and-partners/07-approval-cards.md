@@ -29,7 +29,7 @@ Nothing has been contacted, signed up for or agreed. Both cards below are routes
 | Field | |
 |---|---|
 | Brand and exact product | Bookshop.org UK affiliate programme (via Awin, merchant 62675). Links to specific books we recommend |
-| Audience fit | Strong: book recommendations are 20% of the planned mix and the Reading highlight exists |
+| Audience fit | Strong: book recommendations are 20% of the planned mix and the Reading Room highlight exists |
 | Proposed content and claims | "What this book argues" + source. No "life-changing", no results claims, no personal reading claims unless you wrote them |
 | Payment or commission | 10% of sale (plus 10% to indie bookshops), 30-day attribution |
 | Payment timing | Not stated on the merchant page. To confirm with Awin before sign-up |

@@ -17,7 +17,7 @@ Brief: more humour, warmth and curiosity; intelligent memes people send to frien
 | [07-approval-cards.md](07-approval-cards.md) | Commercial approval card template + two filled examples |
 | `data/queue.csv`, `data/commercial.csv` | The approval tracker (also on the tap-to-approve page) |
 | `tools/meme_queue.py` | Queue: import links, dedupe, filter, reuse gate, render, learn |
-| `tools/highlight_covers.py` | Covers for Zeno, Resilience, Training Room, Reading |
+| `highlights/text-cards/` | Live covers for Reading Room and Training Room (dark text cards matching Zeno and Resilience) |
 
 ## The answers in one screen
 
