@@ -1,0 +1,214 @@
+<title>Real Followers Plan</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one reading column, a numbers strip, then numbered click-paths per job */
+:root{
+  --bg:#F3EFE7; --surface:#FBF8F2; --fg:#1B1F24; --muted:#5E6268; --line:#D9D3C7;
+  --accent:#A85A1E; --ok:#2F6B4F; --warn:#9A5A12; --bad:#9B2C2C;
+  --display:"Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --body:"Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1B1F24; --surface:#2A2F36; --fg:#F3EFE7; --muted:#B8B3A9; --line:#3A4049;
+  --accent:#D88A4A; --ok:#7BC4A0; --warn:#E3B062; --bad:#E58A8A; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1B1F24; --surface:#2A2F36; --fg:#F3EFE7; --muted:#B8B3A9; --line:#3A4049;
+  --accent:#D88A4A; --ok:#7BC4A0; --warn:#E3B062; --bad:#E58A8A; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:15px;line-height:1.6}
+.wrap{max-width:46rem;margin:0 auto;padding-block:40px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:40px}
+h1,h2{font-family:var(--display);font-weight:600;text-wrap:balance;margin:0;line-height:1.15}
+h1{font-size:2.6rem}
+h2{font-size:1.75rem;margin-bottom:10px}
+h3{font-size:1rem;margin:18px 0 6px}
+p{margin:0 0 10px}
+.eyebrow{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:8px}
+.lede{font-size:1.05rem;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));gap:12px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:14px}
+.stat b{display:block;font-family:var(--display);font-size:2rem;font-variant-numeric:tabular-nums;line-height:1.1}
+.stat span{font-size:.82rem;color:var(--muted)}
+.tablebox{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;font-size:.88rem;font-variant-numeric:tabular-nums}
+th,td{padding:8px 12px;text-align:left;border-bottom:1px solid var(--line);white-space:nowrap}
+th{font-weight:600;color:var(--muted);font-size:.75rem;letter-spacing:.06em;text-transform:uppercase}
+tr:last-child td{border-bottom:0}
+tr.flag td{color:var(--warn);font-weight:600}
+ol.steps{margin:0;padding-left:1.4rem;display:flex;flex-direction:column;gap:6px}
+ul{margin:0;padding-left:1.2rem;display:flex;flex-direction:column;gap:4px}
+.path{font-family:var(--body);font-weight:600;color:var(--fg);background:color-mix(in srgb,var(--accent) 14%,transparent);padding:1px 6px;border-radius:4px}
+.note{border-left:3px solid var(--accent);padding:4px 0 4px 14px;color:var(--muted);font-size:.92rem}
+.pill{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;padding:2px 8px;border-radius:99px;border:1px solid currentColor;vertical-align:middle;margin-left:6px}
+.pill.now{color:var(--bad)} .pill.later{color:var(--muted)} .pill.ok{color:var(--ok)}
+.words{font-size:.9rem;background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:12px 14px;word-break:break-word}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.two>div{min-width:0}
+@media (max-width:620px){.two{grid-template-columns:1fr}h1{font-size:2.1rem}}
+.never li::marker{content:"✕  ";color:var(--bad)}
+.yes li::marker{content:"✓  ";color:var(--ok)}
+footer{font-size:.82rem;color:var(--muted)}
+</style>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">@moodiusaurelius · 27 October 2026</div>
+  <h1>Real people in, bots out</h1>
+  <p class="lede">Your followers went from 14 to 146 in six days. Most of that looks real, but one day looks off. This page is what to check, the settings to switch on (about 20 minutes, all free), and the rules that keep Instagram treating the page as genuine.</p>
+</header>
+
+<section>
+  <h2>What the numbers say</h2>
+  <div class="stats">
+    <div class="stat"><b>146</b><span>followers on 26 Oct (14 on 21 Oct)</span></div>
+    <div class="stat"><b>0</b><span>followers lost since 20 Oct</span></div>
+    <div class="stat"><b>86%</b><span>of followers in the UK (last country snapshot)</span></div>
+    <div class="stat"><b>22 → 70</b><span>accounts the page follows, since 20 Oct</span></div>
+  </div>
+  <h3>Daily growth from Metricool</h3>
+  <div class="tablebox"><table>
+    <thead><tr><th>Day</th><th>Reach</th><th>New followers</th><th>Accounts that interacted</th><th>Followers per 100 reached</th></tr></thead>
+    <tbody>
+      <tr><td>22 Oct</td><td>5,734</td><td>+37</td><td>128</td><td>0.6</td></tr>
+      <tr><td>23 Oct</td><td>2,398</td><td>+6</td><td>44</td><td>0.3</td></tr>
+      <tr><td>24 Oct</td><td>819</td><td>+2</td><td>8</td><td>0.2</td></tr>
+      <tr><td>25 Oct</td><td>3,802</td><td>+31</td><td>61</td><td>0.8</td></tr>
+      <tr class="flag"><td>26 Oct</td><td>1,301</td><td>+56</td><td>42</td><td>4.3</td></tr>
+    </tbody>
+  </table></div>
+  <p style="margin-top:12px"><strong>Read:</strong> 22-25 Oct look like real people. Growth follows reach, and the UK share fits who the posts are for. <strong>26 Oct is the odd one.</strong> More people followed than interacted with anything, at five times the usual rate. That can happen when a post gets shared into a group chat, but it's also the classic shape of a bot wave. A ten-minute look at your newest followers settles it (step 1 below).</p>
+  <p class="note">The country split was last measured at about 59 followers. Metricool will refresh it, and I'll recheck it in the Friday report. Instagram doesn't let Metricool or me see individual follower accounts, so the spot-check has to be done by you in the app.</p>
+</section>
+
+<section>
+  <h2>1. Spot-check the newest followers <span class="pill now">Today · 10 min</span></h2>
+  <ol class="steps">
+    <li>Open Instagram, tap your profile picture (bottom right), then tap <span class="path">146 followers</span>.</li>
+    <li>Tap <span class="path">Sort</span> (top right of the list) and pick <span class="path">Date followed: Latest</span>.</li>
+    <li>Look at the top 60 or so (everyone from 25-26 Oct). Tap any that look odd to open their profile.</li>
+    <li>For a bot, tap <span class="path">Remove</span> next to it in your followers list, then <span class="path">Remove</span> again. They are not told.</li>
+    <li>If it's posting scams or pretending to be someone, open its profile, tap <span class="path">⋯</span> (top right) and then <span class="path">Report</span>.</li>
+  </ol>
+  <div class="two" style="margin-top:14px">
+    <div>
+      <h3>Probably a bot (two or more of these)</h3>
+      <ul>
+        <li>No profile photo, or a model or crypto stock photo</li>
+        <li>Username of a name plus a long string of numbers</li>
+        <li>0-3 posts, following thousands, followed by few</li>
+        <li>Bio selling something: "DM for promo", crypto, forex, "earn £…"</li>
+        <li>Has already sent you a DM with a link or a "collab" offer</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Keep (looks like a quiet real person)</h3>
+      <ul>
+        <li>Private account with a normal name and a photo</li>
+        <li>Few posts but a believable follow count</li>
+        <li>Follows other book, philosophy or wellbeing pages</li>
+        <li>Liked or saved one of your carousels</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">Remove in small batches (20-30 at a sitting). Mass-removing in one go can look like automation to Instagram. If it's under a handful, just remove them and move on. If it's dozens, tell me and I'll note the date so the weekly numbers stay honest.</p>
+</section>
+
+<section>
+  <h2>2. Switch on the spam filters <span class="pill now">Today · 10 min</span></h2>
+  <p>All of these live under one menu. In the app: <span class="path">Profile</span> → <span class="path">☰</span> (top right). Then scroll to the section <span class="path">How others can interact with you</span>.</p>
+
+  <h3>a. Hidden Words (catches spam comments and DMs)</h3>
+  <ol class="steps">
+    <li>Tap <span class="path">Hidden Words</span>.</li>
+    <li>Under <em>Offensive words and phrases</em>, turn on <span class="path">Hide comments</span>, <span class="path">Advanced comment filtering</span> and <span class="path">Hide message requests</span>.</li>
+    <li>Under <em>Custom words and phrases</em>, tap <span class="path">Manage custom words and phrases</span>, paste the list below, tap <span class="path">Add</span>.</li>
+    <li>Turn on <span class="path">Hide comments</span> and <span class="path">Hide message requests</span> for the custom list too.</li>
+  </ol>
+  <p style="margin-top:10px">Custom list (copy all of it; commas are fine):</p>
+  <div class="words" id="wordlist">promo, promote it, promotion, collab?, DM us, send it to @, check my bio, link in bio, bio link, follow back, f4f, follow for follow, l4l, crypto, bitcoin, btc, forex, trading signals, passive income, earn £, earn $, cash app, giveaway winner, you won, verify your account, copyright violation, meta support, blue tick</div>
+  <p class="note">These words never appear in your own replies or in the "Reply A or B" story answers, so nothing real gets hidden. Hidden comments aren't deleted. You can still see them under <span class="path">Hidden comments</span> at the bottom of each post.</p>
+
+  <h3>b. Tags and mentions (stops scam giveaway tagging)</h3>
+  <ol class="steps">
+    <li>Tap <span class="path">Tags and mentions</span>.</li>
+    <li><span class="path">Who can tag you</span> → <span class="path">Allow tags from people you follow</span>.</li>
+    <li>Turn on <span class="path">Manually approve tags</span>.</li>
+    <li><span class="path">Who can @mention you</span> → <span class="path">People you follow</span>.</li>
+  </ol>
+
+  <h3>c. Messages and story replies (keep the quiz replies flowing)</h3>
+  <ol class="steps">
+    <li>Tap <span class="path">Messages and story replies</span> → <span class="path">Message controls</span>.</li>
+    <li>For <em>Others on Instagram</em>, choose <span class="path">Message requests</span>. Don't choose "Don't receive requests", or the A/B story replies from new people disappear.</li>
+    <li>Back one screen, <span class="path">Story replies</span> → <span class="path">Everyone</span> (the nightly quiz depends on this).</li>
+  </ol>
+
+  <h3>d. Comments (leave open, on purpose)</h3>
+  <p>Leave <span class="path">Comments</span> → <span class="path">Allow comments from</span> on <strong>Everyone</strong>. Comments from strangers are how new real people find the page, and the pinned-comment answer plan needs them. Hidden Words does the filtering instead.</p>
+
+  <h3>e. Limits (only for a spam attack)</h3>
+  <p>Don't switch this on now. If one day brings a flood of spam comments or DMs: <span class="path">Limits</span> → turn on <span class="path">Accounts that aren't following you</span> and <span class="path">Recent followers</span> → choose <span class="path">1 week</span>. It quietens everything, including real new fans, so switch it off when the wave stops.</p>
+
+  <h3>f. Lock the account (bots also come from hacked pages)</h3>
+  <ol class="steps">
+    <li><span class="path">☰</span> → <span class="path">Accounts Centre</span> → <span class="path">Password and security</span> → <span class="path">Two-factor authentication</span> → pick the Instagram account → <span class="path">Authentication app</span> (or text message if you prefer).</li>
+    <li>Same screen: <span class="path">Where you're logged in</span>. Log out any device you don't recognise. Metricool doesn't appear here, because it connects through Meta's official partner access.</li>
+    <li>Same screen: <span class="path">Login alerts</span> → on, sent to hello@moodius.co.uk.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>3. Grow only in ways Instagram counts as real <span class="pill ok">Standing rule</span></h2>
+  <p>Instagram quietly limits the reach of accounts it thinks are faking growth. These rules keep the page on the right side of that, and I'll follow them in everything I schedule.</p>
+  <div class="two">
+    <div>
+      <h3>Never</h3>
+      <ul class="never">
+        <li>Buy followers, likes, views or comments, at any price</li>
+        <li>Join engagement pods or "comment for comment" groups</li>
+        <li>Follow-then-unfollow, or follow lots of accounts to get follows back</li>
+        <li>Give your Instagram password to any growth app or "manager" (Metricool doesn't need it)</li>
+        <li>Use bot hashtags: #followforfollow, #f4f, #like4like, #instagood, #explorepage</li>
+        <li>"Tag 3 friends to win" giveaways</li>
+        <li>Auto-commenting tools (your comment agent only drafts, you send)</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Do</h3>
+      <ul class="yes">
+        <li>3-5 specific hashtags per post (#stoicism, #journaling, #emotionalhealth…), never 30</li>
+        <li>"Send this to the friend who…" instead of tag-baiting</li>
+        <li>By hand, leave a few real, full-sentence comments a day on similar pages</li>
+        <li>Follow only pages you'd actually read</li>
+        <li>Reply to every real comment in the first hour</li>
+        <li>Collaborate with real small pages (Collab posts) once you're ready</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note"><strong>One question for you:</strong> the page now follows 70 accounts, up from 22 last week. If you followed those by hand because you like them, that's fine. If any app or service is doing it, tell me and we'll stop it. That pattern gets pages flagged.</p>
+</section>
+
+<section>
+  <h2>4. When we run the first ad <span class="pill later">Later · needs your OK</span></h2>
+  <p>No ad is running and none will start without your yes on the budget. When the first test (€35, about £30) happens, these settings keep the money on real people:</p>
+  <ul>
+    <li><strong>Goal: website sign-ups, not "more followers" or "profile visits".</strong> Follower-goal ads are where most click-farm and fake followers come from, because they're the cheapest thing to fake.</li>
+    <li><strong>Placements: Instagram only</strong> (Feed, Reels, Stories). Untick <em>Audience Network</em> and <em>Messenger</em>. Audience Network is the main source of junk clicks.</li>
+    <li><strong>Location: United Kingdom, "people living in"</strong> (not "recently in"), plus Ireland if you want. Your followers are 86% UK already.</li>
+    <li><strong>Audience:</strong> ages 22-45, interests Stoicism, philosophy, journaling, self-help books. Turn off "Advantage+ audience" expansion for the first test so we can see who it reaches.</li>
+    <li><strong>Check after 48 hours:</strong> if clicks are high but sign-ups are zero, pause it. That's the sign of bot clicks.</li>
+  </ul>
+</section>
+
+<section>
+  <h2>5. What I'll watch each week <span class="pill ok">Claude</span></h2>
+  <p>From the Friday report on 30 Oct, three checks sit next to the usual numbers:</p>
+  <ul>
+    <li><strong>Bot-wave alarm:</strong> any day where new followers are more than about 2 per 100 people reached, or more than the accounts that interacted. If one shows up, I'll tell you to do the step 1 spot-check.</li>
+    <li><strong>Country share:</strong> UK, Ireland, US, Spain and other English-reading countries should stay above about 85%. A sudden jump from one unrelated country is a red flag.</li>
+    <li><strong>Quality per follower:</strong> saves and shares per 100 followers. If followers rise and this falls, the new ones aren't real readers.</li>
+  </ul>
+</section>
+
+<footer>Sources: Metricool Instagram analytics for brand 7224060, 1-26 Oct 2026, pulled 27 Oct. App menu names are Instagram's current English labels. If a label differs on your phone, search the setting name in the ☰ menu's search bar.</footer>
+</div>
