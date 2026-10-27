@@ -1,0 +1,4 @@
+experiment_id,hypothesis,variable,primary_metric,window_days,decision_rule,start_date,end_date,status,result
+E1,Curiosity/appreciation carousel openers get shared as much as tension/hurt openers,carousel opener tone,median shares per 1k reach,7,Lead only if one arm's median is >=30% higher with 8+ posts per arm and its median reach is not >30% lower; otherwise no clear winner,2026-10-26,2026-11-19,running,
+E2,Situation hooks hold reel viewers past 3 s better than curiosity hooks,reel hook type,median 3-second view rate %,7,Same 30% rule with 8+ reels per arm,2026-11-02,2026-11-19,planned,
+E3,A follow ask on the last carousel slide raises follows per 1k reach,last-slide CTA,median follows per 1k reach,7,Same 30% rule with 8+ carousels per arm,2026-11-25,2026-12-24,planned,

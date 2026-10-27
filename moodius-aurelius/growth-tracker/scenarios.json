@@ -1,0 +1,32 @@
+{
+  "_read_me": "Assumption-based projections, not forecasts. Each scenario measures reach and conversion from your own recent data, then applies the stated assumptions. Edit the numbers here; the dashboard sliders change them temporarily.",
+  "horizon_days": 180,
+  "exclude_bot_wave_days": true,
+  "scenarios": {
+    "conservative": {
+      "reach_window_days": 28,
+      "conversion": "pooled",
+      "reach_growth_month_pct": 0,
+      "churn_month_pct": 2,
+      "assumptions": "Reach falls back to the 28-day typical level (the recent carousel lift fades), no reach growth, 2% of followers leave each month."
+    },
+    "base": {
+      "reach_window_days": 14,
+      "conversion": "pooled",
+      "reach_growth_month_pct": 0,
+      "churn_month_pct": 1,
+      "assumptions": "Reach stays at the 14-day typical level, conversion stays at the 14-day pooled rate, 1% monthly churn. No growth in reach is assumed."
+    },
+    "optimistic": {
+      "reach_window_days": 7,
+      "conversion": "pooled",
+      "reach_growth_month_pct": 10,
+      "churn_month_pct": 0.5,
+      "assumptions": "Reach holds at the last-7-day typical level and then grows 10% a month (an assumption, not measured), 0.5% monthly churn."
+    }
+  },
+  "posting_explorer": {
+    "elasticity": 0.5,
+    "_elasticity_note": "Reach multiplier = (new posts per week / current posts per week) ^ elasticity. 0.5 means doubling posts gives about 1.4x reach, not 2x. This is an assumption until your own experiments measure it."
+  }
+}

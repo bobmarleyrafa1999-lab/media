@@ -1,0 +1,9 @@
+# Real analytics, tokens and logs never go in git.
+data/
+logs/
+*.sqlite
+*.sqlite-journal
+.env
+.venv/
+__pycache__/
+ig_user_id.txt

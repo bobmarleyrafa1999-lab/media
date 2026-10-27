@@ -1,0 +1,3 @@
+media_id,format,published_at,published_tz,permalink,first_line,reach,views,likes,comments,saves,shares,follows,profile_visits,avg_watch_s,total_watch_s,skip_rate_pct,view_rate_3s_pct,replies,taps_forward,taps_back,exits,scope,collected_at_utc
+EXAMPLE-1,carousel,2026-01-05 12:00,Europe/London,,EXAMPLE carousel first line,500,700,10,2,5,4,3,,,,,,,,,,organic,
+EXAMPLE-2,reel,2026-01-05 18:00,Europe/London,,EXAMPLE reel first line,200,260,6,1,1,1,,,4.0,800,,30,,,,,organic,

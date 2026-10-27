@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!-- Copy to ~/Library/LaunchAgents/com.moodius.growth.plist after replacing FOLDER (see docs/META-API-SETUP.md step 9). -->
+<plist version="1.0">
+<dict>
+  <key>Label</key><string>com.moodius.growth</string>
+  <key>ProgramArguments</key>
+  <array><string>/bin/bash</string><string>FOLDER/schedule/run_daily.sh</string></array>
+  <key>StartCalendarInterval</key>
+  <dict><key>Hour</key><integer>8</integer><key>Minute</key><integer>30</integer></dict>
+  <key>StandardErrorPath</key><string>FOLDER/logs/launchd.err</string>
+</dict>
+</plist>

@@ -1,0 +1,11 @@
+[server]
+# Only reachable from this Mac. Never change to 0.0.0.0.
+address = "localhost"
+port = 8501
+headless = true
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"
