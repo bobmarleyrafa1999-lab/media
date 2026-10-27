@@ -15,6 +15,7 @@ Brief: more humour, warmth and curiosity; intelligent memes people send to frien
 | [05-revenue-and-media-kit.md](05-revenue-and-media-kit.md) | Two revenue routes, disclosure rules, media-kit outline |
 | [06-measurement-plan.md](06-measurement-plan.md) | 30-day experiment, metrics, decision rules |
 | [07-approval-cards.md](07-approval-cards.md) | Commercial approval card template + two filled examples |
+| [08-next-30-days.md](08-next-30-days.md) | Monetisation readiness: gates, week-by-week plan, yes/no list |
 | `data/queue.csv`, `data/commercial.csv` | The approval tracker (also on the tap-to-approve page) |
 | `tools/meme_queue.py` | Queue: import links, dedupe, filter, reuse gate, render, learn |
 | `highlights/text-cards/` | Live covers for Reading Room and Training Room (dark text cards matching Zeno and Resilience) |
