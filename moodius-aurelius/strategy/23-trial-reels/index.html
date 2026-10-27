@@ -1,0 +1,165 @@
+<title>Moodius Trial Reels</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one reading column, steps as tappable-looking rows, rules as a small table, decisions last */
+:root{
+  --bg:#F3EFE7; --surface:#FBF8F2; --fg:#1B1F24; --muted:#5E5A53; --line:#D9D3C7; --accent:#A85A1E; --ok:#3F6B4E; --warn:#8A5A12;
+  --display:"Cormorant Garamond",Georgia,serif; --body:"Inter",system-ui,-apple-system,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1B1F24; --surface:#2A2F36; --fg:#F3EFE7; --muted:#B8B3A9; --line:#3A4049; --accent:#D98A47; --ok:#8DBB9B; --warn:#E0B060; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1B1F24; --surface:#2A2F36; --fg:#F3EFE7; --muted:#B8B3A9; --line:#3A4049; --accent:#D98A47; --ok:#8DBB9B; --warn:#E0B060; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15px/1.6 var(--body)}
+.wrap{max-width:720px;margin:0 auto;padding-block:40px 64px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));display:grid;gap:40px}
+h1,h2{font-family:var(--display);font-weight:600;line-height:1.15;text-wrap:balance;margin:0}
+h1{font-size:2.6rem}
+h2{font-size:1.8rem;margin-bottom:12px}
+h3{font-size:1rem;margin:20px 0 6px}
+p{margin:0 0 10px;max-width:65ch}
+.label{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:8px}
+.lede{font-size:1.08rem;color:var(--muted)}
+.answer{background:var(--surface);border:1px solid var(--line);border-radius:6px;padding:18px 20px;display:grid;gap:10px}
+.answer div{display:grid;grid-template-columns:7.5rem 1fr;gap:12px}
+.answer b{font-weight:600}
+@media (max-width:520px){.answer div{grid-template-columns:1fr;gap:2px}}
+ol.steps{margin:0;padding:0;list-style:none;counter-reset:s;display:grid;gap:8px}
+ol.steps li{counter-increment:s;display:grid;grid-template-columns:28px 1fr;gap:10px;align-items:start}
+ol.steps li::before{content:counter(s);font:600 .8rem var(--body);width:24px;height:24px;border-radius:50%;border:1px solid var(--accent);color:var(--accent);display:grid;place-items:center;margin-top:1px}
+.tap{font-weight:600;white-space:nowrap}
+.note{font-size:.88rem;color:var(--muted)}
+.tbl{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+td:first-child{white-space:nowrap;font-weight:500}
+.pill{display:inline-block;font-size:.75rem;font-weight:600;padding:1px 8px;border-radius:999px;border:1px solid currentColor}
+.go{color:var(--ok)} .hold{color:var(--warn)}
+ul{margin:0 0 10px;padding-left:20px;max-width:65ch}
+.dec{display:grid;gap:12px}
+.dec article{border-top:1px solid var(--line);padding-top:12px}
+.dec h3{margin-top:0}
+.reply{font-family:ui-monospace,Menlo,monospace;font-size:.88rem;background:var(--surface);border:1px solid var(--line);padding:1px 6px;border-radius:4px}
+a{color:var(--accent)}
+footer{font-size:.82rem;color:var(--muted)}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="label">Moodius Aurelius · reach to non-followers</div>
+  <h1>Trial reels, and what to do about carousels</h1>
+  <p class="lede">Trial reels go to people who don't follow you first. If one does well, it gets shared to your followers and your grid. It costs £0. Here is how to use them, which posts become trials, and what we do for carousels, which have no trial option.</p>
+</header>
+
+<section class="answer" aria-label="Short answers">
+  <div><b>Cost</b><span>Free. No new spend. Metricool, which you already pay for, can schedule trial reels.</span></div>
+  <div><b>Can you use it yet?</b><span>Probably not quite yet. You have 176 followers. Guides disagree on the minimum: one quoting Instagram's help page says 200 for professional accounts, another says 1,000. The only real test is to look for the <b>Trial</b> switch in the app (step A below, 2 minutes).</span></div>
+  <div><b>Carousels</b><span>Instagram has no trial carousels. Its head of Instagram said in August 2026 they "really should" add them, with no date. We'll test carousel openers as short trial reels instead (section 3).</span></div>
+  <div><b>By hand?</b><span>No, once you're eligible. Metricool has a "Trial Reel" post type, so trials can stay on the schedule. Only the 3-day check is a tap for you, and only if auto-share is off.</span></div>
+</section>
+
+<section>
+  <div class="label">1 · Click by click</div>
+  <h2>How to use trial reels</h2>
+
+  <h3>A. Check if you have it (do this once, now)</h3>
+  <ol class="steps">
+    <li>Open Instagram and tap <span class="tap">+</span> at the bottom, then <span class="tap">Reel</span>.</li>
+    <li>Pick any video from your camera roll. Tap <span class="tap">Next</span> until you reach the screen with the caption box.</li>
+    <li>Look for a switch called <span class="tap">Trial</span> near the bottom, under the caption.</li>
+    <li>Don't post anything. Tap the back arrow, then <span class="tap">Discard</span>.</li>
+    <li>Reply in this thread <span class="reply">trial yes</span> or <span class="reply">trial no</span>.</li>
+  </ol>
+  <p class="note">If you don't see it, nothing changes. We check again when you pass 200 followers.</p>
+
+  <h3>B. Posting a trial reel yourself (only if you ever post by hand)</h3>
+  <ol class="steps">
+    <li>Make the reel as normal and go to the caption screen.</li>
+    <li>Turn on <span class="tap">Trial</span>.</li>
+    <li>Optional: tap <span class="tap">Trial settings</span> and turn on <span class="tap">Share to everyone automatically</span>. Instagram keeps this setting for future trials until you change it.</li>
+    <li>Tap <span class="tap">Share</span>.</li>
+  </ol>
+  <p class="note">The reel won't show on your grid or to followers yet. Some followers may still see it through DMs, the audio page or search.</p>
+
+  <h3>C. Checking a trial after 3 days</h3>
+  <ol class="steps">
+    <li>Go to your profile and open the <span class="tap">Reels</span> tab. Trial reels are marked so only you can tell.</li>
+    <li>Open the trial and tap <span class="tap">View insights</span>. You'll see views, likes, comments, shares and saves, and a comparison with your earlier trials.</li>
+    <li>If it meets the rule in section 2, tap <span class="tap">Share to everyone</span>. It then appears on your grid and Reels tab.</li>
+    <li>If it doesn't, leave it. It stays hidden from followers.</li>
+  </ol>
+
+  <h3>What stays scheduled</h3>
+  <p>Everything. Claude schedules trials in Metricool as the "Trial Reel" type, the same way normal reels go out now. Metricool has a "Share automatically with everyone" option on each trial. With it on, Instagram looks at the first 72 hours and shares good ones to followers by itself. With it off, nothing is shared until you tap (step C). You can't change the mode after a trial is posted.</p>
+  <p class="note">Two catches. Collabs can't be added to trial reels. If Instagram hasn't switched the feature on for the account, a scheduled trial fails instead of posting, so we only start after you reply "trial yes".</p>
+</section>
+
+<section>
+  <div class="label">2 · The system</div>
+  <h2>Which reels go out as trials</h2>
+  <p>Trials are <b>extra</b> reels. They don't replace a normal slot, so your followers' feed and the grid plan stay exactly as they are.</p>
+
+  <div class="tbl"><table>
+    <thead><tr><th>Period</th><th>Normal reels (followers + others)</th><th>Trial reels (non-followers first)</th></tr></thead>
+    <tbody>
+      <tr><td>Until 19 Nov</td><td>Daily 18:00, Fri 17:00 (unchanged)</td><td>2 a week, Mon and Wed 15:00</td></tr>
+      <tr><td>From 20 Nov</td><td>Tue/Thu 18:00, Fri 17:00 (as approved)</td><td>3 a week, Mon, Wed and Sat 18:00, in the empty reel slots</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Never more than 3 trials a week, so the Friday build stays manageable and the account never posts 3 reels in a day.</p>
+
+  <h3>Good candidates for a trial</h3>
+  <ul>
+    <li>A new hook style we haven't tried, or a riskier topic.</li>
+    <li>A second version of a reel that already did well, with a different first 3 seconds and different stock footage.</li>
+    <li>A carousel opener cut as a 6 to 8 second reel (section 3).</li>
+  </ul>
+  <h3>Never a trial</h3>
+  <ul>
+    <li>The Mino test reels (24 to 27 Nov) and handbook Day 1 (29 Nov), the E1/E2 tests, and anything in the 23 Nov to 22 Dec meme test. Mixing trials into a test would muddy its result.</li>
+    <li>A video that's already been posted. Instagram says reused content can get less reach, so each trial is a fresh edit.</li>
+  </ul>
+
+  <h3>When to share a trial with followers</h3>
+  <p>Instagram doesn't publish the numbers it uses for auto-share. So we also use your own numbers, read from the Instagram app at 72 hours:</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Result at 72 h</th><th>What to do</th></tr></thead>
+    <tbody>
+      <tr><td><span class="pill go">Share</span></td><td>Views at least the median of your last 5 normal reels (app numbers), <b>and</b> at least 6 shares + saves per 1,000 views. 6 is close to your current reel baseline of 6.4.</td></tr>
+      <tr><td><span class="pill hold">Keep hook</span></td><td>Views pass but shares + saves don't, or the reverse. Leave it hidden. Reuse the hook or the idea in a later normal post.</td></tr>
+      <tr><td><span class="pill hold">Drop</span></td><td>Both miss. Leave it hidden and note the hook as weak.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">For the first 5 trials we don't have a trial baseline, so we compare with normal reels only. The Friday build logs every trial result and checks it for you, so you only see "share this one" when a trial passes and Instagram didn't already share it.</p>
+</section>
+
+<section>
+  <div class="label">3 · Carousels</div>
+  <h2>No trial carousels, so we test the opener</h2>
+  <p>Trials exist only for reels. Photos, carousels and stories can't be trials, in the app or in any scheduler. Your carousels still drive most of your growth, so the useful part to test is slide 1, the bit that decides whether a stranger swipes.</p>
+  <h3>What we'll do (recommended)</h3>
+  <p><b>Opener test reel.</b> Take the first two slides of an upcoming carousel and turn them into a 6 to 8 second reel: the headline over stock footage, no faces, our own audio. Post it as a trial 3 to 5 days before the carousel. If it passes, the carousel keeps that opener. If it fails, the build rewrites slide 1 before the carousel goes out. This uses one of the trial slots above, not a new one.</p>
+  <h3>What we won't do</h3>
+  <ul>
+    <li><b>Posting two copies of a carousel and archiving the weaker one.</b> Followers see the same post twice, it clutters the top 12 tiles we're redesigning, and it looks amateur, which is what the grid refresh is avoiding.</li>
+    <li><b>Story A/B tests for carousels.</b> Stories only reach followers, so they don't tell us how strangers react. We keep the story quizzes for what they already do.</li>
+  </ul>
+</section>
+
+<section>
+  <div class="label">4 · Your call</div>
+  <h2>Four quick answers</h2>
+  <div class="dec">
+    <article><h3>1. Check the Trial switch</h3><p>Do step A and reply <span class="reply">trial yes</span> or <span class="reply">trial no</span>. Nothing else starts until this is yes.</p></article>
+    <article><h3>2. Start trial reels once eligible?</h3><p>2 a week until 19 Nov, then 3 a week, all extra to the current plan, built by the Friday routine. Reply <span class="reply">trials go</span> or <span class="reply">trials no</span>.</p></article>
+    <article><h3>3. Auto-share or check by hand?</h3><p>Recommended: <b>auto-share on</b>. It costs you no time, and the Friday build flags any trial that passed our rule but wasn't shared. The other option is all by hand: a 2-minute check in the app 3 days after each trial. Reply <span class="reply">auto</span> or <span class="reply">manual</span>.</p></article>
+    <article><h3>4. Test carousel openers as trial reels?</h3><p>One a week, inside the trial slots. Reply <span class="reply">openers yes</span> or <span class="reply">openers no</span>.</p></article>
+  </div>
+</section>
+
+<footer>
+  <p>Sources: <a href="https://superprofile.bio/guides/instagram-trial-reels">SuperProfile guide, quoting Instagram Help (read 15 Oct 2026)</a> · <a href="https://help.metricool.com/how-to-publish-instagram-trial-reels-in-metricool-q27tj">Metricool help: trial reels</a> · <a href="https://www.kontentino.com/q-and-a/instagram-trial-posts-photos-carousels/">Kontentino on trial carousels (5 Oct 2026)</a> · <a href="https://storrito.com/resources/how-instagram-trial-reels-work-72-hours/">Storrito on the 72-hour window</a>. The follower minimum differs between sources (200 or 1,000), so the in-app check decides. Baseline 6.4 shares + saves per 1,000 views is from your own posts. Prepared 27 Oct 2026.</p>
+</footer>
+</div>
