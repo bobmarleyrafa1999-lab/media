@@ -1,0 +1,397 @@
+{
+ "batch": "batch-plan-01",
+ "written": "2026-10-30",
+ "note": "90-day plan section 4 reels built by the Fri 30 Oct routine. first_comment lines are placeholders: Metricool firstCommentText is left EMPTY for Surafel to write. Slots: PL01 Thu 5 Nov 18:00, PL02 Fri 6 Nov 17:00, PL03 Sun 8 Nov 18:00, PL04 Mon 9 Nov 18:00.",
+ "scripts": [
+  {
+   "id": "PL01",
+   "slug": "groundhog-day",
+   "format": "R2",
+   "pillar": "Mind",
+   "rank": 1,
+   "hook": "One scene in Groundhog Day explains how people actually change.",
+   "hook_b": "Phil Connors lives the same day over and over. Watch what he does.",
+   "cards": [
+    [
+     "One scene in Groundhog Day explains how people actually change.",
+     2.5,
+     "hook"
+    ],
+    [
+     "Phil Connors relives the same day. Over and over.",
+     2.4,
+     "body"
+    ],
+    [
+     "First he uses it for himself. It works. It's empty.",
+     2.6,
+     "body"
+    ],
+    [
+     "What changes him?",
+     2.2,
+     "quiz"
+    ],
+    [
+     "Same boy.\nSame tree.\nEvery day.",
+     3.6,
+     "reveal"
+    ],
+    [
+     "He catches him every time. The boy never says thanks.",
+     2.6,
+     "body"
+    ],
+    [
+     "Aristotle said it 2,300 years earlier: you become brave by doing brave things.",
+     3.4,
+     "body"
+    ],
+    [
+     "Idea: Nicomachean Ethics II.1 (Ross) · Moodius words",
+     1.8,
+     "cite"
+    ],
+    [
+     "You become what you rehearse. That's how people change.",
+     2.4,
+     "body"
+    ],
+    [
+     "Your same day? Answer below.",
+     1.6,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate, type only. No film footage, stills, poster or music. Quote card in Playfair italic.",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 301
+   },
+   "source": {
+    "type": "idea",
+    "author": "Aristotle",
+    "work": "Nicomachean Ethics",
+    "section": "II.1",
+    "translation": "W. D. Ross",
+    "verified_at": "plan.md section 4 ✓ (25 Oct); Ross 1908 public domain"
+   },
+   "caption": "Groundhog Day (1993, dir. Harold Ramis) is a comedy about the oldest idea in ethics. Phil only changes once he stops using the repeated day for himself and starts using it for other people: lessons, small rescues, a boy who never says thanks.\n\nAristotle, Nicomachean Ethics II.1 (tr. W. D. Ross): “we become just by doing just acts, temperate by doing temperate acts, brave by doing brave acts.”\n\nYour ordinary day repeats too. Send this to the friend who’s been having the same Tuesday since March.\n\nFilm analysis by Moodius. No footage used.\n\nYour same day?\n\n— Moodius",
+   "first_comment": "(Surafel writes this: one small thing your ordinary day repeats.)",
+   "hashtags": [
+    "#groundhogday",
+    "#aristotle",
+    "#philosophy",
+    "#character",
+    "#film"
+   ],
+   "cta": "comment",
+   "length_s": null,
+   "grammar": "beat",
+   "max_s": 27,
+   "doctor": {
+    "score": 78,
+    "issues": [
+     "25.1s, above the 12-18s target",
+     "Aristotle line paraphrased on screen (NE II.1 already quoted in the Substack essay); exact Ross quote sits in the caption"
+    ],
+    "rewritten": true,
+    "by": "Claude, 30 Oct 2026"
+   }
+  },
+  {
+   "id": "PL02",
+   "slug": "seven-thousand-steps",
+   "format": "R2",
+   "pillar": "Body",
+   "rank": 2,
+   "hook": "Your watch says 10,000 steps or you failed.",
+   "hook_b": "How many steps a day does the research actually support?",
+   "cards": [
+    [
+     "Your watch says 10,000 steps or you failed.",
+     2.2,
+     "hook"
+    ],
+    [
+     "The research is kinder.",
+     1.4,
+     "body"
+    ],
+    [
+     "2022 · 15 STUDIES\nAbout 47,000 adults, followed for years.",
+     2.8,
+     "labelled"
+    ],
+    [
+     "Where did the benefit level off?",
+     2.4,
+     "quiz"
+    ],
+    [
+     "6,000–8,000 a day if you're over 60.\n8,000–10,000 if you're under.",
+     4.4,
+     "reveal"
+    ],
+    [
+     "2025, 57 studies: about 7,000 a day gave most of the benefit linked to 10,000.",
+     4.4,
+     "body"
+    ],
+    [
+     "Paluch et al., 2022 · Ding et al., 2025 · Lancet Public Health",
+     1.8,
+     "cite"
+    ],
+    [
+     "EVIDENCE\nObservational. Linked, not proven.",
+     1.8,
+     "labelled"
+    ],
+    [
+     "More steps than you do now still counts.",
+     2.2,
+     "body"
+    ],
+    [
+     "Your number? Answer below.",
+     1.4,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate, type only. Labelled cards carry the Ember label line (study, then evidence).",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "dry",
+    "seed": 302
+   },
+   "source": {
+    "type": "data",
+    "author": "Paluch et al.; Ding et al.",
+    "work": "Lancet Public Health (2022; 2025)",
+    "section": "daily steps and all-cause mortality: benefit rises then levels off; ~7,000 steps gives most of the benefit linked to 10,000",
+    "translation": "n/a",
+    "verified_at": "plan.md section 4 ✓ (25 Oct): doi 10.1016/S2468-2667(21)00302-9; 10.1016/S2468-2667(25)00164-1"
+   },
+   "caption": "10,000 steps is a round number, not a finish line. A 2022 meta-analysis of 15 cohorts (about 47,000 adults) found the drop in risk of death levelled off around 6,000–8,000 steps a day for adults over 60 and 8,000–10,000 for younger adults. A 2025 review of 57 studies found about 7,000 steps a day was linked to a 47% lower risk of death than 2,000, close to the figure for 10,000.\n\nThese are observational studies: they show links, not proof that steps cause the benefit. If you're at 3,000, 5,000 is progress.\n\nSend this to the friend whose watch has been nagging them since January.\n\nSources: Paluch et al., Lancet Public Health 7(3), 2022 · Ding et al., Lancet Public Health, 2025. General information, not medical advice.\n\nYour number?\n\n— Moodius",
+   "first_comment": "(Surafel writes this: your rough daily steps, only if you're happy to share.)",
+   "hashtags": [
+    "#walking",
+    "#health",
+    "#fitness",
+    "#steps"
+   ],
+   "cta": "comment",
+   "length_s": null,
+   "grammar": "beat",
+   "max_s": 25,
+   "doctor": {
+    "score": 80,
+    "issues": [
+     "23s total, above the 12-18s target",
+     "numbers-heavy middle: the reveal and the 2025 card each carry two figures"
+    ],
+    "rewritten": true,
+    "by": "Claude, 30 Oct 2026"
+   }
+  },
+  {
+   "id": "PL03",
+   "slug": "cook-ding",
+   "format": "R2",
+   "pillar": "Mind",
+   "rank": 3,
+   "hook": "A cook explained effortless work to his ruler.",
+   "hook_b": "The secret of effortless work, from a cook, 2,300 years ago.",
+   "cards": [
+    [
+     "A cook explained effortless work to his ruler.",
+     2.2,
+     "hook"
+    ],
+    [
+     "China, 2,300 years ago. The cook is carving an ox.",
+     3.0,
+     "body"
+    ],
+    [
+     "The ruler asks: how did your skill get so perfect?",
+     2.8,
+     "body"
+    ],
+    [
+     "What did the cook answer?",
+     2.2,
+     "quiz"
+    ],
+    [
+     "Not strength.\nNot a sharper knife.\nNineteen years.",
+     3.6,
+     "reveal"
+    ],
+    [
+     "“Now my knife has been in use for nineteen years”",
+     3.0,
+     "quote"
+    ],
+    [
+     "Zhuangzi, Book III · tr. James Legge, 1891",
+     1.6,
+     "cite"
+    ],
+    [
+     "He learned where the gaps are. The blade goes through the spaces.",
+     3.2,
+     "body"
+    ],
+    [
+     "Effortless is what nineteen years of work looks like.",
+     2.4,
+     "body"
+    ],
+    [
+     "What's your Cook Ding skill? Answer below.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate, type only. Quote card in Playfair italic.",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 303
+   },
+   "source": {
+    "type": "quote",
+    "author": "Zhuangzi",
+    "work": "Zhuangzi (Chuang Tzu)",
+    "section": "Book III, Nourishing the Lord of Life",
+    "translation": "James Legge (Sacred Books of the East XXXIX, 1891)",
+    "verified_at": "sacred-texts.com/tao/sbe39/sbe39124.htm, checked 30 Oct 2026"
+   },
+   "caption": "In the Zhuangzi, a cook carves an ox for his ruler so smoothly it sounds like music. Asked how, he says his knife has been in use for nineteen years and is still sharp, because he follows the spaces between the joints instead of hacking at the bone. The ruler replies that he has just learned how to nourish his life.\n\nThe skill that looks like ease is usually nineteen years of paying attention. (Moodius's reading of Zhuangzi, Book III, tr. James Legge.)\n\nSend this to the friend who makes a hard thing look easy.\n\nWhat's your Cook Ding skill?\n\n— Moodius",
+   "first_comment": "(Surafel writes this: the thing you can do without thinking, and how long it took.)",
+   "hashtags": [
+    "#zhuangzi",
+    "#taoism",
+    "#mastery",
+    "#philosophy",
+    "#craft"
+   ],
+   "cta": "comment",
+   "length_s": null,
+   "grammar": "beat",
+   "max_s": 27,
+   "doctor": {
+    "score": 77,
+    "issues": [
+     "25.4s total, above the 12-18s target",
+     "the ruler is unnamed on screen; the page gives only his title"
+    ],
+    "rewritten": true,
+    "by": "Claude, 30 Oct 2026"
+   }
+  },
+  {
+   "id": "PL04",
+   "slug": "liking-gap",
+   "format": "R2",
+   "pillar": "People",
+   "rank": 4,
+   "hook": "That conversation you keep replaying?",
+   "hook_b": "Psychologists found a gap in almost every first conversation.",
+   "cards": [
+    [
+     "That conversation you keep replaying?",
+     1.6,
+     "hook"
+    ],
+    [
+     "They probably liked you more than you think.",
+     2.2,
+     "body"
+    ],
+    [
+     "2018: strangers paired for five-minute chats.",
+     1.8,
+     "body"
+    ],
+    [
+     "Afterwards, who did they rate higher: themselves or their partner?",
+     3.0,
+     "quiz"
+    ],
+    [
+     "Their partner.\nMost people underestimated how much they were liked.",
+     3.6,
+     "reveal"
+    ],
+    [
+     "With real roommates, the gap lasted for months.",
+     2.2,
+     "body"
+    ],
+    [
+     "The liking gap · Boothby et al., Psychological Science, 2018",
+     1.8,
+     "cite"
+    ],
+    [
+     "You're grading your awkward bits. They're enjoying the talk.",
+     2.4,
+     "body"
+    ],
+    [
+     "Send the follow-up text. The conversation went better than you think.",
+     2.9,
+     "body"
+    ],
+    [
+     "Send this to the friend who replays conversations.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate, type only.",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 304
+   },
+   "source": {
+    "type": "data",
+    "author": "Boothby, Cooney, Sandstrom & Clark",
+    "work": "The liking gap in conversations (Psychological Science, 2018)",
+    "section": "people underestimate how much conversation partners like them; lasted months among roommates",
+    "translation": "n/a",
+    "verified_at": "plan.md section 4 ✓ (25 Oct): doi 10.1177/0956797618783714"
+   },
+   "caption": "After a conversation with someone new, most of us think it went worse than it did. Psychologists call it the liking gap: in five-minute chats between strangers, people consistently underestimated how much the other person liked them. A study of college roommates found the gap lasted for months.\n\nIt's an average, not a promise. But it means the text you're not sending is probably more welcome than you think.\n\nSend this to the friend who replays conversations at 2am.\n\nSource: Boothby, Cooney, Sandstrom & Clark, Psychological Science (2018).\n\nWho'd you text?\n\n— Moodius",
+   "first_comment": "(Surafel writes this: who you'd text, in a line.)",
+   "hashtags": [
+    "#psychology",
+    "#friendship",
+    "#socialanxiety",
+    "#kindness"
+   ],
+   "cta": "send",
+   "length_s": null,
+   "grammar": "beat",
+   "max_s": 25,
+   "doctor": {
+    "score": 81,
+    "issues": [
+     "23.7s total, above the 12-18s target",
+     "quiz card is 3.0s and ten words; the longest quiz in the batch"
+    ],
+    "rewritten": true,
+    "by": "Claude, 30 Oct 2026"
+   }
+  }
+ ]
+}
