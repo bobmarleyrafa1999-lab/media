@@ -36,10 +36,9 @@ Four ready-made covers are already in your Canva account (Projects > Designs). E
 
 ## PLAN (which colour, when)
 
-- Now to 4 Nov: nothing changes. Already-scheduled posts stay as they are.
-- 5 to 8 Nov (step 1): use the **Slate** cover for everything.
-- 9 to 15 Nov (step 2): every other carousel in your option's light colour (Bone for A/B, Sand for C);
+- Up to 8 Nov: nothing changes. Posts already scheduled stay as they are.
+- 9 to 12 Nov (step 1): use the **Slate** cover for everything.
+- 13 to 19 Nov (step 2): every other carousel in **Sand**;
   everything else Slate.
-- From 16 Nov (step 3): follow the order your option sets, one colour per post in turn
-  (A: Bone, Slate. B: Bone, Slate, Ember, Slate. C: Sand, Slate, Olive).
+- From 20 Nov (step 3): Sand, Slate, Olive in turn, one colour per post (you picked option C).
   The weekly build tells you the colour for each post, so you never need to work it out.

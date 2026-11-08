@@ -15,6 +15,8 @@ gradually so followers see an evolution, not a rebrand.
 
 Fonts stay Playfair (headlines) + Inter (labels). Ember stays the only accent.
 
+**Picked 8 Nov 2026: option C, Three columns.** Dates below were shifted from the 27 Oct draft (step 1 was 5 to 8 Nov) because the pick came later.
+
 ## The three colour options
 
 Colour follows the order posts go out (post n gets `cycle[n % len]`), so the pattern survives
@@ -33,13 +35,13 @@ Slate/Bone/Ember and avoid the banned looks (no gold, marble, statues, gradients
 
 | Step | Posts | What changes |
 |---|---|---|
-| 0 | Everything already in Metricool (to 4 Nov carousels, 7 Nov reel) | Nothing. Live and queued posts stay as they are. |
-| 1 | 5 to 8 Nov | Format v2 only, still all Slate. Same colour, sharper type. |
-| 2 | 9 to 15 Nov | Every other carousel uses the option's light colour; reels stay Slate. |
-| 3 | From 16 Nov | Full pattern. Locked in before the 20 Nov cadence switch and the 23 Nov meme test, so the test doesn't measure a look change. |
+| 0 | Everything up to 8 Nov | Nothing. Live and queued posts stay as they are. |
+| 1 | 9 to 12 Nov | Format v2 only, still all Slate. Same colour, sharper type. |
+| 2 | 13 to 19 Nov | Every other carousel uses the option's light colour; reels stay Slate. |
+| 3 | From 20 Nov | Full pattern, starting with the 20 Nov cadence switch and settled before the 23 Nov meme test. |
 
 `mocks/option-X-transition.png` shows what the top 12 look like during the change (bottom row
-today, top row 16 Nov). `mocks/option-X-end-state.png` shows the finished grid.
+today, top row step 3). `mocks/option-X-end-state.png` shows the finished grid.
 
 ## Files
 
@@ -55,4 +57,5 @@ today, top row 16 Nov). `mocks/option-X-end-state.png` shows the finished grid.
 - Reel cover (Metricool `videoThumbnailUrl`): `grid_v2.tile(hook, ground, "reel", label, no)`.
   The reel video itself is unchanged; only the cover in the grid follows the pattern.
 - Ground: step 1 = `slate`; step 2 = `ground_for(option, n, 2, kind)`; step 3 = `cycle[n % len]`,
-  n counted from the first step-3 post (16 Nov 12:00).
+  n counted from the first step-3 post (20 Nov 12:00).
+- `python3 build/grid_v2.py plan --csv posts.csv` (columns date,time,kind) prints the step and colour for each feed post; the weekly build uses it.

@@ -60,6 +60,35 @@ OPTIONS = {
               blurb="Sand, Slate and a new warm Olive in 3 repeating colours: one column each."),
 }
 
+# Surafel picked option C on 8 Nov 2026. Roll-out dates (Madrid time), shifted from the 27 Oct draft
+# because the pick came after the original step-1 window:
+CHOSEN = "C"
+STEP2_FROM = "2026-11-13"        # before this: step 1 (format v2, all Slate), from 9 Nov
+STEP3_FROM = "2026-11-20"        # full pattern; n counts posts from the first post on this day
+
+
+def step_for(date):
+    return 1 if date < STEP2_FROM else 2 if date < STEP3_FROM else 3
+
+
+def plan(posts, option=CHOSEN):
+    """posts: [(date 'YYYY-MM-DD', time 'HH:MM', kind)] in any order -> [(date, time, kind, step, ground)].
+    Step 2 alternates carousels (light colour first); step 3 cycles over every feed post in order."""
+    out, n2, n3 = [], 0, 0
+    for date, time, kind in sorted(posts):
+        st = step_for(date)
+        if st == 1:
+            g = "slate"
+        elif st == 2:
+            g = (OPTIONS[option]["step2"] if n2 % 2 == 0 else "slate") if kind == "carousel" else "slate"
+            n2 += kind == "carousel"
+        else:
+            g = OPTIONS[option]["cycle"][n3 % len(OPTIONS[option]["cycle"])]
+            n3 += 1
+        out.append((date, time, kind, st, g))
+    return out
+
+
 W = 1080
 SIZES = {"carousel": 1350, "reel": 1920}
 SIDE = 112                       # text margin (grid crops 34 px off each side of a 4:5 post)
@@ -353,9 +382,9 @@ def transition(option):
 def cmd_mocks(out):
     os.makedirs(out, exist_ok=True)
     for k, o in OPTIONS.items():
-        m = mock(end_state(k), title=f"Option {k} · {o['name']} · how the top 12 look from 16 Nov")
+        m = mock(end_state(k), title=f"Option {k} · {o['name']} · how the top 12 look once finished")
         m.save(os.path.join(out, f"option-{k}-end-state.png"), optimize=True)
-        m = mock(transition(k), title=f"Option {k} · bottom row today → top row 16 Nov")
+        m = mock(transition(k), title=f"Option {k} · bottom row today → top row step 3")
         m.save(os.path.join(out, f"option-{k}-transition.png"), optimize=True)
         print("mock", k)
 
@@ -386,8 +415,9 @@ def cmd_samples(out):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("cmd", choices=["mocks", "samples", "cover"])
-    ap.add_argument("--option", default="A")
+    ap.add_argument("cmd", choices=["mocks", "samples", "cover", "plan"])
+    ap.add_argument("--csv", help="plan: CSV with date,time,kind columns")
+    ap.add_argument("--option", default=CHOSEN)
     ap.add_argument("--index", type=int, default=0, help="post number since the step-3 anchor")
     ap.add_argument("--kind", default="carousel", choices=["carousel", "reel"])
     ap.add_argument("--ground", help="override the ground the pattern would choose")
@@ -400,6 +430,12 @@ def main():
         cmd_mocks(a.out or os.path.join(ROOT, "mocks"))
     elif a.cmd == "samples":
         cmd_samples(a.out or os.path.join(ROOT, "renders"))
+    elif a.cmd == "plan":
+        import csv
+        rows = [(r["date"], r["time"], r["kind"]) for r in csv.DictReader(open(a.csv))]
+        print("date,time,kind,step,ground")
+        for r in plan(rows, a.option):
+            print(",".join(map(str, r)))
     else:
         cyc = OPTIONS[a.option]["cycle"]
         g = a.ground or cyc[a.index % len(cyc)]
