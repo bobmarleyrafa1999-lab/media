@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Moodius meme curation queue. Plain Python + Pillow, no network, no logins.
+"""Moodius meme curation queue. Plain Python + Pillow (+ ImageHash), no network, no logins.
 
 Discover -> Remove duplicates -> Review humour and context -> Check reuse status
 -> Prepare draft -> Owner approval -> Schedule -> Measure
@@ -9,18 +9,21 @@ The queue is one CSV (data/queue.csv) so it opens in Numbers/Excel/Sheets.
 Usage (from this folder's parent):
   python3 tools/meme_queue.py import saved-links.txt   # one link per line: URL | creator | note
   python3 tools/meme_queue.py import finds.csv         # columns: url, creator, platform, reuse_terms, note
+  python3 tools/meme_queue.py import-images FOLDER     # saved screenshots; repeats of a logged image are skipped
+  python3 tools/meme_queue.py check IMAGE ...          # does this picture match anything already in the queue?
   python3 tools/meme_queue.py concepts                 # load data/concepts.json as original drafts
   python3 tools/meme_queue.py batch [N]                # next N items to review, highest score first
   python3 tools/meme_queue.py set ID field=value ...   # e.g. reuse_status=permission-needed humour=4
   python3 tools/meme_queue.py inspire ID NEWID "setup" "punch"   # write an original joke from an inspiration-only find
   python3 tools/meme_queue.py decide approve MM01 MM02 # or edit / reject, with --note "..."
-  python3 tools/meme_queue.py render [ID ...]          # 1080x1350 previews into renders/
+  python3 tools/meme_queue.py render [ID ...]          # 1080x1350 previews into renders/ (+ image fingerprint)
+  python3 tools/meme_queue.py render --rough [ID ...]  # hand-drawn charts via Rough.js (needs Node.js) -> ID-rough.png
   python3 tools/meme_queue.py learn                    # what the owner's choices say (never loosens rules)
 
 Nothing here posts, schedules or contacts anyone. Scheduling stays with the
 account thread after the owner approves.
 """
-import csv, json, os, re, sys, difflib, datetime
+import csv, json, os, re, sys, difflib, datetime, subprocess, zlib
 from urllib.parse import urlsplit, parse_qsl, urlencode
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -35,7 +38,7 @@ FIELDS = ["id", "kind", "status", "url", "url_key", "creator", "platform", "foun
           "reuse_status", "reuse_terms", "licence_commercial", "licence_edits", "watermark_kept",
           "permission_ref", "inspired_by", "pillar", "theme", "setup", "punch", "caption",
           "image_context", "humour", "relevance", "thought", "flags", "decision",
-          "decision_note", "decided_at"]
+          "decision_note", "decided_at", "image_file", "phash"]
 
 REUSE = ("original", "authorised", "permission-needed", "inspiration-only")
 STATUSES = ("discovered", "reviewed", "drafted", "approved", "edit", "rejected", "scheduled", "measured")
@@ -54,6 +57,10 @@ EXCLUDE = {
     "rage-bait": r"\b(unpopular opinion|fight me|controversial|ratio|triggered)\b",
 }
 TOO_CLOSE = 0.6   # an original written from an inspiration-only find must stay below this similarity
+# Perceptual-hash distance (0-64) at or below which two pictures count as the same meme.
+# A cropped, halved, low-quality JPEG re-save scores 0; our 20 distinct drafts are all 8 or more apart.
+IMAGE_DUP = 4
+IMAGES = (".png", ".jpg", ".jpeg", ".webp", ".heic", ".gif")
 
 TRACKING = {"utm_source", "utm_medium", "utm_campaign", "utm_content", "utm_term", "igsh", "igshid",
             "si", "fbclid", "ref", "share_id", "s", "t"}
@@ -86,6 +93,38 @@ def similarity(a, b):
     if not a or not b:
         return 0.0
     return difflib.SequenceMatcher(None, a, b).ratio()
+
+
+def _imagehash():
+    try:
+        import imagehash
+    except ImportError:
+        raise SystemExit("ImageHash isn't installed: run  pip install -r requirements.txt")
+    return imagehash
+
+
+def image_hash(path):
+    """Perceptual fingerprint of a picture. Survives resizing, light cropping and JPEG re-saves."""
+    from PIL import Image
+    with Image.open(path) as im:
+        return str(_imagehash().phash(im))
+
+
+def hash_distance(a, b):
+    ih = _imagehash()
+    return ih.hex_to_hash(a) - ih.hex_to_hash(b)
+
+
+def image_matches(phash, rows, skip_id=None, limit=IMAGE_DUP):
+    """Rows whose picture is (nearly) the same as this one, closest first. Rejected rows don't count."""
+    out = []
+    for r in rows:
+        if r.get("id") == skip_id or not r.get("phash") or r.get("status") == "rejected":
+            continue
+        dist = hash_distance(phash, r["phash"])
+        if dist <= limit:
+            out.append((dist, r["id"]))
+    return sorted(out)
 
 
 def flags_for(row):
@@ -187,6 +226,30 @@ def import_file(path, rows):
     return added, dups
 
 
+def import_images(folder, rows, creator=""):
+    """Add saved screenshots as candidates. A picture we already logged (even re-saved or cropped) is skipped."""
+    files = sorted(f for f in os.listdir(folder) if f.lower().endswith(IMAGES)) if os.path.isdir(folder) else [folder]
+    n = sum(1 for r in rows if r["id"].startswith("C"))
+    added, dups = 0, []
+    for name in files:
+        path = os.path.join(folder, name) if os.path.isdir(folder) else name
+        try:
+            h = image_hash(path)
+        except Exception as e:   # unreadable or unsupported file: report, don't crash the batch
+            dups.append((os.path.basename(path), f"unreadable ({type(e).__name__})"))
+            continue
+        hit = image_matches(h, rows)
+        if hit:
+            dups.append((os.path.basename(path), f"same as {hit[0][1]} (distance {hit[0][0]})"))
+            continue
+        n += 1
+        rows.append({"id": f"C{n:03d}", "kind": "candidate", "status": "discovered", "creator": creator,
+                     "platform": "screenshot", "found_on": now()[:10], "image_file": os.path.abspath(path),
+                     "phash": h})
+        added += 1
+    return added, dups
+
+
 def load_concepts(rows):
     have = {r["id"] for r in rows}
     data = json.load(open(CONCEPTS, encoding="utf-8"))["concepts"]
@@ -230,6 +293,9 @@ def decide(rows, verdict, ids, note=""):
             continue
         if verdict == "approve":
             why = gate(r)
+            if r.get("phash"):
+                why += [f"looks the same as {i} (image distance {d}): don't post one meme twice"
+                        for d, i in image_matches(r["phash"], rows, skip_id=r["id"])]
             if why:
                 blocked[r["id"]] = why
                 continue
@@ -311,11 +377,108 @@ def _fit(d, text, name, width, max_lines, start, floor=44):
     return _font(name, floor)
 
 
-def render(c, out_dir=RENDERS):
+class CleanPen:
+    """Straight Pillow shapes: the house style so far."""
+    def __init__(self, d, cid):
+        self.d = d
+
+    def line(self, xy, fill, width, curve=False):
+        self.d.line(xy, fill=fill, width=width, joint="curve" if curve else None)
+
+    def rect(self, box, fill=None, outline=None, width=0, radius=0):
+        if radius:
+            self.d.rounded_rectangle(box, radius, fill=fill, outline=outline, width=width)
+        else:
+            self.d.rectangle(box, fill=fill, outline=outline, width=width)
+
+    def ellipse(self, box, outline, width):
+        self.d.ellipse(box, outline=outline, width=width)
+
+
+class RoughPen(CleanPen):
+    """Hand-drawn shapes from Rough.js (tools/vendor/roughjs, run offline with Node).
+    Seeded from the meme id, so the same meme always comes out the same."""
+    SCRIPT = os.path.join(HERE, "rough_paths.js")
+
+    def __init__(self, d, cid):
+        self.d, self.seed = d, zlib.crc32(cid.encode()) % 100000 + 1
+
+    def _paths(self, kind, args, **opt):
+        opt = {"seed": self.seed, "roughness": 1.4, "bowing": 1.2, **opt}
+        try:
+            out = subprocess.run(["node", self.SCRIPT], input=json.dumps({"kind": kind, "args": args, "options": opt}),
+                                 capture_output=True, text=True, check=True, timeout=30).stdout
+        except FileNotFoundError:
+            raise SystemExit("Hand-drawn style needs Node.js (free, nodejs.org). Or render without --rough.")
+        return json.loads(out)
+
+    def _draw(self, paths, width):
+        for p in paths:
+            col = p["stroke"] if p.get("stroke") not in (None, "none") else p.get("fill")
+            w = max(1, round(float(p.get("strokeWidth") or width)))
+            for pts in _path_points(p["d"]):
+                if len(pts) > 1:
+                    self.d.line(pts, fill=col, width=w, joint="curve")
+
+    def line(self, xy, fill, width, curve=False):
+        pts = [list(map(float, pt)) for pt in xy] if not isinstance(xy[0], (int, float)) else \
+            [[float(xy[0]), float(xy[1])], [float(xy[2]), float(xy[3])]]
+        if len(pts) == 2:
+            self._draw(self._paths("line", [*pts[0], *pts[1]], stroke=fill, strokeWidth=width), width)
+        else:
+            self._draw(self._paths("curve" if curve else "linearPath", [pts], stroke=fill, strokeWidth=width), width)
+
+    def rect(self, box, fill=None, outline=None, width=0, radius=0):
+        x0, y0, x1, y1 = map(float, box)
+        if fill and not outline and y1 - y0 < 30:   # hairline bars turn to noise when sketched
+            return CleanPen.rect(self, box, fill=fill, radius=radius)
+        opt = {"stroke": outline or fill or "none", "strokeWidth": width or 3}
+        if fill:
+            opt.update(fill=fill, fillStyle="hachure", hachureGap=9, fillWeight=3, hachureAngle=-41)
+        self._draw(self._paths("rectangle", [x0, y0, x1 - x0, y1 - y0], **opt), width or 3)
+
+    def ellipse(self, box, outline, width):
+        x0, y0, x1, y1 = map(float, box)
+        self._draw(self._paths("ellipse", [(x0 + x1) / 2, (y0 + y1) / 2, x1 - x0, y1 - y0],
+                               stroke=outline, strokeWidth=width), width)
+
+
+def _path_points(d, steps=14):
+    """Flatten an SVG path made of M / L / C commands (all Rough.js emits) into polylines."""
+    toks = re.findall(r"[MLC]|-?\d*\.?\d+(?:e-?\d+)?", d)
+    lines, cur, i, cmd = [], [], 0, None
+    while i < len(toks):
+        if toks[i] in "MLC":
+            cmd, i = toks[i], i + 1
+            continue
+        if cmd == "M":
+            if len(cur) > 1:
+                lines.append(cur)
+            cur, i = [(float(toks[i]), float(toks[i + 1]))], i + 2
+        elif cmd == "L":
+            cur.append((float(toks[i]), float(toks[i + 1])))
+            i += 2
+        elif cmd == "C":
+            (x0, y0), v = cur[-1], [float(t) for t in toks[i:i + 6]]
+            for k in range(1, steps + 1):
+                t = k / steps
+                a, b, c_, e = (1 - t) ** 3, 3 * (1 - t) ** 2 * t, 3 * (1 - t) * t * t, t ** 3
+                cur.append((a * x0 + b * v[0] + c_ * v[2] + e * v[4], a * y0 + b * v[1] + c_ * v[3] + e * v[5]))
+            i += 6
+        else:
+            raise ValueError("unexpected path data")
+    if len(cur) > 1:
+        lines.append(cur)
+    return lines
+
+
+def render(c, out_dir=RENDERS, style=None):
     from PIL import Image, ImageDraw
     os.makedirs(out_dir, exist_ok=True)
+    style = style or c.get("style", "clean")
     im = Image.new("RGB", (W, H), C["slate"])
     d = ImageDraw.Draw(im)
+    pen = (RoughPen if style == "rough" else CleanPen)(d, c["id"])
     tw = W - 2 * M
     kind = c.get("render", "type")
     small = _font("sans_md", 30)
@@ -330,18 +493,18 @@ def render(c, out_dir=RENDERS):
         d.line((M, y + 28, M + 80, y + 28), fill=C["ember"], width=4)
         _block(d, M, y + 70, c["punch"], fp, C["bone"], tw)
         if c["id"] == "MB04":
-            d.rounded_rectangle((M, H - 300, W - M, H - 284), 8, fill=C["charcoal"])
-            d.rounded_rectangle((M, H - 300, M + 22, H - 284), 8, fill=C["ember"])
+            pen.rect((M, H - 300, W - M, H - 284), fill=C["charcoal"], radius=8)
+            pen.rect((M, H - 300, M + 22, H - 284), fill=C["ember"], radius=8)
             d.text((M, H - 270), "2%", font=small, fill=C["ash"])
         if c["id"] == "MM06":
             gy = H - 330
             for i in range(4):
-                d.rounded_rectangle((M + i * 226, gy, M + i * 226 + 200, gy + 120), 10, fill=C["charcoal"])
-            d.rounded_rectangle((M, gy + 150, W - M, gy + 158), 4, fill=C["graphite"])
-            d.rounded_rectangle((M, gy + 150, M + 140, gy + 158), 4, fill=C["ash"])
+                pen.rect((M + i * 226, gy, M + i * 226 + 200, gy + 120), fill=C["charcoal"], radius=10)
+            pen.rect((M, gy + 150, W - M, gy + 158), fill=C["graphite"], radius=4)
+            pen.rect((M, gy + 150, M + 140, gy + 158), fill=C["ash"], radius=4)
         if c["id"] == "MP01":
             d.text((M, M + 40), "fine.", font=_font("sans_md", 44), fill=C["ash"])
-            d.line((M - 6, M + 68, M + 110, M + 68), fill=C["ember"], width=5)
+            pen.line((M - 6, M + 68, M + 110, M + 68), fill=C["ember"], width=5)
 
     elif kind == "bars":
         y = _block(d, M, M + 80, c["setup"], _fit(d, c["setup"], "serif", tw, 2, 76), C["bone"], tw) + 70
@@ -349,7 +512,7 @@ def render(c, out_dir=RENDERS):
         for i, (lab, v) in enumerate(c["bars"]):
             y = _block(d, M, y, lab, _font("sans_md", 38), C["ash"], tw) + 10
             bw = max(18, int((tw - 120) * v / mx))
-            d.rectangle((M, y, M + bw, y + 70), fill=C["ember"] if i == 0 else C["bone"])
+            pen.rect((M, y, M + bw, y + 70), fill=C["ember"] if i == 0 else C["bone"])
             d.text((M + bw + 20, y + 8), str(v), font=_font("serif", 52), fill=C["bone"])
             y += 140
         d.text((M, H - M - 30), c["punch"], font=small, fill=C["ash"])
@@ -357,12 +520,13 @@ def render(c, out_dir=RENDERS):
     elif kind in ("line", "progress"):
         y0 = _block(d, M, M + 60, c["setup"], _font("serif", 70), C["bone"], tw)
         top, bot, left, right = y0 + 80, H - 330, M + 10, W - M
-        d.line((left, bot, right, bot), fill=C["charcoal"], width=3)
-        d.line((left, top, left, bot), fill=C["charcoal"], width=3)
+        axis = C["charcoal"] if style == "clean" else C["ash"]
+        pen.line((left, bot, right, bot), fill=axis, width=3)
+        pen.line((left, top, left, bot), fill=axis, width=3)
         if kind == "line":
             pts, mx = c["line"], max(c["line"])
             xy = [(left + i * (right - left) / (len(pts) - 1), bot - (bot - top) * p / mx) for i, p in enumerate(pts)]
-            d.line(xy, fill=C["ember"], width=8, joint="curve")
+            pen.line(xy, fill=C["ember"], width=8, curve=True)
             for i, lab in enumerate(c.get("labels", [])):
                 if lab:
                     tx = min(xy[i][0], right - d.textlength(lab, font=small))
@@ -370,11 +534,11 @@ def render(c, out_dir=RENDERS):
             note = "Suddenly ready to reorganise my whole life"
             _block(d, int(right - 520), int(top - 10), note, _font("sans_md", 30), C["bone"], 430)
         else:
-            d.line((left, bot, right, top), fill=C["charcoal"], width=6)
+            pen.line((left, bot, right, top), fill=C["charcoal"] if style == "clean" else C["ash"], width=6)
             d.text((right - 190, top - 46), "Expected", font=small, fill=C["ash"])
             pts = [0, .12, .06, .2, .16, .05, .14, .24, .2, .3, .27, .34]
             xy = [(left + i * (right - left) / (len(pts) - 1), bot - (bot - top) * p) for i, p in enumerate(pts)]
-            d.line(xy, fill=C["ember"], width=8, joint="curve")
+            pen.line(xy, fill=C["ember"], width=8, curve=True)
             for i, lab, dy in ((2, "had a cold", 22), (5, "Christmas", 22), (9, "remembered", -64)):
                 d.text((xy[i][0] - 60, xy[i][1] + dy), lab, font=small, fill=C["bone"])
             d.text((right - 120, xy[-1][1] + 24), "Actual", font=small, fill=C["ember"])
@@ -387,19 +551,23 @@ def render(c, out_dir=RENDERS):
         y += 140
         endy = H - 300
         for q in c["flow"]:
-            d.rounded_rectangle((M, y, M + 460, y + 110), 14, outline=C["ash"], width=3)
+            pen.rect((M, y, M + 460, y + 110), outline=C["ash"], width=3, radius=14)
             d.text((M + 28, y + 34), q, font=f, fill=C["bone"])
             d.text((M + 500, y + 34), "yes", font=small, fill=C["ash"])
             d.text((M + 500, y + 70), "no", font=small, fill=C["ash"])
-            d.line((M + 580, y + 55, W - M - 120, endy), fill=C["charcoal"], width=3)
+            pen.line((M + 580, y + 55, W - M - 120, endy), fill=C["charcoal"] if style == "clean" else C["ash"], width=3)
             y += 190
-        d.rounded_rectangle((W - M - 520, endy, W - M, endy + 140), 18, fill=C["ember"])
+        if style == "clean":
+            pen.rect((W - M - 520, endy, W - M, endy + 140), fill=C["ember"], radius=18)
+        else:   # text sits on this box, so keep it solid and only rough the outline
+            d.rectangle((W - M - 516, endy + 4, W - M - 4, endy + 136), fill=C["ember"])
+            pen.rect((W - M - 520, endy, W - M, endy + 140), outline=C["ember"], width=5)
         d.text((W - M - 490, endy + 44), c["punch"], font=_font("serif", 50), fill=C["slate"])
 
     elif kind == "venn":
         cx, cy, r = W // 2, H // 2 + 20, 330
-        d.ellipse((cx - r - 14, cy - r, cx + r - 14, cy + r), outline=C["bone"], width=6)
-        d.ellipse((cx - r + 14, cy - r, cx + r + 14, cy + r), outline=C["ember"], width=6)
+        pen.ellipse((cx - r - 14, cy - r, cx + r - 14, cy + r), outline=C["bone"], width=6)
+        pen.ellipse((cx - r + 14, cy - r, cx + r + 14, cy + r), outline=C["ember"], width=6)
         _block(d, M, M, c["venn"][0], _font("sans_md", 40), C["bone"], tw)
         _block(d, M, H - M - 100, c["venn"][1], _font("sans_md", 40), C["ember"], tw)
         f = _font("serif", 72)
@@ -414,7 +582,7 @@ def render(c, out_dir=RENDERS):
 
     d.text((W - M - d.textlength("moodius", font=_font("sans_sb", 26)), H - 70), "moodius",
            font=_font("sans_sb", 26), fill=C["charcoal"])
-    path = os.path.join(out_dir, f"{c['id']}.png")
+    path = os.path.join(out_dir, f"{c['id']}{'-rough' if style == 'rough' else ''}.png")
     im.save(path, optimize=True)
     return path
 
@@ -468,10 +636,29 @@ def main(argv):
         for k, v in blocked.items():
             print(f"not approved {k}: " + "; ".join(v))
     elif cmd == "render":
+        style = "rough" if "--rough" in args else None
+        args = [a for a in args if a != "--rough"]
         data = json.load(open(CONCEPTS, encoding="utf-8"))["concepts"]
+        by_id = {r["id"]: r for r in rows}
         for c in data:
             if not args or c["id"] in args:
-                print(render(c))
+                path = render(c, style=style)
+                print(path)
+                if c["id"] in by_id:   # fingerprint the latest render so the same picture can't be approved twice
+                    by_id[c["id"]]["phash"] = image_hash(path)
+                    for dist, other in image_matches(by_id[c["id"]]["phash"], rows, skip_id=c["id"]):
+                        print(f"   warning: looks the same as {other} (image distance {dist})")
+        save(rows)
+    elif cmd == "import-images":
+        a, dups = import_images(args[0], rows, args[1] if len(args) > 1 else "")
+        save(rows)
+        print(f"added {a}, skipped {len(dups)}")
+        for name, why in dups:
+            print(f"   {name}: {why}")
+    elif cmd == "check":
+        for path in args:
+            hit = image_matches(image_hash(path), rows)
+            print(f"{path}: " + (", ".join(f"{i} (distance {d})" for d, i in hit) if hit else "new"))
     elif cmd == "learn":
         print(json.dumps(learn(rows), indent=2))
     else:

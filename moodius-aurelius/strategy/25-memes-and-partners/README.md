@@ -49,7 +49,9 @@ Brief: more humour, warmth and curiosity; intelligent memes people send to frien
 
 | Tool | Verdict | Why |
 |---|---|---|
-| Pillow 12.3.0 | 🟢 use | MIT-CMU licence. 12.2.0+ fixes CVE-2026-42309 (heap overflow). 13.0.0 is 11 days old, so wait. Already used across the repo. |
+| Pillow 13.0.0 | 🟢 use | MIT-CMU licence. Moved from 12.3.0 on 8 Nov: 12.3.0 has 55 published advisories, all fixed in 13.0.0. |
+| ImageHash 4.3.2 | 🟢 use | BSD-2. Picture fingerprints for duplicate checks (added 8 Nov). |
+| Rough.js 4.6.6 | 🟢 use | MIT, vendored, offline. Optional hand-drawn charts (`render --rough`, added 8 Nov). |
 | instaloader 4.16 | 🔴 skip | MIT, maintained (released 26 Oct). Needs an Instagram login for reliable use, Instagram blocks datacenter IPs, its endpoints change every few weeks, and it downloads media we have no right to repost. |
 | gallery-dl 1.32.18 | 🔴 skip | GPL-2.0, maintained (released 25 Oct). Same login and rights problems for Instagram. Reddit's API needs approval for commercial use. Our footage workflow already fetches licensed assets. |
 | Meta Hashtag Search API | 🔴 skip | App Review, 30 hashtags per 7 days, returns media IDs with no reuse rights. |
