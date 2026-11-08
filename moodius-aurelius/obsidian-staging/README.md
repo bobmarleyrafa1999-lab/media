@@ -1,0 +1,1 @@
+Staging for Obsidian vault "Moodius Aurelius" notes written by container threads that cannot reach the Mac. Copy each file to the same path in the vault, add its one-line entry at the top of "50 Context Log/Context Log.md", and merge any "To-dos added" into "00 Home/To-dos.md" without duplicates. Delete the staged file once copied.

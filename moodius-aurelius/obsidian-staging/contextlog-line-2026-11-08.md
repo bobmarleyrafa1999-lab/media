@@ -1,0 +1,1 @@
+- [[2026-11-08 Weekly build 10-16 Nov]] — queue rebuilt after the missed Friday routine: 28 posts scheduled 9-16 Nov, first week of grid v2 (option C), Epictetus arc 12-15 Nov.
