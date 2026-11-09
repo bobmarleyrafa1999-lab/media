@@ -1,0 +1,277 @@
+{
+ "n": 3,
+ "essay": "essays/03-the-loneliness-of-being-fine.md",
+ "title": "The Loneliness of Being Fine",
+ "ab_alt": "Who Would Know If You Weren't Fine?",
+ "pillar": "Identity",
+ "reels": [
+  {
+   "id": "S03E",
+   "slug": "who-would-know",
+   "format": "E",
+   "series": "Masculinity, Reconsidered",
+   "pillar": "Identity",
+   "hook": "If you weren't okay, who would know?",
+   "hook_b": "Not who would care. Who would actually know.",
+   "cards": [
+    [
+     "If you weren't okay, who would know?",
+     2.6,
+     "hook"
+    ],
+    [
+     "Not who would care.",
+     1.4,
+     "body"
+    ],
+    [
+     "Who would notice before you said a word.",
+     2.2,
+     "body"
+    ],
+    [
+     "For a lot of men, it's a short list.",
+     2.4,
+     "body"
+    ],
+    [
+     "In 1990, 3% of US men had no close friend. In 2021: 15%.",
+     3.4,
+     "body"
+    ],
+    [
+     "Survey Center on American Life (2021)",
+     1.8,
+     "cite"
+    ],
+    [
+     "Being fine alone is a skill. Being reachable is another.",
+     2.8,
+     "body"
+    ],
+    [
+     "Send this to one name on yours.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip: phone face-down on a table by a lamp (tag phone-table), else V1 + grain.",
+   "footage": "phone-table",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 305
+   },
+   "source": {
+    "type": "data",
+    "author": "Daniel Cox",
+    "work": "The State of American Friendship (Survey Center on American Life)",
+    "section": "2021 survey",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 survey (E18), verified 21 Oct 2026 + Moodius reflection",
+   "caption": "Most men aren't lonely in the way headlines describe. They're fine. They have colleagues and a group chat.\n\nThe better question is who would know if you weren't.\n\nWho's on your list?\n\nEvidence: Survey Center on American Life (Cox, 2021). Reflection: Moodius. Full essay \"The Loneliness of Being Fine\" on the Substack, link in bio.",
+   "first_comment": "No names needed: how many people are on your list?",
+   "hashtags": [
+    "#mensmentalhealth",
+    "#malefriendship",
+    "#loneliness",
+    "#emotionalintelligence",
+    "#stoicism"
+   ],
+   "cta": "send",
+   "length_s": 18.6
+  },
+  {
+   "id": "S03B",
+   "slug": "two-hundred-hours",
+   "format": "B",
+   "series": "Quiet Truths",
+   "pillar": "Identity",
+   "hook": "Close friendship takes about 200 hours.",
+   "hook_b": "The maths of friendship nobody told you.",
+   "cards": [
+    [
+     "Close friendship takes about 200 hours.",
+     2.4,
+     "hook"
+    ],
+    [
+     "That's an evening a week, for a year.",
+     2.2,
+     "body"
+    ],
+    [
+     "School scheduled it for you. Adult life doesn't.",
+     2.4,
+     "body"
+    ],
+    [
+     "So put it in the calendar. Same night, every other week.",
+     2.9,
+     "body"
+    ],
+    [
+     "Study: Hall, J. Soc. Pers. Relationships (2019)",
+     2.0,
+     "cite"
+    ],
+    [
+     "Quiet Truths · Moodius",
+     1.2,
+     "body"
+    ],
+    [
+     "Save this. Then text them.",
+     1.8,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate (series control look).",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 306
+   },
+   "source": {
+    "type": "data",
+    "author": "Jeffrey Hall",
+    "work": "How many hours does it take to make a friend? (JSPR 36(4))",
+    "section": "Studies 1-2",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 study (E34), figures verified 21 Oct 2026",
+   "caption": "Jeffrey Hall's research estimated roughly 50 hours to go from acquaintance to casual friend, 90 to friend, and more than 200 to close friend.\n\nNothing in adult life schedules those hours for you. That's the problem, and the fix.\n\nWho would you give the next 200 to?\n\nEvidence: Hall (2019). Aristotle said the same with salt (Nicomachean Ethics VIII.3). Full essay on the Substack, link in bio.",
+   "first_comment": "Who's one person you'd want to spend the 200 hours with?",
+   "hashtags": [
+    "#mensmentalhealth",
+    "#malefriendship",
+    "#loneliness",
+    "#emotionalintelligence",
+    "#stoicism"
+   ],
+   "cta": "save",
+   "length_s": 14.9
+  }
+ ],
+ "carousel": [
+  [
+   "Cover",
+   "The loneliness of being fine.",
+   "If you weren't okay, who would know?",
+   "claim cover"
+  ],
+  [
+   "The number",
+   "Men with no close friends: 3% in 1990. 15% in 2021.",
+   "Survey · Cox, Survey Center on American Life (2021)",
+   "term card"
+  ],
+  [
+   "The rule",
+   "Of all the masculine norms studied, self-reliance was one most tied to poorer mental health.",
+   "Meta-analysis · Wong et al., J. Counseling Psychology (2017)",
+   "term card"
+  ],
+  [
+   "The empty shelf",
+   "Some men were steered away from feeling-words so early the shelf is empty. A theory, not a diagnosis.",
+   "Theory · Levant (1992)",
+   "pull quote"
+  ],
+  [
+   "The maths",
+   "Acquaintance → friend ≈ 90 hours. Close friend: 200+.",
+   "Study · Hall (2019)",
+   "numbered step"
+  ],
+  [
+   "The old version",
+   "Aristotle: you can't really know someone until you've eaten salt together.",
+   "Nicomachean Ethics VIII.3 · paraphrased",
+   "pull quote"
+  ],
+  [
+   "Sign-off",
+   "Who would know? Pick one name. Make it a recurring plan.",
+   "Full essay on the Substack · link in bio · send this to that name",
+   "sign-off"
+  ]
+ ],
+ "carousel_caption": "Being fine on your own is a skill. Being reachable is a different one, and most men were only taught the first.\n\nSwipe for the numbers, the rule, and the maths.\n\nWho would know if you weren't okay?\n\nEvidence: Cox 2021 (survey), Wong et al. 2017 (meta-analysis), Hall 2019, Levant 1992 (theory). Philosophy: Aristotle, NE VIII.3. Reflection: Moodius.",
+ "cards": [
+  [
+   "If you weren't okay, who would know?",
+   "Moodius"
+  ],
+  [
+   "Being fine alone is a skill. Being reachable is another.",
+   "Moodius"
+  ],
+  [
+   "Self-reliance is a strength until it's the reason you never ask.",
+   "Moodius, after Wong et al. (2017)"
+  ],
+  [
+   "Close friendship takes about 200 hours. Nothing in adult life schedules them for you.",
+   "Moodius, after Hall (2019)"
+  ],
+  [
+   "You can't really know someone until you've eaten salt together.",
+   "Aristotle, Nicomachean Ethics VIII.3 · paraphrased"
+  ]
+ ],
+ "stories": [
+  [
+   "Poll",
+   "How many people would notice if you weren't okay?",
+   "Poll: 0–1 / 2–3 / 4+. Next frame: \"Whatever your number, Thursday's essay is for you.\""
+  ],
+  [
+   "Prompt",
+   "Text one friend tonight. No reason.",
+   "Plain Slate story with a 'Done' emoji slider. Repost a few slider screenshots only with the sender's OK."
+  ],
+  [
+   "Link",
+   "New essay: The Loneliness of Being Fine",
+   "Cover still + link sticker + \"The numbers, the rule, the 200 hours.\" Highlight: Identity."
+  ]
+ ],
+ "pins": [
+  [
+   "The Loneliness of Being Fine: Men and Friendship",
+   "Why so many men have nobody who'd notice if they weren't okay, what the research says, and a 20-minute reachability audit."
+  ],
+  [
+   "How Many Hours Does It Take to Make a Close Friend?",
+   "About 200, according to research. What that means for adult friendship and how to schedule it."
+  ],
+  [
+   "Male Friendship Is Declining. Here's the Data.",
+   "Survey numbers from 1990 to 2021, the masculine norm most tied to poor mental health, and what helps."
+  ],
+  [
+   "Self-Reliance and Men's Mental Health",
+   "A meta-analysis of 19,000+ people found self-reliance among the norms most tied to struggle. An evidence-labelled essay."
+  ],
+  [
+   "Aristotle on Friendship, for Modern Men",
+   "Friendships of use, of pleasure and of character, and the salt it takes to build the third kind."
+  ]
+ ],
+ "notes": [
+  "A better question than \"are you lonely?\": if you weren't okay, who would know? Not who would care. Who would notice before you said anything. For many men the list is short, and they'd still say they're fine.",
+  "Jeffrey Hall's research estimated around 200 hours together to go from friend to close friend. That's an evening a week for a year. School scheduled those hours. Adult life doesn't. That's most of the male loneliness story, and the fix.",
+  "A 2017 meta-analysis of 78 samples found that of all masculine norms, self-reliance was among the few consistently linked to poorer mental health. It doesn't look like a vice. It looks like competence. That's why it's hard to see."
+ ],
+ "visuals": {
+  "look": "V2 phone on a table / lit window at night (no people), else V1 + grain",
+  "type": "As standard; the 3% → 15% slide sets the two numbers in Playfair 160, Ember on the 15% only",
+  "music": "night (ambient.py) or MO-MAS-1 / MO-MAS-2: low piano, warm room tone",
+  "pinterest": "1000×1500, Slate background with Bone type; the data pin uses the two numbers large"
+ }
+}

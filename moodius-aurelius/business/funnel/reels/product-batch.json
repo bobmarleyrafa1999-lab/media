@@ -1,0 +1,370 @@
+{
+  "batch": "product-01",
+  "written": "2026-10-21",
+  "schema": "cards = [text, seconds, kind]; kind: hook | body | quote | cite | cta. Same schema as reels-engine/scripts/batch-01.json. Product reels: the CTA is a DM keyword so each reel's sales can be traced (community agent sends /r/journal?src=dm_<id>).",
+  "scripts": [
+    {
+      "id": "P001",
+      "slug": "thirty-days-of-looking",
+      "format": "R1",
+      "pillar": "Journal",
+      "rank": 1,
+      "hook": "Most people have never once looked at their defaults.",
+      "hook_b": "You react the same way every time. Ever asked why?",
+      "cards": [
+        [
+          "Most people have never once looked at their defaults.",
+          2.6,
+          "hook"
+        ],
+        [
+          "How you react. What you want. The story you tell about yourself.",
+          3.0,
+          "body"
+        ],
+        [
+          "Defaults are efficient. But a default you've never looked at isn't a choice.",
+          3.4,
+          "body"
+        ],
+        [
+          "So I made a journal for looking.",
+          2.0,
+          "body"
+        ],
+        [
+          "30 days. One reading, three questions, one exercise a day.",
+          3.0,
+          "body"
+        ],
+        [
+          "Comment JOURNAL and I'll send you the link.",
+          2.4,
+          "cta"
+        ]
+      ],
+      "visual": "V1 flat Slate. Last card shows the cover.",
+      "footage": null,
+      "audio": {
+        "engine": "ambient",
+        "mood": "night",
+        "seed": 301
+      },
+      "source": {
+        "type": "original"
+      },
+      "caption": "The Unexamined Self is a 30-day guided reflection journal: Stoic philosophy next to what psychology actually knows, every source cited, nothing promised that the evidence can't back.\n\nTen minutes a day. Digital (type-in) and print editions. £14.\n\nComment JOURNAL and I'll DM you the link.\n\nWhat would you look at first?\n\n— Moodius",
+      "first_comment": "Which default of yours would you look at first?",
+      "hashtags": [
+        "#journaling",
+        "#stoicism",
+        "#selfawareness"
+      ],
+      "cta": "comment",
+      "dm_keyword": "JOURNAL",
+      "track": "/r/journal?src=dm_reel_p001"
+    },
+    {
+      "id": "P002",
+      "slug": "what-not-why",
+      "format": "R2",
+      "pillar": "Journal",
+      "rank": 2,
+      "hook": "Stop asking yourself why. Ask what.",
+      "hook_b": "\"Why am I like this?\" is a bad question.",
+      "cards": [
+        [
+          "Stop asking yourself why. Ask what.",
+          2.2,
+          "hook"
+        ],
+        [
+          "\"Why am I like this?\" asks for a verdict on your whole character.",
+          3.2,
+          "body"
+        ],
+        [
+          "\"What happened, exactly? What did I feel first?\" gives you something to work with.",
+          3.8,
+          "body"
+        ],
+        [
+          "Research on rumination draws the same line: abstract \"why\" loops versus concrete \"what\".",
+          3.8,
+          "body"
+        ],
+        [
+          "Idea: Watkins, 2008 · Moodius words",
+          1.6,
+          "cite"
+        ],
+        [
+          "It's Day 3 of the journal I made.",
+          2.0,
+          "body"
+        ],
+        [
+          "Comment JOURNAL for the link.",
+          2.0,
+          "cta"
+        ]
+      ],
+      "visual": "V1 flat Slate.",
+      "footage": null,
+      "audio": {
+        "engine": "ambient",
+        "mood": "dawn",
+        "seed": 302
+      },
+      "source": {
+        "type": "idea",
+        "note": "Watkins (2008), Psychological Bulletin 134(2): concrete vs abstract repetitive thought. Idea: Watkins · Moodius words"
+      },
+      "caption": "Day 3 of The Unexamined Self: translate one \"why\" question into three \"what\" questions and see what changes.\n\nEvidence note in the journal: a substantial body of research, mostly correlational plus some experiments (Watkins, 2008).\n\nComment JOURNAL and I'll DM you the link.\n\nWhich \"why\" do you keep asking yourself?\n\n— Moodius",
+      "first_comment": "What's the \"why\" question you ask yourself most?",
+      "hashtags": [
+        "#overthinking",
+        "#journaling",
+        "#selfawareness"
+      ],
+      "cta": "comment",
+      "dm_keyword": "JOURNAL",
+      "track": "/r/journal?src=dm_reel_p002"
+    },
+    {
+      "id": "P003",
+      "slug": "inside-the-journal",
+      "format": "R4",
+      "pillar": "Journal",
+      "rank": 3,
+      "hook": "Here's what's inside the journal, page by page.",
+      "hook_b": "117 pages. Here's one day.",
+      "cards": [
+        [
+          "Here's what's inside the journal, page by page.",
+          2.4,
+          "hook"
+        ],
+        [
+          "Page one: a short reading built on one Stoic idea.",
+          2.6,
+          "body"
+        ],
+        [
+          "Every quote is word for word from a public-domain translation, or labelled as my paraphrase.",
+          3.8,
+          "body"
+        ],
+        [
+          "An evidence note: philosophy, research, or opinion. With sources.",
+          3.0,
+          "body"
+        ],
+        [
+          "Page two: three questions. Page three: one exercise.",
+          2.8,
+          "body"
+        ],
+        [
+          "Comment JOURNAL to look inside.",
+          2.0,
+          "cta"
+        ]
+      ],
+      "visual": "Screen-record scroll through the PDF preview images (shop page) or render page images full-bleed.",
+      "footage": "website/public/img/journal-p26.webp, journal-p27.webp, journal-p28.webp",
+      "audio": {
+        "engine": "ambient",
+        "mood": "night",
+        "seed": 303
+      },
+      "source": {
+        "type": "original"
+      },
+      "caption": "No filler, no invented statistics, no promises it'll fix you. Just thirty honest days.\n\nComment JOURNAL and I'll DM you the link.\n\nDigital or print: which would you use?\n\n— Moodius",
+      "first_comment": "Would you use the digital (type-in) or print edition?",
+      "hashtags": [
+        "#journaling",
+        "#stoicism",
+        "#journalprompts"
+      ],
+      "cta": "comment",
+      "dm_keyword": "JOURNAL",
+      "track": "/r/journal?src=dm_reel_p003"
+    },
+    {
+      "id": "P004",
+      "slug": "toward-or-away",
+      "format": "R1",
+      "pillar": "Journal",
+      "rank": 4,
+      "hook": "When someone you love goes quiet, what do you do?",
+      "hook_b": "Some people chase. Some people disappear.",
+      "cards": [
+        [
+          "When someone you love goes quiet, what do you do?",
+          2.6,
+          "hook"
+        ],
+        [
+          "Some of us move toward: message again, need to fix it now.",
+          3.0,
+          "body"
+        ],
+        [
+          "Some of us move away: go quiet too, get busy, wait it out.",
+          3.4,
+          "body"
+        ],
+        [
+          "Psychologists measure these as two dials, not four boxes. Dials can move.",
+          3.6,
+          "body"
+        ],
+        [
+          "Idea: Fraley et al., 2015 · Moodius words",
+          1.6,
+          "cite"
+        ],
+        [
+          "Day 17 of the journal. Comment JOURNAL for it.",
+          2.4,
+          "cta"
+        ]
+      ],
+      "visual": "V1 flat Slate.",
+      "footage": null,
+      "audio": {
+        "engine": "ambient",
+        "mood": "night",
+        "seed": 304
+      },
+      "source": {
+        "type": "idea",
+        "note": "Brennan, Clark & Shaver (1998); Fraley et al. (2015) JPSP 109(2): attachment as dimensions. Idea: Fraley et al. · Moodius words"
+      },
+      "caption": "Attachment anxiety and avoidance are sliding scales, not personality types (Fraley et al., 2015). Day 17 of The Unexamined Self helps you see where yours sit and when they move.\n\nComment JOURNAL and I'll DM you the link.\n\nToward or away: which is your first move?\n\n— Moodius",
+      "first_comment": "Toward or away? Which one are you?",
+      "hashtags": [
+        "#attachmentstyles",
+        "#relationships",
+        "#journaling"
+      ],
+      "cta": "comment",
+      "dm_keyword": "JOURNAL",
+      "track": "/r/journal?src=dm_reel_p004"
+    },
+    {
+      "id": "P005",
+      "slug": "free-seven-days",
+      "format": "R1",
+      "pillar": "Journal",
+      "rank": 5,
+      "hook": "Seven evenings. Ten minutes each. Free.",
+      "hook_b": "Try this for one week before you buy anything.",
+      "cards": [
+        [
+          "Seven evenings. Ten minutes each. Free.",
+          2.2,
+          "hook"
+        ],
+        [
+          "Day 1: describe before you judge.",
+          2.0,
+          "body"
+        ],
+        [
+          "Day 2: what's yours and what isn't.",
+          2.0,
+          "body"
+        ],
+        [
+          "Day 7: the evening review Seneca did every night.",
+          2.4,
+          "body"
+        ],
+        [
+          "Comment GUIDE and I'll send it.",
+          2.0,
+          "cta"
+        ]
+      ],
+      "visual": "V1 flat Slate, light cover card at the end.",
+      "footage": null,
+      "audio": {
+        "engine": "ambient",
+        "mood": "dawn",
+        "seed": 305
+      },
+      "source": {
+        "type": "original"
+      },
+      "caption": "A free seven-day reflection guide: one Stoic idea, one finding from psychology, two questions and a small exercise each evening.\n\nComment GUIDE and I'll DM you the link.\n\nWhich evening would you start with?\n\n— Moodius",
+      "first_comment": "Which day would you start with?",
+      "hashtags": [
+        "#journaling",
+        "#stoicism",
+        "#selfreflection"
+      ],
+      "cta": "comment",
+      "dm_keyword": "GUIDE",
+      "track": "/r/guide?src=dm_reel_p005"
+    },
+    {
+      "id": "P006",
+      "slug": "not-therapy",
+      "format": "R2",
+      "pillar": "Journal",
+      "rank": 6,
+      "hook": "My journal won't fix you. Here's what it does.",
+      "hook_b": "Most self-help journals promise too much.",
+      "cards": [
+        [
+          "My journal won't fix you. Here's what it does.",
+          2.4,
+          "hook"
+        ],
+        [
+          "It won't heal trauma or replace therapy. Nothing in a PDF can.",
+          3.0,
+          "body"
+        ],
+        [
+          "It gives you thirty days of looking honestly, with old philosophy and current research.",
+          3.6,
+          "body"
+        ],
+        [
+          "Every claim labelled: philosophy, research, or my opinion.",
+          2.8,
+          "body"
+        ],
+        [
+          "Comment JOURNAL if that's what you want.",
+          2.2,
+          "cta"
+        ]
+      ],
+      "visual": "V1 flat Slate.",
+      "footage": null,
+      "audio": {
+        "engine": "ambient",
+        "mood": "night",
+        "seed": 306
+      },
+      "source": {
+        "type": "original"
+      },
+      "caption": "I'd rather undersell it. The Unexamined Self is a reflection journal, not treatment. If you're struggling, a GP or therapist can offer what a book can't (UK: Samaritans 116 123).\n\nComment JOURNAL and I'll DM you the link.\n\nWhat would you most want to understand about yourself?\n\n— Moodius",
+      "first_comment": "What's one thing you'd want to understand about yourself?",
+      "hashtags": [
+        "#journaling",
+        "#mentalhealthawareness",
+        "#stoicism"
+      ],
+      "cta": "comment",
+      "dm_keyword": "JOURNAL",
+      "track": "/r/journal?src=dm_reel_p006"
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+ "n": 2,
+ "essay": "essays/02-the-trait-you-cant-stand.md",
+ "title": "The Trait You Can't Stand in Other People",
+ "ab_alt": "What Irritates You Is Information",
+ "pillar": "Truths",
+ "reels": [
+  {
+   "id": "S02A",
+   "slug": "took-up-your-evening",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Truths",
+   "hook": "Whose behaviour took up more of your week than it deserved?",
+   "hook_b": "Who got under your skin this week?",
+   "cards": [
+    [
+     "Whose behaviour took up more of your week than it deserved?",
+     3.0,
+     "question"
+    ],
+    [
+     "Some irritation is good judgement.",
+     1.8,
+     "body"
+    ],
+    [
+     "Some of it is a mirror.",
+     1.8,
+     "body"
+    ],
+    [
+     "Ask quietly: is there a version of this in me?",
+     2.7,
+     "body"
+    ],
+    [
+     "If there is, call it a mistake. Not a verdict.",
+     2.7,
+     "body"
+    ],
+    [
+     "Study: Schimel, Greenberg & Martens, PSPB (2003)",
+     2.2,
+     "cite"
+    ],
+    [
+     "Send this to someone who'll admit theirs.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V3 still of a reflection in a dark window (tag window-reflection), else V1 + grain.",
+   "footage": "window-reflection",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 303
+   },
+   "source": {
+    "type": "data",
+    "author": "Schimel, Greenberg & Martens",
+    "work": "Projection of a feared trait (PSPB 29(8))",
+    "section": "Studies 1-2",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 lab studies (N01) + Moodius practice",
+   "caption": "In two lab studies, people told they had a feared trait saw more of it in a stranger, and projecting it seemed to help them deny it in themselves.\n\nThat doesn't make every irritation a mirror. It makes it worth a question.\n\nWhat trait in other people gets to you most?\n\nEvidence: Schimel, Greenberg & Martens (2003). Jung's \"shadow\" is an interpretive idea, not a tested therapy. Full essay on the Substack, link in bio.",
+   "first_comment": "One word: the trait in other people you can't stand.",
+   "hashtags": [
+    "#shadowwork",
+    "#carljung",
+    "#selfawareness",
+    "#psychology",
+    "#stoicism"
+   ],
+   "cta": "send",
+   "length_s": 16.2
+  },
+  {
+   "id": "S02F",
+   "slug": "turn-to-thyself",
+   "format": "F",
+   "series": "A Thought Worth Keeping",
+   "pillar": "Truths",
+   "hook": "Marcus Aurelius, on the people who annoy you:",
+   "hook_b": "Marcus Aurelius, on the people who annoy you.",
+   "cards": [
+    [
+     "Marcus Aurelius, on the people who annoy you:",
+     2.4,
+     "hook"
+    ],
+    [
+     "\"When thou art offended at any man's fault, forthwith turn to thyself.\"",
+     3.1,
+     "quote"
+    ],
+    [
+     "Meditations 10.30 · tr. George Long",
+     1.8,
+     "cite"
+    ],
+    [
+     "Not to excuse them.",
+     1.4,
+     "body"
+    ],
+    [
+     "To find where you do the same thing.",
+     2.2,
+     "body"
+    ],
+    [
+     "A Thought Worth Keeping · Moodius",
+     1.6,
+     "body"
+    ],
+    [
+     "Full essay on the Substack. Link in bio.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate.",
+   "footage": "desk",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 304
+   },
+   "source": {
+    "type": "quote",
+    "author": "Marcus Aurelius",
+    "work": "Meditations",
+    "section": "10.30",
+    "translation": "George Long"
+   },
+   "evidence": "Tier 2 primary text (Meditations 10.30), opening words verified 21 Oct 2026",
+   "caption": "Eighteen centuries before Jung wrote about projection, Marcus Aurelius gave himself an instruction: when someone's fault offends you, turn to yourself and ask where you go wrong in a similar way.\n\nWho's been your teacher this week, without meaning to be?\n\nSource: Meditations 10.30, tr. George Long. Full essay on the Substack, link in bio.",
+   "first_comment": "Who's been an accidental teacher for you lately?",
+   "hashtags": [
+    "#shadowwork",
+    "#carljung",
+    "#selfawareness",
+    "#psychology",
+    "#stoicism"
+   ],
+   "cta": "save",
+   "length_s": 14.7
+  }
+ ],
+ "carousel": [
+  [
+   "Cover",
+   "The trait you can't stand in others might be doing a job for you.",
+   "Swipe →",
+   "claim cover"
+  ],
+  [
+   "The idea",
+   "Jung called the disowned parts of us the shadow. We meet them in other people.",
+   "Interpretive framework · Jung, Aion (1951)",
+   "term card"
+  ],
+  [
+   "Read this first",
+   "Shadow work is a lens, not a validated treatment. Hold it lightly.",
+   "Moodius note",
+   "pull quote"
+  ],
+  [
+   "What the lab found",
+   "People told they had a feared trait saw it more in a stranger, and felt less of it in themselves.",
+   "Study · Schimel et al., PSPB (2003)",
+   "term card"
+  ],
+  [
+   "The old version",
+   "\"When thou art offended at any man's fault, forthwith turn to thyself.\"",
+   "Meditations 10.30 · tr. George Long",
+   "pull quote"
+  ],
+  [
+   "Why kindness matters",
+   "Shame hides. Guilt repairs. Look at the trait as a mistake, not a verdict.",
+   "Research synthesis · Tangney & Dearing (2002)",
+   "pair slide"
+  ],
+  [
+   "Sign-off",
+   "The Irritation Inventory: 3 people · 1 word each · 1 moment you did it too · 1 change",
+   "Full essay on the Substack · link in bio",
+   "sign-off"
+  ]
+ ],
+ "carousel_caption": "Some irritation is just good judgement. Some of it is information about us.\n\nJung called it the shadow. Lab psychology has tested a narrower version, and Marcus Aurelius had a one-line practice for it.\n\nWhich slide hit hardest?\n\nEvidence: Schimel et al. 2003 (lab studies), Tangney & Dearing 2002. Jung's shadow is an interpretive framework, not a tested therapy. Philosophy: Meditations 10.30 (Long).",
+ "cards": [
+  [
+   "What irritates you is information. Not always about them.",
+   "Moodius"
+  ],
+  [
+   "\"When thou art offended at any man's fault, forthwith turn to thyself.\"",
+   "Marcus Aurelius, Meditations 10.30 · tr. Long"
+  ],
+  [
+   "Pushing a trait out of mind can keep it in view, aimed at someone else.",
+   "Moodius, after Newman, Duff & Baumeister (1997)"
+  ],
+  [
+   "Shame says you are the problem. Guilt says you made one.",
+   "Moodius, after Tangney & Dearing (2002)"
+  ],
+  [
+   "Ask what your contempt is protecting.",
+   "Moodius"
+  ]
+ ],
+ "stories": [
+  [
+   "Poll",
+   "Be honest:",
+   "Poll: \"The things that annoy me most in others… are things I do too\" Yes / Sometimes / Never."
+  ],
+  [
+   "Question box",
+   "Which trait in others gets to you most?",
+   "Question sticker; Sunday story shares the five most common words as a word list, no names."
+  ],
+  [
+   "Link",
+   "New essay: The Trait You Can't Stand in Other People",
+   "Cover still + link sticker + \"Jung, the lab, and Marcus. With the limits stated.\" Highlight: Truths."
+  ]
+ ],
+ "pins": [
+  [
+   "Shadow Work, Explained Honestly",
+   "What Jung meant by the shadow, what psychology has tested, and why shadow work isn't a therapy. Plus a weekly exercise."
+  ],
+  [
+   "Why Certain People Irritate You So Much",
+   "The research on projection and a Stoic practice for turning irritation into self-knowledge."
+  ],
+  [
+   "The Irritation Inventory: A Weekly Journaling Exercise",
+   "Three people, one word each, one moment you did it too. A 20-minute practice from Moodius Aurelius."
+  ],
+  [
+   "Carl Jung's Shadow vs Modern Psychology",
+   "An evidence-labelled guide to projection, suppression and self-compassion."
+  ],
+  [
+   "Marcus Aurelius on People Who Annoy You",
+   "Meditations 10.30 and what it has in common with Jung's idea of projection."
+  ]
+ ],
+ "notes": [
+  "Jung's shadow is an interpretive idea, not a tested therapy. But lab psychology has found something close to one part of it: in a 2003 study, people told they had a feared trait saw more of it in a stranger. This week's essay holds both, honestly.",
+  "Marcus Aurelius, Meditations 10.30: \"When thou art offended at any man's fault, forthwith turn to thyself.\" Eighteen centuries before anyone said \"projection\".",
+  "Not every irritation is a mirror. Some people are just rude. The useful question isn't \"what's wrong with them?\" It's \"why is this taking up so much room in me?\""
+ ],
+ "visuals": {
+  "look": "V3 reflection in a dark window or V1 Slate + grain; mirrors and reflections without faces",
+  "type": "As standard; the 'Read this first' slide uses Ash on Graphite to look like a note, not a claim",
+  "music": "room or low (ambient.py); MO-PSY-2 / MO-PSY-3: low strings, unresolved",
+  "pinterest": "1000×1500, Graphite background, Bone type"
+ }
+}

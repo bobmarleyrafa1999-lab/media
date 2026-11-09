@@ -1,0 +1,177 @@
+<title>Moodius Reach Channels</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,500&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: one reading column; a ranked ladder of channels, then two test "cards" side by side, then the organic table */
+:root{
+  --bg:#F3EFE7; --surface:#EAE5DB; --fg:#1B1F24; --muted:#5E5A52; --line:#D3CDC1; --accent:#B0601F;
+  --pass:#3E6B4A; --hold:#8A6A1F; --no:#9A3B2E;
+  --display:"Playfair Display",Georgia,"Times New Roman",serif;
+  --body:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1B1F24; --surface:#2A2F36; --fg:#F3EFE7; --muted:#B8B3A9; --line:#3A4049; --accent:#C9742E;
+  --pass:#7FB08C; --hold:#D7B565; --no:#E08A7B; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1B1F24; --surface:#2A2F36; --fg:#F3EFE7; --muted:#B8B3A9; --line:#3A4049; --accent:#C9742E;
+  --pass:#7FB08C; --hold:#D7B565; --no:#E08A7B; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font:15px/1.6 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:40px 64px}
+main{max-width:860px;margin:0 auto;display:flex;flex-direction:column;gap:44px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;line-height:1.2}
+h1{font-size:clamp(30px,6vw,44px);font-weight:800}
+h2{font-size:24px;font-weight:600}
+h3{font-size:18px;font-weight:600}
+p{margin:0;max-width:66ch}
+.eyebrow{font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--accent);font-weight:600}
+.lede{font-size:17px;color:var(--fg)}
+.muted{color:var(--muted)}
+section{display:flex;flex-direction:column;gap:16px}
+.answer{display:grid;gap:10px;padding:0;margin:0;list-style:none;counter-reset:a}
+.answer li{display:grid;grid-template-columns:28px 1fr;gap:8px;counter-increment:a}
+.answer li::before{content:counter(a);font-family:var(--display);font-weight:800;color:var(--accent);font-size:20px;line-height:1.3}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:var(--line);border:1px solid var(--line)}
+.stats div{background:var(--bg);padding:14px 16px;display:flex;flex-direction:column;gap:2px}
+.stats b{font-family:var(--display);font-size:26px;font-variant-numeric:tabular-nums}
+.stats span{font-size:13px;color:var(--muted)}
+.tbl{overflow-x:auto;border-top:2px solid var(--fg)}
+table{border-collapse:collapse;width:100%;min-width:620px;font-size:14px}
+th,td{text-align:left;vertical-align:top;padding:10px 10px 10px 0;border-bottom:1px solid var(--line)}
+th{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600}
+td:first-child{font-weight:600;min-width:130px}
+.num{font-variant-numeric:tabular-nums;white-space:nowrap}
+.pill{display:inline-block;font-size:12px;font-weight:600;padding:2px 9px;border-radius:999px;border:1px solid currentColor;white-space:nowrap}
+.go{color:var(--pass)} .later{color:var(--hold)} .no{color:var(--no)}
+.tests{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px}
+.test{background:var(--surface);padding:20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.test dl{display:grid;grid-template-columns:96px 1fr;gap:6px 12px;margin:0;font-size:14px}
+.test dt{color:var(--muted)} .test dd{margin:0}
+.rule{font-size:13px;border-top:1px solid var(--line);padding-top:10px;display:grid;gap:4px}
+.split{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:24px}
+.split ul{margin:0;padding-left:18px;display:grid;gap:6px}
+a{color:var(--accent)}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+footer{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:16px}
+</style>
+
+<main>
+<header style="display:flex;flex-direction:column;gap:14px">
+  <div class="eyebrow">@moodiusaurelius · 21 Oct 2026 · strategy doc 15</div>
+  <h1>Where to buy reach, and where to earn it</h1>
+  <p class="lede">Paid ads at our size buy information, not profit. The biggest free lever is still posting the same reels on TikTok and YouTube Shorts. Two small paid tests are ready and wait for your OK.</p>
+</header>
+
+<section>
+  <h2>The answer</h2>
+  <ol class="answer">
+    <li><p><b>Connect TikTok and YouTube Shorts first.</b> Same reels, twice the surface, €0. I schedule them once they show up in Metricool.</p></li>
+    <li><p><b>No paid channel pays for itself yet.</b> A guide sign-up is worth about £0.20 and a journal sale leaves £10.77. Every benchmark puts the cost above that.</p></li>
+    <li><p><b>Run two small learning tests when their gates are met:</b> €35 on an Instagram reel to the free guide, and about €18 of TikTok Promote for followers.</p></li>
+    <li><p><b>Skip for now:</b> Google Search (a sale costs ≈£21-77 in clicks), TikTok Ads Manager ($500 minimum), Substack Boost (paid-subscription discounts only).</p></li>
+    <li><p><b>New organic places:</b> Tiny Buddha, The Good Men Project, the Stoic Coffee Break podcast, an r/Journaling giveaway, Substack recommendation swaps.</p></li>
+  </ol>
+</section>
+
+<section>
+  <h2>Where we start</h2>
+  <div class="stats">
+    <div><b>14</b><span>followers</span></div>
+    <div><b>1,347</b><span>reel views, 30 days</span></div>
+    <div><b>93%</b><span>views from non-followers</span></div>
+    <div><b>£0.20</b><span>value of one sign-up (assumed 2% buy)</span></div>
+    <div><b>£10.77</b><span>kept per £14 journal</span></div>
+  </div>
+  <p class="muted">Measured in Metricool on 21 Oct, except the sign-up value, which is the finance model's base-case assumption.</p>
+</section>
+
+<section>
+  <h2>Paid channels, ranked</h2>
+  <p class="muted">Published benchmarks, mostly US and cross-industry. Our real numbers will differ.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Channel</th><th>Minimum</th><th>Published cost</th><th>What €35 buys</th><th>Call</th></tr></thead>
+    <tbody>
+      <tr><td>Instagram reel ad</td><td class="num">$1-3/day</td><td>Click $0.40-1.80 · Reels CPM $4-8</td><td>22-100 clicks, 7-30 sign-ups</td><td><span class="pill go">Test A</span></td></tr>
+      <tr><td>TikTok Promote</td><td class="num">$3/day</td><td>In-feed CPM $4.20-9.00 · click $0.17-1.00</td><td>4,400-9,500 impressions</td><td><span class="pill go">Test B</span></td></tr>
+      <tr><td>Pinterest ads</td><td>None</td><td>Click $0.50-1.50 · most CPM ≤$2</td><td>27-80 clicks</td><td><span class="pill later">January</span></td></tr>
+      <tr><td>Reddit ads</td><td class="num">~$5/day</td><td>Click ~$0.30-1.50 (estimates)</td><td>27-133 clicks</td><td><span class="pill later">Later</span></td></tr>
+      <tr><td>YouTube in-feed</td><td>None</td><td>View $0.01-0.10 (estimates)</td><td>Needs a channel first</td><td><span class="pill later">Later</span></td></tr>
+      <tr><td>Google Search</td><td>None</td><td>Median click $1.63-4.14 · 4-6% convert</td><td>10-25 clicks, ~0-1 sale</td><td><span class="pill no">No</span></td></tr>
+      <tr><td>TikTok Ads Manager</td><td class="num">$500/campaign</td><td>Same as Promote</td><td>Below the minimum</td><td><span class="pill no">No</span></td></tr>
+      <tr><td>Substack Boost</td><td>Paid subs on</td><td>Discount offers, not reach</td><td>n/a</td><td><span class="pill no">No</span></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>The two tests, ready and not launched</h2>
+  <div class="tests">
+    <article class="test">
+      <div class="eyebrow">Test A · €35</div>
+      <h3>Instagram reel → free guide</h3>
+      <dl>
+        <dt>Gate</dt><dd>25 organic sign-ups, guide page live, a reel at ≥2x median views</dd>
+        <dt>Creative</dt><dd>That reel, with an end card: "Free: 7 days of honest reflection"</dd>
+        <dt>Targeting</dt><dd>UK, IE, US, CA, AU · 18-44 · Stoicism, journaling, philosophy, self-help books · Reels and Stories only</dd>
+        <dt>Budget</dt><dd>€5/day × 7, launched from desktop (avoids the 30% iOS fee)</dd>
+        <dt>Link</dt><dd><code>/r/guide?src=ig_ad_a1</code></dd>
+      </dl>
+      <div class="rule">
+        <span class="go">Pass: cost per sign-up ≤ £0.66 → propose €70-100</span>
+        <span class="later">£0.66-2.00: learning, try new creative later</span>
+        <span class="no">Over £2.00: stop, fix page or creative</span>
+      </div>
+    </article>
+    <article class="test">
+      <div class="eyebrow">Test B · ≈€18</div>
+      <h3>TikTok Promote → followers</h3>
+      <dl>
+        <dt>Gate</dt><dd>TikTok account live 14 days, 10+ reels, one at ≥2x its median, original audio</dd>
+        <dt>Creative</dt><dd>That reel, unchanged</dd>
+        <dt>Targeting</dt><dd>Same countries · 18-44 · books, self-improvement, wellbeing</dd>
+        <dt>Budget</dt><dd>$3/day × 7 ≈ $21</dd>
+        <dt>Goal</dt><dd>More followers; bio link <code>src=tt_bio</code></dd>
+      </dl>
+      <div class="rule">
+        <span class="go">Pass: ≤ $0.50 per follower and 25+ followers</span>
+        <span class="later">$0.50-1.50: compare with test A, cheaper one gets the next round</span>
+        <span class="no">Over $1.50: TikTok stays organic</span>
+      </div>
+    </article>
+  </div>
+  <p class="muted">Test B's pass lines are my decision rules; I found no published TikTok Promote cost-per-follower benchmark. If the Instagram gate is met in December, use the £22 gift edition as the offer or wait for January: Q4 ad prices run 25-50% higher.</p>
+</section>
+
+<section>
+  <h2>New organic places</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Place</th><th>Rules that matter</th><th>You</th><th>Me</th></tr></thead>
+    <tbody>
+      <tr><td>TikTok + YouTube Shorts</td><td>Original audio for anything promoted</td><td>Create and connect (15 min)</td><td>Schedule every reel</td></tr>
+      <tr><td>Substack swaps</td><td>Built-in Recommendations; Substack says they bring 20% of new free subscribers</td><td>Message 5-10 similar writers after 3 essays</td><td>Find them, draft the messages</td></tr>
+      <tr><td>Tiny Buddha</td><td>1,000-2,000 words, a real personal story, links only in a 75-word bio, unpublished elsewhere</td><td>Write it in your own words</td><td>Angles, outline, bio with guide link</td></tr>
+      <tr><td>The Good Men Project</td><td>500-1,500 words via Submittable; can republish existing essays</td><td>Submit 2-3 rewritten essays</td><td>Pick essays, attribution lines</td></tr>
+      <tr><td>Stoic Coffee Break</td><td>Free remote guest slots via Talks.co; covers emotional courage and mental health</td><td>Pitch and record, as "the writer behind Moodius"</td><td>Pitch, guest sheet, talking points</td></tr>
+      <tr><td>r/Journaling</td><td>No social links; selling needs the mods; giveaways welcome</td><td>Ask mods, run a 10-copy giveaway</td><td>Mod message, post, free codes</td></tr>
+      <tr><td>r/MentalHealthUK</td><td>Removes any product or service promotion</td><td colspan="2"><span class="pill no">Don't post as the brand</span></td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section class="split">
+  <div><h3>I do</h3><ul>
+    <li>Schedule TikTok and Shorts once connected</li>
+    <li>Draft every pitch, outline, mod message and bio</li>
+    <li>Prepare both tests and review the results</li>
+    <li>Add per-channel lines to the Friday report</li>
+  </ul></div>
+  <div><h3>You do</h3><ul>
+    <li>Create and connect TikTok and YouTube</li>
+    <li>Write and submit the guest essays</li>
+    <li>Pitch and record the podcast</li>
+    <li>Say yes or no to each test, then press launch</li>
+  </ul></div>
+</section>
+
+<footer>Full plan with sources: <code>strategy/15-reach-channels.md</code> · test setups: <code>strategy/ads/paid-test-plans.md</code> · results log: <code>strategy/ads/results.csv</code>. Benchmarks from WordStream, Influee, Darkroom, NapoleonCat, Cropink, Adwave, Shopify and the platforms' own pages, all 2025-2026 except Substack's 2022 figure.</footer>
+</main>

@@ -1,0 +1,272 @@
+{
+ "n": 4,
+ "essay": "essays/04-the-raise-that-didnt-arrive-inside.md",
+ "title": "The Raise That Didn't Arrive Inside",
+ "ab_alt": "What Seneca Knew About Your Salary",
+ "pillar": "Discipline",
+ "reels": [
+  {
+   "id": "S04C",
+   "slug": "money-two-readings",
+   "format": "C",
+   "series": "The Philosophical Contradiction",
+   "pillar": "Discipline",
+   "hook": "Does money make you happier?",
+   "hook_b": "Both answers are in the data.",
+   "cards": [
+    [
+     "Does money make you happier?",
+     2.2,
+     "question"
+    ],
+    [
+     "YES\nFor most people, a little more with every doubling.",
+     3.0,
+     "labelled"
+    ],
+    [
+     "AND NO\nYou adapt to every raise you get.",
+     2.6,
+     "labelled"
+    ],
+    [
+     "Both are in the data.",
+     1.6,
+     "body"
+    ],
+    [
+     "The part you control is what the next one is for.",
+     2.9,
+     "body"
+    ],
+    [
+     "Study: Killingsworth, Kahneman & Mellers, PNAS (2023)",
+     2.2,
+     "cite"
+    ],
+    [
+     "What would your next raise be for?",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V3 brutalist stairwell still (tag stairs), else V1 + grain.",
+   "footage": "stairs",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 307
+   },
+   "source": {
+    "type": "data",
+    "author": "Killingsworth, Kahneman & Mellers",
+    "work": "Income and emotional well-being: a conflict resolved (PNAS 120(10))",
+    "section": "main result",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 adversarial collaboration (N04), verified 21 Oct 2026; adaptation (E33)",
+   "caption": "\"Money can't buy happiness\" and \"only rich people say that\" are both wrong in useful ways.\n\nA 2023 paper by former rivals found happiness rises with each doubling of income for most people. And decades of research show we adapt to what we get.\n\nWhat's your next goal actually for?\n\nEvidence: Killingsworth, Kahneman & Mellers (2023); Brickman et al. (1978). Full essay on the Substack, link in bio.",
+   "first_comment": "Finish the sentence: \"Enough, for me, is…\"",
+   "hashtags": [
+    "#psychology",
+    "#stoicism",
+    "#seneca",
+    "#success",
+    "#mindset"
+   ],
+   "cta": "comment",
+   "length_s": 16.5
+  },
+  {
+   "id": "S04F",
+   "slug": "craves-more",
+   "format": "F",
+   "series": "A Thought Worth Keeping",
+   "pillar": "Discipline",
+   "hook": "One of the richest men in Rome, on being poor:",
+   "hook_b": "One of Rome's richest men, on being poor.",
+   "cards": [
+    [
+     "One of the richest men in Rome, on being poor:",
+     2.7,
+     "hook"
+    ],
+    [
+     "\"It is not the man who has too little, but the man who craves more, that is poor.\"",
+     4.4,
+     "quote"
+    ],
+    [
+     "Letters 2.6 · tr. Richard M. Gummere",
+     1.8,
+     "cite"
+    ],
+    [
+     "Name your enough. In numbers.",
+     1.6,
+     "body"
+    ],
+    [
+     "Or every raise will move it.",
+     1.8,
+     "body"
+    ],
+    [
+     "A Thought Worth Keeping · Moodius",
+     1.6,
+     "body"
+    ],
+    [
+     "Full essay on the Substack. Link in bio.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate.",
+   "footage": "desk",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 308
+   },
+   "source": {
+    "type": "quote",
+    "author": "Seneca",
+    "work": "Moral Letters to Lucilius",
+    "section": "2.6",
+    "translation": "Richard M. Gummere"
+   },
+   "evidence": "Tier 2 primary text (N28), Gummere wording verified 21 Oct 2026",
+   "caption": "Seneca was one of the wealthiest men in Rome, which makes this line from his second letter harder to dismiss, not easier.\n\nPoverty is partly the gap between what you have and what you want. Raise the second faster than the first and a rich person can feel poor forever.\n\nHave you named your enough?\n\nSource: Seneca, Letters 2.6, tr. Gummere. Full essay on the Substack, link in bio.",
+   "first_comment": "Have you ever put a number on \"enough\"? Yes or no.",
+   "hashtags": [
+    "#psychology",
+    "#stoicism",
+    "#seneca",
+    "#success",
+    "#mindset"
+   ],
+   "cta": "save",
+   "length_s": 16.1
+  }
+ ],
+ "carousel": [
+  [
+   "Cover",
+   "The raise that didn't arrive inside.",
+   "Why the finish line keeps moving →",
+   "claim cover"
+  ],
+  [
+   "The old number",
+   "2010: day-to-day happiness seemed to level off around $75,000.",
+   "Study · Kahneman & Deaton, PNAS (2010)",
+   "term card"
+  ],
+  [
+   "The resolution",
+   "2023: for most people, happiness keeps rising with each doubling of income. The plateau is only for the least happy.",
+   "Adversarial collaboration · Killingsworth, Kahneman & Mellers, PNAS (2023)",
+   "term card"
+  ],
+  [
+   "The catch",
+   "Doubling gets harder. And we adapt to every gain faster than we expect.",
+   "Study · Brickman et al. (1978)",
+   "pair slide"
+  ],
+  [
+   "What it's for",
+   "Chasing wealth, fame and image over growth and people was linked to lower wellbeing.",
+   "Study · Kasser & Ryan, PSPB (1996)",
+   "term card"
+  ],
+  [
+   "The old version",
+   "\"It is not the man who has too little, but the man who craves more, that is poor.\"",
+   "Seneca, Letters 2.6 · tr. Gummere",
+   "pull quote"
+  ],
+  [
+   "Sign-off",
+   "The Enough Ledger: last 3 wins · how long it lasted · your number · what the next one is for",
+   "Full essay on the Substack · link in bio",
+   "sign-off"
+  ]
+ ],
+ "carousel_caption": "Money does make most people happier. That's not the problem.\n\nThe problem is that each step needs a bigger number, we adapt to every gain, and we rarely decide what the next goal is for.\n\nSave this for your next pay review. What is enough, for you?\n\nEvidence: Kahneman & Deaton 2010; Killingsworth, Kahneman & Mellers 2023; Brickman et al. 1978; Kasser & Ryan 1996. Philosophy: Seneca, Letters 2.6 (Gummere).",
+ "cards": [
+  [
+   "Money helps. That was never the problem.",
+   "Moodius"
+  ],
+  [
+   "\"It is not the man who has too little, but the man who craves more, that is poor.\"",
+   "Seneca, Letters 2.6 · tr. Gummere"
+  ],
+  [
+   "If you never define enough, every raise moves it.",
+   "Moodius"
+  ],
+  [
+   "The best thing money buys might be an hour.",
+   "Moodius, after Whillans et al. (2017)"
+  ],
+  [
+   "A goal pursued as a verdict on your worth expires. You'll need another.",
+   "Moodius"
+  ]
+ ],
+ "stories": [
+  [
+   "Poll",
+   "After your last big win, the good feeling lasted…",
+   "Poll: Days / Weeks / Still here."
+  ],
+  [
+   "Slider",
+   "How close are you to 'enough'?",
+   "Emoji slider 0–100 with a coin or hourglass emoji. Next frame: \"Thursday's essay: why the finish line moves.\""
+  ],
+  [
+   "Link",
+   "New essay: The Raise That Didn't Arrive Inside",
+   "Cover still + link sticker + \"Money, adaptation and Seneca. With the 2023 data.\" Highlight: Discipline."
+  ]
+ ],
+ "pins": [
+  [
+   "Does Money Make You Happier? What the 2023 Research Says",
+   "Former rivals Kahneman and Killingsworth resolved the $75,000 debate. What it means for your next raise."
+  ],
+  [
+   "Why Success Doesn't Feel Like You Expected",
+   "Hedonic adaptation, extrinsic goals and Seneca on craving. An evidence-labelled essay."
+  ],
+  [
+   "Seneca on Money: 'The Man Who Craves More Is Poor'",
+   "Letters 2.6 in Gummere's translation, and what it means in an expensive decade."
+  ],
+  [
+   "The Enough Ledger: A Journaling Exercise for Ambitious People",
+   "Five steps to define 'enough' in numbers and stop the finish line moving."
+  ],
+  [
+   "Hedonic Adaptation, Explained Simply",
+   "Why the promotion felt great for a week, and what research suggests you spend money on instead."
+  ]
+ ],
+ "notes": [
+  "The $75,000 happiness plateau became one of the most quoted numbers in psychology. In 2023 the two researchers who disagreed about it re-analysed the data together. For most people, there's no plateau. For the least happy, there is. The full story is this week's essay.",
+  "Seneca, Letters 2.6: \"It is not the man who has too little, but the man who craves more, that is poor.\" Written by one of the richest men in Rome, which makes it harder to dismiss, not easier.",
+  "If the good feeling from your last big win lasted a week, that's not ingratitude. It's adaptation, and it's well documented. The useful question isn't how to keep the feeling. It's what the next goal is for."
+ ],
+ "visuals": {
+  "look": "V3 stairwell or empty office at night (no people), else V1 + grain",
+  "type": "As standard; the 2010 → 2023 slides use a small Ash timeline rule, the only chart-like element",
+  "music": "low or dawn (ambient.py); MO-DIS-2 / MO-STO-3: steady, austere",
+  "pinterest": "1000×1500, Bone background, Slate type, Ember on the word 'enough'"
+ }
+}

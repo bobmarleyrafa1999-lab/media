@@ -1,0 +1,10 @@
+post_id,brand,date,slot,platform,type,format_code,pillar,hook_type,hook_text,caption_len,cta_type,slides,visual_style,experiment_id,arm,views,reach,hold_3s_pct,avg_watch_s,duration_s,likes,comments,saves,shares,follows,profile_visits
+wk2-mon-1800,moodius,2026-10-12,18:00,instagram,REEL,F1,Fortitude & emotion,confrontational,Not every insult deserves a reply,,send,,stone,baseline,,133,,44,5.1,,,,,,,
+wk2-wed-1800,moodius,2026-10-14,18:00,instagram,REEL,F1,Relationships,confrontational,You can't make everyone like you,,send,,stone,baseline,,115,,48,5.5,,,,,,,
+wk2-wed-1200,moodius,2026-10-14,12:00,instagram,REEL,F1,Fortitude & emotion,confrontational,Fastest way to lose an argument,,follow,,stone,baseline,,115,,46,4.2,,,,,,,
+wk2-thu-1200,moodius,2026-10-15,12:00,instagram,REEL,F1,Fortitude & emotion,confrontational,It's the story you tell,,send,,stone,baseline,,126,,41,4.0,,,,,,,
+wk2-tue-1800,moodius,2026-10-13,18:00,instagram,REEL,F6,Discipline & habits,practice,Morning routine,,save,,stone,baseline,,143,,25,3.8,,,,,,,
+wk2-mon-1200,moodius,2026-10-12,12:00,instagram,REEL,list,Fortitude & emotion,numbered list,3 rules for overthinkers,,save,,stone,baseline,,136,,25,5.9,,,,,,,
+wk2-tue-1200,moodius,2026-10-13,12:00,instagram,REEL,list,Stoicism,numbered list,5 things you can't control,,save,,stone,baseline,,21,,28,2.5,,,,,,,
+wk2-tue-1000,moodius,2026-10-13,10:00,instagram,REEL,F1,Discipline & habits,confrontational,Motivation isn't coming,,follow,,stone,baseline,,26,,25,4.7,,,,,,,
+wk2-thu-1000,moodius,2026-10-15,10:00,instagram,REEL,F1,Discipline & habits,confrontational,Busy all day nothing done,,follow,,stone,baseline,,12,,33,4.0,,,,,,,

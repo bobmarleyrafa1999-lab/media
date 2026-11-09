@@ -1,0 +1,298 @@
+{
+ "A01": {
+  "profile": {
+   "primary": "psychology",
+   "secondary": "masculinity",
+   "mood": "still resting sparse weightless",
+   "energy": 1.5
+  },
+  "candidates": [
+   {
+    "id": "MO-PSY-1",
+    "title": "Moodius Psychology 1",
+    "artist": "Moodius (original)",
+    "score": 5.25,
+    "why": [
+     "psychology category",
+     "mood: sparse, still",
+     "owned, scored to this reel's cuts"
+    ],
+    "status": "in_library",
+    "attribution": "none needed"
+   },
+   {
+    "id": "MO-MAS-1",
+    "title": "Moodius Masculinity 1",
+    "artist": "Moodius (original)",
+    "score": 4.05,
+    "why": [
+     "matches the masculinity theme in the text",
+     "mood: sparse, still",
+     "owned, scored to this reel's cuts"
+    ],
+    "status": "in_library",
+    "attribution": "none needed"
+   },
+   {
+    "id": "EX-SB-03",
+    "title": "Meanwhile",
+    "artist": "Scott Buckley",
+    "score": 1.85,
+    "why": [
+     "psychology category",
+     "needs download first"
+    ],
+    "status": "to_download",
+    "attribution": "Music: \"Meanwhile\" by Scott Buckley (scottbuckley.com.au), CC BY 4.0"
+   }
+  ],
+  "recommended": "MO-PSY-1"
+ },
+ "B01": {
+  "profile": {
+   "primary": "stoicism",
+   "secondary": "refined",
+   "mood": "dark introspective still slow",
+   "energy": 1.5
+  },
+  "candidates": [
+   {
+    "id": "MO-STO-1",
+    "title": "Moodius Stoicism 1",
+    "artist": "Moodius (original)",
+    "score": 4.25,
+    "why": [
+     "stoicism category",
+     "mood: still",
+     "owned, scored to this reel's cuts"
+    ],
+    "status": "in_library",
+    "attribution": "none needed"
+   },
+   {
+    "id": "MO-REF-1",
+    "title": "Moodius Refined 1",
+    "artist": "Moodius (original)",
+    "score": 3.05,
+    "why": [
+     "matches the refined theme in the text",
+     "mood: still",
+     "owned, scored to this reel's cuts"
+    ],
+    "status": "in_library",
+    "attribution": "none needed"
+   },
+   {
+    "id": "EX-KM-03",
+    "title": "Ossuary 5 - Rest",
+    "artist": "Kevin MacLeod",
+    "score": 2.85,
+    "why": [
+     "stoicism category",
+     "mood: still",
+     "needs download first"
+    ],
+    "status": "to_download",
+    "attribution": "\"Ossuary 5 - Rest\" Kevin MacLeod (incompetech.com), Licensed under Creative Commons: By Attribution 4.0"
+   }
+  ],
+  "recommended": "MO-STO-1"
+ },
+ "C01": {
+  "profile": {
+   "primary": "discipline",
+   "secondary": "psychology",
+   "mood": "heavy grave low sparse",
+   "energy": 2.5
+  },
+  "candidates": [
+   {
+    "id": "MO-DIS-3",
+    "title": "Moodius Discipline 3",
+    "artist": "Moodius (original)",
+    "score": 5.25,
+    "why": [
+     "discipline category",
+     "mood: grave, low",
+     "owned, scored to this reel's cuts"
+    ],
+    "status": "in_library",
+    "attribution": "none needed"
+   },
+   {
+    "id": "MO-PSY-3",
+    "title": "Moodius Psychology 3",
+    "artist": "Moodius (original)",
+    "score": 4.05,
+    "why": [
+     "matches the psychology theme in the text",
+     "mood: grave, low",
+     "owned, scored to this reel's cuts"
+    ],
+    "status": "in_library",
+    "attribution": "none needed"
+   },
+   {
+    "id": "MO-STO-3",
+    "title": "Moodius Stoicism 3",
+    "artist": "Moodius (original)",
+    "score": 2.25,
+    "why": [
+     "mood: grave, low",
+     "owned, scored to this reel's cuts"
+    ],
+    "status": "in_library",
+    "attribution": "none needed"
+   }
+  ],
+  "recommended": "MO-DIS-3"
+ },
+ "D01": {
+  "profile": {
+   "primary": "existentialism",
+   "secondary": "psychology",
+   "mood": "tender warm elegant glowing",
+   "energy": 1.5
+  },
+  "candidates": [
+   {
+    "id": "MO-EXI-2",
+    "title": "Moodius Existentialism 2",
+    "artist": "Moodius (original)",
+    "score": 5.25,
+    "why": [
+     "existentialism category",
+     "mood: glowing, tender, warm",
+     "owned, scored to this reel's cuts"
+    ],
+    "status": "in_library",
+    "attribution": "none needed"
+   },
+   {
+    "id": "MO-PSY-2",
+    "title": "Moodius Psychology 2",
+    "artist": "Moodius (original)",
+    "score": 4.05,
+    "why": [
+     "matches the psychology theme in the text",
+     "mood: glowing, tender, warm",
+     "owned, scored to this reel's cuts"
+    ],
+    "status": "in_library",
+    "attribution": "none needed"
+   },
+   {
+    "id": "EX-SB-01",
+    "title": "Shadows and Dust",
+    "artist": "Scott Buckley",
+    "score": 1.85,
+    "why": [
+     "existentialism category",
+     "needs download first"
+    ],
+    "status": "to_download",
+    "attribution": "Music: \"Shadows and Dust\" by Scott Buckley (scottbuckley.com.au), CC BY 4.0"
+   }
+  ],
+  "recommended": "MO-EXI-2"
+ },
+ "E01": {
+  "profile": {
+   "primary": "masculinity",
+   "secondary": "relationships",
+   "mood": "dark introspective still slow",
+   "energy": 2
+  },
+  "candidates": [
+   {
+    "id": "MO-MAS-1",
+    "title": "Moodius Masculinity 1",
+    "artist": "Moodius (original)",
+    "score": 4.6,
+    "why": [
+     "masculinity category",
+     "mood: still",
+     "owned, scored to this reel's cuts"
+    ],
+    "status": "in_library",
+    "attribution": "none needed"
+   },
+   {
+    "id": "MO-REL-1",
+    "title": "Moodius Relationships 1",
+    "artist": "Moodius (original)",
+    "score": 3.4,
+    "why": [
+     "matches the relationships theme in the text",
+     "mood: still",
+     "owned, scored to this reel's cuts"
+    ],
+    "status": "in_library",
+    "attribution": "none needed"
+   },
+   {
+    "id": "EX-KM-01",
+    "title": "Long Note Two",
+    "artist": "Kevin MacLeod",
+    "score": 1.5,
+    "why": [
+     "masculinity category",
+     "needs download first"
+    ],
+    "status": "to_download",
+    "attribution": "\"Long Note Two\" Kevin MacLeod (incompetech.com), Licensed under Creative Commons: By Attribution 4.0"
+   }
+  ],
+  "recommended": "MO-MAS-1"
+ },
+ "F01": {
+  "profile": {
+   "primary": "stoicism",
+   "secondary": "relationships",
+   "mood": "hopeful luminous light airy",
+   "energy": 2
+  },
+  "candidates": [
+   {
+    "id": "MO-STO-4",
+    "title": "Moodius Stoicism 4",
+    "artist": "Moodius (original)",
+    "score": 5.6,
+    "why": [
+     "stoicism category",
+     "mood: airy, hopeful, light",
+     "owned, scored to this reel's cuts"
+    ],
+    "status": "in_library",
+    "attribution": "none needed"
+   },
+   {
+    "id": "MO-REL-4",
+    "title": "Moodius Relationships 4",
+    "artist": "Moodius (original)",
+    "score": 4.4,
+    "why": [
+     "matches the relationships theme in the text",
+     "mood: airy, hopeful, light",
+     "owned, scored to this reel's cuts"
+    ],
+    "status": "in_library",
+    "attribution": "none needed"
+   },
+   {
+    "id": "EX-SB-06",
+    "title": "Cirrus",
+    "artist": "Scott Buckley",
+    "score": 3.0,
+    "why": [
+     "matches the relationships theme in the text",
+     "mood: airy, light",
+     "needs download first"
+    ],
+    "status": "to_download",
+    "attribution": "Music: \"Cirrus\" by Scott Buckley, CC BY 4.0"
+   }
+  ],
+  "recommended": "MO-STO-4"
+ }
+}

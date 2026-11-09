@@ -1,0 +1,217 @@
+{
+ "n": 9,
+ "essay": "essays/09-successful-but-empty.md",
+ "title": "A Life That Looks Successful but Feels Empty",
+ "ab_alt": "The View From Outside",
+ "pillar": "Discipline",
+ "reels": [
+  {
+   "id": "S09D",
+   "slug": "the-good-day",
+   "format": "D",
+   "series": "The Human Condition",
+   "pillar": "Discipline",
+   "hook": "The meeting went well. The flat looks right.",
+   "hook_b": "Everything went right today. So why does it feel like this?",
+   "cards": [
+    [
+     "The meeting went well. The flat looks right.",
+     2.4,
+     "hook"
+    ],
+    [
+     "The photos look like the life you aimed for.",
+     2.4,
+     "body"
+    ],
+    [
+     "Then the evening goes quiet, and something doesn't add up.",
+     2.8,
+     "body"
+    ],
+    [
+     "Graduates who reached wealth and image goals weren't happier a year later.",
+     3.2,
+     "body"
+    ],
+    [
+     "Study: Niemiec, Ryan & Deci, J. Res. Personality (2009)",
+     2.2,
+     "cite"
+    ],
+    [
+     "Those who grew closer to people and grew as people were.",
+     2.9,
+     "body"
+    ],
+    [
+     "The emptiness isn't ingratitude. It's information.",
+     2.4,
+     "body"
+    ],
+    [
+     "Send it to someone whose life looks great.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V3 still of a tidy flat at night, one lamp on, nobody in it (tag flat-night), else V1 + grain.",
+   "footage": "flat-night",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 317
+   },
+   "source": {
+    "type": "data",
+    "author": "Niemiec, Ryan & Deci",
+    "work": "The path taken (J. Research in Personality 43)",
+    "section": "study",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 study (N52, 147 graduates); format D, no advice",
+   "caption": "A life can look right from outside and feel empty from inside.\n\nIn one study, 147 graduates who made progress on wealth, fame and image goals didn't report more wellbeing a year later, and showed more signs of stress. Those who made progress on relationships and personal growth did report more.\n\nWhat would you keep if nobody could see your life from outside?\n\nEvidence: Niemiec, Ryan & Deci (2009), a small, well-educated sample. Full essay on the Substack, link in bio.",
+   "first_comment": "When did you last feel full rather than successful?",
+   "hashtags": [
+    "#success",
+    "#meaning",
+    "#psychology",
+    "#philosophy",
+    "#selfreflection"
+   ],
+   "cta": "send",
+   "length_s": 20.5,
+   "max_s": 30
+  },
+  {
+   "id": "S09C",
+   "slug": "california-mistake",
+   "format": "C",
+   "series": "The Philosophical Contradiction",
+   "pillar": "Discipline",
+   "hook": "Would you be happier living somewhere sunnier?",
+   "hook_b": "Why other people's lives always look better than they feel.",
+   "cards": [
+    [
+     "Would you be happier living somewhere sunnier?",
+     2.4,
+     "question"
+    ],
+    [
+     "ONE READING\nObviously. Better weather, better life.",
+     2.6,
+     "labelled"
+    ],
+    [
+     "THE OTHER\nYou'd notice the sun for a month. Then you'd just live there.",
+     3.6,
+     "labelled"
+    ],
+    [
+     "Students in California and the Midwest were equally satisfied with life.",
+     3.0,
+     "body"
+    ],
+    [
+     "Study: Schkade & Kahneman, Psychological Science (1998)",
+     2.2,
+     "cite"
+    ],
+    [
+     "We judge lives by what's visible. We live them by what isn't.",
+     3.1,
+     "body"
+    ],
+    [
+     "What are you judging your life by? Comment.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 + grain (Slate), or V3 window with low winter sun (tag window-sun).",
+   "footage": "window-sun",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 318
+   },
+   "source": {
+    "type": "data",
+    "author": "Schkade & Kahneman",
+    "work": "Does living in California make people happy? (Psych. Science 9(5))",
+    "section": "study",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 study (N53, 1,993 students)",
+   "caption": "Almost 2,000 students in the Midwest and Southern California rated their lives. Everyone expected Californians to be happier. Californians liked their weather a lot more, but their overall life satisfaction was the same.\n\nThe researchers called it a focusing illusion: we give the visible, distinctive parts of a life far more weight than they have in the living of it. We do it to our own lives too.\n\nWhat are you judging yours by?\n\nEvidence: Schkade & Kahneman (1998). Full essay on the Substack, link in bio.",
+   "first_comment": "One thing about your life that looks better from outside than it feels.",
+   "hashtags": [
+    "#success",
+    "#meaning",
+    "#psychology",
+    "#philosophy",
+    "#selfreflection"
+   ],
+   "cta": "comment",
+   "length_s": 19.1
+  }
+ ],
+ "carousel": [
+  [
+   "Cover",
+   "Your life can look successful and feel empty.",
+   "That's not ingratitude. It's information →",
+   "claim cover"
+  ],
+  [
+   "The California mistake",
+   "Students in California and the Midwest were equally satisfied. Everyone predicted otherwise.",
+   "Study · Schkade & Kahneman, Psychological Science (1998)",
+   "term card"
+  ],
+  [
+   "Reaching it isn't enough",
+   "Graduates who achieved wealth and image goals weren't happier. Those who grew closer to people were.",
+   "Study · Niemiec, Ryan & Deci (2009) · 147 graduates",
+   "term card"
+  ],
+  [
+   "Aristotle",
+   "\"Wealth is evidently not the good we are seeking; for it is merely useful and for the sake of something else.\"",
+   "Nicomachean Ethics I.5 · tr. W. D. Ross",
+   "pull quote"
+  ],
+  [
+   "Ivan Ilyich",
+   "Tolstoy's judge did everything right. Only at the end did he ask if he'd lived as he ought.",
+   "Idea · Tolstoy, The Death of Ivan Ilyich (1886)",
+   "pull quote"
+  ],
+  [
+   "The Two Ledgers",
+   "Left: what your life looks like. Right: what a Tuesday evening holds. What would you keep if nobody saw?",
+   "Moodius practice",
+   "pair slide"
+  ],
+  [
+   "Sign-off",
+   "Build the floor. Just don't mistake it for the house.",
+   "Full essay on the Substack · link in bio · save this",
+   "sign-off"
+  ]
+ ],
+ "carousel_caption": "We judge lives, our own included, by what can be seen from outside. That's a well-documented mistake.\n\nAnd reaching the visible goals doesn't always feed us. In one study, graduates who achieved wealth and image goals weren't happier a year later; those who grew closer to people were.\n\nWhat's on your Tuesday-evening ledger?\n\nEvidence: Schkade & Kahneman 1998; Niemiec, Ryan & Deci 2009. Philosophy: Aristotle, NE I.5 (Ross). Idea: Tolstoy.",
+ "notes": [
+  "Everyone expected students in California to be happier than students in the Midwest. They liked their weather much more. Their overall life satisfaction was the same. We judge lives by their most visible features, and we often do it to ourselves.",
+  "Aristotle on money, written about 2,300 years ago: wealth is 'merely useful and for the sake of something else'. The empty successful life is often one organised around things that are for something else, with the something else left out.",
+  "Two lists. On the left, what your life looks like from outside. On the right, what a normal Tuesday evening actually holds. The gap between them is worth an hour of your attention this week."
+ ],
+ "visuals": {
+  "look": "V3 tidy flat at night, one lamp, nobody in it; V3 window with low sun; else V1 + grain",
+  "type": "Standard; the Two Ledgers slide as two Ash-ruled columns",
+  "music": "night and low (ambient.py); restrained, no swell",
+  "pinterest": "1000×1500, Bone background, Slate type, Ember on 'empty'"
+ }
+}

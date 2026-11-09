@@ -1,0 +1,156 @@
+{
+  "name": "Moodius: Instagram stats to tracker Sheet",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": { "interval": [ { "field": "cronExpression", "expression": "30 8,20 * * *" } ] }
+      },
+      "id": "a1000000-0000-4000-8000-000000000001",
+      "name": "Twice a day (08:30, 20:30 Madrid)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 300]
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            { "id": "c1", "name": "IG_USER_ID", "value": "PUT_INSTAGRAM_BUSINESS_ACCOUNT_ID_HERE", "type": "string" },
+            { "id": "c2", "name": "GRAPH", "value": "https://graph.facebook.com/v23.0", "type": "string" },
+            { "id": "c3", "name": "DAYS_BACK", "value": 14, "type": "number" }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000002",
+      "name": "Config",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [220, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.GRAPH }}/{{ $json.IG_USER_ID }}/media",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            { "name": "fields", "value": "id,caption,media_type,media_product_type,timestamp,permalink" },
+            { "name": "limit", "value": "40" }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000003",
+      "name": "List posts and reels",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [440, 200]
+    },
+    {
+      "parameters": {
+        "url": "={{ $json.GRAPH }}/{{ $json.IG_USER_ID }}/stories",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            { "name": "fields", "value": "id,caption,media_type,media_product_type,timestamp,permalink" }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000004",
+      "name": "List live stories",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [440, 400]
+    },
+    {
+      "parameters": {},
+      "id": "a1000000-0000-4000-8000-000000000005",
+      "name": "Merge lists",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3,
+      "position": [660, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Flatten both lists and keep media from the last DAYS_BACK days.\nconst cfg = $('Config').first().json;\nconst cutoff = Date.now() - cfg.DAYS_BACK * 86400000;\nconst out = [];\nfor (const item of $input.all()) {\n  for (const m of item.json.data || []) {\n    if (new Date(m.timestamp).getTime() >= cutoff) out.push({ json: m });\n  }\n}\nreturn out;"
+      },
+      "id": "a1000000-0000-4000-8000-000000000006",
+      "name": "Keep recent",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [880, 300]
+    },
+    {
+      "parameters": {
+        "url": "={{ $('Config').first().json.GRAPH }}/{{ $json.id }}/insights",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpQueryAuth",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            { "name": "metric", "value": "={{ $json.media_product_type === 'STORY' ? 'reach,views,shares,replies' : 'reach,views,saved,shares,comments,likes,total_interactions' }}" }
+          ]
+        },
+        "options": { "batching": { "batch": { "batchSize": 10, "batchInterval": 1000 } } }
+      },
+      "id": "a1000000-0000-4000-8000-000000000007",
+      "name": "Get insights",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [1100, 300],
+      "onError": "continueRegularOutput"
+    },
+    {
+      "parameters": {
+        "jsCode": "// One tracker row per media id. Insights come back in the same order as 'Keep recent'.\nconst media = $('Keep recent').all();\nconst rows = $input.all().map((item, i) => {\n  const m = media[i].json;\n  const metrics = {};\n  for (const d of item.json.data || []) {\n    metrics[d.name] = d.values?.[0]?.value ?? d.total_value?.value ?? '';\n  }\n  const reach = Number(metrics.reach) || 0;\n  const ratio = (n) => (reach && n !== '' ? Number((Number(n) / reach).toFixed(4)) : '');\n  const madrid = new Date(m.timestamp).toLocaleString('sv-SE', { timeZone: 'Europe/Madrid' });\n  return { json: {\n    media_id: m.id,\n    posted_madrid: madrid.slice(0, 16),\n    type: m.media_product_type === 'REELS' ? 'REEL' : m.media_product_type === 'STORY' ? 'STORY' : (m.media_type === 'CAROUSEL_ALBUM' ? 'CAROUSEL' : m.media_type),\n    hook: (m.caption || '').split('\\n')[0].slice(0, 120),\n    permalink: m.permalink || '',\n    reach: metrics.reach ?? '',\n    views: metrics.views ?? '',\n    saves: metrics.saved ?? '',\n    sends: metrics.shares ?? '',\n    comments: metrics.comments ?? '',\n    likes: metrics.likes ?? '',\n    replies: metrics.replies ?? '',\n    sends_per_reach: ratio(metrics.shares ?? ''),\n    saves_per_reach: ratio(metrics.saved ?? ''),\n    error: item.json.error ? JSON.stringify(item.json.error).slice(0, 200) : '',\n    updated_utc: new Date().toISOString().slice(0, 16)\n  } };\n});\nreturn rows;"
+      },
+      "id": "a1000000-0000-4000-8000-000000000008",
+      "name": "Build tracker rows",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1320, 300]
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "mode": "url",
+          "value": "https://docs.google.com/spreadsheets/d/1dgPiqvy-FzB-8dMPzjQMwAdmnAdBKPTZfJcUu6dXXpM/edit"
+        },
+        "sheetName": { "__rl": true, "mode": "name", "value": "ig-stats" },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": ["media_id"]
+        },
+        "options": {}
+      },
+      "id": "a1000000-0000-4000-8000-000000000009",
+      "name": "Upsert into ig-stats tab",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [1540, 300]
+    }
+  ],
+  "connections": {
+    "Twice a day (08:30, 20:30 Madrid)": { "main": [[{ "node": "Config", "type": "main", "index": 0 }]] },
+    "Config": { "main": [[
+      { "node": "List posts and reels", "type": "main", "index": 0 },
+      { "node": "List live stories", "type": "main", "index": 0 }
+    ]] },
+    "List posts and reels": { "main": [[{ "node": "Merge lists", "type": "main", "index": 0 }]] },
+    "List live stories": { "main": [[{ "node": "Merge lists", "type": "main", "index": 1 }]] },
+    "Merge lists": { "main": [[{ "node": "Keep recent", "type": "main", "index": 0 }]] },
+    "Keep recent": { "main": [[{ "node": "Get insights", "type": "main", "index": 0 }]] },
+    "Get insights": { "main": [[{ "node": "Build tracker rows", "type": "main", "index": 0 }]] },
+    "Build tracker rows": { "main": [[{ "node": "Upsert into ig-stats tab", "type": "main", "index": 0 }]] }
+  },
+  "settings": { "executionOrder": "v1", "timezone": "Europe/Madrid", "saveDataSuccessExecution": "none" },
+  "pinData": {}
+}

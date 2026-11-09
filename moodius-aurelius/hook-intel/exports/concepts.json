@@ -1,0 +1,47 @@
+[
+ {
+  "id": "HI01",
+  "batch": "hi-batch-01",
+  "pattern_id": "curiosity_gap:insider_reveal",
+  "title": "The Stoic drill for being insulted",
+  "pillar": "Truths",
+  "status": "draft",
+  "qc": "{\"errors\": [], \"warnings\": [], \"engine\": \"passed:    ! hook card longer than 2.6s | HI04c instant-reply-c            pass |    ! hook card longer than 2.6s | HI05a rest-or-avoidance          pass | HI05b rest-or-avoidance-b        pass | HI05c rest-or-avoidance-c        pass\"}"
+ },
+ {
+  "id": "HI02",
+  "batch": "hi-batch-01",
+  "pattern_id": "unexpected_question:question",
+  "title": "Too sensitive, or well informed?",
+  "pillar": "Identity",
+  "status": "draft",
+  "qc": "{\"errors\": [], \"warnings\": [], \"engine\": \"passed:    ! hook card longer than 2.6s | HI04c instant-reply-c            pass |    ! hook card longer than 2.6s | HI05a rest-or-avoidance          pass | HI05b rest-or-avoidance-b        pass | HI05c rest-or-avoidance-c        pass\"}"
+ },
+ {
+  "id": "HI03",
+  "batch": "hi-batch-01",
+  "pattern_id": "emotional_recognition:second_person_scene",
+  "title": "Lonely at a full table",
+  "pillar": "Truths",
+  "status": "draft",
+  "qc": "{\"errors\": [], \"warnings\": [], \"engine\": \"passed:    ! hook card longer than 2.6s | HI04c instant-reply-c            pass |    ! hook card longer than 2.6s | HI05a rest-or-avoidance          pass | HI05b rest-or-avoidance-b        pass | HI05c rest-or-avoidance-c        pass\"}"
+ },
+ {
+  "id": "HI04",
+  "batch": "hi-batch-01",
+  "pattern_id": "psychological_revelation:hidden_cost",
+  "title": "The cost of always replying straight away",
+  "pillar": "Daily",
+  "status": "draft",
+  "qc": "{\"errors\": [], \"warnings\": [], \"engine\": \"passed:    ! hook card longer than 2.6s | HI04c instant-reply-c            pass |    ! hook card longer than 2.6s | HI05a rest-or-avoidance          pass | HI05b rest-or-avoidance-b        pass | HI05c rest-or-avoidance-c        pass\"}"
+ },
+ {
+  "id": "HI05",
+  "batch": "hi-batch-01",
+  "pattern_id": "philosophical_paradox:versus",
+  "title": "Rest or avoidance?",
+  "pillar": "Discipline",
+  "status": "draft",
+  "qc": "{\"errors\": [], \"warnings\": [], \"engine\": \"passed:    ! hook card longer than 2.6s | HI04c instant-reply-c            pass |    ! hook card longer than 2.6s | HI05a rest-or-avoidance          pass | HI05b rest-or-avoidance-b        pass | HI05c rest-or-avoidance-c        pass\"}"
+ }
+]

@@ -1,0 +1,626 @@
+[
+ {
+  "date": "2026-10-20",
+  "tz": "+02:00",
+  "items": [
+   {
+    "time": "20:00",
+    "type": "STORY",
+    "files": [
+     "2000-story-manifesto-1.jpg"
+    ],
+    "highlight": "Manifesto"
+   },
+   {
+    "time": "20:01",
+    "type": "STORY",
+    "files": [
+     "2000-story-manifesto-2.jpg"
+    ],
+    "highlight": "Manifesto"
+   },
+   {
+    "time": "20:02",
+    "type": "STORY",
+    "files": [
+     "2000-story-manifesto-3.jpg"
+    ],
+    "highlight": "Manifesto"
+   },
+   {
+    "time": "20:03",
+    "type": "STORY",
+    "files": [
+     "2000-story-manifesto-4.jpg"
+    ],
+    "highlight": "Manifesto"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-21",
+  "tz": "+02:00",
+  "items": [
+   {
+    "time": "09:00",
+    "type": "STORY",
+    "files": [
+     "0900-story-daily.jpg"
+    ],
+    "highlight": "Daily"
+   },
+   {
+    "time": "12:00",
+    "type": "CAROUSEL",
+    "files": [
+     "1200-carousel-01.jpg",
+     "1200-carousel-02.jpg",
+     "1200-carousel-03.jpg",
+     "1200-carousel-04.jpg",
+     "1200-carousel-05.jpg",
+     "1200-carousel-06.jpg",
+     "1200-carousel-07.jpg"
+    ],
+    "caption": "You don't have a discipline problem. You have a self-trust problem.\n\nEvery promise you break to yourself is a small vote against your own word. Epictetus put the mechanism plainly in Discourses 2.18: every habit is kept and grown by the actions that match it. Self-trust works the same way.\n\nSo make the promise smaller. Keep it for seven days. Count the proof.\n\nSave this. Send it to the friend who keeps starting on Monday.\n\n#stoicism #selftrust #discipline #habits #psychology",
+    "first_comment": "What's one small promise you'll keep for the next 7 days? Write it here so it counts 👇",
+    "alt": "Seven-slide carousel: self-trust, Epictetus Discourses 2.18, three steps to rebuild it."
+   },
+   {
+    "time": "18:00",
+    "type": "REEL",
+    "files": [
+     "1800-reel.mp4",
+     "1800-reel-cover.jpg"
+    ],
+    "caption": "Three signs you're regulating, not suppressing.\n\nYou can name the feeling. You feel it, then choose what to do. It passes instead of leaking out later.\n\nMarcus Aurelius, Meditations 8.47: \"It is not this thing that disturbs you, but your own judgement about it.\" Feeling isn't the problem. Letting the first judgement drive is.\n\nSave this for a loud day.\n\n#stoicism #emotionalregulation #marcusaurelius #emotions #psychology",
+    "first_comment": "Which of the three is hardest for you right now: 1, 2 or 3? 👇",
+    "alt": "Text reel: three signs you are regulating, not suppressing. Marcus Aurelius, Meditations 8.47."
+   },
+   {
+    "time": "21:00",
+    "type": "STORY",
+    "files": [
+     "2100-story-journal.jpg"
+    ],
+    "highlight": "Journal"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-22",
+  "tz": "+02:00",
+  "items": [
+   {
+    "time": "09:00",
+    "type": "STORY",
+    "files": [
+     "0900-story-daily.jpg"
+    ],
+    "highlight": "Daily"
+   },
+   {
+    "time": "12:00",
+    "type": "CAROUSEL",
+    "files": [
+     "1200-carousel-01.jpg",
+     "1200-carousel-02.jpg",
+     "1200-carousel-03.jpg",
+     "1200-carousel-04.jpg",
+     "1200-carousel-05.jpg",
+     "1200-carousel-06.jpg"
+    ],
+    "caption": "When someone is rude to you today, Marcus Aurelius had already planned for it.\n\nHe began his mornings expecting difficult people (Meditations 2.1). Not to turn cold. To stop being surprised. Then Meditations 4.7: drop the judgement \"I've been harmed\", and the harm goes with it.\n\nRude happened. Harmed is a story you can decline.\n\nSend this to someone who deals with people all day.\n\n#stoicism #marcusaurelius #boundaries #emotionalregulation #psychology",
+    "first_comment": "Who's the difficult person you're getting ready for today? The role only, no names 👇",
+    "alt": "Six-slide carousel: Marcus Aurelius, Meditations 2.1 and 4.7, on expecting rudeness and declining the harm."
+   },
+   {
+    "time": "18:00",
+    "type": "REEL",
+    "files": [
+     "1800-reel.mp4",
+     "1800-reel-cover.jpg"
+    ],
+    "caption": "Asking for help isn't weak.\n\nMarcus Aurelius, Meditations 7.7 (Long): \"Be not ashamed to be helped; for it is your business to do your duty like a soldier in the assault on a town.\" The emperor of Rome wrote that to himself. If you're limping, lean on someone. Then keep climbing.\n\nSend this to someone who's struggling in silence.\n\n#stoicism #marcusaurelius #askingforhelp #mentalhealth #emotions",
+    "first_comment": "The rest of Meditations 7.7: \"How then, if being lame you cannot mount up on the battlements alone, but with the help of another it is possible?\"\n\nWho's one person you could ask for help this week? 👇",
+    "alt": "Text reel: Be not ashamed to be helped. Marcus Aurelius, Meditations 7.7, Long translation."
+   },
+   {
+    "time": "21:00",
+    "type": "STORY",
+    "files": [
+     "2100-story-journal.jpg"
+    ],
+    "highlight": "Journal"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-23",
+  "tz": "+02:00",
+  "items": [
+   {
+    "time": "09:00",
+    "type": "STORY",
+    "files": [
+     "0900-story-daily.jpg"
+    ],
+    "highlight": "Daily"
+   },
+   {
+    "time": "12:00",
+    "type": "CAROUSEL",
+    "files": [
+     "1200-carousel-01.jpg",
+     "1200-carousel-02.jpg",
+     "1200-carousel-03.jpg",
+     "1200-carousel-04.jpg",
+     "1200-carousel-05.jpg",
+     "1200-carousel-06.jpg",
+     "1200-carousel-07.jpg"
+    ],
+    "caption": "Why you replay the argument at 2am, and the move that stops it.\n\nThe argument took five minutes. The replay takes three hours. Seneca saw it (Letters 13.4): we suffer more in imagination than in reality. Epictetus named the cause (Enchiridion 5): it isn't what happened, it's the judgement about it.\n\nTonight, write the judgement down. Then ask two questions.\n\nSave this for tonight.\n\n#stoicism #overthinking #rumination #seneca #psychology",
+    "first_comment": "What's the argument you've replayed most this year? One word is enough 👇",
+    "alt": "Seven-slide carousel explaining rumination with Seneca Letters 13.4 and Epictetus Enchiridion 5, plus two steps to stop it."
+   },
+   {
+    "time": "17:00",
+    "type": "REEL",
+    "files": [
+     "1700-reel.mp4",
+     "1700-reel-cover.jpg"
+    ],
+    "caption": "They got away with it. You didn't.\n\nPlato, Gorgias 469c (Jowett). Asked whether he would rather do wrong or suffer it, Socrates answers: \"If I must choose between them, I would rather suffer than do.\" Whoever cheated you has to live with a cheat. You don't. Staying clean is the win, even when it doesn't feel like one.\n\nSend this to someone who got burned.\n\n#plato #socrates #stoicism #justice #letitgo",
+    "first_comment": "Marcus Aurelius, Meditations 9.4 (Long): \"He who does wrong does wrong against himself.\"\n\nHave you ever been glad, later, that you didn't get even? 👇",
+    "alt": "Text reel: I would rather suffer than do wrong. Plato, Gorgias 469c, Jowett translation."
+   },
+   {
+    "time": "21:00",
+    "type": "STORY",
+    "files": [
+     "2100-story-journal.jpg"
+    ],
+    "highlight": "Journal"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-24",
+  "tz": "+02:00",
+  "items": [
+   {
+    "time": "09:00",
+    "type": "STORY",
+    "files": [
+     "0900-story-daily.jpg"
+    ],
+    "highlight": "Daily"
+   },
+   {
+    "time": "12:00",
+    "type": "CAROUSEL",
+    "files": [
+     "1200-carousel-01.jpg",
+     "1200-carousel-02.jpg",
+     "1200-carousel-03.jpg",
+     "1200-carousel-04.jpg",
+     "1200-carousel-05.jpg",
+     "1200-carousel-06.jpg",
+     "1200-carousel-07.jpg",
+     "1200-carousel-08.jpg",
+     "1200-carousel-09.jpg",
+     "1200-carousel-10.jpg"
+    ],
+    "caption": "The 5-minute evening review the Stoics actually ran.\n\nSeneca describes it in On Anger 3.36: lights out, the day replayed in order, three questions, nothing hidden. Not a trial. A review.\n\nDo it tonight. Same time, phone in another room, one notebook.\n\nSave this, and tell me tomorrow which question was hardest.\n\n#stoicism #seneca #journaling #eveningroutine #selfreflection",
+    "first_comment": "Which of Seneca's three questions will be hardest for you: 1, 2 or 3? 👇",
+    "alt": "Ten-slide carousel: Seneca's evening review from On Anger 3.36 as a six-step protocol."
+   },
+   {
+    "time": "18:00",
+    "type": "REEL",
+    "files": [
+     "1800-reel.mp4",
+     "1800-reel-cover.jpg"
+    ],
+    "caption": "You didn't choose your family. Or your city. Or your time.\n\nMarcus Aurelius, Meditations 6.39 (Long): \"Adapt yourself to the things with which your lot has been cast: and the men among whom you have received your portion, love them, but do it truly, sincerely.\" He didn't choose his either. Amor fati starts with the people in your kitchen. Stop wishing for a different hand. Play this one with love.\n\nSend this to the people you're stuck with.\n\n#amorfati #marcusaurelius #stoicism #family #relationships",
+    "first_comment": "Meditations 6.48 (Long): \"When you wish to delight yourself, think of the virtues of those who live with you.\"\n\nWho's one person you were given rather than chose, and what's one good thing about them? 👇",
+    "alt": "Text reel: love the people you have received your portion among. Marcus Aurelius, Meditations 6.39, Long translation."
+   },
+   {
+    "time": "21:00",
+    "type": "STORY",
+    "files": [
+     "2100-story-journal.jpg"
+    ],
+    "highlight": "Journal"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-25",
+  "tz": "+01:00",
+  "items": [
+   {
+    "time": "09:00",
+    "type": "STORY",
+    "files": [
+     "0900-story-daily.jpg"
+    ],
+    "highlight": "Daily"
+   },
+   {
+    "time": "12:00",
+    "type": "CAROUSEL",
+    "files": [
+     "1200-carousel-01.jpg",
+     "1200-carousel-02.jpg",
+     "1200-carousel-03.jpg",
+     "1200-carousel-04.jpg",
+     "1200-carousel-05.jpg",
+     "1200-carousel-06.jpg",
+     "1200-carousel-07.jpg"
+    ],
+    "caption": "5 ancient lines for when life gets heavy.\n\nSeneca, Marcus Aurelius, Epictetus and Nietzsche on what hard seasons are for. Swipe, pick the one you need, and carry it into Monday.\n\nSave this. Send it to someone who's going through it.\n\n#stoicism #resilience #seneca #hardtimes #meaning",
+    "first_comment": "Which one do you need this week? Just the number 👇",
+    "alt": "Seven-slide carousel: five lines on hardship from Seneca, Marcus Aurelius, Epictetus and Nietzsche, public-domain translations."
+   },
+   {
+    "time": "18:00",
+    "type": "REEL",
+    "files": [
+     "1800-reel.mp4",
+     "1800-reel-cover.jpg"
+    ],
+    "caption": "You're looking for it everywhere but here.\n\nMarcus Aurelius, Meditations 7.59 (Long): \"Look within. Within is the fountain of good, and it will ever bubble up, if you will ever dig.\" The person you want to become isn't in a course, a new city or someone else's approval. It's a decision, and you can make it today.\n\nFollow for one line a day.\n\n#stoicism #marcusaurelius #selfworth #innerpeace #selfawareness",
+    "first_comment": "Plato, Phaedrus 279b (Jowett), Socrates' prayer: \"Give me beauty in the inward soul; and may the outward and inward man be at one.\"\n\nWhat's one good thing in you that you've been underusing? 👇",
+    "alt": "Text reel: Look within, within is the fountain of good. Marcus Aurelius, Meditations 7.59, Long translation."
+   },
+   {
+    "time": "21:00",
+    "type": "STORY",
+    "files": [
+     "2100-story-journal.jpg"
+    ],
+    "highlight": "Journal"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-26",
+  "tz": "+01:00",
+  "items": [
+   {
+    "time": "09:00",
+    "type": "STORY",
+    "files": [
+     "0900-story-daily.jpg"
+    ],
+    "highlight": "Daily"
+   },
+   {
+    "time": "12:00",
+    "type": "CAROUSEL",
+    "files": [
+     "1200-carousel-01.jpg",
+     "1200-carousel-02.jpg",
+     "1200-carousel-03.jpg",
+     "1200-carousel-04.jpg",
+     "1200-carousel-05.jpg",
+     "1200-carousel-06.jpg",
+     "1200-carousel-07.jpg"
+    ],
+    "caption": "You're not lazy. You're avoiding a feeling.\n\nMost procrastination isn't a time problem. Psychologists link it to mood repair: you put the task off to escape how it makes you feel (doubt, boredom, fear of doing it badly). Marcus caught himself at it too. Meditations 2.4 (Long): \"Remember how long you have been putting off these things.\"\n\nName the feeling. Shrink the start to two minutes. Bring the feeling with you.\n\nSave this for the next thing you keep putting off.\n\n#stoicism #procrastination #marcusaurelius #emotions #psychology",
+    "first_comment": "What's the feeling behind the thing you're putting off right now? One word is enough 👇",
+    "alt": "Seven-slide carousel: procrastination as avoiding a feeling, Marcus Aurelius Meditations 2.4, three steps."
+   },
+   {
+    "time": "18:00",
+    "type": "REEL",
+    "files": [
+     "1800-reel.mp4",
+     "1800-reel-cover.jpg"
+    ],
+    "caption": "Likes are a vote from people who gave your post half a second. Your own opinion of you has watched every day of your life.\n\nMarcus wrote this with no phone, about the same habit. Tonight, before you open the app, answer one thing: what do you actually think of what you made?\n\n— Moodius\n\n#stoicism #marcusaurelius #selfworth #overthinking",
+    "first_comment": "What would you post if nobody could see the likes?",
+    "alt": "Text reel: You'd never let a stranger decide what you're worth. Marcus Aurelius, Meditations 12.4"
+   },
+   {
+    "time": "21:00",
+    "type": "STORY",
+    "files": [
+     "2100-story-journal.jpg"
+    ],
+    "highlight": "Journal"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-27",
+  "tz": "+01:00",
+  "items": [
+   {
+    "time": "09:00",
+    "type": "STORY",
+    "files": [
+     "0900-story-daily.jpg"
+    ],
+    "highlight": "Manifesto"
+   },
+   {
+    "time": "12:00",
+    "type": "CAROUSEL",
+    "files": [
+     "1200-carousel-01.jpg",
+     "1200-carousel-02.jpg",
+     "1200-carousel-03.jpg",
+     "1200-carousel-04.jpg",
+     "1200-carousel-05.jpg",
+     "1200-carousel-06.jpg"
+    ],
+    "caption": "How to stop rehearsing disasters that never come.\n\nYour mind runs the worst case on repeat because rehearsing feels like preparing. It isn't. It's living the bad day in advance, often more than once. Marcus Aurelius, Meditations 7.8 (Long): you will meet future things \"having with you the same reason which now you use for present things.\"\n\nAsk for the next action. If there isn't one, come back to the room.\n\nSave this for the night it starts again.\n\n#stoicism #anxiety #overthinking #marcusaurelius #psychology",
+    "first_comment": "What's the disaster your mind rehearses most? You don't have to explain it, one word is fine 👇",
+    "alt": "Six-slide carousel: catastrophising, Marcus Aurelius Meditations 7.8, two steps to stop rehearsing."
+   },
+   {
+    "time": "18:00",
+    "type": "REEL",
+    "files": [
+     "1800-reel.mp4",
+     "1800-reel-cover.jpg"
+    ],
+    "caption": "Being alone isn't the problem. Being alone when you didn't choose it is.\n\nIf the quiet lately is the second kind, you're not broken and you're not rare. A quarter of young men in the US said they felt lonely for a lot of the previous day (Gallup, 2025).\n\nThe fix is smaller than it feels: one real sentence to one real person. Who's the first name that came to mind?\n\n— Moodius\n\n#loneliness #mentalhealth #menshealth #solitude",
+    "first_comment": "Solitude you choose recharges you. Loneliness drains you. If you can't tell which one this is, ask: would I pick up if someone called?",
+    "alt": "Text reel: Solitude: your phone is off. Gallup, Younger Men in the U.S. Among the Loneliest in West (May 2025) 25% of US men aged 15-34 felt lonely 'a lot of the day yesterday'"
+   },
+   {
+    "time": "21:00",
+    "type": "STORY",
+    "files": [
+     "2100-story-journal.jpg"
+    ],
+    "highlight": "Journal"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-28",
+  "tz": "+01:00",
+  "items": [
+   {
+    "time": "09:00",
+    "type": "STORY",
+    "files": [
+     "0900-story-daily.jpg"
+    ],
+    "highlight": "Daily"
+   },
+   {
+    "time": "12:00",
+    "type": "CAROUSEL",
+    "files": [
+     "1200-carousel-01.jpg",
+     "1200-carousel-02.jpg",
+     "1200-carousel-03.jpg",
+     "1200-carousel-04.jpg",
+     "1200-carousel-05.jpg"
+    ],
+    "caption": "Do less, better: the Stoic answer to burnout.\n\nMarcus Aurelius, Meditations 4.24 (Long): \"The greatest part of what we say and do being unnecessary, if a man takes this away, he will have more leisure and less uneasiness.\" Burnout often isn't too much work. It's too much unnecessary work.\n\nOne question for every task today: is this necessary?\n\nSend this to someone running on empty.\n\n#stoicism #burnout #marcusaurelius #focus #lessismore",
+    "first_comment": "What's one thing you could drop this week that nobody would notice? 👇",
+    "alt": "Five-slide carousel: Marcus Aurelius Meditations 4.24 on doing fewer things, with a today-versus-Marcus comparison."
+   },
+   {
+    "time": "18:00",
+    "type": "REEL",
+    "files": [
+     "1800-reel.mp4",
+     "1800-reel-cover.jpg"
+    ],
+    "caption": "Gregor Samsa turns into an insect overnight, and his first real panic is that he's late and the office will notice.\n\nIt's a joke, and it isn't. If the job is the first thing you think of when you're ill, grieving or falling apart, it has more of you than it paid for.\n\nWhat's one thing you'd stop doing if work didn't count tomorrow?\n\n— Moodius\n\n#kafka #burnout #philosophy #worklife",
+    "first_comment": "Kafka worked in an insurance office for most of his life. He wrote at night.",
+    "alt": "Text reel: Kafka wrote the most accurate book about work. Franz Kafka, The Metamorphosis Part I (Gregor's first thoughts are his job and the train he has missed)"
+   },
+   {
+    "time": "21:00",
+    "type": "STORY",
+    "files": [
+     "2100-story-journal.jpg"
+    ],
+    "highlight": "Journal"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-29",
+  "tz": "+01:00",
+  "items": [
+   {
+    "time": "09:00",
+    "type": "STORY",
+    "files": [
+     "0900-story-daily.jpg"
+    ],
+    "highlight": "Tools"
+   },
+   {
+    "time": "12:00",
+    "type": "CAROUSEL",
+    "files": [
+     "1200-carousel-01.jpg",
+     "1200-carousel-02.jpg",
+     "1200-carousel-03.jpg",
+     "1200-carousel-04.jpg",
+     "1200-carousel-05.jpg"
+    ],
+    "caption": "Why one comment ruins your whole day.\n\nNinety-nine kind ones, one sharp one, and you replay the sharp one. Psychologists call it negativity bias: the mind gives a threat more weight than praise. Epictetus, Enchiridion 20 (Higginson): \"It is your own opinion which provokes you.\" The comment took ten seconds. The story you add to it takes the day.\n\nBuy time. Don't reply today.\n\nSend this to someone rereading one right now.\n\n#stoicism #epictetus #criticism #emotionalregulation #psychology",
+    "first_comment": "Which column do you live in more often, reacting or responding? Be honest 👇",
+    "alt": "Five-slide carousel: reacting versus responding to criticism, Epictetus Enchiridion 20."
+   },
+   {
+    "time": "18:00",
+    "type": "REEL",
+    "files": [
+     "1800-reel.mp4",
+     "1800-reel-cover.jpg"
+    ],
+    "caption": "Nobody warns you that the early version of a better life looks a bit ridiculous from the outside. You'll be the one leaving at eleven, the one who doesn't drink, the one with the book.\n\nEpictetus told his students to accept looking foolish about things that don't matter. The ones laughing are usually watching closely.\n\nWhat's the habit you'd start if nobody could see?\n\n— Moodius\n\n#epictetus #selfimprovement #discipline #stoicism",
+    "first_comment": "It gets quieter around month four. People stop commenting and start asking.",
+    "alt": "Text reel: The first year of getting better looks embarrassing. Epictetus, Enchiridion 13"
+   },
+   {
+    "time": "21:00",
+    "type": "STORY",
+    "files": [
+     "2100-story-journal.jpg"
+    ],
+    "highlight": "Journal"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-30",
+  "tz": "+01:00",
+  "items": [
+   {
+    "time": "09:00",
+    "type": "STORY",
+    "files": [
+     "0900-story-daily.jpg"
+    ],
+    "highlight": "Discipline"
+   },
+   {
+    "time": "12:00",
+    "type": "CAROUSEL",
+    "files": [
+     "1200-carousel-01.jpg",
+     "1200-carousel-02.jpg",
+     "1200-carousel-03.jpg",
+     "1200-carousel-04.jpg",
+     "1200-carousel-05.jpg"
+    ],
+    "caption": "Who you let close becomes who you are.\n\nThe myth: you are who you are, whoever you're around. Aristotle disagreed. Nicomachean Ethics IX.12 (Ross): friends \"take the mould of the characteristics they approve\" from each other. And IX.4: \"his friend is another self.\"\n\nPick friends you'd be glad to become.\n\nSend this to the friend who makes you better.\n\n#aristotle #friendship #philosophy #character #stoicism",
+    "first_comment": "Who's one person who made you better just by being around them? 👇",
+    "alt": "Five-slide carousel: Aristotle, Nicomachean Ethics IX.4 and IX.12, on friends shaping character."
+   },
+   {
+    "time": "17:00",
+    "type": "REEL",
+    "files": [
+     "1700-reel.mp4",
+     "1700-reel-cover.jpg"
+    ],
+    "caption": "If anger was the only feeling that was safe to show growing up, it ends up carrying everything else: the hurt, the shame, the fear.\n\nThat's not a character flaw. It's a habit you were handed. You can put some of it down by naming what's underneath before you act.\n\nWhat's usually under yours?\n\n— Moodius\n\n#emotionalintelligence #anger #masculinity #mentalhealth",
+    "first_comment": "Marcus Aurelius wrote about anger more than almost anything else. He wasn't calm by nature either.",
+    "alt": "Text reel: Angry men are usually something else first. bell hooks, The Will to Change: Men, Masculinity, and Love argument that boys are allowed anger and taught to hide other feelings"
+   },
+   {
+    "time": "21:00",
+    "type": "STORY",
+    "files": [
+     "2100-story-journal.jpg"
+    ],
+    "highlight": "Journal"
+   }
+  ]
+ },
+ {
+  "date": "2026-10-31",
+  "tz": "+01:00",
+  "items": [
+   {
+    "time": "09:00",
+    "type": "STORY",
+    "files": [
+     "0900-story-daily.jpg"
+    ],
+    "highlight": "Truths"
+   },
+   {
+    "time": "12:00",
+    "type": "CAROUSEL",
+    "files": [
+     "1200-carousel-01.jpg",
+     "1200-carousel-02.jpg",
+     "1200-carousel-03.jpg",
+     "1200-carousel-04.jpg",
+     "1200-carousel-05.jpg",
+     "1200-carousel-06.jpg",
+     "1200-carousel-07.jpg"
+    ],
+    "caption": "Stop explaining your philosophy. Show it.\n\nEpictetus, Enchiridion 46 (Higginson): sheep don't throw up the grass to show the shepherd how much they've eaten; they digest it and produce wool and milk. Five questions for tonight's journal, each tied to a line from Epictetus, Marcus or Seneca.\n\nAnswer one in the comments. Keep the rest for tonight.\n\n#stoicism #journaling #epictetus #journalprompts #selfreflection",
+    "first_comment": "Pick one of the five and answer it here. Short is fine 👇",
+    "alt": "Seven-slide carousel: five journal prompts on acting rather than talking, Epictetus Enchiridion 46, Marcus Meditations 10.16, Seneca Letters 20.2."
+   },
+   {
+    "time": "18:00",
+    "type": "REEL",
+    "files": [
+     "1800-reel.mp4",
+     "1800-reel-cover.jpg"
+    ],
+    "caption": "There's a version of independence that's really just fear with good posture. You don't reach out, so you can't be turned down.\n\nSeneca's answer is two thousand years old and still annoyingly simple. If you want people close, be the one who moves closer.\n\nWho have you been waiting on to message first?\n\n— Moodius\n\n#seneca #relationships #attachment #stoicism",
+    "first_comment": "Going first doesn't mean going all in. It means one honest message.",
+    "alt": "Text reel: You want to be chosen. You don't choose anyone. Seneca (quoting Hecato), Moral Letters to Lucilius 9.6"
+   },
+   {
+    "time": "21:00",
+    "type": "STORY",
+    "files": [
+     "2100-story-journal.jpg"
+    ],
+    "highlight": "Journal"
+   }
+  ]
+ },
+ {
+  "date": "2026-11-01",
+  "tz": "+01:00",
+  "items": [
+   {
+    "time": "09:00",
+    "type": "STORY",
+    "files": [
+     "0900-story-daily.jpg"
+    ],
+    "highlight": "Identity"
+   },
+   {
+    "time": "12:00",
+    "type": "CAROUSEL",
+    "files": [
+     "1200-carousel-01.jpg",
+     "1200-carousel-02.jpg",
+     "1200-carousel-03.jpg",
+     "1200-carousel-04.jpg",
+     "1200-carousel-05.jpg",
+     "1200-carousel-06.jpg",
+     "1200-carousel-07.jpg",
+     "1200-carousel-08.jpg",
+     "1200-carousel-09.jpg",
+     "1200-carousel-10.jpg"
+    ],
+    "caption": "The two horses pulling your mind.\n\nPlato, Phaedrus 246b (Jowett): the soul as a charioteer with two horses, \"one of them is noble and of noble breed, and the other is ignoble.\" The wild horse isn't the enemy. It's energy. You don't get rid of it, you train it.\n\nSix steps: notice the pull, name what it wants, ask the other horse, shorten the reins, give the energy a job, review at night.\n\nSave this. Tell me which step you'll try first.\n\n#plato #philosophy #emotions #selfcontrol #stoicism",
+    "first_comment": "Which horse wins more often in your week, and when? 👇",
+    "alt": "Ten-slide carousel: Plato's charioteer from Phaedrus 246b as a six-step practice for strong emotions."
+   },
+   {
+    "time": "18:00",
+    "type": "REEL",
+    "files": [
+     "1800-reel.mp4",
+     "1800-reel-cover.jpg"
+    ],
+    "caption": "In a 2014 study (Wilson et al., Science), many people left alone with their thoughts for 15 minutes chose to give themselves a mild electric shock rather than sit there. Two thirds of the men did it at least once.\n\nThe urge to grab the phone isn't weakness. It's what quiet feels like when you're out of practice. Five minutes tonight, nothing in your hands.\n\nHow long did you last?\n\n— Moodius\n\n#dopamine #overstimulated #philosophy #focus",
+    "first_comment": "Start with two minutes if five is too much. It's a muscle.",
+    "alt": "Text reel: Try sitting alone for five minutes. No phone. Blaise Pascal, Pensées 139"
+   },
+   {
+    "time": "21:00",
+    "type": "STORY",
+    "files": [
+     "2100-story-journal.jpg"
+    ],
+    "highlight": "Journal"
+   }
+  ]
+ }
+]

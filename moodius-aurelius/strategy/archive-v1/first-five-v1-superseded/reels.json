@@ -1,0 +1,26 @@
+{
+  "reel-41-be-one": {
+    "style": "march",
+    "seed": 4141,
+    "segments": [
+      ["You don't need another podcast\nabout being a better man.", 3.0, true],
+      ["The emperor of Rome wrote himself this:", 2.6, false],
+      ["“No longer talk at all about\nthe kind of man a good man\nought to be, but be such.”", 4.2, true],
+      ["Meditations 10.16", 1.8, false],
+      ["Close the tab.\nDo one hard right thing today.", 3.0, false],
+      ["Send this to a brother who needs the push.", 2.6, false]
+    ]
+  },
+  "reel-42-weep": {
+    "style": "elegy",
+    "seed": 4242,
+    "segments": [
+      ["Real men don't cry?\nThe Stoics disagree.", 3.0, true],
+      ["Seneca, to a friend in grief:", 2.4, false],
+      ["“We may weep,\nbut we must not wail.”", 3.6, true],
+      ["Letters 63.1", 1.8, false],
+      ["Feel it fully.\nJust don't let it drive.", 3.0, false],
+      ["Save this for the day you need it.", 2.6, false]
+    ]
+  }
+}

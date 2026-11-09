@@ -1,0 +1,146 @@
+{
+ "reel-32-ask-for-help-v2": {
+  "style": "march",
+  "seed": 3203,
+  "segments": [
+   [
+    "Asking for help isn’t weak.",
+    2.6,
+    true
+   ],
+   [
+    "The emperor of Rome said so himself.",
+    2.4,
+    false
+   ],
+   [
+    "“Do not be ashamed to be helped. Like a soldier storming a wall, you have a job to do.”",
+    4.2,
+    false
+   ],
+   [
+    "Marcus Aurelius, Meditations 7.7",
+    2.0,
+    "cite"
+   ],
+   [
+    "If you’re limping, lean on someone. Then keep climbing.",
+    3.2,
+    true
+   ],
+   [
+    "Send this to a brother who’s struggling in silence.",
+    2.8,
+    false
+   ]
+  ]
+ },
+ "reel-35-do-wrong-v2": {
+  "style": "battle",
+  "seed": 3536,
+  "segments": [
+   [
+    "They got away with it. You didn’t.",
+    2.8,
+    true
+   ],
+   [
+    "Socrates would tell you that you won.",
+    2.6,
+    false
+   ],
+   [
+    "“It is worse to do wrong than to suffer wrong.”",
+    3.2,
+    true
+   ],
+   [
+    "Plato, Gorgias 469c",
+    1.6,
+    "cite"
+   ],
+   [
+    "The man who cheats you damages himself. Stay clean.",
+    3.2,
+    false
+   ],
+   [
+    "Send this to someone who got burned.",
+    2.6,
+    false
+   ]
+  ]
+ },
+ "reel-38-love-your-people-v2": {
+  "style": "elegy",
+  "seed": 3869,
+  "segments": [
+   [
+    "You didn’t choose your family. Or your city. Or your time.",
+    3.4,
+    true
+   ],
+   [
+    "Marcus Aurelius didn’t either. He wrote:",
+    2.4,
+    false
+   ],
+   [
+    "“Love the people fate has brought you together with, and do it with all your heart.”",
+    4.0,
+    false
+   ],
+   [
+    "Meditations 6.39",
+    1.6,
+    "cite"
+   ],
+   [
+    "Stop wishing for a different hand. Play this one with love.",
+    3.2,
+    true
+   ],
+   [
+    "Send this to the people you’re stuck with.",
+    2.6,
+    false
+   ]
+  ]
+ },
+ "reel-40-dig-within-v2": {
+  "style": "dawn",
+  "seed": 4081,
+  "segments": [
+   [
+    "You’re looking for it everywhere but here.",
+    2.8,
+    true
+   ],
+   [
+    "Marcus Aurelius pointed inward:",
+    2.2,
+    false
+   ],
+   [
+    "“Dig within. Within is the wellspring of good, and it will always flow if you keep digging.”",
+    4.2,
+    false
+   ],
+   [
+    "Meditations 7.59",
+    1.6,
+    "cite"
+   ],
+   [
+    "The good man you’re looking for is a decision away.",
+    3.0,
+    true
+   ],
+   [
+    "Follow for one rule a day.",
+    2.2,
+    false
+   ]
+  ]
+ }
+}

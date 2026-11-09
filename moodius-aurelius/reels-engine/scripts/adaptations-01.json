@@ -1,0 +1,723 @@
+{
+ "batch": "adaptations-01",
+ "written": "2026-10-21",
+ "schema": "engine 1.2 (see formats-AF.json); extra keys adapted_from, status",
+ "rule": "Ideas, hook structures and formats adapted from accounts in research/adaptations/source-sheet.csv. No caption, script, footage or design copied.",
+ "scripts": [
+  {
+   "id": "AD01",
+   "slug": "avenging",
+   "format": "F",
+   "series": "Thought Worth Keeping",
+   "pillar": "Truths",
+   "hook": "Marcus Aurelius said this about revenge.",
+   "hook_b": "The most satisfying revenge is the one nobody sees.",
+   "cards": [
+    [
+     "Marcus Aurelius said this about revenge.",
+     2.4,
+     "hook"
+    ],
+    [
+     "The best way of avenging thyself is not to become like the wrong doer.",
+     3.6,
+     "quote"
+    ],
+    [
+     "Marcus Aurelius · Meditations 6.6 · Long",
+     1.8,
+     "cite"
+    ],
+    [
+     "Not forgiving. Not forgetting.",
+     2.0,
+     "body"
+    ],
+    [
+     "Just refusing to let them turn you into them.",
+     2.6,
+     "body"
+    ],
+    [
+     "Send this to the one still drafting the reply.",
+     2.4,
+     "cta"
+    ]
+   ],
+   "visual": "V1 Slate + grain. Quote in Playfair italic, Ember rule under the cite. Pacing copies the long-form podcast clip: one sentence, a beat, then the turn.",
+   "footage": null,
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 301
+   },
+   "source": {
+    "type": "quote",
+    "author": "Marcus Aurelius",
+    "work": "Meditations",
+    "section": "6.6",
+    "translation": "George Long (1862)",
+    "verified_at": "verify against Long text (Gutenberg #2680) before render"
+   },
+   "evidence": "Tier 2 philosophical + Moodius reflection",
+   "caption": "Revenge feels like justice for about four minutes. Then you notice you've started talking like them, thinking about them, spending your evenings on them.\n\nMarcus's version costs nothing and takes longer: stay the person you were before they showed up.\n\nWho are you trying not to become right now?\n\nQuote: Marcus Aurelius, Meditations 6.6 (tr. George Long). Reflection: Moodius.",
+   "first_comment": "Hardest person to not become like: go.",
+   "hashtags": [
+    "#stoicism",
+    "#marcusaurelius",
+    "#emotionalintelligence",
+    "#selfrespect"
+   ],
+   "cta": "send",
+   "length_s": 14.8,
+   "adapted_from": "Long-form podcast clips (Diary of a CEO, Modern Wisdom style): one counterintuitive sentence, captioned, then a pause; plus our own data that 'Marcus Aurelius said this' hooks win",
+   "status": "draft: awaiting Surafel's OK"
+  },
+  {
+   "id": "AD02",
+   "slug": "calm-is-practised",
+   "format": "B",
+   "series": "Quiet Truths",
+   "pillar": "Discipline",
+   "hook": "The calmest man you know isn't calm. He's practised.",
+   "hook_b": "Calm isn't a personality. It's reps.",
+   "cards": [
+    [
+     "The calmest man you know isn't calm. He's practised.",
+     2.6,
+     "hook"
+    ],
+    [
+     "He felt the same jolt you did.",
+     2.0,
+     "body"
+    ],
+    [
+     "He just waited three seconds before he answered.",
+     2.4,
+     "body"
+    ],
+    [
+     "Three seconds, a thousand times.",
+     2.0,
+     "body"
+    ],
+    [
+     "That's the whole trick.",
+     1.8,
+     "body"
+    ],
+    [
+     "Quiet Truths · Moodius",
+     1.4,
+     "cite"
+    ],
+    [
+     "Save it for the next time someone pushes.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate, no grain. Where pathsofstoicism borrows an anime character, we use an everyday one the viewer already knows: the calm friend.",
+   "footage": null,
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 302
+   },
+   "source": {
+    "type": "original",
+    "author": "Moodius",
+    "work": "Quiet Truths",
+    "section": "original reflection",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 3 Moodius reflection",
+   "caption": "We treat calm like something people are born with. Mostly it's a gap they've practised: the jolt arrives, and they don't speak until it passes.\n\nThree seconds is enough to start. Count them on your tongue against your teeth if you have to.\n\nWho's the calmest person you know, and have you ever seen them practise?\n\nReflection: Moodius.",
+   "first_comment": "Tag the calmest person you know.",
+   "hashtags": [
+    "#stoicism",
+    "#selfcontrol",
+    "#emotionalregulation",
+    "#quiettruths"
+   ],
+   "cta": "save",
+   "length_s": 14.4,
+   "adapted_from": "@pathsofstoicism: a familiar character + one short Stoic line (character swapped for an everyday one; no borrowed imagery)",
+   "status": "draft: awaiting Surafel's OK"
+  },
+  {
+   "id": "AD03",
+   "slug": "rising-unwillingly",
+   "format": "F",
+   "series": "Thought Worth Keeping",
+   "pillar": "Daily",
+   "hook": "Marcus Aurelius also didn't want to get out of bed.",
+   "hook_b": "An emperor wrote himself a note about the snooze button.",
+   "cards": [
+    [
+     "Marcus Aurelius also didn't want to get out of bed.",
+     2.6,
+     "hook"
+    ],
+    [
+     "In the morning when thou risest unwillingly, let this thought be present: I am rising to the work of a human being.",
+     5.2,
+     "quote"
+    ],
+    [
+     "Marcus Aurelius · Meditations 5.1 · Long",
+     1.8,
+     "cite"
+    ],
+    [
+     "Ruler of Rome. Still negotiating with the duvet.",
+     2.6,
+     "body"
+    ],
+    [
+     "Send this to someone on their third snooze.",
+     2.3,
+     "cta"
+    ]
+   ],
+   "visual": "V1 Slate + grain, or V3 still 'dawn-window' if it exists. Dry humour, no meme template.",
+   "footage": "dawn-window",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dry",
+    "seed": 303
+   },
+   "source": {
+    "type": "quote",
+    "author": "Marcus Aurelius",
+    "work": "Meditations",
+    "section": "5.1",
+    "translation": "George Long (1862)",
+    "verified_at": "verify against Long text (Gutenberg #2680); Long uses a dash after 'present'"
+   },
+   "evidence": "Tier 2 philosophical + Moodius reflection",
+   "caption": "The most powerful man in the world, writing a note to himself because he wanted five more minutes.\n\nHe didn't shame himself out of bed. He reminded himself what the day was for.\n\nWhat's the work you're getting up for tomorrow?\n\nQuote: Marcus Aurelius, Meditations 5.1 (tr. George Long). Reflection: Moodius.",
+   "first_comment": "Honest count: how many snoozes today?",
+   "hashtags": [
+    "#stoicism",
+    "#marcusaurelius",
+    "#morningroutine",
+    "#motivation"
+   ],
+   "cta": "send",
+   "length_s": 14.5,
+   "adapted_from": "@theeverydaystoic: humour about Stoic life (its engagement per follower is 10x Daily Stoic's), made text-only in our palette",
+   "status": "draft: awaiting Surafel's OK"
+  },
+  {
+   "id": "AD04",
+   "slug": "tired-of-performing",
+   "format": "B",
+   "series": "Quiet Truths",
+   "pillar": "Identity",
+   "hook": "You're not tired of life. You're tired of performing it.",
+   "hook_b": "Some exhaustion isn't from doing. It's from acting.",
+   "cards": [
+    [
+     "You're not tired of life. You're tired of performing it.",
+     2.6,
+     "hook"
+    ],
+    [
+     "Fine at work.",
+     1.4,
+     "body"
+    ],
+    [
+     "Funny in the group chat.",
+     1.6,
+     "body"
+    ],
+    [
+     "Grateful at dinner.",
+     1.4,
+     "body"
+    ],
+    [
+     "Then home, where nobody's watching, and nothing's left.",
+     2.8,
+     "body"
+    ],
+    [
+     "Find one room where you don't have to be anyone.",
+     2.6,
+     "body"
+    ],
+    [
+     "Quiet Truths · Moodius",
+     1.4,
+     "cite"
+    ],
+    [
+     "Send it to the one who's always 'good'.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 Slate + grain. Plain type, one line per card, the Brianna Wiest rhythm: short lines that build to a turn.",
+   "footage": null,
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 304
+   },
+   "source": {
+    "type": "original",
+    "author": "Moodius",
+    "work": "Quiet Truths",
+    "section": "original reflection",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 3 Moodius reflection",
+   "caption": "There's a tiredness sleep doesn't fix. It comes from being a slightly edited version of yourself all day.\n\nYou don't need to drop the act everywhere. You need one place, or one person, where it can come off.\n\nWhere's yours?\n\nReflection: Moodius.",
+   "first_comment": "Where's the one place you don't perform?",
+   "hashtags": [
+    "#quiettruths",
+    "#burnout",
+    "#mentalhealth",
+    "#selfawareness"
+   ],
+   "cta": "send",
+   "length_s": 16.0,
+   "adapted_from": "Brianna Wiest: text-led reels of her own short lines, plain type (535k avg plays, iqfluence 23 Sep 2026)",
+   "status": "draft: awaiting Surafel's OK"
+  },
+  {
+   "id": "AD05",
+   "slug": "why-you-go-quiet",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Tools",
+   "hook": "Why do you go silent in the middle of an argument?",
+   "hook_b": "Going quiet isn't always not caring.",
+   "cards": [
+    [
+     "Why do you go silent in the middle of an argument?",
+     2.8,
+     "question"
+    ],
+    [
+     "It can look like you don't care.",
+     2.0,
+     "body"
+    ],
+    [
+     "Often your body has hit the limit before your words did.",
+     2.8,
+     "body"
+    ],
+    [
+     "Heart racing. Head blank. Nothing useful left to say.",
+     2.8,
+     "body"
+    ],
+    [
+     "Say: I need twenty minutes. I'm coming back.",
+     2.6,
+     "body"
+    ],
+    [
+     "Idea: John Gottman, 'flooding' (1999) · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Send this to the one you argue with.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 Slate + grain. Question card in Playfair 88. Mechanism explainer in the 'Why you do X' shape, no face to camera.",
+   "footage": null,
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 305
+   },
+   "source": {
+    "type": "idea",
+    "author": "John Gottman",
+    "work": "The Seven Principles for Making Marriage Work (with Nan Silver, 1999)",
+    "section": "flooding",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 relationship research (idea, our words) + Moodius reflection",
+   "caption": "Gottman calls it flooding: your body gets so stirred up mid-argument that listening stops working. Silence is often the result, not the cause.\n\nThe fix isn't to push through. It's to name a break and actually come back. Twenty minutes, doing something calming, not rehearsing your case.\n\nDo you go quiet, or do you get louder?\n\nEvidence: relationship research (Gottman, 1999), in our words. Reflection: Moodius.",
+   "first_comment": "Quiet or louder? One word.",
+   "hashtags": [
+    "#relationships",
+    "#emotionalintelligence",
+    "#communication",
+    "#stoicism"
+   ],
+   "cta": "send",
+   "length_s": 17.2,
+   "adapted_from": "The Holistic Psychologist / Dr Julie Smith: 'why you do X' mechanism explainers (1.87M avg reel views, Buzzlytics Oct 2026)",
+   "status": "draft: awaiting Surafel's OK"
+  },
+  {
+   "id": "AD06",
+   "slug": "look-at-that-bird",
+   "format": "E",
+   "series": "Masculinity Reconsidered",
+   "pillar": "Identity",
+   "hook": "When she says 'look at that', it isn't about the bird.",
+   "hook_b": "Most fights start as a missed 'look at this'.",
+   "cards": [
+    [
+     "When she says 'look at that', it isn't about the bird.",
+     2.8,
+     "hook"
+    ],
+    [
+     "It's a small ask: turn toward me for a second.",
+     2.6,
+     "body"
+    ],
+    [
+     "Most of us miss a few a day without noticing.",
+     2.6,
+     "body"
+    ],
+    [
+     "Looking up from the phone counts.",
+     2.0,
+     "body"
+    ],
+    [
+     "Idea: John Gottman, 'bids for connection' (2001) · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Send it to someone who'd look up.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V1 Slate + grain, or V3 still 'kitchen-window' (no people). Research term turned into an ordinary scene.",
+   "footage": "kitchen-window",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 306
+   },
+   "source": {
+    "type": "idea",
+    "author": "John Gottman",
+    "work": "The Relationship Cure (with Joan DeClaire, 2001)",
+    "section": "bids for connection",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 relationship research (idea, our words) + Moodius reflection",
+   "caption": "Gottman's term for it is a bid: a small reach for attention. A bird, a song, a 'you'll never guess what happened'.\n\nYou can turn toward it, turn away, or turn against it. It's rarely one big fight that drains a relationship. It's a lot of small looks that didn't happen.\n\nWhat's a bid you missed this week?\n\nEvidence: relationship research (Gottman, 2001), in our words. Reflection: Moodius.",
+   "first_comment": "Last bid you caught, or missed?",
+   "hashtags": [
+    "#relationships",
+    "#modernmasculinity",
+    "#emotionalintelligence",
+    "#love"
+   ],
+   "cta": "send",
+   "length_s": 14.0,
+   "adapted_from": "The Gottman Institute: research terms ('bids for connection') turned into everyday examples",
+   "status": "draft: awaiting Surafel's OK"
+  },
+  {
+   "id": "AD07",
+   "slug": "except-time",
+   "format": "F",
+   "series": "Thought Worth Keeping",
+   "pillar": "Daily",
+   "hook": "Seneca wrote this 2,000 years before your screen-time report.",
+   "hook_b": "Check your screen time, then read this.",
+   "cards": [
+    [
+     "Seneca wrote this 2,000 years before your screen-time report.",
+     2.8,
+     "hook"
+    ],
+    [
+     "Nothing, Lucilius, is ours, except time.",
+     2.6,
+     "quote"
+    ],
+    [
+     "Seneca · Letters 1.3 · Gummere",
+     1.8,
+     "cite"
+    ],
+    [
+     "Everything else can be paid back.",
+     2.0,
+     "body"
+    ],
+    [
+     "The hours on your phone can't.",
+     2.0,
+     "body"
+    ],
+    [
+     "Save this for the next 1am scroll.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 Slate + grain. Calm, slow pacing in the Einzelgänger / Pursuit of Wonder manner: one idea, no cuts.",
+   "footage": null,
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 307
+   },
+   "source": {
+    "type": "quote",
+    "author": "Seneca",
+    "work": "Moral Letters to Lucilius",
+    "section": "1.3",
+    "translation": "Richard M. Gummere (1917)",
+    "verified_at": "verify against Gummere Loeb 1917 (Wikisource) before render"
+   },
+   "evidence": "Tier 2 philosophical + Moodius reflection",
+   "caption": "Seneca wasn't against leisure. He was against losing hours without noticing they'd gone.\n\nYour phone keeps the receipt now. Look at it once this week without judging it, the way you'd read a bank statement.\n\nWhat would you do with one hour back a day?\n\nQuote: Seneca, Letters 1.3 (tr. Richard M. Gummere). Reflection: Moodius.",
+   "first_comment": "Today's screen time, honestly:",
+   "hashtags": [
+    "#seneca",
+    "#stoicism",
+    "#screentime",
+    "#philosophy"
+   ],
+   "cta": "save",
+   "length_s": 13.4,
+   "adapted_from": "Einzelgänger / Pursuit of Wonder: long-form philosophy essays with one modern problem and calm pacing, compressed to 13s",
+   "status": "draft: awaiting Surafel's OK"
+  },
+  {
+   "id": "AD08",
+   "slug": "ask-twice",
+   "format": "E",
+   "series": "Masculinity Reconsidered",
+   "pillar": "Identity",
+   "hook": "'I'm fine' is a first answer. Ask twice.",
+   "hook_b": "The second 'how are you?' is the real one.",
+   "cards": [
+    [
+     "'I'm fine' is a first answer. Ask twice.",
+     2.4,
+     "hook"
+    ],
+    [
+     "'No, really. How are you?'",
+     2.0,
+     "body"
+    ],
+    [
+     "Most men won't open on the first knock.",
+     2.2,
+     "body"
+    ],
+    [
+     "Plenty will on the second.",
+     1.8,
+     "body"
+    ],
+    [
+     "Don't fix anything. Just stay for the answer.",
+     2.4,
+     "body"
+    ],
+    [
+     "Masculinity Reconsidered · Moodius",
+     1.4,
+     "cite"
+    ],
+    [
+     "Send this to a friend you'll ask tonight.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 Slate + grain, or V3 still 'bench-night'. Peer-to-peer voice: talk to men, not about them.",
+   "footage": "bench-night",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 308
+   },
+   "source": {
+    "type": "original",
+    "author": "Moodius",
+    "work": "Masculinity Reconsidered",
+    "section": "original reflection",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 3 Moodius reflection (no statistic used)",
+   "caption": "A lot of us were raised to answer 'fine' on reflex. It's not a lie, exactly. It's a door that hasn't been knocked on properly.\n\nAsk again, slower. Then don't rush in with advice. Being asked twice is often the whole help.\n\nWho's the friend you've only ever asked once?\n\nReflection: Moodius.",
+   "first_comment": "Who are you asking twice this week? (No names needed.)",
+   "hashtags": [
+    "#mensmentalhealth",
+    "#modernmasculinity",
+    "#friendship",
+    "#itsokaytotalk"
+   ],
+   "cta": "send",
+   "length_s": 14.4,
+   "adapted_from": "Andy's Man Club #ITSOKAYTOTALK / Movember 'talk to young men, not about them': peer voice, one simple action",
+   "status": "draft: awaiting Surafel's OK"
+  },
+  {
+   "id": "AD09",
+   "slug": "anger-costs-more",
+   "format": "F",
+   "series": "Thought Worth Keeping",
+   "pillar": "Tools",
+   "hook": "Your anger costs you more than what caused it.",
+   "hook_b": "The thing they did took a minute. Your anger took the week.",
+   "cards": [
+    [
+     "Your anger costs you more than what caused it.",
+     2.4,
+     "hook"
+    ],
+    [
+     "How much more pain is brought on us by the anger and vexation caused by such acts than by the acts themselves.",
+     5.4,
+     "quote"
+    ],
+    [
+     "Marcus Aurelius · Meditations 11.18 · Long",
+     1.8,
+     "cite"
+    ],
+    [
+     "The comment took ten seconds.",
+     1.8,
+     "body"
+    ],
+    [
+     "You've replayed it for three days.",
+     2.0,
+     "body"
+    ],
+    [
+     "Send it to someone still replaying one.",
+     2.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 Slate + grain. Cut like a podcast clip: the claim, the source, the receipt.",
+   "footage": null,
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dry",
+    "seed": 309
+   },
+   "source": {
+    "type": "quote",
+    "author": "Marcus Aurelius",
+    "work": "Meditations",
+    "section": "11.18",
+    "translation": "George Long (1862)",
+    "verified_at": "verify against Long text (Gutenberg #2680); Long opens 'Consider how much more pain...'"
+   },
+   "evidence": "Tier 2 philosophical + Moodius reflection",
+   "caption": "Marcus kept a list of things to remember when someone annoyed him. This one is near the end, and it's the most practical: the act is usually small, and the anger about it is what eats the day.\n\nThat doesn't mean the act was fine. It means you get to decide how long it rents space in your head.\n\nWhat's the comment you're still replaying?\n\nQuote: Marcus Aurelius, Meditations 11.18 (tr. George Long). Reflection: Moodius.",
+   "first_comment": "How many days has yours been running?",
+   "hashtags": [
+    "#stoicism",
+    "#marcusaurelius",
+    "#anger",
+    "#overthinking"
+   ],
+   "cta": "send",
+   "length_s": 15.6,
+   "adapted_from": "Long-form speaking clips (Scott Galloway, Chris Williamson, Steven Bartlett): a blunt claim, then the receipt",
+   "status": "draft: awaiting Surafel's OK"
+  },
+  {
+   "id": "AD10",
+   "slug": "restored-not-lost",
+   "format": "F",
+   "series": "Thought Worth Keeping",
+   "pillar": "Truths",
+   "hook": "Epictetus had advice for a breakup. It's harsh, and kind.",
+   "hook_b": "Read this the night after it ends.",
+   "cards": [
+    [
+     "Epictetus had advice for a breakup. It's harsh, and kind.",
+     2.6,
+     "hook"
+    ],
+    [
+     "Never say about anything, I have lost it; but say, I have restored it.",
+     3.8,
+     "quote"
+    ],
+    [
+     "Epictetus · Enchiridion 11 · Long",
+     1.8,
+     "cite"
+    ],
+    [
+     "It was never yours to keep.",
+     2.0,
+     "body"
+    ],
+    [
+     "It was yours to have, for a while.",
+     2.2,
+     "body"
+    ],
+    [
+     "Save it for the night it ends.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V1 Slate + grain, or V3 still 'empty-chair'. The calm, explaining tone of The School of Life, in 14 seconds.",
+   "footage": "empty-chair",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 310
+   },
+   "source": {
+    "type": "quote",
+    "author": "Epictetus",
+    "work": "Enchiridion",
+    "section": "11",
+    "translation": "George Long (1877)",
+    "verified_at": "verify against Long's Enchiridion (Gutenberg #45109) before render"
+   },
+   "evidence": "Tier 2 philosophical + Moodius reflection",
+   "caption": "Epictetus applies this to everything: a child, a wife, a farm. It sounds cold until you try it on a loss you're carrying.\n\n'Lost' says something was taken from you. 'Restored' says you had it for a time. Both hurt. Only one lets you be grateful too.\n\nWhat did you have, for a while, that you're still glad you had?\n\nQuote: Epictetus, Enchiridion 11 (tr. George Long). Reflection: Moodius.",
+   "first_comment": "One thing you had for a while and are still glad you had.",
+   "hashtags": [
+    "#stoicism",
+    "#epictetus",
+    "#breakup",
+    "#grief"
+   ],
+   "cta": "save",
+   "length_s": 14.4,
+   "adapted_from": "The School of Life: calm, explanatory essays on love and loss",
+   "status": "draft: awaiting Surafel's OK"
+  }
+ ]
+}

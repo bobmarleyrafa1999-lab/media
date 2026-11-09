@@ -1,0 +1,1162 @@
+{
+ "batch": "hi-batch-01",
+ "written": "2026-10-22",
+ "schema": "reels-engine 1.2",
+ "scripts": [
+  {
+   "id": "HI01a",
+   "slug": "insulted-drill",
+   "format": "R2",
+   "series": "Quiet Truths",
+   "pillar": "Truths",
+   "hook": "What a Stoic actually did when someone insulted him.",
+   "hook_b": "Someone insulted you today. Here's what Epictetus trained for.",
+   "cards": [
+    [
+     "What a Stoic actually did when someone insulted him.",
+     2.6,
+     "hook"
+    ],
+    [
+     "He didn't hit back. He didn't swallow it either.",
+     2.6,
+     "body"
+    ],
+    [
+     "He asked one question first.",
+     1.8,
+     "body"
+    ],
+    [
+     "THE QUESTION\nIs it true, or is it just loud?",
+     3.0,
+     "labelled"
+    ],
+    [
+     "If it's true, it's information. If it's false, it's theirs to carry.",
+     3.4,
+     "body"
+    ],
+    [
+     "Either way, an insult needs your agreement to land.",
+     2.6,
+     "body"
+    ],
+    [
+     "Idea: Epictetus, Enchiridion 20 · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Send this to someone still replaying today.",
+     2.4,
+     "cta"
+    ]
+   ],
+   "visual": "A dim corridor with a closed door, Slate tint at 72%, hook in Playfair upper third",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 401
+   },
+   "source": {
+    "type": "idea",
+    "author": "Epictetus",
+    "work": "Enchiridion",
+    "section": "20",
+    "translation": "n/a (paraphrase)"
+   },
+   "evidence": "Tier 2 philosophy, Moodius words",
+   "caption": "Not every insult deserves a reply. Some don't even deserve your agreement.\n\nEpictetus taught a simple drill: before you react, ask whether it's true. If it is, you've learned something. If it isn't, it was never about you.\n\nWhich one was today's?\n\nEvidence: philosophy (Epictetus, Enchiridion 20), in our words.",
+   "first_comment": "True or just loud? One word.",
+   "hashtags": [
+    "#stoicism",
+    "#epictetus",
+    "#selfrespect"
+   ],
+   "cta": "send",
+   "max_s": 20.9,
+   "length_s": 20.4
+  },
+  {
+   "id": "HI01b",
+   "slug": "insulted-drill-b",
+   "format": "R2",
+   "series": "Quiet Truths",
+   "pillar": "Truths",
+   "hook": "Someone insulted you today. Here's what Epictetus trained for.",
+   "hook_b": "The Stoics had a drill for being insulted.",
+   "cards": [
+    [
+     "Someone insulted you today. Here's what Epictetus trained for.",
+     2.6,
+     "hook"
+    ],
+    [
+     "He didn't hit back. He didn't swallow it either.",
+     2.6,
+     "body"
+    ],
+    [
+     "He asked one question first.",
+     1.8,
+     "body"
+    ],
+    [
+     "THE QUESTION\nIs it true, or is it just loud?",
+     3.0,
+     "labelled"
+    ],
+    [
+     "If it's true, it's information. If it's false, it's theirs to carry.",
+     3.4,
+     "body"
+    ],
+    [
+     "Either way, an insult needs your agreement to land.",
+     2.6,
+     "body"
+    ],
+    [
+     "Idea: Epictetus, Enchiridion 20 · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Send this to someone still replaying today.",
+     2.4,
+     "cta"
+    ]
+   ],
+   "visual": "A dim corridor with a closed door, Slate tint at 72%, hook in Playfair upper third",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 401
+   },
+   "source": {
+    "type": "idea",
+    "author": "Epictetus",
+    "work": "Enchiridion",
+    "section": "20",
+    "translation": "n/a (paraphrase)"
+   },
+   "evidence": "Tier 2 philosophy, Moodius words",
+   "caption": "Not every insult deserves a reply. Some don't even deserve your agreement.\n\nEpictetus taught a simple drill: before you react, ask whether it's true. If it is, you've learned something. If it isn't, it was never about you.\n\nWhich one was today's?\n\nEvidence: philosophy (Epictetus, Enchiridion 20), in our words.",
+   "first_comment": "True or just loud? One word.",
+   "hashtags": [
+    "#stoicism",
+    "#epictetus",
+    "#selfrespect"
+   ],
+   "cta": "send",
+   "max_s": 20.9,
+   "length_s": 20.4
+  },
+  {
+   "id": "HI01c",
+   "slug": "insulted-drill-c",
+   "format": "R2",
+   "series": "Quiet Truths",
+   "pillar": "Truths",
+   "hook": "The Stoics had a drill for being insulted.",
+   "hook_b": "What a Stoic actually did when someone insulted him.",
+   "cards": [
+    [
+     "The Stoics had a drill for being insulted.",
+     2.6,
+     "hook"
+    ],
+    [
+     "He didn't hit back. He didn't swallow it either.",
+     2.6,
+     "body"
+    ],
+    [
+     "He asked one question first.",
+     1.8,
+     "body"
+    ],
+    [
+     "THE QUESTION\nIs it true, or is it just loud?",
+     3.0,
+     "labelled"
+    ],
+    [
+     "If it's true, it's information. If it's false, it's theirs to carry.",
+     3.4,
+     "body"
+    ],
+    [
+     "Either way, an insult needs your agreement to land.",
+     2.6,
+     "body"
+    ],
+    [
+     "Idea: Epictetus, Enchiridion 20 · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Send this to someone still replaying today.",
+     2.4,
+     "cta"
+    ]
+   ],
+   "visual": "A dim corridor with a closed door, Slate tint at 72%, hook in Playfair upper third",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 401
+   },
+   "source": {
+    "type": "idea",
+    "author": "Epictetus",
+    "work": "Enchiridion",
+    "section": "20",
+    "translation": "n/a (paraphrase)"
+   },
+   "evidence": "Tier 2 philosophy, Moodius words",
+   "caption": "Not every insult deserves a reply. Some don't even deserve your agreement.\n\nEpictetus taught a simple drill: before you react, ask whether it's true. If it is, you've learned something. If it isn't, it was never about you.\n\nWhich one was today's?\n\nEvidence: philosophy (Epictetus, Enchiridion 20), in our words.",
+   "first_comment": "True or just loud? One word.",
+   "hashtags": [
+    "#stoicism",
+    "#epictetus",
+    "#selfrespect"
+   ],
+   "cta": "send",
+   "max_s": 20.9,
+   "length_s": 20.4
+  },
+  {
+   "id": "HI02a",
+   "slug": "too-sensitive",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Identity",
+   "hook": "Is being \"too sensitive\" a flaw, or is it information?",
+   "hook_b": "Someone once told you that you were too sensitive.",
+   "cards": [
+    [
+     "Is being \"too sensitive\" a flaw, or is it information?",
+     3.0,
+     "question"
+    ],
+    [
+     "Sensitivity notices things: a tone shift, a lie, a room going cold.",
+     3.3,
+     "body"
+    ],
+    [
+     "That's not a defect. It's a sensor.",
+     2.2,
+     "body"
+    ],
+    [
+     "BUT\nA sensor isn't a verdict.",
+     2.6,
+     "labelled"
+    ],
+    [
+     "Notice the feeling. Then check the facts before you act on it.",
+     3.2,
+     "body"
+    ],
+    [
+     "\"Too sensitive\" was never the problem. Unexamined was.",
+     2.6,
+     "body"
+    ],
+    [
+     "Idea: Epictetus, Enchiridion 1.5 · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Send this to the person who needed it at fifteen.",
+     2.6,
+     "cta"
+    ]
+   ],
+   "visual": "Slate background, the question in Playfair 88 with a thin Ember rule under it",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 402
+   },
+   "source": {
+    "type": "idea",
+    "author": "Epictetus",
+    "work": "Enchiridion",
+    "section": "1.5",
+    "translation": "n/a (paraphrase)"
+   },
+   "evidence": "Tier 2 philosophy + Tier 3 Moodius opinion",
+   "caption": "A lot of us were told we were too sensitive before we had words for what we were noticing.\n\nSensitivity picks up real signals. The skill isn't feeling less. It's checking the signal before you act on it. Epictetus called it testing the impression.\n\nWho told you, and were they right?\n\nEvidence: philosophy (Epictetus, Enchiridion 1.5), in our words. Reflection: Moodius.",
+   "first_comment": "What does your sensitivity usually notice first?",
+   "hashtags": [
+    "#emotionalintelligence",
+    "#stoicism",
+    "#highlysensitive"
+   ],
+   "cta": "send",
+   "max_s": 22.0,
+   "length_s": 21.5
+  },
+  {
+   "id": "HI02b",
+   "slug": "too-sensitive-b",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Identity",
+   "hook": "Someone once told you that you were too sensitive.",
+   "hook_b": "\"You're too sensitive.\" Who benefited from you believing that?",
+   "cards": [
+    [
+     "Someone once told you that you were too sensitive.",
+     3.0,
+     "question"
+    ],
+    [
+     "Sensitivity notices things: a tone shift, a lie, a room going cold.",
+     3.3,
+     "body"
+    ],
+    [
+     "That's not a defect. It's a sensor.",
+     2.2,
+     "body"
+    ],
+    [
+     "BUT\nA sensor isn't a verdict.",
+     2.6,
+     "labelled"
+    ],
+    [
+     "Notice the feeling. Then check the facts before you act on it.",
+     3.2,
+     "body"
+    ],
+    [
+     "\"Too sensitive\" was never the problem. Unexamined was.",
+     2.6,
+     "body"
+    ],
+    [
+     "Idea: Epictetus, Enchiridion 1.5 · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Send this to the person who needed it at fifteen.",
+     2.6,
+     "cta"
+    ]
+   ],
+   "visual": "Slate background, the question in Playfair 88 with a thin Ember rule under it",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 402
+   },
+   "source": {
+    "type": "idea",
+    "author": "Epictetus",
+    "work": "Enchiridion",
+    "section": "1.5",
+    "translation": "n/a (paraphrase)"
+   },
+   "evidence": "Tier 2 philosophy + Tier 3 Moodius opinion",
+   "caption": "A lot of us were told we were too sensitive before we had words for what we were noticing.\n\nSensitivity picks up real signals. The skill isn't feeling less. It's checking the signal before you act on it. Epictetus called it testing the impression.\n\nWho told you, and were they right?\n\nEvidence: philosophy (Epictetus, Enchiridion 1.5), in our words. Reflection: Moodius.",
+   "first_comment": "What does your sensitivity usually notice first?",
+   "hashtags": [
+    "#emotionalintelligence",
+    "#stoicism",
+    "#highlysensitive"
+   ],
+   "cta": "send",
+   "max_s": 22.0,
+   "length_s": 21.5
+  },
+  {
+   "id": "HI02c",
+   "slug": "too-sensitive-c",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Identity",
+   "hook": "\"You're too sensitive.\" Who benefited from you believing that?",
+   "hook_b": "Is being \"too sensitive\" a flaw, or is it information?",
+   "cards": [
+    [
+     "\"You're too sensitive.\" Who benefited from you believing that?",
+     3.0,
+     "question"
+    ],
+    [
+     "Sensitivity notices things: a tone shift, a lie, a room going cold.",
+     3.3,
+     "body"
+    ],
+    [
+     "That's not a defect. It's a sensor.",
+     2.2,
+     "body"
+    ],
+    [
+     "BUT\nA sensor isn't a verdict.",
+     2.6,
+     "labelled"
+    ],
+    [
+     "Notice the feeling. Then check the facts before you act on it.",
+     3.2,
+     "body"
+    ],
+    [
+     "\"Too sensitive\" was never the problem. Unexamined was.",
+     2.6,
+     "body"
+    ],
+    [
+     "Idea: Epictetus, Enchiridion 1.5 · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Send this to the person who needed it at fifteen.",
+     2.6,
+     "cta"
+    ]
+   ],
+   "visual": "Slate background, the question in Playfair 88 with a thin Ember rule under it",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 402
+   },
+   "source": {
+    "type": "idea",
+    "author": "Epictetus",
+    "work": "Enchiridion",
+    "section": "1.5",
+    "translation": "n/a (paraphrase)"
+   },
+   "evidence": "Tier 2 philosophy + Tier 3 Moodius opinion",
+   "caption": "A lot of us were told we were too sensitive before we had words for what we were noticing.\n\nSensitivity picks up real signals. The skill isn't feeling less. It's checking the signal before you act on it. Epictetus called it testing the impression.\n\nWho told you, and were they right?\n\nEvidence: philosophy (Epictetus, Enchiridion 1.5), in our words. Reflection: Moodius.",
+   "first_comment": "What does your sensitivity usually notice first?",
+   "hashtags": [
+    "#emotionalintelligence",
+    "#stoicism",
+    "#highlysensitive"
+   ],
+   "cta": "send",
+   "max_s": 22.0,
+   "length_s": 21.5
+  },
+  {
+   "id": "HI03a",
+   "slug": "full-table",
+   "format": "R1",
+   "series": "Quiet Truths",
+   "pillar": "Truths",
+   "hook": "You were lonely at a full table, and nobody noticed.",
+   "hook_b": "Laughing at dinner. Lonely the whole time.",
+   "cards": [
+    [
+     "You were lonely at a full table, and nobody noticed.",
+     2.6,
+     "hook"
+    ],
+    [
+     "Because you were laughing. You're good at laughing.",
+     2.4,
+     "body"
+    ],
+    [
+     "Loneliness isn't the absence of people...",
+     2.2,
+     "body"
+    ],
+    [
+     "...it's the absence of being known by them.",
+     2.4,
+     "body"
+    ],
+    [
+     "TRY THIS\nTell one person one true thing this week.",
+     3.0,
+     "labelled"
+    ],
+    [
+     "Not everything. One thing. The table stays full, and gets less lonely.",
+     3.4,
+     "body"
+    ],
+    [
+     "A Moodius reflection, not a study.",
+     1.8,
+     "cite"
+    ],
+    [
+     "Send this to the one who laughs the loudest.",
+     2.4,
+     "cta"
+    ]
+   ],
+   "visual": "A long table after dinner, warm light through a Slate tint, hook upper third",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "warm",
+    "seed": 403
+   },
+   "source": {
+    "type": "reflection",
+    "author": "Moodius",
+    "work": "n/a",
+    "section": "n/a",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 3 Moodius opinion",
+   "caption": "Some of the loneliest evenings happen in company. You're there, you're funny, and nobody actually knows how you are.\n\nYou don't fix that by finding more people. You fix it by letting one of them know one true thing.\n\nWho would you tell?\n\nEvidence: Moodius reflection (opinion, not a study).",
+   "first_comment": "One true thing you haven't said out loud this month. Only if you want.",
+   "hashtags": [
+    "#loneliness",
+    "#emotionalhealth",
+    "#friendship"
+   ],
+   "cta": "send",
+   "max_s": 20.7,
+   "length_s": 20.2
+  },
+  {
+   "id": "HI03b",
+   "slug": "full-table-b",
+   "format": "R1",
+   "series": "Quiet Truths",
+   "pillar": "Truths",
+   "hook": "Laughing at dinner. Lonely the whole time.",
+   "hook_b": "Have you ever been lonely around people who love you?",
+   "cards": [
+    [
+     "Laughing at dinner. Lonely the whole time.",
+     2.6,
+     "hook"
+    ],
+    [
+     "Because you were laughing. You're good at laughing.",
+     2.4,
+     "body"
+    ],
+    [
+     "Loneliness isn't the absence of people...",
+     2.2,
+     "body"
+    ],
+    [
+     "...it's the absence of being known by them.",
+     2.4,
+     "body"
+    ],
+    [
+     "TRY THIS\nTell one person one true thing this week.",
+     3.0,
+     "labelled"
+    ],
+    [
+     "Not everything. One thing. The table stays full, and gets less lonely.",
+     3.4,
+     "body"
+    ],
+    [
+     "A Moodius reflection, not a study.",
+     1.8,
+     "cite"
+    ],
+    [
+     "Send this to the one who laughs the loudest.",
+     2.4,
+     "cta"
+    ]
+   ],
+   "visual": "A long table after dinner, warm light through a Slate tint, hook upper third",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "warm",
+    "seed": 403
+   },
+   "source": {
+    "type": "reflection",
+    "author": "Moodius",
+    "work": "n/a",
+    "section": "n/a",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 3 Moodius opinion",
+   "caption": "Some of the loneliest evenings happen in company. You're there, you're funny, and nobody actually knows how you are.\n\nYou don't fix that by finding more people. You fix it by letting one of them know one true thing.\n\nWho would you tell?\n\nEvidence: Moodius reflection (opinion, not a study).",
+   "first_comment": "One true thing you haven't said out loud this month. Only if you want.",
+   "hashtags": [
+    "#loneliness",
+    "#emotionalhealth",
+    "#friendship"
+   ],
+   "cta": "send",
+   "max_s": 20.7,
+   "length_s": 20.2
+  },
+  {
+   "id": "HI03c",
+   "slug": "full-table-c",
+   "format": "R1",
+   "series": "Quiet Truths",
+   "pillar": "Truths",
+   "hook": "Have you ever been lonely around people who love you?",
+   "hook_b": "You were lonely at a full table, and nobody noticed.",
+   "cards": [
+    [
+     "Have you ever been lonely around people who love you?",
+     2.6,
+     "hook"
+    ],
+    [
+     "Because you were laughing. You're good at laughing.",
+     2.4,
+     "body"
+    ],
+    [
+     "Loneliness isn't the absence of people...",
+     2.2,
+     "body"
+    ],
+    [
+     "...it's the absence of being known by them.",
+     2.4,
+     "body"
+    ],
+    [
+     "TRY THIS\nTell one person one true thing this week.",
+     3.0,
+     "labelled"
+    ],
+    [
+     "Not everything. One thing. The table stays full, and gets less lonely.",
+     3.4,
+     "body"
+    ],
+    [
+     "A Moodius reflection, not a study.",
+     1.8,
+     "cite"
+    ],
+    [
+     "Send this to the one who laughs the loudest.",
+     2.4,
+     "cta"
+    ]
+   ],
+   "visual": "A long table after dinner, warm light through a Slate tint, hook upper third",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "warm",
+    "seed": 403
+   },
+   "source": {
+    "type": "reflection",
+    "author": "Moodius",
+    "work": "n/a",
+    "section": "n/a",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 3 Moodius opinion",
+   "caption": "Some of the loneliest evenings happen in company. You're there, you're funny, and nobody actually knows how you are.\n\nYou don't fix that by finding more people. You fix it by letting one of them know one true thing.\n\nWho would you tell?\n\nEvidence: Moodius reflection (opinion, not a study).",
+   "first_comment": "One true thing you haven't said out loud this month. Only if you want.",
+   "hashtags": [
+    "#loneliness",
+    "#emotionalhealth",
+    "#friendship"
+   ],
+   "cta": "send",
+   "max_s": 20.7,
+   "length_s": 20.2
+  },
+  {
+   "id": "HI04a",
+   "slug": "instant-reply",
+   "format": "R2",
+   "series": "Quiet Truths",
+   "pillar": "Daily",
+   "hook": "You answer every message within a minute. Here's the cost.",
+   "hook_b": "Being always available is teaching people something.",
+   "cards": [
+    [
+     "You answer every message within a minute. Here's the cost.",
+     2.8,
+     "hook"
+    ],
+    [
+     "Every instant reply teaches people your time is free.",
+     2.6,
+     "body"
+    ],
+    [
+     "So they stop asking whether it's a good moment.",
+     2.6,
+     "body"
+    ],
+    [
+     "THE COST\nYour attention, cut into pieces nobody asked for.",
+     2.8,
+     "labelled"
+    ],
+    [
+     "Seneca noticed we guard our money and hand out our time.",
+     3.0,
+     "body"
+    ],
+    [
+     "Reply in an hour. That's the whole cost of keeping your evening.",
+     3.2,
+     "body"
+    ],
+    [
+     "Idea: Seneca, On the Shortness of Life 3 · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Save this for the next time your phone lights up.",
+     2.6,
+     "cta"
+    ]
+   ],
+   "visual": "A phone lighting up on a dark desk, Slate tint, hook upper third",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 404
+   },
+   "source": {
+    "type": "idea",
+    "author": "Seneca",
+    "work": "On the Shortness of Life",
+    "section": "3",
+    "translation": "n/a (paraphrase)"
+   },
+   "evidence": "Tier 2 philosophy, Moodius words",
+   "caption": "Fast replies feel polite. Over time they teach people that your attention is always on tap.\n\nSeneca made the point two thousand years ago: we're careful with money and careless with time. An hour's delay costs the message nothing. It might give you your evening back.\n\nHow fast do you usually reply?\n\nEvidence: philosophy (Seneca, On the Shortness of Life 3), in our words.",
+   "first_comment": "Honest answer: what's your average reply time?",
+   "hashtags": [
+    "#boundaries",
+    "#seneca",
+    "#digitalwellbeing"
+   ],
+   "cta": "save",
+   "max_s": 22.1,
+   "length_s": 21.6
+  },
+  {
+   "id": "HI04b",
+   "slug": "instant-reply-b",
+   "format": "R2",
+   "series": "Quiet Truths",
+   "pillar": "Daily",
+   "hook": "Being always available is teaching people something.",
+   "hook_b": "The quiet cost of always replying straight away.",
+   "cards": [
+    [
+     "Being always available is teaching people something.",
+     2.8,
+     "hook"
+    ],
+    [
+     "Every instant reply teaches people your time is free.",
+     2.6,
+     "body"
+    ],
+    [
+     "So they stop asking whether it's a good moment.",
+     2.6,
+     "body"
+    ],
+    [
+     "THE COST\nYour attention, cut into pieces nobody asked for.",
+     2.8,
+     "labelled"
+    ],
+    [
+     "Seneca noticed we guard our money and hand out our time.",
+     3.0,
+     "body"
+    ],
+    [
+     "Reply in an hour. That's the whole cost of keeping your evening.",
+     3.2,
+     "body"
+    ],
+    [
+     "Idea: Seneca, On the Shortness of Life 3 · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Save this for the next time your phone lights up.",
+     2.6,
+     "cta"
+    ]
+   ],
+   "visual": "A phone lighting up on a dark desk, Slate tint, hook upper third",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 404
+   },
+   "source": {
+    "type": "idea",
+    "author": "Seneca",
+    "work": "On the Shortness of Life",
+    "section": "3",
+    "translation": "n/a (paraphrase)"
+   },
+   "evidence": "Tier 2 philosophy, Moodius words",
+   "caption": "Fast replies feel polite. Over time they teach people that your attention is always on tap.\n\nSeneca made the point two thousand years ago: we're careful with money and careless with time. An hour's delay costs the message nothing. It might give you your evening back.\n\nHow fast do you usually reply?\n\nEvidence: philosophy (Seneca, On the Shortness of Life 3), in our words.",
+   "first_comment": "Honest answer: what's your average reply time?",
+   "hashtags": [
+    "#boundaries",
+    "#seneca",
+    "#digitalwellbeing"
+   ],
+   "cta": "save",
+   "max_s": 22.1,
+   "length_s": 21.6
+  },
+  {
+   "id": "HI04c",
+   "slug": "instant-reply-c",
+   "format": "R2",
+   "series": "Quiet Truths",
+   "pillar": "Daily",
+   "hook": "The quiet cost of always replying straight away.",
+   "hook_b": "You answer every message within a minute. Here's the cost.",
+   "cards": [
+    [
+     "The quiet cost of always replying straight away.",
+     2.8,
+     "hook"
+    ],
+    [
+     "Every instant reply teaches people your time is free.",
+     2.6,
+     "body"
+    ],
+    [
+     "So they stop asking whether it's a good moment.",
+     2.6,
+     "body"
+    ],
+    [
+     "THE COST\nYour attention, cut into pieces nobody asked for.",
+     2.8,
+     "labelled"
+    ],
+    [
+     "Seneca noticed we guard our money and hand out our time.",
+     3.0,
+     "body"
+    ],
+    [
+     "Reply in an hour. That's the whole cost of keeping your evening.",
+     3.2,
+     "body"
+    ],
+    [
+     "Idea: Seneca, On the Shortness of Life 3 · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Save this for the next time your phone lights up.",
+     2.6,
+     "cta"
+    ]
+   ],
+   "visual": "A phone lighting up on a dark desk, Slate tint, hook upper third",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 404
+   },
+   "source": {
+    "type": "idea",
+    "author": "Seneca",
+    "work": "On the Shortness of Life",
+    "section": "3",
+    "translation": "n/a (paraphrase)"
+   },
+   "evidence": "Tier 2 philosophy, Moodius words",
+   "caption": "Fast replies feel polite. Over time they teach people that your attention is always on tap.\n\nSeneca made the point two thousand years ago: we're careful with money and careless with time. An hour's delay costs the message nothing. It might give you your evening back.\n\nHow fast do you usually reply?\n\nEvidence: philosophy (Seneca, On the Shortness of Life 3), in our words.",
+   "first_comment": "Honest answer: what's your average reply time?",
+   "hashtags": [
+    "#boundaries",
+    "#seneca",
+    "#digitalwellbeing"
+   ],
+   "cta": "save",
+   "max_s": 22.1,
+   "length_s": 21.6
+  },
+  {
+   "id": "HI05a",
+   "slug": "rest-or-avoidance",
+   "format": "C",
+   "series": "Philosophical Contradiction",
+   "pillar": "Discipline",
+   "hook": "Rest or avoidance? They feel the same from the sofa.",
+   "hook_b": "Is it rest, or are you hiding?",
+   "cards": [
+    [
+     "Rest or avoidance? They feel the same from the sofa.",
+     2.6,
+     "hook"
+    ],
+    [
+     "Same sofa. Same blanket. Different reason.",
+     2.2,
+     "body"
+    ],
+    [
+     "Ask one question: what am I moving toward?",
+     2.4,
+     "body"
+    ],
+    [
+     "IF IT'S REST\nYou'll get up wanting to do the thing.",
+     3.0,
+     "labelled"
+    ],
+    [
+     "IF IT'S AVOIDANCE\nYou'll get up wanting more sofa.",
+     2.8,
+     "labelled"
+    ],
+    [
+     "Rest refills you. Avoidance only postpones you.",
+     2.4,
+     "body"
+    ],
+    [
+     "Idea: Seneca, On Tranquillity of Mind 17 · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Save this for the next sofa night.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "An empty sofa with a blanket over the arm, lamp light, Slate tint, hook upper third",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 405
+   },
+   "source": {
+    "type": "idea",
+    "author": "Seneca",
+    "work": "On Tranquillity of Mind",
+    "section": "17",
+    "translation": "n/a (paraphrase)"
+   },
+   "evidence": "Tier 2 philosophy, Moodius words",
+   "caption": "Rest and avoidance look identical from the outside. The difference is what you get up wanting.\n\nSeneca was in favour of rest: he wrote that the mind comes back keener after a break. Avoidance doesn't give you that. It just moves the thing to tomorrow.\n\nWhich was your last evening?\n\nEvidence: philosophy (Seneca, On Tranquillity of Mind 17), in our words.",
+   "first_comment": "Rest or avoidance: what was yesterday?",
+   "hashtags": [
+    "#selfawareness",
+    "#seneca",
+    "#rest"
+   ],
+   "cta": "save",
+   "max_s": 20.5,
+   "length_s": 19.4
+  },
+  {
+   "id": "HI05b",
+   "slug": "rest-or-avoidance-b",
+   "format": "C",
+   "series": "Philosophical Contradiction",
+   "pillar": "Discipline",
+   "hook": "Is it rest, or are you hiding?",
+   "hook_b": "Two people skip the gym tonight. Only one is resting.",
+   "cards": [
+    [
+     "Is it rest, or are you hiding?",
+     2.6,
+     "hook"
+    ],
+    [
+     "Same sofa. Same blanket. Different reason.",
+     2.2,
+     "body"
+    ],
+    [
+     "Ask one question: what am I moving toward?",
+     2.4,
+     "body"
+    ],
+    [
+     "IF IT'S REST\nYou'll get up wanting to do the thing.",
+     3.0,
+     "labelled"
+    ],
+    [
+     "IF IT'S AVOIDANCE\nYou'll get up wanting more sofa.",
+     2.8,
+     "labelled"
+    ],
+    [
+     "Rest refills you. Avoidance only postpones you.",
+     2.4,
+     "body"
+    ],
+    [
+     "Idea: Seneca, On Tranquillity of Mind 17 · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Save this for the next sofa night.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "An empty sofa with a blanket over the arm, lamp light, Slate tint, hook upper third",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 405
+   },
+   "source": {
+    "type": "idea",
+    "author": "Seneca",
+    "work": "On Tranquillity of Mind",
+    "section": "17",
+    "translation": "n/a (paraphrase)"
+   },
+   "evidence": "Tier 2 philosophy, Moodius words",
+   "caption": "Rest and avoidance look identical from the outside. The difference is what you get up wanting.\n\nSeneca was in favour of rest: he wrote that the mind comes back keener after a break. Avoidance doesn't give you that. It just moves the thing to tomorrow.\n\nWhich was your last evening?\n\nEvidence: philosophy (Seneca, On Tranquillity of Mind 17), in our words.",
+   "first_comment": "Rest or avoidance: what was yesterday?",
+   "hashtags": [
+    "#selfawareness",
+    "#seneca",
+    "#rest"
+   ],
+   "cta": "save",
+   "max_s": 20.5,
+   "length_s": 19.4
+  },
+  {
+   "id": "HI05c",
+   "slug": "rest-or-avoidance-c",
+   "format": "C",
+   "series": "Philosophical Contradiction",
+   "pillar": "Discipline",
+   "hook": "Two people skip the gym tonight. Only one is resting.",
+   "hook_b": "Rest or avoidance? They feel the same from the sofa.",
+   "cards": [
+    [
+     "Two people skip the gym tonight. Only one is resting.",
+     2.6,
+     "hook"
+    ],
+    [
+     "Same sofa. Same blanket. Different reason.",
+     2.2,
+     "body"
+    ],
+    [
+     "Ask one question: what am I moving toward?",
+     2.4,
+     "body"
+    ],
+    [
+     "IF IT'S REST\nYou'll get up wanting to do the thing.",
+     3.0,
+     "labelled"
+    ],
+    [
+     "IF IT'S AVOIDANCE\nYou'll get up wanting more sofa.",
+     2.8,
+     "labelled"
+    ],
+    [
+     "Rest refills you. Avoidance only postpones you.",
+     2.4,
+     "body"
+    ],
+    [
+     "Idea: Seneca, On Tranquillity of Mind 17 · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Save this for the next sofa night.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "An empty sofa with a blanket over the arm, lamp light, Slate tint, hook upper third",
+   "footage": "",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 405
+   },
+   "source": {
+    "type": "idea",
+    "author": "Seneca",
+    "work": "On Tranquillity of Mind",
+    "section": "17",
+    "translation": "n/a (paraphrase)"
+   },
+   "evidence": "Tier 2 philosophy, Moodius words",
+   "caption": "Rest and avoidance look identical from the outside. The difference is what you get up wanting.\n\nSeneca was in favour of rest: he wrote that the mind comes back keener after a break. Avoidance doesn't give you that. It just moves the thing to tomorrow.\n\nWhich was your last evening?\n\nEvidence: philosophy (Seneca, On Tranquillity of Mind 17), in our words.",
+   "first_comment": "Rest or avoidance: what was yesterday?",
+   "hashtags": [
+    "#selfawareness",
+    "#seneca",
+    "#rest"
+   ],
+   "cta": "save",
+   "max_s": 20.5,
+   "length_s": 19.4
+  }
+ ]
+}

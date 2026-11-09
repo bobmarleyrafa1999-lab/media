@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hook Intel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--slate:#1B1F24;--graphite:#2A2F36;--charcoal:#3A4049;--bone:#F3EFE7;--ash:#B8B3A9;--ember:#C9742E;
+  --bg:var(--slate);--panel:var(--graphite);--line:var(--charcoal);--text:var(--bone);--muted:var(--ash);--accent:var(--ember)}
+@media (prefers-color-scheme: light){:root:not([data-theme="dark"]){--bg:#F3EFE7;--panel:#FFFFFF;--line:#DDD6CA;--text:#1B1F24;--muted:#5E5A52;--accent:#A85A1C}}
+:root[data-theme="light"]{--bg:#F3EFE7;--panel:#FFFFFF;--line:#DDD6CA;--text:#1B1F24;--muted:#5E5A52;--accent:#A85A1C}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 Inter,system-ui,sans-serif}
+header{padding:20px 16px 0;max-width:1200px;margin:auto}
+h1{font:600 26px "Playfair Display",Georgia,serif;margin:0 0 4px}
+h2{font:600 19px "Playfair Display",Georgia,serif;margin:22px 0 8px}
+.sub{color:var(--muted);margin:0 0 14px}
+nav{display:flex;gap:4px;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+nav button{background:none;border:0;color:var(--muted);font:500 14px Inter,sans-serif;padding:10px 12px;cursor:pointer;border-bottom:2px solid transparent}
+nav button.on{color:var(--text);border-bottom-color:var(--accent)}
+main{max-width:1200px;margin:auto;padding:8px 16px 48px}
+section{display:none}section.on{display:block}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:10px 0}
+input,select{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:6px;padding:7px 10px;font:inherit}
+input[type=search]{flex:1;min-width:200px}
+.btn{background:none;border:1px solid var(--line);color:var(--text);border-radius:6px;padding:6px 10px;cursor:pointer;font:inherit;text-decoration:none}
+.wrap{overflow-x:auto;border:1px solid var(--line);border-radius:8px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;min-width:760px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:500;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+td.n{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+a{color:var(--accent)}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:999px;padding:0 8px;font-size:12px;color:var(--muted);margin:1px 2px 1px 0}
+.tag.e{border-color:var(--accent);color:var(--accent)}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:12px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px}
+.card h3{margin:0 0 6px;font:600 16px "Playfair Display",Georgia,serif}
+.muted{color:var(--muted)}.small{font-size:12px}
+.kpis{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:10px}
+.kpi{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:12px}
+.kpi b{display:block;font-size:22px;font-variant-numeric:tabular-nums}
+details{margin:6px 0}summary{cursor:pointer;color:var(--muted)}
+.empty{padding:16px;color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <h1>Hook Intel</h1>
+  <p class="sub">Moodius Aurelius · research, hooks and reel concepts. Text scores are judgements; outlier ratios and Insights are evidence.</p>
+  <nav id="tabs"></nav>
+</header>
+<main>
+  <section id="discover"></section>
+  <section id="analyse"></section>
+  <section id="create"></section>
+  <section id="library"></section>
+  <section id="performance"></section>
+</main>
+<script>
+const EMBED = /*__DATA__*/null;
+const TABS = [["discover","Discover"],["analyse","Analyse"],["create","Create"],["library","Library"],["performance","Performance"]];
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const num = (n, d=0) => n == null ? "n/a" : Number(n).toLocaleString("en-GB", {maximumFractionDigits: d});
+const lab = s => esc((s || "").replace(/_/g, " "));
+let D;
+
+function nav() {
+  const el = document.getElementById("tabs");
+  el.innerHTML = TABS.map(([id, t]) => `<button data-t="${id}">${t}</button>`).join("");
+  el.onclick = e => { if (e.target.dataset.t) show(e.target.dataset.t); };
+  let start = "discover";
+  try { start = localStorage.getItem("hi-tab") || start; } catch (_) {}
+  show(start);
+}
+function show(id) {
+  document.querySelectorAll("nav button").forEach(b => b.classList.toggle("on", b.dataset.t === id));
+  document.querySelectorAll("section").forEach(s => s.classList.toggle("on", s.id === id));
+  try { localStorage.setItem("hi-tab", id); } catch (_) {}
+}
+function download(name, rows) {
+  if (!rows.length) return;
+  const cols = Object.keys(rows[0]);
+  const csv = [cols.join(",")].concat(rows.map(r => cols.map(c => {
+    const v = r[c] == null ? "" : typeof r[c] === "object" ? JSON.stringify(r[c]) : String(r[c]);
+    return /[",\n]/.test(v) ? `"${v.replace(/"/g, '""')}"` : v;
+  }).join(","))).join("\n");
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([csv], {type: "text/csv"}));
+  a.download = name; a.click();
+}
+function exportBtns(key, rows) {
+  window["_rows_" + key] = rows;
+  return `<button class="btn" onclick="download('${key}.csv', window._rows_${key})">CSV</button>
+          <button class="btn" onclick="(()=>{const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([JSON.stringify(window._rows_${key},null,1)],{type:'application/json'}));a.download='${key}.json';a.click()})()">JSON</button>`;
+}
+
+function discover() {
+  const vids = D.videos.filter(v => v.platform !== "podcast");
+  const acc = Object.entries(D.access).map(([k, v]) => `<tr><td>${esc(k)}</td><td class="n">${v.ok}</td><td class="n">${v.failed}</td><td class="small muted">${esc(v.errors.join(" · ").slice(0, 220))}</td></tr>`).join("");
+  document.getElementById("discover").innerHTML = `
+    <h2>Recent videos (${vids.length})</h2>
+    <div class="row"><select id="dplat"><option value="">All platforms</option>${[...new Set(vids.map(v => v.platform))].map(p => `<option>${esc(p)}</option>`).join("")}</select>
+    <label class="small muted"><input type="checkbox" id="dwin"> last 90 days only</label>${exportBtns("videos", vids)}</div>
+    <div class="wrap"><table><thead><tr><th>Platform</th><th>Creator</th><th>Published</th><th>Views</th><th>Followers</th><th>Creator median</th><th>Outlier</th><th>Title / hook</th></tr></thead><tbody id="dbody"></tbody></table></div>
+    <h2>What the fetcher could reach</h2>
+    <div class="wrap"><table><thead><tr><th>Source</th><th>OK</th><th>Failed</th><th>Errors</th></tr></thead><tbody>${acc || '<tr><td colspan=4 class="empty">No fetch has run yet.</td></tr>'}</tbody></table></div>`;
+  const draw = () => {
+    const p = document.getElementById("dplat").value, w = document.getElementById("dwin").checked;
+    document.getElementById("dbody").innerHTML = vids.filter(v => (!p || v.platform === p) && (!w || v.in_window === 1)).map(v => `
+      <tr><td>${esc(v.platform)}</td><td>${esc(v.creator)}</td><td>${esc(v.published || "n/a")}</td><td class="n">${num(v.views)}</td>
+      <td class="n">${num(v.followers)}</td><td class="n">${num(v.creator_median_views)}</td><td class="n">${v.outlier_ratio == null ? "n/a" : num(v.outlier_ratio, 2) + "x"}</td>
+      <td><a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.hook_text || v.title)}</a></td></tr>`).join("") || '<tr><td colspan=8 class="empty">Nothing matches.</td></tr>';
+  };
+  document.getElementById("dplat").onchange = draw; document.getElementById("dwin").onchange = draw; draw();
+}
+
+function analyse() {
+  const ranked = D.videos.filter(v => v.category).slice(0, 60);
+  document.getElementById("analyse").innerHTML = `
+    <h2>Top patterns</h2>
+    <div class="cards">${D.patterns.slice(0, 8).map(p => `<div class="card"><h3>#${p.rank} ${esc(p.name)}</h3>
+      <div class="small muted">${p.n} hooks · ${p.n_with_baseline} with baseline · median outlier ${p.median_outlier == null ? "n/a" : num(p.median_outlier, 2) + "x"} · score ${num(p.score, 2)}</div>
+      ${p.own_evidence ? `<p class="small"><span class="tag e">Moodius data</span> ${esc(p.own_evidence)}</p>` : ""}
+      <p class="small">${esc(p.template || "")}</p>
+      <details><summary>Examples</summary>${p.examples.map(e => `<div class="small"><a href="${esc(e.url)}" target="_blank" rel="noopener">${esc(e.hook)}</a> · ${esc(e.creator)} · ${e.outlier == null ? "no baseline" : num(e.outlier, 2) + "x"}</div>`).join("")}</details></div>`).join("") || '<p class="empty">Run analyse-hooks.</p>'}</div>
+    <h2>Ranked hooks</h2><div class="row">${exportBtns("hooks", ranked)}</div>
+    <div class="wrap"><table><thead><tr><th>Priority</th><th>Hook</th><th>Category</th><th>Outlier</th><th>Text score</th><th>Spec/Clar/Orig/Emo/Vis/Brand</th><th>Confidence</th></tr></thead><tbody>
+    ${ranked.map(v => `<tr><td class="n">${num(v.priority, 1)}</td><td><a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.hook_text)}</a><div class="small muted">${esc(v.hook_text_source)} · ${esc(v.creator)}</div></td>
+      <td>${lab(v.category)}<div class="small muted">${lab(v.structure)}</div></td><td class="n">${v.outlier_ratio == null ? "n/a" : num(v.outlier_ratio, 2) + "x"}</td><td class="n">${num(v.hook_score, 0)}</td>
+      <td class="small">${[v.specificity, v.clarity, v.originality, v.emotional, v.visual, v.alignment].map(x => num(x, 1)).join(" / ")}</td><td>${esc(v.confidence)}<div class="small muted">${esc(v.evidence)}</div></td></tr>`).join("")}
+    </tbody></table></div>`;
+}
+
+function create() {
+  const cs = D.concepts;
+  document.getElementById("create").innerHTML = `<h2>Reel concepts (${cs.length})</h2><p class="small muted">Drafts only. Nothing is scheduled until the owner picks a concept and the account thread books it.</p>
+    <div class="row">${exportBtns("concepts", cs.map(c => ({id: c.id, title: c.title, pattern: c.pattern_id, pillar: c.pillar, status: c.status, hook_a: c.data.hooks?.[0], hook_b: c.data.hooks?.[1], hook_c: c.data.hooks?.[2]})))}</div>
+    <div class="cards">${cs.map(c => { const s = c.data; let t = 0; return `<div class="card"><h3>${esc(c.id)} · ${esc(c.title)}</h3>
+      <div class="small muted">${esc(c.pillar)} · ${lab(c.pattern_id)} · <span class="tag ${c.status === "draft" ? "" : "e"}">${esc(c.status)}</span></div>
+      <p><b>A</b> ${esc(s.hooks?.[0])}<br><b>B</b> ${esc(s.hooks?.[1])}<br><b>C</b> ${esc(s.hooks?.[2])}</p>
+      <details><summary>Script and shots</summary>${(s.cards || []).map((k, i) => { const a = t; t += k[1]; const sh = (s.shots || []).find(x => x.card === i + 1) || {}; return `<div class="small"><b>${a.toFixed(1)}-${t.toFixed(1)}s</b> ${esc(k[0])}<div class="muted">${esc(sh.visual)}</div></div>`; }).join("")}</details>
+      <details><summary>Sound, B-roll, caption</summary><p class="small">${esc(s.sound)}</p><p class="small muted">${esc((s.broll_keywords || []).join(", "))}</p><p class="small">${esc(s.caption)}</p><p class="small">${esc((s.hashtags || []).join(" "))}</p></details>
+      <p class="small"><span class="tag">${esc(s.intended_emotion)}</span> ${esc(s.save_share_reason)}</p>
+      ${c.qc?.errors?.length ? `<p class="small" style="color:var(--accent)">QC: ${esc(c.qc.errors.join("; "))}</p>` : `<p class="small muted">QC passed · reels-engine: ${esc((c.qc?.engine || "").slice(0, 80))}</p>`}</div>`; }).join("") || '<p class="empty">Run generate-reels build.</p>'}</div>`;
+}
+
+function library() {
+  const vids = D.videos;
+  document.getElementById("library").innerHTML = `<h2>Reference archive</h2>
+    <div class="row"><input type="search" id="q" placeholder="Search hooks, titles, creators, tags, adaptations">
+    <select id="lcat"><option value="">All categories</option>${[...new Set(vids.map(v => v.category).filter(Boolean))].sort().map(c => `<option value="${esc(c)}">${lab(c)}</option>`).join("")}</select>
+    <select id="lpil"><option value="">All pillars</option>${[...new Set(vids.map(v => v.pillar).filter(Boolean))].sort().map(c => `<option>${esc(c)}</option>`).join("")}</select></div>
+    <div id="lres" class="cards"></div>`;
+  const draw = () => {
+    const q = document.getElementById("q").value.toLowerCase().trim(), c = document.getElementById("lcat").value, p = document.getElementById("lpil").value;
+    const hits = vids.filter(v => (!c || v.category === c) && (!p || v.pillar === p) &&
+      (!q || [v.title, v.hook_text, v.creator, v.category, v.pillar, v.tone, v.visual_style, v.adaptation, v.why, v.subject].join(" ").toLowerCase().includes(q)));
+    document.getElementById("lres").innerHTML = hits.slice(0, 120).map(v => `<div class="card"><div class="small muted">${esc(v.platform)} · ${esc(v.creator)} · ${esc(v.published || "date n/a")}</div>
+      <h3><a href="${esc(v.url)}" target="_blank" rel="noopener">${esc(v.hook_text || v.title)}</a></h3>
+      <div>${v.category ? `<span class="tag e">${lab(v.category)}</span>` : ""}${v.pillar ? `<span class="tag">${esc(v.pillar)}</span>` : ""}${v.tone ? `<span class="tag">${esc(v.tone)}</span>` : ""}${v.visual_style ? `<span class="tag">${esc(v.visual_style)}</span>` : ""}</div>
+      <p class="small">${num(v.views)} views · outlier ${v.outlier_ratio == null ? "n/a" : num(v.outlier_ratio, 2) + "x"} · confidence ${esc(v.confidence || "n/a")}</p>
+      ${v.why ? `<p class="small"><b>Why it may work:</b> ${esc(v.why)}</p>` : ""}${v.adaptation ? `<p class="small"><b>Moodius adaptation:</b> ${esc(v.adaptation)}</p>` : ""}
+      ${v.first_frame ? `<p class="small muted">First frame: ${esc(v.first_frame)} · Music: ${esc(v.music)} · Length: ${esc(v.length_s)}</p>` : ""}</div>`).join("") || '<p class="empty">No matches.</p>';
+  };
+  ["q", "lcat", "lpil"].forEach(id => document.getElementById(id).oninput = draw); draw();
+}
+
+function performance() {
+  const b = D.baseline.metrics, own = D.own;
+  const k = (name, label, unit = "", d = 1) => b[name] ? `<div class="kpi"><span class="small muted">${label} (median)</span><b>${num(b[name].median, d)}${unit}</b><span class="small muted">IQR ${num(b[name].q1, d)}-${num(b[name].q3, d)} · n=${b[name].n}</span></div>` : `<div class="kpi"><span class="small muted">${label}</span><b>n/a</b><span class="small muted">not exposed</span></div>`;
+  document.getElementById("performance").innerHTML = `<h2>Account baseline</h2>
+    <div class="kpis">${k("reach", "Reach", "", 0)}${k("view_rate_3s", "3 s hold", "%")}${k("avg_watch_s", "Avg watch", " s")}${k("shares_per_1k_reach", "Shares /1k reach")}${k("saves_per_1k_reach", "Saves /1k reach")}${k("follows_per_1k_reach", "Follows /1k reach")}</div>
+    <h2>Recommendations</h2><ul>${D.recommendations.map(r => `<li>${esc(r)}</li>`).join("")}</ul>
+    <h2>Experiments</h2>${D.experiments.length ? D.experiments.map(e => `<div class="card"><b>${esc(e.experiment)}</b> · ${esc(e.status)}${e.tests.map(t => `<div class="small">${esc(t.pair)}: ${t.diff_pts > 0 ? "+" : ""}${t.diff_pts} pts 3 s hold, p=${t.p} → ${esc(t.label)}</div>`).join("")}</div>`).join("") : '<p class="empty">No hook-intel A/B test has posted yet (X6 starts after X5 closes).</p>'}
+    <h2>Reels vs baseline</h2><div class="row">${exportBtns("own_posts", own.map(({bands, ...r}) => r))}</div>
+    <div class="wrap"><table><thead><tr><th>Published (UTC)</th><th>Hook</th><th>Reach</th><th>3 s hold</th><th>Avg watch</th><th>Saves</th><th>Shares</th><th>Out of range</th></tr></thead><tbody>
+    ${own.map(p => `<tr><td>${esc((p.published || "").slice(0, 16).replace("T", " "))}</td><td><a href="${esc(p.url)}" target="_blank" rel="noopener">${esc(p.hook)}</a></td><td class="n">${num(p.reach)}</td><td class="n">${num(p.view_rate_3s, 1)}%</td><td class="n">${num(p.avg_watch_s, 1)} s</td><td class="n">${num(p.saves)}</td><td class="n">${num(p.shares)}</td>
+      <td class="small">${Object.entries(p.bands).filter(([, v]) => v.band !== "within").map(([n, v]) => `<span class="tag ${v.band === "above" ? "e" : ""}">${lab(n)} ${v.band}</span>`).join("") || '<span class="muted">within range</span>'}</td></tr>`).join("")}</tbody></table></div>`;
+}
+
+async function boot() {
+  D = EMBED || await (await fetch("/api/all")).json();
+  nav(); discover(); analyse(); create(); library(); performance();
+}
+boot();
+</script>
+</body>
+</html>

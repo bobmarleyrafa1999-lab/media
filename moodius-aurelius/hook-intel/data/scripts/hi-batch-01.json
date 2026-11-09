@@ -1,0 +1,748 @@
+{
+ "batch": "hi-batch-01",
+ "written": "2026-10-22",
+ "author": "Claude (Claude Code session) from the 2026-10-22-mvp patterns",
+ "status": "draft: nothing scheduled until the owner picks",
+ "scripts": [
+  {
+   "id": "HI01",
+   "slug": "insulted-drill",
+   "title": "The Stoic drill for being insulted",
+   "pattern_id": "curiosity_gap:insider_reveal",
+   "series": "Quiet Truths",
+   "format": "R2",
+   "pillar": "Truths",
+   "pattern_evidence": "Insider reveal: 4 videos, median 5.2x their creator's Shorts median (Daily Stoic 7.2x and 5.8x, HealthyGamerGG 4.5x, Mind In Context 3.4x). Topic and two-branch turn reuse Moodius's best reel (\"Someone disrespected you today?\", 16.5 s avg watch, n=1).",
+   "hooks": [
+    "What a Stoic actually did when someone insulted him.",
+    "Someone insulted you today. Here's what Epictetus trained for.",
+    "The Stoics had a drill for being insulted."
+   ],
+   "cards": [
+    [
+     "What a Stoic actually did when someone insulted him.",
+     2.6,
+     "hook"
+    ],
+    [
+     "He didn't hit back. He didn't swallow it either.",
+     2.6,
+     "body"
+    ],
+    [
+     "He asked one question first.",
+     1.8,
+     "body"
+    ],
+    [
+     "THE QUESTION\nIs it true, or is it just loud?",
+     3.0,
+     "labelled"
+    ],
+    [
+     "If it's true, it's information. If it's false, it's theirs to carry.",
+     3.4,
+     "body"
+    ],
+    [
+     "Either way, an insult needs your agreement to land.",
+     2.6,
+     "body"
+    ],
+    [
+     "Idea: Epictetus, Enchiridion 20 · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Send this to someone still replaying today.",
+     2.4,
+     "cta"
+    ]
+   ],
+   "shots": [
+    {
+     "card": 1,
+     "visual": "Dim corridor, a door just closed; Ember rule under the hook",
+     "motion": "slow 2% push-in",
+     "rights": "Library of Congress P&P, 'no known restrictions' interior photograph (search below)"
+    },
+    {
+     "card": 2,
+     "visual": "Same frame, a little darker",
+     "motion": "hold",
+     "rights": "same still"
+    },
+    {
+     "card": 3,
+     "visual": "Slate design card with grain (reels-engine V1, own design)",
+     "motion": "hold",
+     "rights": "own design"
+    },
+    {
+     "card": 4,
+     "visual": "Slate design card with grain (reels-engine V1, own design), Ember label 'THE QUESTION'",
+     "motion": "label rises first, body 0.3 s later",
+     "rights": "own design"
+    },
+    {
+     "card": 5,
+     "visual": "Split frame: left half light, right half shadow (one still, graded)",
+     "motion": "slow drift left to right",
+     "rights": "Met Open Access CC0 architectural photograph"
+    },
+    {
+     "card": 6,
+     "visual": "Back to the corridor, door now open a crack",
+     "motion": "hold",
+     "rights": "same LoC still, second crop"
+    },
+    {
+     "card": 7,
+     "visual": "Slate design card with grain (reels-engine V1, own design)",
+     "motion": "hold",
+     "rights": "own design"
+    },
+    {
+     "card": 8,
+     "visual": "Slate design card with grain (reels-engine V1, own design)",
+     "motion": "hold",
+     "rights": "own design"
+    }
+   ],
+   "broll_keywords": [
+    "empty corridor 1950s photograph",
+    "closed door interior black and white",
+    "Library of Congress hallway",
+    "light and shadow doorway"
+   ],
+   "first_frame": "A dim corridor with a closed door, Slate tint at 72%, hook in Playfair upper third",
+   "sound": "reels-engine ambient 'low' bed; a single soft door-latch sound under card 1 (own Foley, no library); bed dips 3 dB on card 5",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 401
+   },
+   "texture": "grain",
+   "caption": "Not every insult deserves a reply. Some don't even deserve your agreement.\n\nEpictetus taught a simple drill: before you react, ask whether it's true. If it is, you've learned something. If it isn't, it was never about you.\n\nWhich one was today's?\n\nEvidence: philosophy (Epictetus, Enchiridion 20), in our words.",
+   "first_comment": "True or just loud? One word.",
+   "hashtags": [
+    "#stoicism",
+    "#epictetus",
+    "#selfrespect"
+   ],
+   "intended_emotion": "steadiness after being stung",
+   "save_share_reason": "A one-question tool they can use tonight on a specific person; 'send this to someone still replaying today' names the person to send it to.",
+   "source": {
+    "type": "idea",
+    "author": "Epictetus",
+    "work": "Enchiridion",
+    "section": "20",
+    "translation": "n/a (paraphrase)"
+   },
+   "evidence": "Tier 2 philosophy, Moodius words",
+   "cta": "send",
+   "rules": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true
+   }
+  },
+  {
+   "id": "HI02",
+   "slug": "too-sensitive",
+   "title": "Too sensitive, or well informed?",
+   "pattern_id": "unexpected_question:question",
+   "series": "The Uncomfortable Question",
+   "format": "A",
+   "pillar": "Identity",
+   "pattern_evidence": "Question about something you were told as fact: 6 videos, 2 with a usable baseline, median 3.7x (HealthyGamerGG 5.1x, Mind In Context 2.3x). We keep the shape and drop the medical topic: Moodius makes no medical claims.",
+   "hooks": [
+    "Is being \"too sensitive\" a flaw, or is it information?",
+    "Someone once told you that you were too sensitive.",
+    "\"You're too sensitive.\" Who benefited from you believing that?"
+   ],
+   "cards": [
+    [
+     "Is being \"too sensitive\" a flaw, or is it information?",
+     3.0,
+     "question"
+    ],
+    [
+     "Sensitivity notices things: a tone shift, a lie, a room going cold.",
+     3.3,
+     "body"
+    ],
+    [
+     "That's not a defect. It's a sensor.",
+     2.2,
+     "body"
+    ],
+    [
+     "BUT\nA sensor isn't a verdict.",
+     2.6,
+     "labelled"
+    ],
+    [
+     "Notice the feeling. Then check the facts before you act on it.",
+     3.2,
+     "body"
+    ],
+    [
+     "\"Too sensitive\" was never the problem. Unexamined was.",
+     2.6,
+     "body"
+    ],
+    [
+     "Idea: Epictetus, Enchiridion 1.5 · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Send this to the person who needed it at fifteen.",
+     2.6,
+     "cta"
+    ]
+   ],
+   "shots": [
+    {
+     "card": 1,
+     "visual": "Slate design card with grain (reels-engine V1, own design), question card with Ember rule",
+     "motion": "hold, grain",
+     "rights": "own design"
+    },
+    {
+     "card": 2,
+     "visual": "Window at dusk, a curtain moving slightly",
+     "motion": "slow 2% drift",
+     "rights": "own footage (the owner, phone, no people) or Pexels licence"
+    },
+    {
+     "card": 3,
+     "visual": "Same window, light gone flat",
+     "motion": "hold",
+     "rights": "same clip"
+    },
+    {
+     "card": 4,
+     "visual": "Slate design card with grain (reels-engine V1, own design), Ember label 'BUT'",
+     "motion": "label first",
+     "rights": "own design"
+    },
+    {
+     "card": 5,
+     "visual": "Old weighing scales, black and white",
+     "motion": "slow push-in",
+     "rights": "Wikimedia Commons public domain photograph (PD-Art/PD-old)"
+    },
+    {
+     "card": 6,
+     "visual": "Back to the window, lamp switched on inside",
+     "motion": "hold",
+     "rights": "same clip as card 2"
+    },
+    {
+     "card": 7,
+     "visual": "Slate design card with grain (reels-engine V1, own design)",
+     "motion": "hold",
+     "rights": "own design"
+    },
+    {
+     "card": 8,
+     "visual": "Slate design card with grain (reels-engine V1, own design)",
+     "motion": "hold",
+     "rights": "own design"
+    }
+   ],
+   "broll_keywords": [
+    "curtain moving window dusk",
+    "empty room light change",
+    "antique balance scales black and white",
+    "lamp turning on window"
+   ],
+   "first_frame": "Slate background, the question in Playfair 88 with a thin Ember rule under it",
+   "sound": "reels-engine ambient 'night' bed; one felt-piano note on card 3 ('It's a sensor'); no drop, no riser",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 402
+   },
+   "texture": "grain",
+   "caption": "A lot of us were told we were too sensitive before we had words for what we were noticing.\n\nSensitivity picks up real signals. The skill isn't feeling less. It's checking the signal before you act on it. Epictetus called it testing the impression.\n\nWho told you, and were they right?\n\nEvidence: philosophy (Epictetus, Enchiridion 1.5), in our words. Reflection: Moodius.",
+   "first_comment": "What does your sensitivity usually notice first?",
+   "hashtags": [
+    "#emotionalintelligence",
+    "#stoicism",
+    "#highlysensitive"
+   ],
+   "intended_emotion": "relief, then responsibility",
+   "save_share_reason": "Reframes a label many people carry from childhood. The CTA names who to send it to (someone who was called 'too sensitive' young).",
+   "source": {
+    "type": "idea",
+    "author": "Epictetus",
+    "work": "Enchiridion",
+    "section": "1.5",
+    "translation": "n/a (paraphrase)"
+   },
+   "evidence": "Tier 2 philosophy + Tier 3 Moodius opinion",
+   "cta": "send",
+   "rules": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true
+   }
+  },
+  {
+   "id": "HI03",
+   "slug": "full-table",
+   "title": "Lonely at a full table",
+   "pattern_id": "emotional_recognition:second_person_scene",
+   "series": "Quiet Truths",
+   "format": "R1",
+   "pillar": "Truths",
+   "pattern_evidence": "Second-person scene: 2 videos at 1.8x and 2.2x their creators' medians, both text over still scenes (the Moodius format). On Moodius, 3 reels with this shape held a median 41% past 3 s vs 32% for the account.",
+   "hooks": [
+    "You were lonely at a full table, and nobody noticed.",
+    "Laughing at dinner. Lonely the whole time.",
+    "Have you ever been lonely around people who love you?"
+   ],
+   "cards": [
+    [
+     "You were lonely at a full table, and nobody noticed.",
+     2.6,
+     "hook"
+    ],
+    [
+     "Because you were laughing. You're good at laughing.",
+     2.4,
+     "body"
+    ],
+    [
+     "Loneliness isn't the absence of people...",
+     2.2,
+     "body"
+    ],
+    [
+     "...it's the absence of being known by them.",
+     2.4,
+     "body"
+    ],
+    [
+     "TRY THIS\nTell one person one true thing this week.",
+     3.0,
+     "labelled"
+    ],
+    [
+     "Not everything. One thing. The table stays full, and gets less lonely.",
+     3.4,
+     "body"
+    ],
+    [
+     "A Moodius reflection, not a study.",
+     1.8,
+     "cite"
+    ],
+    [
+     "Send this to the one who laughs the loudest.",
+     2.4,
+     "cta"
+    ]
+   ],
+   "shots": [
+    {
+     "card": 1,
+     "visual": "Long dinner table after a meal, warm lamp light, chairs pushed back, no faces",
+     "motion": "slow 2% push-in",
+     "rights": "Library of Congress P&P 'no known restrictions' (1940s-60s dinner photographs) or own footage"
+    },
+    {
+     "card": 2,
+     "visual": "Same table, a single glass still half full",
+     "motion": "hold",
+     "rights": "same still, second crop"
+    },
+    {
+     "card": 3,
+     "visual": "Slate design card with grain (reels-engine V1, own design)",
+     "motion": "hold",
+     "rights": "own design"
+    },
+    {
+     "card": 4,
+     "visual": "Slate design card with grain (reels-engine V1, own design) (mid-sentence cut from card 3)",
+     "motion": "cut on the ellipsis",
+     "rights": "own design"
+    },
+    {
+     "card": 5,
+     "visual": "Slate design card with grain (reels-engine V1, own design), Ember label 'TRY THIS'",
+     "motion": "label first",
+     "rights": "own design"
+    },
+    {
+     "card": 6,
+     "visual": "Two cups on a small table by a window, morning",
+     "motion": "slow drift",
+     "rights": "own footage (the owner, no faces) or Pexels licence"
+    },
+    {
+     "card": 7,
+     "visual": "Slate design card with grain (reels-engine V1, own design)",
+     "motion": "hold",
+     "rights": "own design"
+    },
+    {
+     "card": 8,
+     "visual": "Slate design card with grain (reels-engine V1, own design)",
+     "motion": "hold",
+     "rights": "own design"
+    }
+   ],
+   "broll_keywords": [
+    "dinner table after party black and white",
+    "empty chairs long table lamp",
+    "two coffee cups window morning",
+    "Library of Congress family dinner 1950s"
+   ],
+   "first_frame": "A long table after dinner, warm light through a Slate tint, hook upper third",
+   "sound": "muffled dinner chatter (own recording or CC0 Freesound clip, logged) for 2 s, fading under the 'warm' ambient bed; silence on card 4",
+   "audio": {
+    "engine": "ambient",
+    "mood": "warm",
+    "seed": 403
+   },
+   "texture": "grain",
+   "caption": "Some of the loneliest evenings happen in company. You're there, you're funny, and nobody actually knows how you are.\n\nYou don't fix that by finding more people. You fix it by letting one of them know one true thing.\n\nWho would you tell?\n\nEvidence: Moodius reflection (opinion, not a study).",
+   "first_comment": "One true thing you haven't said out loud this month. Only if you want.",
+   "hashtags": [
+    "#loneliness",
+    "#emotionalhealth",
+    "#friendship"
+   ],
+   "intended_emotion": "being seen",
+   "save_share_reason": "People share what they can't say. Sending it to 'the one who laughs the loudest' is a way of saying 'I see you'.",
+   "source": {
+    "type": "reflection",
+    "author": "Moodius",
+    "work": "n/a",
+    "section": "n/a",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 3 Moodius opinion",
+   "cta": "send",
+   "rules": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true
+   }
+  },
+  {
+   "id": "HI04",
+   "slug": "instant-reply",
+   "title": "The cost of always replying straight away",
+   "pattern_id": "psychological_revelation:hidden_cost",
+   "series": "Quiet Truths",
+   "format": "R2",
+   "pillar": "Daily",
+   "pattern_evidence": "Hidden cost: 1 video so far, but at 9.5x its creator's median (Human Friction, 'The psychological cost of being available', 1,005 views vs 106). One example is a lead, not proof. This reel tests it.",
+   "hooks": [
+    "You answer every message within a minute. Here's the cost.",
+    "Being always available is teaching people something.",
+    "The quiet cost of always replying straight away."
+   ],
+   "cards": [
+    [
+     "You answer every message within a minute. Here's the cost.",
+     2.8,
+     "hook"
+    ],
+    [
+     "Every instant reply teaches people your time is free.",
+     2.6,
+     "body"
+    ],
+    [
+     "So they stop asking whether it's a good moment.",
+     2.6,
+     "body"
+    ],
+    [
+     "THE COST\nYour attention, cut into pieces nobody asked for.",
+     2.8,
+     "labelled"
+    ],
+    [
+     "Seneca noticed we guard our money and hand out our time.",
+     3.0,
+     "body"
+    ],
+    [
+     "Reply in an hour. That's the whole cost of keeping your evening.",
+     3.2,
+     "body"
+    ],
+    [
+     "Idea: Seneca, On the Shortness of Life 3 · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Save this for the next time your phone lights up.",
+     2.6,
+     "cta"
+    ]
+   ],
+   "shots": [
+    {
+     "card": 1,
+     "visual": "Phone face-up on a dark desk, screen lighting up, no hands",
+     "motion": "screen glow pulses once",
+     "rights": "own footage (the owner, phone, notification text blurred)"
+    },
+    {
+     "card": 2,
+     "visual": "Same phone, three more glows",
+     "motion": "hold",
+     "rights": "same clip"
+    },
+    {
+     "card": 3,
+     "visual": "Slate design card with grain (reels-engine V1, own design)",
+     "motion": "hold",
+     "rights": "own design"
+    },
+    {
+     "card": 4,
+     "visual": "Slate design card with grain (reels-engine V1, own design), Ember label 'THE COST'",
+     "motion": "label first",
+     "rights": "own design"
+    },
+    {
+     "card": 5,
+     "visual": "Old pocket watch on a ledger",
+     "motion": "slow push-in",
+     "rights": "Wikimedia Commons public domain / Met Open Access CC0"
+    },
+    {
+     "card": 6,
+     "visual": "Phone face-down, lamp on, an open book beside it",
+     "motion": "slow drift",
+     "rights": "own footage"
+    },
+    {
+     "card": 7,
+     "visual": "Slate design card with grain (reels-engine V1, own design)",
+     "motion": "hold",
+     "rights": "own design"
+    },
+    {
+     "card": 8,
+     "visual": "Slate design card with grain (reels-engine V1, own design)",
+     "motion": "hold",
+     "rights": "own design"
+    }
+   ],
+   "broll_keywords": [
+    "phone notification dark desk",
+    "phone face down lamp book",
+    "antique pocket watch ledger public domain",
+    "evening desk lamp"
+   ],
+   "first_frame": "A phone lighting up on a dark desk, Slate tint, hook upper third",
+   "sound": "two soft vibration buzzes (own recording) on cards 1-2, then the 'room' bed; the buzz stops on card 6",
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 404
+   },
+   "texture": "grain",
+   "caption": "Fast replies feel polite. Over time they teach people that your attention is always on tap.\n\nSeneca made the point two thousand years ago: we're careful with money and careless with time. An hour's delay costs the message nothing. It might give you your evening back.\n\nHow fast do you usually reply?\n\nEvidence: philosophy (Seneca, On the Shortness of Life 3), in our words.",
+   "first_comment": "Honest answer: what's your average reply time?",
+   "hashtags": [
+    "#boundaries",
+    "#seneca",
+    "#digitalwellbeing"
+   ],
+   "intended_emotion": "recognition, then permission",
+   "save_share_reason": "Gives a concrete permission (reply in an hour) people want to keep and point to later; the save CTA ties it to the moment they'll need it.",
+   "source": {
+    "type": "idea",
+    "author": "Seneca",
+    "work": "On the Shortness of Life",
+    "section": "3",
+    "translation": "n/a (paraphrase)"
+   },
+   "evidence": "Tier 2 philosophy, Moodius words",
+   "cta": "save",
+   "rules": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true
+   }
+  },
+  {
+   "id": "HI05",
+   "slug": "rest-or-avoidance",
+   "title": "Rest or avoidance?",
+   "pattern_id": "philosophical_paradox:versus",
+   "series": "Philosophical Contradiction",
+   "format": "C",
+   "pillar": "Discipline",
+   "pattern_evidence": "X vs Y: 2 videos, 5.4x and 1.5x their creators' medians (HealthyGamerGG 'Depression vs Responsibility'). Built as Moodius's two-branch structure, which held 16.5 s average watch once (n=1). Discipline is reframed as a feeling, per the 22 Oct lessons.",
+   "hooks": [
+    "Rest or avoidance? They feel the same from the sofa.",
+    "Is it rest, or are you hiding?",
+    "Two people skip the gym tonight. Only one is resting."
+   ],
+   "cards": [
+    [
+     "Rest or avoidance? They feel the same from the sofa.",
+     2.6,
+     "hook"
+    ],
+    [
+     "Same sofa. Same blanket. Different reason.",
+     2.2,
+     "body"
+    ],
+    [
+     "Ask one question: what am I moving toward?",
+     2.4,
+     "body"
+    ],
+    [
+     "IF IT'S REST\nYou'll get up wanting to do the thing.",
+     3.0,
+     "labelled"
+    ],
+    [
+     "IF IT'S AVOIDANCE\nYou'll get up wanting more sofa.",
+     2.8,
+     "labelled"
+    ],
+    [
+     "Rest refills you. Avoidance only postpones you.",
+     2.4,
+     "body"
+    ],
+    [
+     "Idea: Seneca, On Tranquillity of Mind 17 · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Save this for the next sofa night.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "shots": [
+    {
+     "card": 1,
+     "visual": "Empty sofa with a blanket thrown over the arm, evening lamp",
+     "motion": "slow 2% push-in",
+     "rights": "own footage (the owner, no faces)"
+    },
+    {
+     "card": 2,
+     "visual": "Same sofa, the blanket now folded",
+     "motion": "hold",
+     "rights": "same clip"
+    },
+    {
+     "card": 3,
+     "visual": "Slate design card with grain (reels-engine V1, own design)",
+     "motion": "hold",
+     "rights": "own design"
+    },
+    {
+     "card": 4,
+     "visual": "Running shoes by a door, morning light (Ember label 'IF IT'S REST')",
+     "motion": "slow drift",
+     "rights": "own footage or Pexels licence"
+    },
+    {
+     "card": 5,
+     "visual": "Curtains closed in daytime, TV glow on the wall (Ember label 'IF IT'S AVOIDANCE')",
+     "motion": "hold",
+     "rights": "own footage or Pexels licence"
+    },
+    {
+     "card": 6,
+     "visual": "Slate design card with grain (reels-engine V1, own design)",
+     "motion": "hold",
+     "rights": "own design"
+    },
+    {
+     "card": 7,
+     "visual": "Slate design card with grain (reels-engine V1, own design)",
+     "motion": "hold",
+     "rights": "own design"
+    },
+    {
+     "card": 8,
+     "visual": "Slate design card with grain (reels-engine V1, own design)",
+     "motion": "hold",
+     "rights": "own design"
+    }
+   ],
+   "broll_keywords": [
+    "empty sofa blanket lamp evening",
+    "running shoes by door morning light",
+    "closed curtains daytime tv glow",
+    "folded blanket sofa"
+   ],
+   "first_frame": "An empty sofa with a blanket over the arm, lamp light, Slate tint, hook upper third",
+   "sound": "'dawn' ambient bed; two alternating low notes, one under each branch card (4 and 5); bed brightens slightly on card 6",
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 405
+   },
+   "texture": "grain",
+   "caption": "Rest and avoidance look identical from the outside. The difference is what you get up wanting.\n\nSeneca was in favour of rest: he wrote that the mind comes back keener after a break. Avoidance doesn't give you that. It just moves the thing to tomorrow.\n\nWhich was your last evening?\n\nEvidence: philosophy (Seneca, On Tranquillity of Mind 17), in our words.",
+   "first_comment": "Rest or avoidance: what was yesterday?",
+   "hashtags": [
+    "#selfawareness",
+    "#seneca",
+    "#rest"
+   ],
+   "intended_emotion": "honest self-check without shame",
+   "save_share_reason": "A two-branch test they can run on themselves next time; it removes guilt from real rest, which people like to share.",
+   "source": {
+    "type": "idea",
+    "author": "Seneca",
+    "work": "On Tranquillity of Mind",
+    "section": "17",
+    "translation": "n/a (paraphrase)"
+   },
+   "evidence": "Tier 2 philosophy, Moodius words",
+   "cta": "save",
+   "rules": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true
+   }
+  }
+ ]
+}

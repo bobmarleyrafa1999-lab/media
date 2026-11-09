@@ -1,0 +1,211 @@
+{
+ "n": 5,
+ "essay": "essays/05-same-mistakes.md",
+ "title": "You Can Understand Yourself and Still Repeat the Same Mistakes",
+ "ab_alt": "Insight Is Not a Strategy",
+ "pillar": "Discipline",
+ "reels": [
+  {
+   "id": "S05A",
+   "slug": "understand-and-repeat",
+   "format": "A",
+   "series": "The Uncomfortable Question",
+   "pillar": "Discipline",
+   "hook": "What do you understand about yourself but keep doing anyway?",
+   "hook_b": "You already know why you do it. That was never the problem.",
+   "cards": [
+    [
+     "What do you understand about yourself but keep doing anyway?",
+     3.0,
+     "question"
+    ],
+    [
+     "You can explain it in three sentences.",
+     2.0,
+     "body"
+    ],
+    [
+     "And on Thursday night, you do it again.",
+     2.2,
+     "body"
+    ],
+    [
+     "Across 47 experiments, behaviour moved about half as far as intention.",
+     3.0,
+     "body"
+    ],
+    [
+     "Meta-analysis: Webb & Sheeran, Psychological Bulletin (2006)",
+     2.2,
+     "cite"
+    ],
+    [
+     "Insight isn't the bridge. A plan at the trigger is.",
+     2.7,
+     "body"
+    ],
+    [
+     "Save this for the next Thursday night.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V2 own clip of a kitchen at night, light on, nobody in it (tag kitchen-night), else V1 Slate + grain.",
+   "footage": "kitchen-night",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 309
+   },
+   "source": {
+    "type": "data",
+    "author": "Webb & Sheeran",
+    "work": "Changing intentions and behaviour (Psychological Bulletin 132(2))",
+    "section": "meta-analysis",
+    "translation": "n/a"
+   },
+   "evidence": "Tier 1 meta-analysis (N31) + Moodius practice",
+   "caption": "Understanding a pattern changes what you intend. It changes much less of what you do.\n\nIn a meta-analysis of 47 experiments, interventions that shifted people's intentions moved their actual behaviour about half as far. Insight is real. It just doesn't reach the moment on its own.\n\nWhat's the one you keep repeating?\n\nEvidence: Webb & Sheeran (2006). Practice: Moodius. Full essay on the Substack, link in bio.",
+   "first_comment": "One word for the mistake you understand best and repeat anyway.",
+   "hashtags": [
+    "#psychology",
+    "#habits",
+    "#selfawareness",
+    "#stoicism",
+    "#philosophy"
+   ],
+   "cta": "save",
+   "length_s": 17.1
+  },
+  {
+   "id": "S05C",
+   "slug": "knowing-and-doing",
+   "format": "C",
+   "series": "The Philosophical Contradiction",
+   "pillar": "Discipline",
+   "hook": "Do you repeat it because you don't really know better?",
+   "hook_b": "Socrates and Aristotle disagreed about why you keep doing it.",
+   "cards": [
+    [
+     "Do you repeat it because you don't really know better?",
+     2.8,
+     "question"
+    ],
+    [
+     "ONE READING\nSocrates: nobody does wrong knowingly. You just don't truly know yet.",
+     3.4,
+     "labelled"
+    ],
+    [
+     "THE OTHER\nAristotle: you know. The knowledge just isn't awake when you act.",
+     3.4,
+     "labelled"
+    ],
+    [
+     "Same mistake. Different fix.",
+     1.6,
+     "body"
+    ],
+    [
+     "If it's ignorance, learn. If it's habit, plan for the moment.",
+     2.9,
+     "body"
+    ],
+    [
+     "Idea: Aristotle, Nicomachean Ethics VII · Moodius words",
+     2.0,
+     "cite"
+    ],
+    [
+     "Which one is yours? Tell me below.",
+     2.0,
+     "cta"
+    ]
+   ],
+   "visual": "V1 + grain, or V3 stairwell still (tag stairs).",
+   "footage": "stairs",
+   "texture": "grain",
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 310
+   },
+   "source": {
+    "type": "idea",
+    "author": "Aristotle",
+    "work": "Nicomachean Ethics",
+    "section": "VII",
+    "translation": "paraphrase"
+   },
+   "evidence": "Tier 2 primary text (N35), paraphrased; Socrates via Aristotle's report",
+   "caption": "Socrates argued that nobody knowingly does wrong, so repeating a mistake must mean you don't truly understand it. Aristotle thought that was too neat: you can know something and still not have it active in the moment you act.\n\nIf Socrates is right, the fix is more understanding. If Aristotle is right, it's a plan for the moment.\n\nWhich sounds like you?\n\nSource: Aristotle, Nicomachean Ethics VII (paraphrased). Full essay on the Substack, link in bio.",
+   "first_comment": "Socrates or Aristotle? One word.",
+   "hashtags": [
+    "#psychology",
+    "#habits",
+    "#selfawareness",
+    "#stoicism",
+    "#philosophy"
+   ],
+   "cta": "comment",
+   "length_s": 18.1
+  }
+ ],
+ "carousel": [
+  [
+   "Cover",
+   "You understand why you do it. You still do it.",
+   "Here's why that isn't a paradox →",
+   "claim cover"
+  ],
+  [
+   "The old complaint",
+   "\"For the good that I would I do not: but the evil which I would not, that I do.\"",
+   "Romans 7:19 · King James Version",
+   "pull quote"
+  ],
+  [
+   "The numbers",
+   "47 experiments: intention moved d = 0.66. Behaviour moved d = 0.36.",
+   "Meta-analysis · Webb & Sheeran, Psychological Bulletin (2006)",
+   "term card"
+  ],
+  [
+   "Where behaviour lives",
+   "About a third to a half of daily actions were habits, often done while thinking about something else.",
+   "Study · Wood, Quinn & Kashy, JPSP (2002)",
+   "term card"
+  ],
+  [
+   "The bridge",
+   "\"If her voice gets sharp, then I put the phone face down.\" If-then plans had a medium-to-large effect.",
+   "Meta-analysis · Gollwitzer & Sheeran (2006)",
+   "pair slide"
+  ],
+  [
+   "Build one bridge",
+   "1 Pick one repeat. 2 Find the cue, not the cause. 3 Write the if-then. 4 Put it where the cue happens.",
+   "Moodius practice",
+   "numbered step"
+  ],
+  [
+   "Sign-off",
+   "Insight tells you where the bridge goes. It can't be the bridge.",
+   "Full essay on the Substack · link in bio · save this",
+   "sign-off"
+  ]
+ ],
+ "carousel_caption": "Understanding yourself is necessary. It's rarely enough. Insight changes what you intend, and much of what you repeat runs on cues and habit while your mind is elsewhere.\n\nThe fix isn't a deeper insight. It's a plan that lives where the behaviour lives.\n\nSave this. What's the cue for yours?\n\nEvidence: Webb & Sheeran 2006; Wood, Quinn & Kashy 2002; Gollwitzer & Sheeran 2006 (meta-analyses and diary studies). Philosophy: Aristotle, Nicomachean Ethics VII. Romans 7:19 (KJV).",
+ "notes": [
+  "In 47 experiments that successfully changed what people intended to do, what they actually did moved about half as far. That gap is where most of our repeated mistakes live. Understanding is real. It just doesn't travel into the moment on its own. This week's essay is about the bridge.",
+  "Aristotle on why we repeat what we know is wrong: you can possess knowledge without having it awake when you act, like someone asleep who still \"knows\" things. Two thousand years later, habit research says something close to the same.",
+  "Stop asking \"why do I do this?\" for a month. Ask \"what sets it off?\" Where were you, who was there, what time was it, what did your body do first? The cause is interesting. The cue is the part you can plan for."
+ ],
+ "visuals": {
+  "look": "V2 own clip of an empty kitchen at night (no people); V3 stairwell for the contradiction reel; else V1 + grain",
+  "type": "Standard; the d = 0.66 / 0.36 slide shows two Ash bars of matching proportion, the only chart-like element",
+  "music": "night and low (ambient.py); slow, sparse, no lift",
+  "pinterest": "1000×1500, Bone background, Slate type, Ember on 'still'"
+ }
+}

@@ -1,0 +1,230 @@
+{
+  "reel-22-nobody-coming": {
+    "style": "battle",
+    "seed": 2203,
+    "segments": [
+      ["Nobody is coming to save you.", 3.0, true],
+      ["Epictetus was born a slave. He said:", 2.6, false],
+      ["“First say to yourself what you would be;\nand then do what you have to do.”", 3.8, true],
+      ["Discourses 3.23", 1.8, false],
+      ["Decide who you are. Then act like him.", 3.0, false],
+      ["Save this. Start Monday.", 2.4, false]
+    ]
+  },
+  "reel-23-dyed": {
+    "style": "dawn",
+    "seed": 2314,
+    "segments": [
+      ["Your mind is turning into what you scroll.", 3.0, true],
+      ["Marcus Aurelius warned himself:", 2.4, false],
+      ["“The soul becomes dyed with\nthe colour of its thoughts.”", 3.6, true],
+      ["Meditations 5.16", 1.8, false],
+      ["Feed it better.\nBooks, hard work, good men.", 3.2, false],
+      ["Follow for one rule a day.", 2.4, false]
+    ]
+  },
+  "reel-24-why": {
+    "style": "elegy",
+    "seed": 2425,
+    "segments": [
+      ["You can survive anything with one thing.", 3.0, true],
+      ["Nietzsche wrote it.\nViktor Frankl lived it in Auschwitz.", 3.2, false],
+      ["“He who has a why to live\ncan bear almost any how.”", 3.6, true],
+      ["Twilight of the Idols, Maxims 12", 1.8, false],
+      ["Find your why. The hows get lighter.", 3.0, false],
+      ["Send this to someone carrying a lot.", 2.6, false]
+    ]
+  },
+  "reel-25-right-thing": {
+    "style": "march",
+    "seed": 2536,
+    "segments": [
+      ["Tired. Broke. Nobody watching.", 2.8, true],
+      ["Doesn’t change the job.", 2.2, false],
+      ["“Just that you do the right thing.\nThe rest doesn’t matter.”", 3.6, true],
+      ["Marcus Aurelius, Meditations 6.2", 2.0, false],
+      ["Cold or warm. Tired or rested.\nPraised or ignored.", 3.2, false],
+      ["Save this for the days you want to quit.", 2.6, false]
+    ]
+  },
+  "reel-26-anger-aim": {
+    "style": "battle",
+    "seed": 2647,
+    "segments": [
+      ["Anyone can get angry. That’s easy.", 2.8, true],
+      ["Aristotle set a higher bar.", 2.2, false],
+      ["“To be angry with the right person, to the right degree, at the right time, for the right purpose, and in the right way: that is not easy.”", 5.0, false],
+      ["Nicomachean Ethics II.9", 1.8, false],
+      ["Anger isn’t the problem. Aim is.", 2.8, true],
+      ["Send this to a brother with a short fuse.", 2.6, false]
+    ]
+  },
+  "reel-27-ruled": {
+    "style": "march",
+    "seed": 2758,
+    "segments": [
+      ["You don’t want responsibility?\nSomeone worse will take it.", 3.4, true],
+      ["Plato wrote the warning 2,400 years ago.", 2.6, false],
+      ["“The heaviest penalty for declining to rule is to be ruled by someone inferior to yourself.”", 4.2, false],
+      ["Republic, Book I", 1.6, false],
+      ["Step up at work. At home.\nIn your own life.", 3.0, true],
+      ["Follow for more.", 2.0, false]
+    ]
+  },
+  "reel-28-headland": {
+    "style": "elegy",
+    "seed": 2869,
+    "segments": [
+      ["Everything hit you at once this week.", 3.0, true],
+      ["Marcus Aurelius had the picture for it:", 2.4, false],
+      ["“Be like the headland on which the waves break. It stands firm, and the seething waters around it fall asleep.”", 4.6, false],
+      ["Meditations 4.49", 1.6, false],
+      ["You don’t have to stop the waves.\nJust stand.", 3.0, true],
+      ["Save this for the next storm.", 2.4, false]
+    ]
+  },
+  "reel-29-two-handles": {
+    "style": "dawn",
+    "seed": 2970,
+    "segments": [
+      ["Everything that happens to you\nhas two handles.", 3.2, true],
+      ["Epictetus:", 1.6, false],
+      ["“Every thing has two handles, one by which it may be carried, the other by which it cannot.”", 4.0, false],
+      ["Enchiridion 43", 1.6, false],
+      ["Your brother wronged you?\nDon’t grab ‘he wronged me’.\nGrab ‘he’s my brother’.", 4.0, false],
+      ["Send this to someone holding a grudge.", 2.6, false]
+    ]
+  },
+  "reel-30-fate-leads": {
+    "style": "battle",
+    "seed": 3081,
+    "segments": [
+      ["You can fight your life\nor you can walk with it.", 3.2, true],
+      ["Seneca quoted the old Stoic Cleanthes:", 2.6, false],
+      ["“Fate leads the willing\nand drags the unwilling.”", 3.4, true],
+      ["Letter 107", 1.6, false],
+      ["Either way you’re going.\nChoose to walk.", 3.0, false],
+      ["Save this.", 2.0, false]
+    ]
+  },
+  "reel-31-last-freedom": {
+    "style": "elegy",
+    "seed": 3192,
+    "segments": [
+      ["They can take everything from you.\nExcept one thing.", 3.4, true],
+      ["Viktor Frankl learned this\nin a concentration camp.", 2.8, false],
+      ["“The last of the human freedoms: to choose one’s attitude in any given set of circumstances.”", 4.2, false],
+      ["Man’s Search for Meaning", 1.6, false],
+      ["Nobody can take that.\nDon’t hand it over.", 3.0, true],
+      ["Send this to someone who feels trapped.", 2.6, false]
+    ]
+  },
+  "reel-32-ask-for-help": {
+    "style": "march",
+    "seed": 3203,
+    "segments": [
+      ["Asking for help isn’t weak.", 2.6, true],
+      ["The emperor of Rome said so himself.", 2.4, false],
+      ["“Do not be ashamed to be helped. Like a soldier storming a wall, you have a job to do.”", 4.2, false],
+      ["Marcus Aurelius, Meditations 7.7", 2.0, false],
+      ["If you’re limping, lean on someone.\nThen keep climbing.", 3.2, true],
+      ["Send this to a brother\nwho’s struggling in silence.", 2.8, false]
+    ]
+  },
+  "reel-33-retreat": {
+    "style": "dawn",
+    "seed": 3314,
+    "segments": [
+      ["You don’t need a holiday.\nYou need this.", 2.8, true],
+      ["Marcus Aurelius:", 1.6, false],
+      ["“Nowhere can a man find a quieter or more untroubled retreat than in his own soul.”", 4.0, false],
+      ["Meditations 4.3", 1.6, false],
+      ["Ten quiet minutes. No phone.\nGo there today.", 3.0, true],
+      ["Save this for when it gets loud.", 2.4, false]
+    ]
+  },
+  "reel-34-play": {
+    "style": "elegy",
+    "seed": 3425,
+    "segments": [
+      ["You’re afraid your life will be short.", 2.8, true],
+      ["Seneca said you’re measuring the wrong thing.", 2.6, false],
+      ["“As with a play, so with life: what matters is not how long it is, but how well it is acted.”", 4.2, false],
+      ["Letter 77", 1.4, false],
+      ["Act well today.\nThat’s the whole job.", 2.8, true],
+      ["Follow for one rule a day.", 2.2, false]
+    ]
+  },
+  "reel-35-do-wrong": {
+    "style": "battle",
+    "seed": 3536,
+    "segments": [
+      ["They got away with it. You didn’t.", 2.8, true],
+      ["Socrates would tell you that you won.", 2.6, false],
+      ["“It is worse to do wrong\nthan to suffer wrong.”", 3.2, true],
+      ["Plato, Gorgias 469c", 1.6, false],
+      ["The man who cheats you damages himself.\nStay clean.", 3.2, false],
+      ["Send this to someone who got burned.", 2.6, false]
+    ]
+  },
+  "reel-36-sickness": {
+    "style": "march",
+    "seed": 3647,
+    "segments": [
+      ["Injured. Sick. Broke. Still you.", 2.8, true],
+      ["Epictetus walked with a limp his whole life.", 2.6, false],
+      ["“Sickness is a hindrance to the body, but not to the will, unless the will itself chooses.”", 4.2, false],
+      ["Enchiridion 9", 1.4, false],
+      ["Your body can be stopped.\nYour choices can’t.", 3.0, true],
+      ["Save this for the hard days.", 2.2, false]
+    ]
+  },
+  "reel-37-action-by-action": {
+    "style": "dawn",
+    "seed": 3758,
+    "segments": [
+      ["You want the whole life fixed by Friday.", 2.8, true],
+      ["Marcus Aurelius built his\none action at a time.", 2.8, false],
+      ["“Build your life action by action, and be content if each one achieves its goal as far as it can.”", 4.4, false],
+      ["Meditations 8.32", 1.6, false],
+      ["One honest action. Then the next.", 2.6, true],
+      ["Follow for more.", 1.8, false]
+    ]
+  },
+  "reel-38-love-your-people": {
+    "style": "elegy",
+    "seed": 3869,
+    "segments": [
+      ["You didn’t choose your family.\nOr your city. Or your time.", 3.4, true],
+      ["Marcus Aurelius didn’t either. He wrote:", 2.4, false],
+      ["“Love the people fate has brought you together with, and do it with all your heart.”", 4.0, false],
+      ["Meditations 6.39", 1.6, false],
+      ["Stop wishing for a different hand.\nPlay this one with love.", 3.2, true],
+      ["Send this to the people you’re stuck with.", 2.6, false]
+    ]
+  },
+  "reel-39-turn-it-to-use": {
+    "style": "battle",
+    "seed": 3970,
+    "segments": [
+      ["Something went wrong today. Good.", 2.6, true],
+      ["Epictetus had a drill for it:", 2.2, false],
+      ["“On every accident that befalls you, ask yourself what power you have for turning it to use.”", 4.2, false],
+      ["Enchiridion 10", 1.4, false],
+      ["Insulted? Patience. Pain? Endurance.\nLoss? Freedom.", 3.2, true],
+      ["Save this for the next bad day.", 2.4, false]
+    ]
+  },
+  "reel-40-dig-within": {
+    "style": "dawn",
+    "seed": 4081,
+    "segments": [
+      ["You’re looking for it everywhere but here.", 2.8, true],
+      ["Marcus Aurelius pointed inward:", 2.2, false],
+      ["“Dig within. Within is the wellspring of good, and it will always flow if you keep digging.”", 4.2, false],
+      ["Meditations 7.59", 1.6, false],
+      ["The good man you’re looking for\nis a decision away.", 3.0, true],
+      ["Follow for one rule a day.", 2.2, false]
+    ]
+  }
+}

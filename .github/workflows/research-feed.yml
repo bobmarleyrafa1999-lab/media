@@ -1,0 +1,35 @@
+name: Weekly research feed
+# Pulls new papers (Crossref; OpenAlex if a key is set) and publication feeds into the inbox,
+# deduplicated against the research library, and opens a pull request for human review.
+# It never publishes or schedules anything.
+on:
+  schedule:
+    - cron: "30 6 * * 1"   # Mondays 06:30 UTC
+  workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
+jobs:
+  ingest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Ingest
+        env:
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+          CROSSREF_MAILTO: ${{ secrets.CROSSREF_MAILTO }}
+        run: python3 moodius-aurelius/substack/scripts/research_feed.py weekly
+      - id: d
+        run: echo "date=$(date +%F)" >> "$GITHUB_OUTPUT"
+      - name: Open pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: research/inbox-${{ github.run_number }}
+          title: "Research inbox: ${{ steps.d.outputs.date }}"
+          body: "New papers and feed items for review. Nothing here is verified yet; tick items in `moodius-aurelius/substack/vault/00-inbox/` and run /research-topic."
+          add-paths: |
+            moodius-aurelius/substack/data/inbox.csv
+            moodius-aurelius/substack/vault/00-inbox/**

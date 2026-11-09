@@ -1,0 +1,18 @@
+{
+  "name": "2026-10-22-mvp",
+  "note": "First research cycle. Short-form, last 30-90 days, Moodius-adjacent niches.",
+  "per_query": 15,
+  "max_channels": 36,
+  "youtube_search": [
+    "stoicism", "carl jung shadow work", "attachment style relationships", "loneliness modern life",
+    "emotional maturity", "existentialism camus", "dostoevsky", "journaling self awareness",
+    "seneca", "psychology of anger", "men emotional intelligence", "nietzsche philosophy"
+  ],
+  "youtube_channels": ["@DailyStoic", "@PursuitofWonder", "@TheSchoolofLife", "@einzelgaenger",
+                       "@academyofideas", "@HealthyGamerGG", "@EstherPerelOfficial", "@PhilosophiesforLife"],
+  "tiktok_users": ["withmindful", "daily_stoic", "theschooloflifetv"],
+  "tiktok_per_user": 15,
+  "podcasts": ["stoicism", "carl jung"],
+  "podcasts_per_term": 5,
+  "thumbnails": true
+}
