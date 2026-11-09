@@ -44,13 +44,13 @@ Checked and rejected for discovery:
 | Licence | MIT | GPL-2.0-only | MIT-CMU |
 | Dependencies | requests (+ browser_cookie3 optional) | requests (+ yt-dlp optional) | none required |
 | Advisories found | none found | none confirmed (a CVE search turned up nothing specific) | CVE-2026-42309 heap overflow, fixed in 12.2.0 |
-| Verdict | 🔴 don't install | 🔴 don't install | 🟢 use, pinned to 12.3.0 |
+| Verdict | 🔴 don't install | 🔴 don't install | 🟢 use, pinned to 13.0.0 (8 Nov: 12.3.0 has 55 published advisories, all fixed in 13.0.0; renders are pixel-identical) |
 
 Why no to the collectors: Instagram blocks datacenter IPs (this container and GitHub Actions both are), reliable collection needs an Instagram login or session cookies (we never hold those), Instagram's internal endpoints rotate every 2–4 weeks ([socialcrawl.dev](https://www.socialcrawl.dev/blog/instagram-scraping-2026.md)), Instagram's terms forbid automated collection without permission, and what they download is mostly inspiration-only anyway. A fragile scraper would save no posting time and adds account risk to an anonymous page. Both releases are also under two weeks old.
 
 Pillow install, isolated, only if it isn't already on a machine:
 ```
-python3 -m venv .venv && .venv/bin/pip install -r requirements.txt   # pillow==12.3.0
+python3 -m venv .venv && .venv/bin/pip install -r requirements.txt   # pillow 13.0.0 + ImageHash 4.3.2
 ```
 
 ## The workflow
@@ -60,7 +60,7 @@ Discover → Remove duplicates → Review humour and context → Check reuse sta
 | Step | Who | How | Time |
 |---|---|---|---|
 | Discover | You | Save to "Moodius ideas" while scrolling. Once a week, paste the links in chat, one per line (optional: `link \| creator \| note`) | 5 min/week |
-| Dedupe | Tool | Same post saved twice (any link form) or near-identical caption is dropped | 0 |
+| Dedupe | Tool | Same post saved twice (any link form), near-identical caption, or the same picture (ImageHash fingerprint: survives crops, resizes and re-saves) is dropped. A meme whose picture matches one already in the queue can't be approved | 0 |
 | Review | Claude | Describes image + context, scores, flags excluded topics, writes the concern | 0 for you |
 | Reuse check | Tool + Claude | Sets status; blocks anything not `original` or properly `authorised` | 0 |
 | Draft | Claude | Writes original jokes from inspiration-only finds, renders 1080×1350 in the house style | 0 |
@@ -79,3 +79,12 @@ Learning: the tool counts your approvals and reject reasons per theme and nudges
 | Meta Hashtag API | £0 | Meta app + App Review | low | high | few, no rights info |
 | Permission reposts | £0 | none | ~10 min per creator + waiting | medium | unknown until we try |
 | Paid meme tools | monthly fee | low | low | medium | no measured gain; not recommended. We'll ask before any spend |
+
+## Added 8 Nov 2026: picture fingerprints and hand-drawn charts
+
+- **ImageHash 4.3.2** (BSD-2) gives every render and every saved screenshot a fingerprint. Distance 4 or less = same meme. A cropped, halved, low-quality JPEG of MB01 scores 0; our 20 drafts are all 8 or more apart.
+  - `python3 tools/meme_queue.py import-images ~/Desktop/meme-screenshots` adds screenshots, skipping ones already logged.
+  - `python3 tools/meme_queue.py check picture.jpg` says whether a picture is already in the queue.
+  - `render` fingerprints each meme and warns if it matches another; `decide approve` refuses a twin.
+- **Rough.js 4.6.6** (MIT, vendored in `tools/vendor/roughjs/`, runs offline with Node.js) draws chart, Venn, flowchart and box shapes by hand. `python3 tools/meme_queue.py render --rough MM02` writes `renders/MM02-rough.png` next to the clean version. Text, the ember rule and hairline bars stay clean. Same meme id = same drawing every time. Choose per meme; the clean style stays the default.
+
