@@ -1,0 +1,94 @@
+set,date,slot,format,hook,theme,opener,tone,tradition,hurt_conflict,note
+published,2026-10-06,18:00,REEL,Some things are up to you. Most aren't.,PRACTICE,NEUTRAL,neutral,Stoic,N,
+published,2026-10-07,10:00,IMAGE,The impediment to action advances action.,STRUGGLE,NEUTRAL,neutral,Stoic,N,archived
+published,2026-10-08,18:00,REEL,Someone disrespected you today?,HURT,PAIN,negative,Stoic,Y,
+published,2026-10-09,10:00,IMAGE,Very little is needed to make a happy life.,APPRECIATION,APPRECIATION,uplifting,Stoic,N,archived
+published,2026-10-10,19:00,REEL,Marcus Aurelius did this every night. It takes 5 minutes.,PRACTICE,CURIOSITY,neutral,Stoic,N,archived
+published,2026-10-11,19:00,IMAGE,Confine yourself to the present.,PRACTICE,NEUTRAL,neutral,Stoic,N,archived
+published,2026-10-12,10:00,IMAGE,Waste no more time arguing about what a good man should be.,STRUGGLE,NEUTRAL,neutral,Stoic,N,archived
+published,2026-10-12,12:00,REEL,3 Stoic rules for overthinkers.,STRUGGLE,PAIN,negative,Stoic,N,
+published,2026-10-12,18:00,REEL,Not every insult deserves a reply.,HURT,PAIN,negative,Stoic,Y,
+published,2026-10-13,10:00,REEL,Motivation isn't coming.,STRUGGLE,PAIN,negative,Stoic,N,archived
+published,2026-10-13,12:00,REEL,5 things you can't control,PRACTICE,NEUTRAL,neutral,Stoic,N,
+published,2026-10-13,18:00,REEL,Marcus Aurelius said this to himself every morning.,HURT,CURIOSITY,neutral,Stoic,Y,difficult people (Med 2.1)
+published,2026-10-14,10:00,IMAGE,Tag the friend who does this. Then go to sleep.,STRUGGLE,PAIN,negative,Stoic,N,meme; still to archive
+published,2026-10-14,12:00,REEL,The fastest way to lose an argument? Get angry.,HURT,PAIN,negative,Stoic,Y,
+published,2026-10-14,18:00,REEL,You can't make everyone like you.,HURT,PAIN,negative,Stoic,Y,
+published,2026-10-15,10:00,REEL,Busy all day. Nothing done.,STRUGGLE,PAIN,negative,Stoic,N,archived
+published,2026-10-15,12:00,REEL,It's not what happened that hurts. It's the story you tell about it.,HURT,PAIN,negative,Stoic,Y,
+published,2026-10-21,12:00,CAROUSEL,You don't have a discipline problem. You have a self-trust problem.,STRUGGLE,PAIN,neutral,Stoic,N,only follows on the account
+published,2026-10-21,18:00,REEL,Three signs you're regulating not suppressing.,PRACTICE,NEUTRAL,neutral,Stoic,N,
+published,2026-10-22,12:00,CAROUSEL,When someone is rude to you today Marcus Aurelius had already planned for it.,HURT,PAIN,negative,Stoic,Y,
+published,2026-10-22,18:00,REEL,Asking for help isn't weak.,STRUGGLE,PAIN,neutral,Stoic,N,
+published,2026-10-23,12:00,CAROUSEL,Why you replay the argument at 2am and the move that stops it.,HURT,PAIN,negative,Stoic,Y,
+published,2026-10-23,17:00,REEL,They got away with it. You didn't.,HURT,PAIN,negative,Stoic,Y,
+published,2026-10-24,12:00,CAROUSEL,The 5-minute evening review the Stoics actually ran,PRACTICE,CURIOSITY,neutral,Stoic,N,
+published,2026-10-24,18:00,REEL,You didn't choose your family.,HURT,PAIN,negative,Stoic,Y,
+published,2026-10-25,12:00,CAROUSEL,5 ancient lines for when life gets heavy.,STRUGGLE,PAIN,negative,Stoic + Nietzsche,N,
+queue,2026-10-25,18:00,REEL,You're looking for it everywhere but here.,APPRECIATION,NEUTRAL,uplifting,Stoic,N,
+queue,2026-10-26,12:00,CAROUSEL,You're not lazy. You're avoiding a feeling.,STRUGGLE,PAIN,neutral,Stoic + psychology,N,
+queue,2026-10-26,18:00,REEL,You'd never let a stranger decide what you're worth.,STRUGGLE,PAIN,neutral,Stoic,N,
+queue,2026-10-27,12:00,CAROUSEL,How to stop rehearsing disasters that never come.,STRUGGLE,PAIN,negative,Stoic,N,
+queue,2026-10-27,18:00,REEL,Solitude: your phone is off. Loneliness: your phone is on and quiet.,STRUGGLE,PAIN,negative,Stoic,Y,loneliness
+queue,2026-10-28,12:00,CAROUSEL,Do less better: the Stoic answer to burnout.,STRUGGLE,PAIN,neutral,Stoic,N,
+queue,2026-10-28,18:00,REEL,Kafka wrote the most accurate book about work.,STRUGGLE,CURIOSITY,neutral,Modern literature,N,
+queue,2026-10-29,12:00,CAROUSEL,Why one comment ruins your whole day.,HURT,PAIN,negative,Stoic + psychology,Y,
+queue,2026-10-29,18:00,REEL,The first year of getting better looks embarrassing.,STRUGGLE,PAIN,uplifting,Stoic,N,
+queue,2026-10-30,12:00,CAROUSEL,Who you let close becomes who you are.,APPRECIATION,CURIOSITY,uplifting,Aristotle,N,
+queue,2026-10-30,17:00,REEL,Angry men are usually something else first.,HURT,PAIN,negative,bell hooks,Y,on-screen hook says 'men'
+queue,2026-10-31,12:00,CAROUSEL,Stop explaining your philosophy. Show it.,PRACTICE,NEUTRAL,neutral,Stoic,N,
+queue,2026-10-31,18:00,REEL,You want to be chosen. You don't choose anyone.,HURT,PAIN,negative,Stoic,Y,
+queue,2026-11-01,12:00,CAROUSEL,The two horses pulling your mind.,PRACTICE,CURIOSITY,neutral,Plato,N,
+queue,2026-11-01,18:00,REEL,Try sitting alone for five minutes. No phone.,CURIOSITY,CURIOSITY,neutral,Pascal + psychology,N,
+plan,2026-11-02,12:00,REEL,Nobody tells you grief comes back in the supermarket.,HURT,PAIN,negative,Stoic,Y,grief
+plan,2026-11-02,18:00,REEL,You laughed at something they used to say. Then felt guilty.,HURT,PAIN,negative,Stoic,Y,grief
+plan,2026-11-03,12:00,REEL,You rehearse the lie in the shower first.,STRUGGLE,PAIN,neutral,Dostoevsky,N,
+plan,2026-11-03,18:00,REEL,You checked their profile again. Here's what it cost.,HURT,PAIN,negative,Stoic,Y,
+plan,2026-11-04,12:00,CAROUSEL,Forgiving isn't excusing: the difference,HURT,NEUTRAL,neutral,Stoic,Y,
+plan,2026-11-04,18:00,REEL,You can forgive them and still not let them back in.,HURT,PAIN,negative,Stoic,Y,
+plan,2026-11-05,12:00,REEL,People I've said 'I'm fine' to:,STRUGGLE,PAIN,negative,psychology,N,
+plan,2026-11-05,18:00,REEL,You broke the streak on day six. Read this before you quit.,STRUGGLE,PAIN,neutral,Stoic,N,
+plan,2026-11-06,12:00,REEL,When did you last say what you felt out loud to someone?,STRUGGLE,NEUTRAL,neutral,psychology,N,
+plan,2026-11-06,17:00,REEL,Yesterday had sixteen waking hours. Which one would you keep?,APPRECIATION,APPRECIATION,uplifting,Stoic,N,
+plan,2026-11-07,12:00,REEL,(Free Minds pick pending),CURIOSITY,CURIOSITY,uplifting,Free Minds,N,
+plan,2026-11-07,18:00,REEL,You told them everything in week one.,HURT,PAIN,negative,Stoic,Y,
+plan,2026-11-08,12:00,CAROUSEL,If-then plans: the Stoic version,PRACTICE,CURIOSITY,neutral,Stoic + psychology,N,
+plan,2026-11-08,18:00,REEL,Epictetus had a plan for the public baths.,CURIOSITY,CURIOSITY,neutral,Stoic,N,
+plan,2026-11-09,12:00,REEL,Being busy is the most respectable way to avoid yourself.,STRUGGLE,PAIN,negative,none,N,
+plan,2026-11-09,18:00,REEL,You have fourteen tabs open. In your head.,STRUGGLE,PAIN,negative,Stoic,N,
+plan,2026-11-10,12:00,REEL,You drive past a place you used to be someone else in.,APPRECIATION,APPRECIATION,uplifting,psychology,N,nostalgia
+plan,2026-11-10,18:00,REEL,Try being broke on purpose for three days.,PRACTICE,CURIOSITY,neutral,Stoic,N,
+plan,2026-11-11,12:00,CAROUSEL,Premeditation: preparing without spiralling,STRUGGLE,PAIN,neutral,Stoic,N,
+plan,2026-11-11,18:00,REEL,Is expecting the worst pessimism or protection?,STRUGGLE,CURIOSITY,neutral,Stoic,N,
+plan,2026-11-12,12:00,REEL,Is discipline self-respect or self-punishment?,STRUGGLE,CURIOSITY,neutral,psychology,N,
+plan,2026-11-12,18:00,REEL,A slave in Nero's Rome walked with a limp. Nobody knows why.,CURIOSITY,CURIOSITY,neutral,Stoic,N,
+plan,2026-11-13,12:00,REEL,The friends you keep are training you for something.,APPRECIATION,CURIOSITY,uplifting,Stoic,N,
+plan,2026-11-13,17:00,REEL,What did you agree to this week just to keep the peace?,HURT,PAIN,negative,Stoic,Y,
+plan,2026-11-14,12:00,REEL,(Free Minds pick pending),CURIOSITY,CURIOSITY,uplifting,Free Minds,N,
+plan,2026-11-14,18:00,REEL,You spent today guessing what one person thinks of you.,STRUGGLE,PAIN,negative,Stoic,N,
+plan,2026-11-15,12:00,CAROUSEL,Born enslaved. Banished from Rome. The freest man in the empire.,CURIOSITY,CURIOSITY,uplifting,Stoic,N,
+plan,2026-11-15,18:00,REEL,He was owned by a man at Nero's court. He died the freest man in the empire.,CURIOSITY,CURIOSITY,uplifting,Stoic,N,
+plan,2026-11-16,12:00,REEL,Your anger costs you more than what caused it.,HURT,PAIN,negative,Stoic,Y,
+plan,2026-11-16,18:00,REEL,Listen to how you explain your bad day.,STRUGGLE,PAIN,neutral,Stoic,N,
+plan,2026-11-17,12:00,REEL,(Free Minds pick pending),CURIOSITY,CURIOSITY,uplifting,Free Minds,N,
+plan,2026-11-17,18:00,REEL,Feeling low? Stop thinking about yourself for ten seconds.,APPRECIATION,PAIN,uplifting,Stoic,N,Med 6.48: delight in others' virtues
+plan,2026-11-18,12:00,CAROUSEL,Courage sits between two failures,CURIOSITY,CURIOSITY,neutral,Aristotle,N,
+plan,2026-11-18,18:00,REEL,Is it courage or do you just not care?,CURIOSITY,CURIOSITY,neutral,Aristotle,N,
+plan,2026-11-19,12:00,REEL,Nobody taught you how to call a friend for no reason.,STRUGGLE,PAIN,neutral,psychology,N,
+plan,2026-11-19,18:00,REEL,The situation isn't going to change. Something else can.,STRUGGLE,PAIN,neutral,Frankl,N,
+essay,,,ESSAY,Writing to No One,STRUGGLE,PAIN,negative,none,N,
+essay,,,ESSAY,The Trait You Can't Stand in Other People,HURT,PAIN,negative,psychology,N,
+essay,,,ESSAY,The Loneliness of Being Fine,STRUGGLE,PAIN,negative,none,N,
+essay,,,ESSAY,The Raise That Didn't Arrive Inside,STRUGGLE,PAIN,negative,none,N,
+essay,,,ESSAY,You Can Understand Yourself and Still Repeat the Same Mistakes,STRUGGLE,PAIN,negative,none,N,
+essay,,,ESSAY,What Your Anger Is Trying to Protect,HURT,PAIN,negative,psychology,N,
+essay,,,ESSAY,Why Being Needed Can Feel Like Being Loved,STRUGGLE,PAIN,negative,psychology,N,
+essay,,,ESSAY,The Things We Inherit Without Realising,CURIOSITY,CURIOSITY,neutral,psychology,N,
+essay,,,ESSAY,A Life That Looks Successful but Feels Empty,STRUGGLE,PAIN,negative,none,N,
+essay,,,ESSAY,When Self-Improvement Becomes Self-Rejection,STRUGGLE,PAIN,negative,none,N,
+essay,,,ESSAY,The Lost Art of Being Alone With Your Thoughts,CURIOSITY,CURIOSITY,neutral,Pascal,N,
+essay,,,ESSAY,The Man You Become When Nobody Is Watching,PRACTICE,NEUTRAL,neutral,Stoic,N,gendered title
+essay,,,ESSAY,The Parts of Yourself You Were Taught to Hide,STRUGGLE,PAIN,negative,psychology,N,
+essay,,,ESSAY,The Exhaustion of Always Trying to Become Someone,STRUGGLE,PAIN,negative,none,N,
+essay,,,ESSAY,Why We Mistake Intensity for Intimacy,HURT,PAIN,negative,psychology,N,
+essay,,,ESSAY,What Would You Do If Nobody Was Watching?,CURIOSITY,CURIOSITY,neutral,none,N,
