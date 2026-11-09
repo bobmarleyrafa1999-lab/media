@@ -1,0 +1,16 @@
+{
+  "name": "2026-10-25-mino-lee",
+  "note": "Public titles, view counts and descriptions for creator coach Mino Lee (@minolee.mp4). Metadata only, no downloads.",
+  "per_query": 20,
+  "max_channels": 6,
+  "expand_search_channels": false,
+  "youtube_search": ["Mino Lee instagram", "Mino Lee content academy", "minolee.mp4", "Mino Lee how to go viral"],
+  "youtube_channels": ["@minolee", "@MinoLee", "@minolee.mp4", "@minoleemp4"],
+  "channel_tabs": ["videos"],
+  "tab_n": 80,
+  "tiktok_users": ["minolee.mp4", "minolee"],
+  "tiktok_per_user": 40,
+  "podcasts": ["Mino Lee"],
+  "podcasts_per_term": 15,
+  "thumbnails": true
+}

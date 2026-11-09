@@ -91,6 +91,15 @@ class Fetcher:
             self.note("youtube_shorts_tab", ref, True, f"{len(ch['shorts'])} shorts, followers={ch['followers']}")
         except Exception as ex:  # noqa: BLE001
             self.note("youtube_shorts_tab", ref, False, ex)
+        for tab in getattr(self, "tabs", []):  # e.g. "videos" for long-form titles + view counts
+            try:
+                data = self.ytdlp(["--flat-playlist", "-J", "--playlist-end", str(getattr(self, "tab_n", 60)), base + "/" + tab])
+                ch.setdefault("channel_id", data.get("channel_id"))
+                ch[tab] = [{"id": e.get("id"), "title": e.get("title"), "views": e.get("view_count"),
+                            "duration": e.get("duration")} for e in data.get("entries") or []]
+                self.note(f"youtube_{tab}_tab", ref, True, f"{len(ch[tab])} items")
+            except Exception as ex:  # noqa: BLE001
+                self.note(f"youtube_{tab}_tab", ref, False, ex)
         cid = ch.get("channel_id") or (ref if ref.startswith("UC") else None)
         if cid:
             try:
@@ -187,6 +196,7 @@ def run(request_path, out_root, full=False):
     name = req.get("name") or os.path.splitext(os.path.basename(request_path))[0]
     out = os.path.join(out_root, name)
     f = Fetcher(out, pause=req.get("pause_s", 1.0))
+    f.tabs, f.tab_n = req.get("channel_tabs", []), req.get("tab_n", 60)
     result = {"request": req, "fetched_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
               "youtube_search": [], "youtube_channels": [], "tiktok": {}, "podcasts": {}, "full": {}}
     for q in req.get("youtube_search", []):
