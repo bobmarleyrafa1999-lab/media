@@ -1,0 +1,4 @@
+date,slot,pillar,series,format,hook,opener_tone,cta,experiment,arm,your_minutes,minimum_week,reach,views,likes,comments,saves,shares,follows,profile_visits,non_follower_reach_pct,avg_watch_s,hold_3s_pct,story_reach_first,story_reach_last,story_replies,sticker_taps,shares_per_1k,saves_per_1k,likes_per_1k,follows_per_1k,profile_visit_rate,visit_to_follow,story_completion,story_replies_per_1k,notes
+2026-10-21,12:00,Mind,Old Idea,carousel,You don't have a discipline problem. You have a self-trust problem.,tension,save+send,,,,no,342,509,6,1,0,2,5,,,,,,,,,,,,,,,,,,real data (Metricool 25 Oct)
+2026-10-22,12:00,People,Old Idea,carousel,"When someone is rude to you today, Marcus Aurelius had already planned for it.",tension,send,,,,no,585,852,5,1,2,2,0,,,,,,,,,,,,,,,,,,real data
+2026-10-24,18:00,People,The Scene,reel,You didn't choose your family. Or your city. Or your time.,tension,send,,,,no,127,145,4,1,1,0,,,,4.47,46.1,,,,,,,,,,,,,,real data; reel follows not in API
