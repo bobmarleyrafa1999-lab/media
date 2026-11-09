@@ -1,0 +1,19 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+@font-face{font-family:P;src:url(../fonts/Playfair-SemiBold.ttf)}@font-face{font-family:I;src:url(../fonts/Inter-Medium.ttf)}
+body{margin:0;width:1080px;height:1350px;background:#1B1F24;position:relative;overflow:hidden}
+.t{position:absolute;left:96px;top:110px;font:600 64px/1.15 P;color:#F3EFE7;width:880px}
+.l{position:absolute;font:500 30px I;color:#B8B3A9}
+.w{position:absolute;right:96px;bottom:40px;font:500 26px I;color:#4a5059}
+</style></head><body>
+<div class="t">Focus while reading, any evening</div>
+<canvas id="c" width="1080" height="1350" style="position:absolute;left:0;top:0"></canvas>
+<div class="l" style="left:130px;top:1110px">page 1</div><div class="l" style="left:820px;top:1110px">page 4</div>
+<div class="l" style="left:610px;top:850px;color:#C9742E">phone buzzed</div>
+<div class="w">moodius</div>
+<script src="package/bundled/rough.js"></script>
+<script>
+const rc=rough.canvas(document.getElementById('c'));const o={stroke:'#F3EFE7',strokeWidth:4,roughness:1.6,seed:7};
+rc.line(120,1080,980,1080,o);rc.line(120,1080,120,420,o);
+rc.curve([[130,460],[300,480],[480,560],[560,900],[700,1010],[960,1050]],{...o,stroke:'#C9742E',strokeWidth:7});
+rc.circle(560,900,60,{...o,stroke:'#C9742E',strokeWidth:3});
+</script></body></html>
