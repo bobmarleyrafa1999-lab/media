@@ -224,6 +224,11 @@ def run(request_path, out_root, full=False):
                 if r.get("is_short"):
                     p = f.thumbnail(r["id"])
                     r["cover_ocr"] = f.ocr(p) if p else None
+    if req.get("thumb_tabs"):  # covers + OCR for every Shorts-tab entry, not only the last 15 RSS uploads
+        for ch in result["youtube_channels"]:
+            for r in (ch.get("shorts") or [])[: req.get("thumb_tabs_n", 60)]:
+                p = f.thumbnail(r["id"]) if r.get("id") else None
+                r["cover_ocr"] = f.ocr(p) if p else None
     json.dump(result, open(os.path.join(out, "fetch.json"), "w"), indent=1, ensure_ascii=False)
     json.dump(f.log, open(os.path.join(out, "access-log.json"), "w"), indent=1)
     print(f"done: {sum(x['ok'] for x in f.log)}/{len(f.log)} requests ok -> {out}")

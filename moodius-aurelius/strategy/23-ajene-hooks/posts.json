@@ -1,0 +1,49 @@
+[
+ {
+  "id": "AJ01",
+  "formula": "A12 question about the obvious odd thing",
+  "proposed_slot": "2026-11-08 12:00 Europe/Madrid",
+  "replaces": "calendar row 'If-then plans: the Stoic version' (CAROUSEL, to make)",
+  "type": "CAROUSEL",
+  "pillar": "The Reading Room",
+  "media_dir": "strategy/23-ajene-hooks/renders/AJ01-diary-nobody-read/ (01-06.jpg)",
+  "caption": "Why did the most powerful man alive keep a diary nobody was meant to read?\n\nMarcus Aurelius left little notes on where he was writing. The end of Book 1 says \"Among the Quadi at the Granua\", a frontier war on the Danube. Book 2 ends \"This in Carnuntum\", an army base. He was writing to himself in camp, between campaigns, and it shows: every page talks to \"thee\".\n\nNo audience means no performance. That's why a 1,800-year-old notebook still reads like someone who gets it.\n\nSend this to the friend who drafts texts in their notes app. 📓\n\nDiary or drafts?\n\n— Moodius\n\n#marcusaurelius #meditations #stoicism #history #journaling",
+  "first_comment": "Moodius: drafts. Hundreds of them. None sent. 🙃 Sources: Meditations, ends of Books 1 and 2, and 2.1, tr. George Long (Standard Ebooks, checked 25 Oct 2026).",
+  "alt": "Six-slide carousel: why Marcus Aurelius wrote Meditations to himself, with his own margin notes from the Danube campaigns.",
+  "metricool_id": 405918798,
+  "metricool_uuid": "9209555468844286774",
+  "scheduled_at": "2026-11-08 12:00 Europe/Madrid"
+ },
+ {
+  "id": "AJ02",
+  "formula": "A02 labelled-role skit",
+  "proposed_slot": "2026-11-10 18:00 Europe/Madrid",
+  "replaces": "calendar row 'Try being broke on purpose for three days' (REEL, to make)",
+  "type": "REEL",
+  "pillar": "The Human Mind",
+  "media": "strategy/23-ajene-hooks/renders/reels/AJ02-you-2am-vs-epictetus.mp4",
+  "cover": "strategy/23-ajene-hooks/renders/reels/AJ02-you-2am-vs-epictetus-cover.jpg",
+  "script": "reels-engine/scripts/ajene-01.json",
+  "audio": "new sampled piano/strings bed (sampled.py, soundfont), -14 LUFS; not the old sine bed",
+  "caption_file": "strategy/23-ajene-hooks/renders/reels/AJ02-you-2am-vs-epictetus.txt",
+  "alt": "Text reel: a 2am argument between you and Epictetus about a one-word text.",
+  "metricool_id": 405918863,
+  "metricool_uuid": "8083101011031117025",
+  "scheduled_at": "2026-11-10 18:00 Europe/Madrid"
+ },
+ {
+  "id": "AJ03",
+  "formula": "A06 don't do it yet",
+  "proposed_slot": "2026-11-11 12:00 Europe/Madrid",
+  "replaces": "calendar row 'Premeditation: preparing without spiralling' (CAROUSEL, to make)",
+  "type": "CAROUSEL",
+  "pillar": "The Human Mind",
+  "media_dir": "strategy/23-ajene-hooks/renders/AJ03-dont-send-yet/ (01-08.jpg)",
+  "caption": "Don't send that text yet…\n\nEpictetus had a two-word rule, as a Roman writer remembered it: bear and forbear. Put up with it, and hold back. Seneca, writing about anger, praised the general Fabius for knowing how to delay, the one skill angry people don't have.\n\nSo: save it as a draft. Read it at breakfast. Send the version you'd happily read out loud with your gran in the room.\n\nSend this to the friend whose drafts folder is a crime scene. 🫣\n\nSend or sleep?\n\n— Moodius\n\n#stoicism #epictetus #seneca #anger #selfcontrol",
+  "first_comment": "Moodius: sleep. The 11pm version of me writes like a Bond villain. Sources: Aulus Gellius, Attic Nights 17.19 (tr. J. C. Rolfe); Seneca, On Anger 1.11 (paraphrase, tr. Aubrey Stewart).",
+  "alt": "Eight-slide carousel: Epictetus's 'bear and forbear' and three steps before sending an angry text.",
+  "metricool_id": 405918985,
+  "metricool_uuid": "3792184253033172253",
+  "scheduled_at": "2026-11-11 12:00 Europe/Madrid"
+ }
+]

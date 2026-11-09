@@ -1,0 +1,106 @@
+{
+ "AJ01-diary-nobody-read/01": {
+  "kind": "cover",
+  "kicker": "The Reading Room",
+  "claim": "Why did the most powerful man alive keep a diary nobody was meant to read?",
+  "sub": "The clues are in the margins.",
+  "size": 76,
+  "page": "1/6"
+ },
+ "AJ01-diary-nobody-read/02": {
+  "kind": "term",
+  "tag": "End of Book 1",
+  "term": "“Among the Quadi at the Granua.”",
+  "definition": "A note on where he was writing. The Quadi were a tribe Rome was at war with on the Danube frontier.",
+  "cite": "Meditations, Book 1 · tr. George Long",
+  "page": "2/6"
+ },
+ "AJ01-diary-nobody-read/03": {
+  "kind": "term",
+  "tag": "End of Book 2",
+  "term": "“This in Carnuntum.”",
+  "definition": "A Roman army base on the Danube. The emperor was writing in camp, between campaigns.",
+  "cite": "Meditations, Book 2 · tr. George Long",
+  "page": "3/6"
+ },
+ "AJ01-diary-nobody-read/04": {
+  "kind": "quote",
+  "quote": "Begin the morning by saying to thyself, I shall meet with the busybody, the ungrateful, arrogant",
+  "note": "Who is he talking to? Himself. Every page says thou.",
+  "cite": "Meditations 2.1 · tr. George Long",
+  "size": 60,
+  "page": "4/6"
+ },
+ "AJ01-diary-nobody-read/05": {
+  "kind": "term",
+  "tag": "Why it still works",
+  "term": "No audience.",
+  "definition": "Nobody to impress, so he could be honest about bad mornings and difficult people. That is why it still lands. (Moodius’s reading.)",
+  "page": "5/6"
+ },
+ "AJ01-diary-nobody-read/06": {
+  "kind": "signoff",
+  "line": "Write one line tonight that nobody will ever read.",
+  "action": "Send this to the friend who drafts texts in their notes app.",
+  "page": "6/6"
+ },
+ "AJ03-dont-send-yet/01": {
+  "kind": "cover",
+  "kicker": "The Human Mind",
+  "claim": "Don’t send that text yet…",
+  "sub": "An ancient rule that fits in two words.",
+  "size": 96,
+  "page": "1/8"
+ },
+ "AJ03-dont-send-yet/02": {
+  "kind": "term",
+  "tag": "The moment",
+  "term": "Thumb over Send.",
+  "definition": "You’ve rewritten it three times. It’s good. It’s devastating. It’s 11pm.",
+  "page": "2/8"
+ },
+ "AJ03-dont-send-yet/03": {
+  "kind": "term",
+  "tag": "Epictetus’s rule",
+  "term": "Bear and forbear.",
+  "definition": "Put up with it, and hold back. That is how a Roman writer reported the teacher’s favourite two words.",
+  "cite": "Aulus Gellius, Attic Nights 17.19 · tr. J. C. Rolfe",
+  "page": "3/8"
+ },
+ "AJ03-dont-send-yet/04": {
+  "kind": "term",
+  "tag": "A general who waited",
+  "term": "Fabius",
+  "definition": "Seneca praises the Roman general Fabius for knowing how to delay and play for time, the one thing angry people can’t do.",
+  "cite": "Seneca, On Anger 1.11 · Moodius paraphrase",
+  "page": "4/8"
+ },
+ "AJ03-dont-send-yet/05": {
+  "kind": "step",
+  "n": 1,
+  "title": "Save it as a draft",
+  "body": "It isn’t gone. It’s waiting.",
+  "page": "5/8"
+ },
+ "AJ03-dont-send-yet/06": {
+  "kind": "step",
+  "n": 2,
+  "title": "Read it at breakfast",
+  "body": "Half of it will sound different in daylight.",
+  "page": "6/8"
+ },
+ "AJ03-dont-send-yet/07": {
+  "kind": "step",
+  "n": 3,
+  "title": "Send the version you’d read out loud",
+  "body": "To their face. With your gran in the room.",
+  "page": "7/8"
+ },
+ "AJ03-dont-send-yet/08": {
+  "kind": "signoff",
+  "line": "The text will still be there in the morning. So will you, calmer.",
+  "action": "Send this to the friend whose drafts folder is a crime scene.",
+  "size": 66,
+  "page": "8/8"
+ }
+}
