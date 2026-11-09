@@ -1,0 +1,58 @@
+--- a/engine.py
++++ b/engine.py
+@@ -393,13 +393,41 @@
+     return ";".join(f)
+ 
+ 
++def sampled_ok():
++    import shutil
++    sys.path.insert(0, ENGINE_TOOLS)
++    import sampled
++    return bool(shutil.which("fluidsynth") and sampled.soundfont())
++
++
++def turn_time(script):
++    """When the idea turns: the first quote/reveal/labelled card, else the third card."""
++    t = timing(script)[0]
++    starts = []
++    for _, d, kind in script["cards"]:
++        starts.append((t, kind))
++        t += d
++    return next((s for s, k in starts if k in ("quote", "reveal", "labelled")), starts[min(2, len(starts) - 1)][0])
++
++
+ def audio(script, total, wav):
++    """Beds: "sampled" (recorded piano + strings via FluidSynth, 25 Oct 2026) is used for every mood
++    script whenever the soundfont is installed; "ambient" (NumPy sine tones) is the fallback, or
++    can be forced per script with "audio": {"engine": "ambient-legacy"}."""
+     a = script["audio"]
+-    if a.get("engine", "ambient") == "ambient":
++    eng = a.get("engine", "ambient")
++    if eng == "ambient" and sampled_ok():
++        cmd = [sys.executable, os.path.join(ENGINE_TOOLS, "sampled.py"), a["mood"], f"{total:.2f}", str(a["seed"]), wav,
++               "--turn", f"{turn_time(script):.2f}"]
++    elif eng in ("ambient", "ambient-legacy"):
++        if eng == "ambient":
++            print("  note: soundfont missing, falling back to sine-tone ambient.py "
++                  "(sudo apt install fluidsynth musescore-general-soundfont-lossless)", file=sys.stderr)
+         cmd = [sys.executable, os.path.join(ENGINE_TOOLS, "ambient.py"), a["mood"], f"{total:.2f}", str(a["seed"]), wav]
+     else:
+         cmd = [sys.executable, os.path.join(PROJECT, "tools", "score.py"), a["style"], f"{total:.2f}", str(a["seed"]), wav]
+     subprocess.run(cmd, check=True, capture_output=True)
++    return cmd[1].endswith("sampled.py")       # sampled beds arrive mastered at -14 LUFS (two-pass, linear)
+ 
+ 
+ def render(script, out_dir, layout="upper", variant="a"):
+@@ -413,10 +441,10 @@
+     out = os.path.join(out_dir, f"{name}.mp4")
+     with tempfile.TemporaryDirectory() as tmp:
+         wav = os.path.join(tmp, "bed.wav")
+-        audio(s, total, wav)
++        mastered = audio(s, total, wav)
+         inputs = ["-i", wav] + ((["-loop", "1", "-framerate", "30", "-i", clip] if is_still(clip)
+                                  else ["-stream_loop", "-1", "-i", clip]) if clip else [])
+-        filt = build_filter(s, total, layout, clip, tmp) + ";[0:a]loudnorm=I=-14:TP=-1.5:LRA=11[aout]"
++        filt = build_filter(s, total, layout, clip, tmp) + (";[0:a]anull[aout]" if mastered else ";[0:a]loudnorm=I=-14:TP=-1.5:LRA=11[aout]")
+         cmd = ["ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", filt,
+                "-map", "[vout]", "-map", "[aout]", "-t", f"{total:.2f}", "-r", "30",
+                "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
