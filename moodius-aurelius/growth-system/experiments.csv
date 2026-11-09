@@ -1,0 +1,6 @@
+id,question,arm_a,arm_b,where,primary_metric,secondary,min_per_arm,rule_ratio,status,source
+E1,Do curiosity/appreciation openers get shared as much as tension/hurt openers on carousels?,tension,curiosity,"carousels 12:00, alternate days",shares_per_1k,"reach median, follows_per_1k",8,1.3,running 26 Oct-19 Nov,90-day plan (approved 25 Oct); replaces X1
+E2,Situation vs curiosity hooks on reels,situation,curiosity,"18:00 reels, 30-35 s, same template",hold_3s_pct,"avg_watch_s, sends per 1k",8,1.3,running 2-19 Nov,90-day plan; same as X5
+E3,Does a follow ask on the last carousel slide raise follows?,follow_ask,no_ask,"carousels 12:00, series mix",follows_per_1k,profile visits per 1k (app),8,1.3,proposed 25 Nov-24 Dec,90-day plan
+E4,Which closing question gets more replies: a choice (Which one?) or a personal one (Tried it?)?,choice,personal,"all feed posts, alternate days",comments_per_1k,substantive comments from the comment queue,10,1.3,queued after E1,growth-system proposal; needs Surafel's OK before it starts
+E5,Does a named series label on the cover lift saves?,series_label,no_label,"carousels, after E3",saves_per_1k,follows_per_1k,8,1.3,queued after E3,growth-system proposal; needs Surafel's OK before it starts
