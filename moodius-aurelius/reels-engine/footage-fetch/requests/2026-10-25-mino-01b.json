@@ -1,0 +1,15 @@
+{
+ "note": "Second pass: titles must contain the search words; no people. Fills the tags the first pass missed.",
+ "per_tag": 3,
+ "tags": {
+  "lamp-night": ["candle", "oil lamp", "fire"],
+  "desk-book": ["book", "pages", "library", "writing"],
+  "sky": ["clouds timelapse", "timelapse sky", "sunrise", "night sky", "stars timelapse"],
+  "sea": ["ocean waves", "waves", "sea"],
+  "rain-window": ["rain", "raindrops", "water drops"],
+  "clock": ["clock", "pendulum", "hourglass"],
+  "city-night": ["city night", "traffic night", "night timelapse"],
+  "forest": ["forest", "trees wind", "leaves"],
+  "blanket-table": ["wool", "yarn", "fabric", "tea"]
+ }
+}

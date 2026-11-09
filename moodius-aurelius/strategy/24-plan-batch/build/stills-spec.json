@@ -1,0 +1,243 @@
+{
+ "PC1-franklin-chart-01": {
+  "kind": "cover",
+  "kicker": "One Book, One Idea, One Action",
+  "claim": "Benjamin Franklin kept a chart of his own faults.",
+  "sub": "It didn’t go well. That was the point.",
+  "size": 84,
+  "page": "1/8"
+ },
+ "PC1-franklin-chart-02": {
+  "kind": "term",
+  "tag": "Philadelphia, 1720s",
+  "term": "A young printer with a plan",
+  "definition": "Franklin decided to work on his character on purpose, one trait at a time, and to keep score.",
+  "page": "2/8"
+ },
+ "PC1-franklin-chart-03": {
+  "kind": "term",
+  "tag": "The list",
+  "term": "Thirteen virtues",
+  "definition": "Temperance, Silence, Order, Resolution, Frugality, Industry, Sincerity, Justice, Moderation, Cleanliness, Tranquillity, Chastity, Humility.",
+  "cite": "Franklin, Autobiography ch. IX · Standard Ebooks",
+  "page": "3/8"
+ },
+ "PC1-franklin-chart-04": {
+  "kind": "term",
+  "tag": "The method (Moodius paraphrase)",
+  "term": "One black dot per slip",
+  "definition": "A little book, a page per virtue, a column per day. One virtue got his full attention each week, so all thirteen fitted in thirteen weeks.",
+  "page": "4/8"
+ },
+ "PC1-franklin-chart-05": {
+  "kind": "quote",
+  "quote": "I was surprised to find myself so much fuller of faults than I had imagined; but I had the satisfaction of seeing them diminish.",
+  "note": "Franklin, on his first pages of dots.",
+  "cite": "Franklin, Autobiography ch. IX · Standard Ebooks",
+  "size": 58,
+  "page": "5/8"
+ },
+ "PC1-franklin-chart-06": {
+  "kind": "term",
+  "tag": "The one that beat him",
+  "term": "Order",
+  "definition": "“My scheme of Order gave me the most trouble.” He admits it never quite stuck. He kept the book anyway.",
+  "cite": "Franklin, Autobiography ch. IX · Standard Ebooks",
+  "page": "6/8"
+ },
+ "PC1-franklin-chart-07": {
+  "kind": "step",
+  "n": 1,
+  "title": "One trait. One week.",
+  "body": "One dot per slip. Count on Sunday. The goal isn’t a clean page. It’s noticing.",
+  "page": "7/8"
+ },
+ "PC1-franklin-chart-08": {
+  "kind": "signoff",
+  "line": "Watching a habit is the first thing that changes it.",
+  "action": "Researched introduction: no personal review yet. The Autobiography is free to read. Which virtue first?",
+  "size": 70,
+  "page": "8/8"
+ },
+ "PC2-thank-you-note-01": {
+  "kind": "cover",
+  "kicker": "Small Good Thing",
+  "claim": "You think a thank-you note would be awkward.",
+  "sub": "The person getting it disagrees.",
+  "size": 84,
+  "page": "1/6"
+ },
+ "PC2-thank-you-note-02": {
+  "kind": "term",
+  "tag": "Chicago, 2018",
+  "term": "Letters of thanks",
+  "definition": "Psychologists asked people to write a short note of gratitude to someone who had mattered to them, then guess how it would land.",
+  "cite": "Kumar & Epley, Psychological Science, 2018",
+  "page": "2/6"
+ },
+ "PC2-thank-you-note-03": {
+  "kind": "term",
+  "tag": "The guess",
+  "term": "“They’ll find it awkward.”",
+  "definition": "Writers expected the recipient to feel more awkward, and less surprised and happy, than the recipients reported feeling.",
+  "page": "3/6"
+ },
+ "PC2-thank-you-note-04": {
+  "kind": "term",
+  "tag": "Why we don’t send it",
+  "term": "We grade the wording.",
+  "definition": "Writers worried about getting the words right. Recipients cared about the warmth. (Moodius’s reading of the study.)",
+  "page": "4/6"
+ },
+ "PC2-thank-you-note-05": {
+  "kind": "step",
+  "n": 1,
+  "title": "Three lines. One person. Today.",
+  "body": "What they did. What it changed. That you’re grateful. Send it before you edit it.",
+  "page": "5/6"
+ },
+ "PC2-thank-you-note-06": {
+  "kind": "signoff",
+  "line": "The thank-you you keep not sending is probably welcome.",
+  "action": "Send this to the friend you’ve been meaning to thank. Who’s owed one?",
+  "size": 70,
+  "page": "6/6"
+ },
+ "PC3-metta-01": {
+  "kind": "cover",
+  "kicker": "Old Idea",
+  "claim": "A 2,500-year-old practice for the person who annoys you.",
+  "sub": "Not forgiveness. Something quieter.",
+  "size": 80,
+  "page": "1/7"
+ },
+ "PC3-metta-02": {
+  "kind": "term",
+  "tag": "India, about 5th century BCE",
+  "term": "The Metta Sutta",
+  "definition": "A short Buddhist text on goodwill. It covers everyone: seen and unseen, near and far, and the people you would rather skip.",
+  "cite": "Metta Sutta, Sutta Nipata I.8 · tr. V. Fausböll, 1881",
+  "page": "2/7"
+ },
+ "PC3-metta-03": {
+  "kind": "quote",
+  "quote": "As a mother at the risk of her life watches over her own child, her only child, so also let every one cultivate a boundless (friendly) mind towards all beings.",
+  "note": "Verse 148.",
+  "cite": "Metta Sutta, Sutta Nipata I.8 · tr. V. Fausböll, 1881",
+  "size": 54,
+  "page": "3/7"
+ },
+ "PC3-metta-04": {
+  "kind": "quote",
+  "quote": "Let no one deceive another, let him not despise (another) in any place, … let him not out of anger or resentment wish harm to another.",
+  "note": "Verse 147.",
+  "cite": "Metta Sutta, Sutta Nipata I.8 · tr. V. Fausböll, 1881",
+  "size": 54,
+  "page": "4/7"
+ },
+ "PC3-metta-05": {
+  "kind": "term",
+  "tag": "What it asks (Moodius’s reading)",
+  "term": "Wish them well. Quietly.",
+  "definition": "Not liking them. Not agreeing. A short private wish that they go well. It’s called a practice because you repeat it, badly, until it’s less bad.",
+  "page": "5/7"
+ },
+ "PC3-metta-06": {
+  "kind": "term",
+  "tag": "What research says",
+  "term": "Loving-kindness meditation",
+  "definition": "A 2015 review of 24 studies (1,759 people) found medium gains in daily positive mood. Many studies were small or at risk of bias. Linked, not proven.",
+  "cite": "Zeng et al., Frontiers in Psychology, 2015",
+  "page": "6/7"
+ },
+ "PC3-metta-07": {
+  "kind": "signoff",
+  "line": "Pick one person. Thirty seconds. Nobody has to know.",
+  "action": "Send this to the friend who’s still annoyed about last week. Who’s yours?",
+  "size": 70,
+  "page": "7/7"
+ },
+ "PC4-onesimus-01": {
+  "kind": "cover",
+  "kicker": "Forgotten Knowledge",
+  "claim": "In 1721 Boston, an enslaved man explained how to stop smallpox.",
+  "sub": "Few listened. The numbers did.",
+  "size": 78,
+  "page": "1/6"
+ },
+ "PC4-onesimus-02": {
+  "kind": "term",
+  "tag": "Boston, 1716",
+  "term": "Onesimus",
+  "definition": "A West African man enslaved by the minister Cotton Mather. He described a procedure from home: a little matter from a smallpox sore, scratched into the skin, and the person was protected.",
+  "cite": "Mather, letter to the Royal Society, 1716",
+  "page": "2/6"
+ },
+ "PC4-onesimus-03": {
+  "kind": "term",
+  "tag": "1721",
+  "term": "The epidemic",
+  "definition": "Smallpox hit Boston. The doctor Zabdiel Boylston tried the method Onesimus had described. Most of the town’s doctors and press were furious.",
+  "page": "3/6"
+ },
+ "PC4-onesimus-04": {
+  "kind": "term",
+  "tag": "The count",
+  "term": "About 2% vs about 14%",
+  "definition": "Of roughly 280 people inoculated, about six died. Of the thousands who caught smallpox the usual way, about one in seven did.",
+  "cite": "Boylston, J R Soc Med, 2012",
+  "page": "4/6"
+ },
+ "PC4-onesimus-05": {
+  "kind": "term",
+  "tag": "The part that gets left out",
+  "term": "Whose knowledge it was",
+  "definition": "The method was common in West Africa and in Asia long before Boston. Onesimus tried to buy his freedom in 1716. History books named the minister.",
+  "page": "5/6"
+ },
+ "PC4-onesimus-06": {
+  "kind": "signoff",
+  "line": "The expert in the room isn’t always the one being asked.",
+  "action": "History, not medical advice: inoculation of this kind was risky and is no longer used. Would you have listened?",
+  "size": 66,
+  "page": "6/6"
+ },
+ "PS1-granua-fact": {
+  "kind": "story",
+  "label": "Sunday fact",
+  "lines": [
+   [
+    "Marcus Aurelius wrote Book 1 of the Meditations in an army camp.",
+    "claim"
+   ],
+   [
+    "The last line of the book says where: “Among the Quadi at the Granua”, a frontier war on the Danube.",
+    "body"
+   ],
+   [
+    "No audience. No performance. That’s why it still reads like a real person.",
+    "small"
+   ]
+  ],
+  "footer": "The diary carousel is on the grid at 12:00"
+ },
+ "PS2-journal-enough": {
+  "kind": "story",
+  "label": "Sunday journal",
+  "lines": [
+   [
+    "What would “enough” look like?",
+    "claim"
+   ],
+   [
+    "Money, work, people, rest. Pick one and describe the day you’d stop pushing.",
+    "body"
+   ],
+   [
+    "Add your answer below if you like. Nobody else sees it.",
+    "small"
+   ]
+  ],
+  "footer": "Journal · Sunday 8 Nov"
+ }
+}

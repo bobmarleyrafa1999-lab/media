@@ -1,0 +1,17 @@
+{
+  "name": "2026-10-25-ajene-pinnock",
+  "note": "Ajene Pinnock hook study. YouTube @AjenePinnock (UC6f6ttpBax9bOgg3nACtgwA) long-form + Shorts, TikTok @ajenepinnock captions and stats, podcast appearances. Metadata only.",
+  "max_channels": 1,
+  "expand_search_channels": false,
+  "youtube_search": [],
+  "youtube_channels": ["UC6f6ttpBax9bOgg3nACtgwA"],
+  "channel_tabs": ["videos", "shorts"],
+  "tab_n": 150,
+  "tiktok_users": ["ajenepinnock"],
+  "tiktok_per_user": 120,
+  "podcasts": ["Ajene Pinnock"],
+  "urls": ["https://www.youtube.com/watch?v=vpAWIF6OZkU", "https://www.youtube.com/watch?v=kID9ns1Bp5c"],
+  "thumbnails": true,
+  "thumb_tabs": true,
+  "thumb_tabs_n": 60
+}

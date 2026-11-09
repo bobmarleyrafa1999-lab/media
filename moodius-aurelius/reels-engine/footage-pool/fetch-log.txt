@@ -1,0 +1,98 @@
+search book pages turning: 1 usable
+  kept desk-book-1: File:PIT Maneuver Ends High-Speed Chase as Deputies Seize Drugs From Fleeing Suspects.webm (Public domain)
+search open book: 13 usable
+  kept desk-book-2: File:Deputies Open Fire After Suspect Repeatedly Reaches Into Bag.webm (Public domain)
+  kept desk-book-3: File:How to open ASUS Vivobook S 14 OLED M5406 - disassembly and upgrade options.webm (CC BY 3.0)
+search candle flame: 14 usable
+  kept lamp-night-1: File:Corona.Candle.webm (CC0)
+  kept lamp-night-2: File:Flameless candle 1.webm (CC0)
+search candle: 11 usable
+  kept lamp-night-3: File:Camp Fuji Marines Participate in Yamanako Ice Candle Festival (997152).webm (Public domain)
+search Roman ruins: 8 usable
+  kept ruins-1: File:Ancient Bosra, Syria (October 2009).webm (CC BY 3.0)
+  kept ruins-2: File:Roman ruins of Amman, 1914-1918.webm (Public domain)
+search Rome forum: 15 usable
+  kept ruins-3: File:Dualo.org KidEXPERIMENT @ Open World Forum Paris.ogv (CC0)
+search wool: 9 usable
+  kept blanket-table-1: File:A Yarn Of Wool (1932).webm (Public domain)
+  File:Abriss Raiffeisen Silo Uetersen 01.ogv: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+search knitting: 4 usable
+  File:Historical Knitting Group 1 Sept.ogv: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+  File:Historical knitting group.ogv: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+search bread dough: 7 usable
+  File:(PinkLV) New SHOPKINS Play doh STOP MOTION Season 4 claymation plastilina playdough.webm: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+  File:Chicago hit and run.webm: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+search pouring tea: 4 usable
+  File:Japanese Tea Garden.webm: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+  File:Maritime leaders participate in cultural event and tea pouring competition at AMFS 2026 (1022384).webm: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+search clouds timelapse: 21 usable
+  File:2011-06-18-Timelapse-nuages.ogv: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+  File:2011-08-05 21-45-00-timelapse-clouds-seloncourt.ogv: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+search time-lapse clouds: 14 usable
+  File:Beachfront B-roll - Moon and Clouds Time Lapse 2.ogv: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+  File:Cloud time lapse 1280.ogv: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+search sunrise: 14 usable
+  File:Daybreak Timelapse 1080p60fps.webm: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+  File:Sunrise (1927) - Trailer.webm: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+search ocean waves: 12 usable
+  File:Irminger Bow in Waves (OOI).webm: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+  File:Ocean surface waves.ogv: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+search rain on window: 8 usable
+  File:A Trip down market street (1906).webm: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+  File:Amelia Earhart, Heroine of the Skies (1932).webm: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+search rain drops: HTTP Error 429: Too Many Requests
+search rain: HTTP Error 429: Too Many Requests
+search puddle rain: HTTP Error 429: Too Many Requests
+search clock: HTTP Error 429: Too Many Requests
+search pendulum clock: HTTP Error 429: Too Many Requests
+search clock mechanism: HTTP Error 429: Too Many Requests
+search hourglass: HTTP Error 429: Too Many Requests
+search city night traffic: HTTP Error 429: Too Many Requests
+search street at night: HTTP Error 429: Too Many Requests
+search train window: HTTP Error 429: Too Many Requests
+search tram: HTTP Error 429: Too Many Requests
+search open book pages close up: HTTP Error 401: Unauthorized
+search turning pages book: HTTP Error 401: Unauthorized
+search old book desk: HTTP Error 401: Unauthorized
+search candle flame dark: HTTP Error 401: Unauthorized
+search oil lamp: HTTP Error 401: Unauthorized
+search ancient ruins: HTTP Error 401: Unauthorized
+search roman columns: HTTP Error 401: Unauthorized
+search folding blanket: HTTP Error 401: Unauthorized
+search wool blanket texture: HTTP Error 401: Unauthorized
+search tea pouring: HTTP Error 401: Unauthorized
+search clouds timelapse: HTTP Error 401: Unauthorized
+search sunrise sky: HTTP Error 401: Unauthorized
+search rain on window: HTTP Error 401: Unauthorized
+search raindrops glass: HTTP Error 401: Unauthorized
+search clock ticking: HTTP Error 401: Unauthorized
+search pocket watch: HTTP Error 401: Unauthorized
+search city lights night: HTTP Error 401: Unauthorized
+search street lights bokeh: HTTP Error 401: Unauthorized
+search city night: 6 usable
+  kept city-night-1: File:City at night.webm (CC BY 3.0)
+  kept city-night-2: File:Ljubljana city by night (4k).webm (CC BY 3.0)
+search rain: 9 usable
+  kept rain-window-1: File:Freezing rain at night in Shandong, China (20240220).webm (CC BY 2.0)
+  kept rain-window-2: File:Heavy rain in Nanshan District, Shenzhen (20250424).webm (CC BY 4.0)
+search clouds timelapse: 21 usable
+  kept sky-1: File:2011-06-06-Timelapse-clouds.ogv (CC BY 2.0)
+  kept sky-2: File:2011-08-05 21-45-00-timelapse-clouds-seloncourt.ogv (CC BY 3.0)
+search book: 1 usable
+  kept desk-book-1: File:I Found My Savior Through The Book of Mormon.webm (CC BY 3.0)
+search pages: 6 usable
+  kept desk-book-2: File:Find other pages on Translate extension.webm (CC0)
+search clock: 6 usable
+  kept clock-1: File:Clock by Veo 2.webm (Public domain)
+  File:Grandfather clock - kanagawa japan - 2022 may 2.webm: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+search pendulum: 8 usable
+  File:3-double-pendulums.webm: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+  File:Foucault pendulum.ogv: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+search hourglass: 0 usable
+search tea: 2 usable
+  File:Japanese Tea Garden.webm: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+  kept blanket-table-1: File:Tea- I don't think so....webm (CC BY 3.0)
+search wool: 0 usable
+search fabric: 5 usable
+  File:Multifunctional-non-woven-fabrics-of-interfused-graphene-fibres-ncomms13684-s2.ogv: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+  File:Multifunctional-non-woven-fabrics-of-interfused-graphene-fibres-ncomms13684-s5.ogv: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)

@@ -1,0 +1,712 @@
+{
+ "batch": "batch-plan-02",
+ "written": "2026-11-08",
+ "note": "Weekly build for 10-16 Nov (catch-up for the missed Fri 6 Nov routine). first_comment placeholders only: Metricool firstCommentText EMPTY. Slots: PW01 Wed 11 Nov 18:00 (E2 arm A), PW02 Thu 12 Nov 18:00 (B), PW03 Fri 13 Nov 17:00 (A), PW04 Sat 14 Nov 12:00 (B), PW05 Sat 14 Nov 18:00 (B), PW06 Sun 15 Nov 18:00 (A), PW07 Mon 16 Nov 18:00 (B).",
+ "scripts": [
+  {
+   "id": "PW01",
+   "slug": "dread-or-plan",
+   "format": "R2",
+   "pillar": "Mind",
+   "rank": 1,
+   "hook": "Is expecting the worst pessimism, or protection?",
+   "hook_b": "Seneca's friend watched his whole city burn in one night.",
+   "cards": [
+    [
+     "Is expecting the worst pessimism, or protection?",
+     2.4,
+     "hook"
+    ],
+    [
+     "One reading: you're ruining today with a disaster that hasn't happened.",
+     3.0,
+     "body"
+    ],
+    [
+     "The other: you're making sure it can't ambush you.",
+     2.6,
+     "body"
+    ],
+    [
+     "Which is it?",
+     2.2,
+     "quiz"
+    ],
+    [
+     "Depends on what\nhappens next.",
+     2.4,
+     "reveal"
+    ],
+    [
+     "When Lyon burned in one night, Seneca wrote to a friend from there.",
+     3.4,
+     "body"
+    ],
+    [
+     "His point: what has happened to anyone can happen to you.",
+     3.0,
+     "body"
+    ],
+    [
+     "Idea: Seneca, Letters 91 (Gummere) · Moodius words",
+     1.8,
+     "cite"
+    ],
+    [
+     "If it ends in a feeling, it's dread. If it ends in a plan, it's protection.",
+     4.2,
+     "body"
+    ],
+    [
+     "Which one is yours? Answer below.",
+     1.8,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate, type only. Quote card in Playfair italic.",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 401
+   },
+   "source": {
+    "type": "idea",
+    "author": "Seneca",
+    "work": "Moral Letters to Lucilius",
+    "section": "91",
+    "translation": "Richard M. Gummere",
+    "verified_at": "Letter 91 (to Liberalis, on the fire at Lyon) paraphrased on screen and in the caption; no verbatim quote used"
+   },
+   "caption": "In AD 64 Lyon burned to the ground in a single night. Seneca wrote to his friend Liberalis, who came from there, and his advice wasn't comfort. It was: nothing should be unexpected. Whatever has happened to anyone can happen to you, so think it through once, calmly, before it does. (Letters 91, in our words.)\n\nThat's the line between dread and protection. Dread rehearses the feeling and stops. Protection rehearses the event and ends in a plan: what you'd do first, who you'd call, what you'd still have.\n\nSame thought. Different ending.\n\nSend this to the friend who rehearses disasters in the shower.\n\nDread or plan?\n\n— Moodius",
+   "first_comment": "(Surafel writes this: Metricool firstCommentText left EMPTY.)",
+   "hashtags": [
+    "#seneca",
+    "#stoicism",
+    "#anxiety",
+    "#overthinking",
+    "#philosophy"
+   ],
+   "cta": "comment",
+   "length_s": null,
+   "grammar": "beat",
+   "max_s": 28,
+   "doctor": {
+    "score": 76,
+    "issues": [
+     "26.8s, above the 12-18s target",
+     "Seneca paraphrased on screen (Letter 91 text not machine-checkable); no verbatim quote"
+    ],
+    "rewritten": true,
+    "by": "Claude, 8 Nov 2026"
+   }
+  },
+  {
+   "id": "PW02",
+   "slug": "epictetus-part-one",
+   "format": "R2",
+   "pillar": "Mind",
+   "rank": 1,
+   "hook": "A slave in Nero's Rome walked with a limp. Nobody knows why.",
+   "hook_b": "He was owned by a man at Nero's court. Watch what happened.",
+   "cards": [
+    [
+     "A slave in Nero's Rome walked with a limp. Nobody knows why.",
+     2.9,
+     "hook"
+    ],
+    [
+     "Born into slavery around AD 50. Even his name means \"acquired\".",
+     2.8,
+     "body"
+    ],
+    [
+     "His owner was Nero's secretary. Still a slave, he was sent to philosophy lectures.",
+     3.8,
+     "body"
+    ],
+    [
+     "What did the lectures teach?",
+     2.2,
+     "quiz"
+    ],
+    [
+     "What you control.\nWhat you don't.\nTaught to a man who owned nothing.",
+     3.6,
+     "reveal"
+    ],
+    [
+     "Freed after Nero died. Taught in Rome until an emperor threw the philosophers out.",
+     3.8,
+     "body"
+    ],
+    [
+     "He opened a school in a small Greek town. Students came from across the empire.",
+     4.0,
+     "body"
+    ],
+    [
+     "Facts: Stanford Encyclopedia of Philosophy, \"Epictetus\" · Part 1 of 3",
+     1.8,
+     "cite"
+    ],
+    [
+     "Part 1 of 3. Full story Sunday. Heard of him? Answer below.",
+     3.2,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate, type only. Quote card in Playfair italic.",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "room",
+    "seed": 402
+   },
+   "source": {
+    "type": "history",
+    "author": "Epictetus (biography)",
+    "work": "Stanford Encyclopedia of Philosophy, \"Epictetus\"",
+    "section": "life",
+    "translation": "n/a",
+    "verified_at": "hook-system.md arc 1 facts (SEP): born 50s CE Hierapolis; enslaved to Epaphroditus; limp of unknown cause; studied under Musonius Rufus; banished under Domitian; school at Nicopolis"
+   },
+   "caption": "Part 1 of 3. He was born into slavery around AD 50 in Hierapolis, in what is now Turkey. Even the name we have for him, Epictetus, just means \"acquired\". His owner, Epaphroditus, was Nero's secretary, and while still enslaved he was allowed to study under Musonius Rufus, the leading Stoic teacher in Rome. He walked with a limp; ancient writers disagree about why.\n\nFreed after Nero's death, he taught in Rome until Domitian banished philosophers from the city, then opened a school in Nicopolis, a small town in western Greece. Students travelled from across the empire to hear a former slave explain what is and isn't in your power.\n\nPart 2 on Friday at 5. The full story is Sunday's carousel.\n\nSend this to the friend who thinks philosophy was invented by comfortable people.\n\nSources: Stanford Encyclopedia of Philosophy, \"Epictetus\"; Arrian's Discourses.\n\nHeard of him?\n\n— Moodius",
+   "first_comment": "(Surafel writes this: Metricool firstCommentText left EMPTY.)",
+   "hashtags": [
+    "#epictetus",
+    "#stoicism",
+    "#history",
+    "#philosophy",
+    "#ancientrome"
+   ],
+   "cta": "comment",
+   "length_s": null,
+   "grammar": "beat",
+   "max_s": 28,
+   "doctor": {
+    "score": 74,
+    "issues": [
+     "27.9s; history reel with no quote card, relies on the quiz/reveal for the turn",
+     "payoff reuses no hook word (rule 7) - accepted, the series tag carries the loop"
+    ],
+    "rewritten": true,
+    "by": "Claude, 8 Nov 2026"
+   }
+  },
+  {
+   "id": "PW03",
+   "slug": "what-you-sell-for",
+   "format": "R2",
+   "pillar": "People",
+   "rank": 1,
+   "hook": "What did you agree to this week just to keep the peace?",
+   "hook_b": "A former slave had one question for people who say yes too fast.",
+   "cards": [
+    [
+     "What did you agree to this week just to keep the peace?",
+     3.0,
+     "hook"
+    ],
+    [
+     "The meeting you didn't want. The favour you can't afford.",
+     2.6,
+     "body"
+    ],
+    [
+     "Epictetus had a question for it. He'd been property once, so he meant it.",
+     3.8,
+     "body"
+    ],
+    [
+     "His question?",
+     2.0,
+     "quiz"
+    ],
+    [
+     "“…how much you are worth to yourself, and at what price you sell yourself; for men sell themselves at various prices.”",
+     5.2,
+     "quote"
+    ],
+    [
+     "Epictetus, Discourses 1.2, tr. George Long (public domain)",
+     1.8,
+     "cite"
+    ],
+    [
+     "He said this as a free man. He knew exactly what being sold cost.",
+     3.8,
+     "body"
+    ],
+    [
+     "Say yes if you like. Just know what you're selling.",
+     2.8,
+     "body"
+    ],
+    [
+     "Name the price. Answer below. Part 2 of 3.",
+     2.4,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate, type only. Quote card in Playfair italic.",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "dry",
+    "seed": 403
+   },
+   "source": {
+    "type": "quote",
+    "author": "Epictetus",
+    "work": "Discourses",
+    "section": "1.2",
+    "translation": "George Long (public domain)",
+    "verified_at": "Standard Ebooks, Discourses Book I ch. 2 (Long), checked 8 Nov 2026"
+   },
+   "caption": "Part 2 of 3. Epictetus, who had been enslaved for the first part of his life, told his students that the real question before any decision is what you'd sell yourself for. Discourses 1.2 (tr. George Long): \"it is you who know yourself, how much you are worth to yourself, and at what price you sell yourself; for men sell themselves at various prices.\"\n\nHe isn't against saying yes. He's against not knowing the price. The meeting you sat through, the favour you'll resent by Thursday, the \"sure, no problem\" that cost you a Sunday: each one was a sale. Some are worth it. Know which.\n\nSend this to the friend who says yes before the sentence is finished.\n\nName the price?\n\n— Moodius",
+   "first_comment": "(Surafel writes this: Metricool firstCommentText left EMPTY.)",
+   "hashtags": [
+    "#epictetus",
+    "#stoicism",
+    "#boundaries",
+    "#peoplepleaser",
+    "#philosophy"
+   ],
+   "cta": "comment",
+   "length_s": null,
+   "grammar": "beat",
+   "max_s": 28,
+   "registry_ok": {
+    "strategy/06-30-day-calendar.md": "original plan row for the 13 Nov 17:00 slot that PW03 fills",
+    "strategy/calendar-30-day-tracker.csv": "live tracker row that plans this very slot; marked SCHEDULED with this id by the 8 Nov build",
+    "strategy/reel-first/calendar-30-day-tracker-reel-first.csv": "planning or hook-system document that pencilled this section for this week's slot; not a published post",
+    "strategy/reel-first/hook-system.md": "planning or hook-system document that pencilled this section for this week's slot; not a published post"
+   },
+   "doctor": {
+    "score": 78,
+    "issues": [
+     "27.2s",
+     "Discourses 1.2 was pencilled for this slot in the 30-day calendar (registry_ok)"
+    ],
+    "rewritten": true,
+    "by": "Claude, 8 Nov 2026"
+   }
+  },
+  {
+   "id": "PW04",
+   "slug": "three-step-test",
+   "format": "R2",
+   "pillar": "Mind",
+   "rank": 1,
+   "hook": "A former slave's three-step test for how free you are.",
+   "hook_b": "How free are you, honestly? Epictetus had a three-step test.",
+   "cards": [
+    [
+     "A former slave's three-step test for how free you are.",
+     2.9,
+     "hook"
+    ],
+    [
+     "Not free as in money or borders. Free as in who's running you.",
+     3.6,
+     "body"
+    ],
+    [
+     "When something goes wrong, who do you blame?",
+     2.4,
+     "quiz"
+    ],
+    [
+     "Step 1 · other people\nStep 2 · yourself\nStep 3 · nobody",
+     3.0,
+     "reveal"
+    ],
+    [
+     "“…and of one whose instruction is completed, neither to blame another, nor himself.”",
+     3.4,
+     "quote"
+    ],
+    [
+     "Epictetus, Enchiridion 5, tr. George Long (public domain)",
+     1.8,
+     "cite"
+    ],
+    [
+     "Not blaming yourself isn't letting yourself off. It's dropping the whole trial.",
+     3.4,
+     "body"
+    ],
+    [
+     "He's not saying nothing's your fault. He's saying blame is a habit, and habits can be dropped.",
+     4.4,
+     "body"
+    ],
+    [
+     "Which step are you on? Answer below. Part 3 of 3.",
+     2.8,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate, type only. Quote card in Playfair italic.",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "dawn",
+    "seed": 404
+   },
+   "source": {
+    "type": "quote",
+    "author": "Epictetus",
+    "work": "Enchiridion",
+    "section": "5",
+    "translation": "George Long (public domain)",
+    "verified_at": "Standard Ebooks, Enchiridion V (Long), checked 8 Nov 2026"
+   },
+   "caption": "Part 3 of 3. Epictetus, Enchiridion 5 (tr. George Long): \"It is the act of an ill-instructed man to blame others for his own bad condition; it is the act of one who has begun to be instructed, to lay the blame on himself; and of one whose instruction is completed, neither to blame another, nor himself.\"\n\nThree steps. Most of us live on step one, visit step two on bad nights, and assume step three means not caring. It doesn't. It means the event happened, your opinion about it is yours to set, and there's no trial to hold. That's what a man who had been owned meant by free.\n\nFull story in Sunday's carousel.\n\nSend this to the friend who's been prosecuting themselves since Tuesday.\n\nWhich step?\n\n— Moodius",
+   "first_comment": "(Surafel writes this: Metricool firstCommentText left EMPTY.)",
+   "hashtags": [
+    "#epictetus",
+    "#stoicism",
+    "#freedom",
+    "#selfblame",
+    "#philosophy"
+   ],
+   "cta": "comment",
+   "length_s": null,
+   "grammar": "beat",
+   "max_s": 29,
+   "registry_ok": {
+    "pinterest/pins-plan.json": "Pinterest pin plan, not a published post",
+    "strategy/04-first-five-posts.md": "23 Oct carousel cited Enchiridion 5 for the judgement idea; PW04 quotes a different sentence (the three stages of blame), 3 weeks later",
+    "strategy/22-mino-formulas/07-read-along-emails.md": "newsletter draft, unpublished",
+    "strategy/calendar-30-day-tracker.csv": "tracker note on the 23 Oct carousel's Enchiridion 5 citation (different sentence)",
+    "strategy/phase1-first-five/carousels.json": "23 Oct carousel cited Enchiridion 5 for the judgement idea; PW04 quotes the three-stages sentence",
+    "strategy/phase1-summary-source.md": "early-phase record of the 23 Oct carousel's citation (different sentence quoted here)",
+    "strategy/reel-first/calendar-30-day-tracker-reel-first.csv": "planning or hook-system document that pencilled this section for this week's slot; not a published post",
+    "strategy/schedule-21-25-oct.json": "early-phase record of the 23 Oct carousel's citation (different sentence quoted here)",
+    "substack/03-backlog.md": "planning or hook-system document that pencilled this section for this week's slot; not a published post",
+    "substack/data/editorial.csv": "planning or hook-system document that pencilled this section for this week's slot; not a published post",
+    "substack/vault/20-ideas/MA-005.md": "planning or hook-system document that pencilled this section for this week's slot; not a published post",
+    "substack/vault/20-ideas/MA-032.md": "planning or hook-system document that pencilled this section for this week's slot; not a published post",
+    "threads/posts/plan-2026-10-22_11-01.json": "planning or hook-system document that pencilled this section for this week's slot; not a published post",
+    "week3/posts.json": "planning or hook-system document that pencilled this section for this week's slot; not a published post",
+    "week3/stills.json": "planning or hook-system document that pencilled this section for this week's slot; not a published post"
+   },
+   "doctor": {
+    "score": 72,
+    "issues": [
+     "27.5s",
+     "Enchiridion 5 was cited (different sentence) in the 23 Oct carousel; accepted for the arc's part 3"
+    ],
+    "rewritten": true,
+    "by": "Claude, 8 Nov 2026"
+   }
+  },
+  {
+   "id": "PW05",
+   "slug": "guessing-game",
+   "format": "R2",
+   "pillar": "People",
+   "rank": 1,
+   "hook": "You spent today guessing what one person thinks of you.",
+   "hook_b": "Marcus Aurelius had a rule about guessing what people think of you.",
+   "cards": [
+    [
+     "You spent today guessing what one person thinks of you.",
+     2.8,
+     "hook"
+    ],
+    [
+     "The slow reply. The tone in the meeting.",
+     2.4,
+     "body"
+    ],
+    [
+     "You've run the scene nine times. They've run it zero.",
+     2.8,
+     "body"
+    ],
+    [
+     "What did that cost?",
+     2.2,
+     "quiz"
+    ],
+    [
+     "A day of your attention,\nspent inside\nsomeone else's head.",
+     3.0,
+     "reveal"
+    ],
+    [
+     "Marcus described the mind he was aiming for. One habit was almost absent from it:",
+     3.8,
+     "body"
+    ],
+    [
+     "“…imagining what another says, or does, or thinks.”",
+     2.6,
+     "quote"
+    ],
+    [
+     "Marcus Aurelius, Meditations 3.4, tr. George Long (public domain)",
+     1.8,
+     "cite"
+    ],
+    [
+     "Count the guesses. Then ask: what's actually mine to do here?",
+     3.0,
+     "body"
+    ],
+    [
+     "Send this to the one who's overthinking a text right now.",
+     2.8,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate, type only. Quote card in Playfair italic.",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 405
+   },
+   "source": {
+    "type": "quote",
+    "author": "Marcus Aurelius",
+    "work": "Meditations",
+    "section": "3.4",
+    "translation": "George Long (public domain)",
+    "verified_at": "Standard Ebooks, Meditations Book III (Long), checked 8 Nov 2026"
+   },
+   "caption": "Marcus Aurelius, Meditations 3.4 (tr. George Long), describing the person he wanted to be: one who is \"not often, nor yet without great necessity and for the general interest, imagining what another says, or does, or thinks.\"\n\nNot never. Not often. He knew the pull of it: the slow reply, the half-second face in the meeting, the like that didn't come. He also knew where that attention goes: into a head you can't see, away from the one thing you can actually act on.\n\nTonight, count today's guesses. Then ask the only question with an answer: what's mine to do here?\n\nSend this to the friend who's overthinking a text right now.\n\nHow many guesses?\n\n— Moodius",
+   "first_comment": "(Surafel writes this: Metricool firstCommentText left EMPTY.)",
+   "hashtags": [
+    "#marcusaurelius",
+    "#stoicism",
+    "#overthinking",
+    "#anxiety",
+    "#philosophy"
+   ],
+   "cta": "comment",
+   "length_s": null,
+   "grammar": "beat",
+   "max_s": 28,
+   "registry_ok": {
+    "strategy/06-30-day-calendar.md": "original plan row for the 14 Nov 18:00 slot that PW05 fills",
+    "strategy/calendar-30-day-tracker.csv": "planning or hook-system document that pencilled this section for this week's slot; not a published post",
+    "strategy/reel-first/calendar-30-day-tracker-reel-first.csv": "planning or hook-system document that pencilled this section for this week's slot; not a published post",
+    "strategy/reel-first/hook-system.md": "planning or hook-system document that pencilled this section for this week's slot; not a published post"
+   },
+   "doctor": {
+    "score": 77,
+    "issues": [
+     "27.2s",
+     "quote shown as a fragment with a leading ellipsis; full sentence in the caption"
+    ],
+    "rewritten": true,
+    "by": "Claude, 8 Nov 2026"
+   }
+  },
+  {
+   "id": "PW06",
+   "slug": "be-one",
+   "format": "R2",
+   "pillar": "Mind",
+   "rank": 1,
+   "hook": "Everyone has a theory of what a good person is.",
+   "hook_b": "The emperor of Rome learned his philosophy from a former slave.",
+   "cards": [
+    [
+     "Everyone has a theory of what a good person is.",
+     2.8,
+     "hook"
+    ],
+    [
+     "Marcus Aurelius had one too. He also had an empire, a plague and a war.",
+     3.8,
+     "body"
+    ],
+    [
+     "Whose theory is right?",
+     2.2,
+     "quiz"
+    ],
+    [
+     "He stopped\nasking.",
+     2.0,
+     "reveal"
+    ],
+    [
+     "“No longer talk at all about the kind of man that a good man ought to be, but be such.”",
+     5.0,
+     "quote"
+    ],
+    [
+     "Marcus Aurelius, Meditations 10.16, tr. George Long (public domain)",
+     1.8,
+     "cite"
+    ],
+    [
+     "Epictetus taught him that, through his notes: stop describing the good life, do a piece of it.",
+     4.4,
+     "body"
+    ],
+    [
+     "Today's piece can be small. One kept promise. One honest sentence.",
+     3.0,
+     "body"
+    ],
+    [
+     "Whose is right? Answer below. Full Epictetus story: today's carousel.",
+     2.8,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate, type only. Quote card in Playfair italic.",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "warm",
+    "seed": 406
+   },
+   "source": {
+    "type": "quote",
+    "author": "Marcus Aurelius",
+    "work": "Meditations",
+    "section": "10.16",
+    "translation": "George Long (public domain)",
+    "verified_at": "Standard Ebooks, Meditations Book X (Long), checked 8 Nov 2026"
+   },
+   "caption": "Marcus Aurelius, Meditations 10.16 (tr. George Long): \"No longer talk at all about the kind of man that a good man ought to be, but be such.\"\n\nHe wrote it to himself, in a notebook nobody was meant to read, after years of arguing the theory. The man whose lecture notes taught him Stoicism, Epictetus, had been a slave; his version of the same idea was that philosophy is shown in what you do, not what you can explain. (Today's carousel has the whole story.)\n\nThe piece you do today can be small. A promise kept. A sentence you'd been avoiding.\n\nSend this to the friend who can describe the good life in detail.\n\nWhose is right?\n\n— Moodius",
+   "first_comment": "(Surafel writes this: Metricool firstCommentText left EMPTY.)",
+   "hashtags": [
+    "#marcusaurelius",
+    "#stoicism",
+    "#character",
+    "#philosophy",
+    "#epictetus"
+   ],
+   "cta": "comment",
+   "length_s": null,
+   "grammar": "beat",
+   "max_s": 29,
+   "registry_ok": {
+    "pinterest/pins-plan.json": "Pinterest pin plan, not a published post",
+    "research/weekly-routine-prompt-3-a-day.md": "routine prompt lists 10.16 as the fallback F hook for this very slot",
+    "research/weekly-routine-prompt-option-a.md": "earlier draft of the same routine prompt",
+    "strategy/06-30-day-calendar.md": "planning or hook-system document that pencilled this section for this week's slot; not a published post",
+    "strategy/calendar-30-day-tracker.csv": "planning or hook-system document that pencilled this section for this week's slot; not a published post",
+    "strategy/reel-first/calendar-30-day-tracker-reel-first.csv": "planning or hook-system document that pencilled this section for this week's slot; not a published post",
+    "strategy/reel-first/hook-system.md": "planning or hook-system document that pencilled this section for this week's slot; not a published post"
+   },
+   "doctor": {
+    "score": 73,
+    "issues": [
+     "27.8s",
+     "Meditations 10.16 was a quote card on 12 Oct (5 reach); reused here in the beat format with the Epictetus link"
+    ],
+    "rewritten": true,
+    "by": "Claude, 8 Nov 2026"
+   }
+  },
+  {
+   "id": "PW07",
+   "slug": "whos-in-the-sentence",
+   "format": "R2",
+   "pillar": "Mind",
+   "rank": 1,
+   "hook": "Listen to how you explain your bad day.",
+   "hook_b": "Epictetus had a one-sentence test you can hear in anyone's bad day.",
+   "cards": [
+    [
+     "Listen to how you explain your bad day.",
+     2.6,
+     "hook"
+    ],
+    [
+     "\"The train, then my manager, then the weather.\" Who's in the sentence?",
+     3.4,
+     "body"
+    ],
+    [
+     "Epictetus listened for the same thing in his students.",
+     2.6,
+     "body"
+    ],
+    [
+     "What gives it away?",
+     2.2,
+     "quiz"
+    ],
+    [
+     "Where you locate\nthe harm.",
+     2.2,
+     "reveal"
+    ],
+    [
+     "“The condition and characteristic of a philosopher is this: he expects all advantage and all harm from himself.”",
+     4.6,
+     "quote"
+    ],
+    [
+     "Epictetus, Enchiridion 48, tr. George Long (public domain)",
+     1.8,
+     "cite"
+    ],
+    [
+     "Same bad day. But now the sentence has you in it, and that's the only part you can change.",
+     4.6,
+     "body"
+    ],
+    [
+     "Say your sentence out loud. Who's in it? Answer below.",
+     2.8,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate, type only. Quote card in Playfair italic.",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "low",
+    "seed": 407
+   },
+   "source": {
+    "type": "quote",
+    "author": "Epictetus",
+    "work": "Enchiridion",
+    "section": "48",
+    "translation": "George Long (public domain)",
+    "verified_at": "Standard Ebooks, Enchiridion XLVIII (Long), checked 8 Nov 2026"
+   },
+   "caption": "Epictetus, Enchiridion 48 (tr. George Long): the uninstructed person \"never expects from himself profit nor harm, but from externals\", while \"the condition and characteristic of a philosopher is this: he expects all advantage and all harm from himself.\"\n\nYou can hear it in one sentence. \"The train, then my manager, then the weather\" has no one in it who can do anything. \"I left late, I didn't push back, I forgot the coat\" is the same day, and it's miserable too, but now it has you in it, and you're the only part that can change by tomorrow.\n\nNot blame. Location.\n\nSend this to the friend whose bad days are always somebody else's.\n\nWho's in your sentence?\n\n— Moodius",
+   "first_comment": "(Surafel writes this: Metricool firstCommentText left EMPTY.)",
+   "hashtags": [
+    "#epictetus",
+    "#stoicism",
+    "#responsibility",
+    "#mindset",
+    "#philosophy"
+   ],
+   "cta": "comment",
+   "length_s": null,
+   "grammar": "beat",
+   "max_s": 28,
+   "registry_ok": {
+    "strategy/06-30-day-calendar.md": "original plan row for the 16 Nov 18:00 slot that PW07 fills",
+    "strategy/calendar-30-day-tracker.csv": "live tracker row that plans this very slot; marked SCHEDULED with this id by the 8 Nov build",
+    "strategy/reel-first/calendar-30-day-tracker-reel-first.csv": "reel-first plan copy of the same slot",
+    "strategy/reel-first/hook-system.md": "planning or hook-system document that pencilled this section for this week's slot; not a published post"
+   },
+   "doctor": {
+    "score": 79,
+    "issues": [
+     "26.8s",
+     "quotes the second sentence of Enchiridion 48; first sentence paraphrased in the caption"
+    ],
+    "rewritten": true,
+    "by": "Claude, 8 Nov 2026"
+   }
+  }
+ ]
+}

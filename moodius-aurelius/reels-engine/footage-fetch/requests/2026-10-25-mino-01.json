@@ -1,0 +1,14 @@
+{
+ "note": "B-roll for test batch mino-01 (MZ01-MZ05). No people, no faces; checked by eye after fetch.",
+ "per_tag": 3,
+ "tags": {
+  "desk-book": ["book pages turning", "open book", "old book", "library books"],
+  "lamp-night": ["candle flame", "candle", "oil lamp flame", "fireplace"],
+  "ruins": ["Roman ruins", "Rome forum", "ancient ruins", "Greek temple"],
+  "blanket-table": ["wool", "knitting", "bread dough", "pouring tea"],
+  "sky": ["clouds timelapse", "time-lapse clouds", "sunrise", "ocean waves"],
+  "rain-window": ["rain on window", "rain drops", "rain", "puddle rain"],
+  "clock": ["clock", "pendulum clock", "clock mechanism", "hourglass"],
+  "city-night": ["city night traffic", "street at night", "train window", "tram"]
+ }
+}

@@ -1,0 +1,198 @@
+[
+ {
+  "id": "W1-old-place",
+  "metricool_id": 421038755,
+  "date": "2026-11-10",
+  "time": "12:00",
+  "type": "CAROUSEL",
+  "pillar": "Mind",
+  "hook": "You drive past a place you used to be someone else in.",
+  "source": "Wildschut et al., JPSP 2006",
+  "angle": "appreciation"
+ },
+ {
+  "id": "W2-call-for-no-reason",
+  "metricool_id": 421038777,
+  "date": "2026-11-12",
+  "time": "12:00",
+  "type": "CAROUSEL",
+  "pillar": "People",
+  "hook": "Nobody taught you how to call a friend for no reason.",
+  "source": "Liu et al., JPSP 2022",
+  "angle": "appreciation"
+ },
+ {
+  "id": "W3-twelve-sailors",
+  "metricool_id": 421038798,
+  "date": "2026-11-13",
+  "time": "12:00",
+  "type": "CAROUSEL",
+  "pillar": "Body",
+  "hook": "In 1747 a ship's doctor split twelve sick sailors into pairs.",
+  "source": "Lind 1753 (history)",
+  "angle": "history"
+ },
+ {
+  "id": "W4-epictetus-deep-dive",
+  "metricool_id": 421038826,
+  "date": "2026-11-15",
+  "time": "12:00",
+  "type": "CAROUSEL",
+  "pillar": "Mind",
+  "hook": "Born enslaved. Banished from Rome. The freest man in the empire.",
+  "source": "SEP Epictetus; Discourses 4.1, 1.2; Meditations 1.7 (Long)",
+  "angle": "history"
+ },
+ {
+  "id": "W5-anger-ledger",
+  "metricool_id": 421038846,
+  "date": "2026-11-16",
+  "time": "12:00",
+  "type": "CAROUSEL",
+  "pillar": "Mind",
+  "hook": "Your anger costs you more than what caused it.",
+  "source": "Meditations 11.18 (Long)",
+  "angle": "conflict"
+ },
+ {
+  "id": "PW01-dread-or-plan",
+  "metricool_id": 421038867,
+  "date": "2026-11-11",
+  "time": "18:00",
+  "type": "REEL",
+  "pillar": "Mind",
+  "hook": "Is expecting the worst pessimism, or protection?",
+  "source": "Idea: Seneca Letters 91 (Gummere)",
+  "angle": "contradiction"
+ },
+ {
+  "id": "PW02-epictetus-part-one-b",
+  "metricool_id": 421038893,
+  "date": "2026-11-12",
+  "time": "18:00",
+  "type": "REEL",
+  "pillar": "Mind",
+  "hook": "He was owned by a man at Nero's court. Watch what happened.",
+  "source": "SEP Epictetus",
+  "angle": "history"
+ },
+ {
+  "id": "PW03-what-you-sell-for",
+  "metricool_id": 421038913,
+  "date": "2026-11-13",
+  "time": "17:00",
+  "type": "REEL",
+  "pillar": "People",
+  "hook": "What did you agree to this week just to keep the peace?",
+  "source": "Discourses 1.2 (Long)",
+  "angle": "conflict"
+ },
+ {
+  "id": "PW04-three-step-test-b",
+  "metricool_id": 421038937,
+  "date": "2026-11-14",
+  "time": "12:00",
+  "type": "REEL",
+  "pillar": "Mind",
+  "hook": "How free are you, honestly? Epictetus had a three-step test.",
+  "source": "Enchiridion 5 (Long)",
+  "angle": "history"
+ },
+ {
+  "id": "PW05-guessing-game-b",
+  "metricool_id": 421038955,
+  "date": "2026-11-14",
+  "time": "18:00",
+  "type": "REEL",
+  "pillar": "People",
+  "hook": "Marcus Aurelius had a rule about guessing what people think of you.",
+  "source": "Meditations 3.4 (Long)",
+  "angle": "other-person"
+ },
+ {
+  "id": "PW06-be-one",
+  "metricool_id": 421038973,
+  "date": "2026-11-15",
+  "time": "18:00",
+  "type": "REEL",
+  "pillar": "Mind",
+  "hook": "Everyone has a theory of what a good person is.",
+  "source": "Meditations 10.16 (Long)",
+  "angle": "appreciation"
+ },
+ {
+  "id": "PW07-whos-in-the-sentence-b",
+  "metricool_id": 421038985,
+  "date": "2026-11-16",
+  "time": "18:00",
+  "type": "REEL",
+  "pillar": "Mind",
+  "hook": "Epictetus had a one-sentence test you can hear in anyone's bad day.",
+  "source": "Enchiridion 48 (Long)",
+  "angle": "quiet truth"
+ },
+ {
+  "id": "D23-monday-dread",
+  "metricool_id": 421039855
+ },
+ {
+  "id": "D24-quiz-old-place",
+  "metricool_id": 421039866
+ },
+ {
+  "id": "D25-answer-old-place",
+  "metricool_id": 421039886
+ },
+ {
+  "id": "D26-poll-deep-dive",
+  "metricool_id": 421039904
+ },
+ {
+  "id": "D27-before-you-send",
+  "metricool_id": 421039921
+ },
+ {
+  "id": "D28-which-emotion",
+  "metricool_id": 421039937
+ },
+ {
+  "id": "D29-it-had-a-reason",
+  "metricool_id": 421039955
+ },
+ {
+  "id": "D30-forgive-today",
+  "metricool_id": 421039969
+ },
+ {
+  "id": "D31-quiz-sailors",
+  "metricool_id": 421040003
+ },
+ {
+  "id": "D32-vote-friday",
+  "metricool_id": 421040016
+ },
+ {
+  "id": "D33-part-three",
+  "metricool_id": 421040032
+ },
+ {
+  "id": "D34-today-taught",
+  "metricool_id": 421040051
+ },
+ {
+  "id": "D35-sunday-deep-dive",
+  "metricool_id": 421040064
+ },
+ {
+  "id": "D36-differently-tomorrow",
+  "metricool_id": 421040084
+ },
+ {
+  "id": "D37-monday-anger",
+  "metricool_id": 421040107
+ },
+ {
+  "id": "D38-who-needs-message",
+  "metricool_id": 421040131
+ }
+]

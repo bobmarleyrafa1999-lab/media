@@ -1,0 +1,15 @@
+{
+ "note": "Pexels pass for mino-01; rename to .json and push once the PEXELS_API_KEY secret exists. Faces checked by eye after fetch.",
+ "source": "pexels",
+ "per_tag": 3,
+ "tags": {
+  "desk-book": ["open book pages close up", "turning pages book", "old book desk"],
+  "lamp-night": ["candle flame dark", "oil lamp"],
+  "ruins": ["ancient ruins", "roman columns"],
+  "blanket-table": ["folding blanket", "wool blanket texture", "tea pouring"],
+  "sky": ["clouds timelapse", "sunrise sky"],
+  "rain-window": ["rain on window", "raindrops glass"],
+  "clock": ["clock ticking", "pocket watch"],
+  "city-night": ["city lights night", "street lights bokeh"]
+ }
+}

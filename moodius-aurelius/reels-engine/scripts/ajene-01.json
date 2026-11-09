@@ -1,0 +1,94 @@
+{
+ "batch": "ajene-01",
+ "written": "2026-10-25",
+ "note": "Ajené Pinnock formula A02 (labelled-role skit), faceless. Idea from Enchiridion 5 (EP021), Moodius words; dialogue is Moodius paraphrase.",
+ "scripts": [
+  {
+   "id": "AJ02",
+   "slug": "you-2am-vs-epictetus",
+   "format": "R4",
+   "pillar": "The Human Mind",
+   "rank": 1,
+   "hook": "You at 2am vs a philosopher from ancient Rome.",
+   "hook_b": "They replied 'ok'. It's 2am. You're still awake.",
+   "cards": [
+    [
+     "You at 2am vs a philosopher from ancient Rome.",
+     2.6,
+     "hook"
+    ],
+    [
+     "YOU, 2AM\nThey replied “ok”. Just “ok”. They hate me.",
+     2.9,
+     "labelled"
+    ],
+    [
+     "EPICTETUS\nDid they say that? Or did you?",
+     2.4,
+     "labelled"
+    ],
+    [
+     "YOU, 2AM\nIt took them four hours. For two letters.",
+     2.7,
+     "labelled"
+    ],
+    [
+     "EPICTETUS\nThe “ok” didn’t keep you up at 2am. Your story about it did.",
+     3.6,
+     "labelled"
+    ],
+    [
+     "Idea: Epictetus, Enchiridion 5 · Moodius words",
+     1.8,
+     "cite"
+    ],
+    [
+     "YOU, 2AM\n…going back to sleep.",
+     2.2,
+     "labelled"
+    ],
+    [
+     "Send this to the friend who reads “ok” as a threat.",
+     2.9,
+     "cta"
+    ]
+   ],
+   "visual": "V1 flat Slate, beat grammar. Labels in Ember (YOU, 2AM / EPICTETUS), lines in Bone. No faces.",
+   "footage": null,
+   "audio": {
+    "engine": "ambient",
+    "mood": "night",
+    "seed": 241
+   },
+   "source": {
+    "type": "idea",
+    "author": "Epictetus",
+    "work": "Enchiridion",
+    "section": "5",
+    "translation": "George Long",
+    "verified_at": "research/library/tidbits/epictetus.csv EP021 (verified 22 Oct 2026). No quote card: Enchiridion 5 was quoted on 23 Oct, so this reel paraphrases."
+   },
+   "caption": "A short play in two acts. Act one: someone texts you \"ok\". Act two: you lie awake writing their whole inner life for them.\n\nEpictetus taught this almost 1,900 years ago: the message didn't keep you up, the story you told yourself about it did. The dialogue is ours, the idea is his.\n\nSend this to the friend who reads \"ok\" as a threat. 🫠\n\nAngry or busy?\n\n— Moodius",
+   "first_comment": "Moodius: busy. It's always busy. Idea from Epictetus, Enchiridion 5 (tr. George Long, Standard Ebooks); the dialogue is a Moodius paraphrase.",
+   "hashtags": [
+    "#stoicism",
+    "#epictetus",
+    "#overthinking",
+    "#philosophy"
+   ],
+   "cta": "send",
+   "length_s": null,
+   "grammar": "beat",
+   "max_s": 26,
+   "doctor": {
+    "score": 80,
+    "issues": [
+     "Payoff beat repeats the YOU, 2AM label rather than a hook word",
+     "Total about 22s"
+    ],
+    "rewritten": false,
+    "by": "Claude, 25 Oct 2026"
+   }
+  }
+ ]
+}

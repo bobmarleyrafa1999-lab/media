@@ -1,0 +1,290 @@
+{
+ "D23-monday-dread": {
+  "kind": "story",
+  "label": "Monday check-in",
+  "lines": [
+   [
+    "What's the one thing this week you're already dreading?",
+    "claim"
+   ],
+   [
+    "Just the word. Nobody else sees your reply.",
+    "body"
+   ],
+   [
+    "Moodius: the Thursday call.",
+    "small"
+   ]
+  ],
+  "footer": "Tonight: a quick quiz"
+ },
+ "D24-quiz-old-place": {
+  "kind": "story",
+  "label": "Quick one",
+  "lines": [
+   [
+    "You drive past somewhere you used to live.",
+    "claim"
+   ],
+   [
+    "Afterwards you mostly feel:",
+    "body"
+   ],
+   [
+    "A  warmer\nB  worse",
+    "quote"
+   ],
+   [
+    "Reply with A or B. Answer tomorrow at 9.",
+    "small"
+   ]
+  ]
+ },
+ "D25-answer-old-place": {
+  "kind": "story",
+  "label": "Answer",
+  "lines": [
+   [
+    "If you said A, so did the research.",
+    "claim"
+   ],
+   [
+    "People asked to write about a nostalgic memory came out feeling more connected to others and surer of who they were.",
+    "body"
+   ],
+   [
+    "Wildschut et al., J. Personality and Social Psychology, 2006.",
+    "small"
+   ]
+  ],
+  "footer": "Why it still stings, at 12:00"
+ },
+ "D26-poll-deep-dive": {
+  "kind": "story",
+  "label": "You pick the next deep dive",
+  "lines": [
+   [
+    "Septima Clark or Arthur Ashe?",
+    "claim"
+   ],
+   [
+    "Clark: the teacher behind the civil-rights citizenship schools. Ashe: the champion who used his platform off the court.",
+    "body"
+   ],
+   [
+    "Tap the poll, or reply with a name.",
+    "small"
+   ]
+  ],
+  "footer": "Epictetus deep dive lands Sunday"
+ },
+ "D27-before-you-send": {
+  "kind": "story",
+  "label": "Wednesday",
+  "lines": [
+   [
+    "Before you send it today.",
+    "claim"
+   ],
+   [
+    "Write the message. Read it as the person receiving it. Then decide.",
+    "body"
+   ],
+   [
+    "Votes from last night still open.",
+    "small"
+   ]
+  ],
+  "footer": "Why, at 12:00"
+ },
+ "D28-which-emotion": {
+  "kind": "story",
+  "label": "Journal",
+  "lines": [
+   [
+    "Which emotion visited most this week?",
+    "claim"
+   ],
+   [
+    "One word. Nobody else sees your reply.",
+    "body"
+   ],
+   [
+    "Reply with one word. Answer tomorrow at 9.",
+    "small"
+   ]
+  ]
+ },
+ "D29-it-had-a-reason": {
+  "kind": "story",
+  "label": "Morning",
+  "lines": [
+   [
+    "Whatever you named last night had a reason to come.",
+    "claim"
+   ],
+   [
+    "Today, when it shows up, ask what it wants before you argue with it.",
+    "body"
+   ]
+  ],
+  "footer": "18:00: a new series. The slave who taught an emperor."
+ },
+ "D30-forgive-today": {
+  "kind": "story",
+  "label": "Journal",
+  "lines": [
+   [
+    "What did you forgive today?",
+    "claim"
+   ],
+   [
+    "Big or tiny. The driver counts.",
+    "body"
+   ],
+   [
+    "Reply with one word. Answer tomorrow at 9.",
+    "small"
+   ]
+  ]
+ },
+ "D31-quiz-sailors": {
+  "kind": "story",
+  "label": "Friday quiz",
+  "lines": [
+   [
+    "In 1747 a ship's doctor tested six remedies on twelve sick sailors.",
+    "claim"
+   ],
+   [
+    "Which one worked?",
+    "body"
+   ],
+   [
+    "A  cider\nB  oranges and lemons\nC  seawater",
+    "quote"
+   ],
+   [
+    "Reply A, B or C. Answer at 12:00.",
+    "small"
+   ]
+  ]
+ },
+ "D32-vote-friday": {
+  "kind": "story",
+  "label": "You pick",
+  "lines": [
+   [
+    "Next Friday's forgotten history. Which field?",
+    "claim"
+   ],
+   [
+    "A  medicine\nB  astronomy\nC  food",
+    "quote"
+   ],
+   [
+    "Reply A, B or C. Most replies wins.",
+    "small"
+   ]
+  ]
+ },
+ "D33-part-three": {
+  "kind": "story",
+  "label": "Saturday",
+  "lines": [
+   [
+    "Part 3 of 3 lands at 12:00.",
+    "claim"
+   ],
+   [
+    "A three-step test for how free you are. Guess the steps before you watch.",
+    "body"
+   ]
+  ],
+  "footer": "Reel at 12:00"
+ },
+ "D34-today-taught": {
+  "kind": "story",
+  "label": "Journal",
+  "lines": [
+   [
+    "What did today teach you?",
+    "claim"
+   ],
+   [
+    "One line. It doesn't have to be profound.",
+    "body"
+   ],
+   [
+    "Reply with one word. Answer tomorrow at 9.",
+    "small"
+   ]
+  ]
+ },
+ "D35-sunday-deep-dive": {
+  "kind": "story",
+  "label": "Sunday",
+  "lines": [
+   [
+    "Born enslaved. Banished from Rome.",
+    "claim"
+   ],
+   [
+    "The full Epictetus story, ten slides, at 12:00. Read it slowly.",
+    "body"
+   ]
+  ],
+  "footer": "Carousel at 12:00"
+ },
+ "D36-differently-tomorrow": {
+  "kind": "story",
+  "label": "Journal",
+  "lines": [
+   [
+    "What will you do differently tomorrow?",
+    "claim"
+   ],
+   [
+    "One sentence. Write it where you'll see it at 7am.",
+    "body"
+   ],
+   [
+    "Reply with one word. Answer tomorrow at 9.",
+    "small"
+   ]
+  ]
+ },
+ "D37-monday-anger": {
+  "kind": "story",
+  "label": "Monday",
+  "lines": [
+   [
+    "Your anger costs you more than what caused it.",
+    "claim"
+   ],
+   [
+    "The emperor's ledger, at 12:00. Until then: count the minutes.",
+    "body"
+   ]
+  ],
+  "footer": "Carousel at 12:00"
+ },
+ "D38-who-needs-message": {
+  "kind": "story",
+  "label": "Journal",
+  "lines": [
+   [
+    "Who needs a message from you?",
+    "claim"
+   ],
+   [
+    "Not the reply you owe. The one nobody's expecting.",
+    "body"
+   ],
+   [
+    "Reply with one word. Answer tomorrow at 9.",
+    "small"
+   ]
+  ]
+ }
+}
