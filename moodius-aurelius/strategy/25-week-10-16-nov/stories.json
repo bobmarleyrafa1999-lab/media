@@ -1,0 +1,98 @@
+[
+ {
+  "slot": "2026-11-09 09:00",
+  "id": "D23-monday-dread",
+  "type": "STORY",
+  "alt": "What's the one thing this week you're already dreading? Just the word. Nobody else sees your reply. Moodius: the Thursday call."
+ },
+ {
+  "slot": "2026-11-09 21:00",
+  "id": "D24-quiz-old-place",
+  "type": "STORY",
+  "alt": "You drive past somewhere you used to live. Afterwards you mostly feel: A  warmer / B  worse Reply with A or B. Answer tomorrow at 9."
+ },
+ {
+  "slot": "2026-11-10 09:00",
+  "id": "D25-answer-old-place",
+  "type": "STORY",
+  "alt": "If you said A, so did the research. People asked to write about a nostalgic memory came out feeling more connected to others and surer of who they were. Wildschut et al., J. Personality and Social Psychology, 2006."
+ },
+ {
+  "slot": "2026-11-10 21:00",
+  "id": "D26-poll-deep-dive",
+  "type": "STORY",
+  "alt": "Septima Clark or Arthur Ashe? Clark: the teacher behind the civil-rights citizenship schools. Ashe: the champion who used his platform off the court. Tap the poll, or reply with a name."
+ },
+ {
+  "slot": "2026-11-11 09:00",
+  "id": "D27-before-you-send",
+  "type": "STORY",
+  "alt": "Before you send it today. Write the message. Read it as the person receiving it. Then decide. Votes from last night still open."
+ },
+ {
+  "slot": "2026-11-11 21:00",
+  "id": "D28-which-emotion",
+  "type": "STORY",
+  "alt": "Which emotion visited most this week? One word. Nobody else sees your reply. Reply with one word. Answer tomorrow at 9."
+ },
+ {
+  "slot": "2026-11-12 09:00",
+  "id": "D29-it-had-a-reason",
+  "type": "STORY",
+  "alt": "Whatever you named last night had a reason to come. Today, when it shows up, ask what it wants before you argue with it."
+ },
+ {
+  "slot": "2026-11-12 21:00",
+  "id": "D30-forgive-today",
+  "type": "STORY",
+  "alt": "What did you forgive today? Big or tiny. The driver counts. Reply with one word. Answer tomorrow at 9."
+ },
+ {
+  "slot": "2026-11-13 09:00",
+  "id": "D31-quiz-sailors",
+  "type": "STORY",
+  "alt": "In 1747 a ship's doctor tested six remedies on twelve sick sailors. Which one worked? A  cider / B  oranges and lemons / C  seawater Reply A, B or C. Answer at 12:00."
+ },
+ {
+  "slot": "2026-11-13 21:00",
+  "id": "D32-vote-friday",
+  "type": "STORY",
+  "alt": "Next Friday's forgotten history. Which field? A  medicine / B  astronomy / C  food Reply A, B or C. Most replies wins."
+ },
+ {
+  "slot": "2026-11-14 09:00",
+  "id": "D33-part-three",
+  "type": "STORY",
+  "alt": "Part 3 of 3 lands at 12:00. A three-step test for how free you are. Guess the steps before you watch."
+ },
+ {
+  "slot": "2026-11-14 21:00",
+  "id": "D34-today-taught",
+  "type": "STORY",
+  "alt": "What did today teach you? One line. It doesn't have to be profound. Reply with one word. Answer tomorrow at 9."
+ },
+ {
+  "slot": "2026-11-15 09:00",
+  "id": "D35-sunday-deep-dive",
+  "type": "STORY",
+  "alt": "Born enslaved. Banished from Rome. The full Epictetus story, ten slides, at 12:00. Read it slowly."
+ },
+ {
+  "slot": "2026-11-15 21:00",
+  "id": "D36-differently-tomorrow",
+  "type": "STORY",
+  "alt": "What will you do differently tomorrow? One sentence. Write it where you'll see it at 7am. Reply with one word. Answer tomorrow at 9."
+ },
+ {
+  "slot": "2026-11-16 09:00",
+  "id": "D37-monday-anger",
+  "type": "STORY",
+  "alt": "Your anger costs you more than what caused it. The emperor's ledger, at 12:00. Until then: count the minutes."
+ },
+ {
+  "slot": "2026-11-16 21:00",
+  "id": "D38-who-needs-message",
+  "type": "STORY",
+  "alt": "Who needs a message from you? Not the reply you owe. The one nobody's expecting. Reply with one word. Answer tomorrow at 9."
+ }
+]
