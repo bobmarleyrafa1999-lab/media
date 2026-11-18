@@ -1,0 +1,22 @@
+{"built": "2026-11-18", "why": "Fri 13 Nov weekly run never ran (usage credits); catch-up build by thread 'Refill the Instagram queue to 23 Nov'",
+ "posts": [
+  {"slot": "2026-11-18 21:00", "id": "D39-quiz-book-one", "type": "STORY", "metricool_id": 432963119},
+  {"slot": "2026-11-19 09:00", "id": "D40-answer-book-one", "type": "STORY", "metricool_id": 432963158},
+  {"slot": "2026-11-19 12:00", "id": "C70-thank-you-list", "type": "CAROUSEL", "ground": "slate", "no": 70, "pillar": "People", "metricool_id": 432963195},
+  {"slot": "2026-11-19 18:00", "id": "R010-im-fine", "type": "REEL", "ground": "slate", "no": 71, "pillar": "Mind", "metricool_id": 432963225},
+  {"slot": "2026-11-19 21:00", "id": "D41-quiz-book-five", "type": "STORY", "metricool_id": 432963260},
+  {"slot": "2026-11-20 09:00", "id": "D42-answer-book-five", "type": "STORY", "metricool_id": 432964344},
+  {"slot": "2026-11-20 12:00", "id": "C72-argued-with-his-bed", "type": "CAROUSEL", "ground": "sand", "no": 72, "pillar": "Body", "metricool_id": 432964374},
+  {"slot": "2026-11-20 17:00", "id": "F01-friends-who-train-you", "type": "REEL", "ground": "slate", "no": 73, "pillar": "People", "audio": "MO-STO-4", "metricool_id": 432964412},
+  {"slot": "2026-11-20 21:00", "id": "D43-vote-friday", "type": "STORY", "metricool_id": 432964438},
+  {"slot": "2026-11-21 09:00", "id": "D44-saturday-line", "type": "STORY", "metricool_id": 432964456},
+  {"slot": "2026-11-21 15:00", "id": "T004-B01-busy-room", "type": "TRIAL_REEL", "audio": "MO-STO-1", "metricool_id": 432964502, "uuid": "-714188660291321256"},
+  {"slot": "2026-11-22 21:00", "id": "D45-sunday-journal", "type": "STORY", "metricool_id": 432964525},
+  {"slot": "2026-11-23 09:00", "id": "D46-monday-worry", "type": "STORY", "metricool_id": 432964555},
+  {"slot": "2026-11-23 12:00", "id": "MP07-meme", "type": "CAROUSEL", "no": 74, "lane": "meme test day 1", "metricool_id": 432964579},
+  {"slot": "2026-11-23 15:00", "id": "T005-R012-stoic-not-cold", "type": "TRIAL_REEL", "audio": "MO-REF-2", "metricool_id": 432964615, "uuid": "-6664764844165806158"},
+  {"slot": "2026-11-23 21:00", "id": "D47-quiz-knowing-doing", "type": "STORY", "metricool_id": 432964662},
+  {"slot": "2026-11-24 09:00", "id": "D48-answer-knowing-doing", "type": "STORY", "metricool_id": 432964697}
+ ],
+ "spent_renders": ["R010", "F01", "B01", "R012"],
+ "notes": "Next feed post number NO. 75. Step-3 grid cycle: 20 Nov 12:00 Sand, 17:00 Slate, 23 Nov meme = Olive slot, so first feed post on 24 Nov = Sand. Unspent ready renders left: none usable (A01 corny; D01 repeats the 10 Nov nostalgia carousel; E01 repeats the 12 Nov call-for-no-reason carousel). R012 rendered with project-files engine (repo copy lacks tools/quotes.py); audio swapped to own original MO-REF-2 because the soundfont is missing in containers."}
