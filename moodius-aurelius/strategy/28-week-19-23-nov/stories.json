@@ -1,0 +1,52 @@
+[
+ {
+  "slot": "2026-11-18 21:00",
+  "id": "D39-quiz-book-one",
+  "alt": "An emperor's private notebook. What fills the whole first book? A  complaints / B  thank-yous Reply A or B. Answer tomorrow at 9."
+ },
+ {
+  "slot": "2026-11-19 09:00",
+  "id": "D40-answer-book-one",
+  "alt": "B. A whole book of thank-yous. Before any advice to himself, Marcus Aurelius names the people who shaped him, one by one: a grandfather, his mother, teachers, a brother, friends. Meditations, Book 1."
+ },
+ {
+  "slot": "2026-11-19 21:00",
+  "id": "D41-quiz-book-five",
+  "alt": "Meditations, Book 5, line one. What is the emperor writing about? A  war / B  getting out of bed / C  taxes Reply A, B or C. Answer tomorrow at 9."
+ },
+ {
+  "slot": "2026-11-20 09:00",
+  "id": "D42-answer-book-five",
+  "alt": "B. Getting out of bed. “In the morning when thou risest unwillingly, let this thought be present—I am rising to the work of a human being.” Marcus Aurelius, Meditations 5.1, tr. George Long."
+ },
+ {
+  "slot": "2026-11-20 21:00",
+  "id": "D43-vote-friday",
+  "alt": "More of which next week? A  history / B  mind / C  kindness Reply A, B or C. Most replies wins."
+ },
+ {
+  "slot": "2026-11-21 09:00",
+  "id": "D44-saturday-line",
+  "alt": "One small thing for the weekend. Send one line to someone who taught you something this year. “From you I learned…” is enough. From Thursday's thank-you list."
+ },
+ {
+  "slot": "2026-11-22 21:00",
+  "id": "D45-sunday-journal",
+  "alt": "Who made your week better? One name. They don't have to know. (They should, though.) Reply with one word."
+ },
+ {
+  "slot": "2026-11-23 09:00",
+  "id": "D46-monday-worry",
+  "alt": "What's the one thing you're already worried about this week? Just the word. Nobody else sees your reply. Moodius: the boiler."
+ },
+ {
+  "slot": "2026-11-23 21:00",
+  "id": "D47-quiz-knowing-doing",
+  "alt": "Be honest. Which list is longer? A  things you know you should do / B  things you actually do Reply A or B. Answer tomorrow at 9."
+ },
+ {
+  "slot": "2026-11-24 09:00",
+  "id": "D48-answer-knowing-doing",
+  "alt": "A, for nearly everyone. Knowing and doing are different muscles. Most of us train only one."
+ }
+]
