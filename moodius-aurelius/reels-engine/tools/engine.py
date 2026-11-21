@@ -431,7 +431,7 @@ def build_filter(script, total, layout, clip, tmp, broll=None):
     f = []
     pro = script.get("finish") == "pro"
     grade = PRO_GRADE if pro else OLD_GRADE
-    tint_a = 0.55 if pro else 0.72
+    tint_a = 0.62 if pro else 0.72
     vig = ",vignette=angle=PI/4.6" if pro else ""
     ledger = script.get("style") == "ledger"
     beat = script.get("grammar") == "beat"
@@ -452,10 +452,12 @@ def build_filter(script, total, layout, clip, tmp, broll=None):
     elif broll:
         legs = []
         for i, (_, a, b) in enumerate(broll):
+            shift = int((script.get("broll") or [{}] * (i + 1))[i].get("shift", 0) * H) if pro else 0
+            low = f",pad={W}:{H + shift}:0:{shift}:black,crop={W}:{H}:0:0" if shift else ""   # 1.6: subject below the text band
             push = (f",zoompan=z='1+0.06*on/{max(1, round((b - a) * 30))}':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2'"
                     f":d=1:s={W}x{H}:fps=30") if pro else ""
             f.append(f"[{i + 1}:v]scale={W}:{H}:force_original_aspect_ratio=increase:flags=lanczos,crop={W}:{H},fps=30,"
-                     f"trim=0:{b - a:.3f},setpts=PTS-STARTPTS,{grade}{push},setsar=1[b{i}]")
+                     f"trim=0:{b - a:.3f},setpts=PTS-STARTPTS,{grade}{low}{push},setsar=1[b{i}]")
             legs.append(f"[b{i}]")
         f.append(f"{''.join(legs)}concat=n={len(legs)}:v=1:a=0[foot];"
                  f"color=c={hexc(SLATE)}@{tint_a}:s={W}x{H}:d={total:.2f},format=rgba[tint];"
@@ -545,12 +547,13 @@ def render(script, out_dir, layout="upper", variant="a"):
         pro = s.get("finish") == "pro"
         sting = os.path.join(PROJECT, "audio", "library", "originals", "MO-STING.m4a")
         if pro and s.get("sting", True) and os.path.exists(sting):
-            # 1.6: our own sting (MO-STING, original) under the turn of the idea, 8 dB below the bed
+            # 1.6: our own sting (MO-STING, original) on the turn of the idea, mixed low onto the mastered bed
             k = inputs.count("-i")
             inputs += ["-i", sting]
             ms = int(turn_time(s) * 1000)
-            afilt = (f";[{k}:a]volume=-8dB,adelay={ms}|{ms}[st];[0:a][st]amix=inputs=2:normalize=0:duration=first,"
-                     f"loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[aout]")
+            pre = "" if mastered else "loudnorm=I=-14:TP=-1.5:LRA=11,"
+            afilt = (f";[0:a]{pre}anull[bed];[{k}:a]volume=-16dB,adelay={ms}|{ms}[st];"
+                     f"[bed][st]amix=inputs=2:normalize=0:duration=first,alimiter=limit=0.84:level=false,aresample=48000[aout]")
         else:
             afilt = ";[0:a]anull[aout]" if mastered else ";[0:a]loudnorm=I=-14:TP=-1.5:LRA=11[aout]"
         filt = build_filter(s, total, layout, clip, tmp, broll) + afilt
@@ -674,7 +677,7 @@ def main():
     for s in scripts:   # 1.3: a batch-level "grammar" applies to every script that doesn't set its own
         if batch.get("grammar") and "grammar" not in s:
             s["grammar"] = batch["grammar"]
-        for key in ("cuts", "style"):   # 1.4
+        for key in ("cuts", "style", "finish"):   # 1.4; 1.6 finish
             if batch.get(key) and key not in s:
                 s[key] = batch[key]
     if args.cmd == "doctor":
