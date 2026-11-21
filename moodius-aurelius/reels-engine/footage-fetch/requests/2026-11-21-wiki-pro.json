@@ -1,0 +1,11 @@
+{
+ "note": "21 Nov 2026 reel quality upgrade, Wikimedia pass (Pexels key returned 401). Landscape/texture clips without people.",
+ "per_tag": 2,
+ "budget_min": 22,
+ "tags": {
+  "sea": ["sea waves", "ocean timelapse"],
+  "mist": ["fog timelapse", "mist forest"],
+  "rain-window": ["rain on window", "raindrops"],
+  "fire": ["fireplace", "campfire night"]
+ }
+}

@@ -420,8 +420,19 @@ def broll_plan(script, total):
     return [(c, t, cuts[i + 1][1] if i + 1 < len(cuts) else total) for i, (c, t) in enumerate(cuts)]
 
 
+PRO_GRADE = "hqdn3d=2:1.5:3:3,eq=contrast=1.06:brightness=-0.02:saturation=0.7,colorbalance=rs=0.03:gs=0.01:bs=-0.03,unsharp=5:5:0.45"
+OLD_GRADE = "hue=s=0.25,eq=brightness=-0.06:contrast=0.95"
+
+
 def build_filter(script, total, layout, clip, tmp, broll=None):
+    """1.6 (21 Nov 2026) "finish": "pro": footage graded instead of greyed out (light denoise, warm-neutral
+    colour at 70% saturation, sharpen), a lighter 55% Slate tint plus a soft vignette so the picture reads
+    while the text stays legible, and a slow push-in on every b-roll clip so no beat sits still."""
     f = []
+    pro = script.get("finish") == "pro"
+    grade = PRO_GRADE if pro else OLD_GRADE
+    tint_a = 0.55 if pro else 0.72
+    vig = ",vignette=angle=PI/4.6" if pro else ""
     ledger = script.get("style") == "ledger"
     beat = script.get("grammar") == "beat"
     grain = ",noise=alls=7:allf=t" if script.get("texture") == "grain" else ""
@@ -430,23 +441,25 @@ def build_filter(script, total, layout, clip, tmp, broll=None):
     if is_still(clip):
         f.append(f"[1:v]scale={int(W * 1.1)}:{int(H * 1.1)}:force_original_aspect_ratio=increase,crop={int(W * 1.1)}:{int(H * 1.1)},"
                  f"crop={W}:{H}:x='{drift(W * 0.1)}':y='{drift(H * 0.05)}',"
-                 f"hue=s=0.25,eq=brightness=-0.06:contrast=0.95,setsar=1,fps=30,trim=0:{total:.2f},setpts=PTS-STARTPTS[foot];"
-                 f"color=c={hexc(SLATE)}@0.72:s={W}x{H}:d={total:.2f},format=rgba[tint];"
-                 f"[foot][tint]overlay=0:0{grain},format=yuv420p[bg]")
+                 f"{grade},setsar=1,fps=30,trim=0:{total:.2f},setpts=PTS-STARTPTS[foot];"
+                 f"color=c={hexc(SLATE)}@{tint_a}:s={W}x{H}:d={total:.2f},format=rgba[tint];"
+                 f"[foot][tint]overlay=0:0{vig}{grain},format=yuv420p[bg]")
     elif clip:
         f.append(f"[1:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
-                 f"hue=s=0.25,eq=brightness=-0.06:contrast=0.95,setsar=1,fps=30,trim=0:{total:.2f},setpts=PTS-STARTPTS[foot];"
-                 f"color=c={hexc(SLATE)}@0.72:s={W}x{H}:d={total:.2f},format=rgba[tint];"
-                 f"[foot][tint]overlay=0:0{grain},format=yuv420p[bg]")
+                 f"{grade},setsar=1,fps=30,trim=0:{total:.2f},setpts=PTS-STARTPTS[foot];"
+                 f"color=c={hexc(SLATE)}@{tint_a}:s={W}x{H}:d={total:.2f},format=rgba[tint];"
+                 f"[foot][tint]overlay=0:0{vig}{grain},format=yuv420p[bg]")
     elif broll:
         legs = []
         for i, (_, a, b) in enumerate(broll):
-            f.append(f"[{i + 1}:v]scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
-                     f"hue=s=0.25,eq=brightness=-0.06:contrast=0.95,setsar=1,fps=30,trim=0:{b - a:.3f},setpts=PTS-STARTPTS[b{i}]")
+            push = (f",zoompan=z='1+0.06*on/{max(1, round((b - a) * 30))}':x='iw/2-iw/zoom/2':y='ih/2-ih/zoom/2'"
+                    f":d=1:s={W}x{H}:fps=30") if pro else ""
+            f.append(f"[{i + 1}:v]scale={W}:{H}:force_original_aspect_ratio=increase:flags=lanczos,crop={W}:{H},fps=30,"
+                     f"trim=0:{b - a:.3f},setpts=PTS-STARTPTS,{grade}{push},setsar=1[b{i}]")
             legs.append(f"[b{i}]")
         f.append(f"{''.join(legs)}concat=n={len(legs)}:v=1:a=0[foot];"
-                 f"color=c={hexc(SLATE)}@0.72:s={W}x{H}:d={total:.2f},format=rgba[tint];"
-                 f"[foot][tint]overlay=0:0{grain},format=yuv420p[bg]")
+                 f"color=c={hexc(SLATE)}@{tint_a}:s={W}x{H}:d={total:.2f},format=rgba[tint];"
+                 f"[foot][tint]overlay=0:0{vig}{grain},format=yuv420p[bg]")
     else:
         f.append(f"color=c={hexc(SLATE)}:s={W}x{H}:d={total:.2f}{grain},format=yuv420p[bg]")
     chain, n = "[bg]", 0
@@ -529,19 +542,34 @@ def render(script, out_dir, layout="upper", variant="a"):
         else:
             inputs = ["-i", wav] + ((["-loop", "1", "-framerate", "30", "-i", clip] if is_still(clip)
                                      else ["-stream_loop", "-1", "-i", clip]) if clip else [])
-        filt = build_filter(s, total, layout, clip, tmp, broll) + (";[0:a]anull[aout]" if mastered else ";[0:a]loudnorm=I=-14:TP=-1.5:LRA=11[aout]")
+        pro = s.get("finish") == "pro"
+        sting = os.path.join(PROJECT, "audio", "library", "originals", "MO-STING.m4a")
+        if pro and s.get("sting", True) and os.path.exists(sting):
+            # 1.6: our own sting (MO-STING, original) under the turn of the idea, 8 dB below the bed
+            k = inputs.count("-i")
+            inputs += ["-i", sting]
+            ms = int(turn_time(s) * 1000)
+            afilt = (f";[{k}:a]volume=-8dB,adelay={ms}|{ms}[st];[0:a][st]amix=inputs=2:normalize=0:duration=first,"
+                     f"loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000[aout]")
+        else:
+            afilt = ";[0:a]anull[aout]" if mastered else ";[0:a]loudnorm=I=-14:TP=-1.5:LRA=11[aout]"
+        filt = build_filter(s, total, layout, clip, tmp, broll) + afilt
         cmd = ["ffmpeg", "-y", "-loglevel", "error", *inputs, "-filter_complex", filt,
                "-map", "[vout]", "-map", "[aout]", "-t", f"{total:.2f}", "-r", "30",
-               "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
-               *(["-maxrate", "8M", "-bufsize", "16M"] if s.get("texture") == "grain" else []),  # grain is incompressible
-               "-c:a", "aac", "-b:a", "160k", "-movflags", "+faststart", out]
+               *(["-c:v", "libx264", "-preset", "slow", "-crf", "16", "-profile:v", "high", "-level", "4.2",
+                  "-maxrate", "16M", "-bufsize", "32M", "-g", "60", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "256k",
+                  "-ar", "48000"] if pro else   # 1.6: Instagram re-encodes everything; a rich upload survives it
+                 ["-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p",
+                  *(["-maxrate", "8M", "-bufsize", "16M"] if s.get("texture") == "grain" else []),  # grain is incompressible
+                  "-c:a", "aac", "-b:a", "160k"]),
+               "-movflags", "+faststart", out]
         r = subprocess.run(cmd, capture_output=True, text=True)
     if r.returncode:
         return name, False, r.stderr[-800:]
     beat = s.get("grammar") == "beat"
     hook_mid = 0.0 if beat else 0.2 + s["cards"][0][1] * 0.6   # beat: frame 0 is thumbnail-grade
     subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{hook_mid:.2f}", "-i", out, "-frames:v", "1",
-                    "-q:v", "3", os.path.join(out_dir, f"{name}-cover.jpg")], check=False)
+                    "-q:v", "2", os.path.join(out_dir, f"{name}-cover.jpg")], check=False)
     qa = qa_sheet(s, out, out_dir, name, total) if beat or s.get("qa") else ""
     with open(os.path.join(out_dir, f"{name}.txt"), "w", encoding="utf-8") as fh:
         fh.write(s["caption"] + "\n\n" + " ".join(s.get("hashtags", [])) + "\n\n---\nFirst comment:\n" + s["first_comment"] + "\n")
