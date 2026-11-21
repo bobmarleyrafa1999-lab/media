@@ -96,3 +96,20 @@ search wool: 0 usable
 search fabric: 5 usable
   File:Multifunctional-non-woven-fabrics-of-interfused-graphene-fibres-ncomms13684-s2.ogv: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
   File:Multifunctional-non-woven-fabrics-of-interfused-graphene-fibres-ncomms13684-s5.ogv: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+search ancient ruins: HTTP Error 401: Unauthorized
+search roman columns: HTTP Error 401: Unauthorized
+search old stone wall: HTTP Error 401: Unauthorized
+search clouds timelapse: HTTP Error 401: Unauthorized
+search sunrise sky: HTTP Error 401: Unauthorized
+search candle flame dark: HTTP Error 401: Unauthorized
+search oil lamp: HTTP Error 401: Unauthorized
+search city lights night: HTTP Error 401: Unauthorized
+search street lights bokeh: HTTP Error 401: Unauthorized
+search open book pages close up: HTTP Error 401: Unauthorized
+search turning pages book: HTTP Error 401: Unauthorized
+search calm sea waves: HTTP Error 401: Unauthorized
+search ocean horizon: HTTP Error 401: Unauthorized
+search misty forest: HTTP Error 401: Unauthorized
+search fog mountains: HTTP Error 401: Unauthorized
+search coffee cup steam: HTTP Error 401: Unauthorized
+search tea pouring: HTTP Error 401: Unauthorized
