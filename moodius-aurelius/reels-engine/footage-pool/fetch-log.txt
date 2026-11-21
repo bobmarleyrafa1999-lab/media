@@ -96,3 +96,38 @@ search wool: 0 usable
 search fabric: 5 usable
   File:Multifunctional-non-woven-fabrics-of-interfused-graphene-fibres-ncomms13684-s2.ogv: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
   File:Multifunctional-non-woven-fabrics-of-interfused-graphene-fibres-ncomms13684-s5.ogv: HTTP Error 429: Too many requests - please contact noc@wikimedia.org to discuss a less disruptive approach or instead use thumbnail images in sizes listed on https://w.wiki/GHai. (0c640b1)
+search ancient ruins: HTTP Error 401: Unauthorized
+search roman columns: HTTP Error 401: Unauthorized
+search old stone wall: HTTP Error 401: Unauthorized
+search clouds timelapse: HTTP Error 401: Unauthorized
+search sunrise sky: HTTP Error 401: Unauthorized
+search candle flame dark: HTTP Error 401: Unauthorized
+search oil lamp: HTTP Error 401: Unauthorized
+search city lights night: HTTP Error 401: Unauthorized
+search street lights bokeh: HTTP Error 401: Unauthorized
+search open book pages close up: HTTP Error 401: Unauthorized
+search turning pages book: HTTP Error 401: Unauthorized
+search calm sea waves: HTTP Error 401: Unauthorized
+search ocean horizon: HTTP Error 401: Unauthorized
+search misty forest: HTTP Error 401: Unauthorized
+search fog mountains: HTTP Error 401: Unauthorized
+search coffee cup steam: HTTP Error 401: Unauthorized
+search tea pouring: HTTP Error 401: Unauthorized
+search sea waves: 3 usable
+  File:Aerial view of sand beach. Top view sea waves. Drone footage.webm: HTTP Error 429: Too many requests. Please contact the Wikimedia SRE team at noc@wikimedia.org and refer to this message. (daab851)
+  File:Groyne and sea waves at Curonian Spit.webm: HTTP Error 429: Too many requests. Please contact the Wikimedia SRE team at noc@wikimedia.org and refer to this message. (daab851)
+search ocean timelapse: 0 usable
+search fog timelapse: 0 usable
+search mist forest: 1 usable
+  File:From the mountain high, the forest stretches like a green ocean, kissed by mist and rain — a silent breath of nature, and continue with move on.webm: HTTP Error 429: Too many requests. Please contact the Wikimedia SRE team at noc@wikimedia.org and refer to this message. (daab851)
+search rain on window: 2 usable
+  File:Raindrops against the window in the night city, Las Palmas.webm: HTTP Error 429: Too many requests. Please contact the Wikimedia SRE team at noc@wikimedia.org and refer to this message. (daab851)
+  File:The nighttime attack of freezing rain rattled the front windows of the car..webm: HTTP Error 429: Too many requests. Please contact the Wikimedia SRE team at noc@wikimedia.org and refer to this message. (daab851)
+search raindrops: 5 usable
+  File:20240616 Raindrops roof basilica Panewniki.webm: HTTP Error 429: Too many requests. Please contact the Wikimedia SRE team at noc@wikimedia.org and refer to this message. (daab851)
+  File:Astrophysics- Observing the Universe Vertical Video (SVS14799 - Fermi Blazar Raindrops Square FINAL).webm: HTTP Error 429: Too many requests. Please contact the Wikimedia SRE team at noc@wikimedia.org and refer to this message. (daab851)
+search fireplace: 4 usable
+  File:Fantastic-fireplace-fire-chimney-hearth- background - texture - motion graphics - free video library.webm: HTTP Error 429: Too many requests. Please contact the Wikimedia SRE team at noc@wikimedia.org and refer to this message. (daab851)
+  File:Fireplace in Akita City Akarenga-kan Museum 2024 march 28.ogg: HTTP Error 429: Too many requests. Please contact the Wikimedia SRE team at noc@wikimedia.org and refer to this message. (daab851)
+search campfire night: 1 usable
+  File:Campfire at night - Claytor Lake State Park - video.webm: HTTP Error 429: Too many requests. Please contact the Wikimedia SRE team at noc@wikimedia.org and refer to this message. (daab851)

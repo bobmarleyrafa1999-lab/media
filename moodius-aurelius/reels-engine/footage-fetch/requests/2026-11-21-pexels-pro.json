@@ -1,0 +1,16 @@
+{
+ "note": "21 Nov 2026 reel quality upgrade: HD Pexels clips for T005 and MZ01-MZ05. Faces checked by eye after fetch. Fails harmlessly if the PEXELS_API_KEY secret is not set yet.",
+ "source": "pexels",
+ "per_tag": 3,
+ "budget_min": 22,
+ "tags": {
+  "ruins": ["ancient ruins", "roman columns", "old stone wall"],
+  "sky": ["clouds timelapse", "sunrise sky"],
+  "lamp-night": ["candle flame dark", "oil lamp"],
+  "city-night": ["city lights night", "street lights bokeh"],
+  "desk-book": ["open book pages close up", "turning pages book"],
+  "sea": ["calm sea waves", "ocean horizon"],
+  "mist": ["misty forest", "fog mountains"],
+  "coffee-table": ["coffee cup steam", "tea pouring"]
+ }
+}
