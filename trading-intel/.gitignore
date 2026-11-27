@@ -1,0 +1,35 @@
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+token*.json
+
+# Private data: never commit (course material, email archive, portfolio, journals)
+data/private/
+data/raw/
+data/cache/
+*.sqlite
+*.sqlite3
+*.duckdb
+*.parquet
+*.pdf
+*.mkv
+*.mp4
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+build/
+dist/
+*.egg-info/
+
+# Streamlit / local state
+.streamlit/secrets.toml
+logs/
